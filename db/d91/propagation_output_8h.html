@@ -94,13 +94,13 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;boost/function.hpp&gt;</code><br />
-<code>#include &quot;<a class="el" href="../../de/df0/utilities_8h_source.html">Tudat/Basics/utilities.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d2/d81/_basics_2utilities_8h_source.html">Tudat/Basics/utilities.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../dc/daa/astrodynamics_functions_8h_source.html">Tudat/Astrodynamics/BasicAstrodynamics/astrodynamicsFunctions.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d5/d70/aerodynamics_8h_source.html">Tudat/Astrodynamics/Aerodynamics/aerodynamics.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d2/d1e/_astrodynamics_2_aerodynamics_2aerodynamics_8h_source.html">Tudat/Astrodynamics/Aerodynamics/aerodynamics.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../df/d00/frame_manager_8h_source.html">Tudat/Astrodynamics/Ephemerides/frameManager.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d5/deb/dynamics_state_derivative_model_8h_source.html">Tudat/Astrodynamics/Propagators/dynamicsStateDerivativeModel.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d2/d36/rotational_motion_state_derivative_8h_source.html">Tudat/Astrodynamics/Propagators/rotationalMotionStateDerivative.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d0/d77/body_8h_source.html">Tudat/SimulationSetup/EnvironmentSetup/body.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">Tudat/SimulationSetup/EnvironmentSetup/body.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d3/d50/propagation_output_settings_8h_source.html">Tudat/SimulationSetup/PropagationSetup/propagationOutputSettings.h</a>&quot;</code><br />
 </div>
 <p><a href="../../db/d91/propagation_output_8h_source.html">Go to the source code of this file.</a></p>
@@ -122,6 +122,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ab5d87376b7fef267abbe64f7e8a6d8dd"><td class="memTemplItemLeft" align="right" valign="top">std::pair&lt; boost::function&lt; Eigen::VectorXd() &gt;, std::map&lt; int, std::string &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d2/d9c/namespacetudat_1_1propagators.html#ab5d87376b7fef267abbe64f7e8a6d8dd">tudat::propagators::createDependentVariableListFunction</a> (const boost::shared_ptr&lt; DependentVariableSaveSettings &gt; saveSettings, const simulation_setup::NamedBodyMap &amp;bodyMap, const std::unordered_map&lt; IntegratedStateType, std::vector&lt; boost::shared_ptr&lt; SingleStateTypeDerivative&lt; StateScalarType, TimeType &gt; &gt; &gt; &gt; &amp;stateDerivativeModels=std::unordered_map&lt; IntegratedStateType, std::vector&lt; boost::shared_ptr&lt; SingleStateTypeDerivative&lt; StateScalarType, TimeType &gt; &gt; &gt; &gt;())</td></tr>
 <tr class="memdesc:ab5d87376b7fef267abbe64f7e8a6d8dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to create a function that evaluates a list of dependent variables and concatenates the results.  <a href="../../d2/d9c/namespacetudat_1_1propagators.html#ab5d87376b7fef267abbe64f7e8a6d8dd">More...</a><br /></td></tr>
 <tr class="separator:ab5d87376b7fef267abbe64f7e8a6d8dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3076f0c72a8b238c08437d844259ed8"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d9c/namespacetudat_1_1propagators.html#ac3076f0c72a8b238c08437d844259ed8">tudat::propagators::elementAtIndexFunction</a> (const boost::function&lt; Eigen::VectorXd() &gt; &amp;vectorFunction, const int index)</td></tr>
+<tr class="memdesc:ac3076f0c72a8b238c08437d844259ed8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Acces element at index function.  <a href="../../d2/d9c/namespacetudat_1_1propagators.html#ac3076f0c72a8b238c08437d844259ed8">More...</a><br /></td></tr>
+<tr class="separator:ac3076f0c72a8b238c08437d844259ed8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85b8943e08ba4fe4b633afa0956ad5ee"><td class="memTemplParams" colspan="2">template&lt;typename OutputType , typename InputType &gt; </td></tr>
 <tr class="memitem:a85b8943e08ba4fe4b633afa0956ad5ee"><td class="memTemplItemLeft" align="right" valign="top">OutputType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d2/d9c/namespacetudat_1_1propagators.html#a85b8943e08ba4fe4b633afa0956ad5ee">tudat::propagators::evaluateBivariateFunction</a> (const boost::function&lt; OutputType(const InputType, const InputType) &gt; functionToEvaluate, const boost::function&lt; InputType() &gt; firstInput, const boost::function&lt; InputType() &gt; secondInput)</td></tr>
 <tr class="memdesc:a85b8943e08ba4fe4b633afa0956ad5ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to evaluate a function with two input variables from function pointers.  <a href="../../d2/d9c/namespacetudat_1_1propagators.html#a85b8943e08ba4fe4b633afa0956ad5ee">More...</a><br /></td></tr>
@@ -140,6 +143,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a8959584e09f2819e0051cd9ca02745ab"><td class="memTemplItemLeft" align="right" valign="top">OutputType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d2/d9c/namespacetudat_1_1propagators.html#a8959584e09f2819e0051cd9ca02745ab">tudat::propagators::evaluateTrivariateFunction</a> (const boost::function&lt; OutputType(const FirstInputType &amp;, const SecondInputType, const ThirdInputType) &gt; functionToEvaluate, const boost::function&lt; FirstInputType() &gt; firstInput, const boost::function&lt; SecondInputType() &gt; secondInput, const boost::function&lt; ThirdInputType() &gt; thirdInput)</td></tr>
 <tr class="memdesc:a8959584e09f2819e0051cd9ca02745ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to evaluate a function with three input variables from function pointers.  <a href="../../d2/d9c/namespacetudat_1_1propagators.html#a8959584e09f2819e0051cd9ca02745ab">More...</a><br /></td></tr>
 <tr class="separator:a8959584e09f2819e0051cd9ca02745ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ab6586c909ed57a406bb4dafab55c94"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d9c/namespacetudat_1_1propagators.html#a3ab6586c909ed57a406bb4dafab55c94">tudat::propagators::getDependentVariableSaveSize</a> (const boost::shared_ptr&lt; SingleDependentVariableSaveSettings &gt; &amp;singleDependentVariableSaveSettings)</td></tr>
+<tr class="memdesc:a3ab6586c909ed57a406bb4dafab55c94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funtion to get the size of a dependent variable save settings.  <a href="../../d2/d9c/namespacetudat_1_1propagators.html#a3ab6586c909ed57a406bb4dafab55c94">More...</a><br /></td></tr>
+<tr class="separator:a3ab6586c909ed57a406bb4dafab55c94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa94050f96fc93c674e28ca06d82e7d7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d9c/namespacetudat_1_1propagators.html#aaa94050f96fc93c674e28ca06d82e7d7">tudat::propagators::getDependentVariableSize</a> (const PropagationDependentVariables dependentVariableSettings)</td></tr>
 <tr class="memdesc:aaa94050f96fc93c674e28ca06d82e7d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funtion to get the size of a dependent variable.  <a href="../../d2/d9c/namespacetudat_1_1propagators.html#aaa94050f96fc93c674e28ca06d82e7d7">More...</a><br /></td></tr>
 <tr class="separator:aaa94050f96fc93c674e28ca06d82e7d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -173,7 +179,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 27 2017 09:32:58 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 7 2017 11:20:30 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

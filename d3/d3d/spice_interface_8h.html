@@ -98,7 +98,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <code>#include &lt;Eigen/Core&gt;</code><br />
 <code>#include &lt;Eigen/Geometry&gt;</code><br />
 <code>#include &quot;<a class="el" href="../../dd/d43/basic_typedefs_8h_source.html">Tudat/Basics/basicTypedefs.h</a>&quot;</code><br />
-<code>#include &quot;cspice/include/SpiceUsr.h&quot;</code><br />
+<code>#include &lt;cspice/include/SpiceUsr.h&gt;</code><br />
 </div>
 <p><a href="../../d3/d3d/spice_interface_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -144,12 +144,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a144484c91f45304e3413dbae56ea8596"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/da3/namespacetudat_1_1spice__interface.html#a144484c91f45304e3413dbae56ea8596">tudat::spice_interface::getAverageRadius</a> (const std::string &amp;body)</td></tr>
 <tr class="memdesc:a144484c91f45304e3413dbae56ea8596"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the (arithmetic) mean of the three principal axes of the tri-axial ellipsoid shape.  <a href="../../d6/da3/namespacetudat_1_1spice__interface.html#a144484c91f45304e3413dbae56ea8596">More...</a><br /></td></tr>
 <tr class="separator:a144484c91f45304e3413dbae56ea8596"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18524e1c50df629d2a8d4c7f833ccc8e"><td class="memItemLeft" align="right" valign="top">Eigen::Vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/da3/namespacetudat_1_1spice__interface.html#a18524e1c50df629d2a8d4c7f833ccc8e">tudat::spice_interface::getBodyCartesianPositionAtEpoch</a> (const std::string &amp;targetBodyName, const std::string &amp;observerBodyName, const std::string &amp;referenceFrameName, const std::string &amp;abberationCorrections, const double ephemerisTime)</td></tr>
-<tr class="memdesc:a18524e1c50df629d2a8d4c7f833ccc8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get Cartesian position of a body, as observed from another body.  <a href="../../d6/da3/namespacetudat_1_1spice__interface.html#a18524e1c50df629d2a8d4c7f833ccc8e">More...</a><br /></td></tr>
-<tr class="separator:a18524e1c50df629d2a8d4c7f833ccc8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6d0cd43ee89bd5cb77a571151f08fac"><td class="memItemLeft" align="right" valign="top">Vector6d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/da3/namespacetudat_1_1spice__interface.html#ad6d0cd43ee89bd5cb77a571151f08fac">tudat::spice_interface::getBodyCartesianStateAtEpoch</a> (const std::string &amp;targetBodyName, const std::string &amp;observerBodyName, const std::string &amp;referenceFrameName, const std::string &amp;abberationCorrections, const double ephemerisTime)</td></tr>
-<tr class="memdesc:ad6d0cd43ee89bd5cb77a571151f08fac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get Cartesian state of a body, as observed from another body.  <a href="../../d6/da3/namespacetudat_1_1spice__interface.html#ad6d0cd43ee89bd5cb77a571151f08fac">More...</a><br /></td></tr>
-<tr class="separator:ad6d0cd43ee89bd5cb77a571151f08fac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54e2e5a0086f7fd408ca231afda11220"><td class="memItemLeft" align="right" valign="top">Eigen::Vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/da3/namespacetudat_1_1spice__interface.html#a54e2e5a0086f7fd408ca231afda11220">tudat::spice_interface::getBodyCartesianPositionAtEpoch</a> (const std::string &amp;targetBodyName, const std::string &amp;observerBodyName, const std::string &amp;referenceFrameName, const std::string &amp;aberrationCorrections, const double ephemerisTime)</td></tr>
+<tr class="memdesc:a54e2e5a0086f7fd408ca231afda11220"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get Cartesian position of a body, as observed from another body.  <a href="../../d6/da3/namespacetudat_1_1spice__interface.html#a54e2e5a0086f7fd408ca231afda11220">More...</a><br /></td></tr>
+<tr class="separator:a54e2e5a0086f7fd408ca231afda11220"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40d9df90f533136a85f63b64eb8d807f"><td class="memItemLeft" align="right" valign="top">Vector6d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/da3/namespacetudat_1_1spice__interface.html#a40d9df90f533136a85f63b64eb8d807f">tudat::spice_interface::getBodyCartesianStateAtEpoch</a> (const std::string &amp;targetBodyName, const std::string &amp;observerBodyName, const std::string &amp;referenceFrameName, const std::string &amp;aberrationCorrections, const double ephemerisTime)</td></tr>
+<tr class="memdesc:a40d9df90f533136a85f63b64eb8d807f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get Cartesian state of a body, as observed from another body.  <a href="../../d6/da3/namespacetudat_1_1spice__interface.html#a40d9df90f533136a85f63b64eb8d807f">More...</a><br /></td></tr>
+<tr class="separator:a40d9df90f533136a85f63b64eb8d807f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3f655e8cb62c477dde5b70b7963e64b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/da3/namespacetudat_1_1spice__interface.html#ab3f655e8cb62c477dde5b70b7963e64b">tudat::spice_interface::getBodyGravitationalParameter</a> (const std::string &amp;body)</td></tr>
 <tr class="memdesc:ab3f655e8cb62c477dde5b70b7963e64b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get gravitational parameter of a body.  <a href="../../d6/da3/namespacetudat_1_1spice__interface.html#ab3f655e8cb62c477dde5b70b7963e64b">More...</a><br /></td></tr>
 <tr class="separator:ab3f655e8cb62c477dde5b70b7963e64b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -168,7 +168,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 27 2017 09:32:58 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 7 2017 11:20:30 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

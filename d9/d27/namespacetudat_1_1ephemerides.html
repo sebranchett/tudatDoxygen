@@ -89,7 +89,8 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">tudat::ephemerides Namespace Reference</div>  </div>
 </div><!--header-->
@@ -117,8 +118,6 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/df9/classtudat_1_1ephemerides_1_1_constant_ephemeris.html">ConstantEphemeris</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../df/dc7/classtudat_1_1ephemerides_1_1_ephemeris.html" title="Ephemeris base class. ">Ephemeris</a> class that gives a constant (i.e. time independent) state.  <a href="../../d9/df9/classtudat_1_1ephemerides_1_1_constant_ephemeris.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dda/classtudat_1_1ephemerides_1_1_constant_rotational_ephemeris.html">ConstantRotationalEphemeris</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dc8/classtudat_1_1ephemerides_1_1_custom_ephemeris.html">CustomEphemeris</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../df/dc7/classtudat_1_1ephemerides_1_1_ephemeris.html" title="Ephemeris base class. ">Ephemeris</a> class that gives a custom (i.e. arbitrarily defined as a function of time) state.  <a href="../../de/dc8/classtudat_1_1ephemerides_1_1_custom_ephemeris.html#details">More...</a><br /></td></tr>
@@ -155,8 +154,6 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/def/classtudat_1_1ephemerides_1_1_tabulated_rotational_ephemeris.html">TabulatedRotationalEphemeris</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class that computes the current rotational state from tabulated values of the rotational state with the use of an interpolator.  <a href="../../d3/def/classtudat_1_1ephemerides_1_1_tabulated_rotational_ephemeris.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dbf/classtudat_1_1ephemerides_1_1_wrapper_rotational_ephemeris.html">WrapperRotationalEphemeris</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
@@ -197,6 +194,9 @@ Functions</h2></td></tr>
 <tr class="memitem:afe8079ec5ccd4ce19c054465b982a33c"><td class="memTemplItemLeft" align="right" valign="top">boost::shared_ptr&lt; <a class="el" href="../../df/dc7/classtudat_1_1ephemerides_1_1_ephemeris.html">Ephemeris</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d9/d27/namespacetudat_1_1ephemerides.html#afe8079ec5ccd4ce19c054465b982a33c">createReferencePointEphemeris</a> (boost::shared_ptr&lt; <a class="el" href="../../df/dc7/classtudat_1_1ephemerides_1_1_ephemeris.html">Ephemeris</a> &gt; bodyEphemeris, boost::shared_ptr&lt; <a class="el" href="../../da/d34/classtudat_1_1ephemerides_1_1_rotational_ephemeris.html">RotationalEphemeris</a> &gt; bodyRotationModel, boost::function&lt; <a class="el" href="../../d0/da5/namespace_eigen.html#a03c917374d8dcb5bb158f2380f92847a">Eigen::Vector6d</a>(const double &amp;) &gt; referencePointRelativeStateFunction)</td></tr>
 <tr class="memdesc:afe8079ec5ccd4ce19c054465b982a33c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to create the state function of a reference point.  <a href="#afe8079ec5ccd4ce19c054465b982a33c">More...</a><br /></td></tr>
 <tr class="separator:afe8079ec5ccd4ce19c054465b982a33c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac93401e5b292513908d8d7173b00fa25"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d27/namespacetudat_1_1ephemerides.html#ac93401e5b292513908d8d7173b00fa25">from_json</a> (const nlohmann::json &amp;jsonObject, <a class="el" href="../../d9/d82/classtudat_1_1ephemerides_1_1_approximate_planet_positions_base.html#aa698885dcabac2815a6205d5502724d2">ApproximatePlanetPositionsBase::BodiesWithEphemerisData</a> &amp;bodyWithEphemerisData)</td></tr>
+<tr class="memdesc:ac93401e5b292513908d8d7173b00fa25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert <code>json</code> to <code><a class="el" href="../../d9/d82/classtudat_1_1ephemerides_1_1_approximate_planet_positions_base.html#aa698885dcabac2815a6205d5502724d2" title="Bodies with ephemeris data. ">ApproximatePlanetPositionsBase::BodiesWithEphemerisData</a></code>.  <a href="#ac93401e5b292513908d8d7173b00fa25">More...</a><br /></td></tr>
+<tr class="separator:ac93401e5b292513908d8d7173b00fa25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b600461899b416fbfcbacfe2591c593"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d27/namespacetudat_1_1ephemerides.html#a7b600461899b416fbfcbacfe2591c593">getBaseFrameName</a> ()</td></tr>
 <tr class="memdesc:a7b600461899b416fbfcbacfe2591c593"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to return base frame.  <a href="#a7b600461899b416fbfcbacfe2591c593">More...</a><br /></td></tr>
 <tr class="separator:a7b600461899b416fbfcbacfe2591c593"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -222,6 +222,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a8e9921de4386fa9b728fd260f3404c8f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d27/namespacetudat_1_1ephemerides.html#a8e9921de4386fa9b728fd260f3404c8f">isTabulatedEphemeris</a> (const boost::shared_ptr&lt; <a class="el" href="../../df/dc7/classtudat_1_1ephemerides_1_1_ephemeris.html">Ephemeris</a> &gt; ephemeris)</td></tr>
 <tr class="memdesc:a8e9921de4386fa9b728fd260f3404c8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to check whether an ephemeris is a (type of) tabulated ephemeris.  <a href="#a8e9921de4386fa9b728fd260f3404c8f">More...</a><br /></td></tr>
 <tr class="separator:a8e9921de4386fa9b728fd260f3404c8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69cc115df8279d83d121e8997233ae2a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d27/namespacetudat_1_1ephemerides.html#a69cc115df8279d83d121e8997233ae2a">to_json</a> (nlohmann::json &amp;jsonObject, const <a class="el" href="../../d9/d82/classtudat_1_1ephemerides_1_1_approximate_planet_positions_base.html#aa698885dcabac2815a6205d5502724d2">ApproximatePlanetPositionsBase::BodiesWithEphemerisData</a> &amp;bodyWithEphemerisData)</td></tr>
+<tr class="memdesc:a69cc115df8279d83d121e8997233ae2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert <code><a class="el" href="../../d9/d82/classtudat_1_1ephemerides_1_1_approximate_planet_positions_base.html#aa698885dcabac2815a6205d5502724d2" title="Bodies with ephemeris data. ">ApproximatePlanetPositionsBase::BodiesWithEphemerisData</a></code> to <code>json</code>.  <a href="#a69cc115df8279d83d121e8997233ae2a">More...</a><br /></td></tr>
+<tr class="separator:a69cc115df8279d83d121e8997233ae2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72e9f924bbeda020505c765d2107b7fb"><td class="memTemplParams" colspan="2">template&lt;typename StateScalarType &gt; </td></tr>
 <tr class="memitem:a72e9f924bbeda020505c765d2107b7fb"><td class="memTemplItemLeft" align="right" valign="top">Eigen::Matrix&lt; StateScalarType, 6, 1 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d9/d27/namespacetudat_1_1ephemerides.html#a72e9f924bbeda020505c765d2107b7fb">transformRelativeStateToFrame</a> (const boost::function&lt; Eigen::Matrix&lt; StateScalarType, 6, 1 &gt;() &gt; stateInBaseFrame, const boost::function&lt; Eigen::Matrix&lt; StateScalarType, 6, 1 &gt;() &gt; centralBodyStateInBaseFrame, const boost::function&lt; Eigen::Quaterniond() &gt; rotationToFrameFunction, const boost::function&lt; Eigen::Matrix3d() &gt; rotationMatrixToFrameDerivativeFunction)</td></tr>
 <tr class="memdesc:a72e9f924bbeda020505c765d2107b7fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transform a relative state (Cartesian position and velocity) from one frame to another.  <a href="#a72e9f924bbeda020505c765d2107b7fb">More...</a><br /></td></tr>
@@ -234,10 +237,10 @@ Functions</h2></td></tr>
 <tr class="memitem:ad920caed2bfc92524aa2c4c5b3c7a89c"><td class="memTemplItemLeft" align="right" valign="top">Eigen::Matrix&lt; StateScalarType, 6, 1 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d9/d27/namespacetudat_1_1ephemerides.html#ad920caed2bfc92524aa2c4c5b3c7a89c">transformStateToFrameFromRotations</a> (const Eigen::Matrix&lt; StateScalarType, 6, 1 &gt; &amp;stateInBaseFrame, const Eigen::Quaterniond &amp;rotationToFrame, const Eigen::Matrix3d &amp;rotationMatrixToFrameDerivative)</td></tr>
 <tr class="memdesc:ad920caed2bfc92524aa2c4c5b3c7a89c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transform a state (Cartesian position and velocity) from one frame to another.  <a href="#ad920caed2bfc92524aa2c4c5b3c7a89c">More...</a><br /></td></tr>
 <tr class="separator:ad920caed2bfc92524aa2c4c5b3c7a89c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a740b51f1927b771c9b6c372b98506eae"><td class="memTemplParams" colspan="2">template&lt;typename StateScalarType &gt; </td></tr>
-<tr class="memitem:a740b51f1927b771c9b6c372b98506eae"><td class="memTemplItemLeft" align="right" valign="top">Eigen::Matrix&lt; StateScalarType, 6, 1 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d9/d27/namespacetudat_1_1ephemerides.html#a740b51f1927b771c9b6c372b98506eae">transformStateToFrameFromRotationTimeFunctions</a> (const Eigen::Matrix&lt; StateScalarType, 6, 1 &gt; &amp;stateInBaseFrame, const double currentTime, const boost::function&lt; Eigen::Quaterniond(const double) &gt; rotationToFrameFunction, const boost::function&lt; Eigen::Matrix3d(const double) &gt; rotationMatrixToFrameDerivativeFunction)</td></tr>
-<tr class="memdesc:a740b51f1927b771c9b6c372b98506eae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transform a state (Cartesian position and velocity) from one frame to another.  <a href="#a740b51f1927b771c9b6c372b98506eae">More...</a><br /></td></tr>
-<tr class="separator:a740b51f1927b771c9b6c372b98506eae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d87bea5e3a0251bc43969a6b982aa93"><td class="memTemplParams" colspan="2">template&lt;typename StateScalarType , typename TimeType &gt; </td></tr>
+<tr class="memitem:a4d87bea5e3a0251bc43969a6b982aa93"><td class="memTemplItemLeft" align="right" valign="top">Eigen::Matrix&lt; StateScalarType, 6, 1 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d9/d27/namespacetudat_1_1ephemerides.html#a4d87bea5e3a0251bc43969a6b982aa93">transformStateToFrameFromRotationTimeFunctions</a> (const Eigen::Matrix&lt; StateScalarType, 6, 1 &gt; &amp;stateInBaseFrame, const double currentTime, const boost::function&lt; Eigen::Quaterniond(const TimeType) &gt; rotationToFrameFunction, const boost::function&lt; Eigen::Matrix3d(const TimeType) &gt; rotationMatrixToFrameDerivativeFunction)</td></tr>
+<tr class="memdesc:a4d87bea5e3a0251bc43969a6b982aa93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transform a state (Cartesian position and velocity) from one frame to another.  <a href="#a4d87bea5e3a0251bc43969a6b982aa93">More...</a><br /></td></tr>
+<tr class="separator:a4d87bea5e3a0251bc43969a6b982aa93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29a001a6b988130a1600b2990c9a54b1"><td class="memTemplParams" colspan="2">template&lt;typename StateScalarType , typename TimeType &gt; </td></tr>
 <tr class="memitem:a29a001a6b988130a1600b2990c9a54b1"><td class="memTemplItemLeft" align="right" valign="top">Eigen::Matrix&lt; StateScalarType, 6, 1 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d9/d27/namespacetudat_1_1ephemerides.html#a29a001a6b988130a1600b2990c9a54b1">transformStateToGlobalFrame</a> (const Eigen::Matrix&lt; StateScalarType, 6, 1 &gt; &amp;stateInLocalFrame, const TimeType currentTime, const boost::shared_ptr&lt; <a class="el" href="../../da/d34/classtudat_1_1ephemerides_1_1_rotational_ephemeris.html">RotationalEphemeris</a> &gt; rotationalEphemeris)</td></tr>
 <tr class="memdesc:a29a001a6b988130a1600b2990c9a54b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to transform a state from the target to base frame of a rotational ephemeris.  <a href="#a29a001a6b988130a1600b2990c9a54b1">More...</a><br /></td></tr>
@@ -246,6 +249,15 @@ Functions</h2></td></tr>
 <tr class="memitem:a230623db96a146adc685cdba2b9121bd"><td class="memTemplItemLeft" align="right" valign="top">Eigen::Matrix&lt; StateScalarType, 6, 1 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d9/d27/namespacetudat_1_1ephemerides.html#a230623db96a146adc685cdba2b9121bd">transformStateToTargetFrame</a> (const Eigen::Matrix&lt; StateScalarType, 6, 1 &gt; &amp;stateInGlobalFrame, const TimeType currentTime, const boost::shared_ptr&lt; <a class="el" href="../../da/d34/classtudat_1_1ephemerides_1_1_rotational_ephemeris.html">RotationalEphemeris</a> &gt; rotationalEphemeris)</td></tr>
 <tr class="memdesc:a230623db96a146adc685cdba2b9121bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to transform a state from the base to target frame of a rotational ephemeris.  <a href="#a230623db96a146adc685cdba2b9121bd">More...</a><br /></td></tr>
 <tr class="separator:a230623db96a146adc685cdba2b9121bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a283cd83368687c981ff904b9bc6770be"><td class="memItemLeft" align="right" valign="top">static std::map&lt; <a class="el" href="../../d9/d82/classtudat_1_1ephemerides_1_1_approximate_planet_positions_base.html#aa698885dcabac2815a6205d5502724d2">ApproximatePlanetPositionsBase::BodiesWithEphemerisData</a>, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d27/namespacetudat_1_1ephemerides.html#a283cd83368687c981ff904b9bc6770be">bodiesWithEphemerisData</a></td></tr>
+<tr class="memdesc:a283cd83368687c981ff904b9bc6770be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map of <code><a class="el" href="../../d9/d82/classtudat_1_1ephemerides_1_1_approximate_planet_positions_base.html#aa698885dcabac2815a6205d5502724d2" title="Bodies with ephemeris data. ">ApproximatePlanetPositionsBase::BodiesWithEphemerisData</a></code>s string representations.  <a href="#a283cd83368687c981ff904b9bc6770be">More...</a><br /></td></tr>
+<tr class="separator:a283cd83368687c981ff904b9bc6770be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6213784954859611d6515df4c65ab48e"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; <a class="el" href="../../d9/d82/classtudat_1_1ephemerides_1_1_approximate_planet_positions_base.html#aa698885dcabac2815a6205d5502724d2">ApproximatePlanetPositionsBase::BodiesWithEphemerisData</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d27/namespacetudat_1_1ephemerides.html#a6213784954859611d6515df4c65ab48e">unsupportedBodiesWithEphemerisData</a> = { }</td></tr>
+<tr class="memdesc:a6213784954859611d6515df4c65ab48e"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code><a class="el" href="../../d9/d82/classtudat_1_1ephemerides_1_1_approximate_planet_positions_base.html#aa698885dcabac2815a6205d5502724d2" title="Bodies with ephemeris data. ">ApproximatePlanetPositionsBase::BodiesWithEphemerisData</a></code> not supported by <code><a class="el" href="../../d8/d24/namespacetudat_1_1json__interface.html">json_interface</a></code>.  <a href="#a6213784954859611d6515df4c65ab48e">More...</a><br /></td></tr>
+<tr class="separator:a6213784954859611d6515df4c65ab48e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a class="anchor" id="aedfd7390f312dab31195dbb951484d05"></a>
@@ -272,7 +284,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/df2/approximate_planet_positions_base_8h_source.html#l00166">166</a> of file <a class="el" href="../../da/df2/approximate_planet_positions_base_8h_source.html">approximatePlanetPositionsBase.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/df2/approximate_planet_positions_base_8h_source.html#l00165">165</a> of file <a class="el" href="../../da/df2/approximate_planet_positions_base_8h_source.html">approximatePlanetPositionsBase.h</a>.</p>
 
 </div>
 </div>
@@ -328,7 +340,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d0/da9/ephemeris_8h_source.html#l00149">149</a> of file <a class="el" href="../../d0/da9/ephemeris_8h_source.html">ephemeris.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/dca/_astrodynamics_2_ephemerides_2ephemeris_8h_source.html#l00149">149</a> of file <a class="el" href="../../d0/dca/_astrodynamics_2_ephemerides_2ephemeris_8h_source.html">ephemeris.h</a>.</p>
 
 </div>
 </div>
@@ -381,7 +393,7 @@ template&lt;typename OldStateScalarType , typename NewStateScalarType , typename
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>State from originalStateFunction at currentTime, cast to NewStateScalarType. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d1/df0/composite_ephemeris_8h_source.html#l00336">336</a> of file <a class="el" href="../../d1/df0/composite_ephemeris_8h_source.html">compositeEphemeris.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d1/df0/composite_ephemeris_8h_source.html#l00335">335</a> of file <a class="el" href="../../d1/df0/composite_ephemeris_8h_source.html">compositeEphemeris.h</a>.</p>
 
 </div>
 </div>
@@ -426,9 +438,7 @@ template&lt;typename TimeType  = double, typename StateScalarType  = double&gt; 
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="../../df/dc7/classtudat_1_1ephemerides_1_1_ephemeris.html" title="Ephemeris base class. ">Ephemeris</a> describbing the state of the local reference point in the global frame (expressed global frame's coordinates, i.e. same as bodyEphemeris). </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d1/df0/composite_ephemeris_8h_source.html#l00356">356</a> of file <a class="el" href="../../d1/df0/composite_ephemeris_8h_source.html">compositeEphemeris.h</a>.</p>
-
-<p>References <a class="el" href="../../da/d34/classtudat_1_1ephemerides_1_1_rotational_ephemeris.html#ae3d4f6abdc820c309328747397b25afc">tudat::ephemerides::RotationalEphemeris::getDerivativeOfRotationToBaseFrame()</a>, and <a class="el" href="../../da/d34/classtudat_1_1ephemerides_1_1_rotational_ephemeris.html#a48c05e29f3a225433eb02feb09d1b77a">tudat::ephemerides::RotationalEphemeris::getRotationToBaseFrame()</a>.</p>
+<p>Definition at line <a class="el" href="../../d1/df0/composite_ephemeris_8h_source.html#l00355">355</a> of file <a class="el" href="../../d1/df0/composite_ephemeris_8h_source.html">compositeEphemeris.h</a>.</p>
 
 </div>
 </div>
@@ -470,7 +480,7 @@ template&lt;typename TimeType  = double, typename StateScalarType  = double&gt; 
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d2/dc4/ephemeris_8cpp_source.html#l00046">46</a> of file <a class="el" href="../../d2/dc4/ephemeris_8cpp_source.html">ephemeris.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d18/_astrodynamics_2_ephemerides_2ephemeris_8cpp_source.html#l00046">46</a> of file <a class="el" href="../../d3/d18/_astrodynamics_2_ephemerides_2ephemeris_8cpp_source.html">ephemeris.cpp</a>.</p>
 
 <p>Referenced by <a class="el" href="../../d7/d6d/create_thrust_model_guidance_8cpp_source.html#l00020">tudat::simulation_setup::createThrustGuidanceModel()</a>.</p>
 
@@ -519,7 +529,7 @@ template&lt;typename TimeType  = double, typename StateScalarType  = double&gt; 
 
 <p>Definition at line <a class="el" href="../../de/dc8/frame_manager_8cpp_source.html#l00024">24</a> of file <a class="el" href="../../de/dc8/frame_manager_8cpp_source.html">frameManager.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d7/d35/create_numerical_simulator_8cpp_source.html#l00022">tudat::simulation_setup::createAccelerationModelsMap()</a>, <a class="el" href="../../d2/d02/create_acceleration_models_8cpp_source.html#l00162">tudat::simulation_setup::createGravitationalAccelerationModel()</a>, <a class="el" href="../../d2/d02/create_acceleration_models_8cpp_source.html#l00951">tudat::simulation_setup::createThrustAcceleratioModel()</a>, and <a class="el" href="../../db/d91/propagation_output_8h_source.html#l00600">tudat::propagators::getVectorDependentVariableFunction()</a>.</p>
+<p>Referenced by <a class="el" href="../../d2/d02/create_acceleration_models_8cpp_source.html#l01351">tudat::simulation_setup::createAccelerationModelsMap()</a>, <a class="el" href="../../d2/d02/create_acceleration_models_8cpp_source.html#l00160">tudat::simulation_setup::createGravitationalAccelerationModel()</a>, <a class="el" href="../../d2/d02/create_acceleration_models_8cpp_source.html#l00949">tudat::simulation_setup::createThrustAcceleratioModel()</a>, and <a class="el" href="../../db/d91/propagation_output_8h_source.html#l00192">tudat::propagators::getVectorDependentVariableFunction()</a>.</p>
 
 </div>
 </div>
@@ -566,7 +576,7 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 
 <p>Definition at line <a class="el" href="../../df/d00/frame_manager_8h_source.html#l00253">253</a> of file <a class="el" href="../../df/d00/frame_manager_8h_source.html">frameManager.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d1/dc4/set_numerically_integrated_states_8h_source.html#l00674">tudat::propagators::TranslationalStateIntegratedStateProcessor&lt; TimeType, StateScalarType &gt;::TranslationalStateIntegratedStateProcessor()</a>.</p>
+<p>Referenced by <a class="el" href="../../d1/dc4/set_numerically_integrated_states_8h_source.html#l00707">tudat::propagators::TranslationalStateIntegratedStateProcessor&lt; TimeType, StateScalarType &gt;::TranslationalStateIntegratedStateProcessor()</a>.</p>
 
 </div>
 </div>
@@ -604,7 +614,7 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 
 <p>Definition at line <a class="el" href="../../da/d6c/rotational_ephemeris_8cpp_source.html#l00020">20</a> of file <a class="el" href="../../da/d6c/rotational_ephemeris_8cpp_source.html">rotationalEphemeris.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d3/d61/spice_rotational_ephemeris_8cpp_source.html#l00047">tudat::ephemerides::SpiceRotationalEphemeris::getFullRotationalQuantitiesToTargetFrame()</a>, <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html#l00271">tudat::ephemerides::RotationalEphemeris::getFullRotationalQuantitiesToTargetFrame()</a>, and <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html#l00237">tudat::ephemerides::RotationalEphemeris::getRotationalVelocityVectorInBaseFrame()</a>.</p>
+<p>Referenced by <a class="el" href="../../d3/d61/spice_rotational_ephemeris_8cpp_source.html#l00044">tudat::ephemerides::SpiceRotationalEphemeris::getFullRotationalQuantitiesToTargetFrame()</a>, <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html#l00372">tudat::ephemerides::RotationalEphemeris::getFullRotationalQuantitiesToTargetFrame()</a>, <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html#l00395">tudat::ephemerides::RotationalEphemeris::getFullRotationalQuantitiesToTargetFrameFromExtendedTime()</a>, and <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html#l00338">tudat::ephemerides::RotationalEphemeris::getRotationalVelocityVectorInBaseFrame()</a>.</p>
 
 </div>
 </div>
@@ -644,7 +654,7 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 
 <p>References <a class="el" href="../../d9/d59/linear_algebra_8cpp_source.html#l00040">tudat::linear_algebra::getCrossProductMatrix()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d0/d2c/tabulated_rotational_ephemeris_8h_source.html#l00152">tudat::ephemerides::TabulatedRotationalEphemeris&lt; StateScalarType, TimeType &gt;::getDerivativeOfRotationToTargetFrame()</a>.</p>
+<p>Referenced by <a class="el" href="../../d0/d2c/tabulated_rotational_ephemeris_8h_source.html#l00151">tudat::ephemerides::TabulatedRotationalEphemeris&lt; StateScalarType, TimeType &gt;::getDerivativeOfRotationToTargetFrame()</a>.</p>
 
 </div>
 </div>
@@ -689,9 +699,9 @@ template&lt;typename StateScalarType &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>State (Cartesian position and velocity) in target frame. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html#l00071">71</a> of file <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html">rotationalEphemeris.h</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html#l00072">72</a> of file <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html">rotationalEphemeris.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html#l00148">transformStateToFrameFromRotationTimeFunctions()</a>.</p>
+<p>Referenced by <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html#l00149">transformStateToFrameFromRotationTimeFunctions()</a>.</p>
 
 </div>
 </div>
@@ -736,7 +746,7 @@ template&lt;typename StateScalarType &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>State (Cartesian position and velocity) in target frame. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html#l00098">98</a> of file <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html">rotationalEphemeris.h</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html#l00099">99</a> of file <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html">rotationalEphemeris.h</a>.</p>
 
 </div>
 </div>
@@ -788,15 +798,15 @@ template&lt;typename StateScalarType &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>State (Cartesian position and velocity) in target frame. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html#l00122">122</a> of file <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html">rotationalEphemeris.h</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html#l00123">123</a> of file <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html">rotationalEphemeris.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a740b51f1927b771c9b6c372b98506eae"></a>
+<a class="anchor" id="a4d87bea5e3a0251bc43969a6b982aa93"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename StateScalarType &gt; </div>
+template&lt;typename StateScalarType , typename TimeType &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">Eigen::Matrix&lt; StateScalarType, 6, 1 &gt; tudat::ephemerides::transformStateToFrameFromRotationTimeFunctions </td>
@@ -813,13 +823,13 @@ template&lt;typename StateScalarType &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const boost::function&lt; Eigen::Quaterniond(const double) &gt;&#160;</td>
+          <td class="paramtype">const boost::function&lt; Eigen::Quaterniond(const TimeType) &gt;&#160;</td>
           <td class="paramname"><em>rotationToFrameFunction</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const boost::function&lt; Eigen::Matrix3d(const double) &gt;&#160;</td>
+          <td class="paramtype">const boost::function&lt; Eigen::Matrix3d(const TimeType) &gt;&#160;</td>
           <td class="paramname"><em>rotationMatrixToFrameDerivativeFunction</em>&#160;</td>
         </tr>
         <tr>
@@ -840,9 +850,9 @@ template&lt;typename StateScalarType &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>State (Cartesian position and velocity) in target frame. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html#l00148">148</a> of file <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html">rotationalEphemeris.h</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html#l00149">149</a> of file <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html">rotationalEphemeris.h</a>.</p>
 
-<p>References <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html#l00071">transformStateToFrameFromRotations()</a>.</p>
+<p>References <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html#l00072">transformStateToFrameFromRotations()</a>.</p>
 
 </div>
 </div>
@@ -887,9 +897,9 @@ template&lt;typename StateScalarType , typename TimeType &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>stateInLocalFrame State in inertial frame (base frame of rotational ephemeris) </dd></dl>
 
-<p>Definition at line <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html#l00322">322</a> of file <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html">rotationalEphemeris.h</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html#l00464">464</a> of file <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html">rotationalEphemeris.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../de/d4d/create_light_time_calculator_8h_source.html#l00036">tudat::observation_models::createReferencePointEphemeris()</a>.</p>
+<p>Referenced by <a class="el" href="../../de/d4d/create_light_time_calculator_8h_source.html#l00036">tudat::observation_models::createReferencePointEphemeris()</a>, and <a class="el" href="../../db/d3b/state_8h_source.html#l00075">tudat::json_interface::getCartesianState()</a>.</p>
 
 </div>
 </div>
@@ -934,7 +944,7 @@ template&lt;typename StateScalarType , typename TimeType &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>State in body-fixed frame (target frame of rotational ephemeris) </dd></dl>
 
-<p>Definition at line <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html#l00342">342</a> of file <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html">rotationalEphemeris.h</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html#l00484">484</a> of file <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html">rotationalEphemeris.h</a>.</p>
 
 </div>
 </div>
@@ -961,7 +971,7 @@ template&lt;typename StateScalarType , typename TimeType &gt; </div>
 
 <p>Definition at line <a class="el" href="../../d6/df7/tabulated_ephemeris_8cpp_source.html#l00155">155</a> of file <a class="el" href="../../d6/df7/tabulated_ephemeris_8cpp_source.html">tabulatedEphemeris.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d3/d06/create_ephemeris_8cpp_source.html#l00289">tudat::simulation_setup::getSafeInterpolationInterval()</a>, <a class="el" href="../../d6/df7/tabulated_ephemeris_8cpp_source.html#l00169">getTabulatedEphemerisSafeInterval()</a>, and <a class="el" href="../../d1/dc4/set_numerically_integrated_states_8h_source.html#l00070">tudat::propagators::resetIntegratedEphemerisOfBody()</a>.</p>
+<p>Referenced by <a class="el" href="../../d3/d06/create_ephemeris_8cpp_source.html#l00287">tudat::simulation_setup::getSafeInterpolationInterval()</a>, <a class="el" href="../../d6/df7/tabulated_ephemeris_8cpp_source.html#l00169">getTabulatedEphemerisSafeInterval()</a>, and <a class="el" href="../../d1/dc4/set_numerically_integrated_states_8h_source.html#l00070">tudat::propagators::resetIntegratedEphemerisOfBody()</a>.</p>
 
 </div>
 </div>
@@ -988,9 +998,9 @@ template&lt;typename StateScalarType , typename TimeType &gt; </div>
 
 <p>Definition at line <a class="el" href="../../d6/df7/tabulated_ephemeris_8cpp_source.html#l00169">169</a> of file <a class="el" href="../../d6/df7/tabulated_ephemeris_8cpp_source.html">tabulatedEphemeris.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d3/d06/create_ephemeris_8cpp_source.html#l00289">tudat::simulation_setup::getSafeInterpolationInterval()</a>, <a class="el" href="../../d6/df7/tabulated_ephemeris_8cpp_source.html#l00155">isTabulatedEphemeris()</a>, and <a class="el" href="../../d6/d70/mathematical_constants_8h_source.html#l00076">TUDAT_NAN</a>.</p>
+<p>References <a class="el" href="../../d3/d06/create_ephemeris_8cpp_source.html#l00287">tudat::simulation_setup::getSafeInterpolationInterval()</a>, <a class="el" href="../../d6/df7/tabulated_ephemeris_8cpp_source.html#l00155">isTabulatedEphemeris()</a>, and <a class="el" href="../../d6/d70/mathematical_constants_8h_source.html#l00076">TUDAT_NAN</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d8/d02/determine_post_fit_parameter_influence_8h_source.html#l00050">tudat::simulation_setup::determinePostfitParameterInfluence()</a>, and <a class="el" href="../../d3/d06/create_ephemeris_8cpp_source.html#l00289">tudat::simulation_setup::getSafeInterpolationInterval()</a>.</p>
+<p>Referenced by <a class="el" href="../../d8/d02/determine_post_fit_parameter_influence_8h_source.html#l00050">tudat::simulation_setup::determinePostfitParameterInfluence()</a>, and <a class="el" href="../../d3/d06/create_ephemeris_8cpp_source.html#l00287">tudat::simulation_setup::getSafeInterpolationInterval()</a>.</p>
 
 </div>
 </div>
@@ -1032,10 +1042,144 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 
 </div>
 </div>
+<a class="anchor" id="a69cc115df8279d83d121e8997233ae2a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tudat::ephemerides::to_json </td>
+          <td>(</td>
+          <td class="paramtype">nlohmann::json &amp;&#160;</td>
+          <td class="paramname"><em>jsonObject</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d9/d82/classtudat_1_1ephemerides_1_1_approximate_planet_positions_base.html#aa698885dcabac2815a6205d5502724d2">ApproximatePlanetPositionsBase::BodiesWithEphemerisData</a> &amp;&#160;</td>
+          <td class="paramname"><em>bodyWithEphemerisData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d1/df7/_json_interface_2_environment_2ephemeris_8h_source.html#l00043">43</a> of file <a class="el" href="../../d1/df7/_json_interface_2_environment_2ephemeris_8h_source.html">ephemeris.h</a>.</p>
+
+<p>References <a class="el" href="../../d1/df7/_json_interface_2_environment_2ephemeris_8h_source.html#l00026">bodiesWithEphemerisData</a>, and <a class="el" href="../../d6/d36/error_handling_8h_source.html#l00420">tudat::json_interface::stringFromEnum()</a>.</p>
+
+<p>Referenced by <a class="el" href="../../d1/df7/_json_interface_2_environment_2ephemeris_8h_source.html#l00087">tudat::simulation_setup::from_json()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac93401e5b292513908d8d7173b00fa25"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tudat::ephemerides::from_json </td>
+          <td>(</td>
+          <td class="paramtype">const nlohmann::json &amp;&#160;</td>
+          <td class="paramname"><em>jsonObject</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d9/d82/classtudat_1_1ephemerides_1_1_approximate_planet_positions_base.html#aa698885dcabac2815a6205d5502724d2">ApproximatePlanetPositionsBase::BodiesWithEphemerisData</a> &amp;&#160;</td>
+          <td class="paramname"><em>bodyWithEphemerisData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d1/df7/_json_interface_2_environment_2ephemeris_8h_source.html#l00050">50</a> of file <a class="el" href="../../d1/df7/_json_interface_2_environment_2ephemeris_8h_source.html">ephemeris.h</a>.</p>
+
+<p>References <a class="el" href="../../d1/df7/_json_interface_2_environment_2ephemeris_8h_source.html#l00026">bodiesWithEphemerisData</a>, and <a class="el" href="../../d6/d36/error_handling_8h_source.html#l00392">tudat::json_interface::enumFromString()</a>.</p>
+
+<p>Referenced by <a class="el" href="../../d1/df7/_json_interface_2_environment_2ephemeris_8h_source.html#l00087">tudat::simulation_setup::from_json()</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a class="anchor" id="a283cd83368687c981ff904b9bc6770be"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt; <a class="el" href="../../d9/d82/classtudat_1_1ephemerides_1_1_approximate_planet_positions_base.html#aa698885dcabac2815a6205d5502724d2">ApproximatePlanetPositionsBase::BodiesWithEphemerisData</a>, std::string &gt; tudat::ephemerides::bodiesWithEphemerisData</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div><div class="line">{</div><div class="line">    { <a class="code" href="../../d0/da4/namespacetudat_1_1gravitation.html#a27d055b7d3c62a19b1e8e7de2073fe75a1e9716648f6726fa87d6403c64b41d2d">ApproximatePlanetPositionsBase::mercury</a>, <span class="stringliteral">&quot;mercury&quot;</span> },</div><div class="line">    { <a class="code" href="../../d0/da4/namespacetudat_1_1gravitation.html#a27d055b7d3c62a19b1e8e7de2073fe75ac09f50d951bfd69a4c51d0d93fcf853e">ApproximatePlanetPositionsBase::venus</a>, <span class="stringliteral">&quot;venus&quot;</span> },</div><div class="line">    { ApproximatePlanetPositionsBase::earthMoonBarycenter, <span class="stringliteral">&quot;earthMoonBarycenter&quot;</span> },</div><div class="line">    { <a class="code" href="../../d0/da4/namespacetudat_1_1gravitation.html#a27d055b7d3c62a19b1e8e7de2073fe75a6382e10e392ec9d49a35774bfaf36f47">ApproximatePlanetPositionsBase::mars</a>, <span class="stringliteral">&quot;mars&quot;</span> },</div><div class="line">    { <a class="code" href="../../d0/da4/namespacetudat_1_1gravitation.html#a27d055b7d3c62a19b1e8e7de2073fe75a5f294e787c6e0fef591b1fa5fea97bb3">ApproximatePlanetPositionsBase::jupiter</a>, <span class="stringliteral">&quot;jupiter&quot;</span> },</div><div class="line">    { <a class="code" href="../../d0/da4/namespacetudat_1_1gravitation.html#a27d055b7d3c62a19b1e8e7de2073fe75a36edfedabe5c8ac36ad3eb3193797aa5">ApproximatePlanetPositionsBase::saturn</a>, <span class="stringliteral">&quot;saturn&quot;</span> },</div><div class="line">    { <a class="code" href="../../d0/da4/namespacetudat_1_1gravitation.html#a27d055b7d3c62a19b1e8e7de2073fe75a4d1a34912367bee001b808153c0bca57">ApproximatePlanetPositionsBase::uranus</a>, <span class="stringliteral">&quot;uranus&quot;</span> },</div><div class="line">    { <a class="code" href="../../d0/da4/namespacetudat_1_1gravitation.html#a27d055b7d3c62a19b1e8e7de2073fe75a933a581167f31af956761eb7e7c9feb1">ApproximatePlanetPositionsBase::neptune</a>, <span class="stringliteral">&quot;neptune&quot;</span> },</div><div class="line">    { ApproximatePlanetPositionsBase::pluto, <span class="stringliteral">&quot;pluto&quot;</span> }</div><div class="line">}</div><div class="ttc" id="namespacetudat_1_1gravitation_html_a27d055b7d3c62a19b1e8e7de2073fe75a933a581167f31af956761eb7e7c9feb1"><div class="ttname"><a href="../../d0/da4/namespacetudat_1_1gravitation.html#a27d055b7d3c62a19b1e8e7de2073fe75a933a581167f31af956761eb7e7c9feb1">tudat::gravitation::neptune</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/d31/gravity_field_model_8h_source.html#l00108">gravityFieldModel.h:108</a></div></div>
+<div class="ttc" id="namespacetudat_1_1gravitation_html_a27d055b7d3c62a19b1e8e7de2073fe75a5f294e787c6e0fef591b1fa5fea97bb3"><div class="ttname"><a href="../../d0/da4/namespacetudat_1_1gravitation.html#a27d055b7d3c62a19b1e8e7de2073fe75a5f294e787c6e0fef591b1fa5fea97bb3">tudat::gravitation::jupiter</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/d31/gravity_field_model_8h_source.html#l00108">gravityFieldModel.h:108</a></div></div>
+<div class="ttc" id="namespacetudat_1_1gravitation_html_a27d055b7d3c62a19b1e8e7de2073fe75ac09f50d951bfd69a4c51d0d93fcf853e"><div class="ttname"><a href="../../d0/da4/namespacetudat_1_1gravitation.html#a27d055b7d3c62a19b1e8e7de2073fe75ac09f50d951bfd69a4c51d0d93fcf853e">tudat::gravitation::venus</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/d31/gravity_field_model_8h_source.html#l00108">gravityFieldModel.h:108</a></div></div>
+<div class="ttc" id="namespacetudat_1_1gravitation_html_a27d055b7d3c62a19b1e8e7de2073fe75a36edfedabe5c8ac36ad3eb3193797aa5"><div class="ttname"><a href="../../d0/da4/namespacetudat_1_1gravitation.html#a27d055b7d3c62a19b1e8e7de2073fe75a36edfedabe5c8ac36ad3eb3193797aa5">tudat::gravitation::saturn</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/d31/gravity_field_model_8h_source.html#l00108">gravityFieldModel.h:108</a></div></div>
+<div class="ttc" id="namespacetudat_1_1gravitation_html_a27d055b7d3c62a19b1e8e7de2073fe75a6382e10e392ec9d49a35774bfaf36f47"><div class="ttname"><a href="../../d0/da4/namespacetudat_1_1gravitation.html#a27d055b7d3c62a19b1e8e7de2073fe75a6382e10e392ec9d49a35774bfaf36f47">tudat::gravitation::mars</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/d31/gravity_field_model_8h_source.html#l00108">gravityFieldModel.h:108</a></div></div>
+<div class="ttc" id="namespacetudat_1_1gravitation_html_a27d055b7d3c62a19b1e8e7de2073fe75a4d1a34912367bee001b808153c0bca57"><div class="ttname"><a href="../../d0/da4/namespacetudat_1_1gravitation.html#a27d055b7d3c62a19b1e8e7de2073fe75a4d1a34912367bee001b808153c0bca57">tudat::gravitation::uranus</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/d31/gravity_field_model_8h_source.html#l00108">gravityFieldModel.h:108</a></div></div>
+<div class="ttc" id="namespacetudat_1_1gravitation_html_a27d055b7d3c62a19b1e8e7de2073fe75a1e9716648f6726fa87d6403c64b41d2d"><div class="ttname"><a href="../../d0/da4/namespacetudat_1_1gravitation.html#a27d055b7d3c62a19b1e8e7de2073fe75a1e9716648f6726fa87d6403c64b41d2d">tudat::gravitation::mercury</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/d31/gravity_field_model_8h_source.html#l00108">gravityFieldModel.h:108</a></div></div>
+</div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d1/df7/_json_interface_2_environment_2ephemeris_8h_source.html#l00026">26</a> of file <a class="el" href="../../d1/df7/_json_interface_2_environment_2ephemeris_8h_source.html">ephemeris.h</a>.</p>
+
+<p>Referenced by <a class="el" href="../../d1/df7/_json_interface_2_environment_2ephemeris_8h_source.html#l00050">from_json()</a>, and <a class="el" href="../../d1/df7/_json_interface_2_environment_2ephemeris_8h_source.html#l00043">to_json()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6213784954859611d6515df4c65ab48e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="../../d9/d82/classtudat_1_1ephemerides_1_1_approximate_planet_positions_base.html#aa698885dcabac2815a6205d5502724d2">ApproximatePlanetPositionsBase::BodiesWithEphemerisData</a> &gt; tudat::ephemerides::unsupportedBodiesWithEphemerisData = { }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d1/df7/_json_interface_2_environment_2ephemeris_8h_source.html#l00040">40</a> of file <a class="el" href="../../d1/df7/_json_interface_2_environment_2ephemeris_8h_source.html">ephemeris.h</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 27 2017 09:32:59 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 7 2017 11:20:31 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

@@ -126,10 +126,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a75c56b78e1603b14387991fdfffac1ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pure virtual function to compute the light-time correction.  <a href="#a75c56b78e1603b14387991fdfffac1ce">More...</a><br /></td></tr>
 <tr class="separator:a75c56b78e1603b14387991fdfffac1ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada107956af1cb8c94e40efc6fdcba5b0"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d20/classtudat_1_1observation__models_1_1_light_time_correction.html#ada107956af1cb8c94e40efc6fdcba5b0">calculateLightTimeCorrectionDerivativeWrtLinkEndTime</a> (const <a class="el" href="../../d0/da5/namespace_eigen.html#a03c917374d8dcb5bb158f2380f92847a">Eigen::Vector6d</a> &amp;transmitterState, const <a class="el" href="../../d0/da5/namespace_eigen.html#a03c917374d8dcb5bb158f2380f92847a">Eigen::Vector6d</a> &amp;receiverState, const double transmissionTime, const double receptionTime, const <a class="el" href="../../d2/df9/namespacetudat_1_1observation__models.html#a48c0d529a455bf73ae57991768625e6e">LinkEndType</a> fixedLinkEnd, const <a class="el" href="../../d2/df9/namespacetudat_1_1observation__models.html#a48c0d529a455bf73ae57991768625e6e">LinkEndType</a> linkEndAtWhichPartialIsEvaluated)</td></tr>
+<tr class="memdesc:ada107956af1cb8c94e40efc6fdcba5b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to compute the full derivative of the light-time correction w.r.t. observation time.  <a href="#ada107956af1cb8c94e40efc6fdcba5b0">More...</a><br /></td></tr>
 <tr class="separator:ada107956af1cb8c94e40efc6fdcba5b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1fa82259d8e53cc7884d58b0ef7e9232"><td class="memItemLeft" align="right" valign="top">virtual Eigen::Matrix&lt; double, 3, 1 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d20/classtudat_1_1observation__models_1_1_light_time_correction.html#a1fa82259d8e53cc7884d58b0ef7e9232">calculateLightTimeCorrectionPartialDerivativeWrtLinkEndPosition</a> (const <a class="el" href="../../d0/da5/namespace_eigen.html#a03c917374d8dcb5bb158f2380f92847a">Eigen::Vector6d</a> &amp;transmitterState, const <a class="el" href="../../d0/da5/namespace_eigen.html#a03c917374d8dcb5bb158f2380f92847a">Eigen::Vector6d</a> &amp;receiverState, const double transmissionTime, const double receptionTime, const <a class="el" href="../../d2/df9/namespacetudat_1_1observation__models.html#a48c0d529a455bf73ae57991768625e6e">LinkEndType</a> linkEndAtWhichPartialIsEvaluated)=0</td></tr>
+<tr class="memdesc:a1fa82259d8e53cc7884d58b0ef7e9232"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pure virtual function to compute the partial derivative of the light-time correction w.r.t. link end position.  <a href="#a1fa82259d8e53cc7884d58b0ef7e9232">More...</a><br /></td></tr>
 <tr class="separator:a1fa82259d8e53cc7884d58b0ef7e9232"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15ab47460c4a06e5d56ec48241cf6d1a"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d20/classtudat_1_1observation__models_1_1_light_time_correction.html#a15ab47460c4a06e5d56ec48241cf6d1a">calculateLightTimeCorrectionPartialDerivativeWrtLinkEndTime</a> (const <a class="el" href="../../d0/da5/namespace_eigen.html#a03c917374d8dcb5bb158f2380f92847a">Eigen::Vector6d</a> &amp;transmitterState, const <a class="el" href="../../d0/da5/namespace_eigen.html#a03c917374d8dcb5bb158f2380f92847a">Eigen::Vector6d</a> &amp;receiverState, const double transmissionTime, const double receptionTime, const <a class="el" href="../../d2/df9/namespacetudat_1_1observation__models.html#a48c0d529a455bf73ae57991768625e6e">LinkEndType</a> fixedLinkEnd, const <a class="el" href="../../d2/df9/namespacetudat_1_1observation__models.html#a48c0d529a455bf73ae57991768625e6e">LinkEndType</a> linkEndAtWhichPartialIsEvaluated)=0</td></tr>
+<tr class="memdesc:a15ab47460c4a06e5d56ec48241cf6d1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pure virtual function to compute the partial derivative of the light-time correction w.r.t. observation time.  <a href="#a15ab47460c4a06e5d56ec48241cf6d1a">More...</a><br /></td></tr>
 <tr class="separator:a15ab47460c4a06e5d56ec48241cf6d1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a737da4f572539d1fa8e80dfbaf2b2074"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/df9/namespacetudat_1_1observation__models.html#aabbb594fc72baa01e93bac9d75fbdf18">LightTimeCorrectionType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d20/classtudat_1_1observation__models_1_1_light_time_correction.html#a737da4f572539d1fa8e80dfbaf2b2074">getLightTimeCorrectionType</a> ()</td></tr>
 <tr class="memdesc:a737da4f572539d1fa8e80dfbaf2b2074"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to retrieve the type of light-time correction represented by instance of class.  <a href="#a737da4f572539d1fa8e80dfbaf2b2074">More...</a><br /></td></tr>
@@ -321,10 +324,22 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Pure virtual function to compute the partial derivative of the light-time correction w.r.t. observation time. Function is to be implemented in derived class for specific correction model. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">transmitterState</td><td>State of transmitted at transmission time </td></tr>
+    <tr><td class="paramname">receiverState</td><td>State of receiver at reception time </td></tr>
+    <tr><td class="paramname">transmissionTime</td><td><a class="el" href="../../d8/df9/classtudat_1_1_time.html" title="Class for defining time with a resolution that is sub-fs for very long periods of time...">Time</a> of signal transmission </td></tr>
+    <tr><td class="paramname">receptionTime</td><td><a class="el" href="../../d8/df9/classtudat_1_1_time.html" title="Class for defining time with a resolution that is sub-fs for very long periods of time...">Time</a> of singal reception </td></tr>
+    <tr><td class="paramname">fixedLinkEnd</td><td>Reference link end for observation </td></tr>
+    <tr><td class="paramname">linkEndAtWhichPartialIsEvaluated</td><td>Link end at which the time partial is to be taken </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Light-time correction w.r.t. observation time </dd></dl>
 
 <p>Implemented in <a class="el" href="../../d2/d19/classtudat_1_1observation__models_1_1_first_order_light_time_correction_calculator.html#a75d50e79d24b759be649b8d35811e556">tudat::observation_models::FirstOrderLightTimeCorrectionCalculator</a>, and <a class="el" href="../../d2/dd6/classtudat_1_1observation__models_1_1_light_time_correction_function_wrapper.html#abdc0f601912504a6a0f0d4ad273722d9">tudat::observation_models::LightTimeCorrectionFunctionWrapper</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d3/d6e/light_time_correction_8h_source.html#l00084">calculateLightTimeCorrectionDerivativeWrtLinkEndTime()</a>, and <a class="el" href="../../d3/d6e/light_time_correction_8h_source.html#l00049">~LightTimeCorrection()</a>.</p>
+<p>Referenced by <a class="el" href="../../d3/d6e/light_time_correction_8h_source.html#l00120">calculateLightTimeCorrectionDerivativeWrtLinkEndTime()</a>, and <a class="el" href="../../d3/d6e/light_time_correction_8h_source.html#l00049">~LightTimeCorrection()</a>.</p>
 
 </div>
 </div>
@@ -377,10 +392,21 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Pure virtual function to compute the partial derivative of the light-time correction w.r.t. link end position Function is to be implemented in derived class for specific correction model. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">transmitterState</td><td>State of transmitted at transmission time </td></tr>
+    <tr><td class="paramname">receiverState</td><td>State of receiver at reception time </td></tr>
+    <tr><td class="paramname">transmissionTime</td><td><a class="el" href="../../d8/df9/classtudat_1_1_time.html" title="Class for defining time with a resolution that is sub-fs for very long periods of time...">Time</a> of signal transmission </td></tr>
+    <tr><td class="paramname">receptionTime</td><td><a class="el" href="../../d8/df9/classtudat_1_1_time.html" title="Class for defining time with a resolution that is sub-fs for very long periods of time...">Time</a> of singal reception </td></tr>
+    <tr><td class="paramname">linkEndAtWhichPartialIsEvaluated</td><td>Link end at which the position partial is to be taken </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Light-time correction w.r.t. link end position </dd></dl>
 
 <p>Implemented in <a class="el" href="../../d2/d19/classtudat_1_1observation__models_1_1_first_order_light_time_correction_calculator.html#aa262d73fdc27b860ad742953eae36d7d">tudat::observation_models::FirstOrderLightTimeCorrectionCalculator</a>, and <a class="el" href="../../d2/dd6/classtudat_1_1observation__models_1_1_light_time_correction_function_wrapper.html#a6b9e7ab36530f5954344a065bdfe1fe7">tudat::observation_models::LightTimeCorrectionFunctionWrapper</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d3/d6e/light_time_correction_8h_source.html#l00084">calculateLightTimeCorrectionDerivativeWrtLinkEndTime()</a>, and <a class="el" href="../../d3/d6e/light_time_correction_8h_source.html#l00049">~LightTimeCorrection()</a>.</p>
+<p>Referenced by <a class="el" href="../../d3/d6e/light_time_correction_8h_source.html#l00120">calculateLightTimeCorrectionDerivativeWrtLinkEndTime()</a>, and <a class="el" href="../../d3/d6e/light_time_correction_8h_source.html#l00049">~LightTimeCorrection()</a>.</p>
 
 </div>
 </div>
@@ -439,8 +465,20 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Function to compute the full derivative of the light-time correction w.r.t. observation time. The function as implemented here combines the position and time partial derivatives into the full time-derivative. The function is virtual and may be overridden in derived class for specific correction model. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">transmitterState</td><td>State of transmitted at transmission time </td></tr>
+    <tr><td class="paramname">receiverState</td><td>State of receiver at reception time </td></tr>
+    <tr><td class="paramname">transmissionTime</td><td><a class="el" href="../../d8/df9/classtudat_1_1_time.html" title="Class for defining time with a resolution that is sub-fs for very long periods of time...">Time</a> of signal transmission </td></tr>
+    <tr><td class="paramname">receptionTime</td><td><a class="el" href="../../d8/df9/classtudat_1_1_time.html" title="Class for defining time with a resolution that is sub-fs for very long periods of time...">Time</a> of singal reception </td></tr>
+    <tr><td class="paramname">fixedLinkEnd</td><td>Reference link end for observation </td></tr>
+    <tr><td class="paramname">linkEndAtWhichPartialIsEvaluated</td><td>Link end at which the time partial is to be taken </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Light-time correction w.r.t. observation time </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d3/d6e/light_time_correction_8h_source.html#l00084">84</a> of file <a class="el" href="../../d3/d6e/light_time_correction_8h_source.html">lightTimeCorrection.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d6e/light_time_correction_8h_source.html#l00120">120</a> of file <a class="el" href="../../d3/d6e/light_time_correction_8h_source.html">lightTimeCorrection.h</a>.</p>
 
 <p>References <a class="el" href="../../df/d20/classtudat_1_1observation__models_1_1_light_time_correction.html#a1fa82259d8e53cc7884d58b0ef7e9232">calculateLightTimeCorrectionPartialDerivativeWrtLinkEndPosition()</a>, <a class="el" href="../../df/d20/classtudat_1_1observation__models_1_1_light_time_correction.html#a15ab47460c4a06e5d56ec48241cf6d1a">calculateLightTimeCorrectionPartialDerivativeWrtLinkEndTime()</a>, and <a class="el" href="../../d9/d56/link_type_defs_8h_source.html#l00031">tudat::observation_models::transmitter</a>.</p>
 
@@ -468,9 +506,9 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Function to retrieve the type of light-time correction represented by instance of class. </p><dl class="section return"><dt>Returns</dt><dd>Type of light-time correction represented by instance of class. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d3/d6e/light_time_correction_8h_source.html#l00107">107</a> of file <a class="el" href="../../d3/d6e/light_time_correction_8h_source.html">lightTimeCorrection.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d6e/light_time_correction_8h_source.html#l00143">143</a> of file <a class="el" href="../../d3/d6e/light_time_correction_8h_source.html">lightTimeCorrection.h</a>.</p>
 
-<p>References <a class="el" href="../../d3/d6e/light_time_correction_8h_source.html#l00115">lightTimeCorrectionType_</a>.</p>
+<p>References <a class="el" href="../../d3/d6e/light_time_correction_8h_source.html#l00151">lightTimeCorrectionType_</a>.</p>
 
 </div>
 </div>
@@ -493,9 +531,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d3/d6e/light_time_correction_8h_source.html#l00115">115</a> of file <a class="el" href="../../d3/d6e/light_time_correction_8h_source.html">lightTimeCorrection.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d6e/light_time_correction_8h_source.html#l00151">151</a> of file <a class="el" href="../../d3/d6e/light_time_correction_8h_source.html">lightTimeCorrection.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d3/d6e/light_time_correction_8h_source.html#l00107">getLightTimeCorrectionType()</a>.</p>
+<p>Referenced by <a class="el" href="../../d3/d6e/light_time_correction_8h_source.html#l00143">getLightTimeCorrectionType()</a>.</p>
 
 </div>
 </div>
@@ -505,7 +543,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 27 2017 09:33:01 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 7 2017 11:20:33 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

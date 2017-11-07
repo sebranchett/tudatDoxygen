@@ -121,6 +121,9 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d65/classtudat_1_1propagators_1_1_single_torque_dependent_variable_save_settings.html">tudat::propagators::SingleTorqueDependentVariableSaveSettings</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d51/classtudat_1_1propagators_1_1_variable_settings.html">tudat::propagators::VariableSettings</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functional base class for defining settings for variables.  <a href="../../d2/d51/classtudat_1_1propagators_1_1_variable_settings.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
@@ -171,11 +174,20 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="../../d2/d9c/namespacetudat_1_1propagators.html#a766f7d3409891d28fea685d831b8a3dba9625d0e6360b16b478b6a8d6ef179ab3">tudat::propagators::single_torque_norm_dependent_variable</a> = 28, 
 <a class="el" href="../../d2/d9c/namespacetudat_1_1propagators.html#a766f7d3409891d28fea685d831b8a3dbaa40a2c73e956f23b3f509f88a333bbf0">tudat::propagators::total_torque_dependent_variable</a> = 29, 
 <a class="el" href="../../d2/d9c/namespacetudat_1_1propagators.html#a766f7d3409891d28fea685d831b8a3dbac7ba3cb1741ad7c494cc61d84da329ad">tudat::propagators::single_torque_dependent_variable</a> = 30, 
-<a class="el" href="../../d2/d9c/namespacetudat_1_1propagators.html#a766f7d3409891d28fea685d831b8a3dba4dbefde5031b447a9d00a424cf878b07">tudat::propagators::body_fixed_groundspeed_based_velocity_variable</a> = 31
+<a class="el" href="../../d2/d9c/namespacetudat_1_1propagators.html#a766f7d3409891d28fea685d831b8a3dba4dbefde5031b447a9d00a424cf878b07">tudat::propagators::body_fixed_groundspeed_based_velocity_variable</a> = 31, 
+<br />
+&#160;&#160;<a class="el" href="../../d2/d9c/namespacetudat_1_1propagators.html#a766f7d3409891d28fea685d831b8a3dba1048d51780566e7b992208870ee3acb5">tudat::propagators::keplerian_state_dependent_variable</a> = 32
 <br />
  }<tr class="memdesc:a766f7d3409891d28fea685d831b8a3db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum listing the dependent variables that can be saved during the propagation.  <a href="../../d2/d9c/namespacetudat_1_1propagators.html#a766f7d3409891d28fea685d831b8a3db">More...</a><br /></td></tr>
 </td></tr>
 <tr class="separator:a766f7d3409891d28fea685d831b8a3db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58a59a1f326ecebafc38d7c298885477"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d9c/namespacetudat_1_1propagators.html#a58a59a1f326ecebafc38d7c298885477">tudat::propagators::VariableType</a> { <a class="el" href="../../d2/d9c/namespacetudat_1_1propagators.html#a58a59a1f326ecebafc38d7c298885477aed8efaf6c989ca35700d5e0b5b6d1ac7">tudat::propagators::independentVariable</a>, 
+<a class="el" href="../../d2/d9c/namespacetudat_1_1propagators.html#a58a59a1f326ecebafc38d7c298885477a773729d7257749f951d7a25ca25b9907">tudat::propagators::cpuTimeVariable</a>, 
+<a class="el" href="../../d2/d9c/namespacetudat_1_1propagators.html#a58a59a1f326ecebafc38d7c298885477ad3e4b119488923e55550078e5dba5217">tudat::propagators::stateVariable</a>, 
+<a class="el" href="../../d2/d9c/namespacetudat_1_1propagators.html#a58a59a1f326ecebafc38d7c298885477a39d7c50b85cdfa0f3f96d7564b56f107">tudat::propagators::dependentVariable</a>
+ }<tr class="memdesc:a58a59a1f326ecebafc38d7c298885477"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum listing the variables that can be exported or use in termination conditions during the propagation.  <a href="../../d2/d9c/namespacetudat_1_1propagators.html#a58a59a1f326ecebafc38d7c298885477">More...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:a58a59a1f326ecebafc38d7c298885477"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -185,11 +197,17 @@ Functions</h2></td></tr>
 <tr class="memitem:a729e9bda5459955cee04c4d9a051e303"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d9c/namespacetudat_1_1propagators.html#a729e9bda5459955cee04c4d9a051e303">tudat::propagators::getDependentVariableName</a> (const PropagationDependentVariables propagationDependentVariables)</td></tr>
 <tr class="memdesc:a729e9bda5459955cee04c4d9a051e303"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to get a string representing a 'named identification' of a dependent variable type.  <a href="../../d2/d9c/namespacetudat_1_1propagators.html#a729e9bda5459955cee04c4d9a051e303">More...</a><br /></td></tr>
 <tr class="separator:a729e9bda5459955cee04c4d9a051e303"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1973d0d8bf25e06c75e3a13f48e6f967"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d9c/namespacetudat_1_1propagators.html#a1973d0d8bf25e06c75e3a13f48e6f967">tudat::propagators::getVariableId</a> (const boost::shared_ptr&lt; VariableSettings &gt; variableSettings)</td></tr>
+<tr class="memdesc:a1973d0d8bf25e06c75e3a13f48e6f967"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to get a string representing a 'named identification' of a variable.  <a href="../../d2/d9c/namespacetudat_1_1propagators.html#a1973d0d8bf25e06c75e3a13f48e6f967">More...</a><br /></td></tr>
+<tr class="separator:a1973d0d8bf25e06c75e3a13f48e6f967"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3df5799e564d3ab09903b5b73d40d728"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d9c/namespacetudat_1_1propagators.html#a3df5799e564d3ab09903b5b73d40d728">tudat::propagators::getVariableName</a> (const VariableType variableType)</td></tr>
+<tr class="memdesc:a3df5799e564d3ab09903b5b73d40d728"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to get a string representing a 'named identification' of a variable type.  <a href="../../d2/d9c/namespacetudat_1_1propagators.html#a3df5799e564d3ab09903b5b73d40d728">More...</a><br /></td></tr>
+<tr class="separator:a3df5799e564d3ab09903b5b73d40d728"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 27 2017 09:32:58 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 7 2017 11:20:30 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

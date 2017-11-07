@@ -206,9 +206,9 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a07725dacbad6336f213dd64f2291b70a"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; <a class="el" href="../../d2/d72/classtudat_1_1propagators_1_1_central_body_data.html">CentralBodyData</a>&lt; StateScalarType, TimeType &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/db7/classtudat_1_1propagators_1_1_n_body_state_derivative.html#a07725dacbad6336f213dd64f2291b70a">centralBodyData_</a></td></tr>
 <tr class="memdesc:a07725dacbad6336f213dd64f2291b70a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Object responsible for providing the current integration origins from the global origins.  <a href="#a07725dacbad6336f213dd64f2291b70a">More...</a><br /></td></tr>
 <tr class="separator:a07725dacbad6336f213dd64f2291b70a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc6bc65cd868409d374eb558f07770a4"><td class="memItemLeft" align="right" valign="top">std::vector&lt; Eigen::Matrix&lt; StateScalarType, 6, 1 &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/db7/classtudat_1_1propagators_1_1_n_body_state_derivative.html#afc6bc65cd868409d374eb558f07770a4">centralBodyInertialStates_</a></td></tr>
-<tr class="memdesc:afc6bc65cd868409d374eb558f07770a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of states of teh central bodies of the propagated bodies.  <a href="#afc6bc65cd868409d374eb558f07770a4">More...</a><br /></td></tr>
-<tr class="separator:afc6bc65cd868409d374eb558f07770a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a300ed482766d9b3174f9b8c0f5f05093"><td class="memItemLeft" align="right" valign="top">std::vector&lt; Eigen::Matrix&lt; StateScalarType, 6, 1 &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/db7/classtudat_1_1propagators_1_1_n_body_state_derivative.html#a300ed482766d9b3174f9b8c0f5f05093">centralBodyStatesWrtGlobalOrigin_</a></td></tr>
+<tr class="memdesc:a300ed482766d9b3174f9b8c0f5f05093"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of states of teh central bodies of the propagated bodies.  <a href="#a300ed482766d9b3174f9b8c0f5f05093">More...</a><br /></td></tr>
+<tr class="separator:a300ed482766d9b3174f9b8c0f5f05093"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a153ea76f2a8254565b44de4126ae583f"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; std::string, std::vector&lt; boost::shared_ptr&lt; <a class="el" href="../../d0/d59/classtudat_1_1basic__astrodynamics_1_1_acceleration_model.html">basic_astrodynamics::AccelerationModel</a>&lt; Eigen::Vector3d &gt; &gt; &gt; &gt;::iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/db7/classtudat_1_1propagators_1_1_n_body_state_derivative.html#a153ea76f2a8254565b44de4126ae583f">innerAccelerationIterator</a></td></tr>
 <tr class="memdesc:a153ea76f2a8254565b44de4126ae583f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Predefined iterator to save (de-)allocation time.  <a href="#a153ea76f2a8254565b44de4126ae583f">More...</a><br /></td></tr>
 <tr class="separator:a153ea76f2a8254565b44de4126ae583f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -229,7 +229,7 @@ class tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt
 
 <p>This class calculates the trabnslational state derivative of any number of bodies, each under the influence of any number of bodies, both from the set being integrated and otherwise. </p>
 
-<p>Definition at line <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00083">83</a> of file <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html">nBodyStateDerivative.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00084">84</a> of file <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html">nBodyStateDerivative.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a9436969bd31800277db367e8fefb1f38"></a>
 <div class="memitem">
@@ -287,9 +287,9 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00109">109</a> of file <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html">nBodyStateDerivative.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00110">110</a> of file <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html">nBodyStateDerivative.h</a>.</p>
 
-<p>References <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00415">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::accelerationModelsPerBody_</a>, <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00427">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::bodiesToBeIntegratedNumerically_</a>, <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00429">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::bodyOrder_</a>, <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00332">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::createAccelerationModelList()</a>, and <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00437">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::outerAccelerationIterator</a>.</p>
+<p>References <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00417">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::accelerationModelsPerBody_</a>, <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00429">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::bodiesToBeIntegratedNumerically_</a>, <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00431">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::bodyOrder_</a>, <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00333">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::createAccelerationModelList()</a>, and <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00439">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::outerAccelerationIterator</a>.</p>
 
 </div>
 </div>
@@ -316,7 +316,7 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00145">145</a> of file <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html">nBodyStateDerivative.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00146">146</a> of file <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html">nBodyStateDerivative.h</a>.</p>
 
 </div>
 </div>
@@ -345,9 +345,9 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 </div><div class="memdoc">
 <p>Function to clear any reference/cached values of state derivative model, in addition to those performed in the clearTranslationalStateDerivativeModel function. Default implementation is empty. </p>
 
-<p>Definition at line <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00152">152</a> of file <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html">nBodyStateDerivative.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00153">153</a> of file <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html">nBodyStateDerivative.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00173">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::clearStateDerivativeModel()</a>.</p>
+<p>Referenced by <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00174">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::clearStateDerivativeModel()</a>.</p>
 
 </div>
 </div>
@@ -375,11 +375,11 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 </div><div class="memdoc">
 <p>Function to clear reference/cached values of acceleration models, to ensure that they are all recalculated. </p>
 
-<p>Definition at line <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00158">158</a> of file <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html">nBodyStateDerivative.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00159">159</a> of file <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html">nBodyStateDerivative.h</a>.</p>
 
-<p>References <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00418">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::accelerationModelList_</a>, and <a class="el" href="../../d6/d70/mathematical_constants_8h_source.html#l00076">TUDAT_NAN</a>.</p>
+<p>References <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00420">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::accelerationModelList_</a>, and <a class="el" href="../../d6/d70/mathematical_constants_8h_source.html#l00076">TUDAT_NAN</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00173">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::clearStateDerivativeModel()</a>.</p>
+<p>Referenced by <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00174">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::clearStateDerivativeModel()</a>.</p>
 
 </div>
 </div>
@@ -409,9 +409,9 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 
 <p>Implements <a class="el" href="../../d0/dce/classtudat_1_1propagators_1_1_single_state_type_derivative.html#a39840fb71c86fcc5e70804dd6aa7683b">tudat::propagators::SingleStateTypeDerivative&lt; StateScalarType, TimeType &gt;</a>.</p>
 
-<p>Definition at line <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00173">173</a> of file <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html">nBodyStateDerivative.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00174">174</a> of file <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html">nBodyStateDerivative.h</a>.</p>
 
-<p>References <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00152">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::clearDerivedTranslationalStateDerivativeModel()</a>, and <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00158">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::clearTranslationalStateDerivativeModel()</a>.</p>
+<p>References <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00153">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::clearDerivedTranslationalStateDerivativeModel()</a>, and <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00159">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::clearTranslationalStateDerivativeModel()</a>.</p>
 
 </div>
 </div>
@@ -447,9 +447,9 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 
 <p>Implements <a class="el" href="../../d0/dce/classtudat_1_1propagators_1_1_single_state_type_derivative.html#a9542fa3986fabe6129f0bf5b788daeba">tudat::propagators::SingleStateTypeDerivative&lt; StateScalarType, TimeType &gt;</a>.</p>
 
-<p>Definition at line <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00186">186</a> of file <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html">nBodyStateDerivative.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00187">187</a> of file <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html">nBodyStateDerivative.h</a>.</p>
 
-<p>References <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00418">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::accelerationModelList_</a>.</p>
+<p>References <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00420">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::accelerationModelList_</a>.</p>
 
 </div>
 </div>
@@ -503,9 +503,9 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 
 <p>Implements <a class="el" href="../../d0/dce/classtudat_1_1propagators_1_1_single_state_type_derivative.html#ac1f76ef281c53cccc0ea66a12973b916">tudat::propagators::SingleStateTypeDerivative&lt; StateScalarType, TimeType &gt;</a>.</p>
 
-<p>Definition at line <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00206">206</a> of file <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html">nBodyStateDerivative.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00207">207</a> of file <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html">nBodyStateDerivative.h</a>.</p>
 
-<p>References <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00421">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::centralBodyData_</a>, <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00440">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::centralBodyInertialStates_</a>, and <a class="el" href="../../d0/dce/classtudat_1_1propagators_1_1_single_state_type_derivative.html#aeab2b2a9eae937200a5def64dcf18960">tudat::propagators::SingleStateTypeDerivative&lt; StateScalarType, TimeType &gt;::convertToOutputSolution()</a>.</p>
+<p>References <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00423">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::centralBodyData_</a>, <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00442">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::centralBodyStatesWrtGlobalOrigin_</a>, and <a class="el" href="../../d0/dce/classtudat_1_1propagators_1_1_single_state_type_derivative.html#aeab2b2a9eae937200a5def64dcf18960">tudat::propagators::SingleStateTypeDerivative&lt; StateScalarType, TimeType &gt;::convertToOutputSolution()</a>.</p>
 
 </div>
 </div>
@@ -533,11 +533,11 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 </div><div class="memdoc">
 <p>Function to get list of names of bodies that are to be integrated numerically. </p><dl class="section return"><dt>Returns</dt><dd>List of names of bodies that are to be integrated numerically. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00226">226</a> of file <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html">nBodyStateDerivative.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00227">227</a> of file <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html">nBodyStateDerivative.h</a>.</p>
 
-<p>References <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00427">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::bodiesToBeIntegratedNumerically_</a>.</p>
+<p>References <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00429">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::bodiesToBeIntegratedNumerically_</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d5/deb/dynamics_state_derivative_model_8h_source.html#l00678">tudat::propagators::getTranslationalStateDerivativeModelForBody()</a>.</p>
+<p>Referenced by <a class="el" href="../../d5/deb/dynamics_state_derivative_model_8h_source.html#l00696">tudat::propagators::getTranslationalStateDerivativeModelForBody()</a>.</p>
 
 </div>
 </div>
@@ -567,9 +567,9 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 
 <p>Reimplemented in <a class="el" href="../../d2/d43/classtudat_1_1propagators_1_1_n_body_gauss_kepler_state_derivative.html#a6ad42f07f2afeb5552460189e1c4f372">tudat::propagators::NBodyGaussKeplerStateDerivative&lt; StateScalarType, TimeType &gt;</a>, <a class="el" href="../../d8/d5e/classtudat_1_1propagators_1_1_n_body_encke_state_derivative.html#aa08f372eed53077155c3572d0db36e57">tudat::propagators::NBodyEnckeStateDerivative&lt; StateScalarType, TimeType &gt;</a>, and <a class="el" href="../../d8/d43/classtudat_1_1propagators_1_1_n_body_gauss_modified_equinictial_state_derivative.html#a69f5d323128bc2149d32bce086119ce6">tudat::propagators::NBodyGaussModifiedEquinictialStateDerivative&lt; StateScalarType, TimeType &gt;</a>.</p>
 
-<p>Definition at line <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00236">236</a> of file <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html">nBodyStateDerivative.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00237">237</a> of file <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html">nBodyStateDerivative.h</a>.</p>
 
-<p>References <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00415">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::accelerationModelsPerBody_</a>.</p>
+<p>References <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00417">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::accelerationModelsPerBody_</a>.</p>
 
 </div>
 </div>
@@ -597,9 +597,9 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 </div><div class="memdoc">
 <p>Function to get object responsible for providing the current integration origins from the global origins. </p><dl class="section return"><dt>Returns</dt><dd>Object providing the current integration origins from the global origins. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00247">247</a> of file <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html">nBodyStateDerivative.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00248">248</a> of file <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html">nBodyStateDerivative.h</a>.</p>
 
-<p>References <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00421">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::centralBodyData_</a>.</p>
+<p>References <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00423">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::centralBodyData_</a>.</p>
 
 </div>
 </div>
@@ -627,9 +627,9 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 </div><div class="memdoc">
 <p>Function to type of propagator that is to be used (i.e. Cowell, Encke, etc.) </p><dl class="section return"><dt>Returns</dt><dd>Type of propagator that is to be used (i.e. Cowell, Encke, etc.) </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00257">257</a> of file <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html">nBodyStateDerivative.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00258">258</a> of file <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html">nBodyStateDerivative.h</a>.</p>
 
-<p>References <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00424">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::propagatorType_</a>.</p>
+<p>References <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00426">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::propagatorType_</a>.</p>
 
 </div>
 </div>
@@ -659,9 +659,9 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 
 <p>Implements <a class="el" href="../../d0/dce/classtudat_1_1propagators_1_1_single_state_type_derivative.html#a53afad2061854a2cc8c03bfce3b3cf2a">tudat::propagators::SingleStateTypeDerivative&lt; StateScalarType, TimeType &gt;</a>.</p>
 
-<p>Definition at line <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00267">267</a> of file <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html">nBodyStateDerivative.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00268">268</a> of file <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html">nBodyStateDerivative.h</a>.</p>
 
-<p>References <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00427">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::bodiesToBeIntegratedNumerically_</a>.</p>
+<p>References <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00429">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::bodiesToBeIntegratedNumerically_</a>.</p>
 
 </div>
 </div>
@@ -696,9 +696,9 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 </dl>
 <dl class="section return"><dt>Returns</dt><dd></dd></dl>
 
-<p>Definition at line <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00281">281</a> of file <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html">nBodyStateDerivative.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00282">282</a> of file <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html">nBodyStateDerivative.h</a>.</p>
 
-<p>References <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00415">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::accelerationModelsPerBody_</a>, <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00427">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::bodiesToBeIntegratedNumerically_</a>, and <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00433">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::innerAccelerationIterator</a>.</p>
+<p>References <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00417">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::accelerationModelsPerBody_</a>, <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00429">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::bodiesToBeIntegratedNumerically_</a>, and <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00435">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::innerAccelerationIterator</a>.</p>
 
 </div>
 </div>
@@ -726,9 +726,9 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 </div><div class="memdoc">
 <p>Function to retrieve the map containing the list of accelerations acting on each body. </p><dl class="section return"><dt>Returns</dt><dd>Map containing the list of accelerations acting on each body, </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00322">322</a> of file <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html">nBodyStateDerivative.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00323">323</a> of file <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html">nBodyStateDerivative.h</a>.</p>
 
-<p>References <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00415">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::accelerationModelsPerBody_</a>.</p>
+<p>References <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00417">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::accelerationModelsPerBody_</a>.</p>
 
 </div>
 </div>
@@ -756,11 +756,11 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 </div><div class="memdoc">
 <p>Function to set the vector of acceleration models (accelerationModelList_) form the map of map of acceleration models (accelerationModelsPerBody_). </p>
 
-<p>Definition at line <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00332">332</a> of file <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html">nBodyStateDerivative.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00333">333</a> of file <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html">nBodyStateDerivative.h</a>.</p>
 
-<p>References <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00418">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::accelerationModelList_</a>, <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00415">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::accelerationModelsPerBody_</a>, <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00433">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::innerAccelerationIterator</a>, and <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00437">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::outerAccelerationIterator</a>.</p>
+<p>References <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00420">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::accelerationModelList_</a>, <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00417">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::accelerationModelsPerBody_</a>, <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00435">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::innerAccelerationIterator</a>, and <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00439">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::outerAccelerationIterator</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d4/def/n_body_encke_state_derivative_8h_source.html#l00070">tudat::propagators::NBodyEnckeStateDerivative&lt; StateScalarType, TimeType &gt;::NBodyEnckeStateDerivative()</a>, <a class="el" href="../../db/d41/n_body_gauss_kepler_state_derivative_8h_source.html#l00103">tudat::propagators::NBodyGaussKeplerStateDerivative&lt; StateScalarType, TimeType &gt;::NBodyGaussKeplerStateDerivative()</a>, <a class="el" href="../../d3/d53/n_body_gauss_modified_equinoctial_state_derivative_8h_source.html#l00064">tudat::propagators::NBodyGaussModifiedEquinictialStateDerivative&lt; StateScalarType, TimeType &gt;::NBodyGaussModifiedEquinictialStateDerivative()</a>, and <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00109">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::NBodyStateDerivative()</a>.</p>
+<p>Referenced by <a class="el" href="../../d4/def/n_body_encke_state_derivative_8h_source.html#l00070">tudat::propagators::NBodyEnckeStateDerivative&lt; StateScalarType, TimeType &gt;::NBodyEnckeStateDerivative()</a>, <a class="el" href="../../db/d41/n_body_gauss_kepler_state_derivative_8h_source.html#l00103">tudat::propagators::NBodyGaussKeplerStateDerivative&lt; StateScalarType, TimeType &gt;::NBodyGaussKeplerStateDerivative()</a>, <a class="el" href="../../d3/d53/n_body_gauss_modified_equinoctial_state_derivative_8h_source.html#l00064">tudat::propagators::NBodyGaussModifiedEquinictialStateDerivative&lt; StateScalarType, TimeType &gt;::NBodyGaussModifiedEquinictialStateDerivative()</a>, and <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00110">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::NBodyStateDerivative()</a>.</p>
 
 </div>
 </div>
@@ -812,11 +812,11 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00363">363</a> of file <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html">nBodyStateDerivative.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00364">364</a> of file <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html">nBodyStateDerivative.h</a>.</p>
 
-<p>References <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00415">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::accelerationModelsPerBody_</a>, <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00429">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::bodyOrder_</a>, <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00433">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::innerAccelerationIterator</a>, and <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00437">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::outerAccelerationIterator</a>.</p>
+<p>References <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00417">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::accelerationModelsPerBody_</a>, <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00431">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::bodyOrder_</a>, <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00435">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::innerAccelerationIterator</a>, and <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00439">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::outerAccelerationIterator</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d5/d96/n_body_cowell_state_derivative_8h_source.html#l00062">tudat::propagators::NBodyCowellStateDerivative&lt; StateScalarType, TimeType &gt;::calculateSystemStateDerivative()</a>, <a class="el" href="../../d3/d53/n_body_gauss_modified_equinoctial_state_derivative_8h_source.html#l00122">tudat::propagators::NBodyGaussModifiedEquinictialStateDerivative&lt; StateScalarType, TimeType &gt;::calculateSystemStateDerivative()</a>, <a class="el" href="../../d4/def/n_body_encke_state_derivative_8h_source.html#l00127">tudat::propagators::NBodyEnckeStateDerivative&lt; StateScalarType, TimeType &gt;::calculateSystemStateDerivative()</a>, and <a class="el" href="../../db/d41/n_body_gauss_kepler_state_derivative_8h_source.html#l00137">tudat::propagators::NBodyGaussKeplerStateDerivative&lt; StateScalarType, TimeType &gt;::calculateSystemStateDerivative()</a>.</p>
+<p>Referenced by <a class="el" href="../../d5/d96/n_body_cowell_state_derivative_8h_source.html#l00061">tudat::propagators::NBodyCowellStateDerivative&lt; StateScalarType, TimeType &gt;::calculateSystemStateDerivative()</a>, <a class="el" href="../../d3/d53/n_body_gauss_modified_equinoctial_state_derivative_8h_source.html#l00122">tudat::propagators::NBodyGaussModifiedEquinictialStateDerivative&lt; StateScalarType, TimeType &gt;::calculateSystemStateDerivative()</a>, <a class="el" href="../../d4/def/n_body_encke_state_derivative_8h_source.html#l00127">tudat::propagators::NBodyEnckeStateDerivative&lt; StateScalarType, TimeType &gt;::calculateSystemStateDerivative()</a>, and <a class="el" href="../../db/d41/n_body_gauss_kepler_state_derivative_8h_source.html#l00137">tudat::propagators::NBodyGaussKeplerStateDerivative&lt; StateScalarType, TimeType &gt;::calculateSystemStateDerivative()</a>.</p>
 
 </div>
 </div>
@@ -842,9 +842,9 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 </div><div class="memdoc">
 <p>A map containing the list of accelerations acting on each body, identifying the body being acted on and the body acted on by an acceleration. The map has as key a string denoting the name of the body the list of accelerations, provided as the value corresponding to a key, is acting on. This map-value is again a map with string as key, denoting the body exerting the acceleration, and as value a pointer to an acceleration model. </p>
 
-<p>Definition at line <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00415">415</a> of file <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html">nBodyStateDerivative.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00417">417</a> of file <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html">nBodyStateDerivative.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00332">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::createAccelerationModelList()</a>, <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00322">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::getAccelerationsMap()</a>, <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00236">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::getFullAccelerationsMap()</a>, <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00281">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::getTotalAccelerationForBody()</a>, <a class="el" href="../../d4/def/n_body_encke_state_derivative_8h_source.html#l00070">tudat::propagators::NBodyEnckeStateDerivative&lt; StateScalarType, TimeType &gt;::NBodyEnckeStateDerivative()</a>, <a class="el" href="../../db/d41/n_body_gauss_kepler_state_derivative_8h_source.html#l00103">tudat::propagators::NBodyGaussKeplerStateDerivative&lt; StateScalarType, TimeType &gt;::NBodyGaussKeplerStateDerivative()</a>, <a class="el" href="../../d3/d53/n_body_gauss_modified_equinoctial_state_derivative_8h_source.html#l00064">tudat::propagators::NBodyGaussModifiedEquinictialStateDerivative&lt; StateScalarType, TimeType &gt;::NBodyGaussModifiedEquinictialStateDerivative()</a>, <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00109">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::NBodyStateDerivative()</a>, and <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00363">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::sumStateDerivativeContributions()</a>.</p>
+<p>Referenced by <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00333">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::createAccelerationModelList()</a>, <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00323">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::getAccelerationsMap()</a>, <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00237">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::getFullAccelerationsMap()</a>, <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00282">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::getTotalAccelerationForBody()</a>, <a class="el" href="../../d4/def/n_body_encke_state_derivative_8h_source.html#l00070">tudat::propagators::NBodyEnckeStateDerivative&lt; StateScalarType, TimeType &gt;::NBodyEnckeStateDerivative()</a>, <a class="el" href="../../db/d41/n_body_gauss_kepler_state_derivative_8h_source.html#l00103">tudat::propagators::NBodyGaussKeplerStateDerivative&lt; StateScalarType, TimeType &gt;::NBodyGaussKeplerStateDerivative()</a>, <a class="el" href="../../d3/d53/n_body_gauss_modified_equinoctial_state_derivative_8h_source.html#l00064">tudat::propagators::NBodyGaussModifiedEquinictialStateDerivative&lt; StateScalarType, TimeType &gt;::NBodyGaussModifiedEquinictialStateDerivative()</a>, <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00110">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::NBodyStateDerivative()</a>, and <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00364">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::sumStateDerivativeContributions()</a>.</p>
 
 </div>
 </div>
@@ -868,9 +868,9 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00418">418</a> of file <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html">nBodyStateDerivative.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00420">420</a> of file <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html">nBodyStateDerivative.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00158">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::clearTranslationalStateDerivativeModel()</a>, <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00332">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::createAccelerationModelList()</a>, and <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00186">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::updateStateDerivativeModel()</a>.</p>
+<p>Referenced by <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00159">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::clearTranslationalStateDerivativeModel()</a>, <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00333">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::createAccelerationModelList()</a>, and <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00187">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::updateStateDerivativeModel()</a>.</p>
 
 </div>
 </div>
@@ -894,9 +894,9 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00421">421</a> of file <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html">nBodyStateDerivative.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00423">423</a> of file <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html">nBodyStateDerivative.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00206">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::convertCurrentStateToGlobalRepresentation()</a>, and <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00247">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::getCentralBodyData()</a>.</p>
+<p>Referenced by <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00207">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::convertCurrentStateToGlobalRepresentation()</a>, and <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00248">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::getCentralBodyData()</a>.</p>
 
 </div>
 </div>
@@ -920,9 +920,9 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00424">424</a> of file <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html">nBodyStateDerivative.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00426">426</a> of file <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html">nBodyStateDerivative.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00257">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::getPropagatorType()</a>.</p>
+<p>Referenced by <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00258">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::getPropagatorType()</a>.</p>
 
 </div>
 </div>
@@ -946,9 +946,9 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00427">427</a> of file <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html">nBodyStateDerivative.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00429">429</a> of file <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html">nBodyStateDerivative.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d4/def/n_body_encke_state_derivative_8h_source.html#l00260">tudat::propagators::NBodyEnckeStateDerivative&lt; StateScalarType, TimeType &gt;::calculateKeplerTrajectoryCartesianStates()</a>, <a class="el" href="../../d3/d53/n_body_gauss_modified_equinoctial_state_derivative_8h_source.html#l00122">tudat::propagators::NBodyGaussModifiedEquinictialStateDerivative&lt; StateScalarType, TimeType &gt;::calculateSystemStateDerivative()</a>, <a class="el" href="../../d4/def/n_body_encke_state_derivative_8h_source.html#l00127">tudat::propagators::NBodyEnckeStateDerivative&lt; StateScalarType, TimeType &gt;::calculateSystemStateDerivative()</a>, <a class="el" href="../../db/d41/n_body_gauss_kepler_state_derivative_8h_source.html#l00137">tudat::propagators::NBodyGaussKeplerStateDerivative&lt; StateScalarType, TimeType &gt;::calculateSystemStateDerivative()</a>, <a class="el" href="../../d3/d53/n_body_gauss_modified_equinoctial_state_derivative_8h_source.html#l00154">tudat::propagators::NBodyGaussModifiedEquinictialStateDerivative&lt; StateScalarType, TimeType &gt;::convertFromOutputSolution()</a>, <a class="el" href="../../db/d41/n_body_gauss_kepler_state_derivative_8h_source.html#l00168">tudat::propagators::NBodyGaussKeplerStateDerivative&lt; StateScalarType, TimeType &gt;::convertFromOutputSolution()</a>, <a class="el" href="../../d4/def/n_body_encke_state_derivative_8h_source.html#l00180">tudat::propagators::NBodyEnckeStateDerivative&lt; StateScalarType, TimeType &gt;::convertFromOutputSolution()</a>, <a class="el" href="../../d3/d53/n_body_gauss_modified_equinoctial_state_derivative_8h_source.html#l00187">tudat::propagators::NBodyGaussModifiedEquinictialStateDerivative&lt; StateScalarType, TimeType &gt;::convertToOutputSolution()</a>, <a class="el" href="../../db/d41/n_body_gauss_kepler_state_derivative_8h_source.html#l00210">tudat::propagators::NBodyGaussKeplerStateDerivative&lt; StateScalarType, TimeType &gt;::convertToOutputSolution()</a>, <a class="el" href="../../d4/def/n_body_encke_state_derivative_8h_source.html#l00213">tudat::propagators::NBodyEnckeStateDerivative&lt; StateScalarType, TimeType &gt;::convertToOutputSolution()</a>, <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00226">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::getBodiesToBeIntegratedNumerically()</a>, <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00267">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::getStateSize()</a>, <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00281">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::getTotalAccelerationForBody()</a>, <a class="el" href="../../d4/def/n_body_encke_state_derivative_8h_source.html#l00070">tudat::propagators::NBodyEnckeStateDerivative&lt; StateScalarType, TimeType &gt;::NBodyEnckeStateDerivative()</a>, <a class="el" href="../../db/d41/n_body_gauss_kepler_state_derivative_8h_source.html#l00103">tudat::propagators::NBodyGaussKeplerStateDerivative&lt; StateScalarType, TimeType &gt;::NBodyGaussKeplerStateDerivative()</a>, <a class="el" href="../../d3/d53/n_body_gauss_modified_equinoctial_state_derivative_8h_source.html#l00064">tudat::propagators::NBodyGaussModifiedEquinictialStateDerivative&lt; StateScalarType, TimeType &gt;::NBodyGaussModifiedEquinictialStateDerivative()</a>, and <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00109">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::NBodyStateDerivative()</a>.</p>
+<p>Referenced by <a class="el" href="../../d4/def/n_body_encke_state_derivative_8h_source.html#l00260">tudat::propagators::NBodyEnckeStateDerivative&lt; StateScalarType, TimeType &gt;::calculateKeplerTrajectoryCartesianStates()</a>, <a class="el" href="../../d3/d53/n_body_gauss_modified_equinoctial_state_derivative_8h_source.html#l00122">tudat::propagators::NBodyGaussModifiedEquinictialStateDerivative&lt; StateScalarType, TimeType &gt;::calculateSystemStateDerivative()</a>, <a class="el" href="../../d4/def/n_body_encke_state_derivative_8h_source.html#l00127">tudat::propagators::NBodyEnckeStateDerivative&lt; StateScalarType, TimeType &gt;::calculateSystemStateDerivative()</a>, <a class="el" href="../../db/d41/n_body_gauss_kepler_state_derivative_8h_source.html#l00137">tudat::propagators::NBodyGaussKeplerStateDerivative&lt; StateScalarType, TimeType &gt;::calculateSystemStateDerivative()</a>, <a class="el" href="../../d3/d53/n_body_gauss_modified_equinoctial_state_derivative_8h_source.html#l00154">tudat::propagators::NBodyGaussModifiedEquinictialStateDerivative&lt; StateScalarType, TimeType &gt;::convertFromOutputSolution()</a>, <a class="el" href="../../db/d41/n_body_gauss_kepler_state_derivative_8h_source.html#l00168">tudat::propagators::NBodyGaussKeplerStateDerivative&lt; StateScalarType, TimeType &gt;::convertFromOutputSolution()</a>, <a class="el" href="../../d4/def/n_body_encke_state_derivative_8h_source.html#l00180">tudat::propagators::NBodyEnckeStateDerivative&lt; StateScalarType, TimeType &gt;::convertFromOutputSolution()</a>, <a class="el" href="../../d3/d53/n_body_gauss_modified_equinoctial_state_derivative_8h_source.html#l00187">tudat::propagators::NBodyGaussModifiedEquinictialStateDerivative&lt; StateScalarType, TimeType &gt;::convertToOutputSolution()</a>, <a class="el" href="../../db/d41/n_body_gauss_kepler_state_derivative_8h_source.html#l00210">tudat::propagators::NBodyGaussKeplerStateDerivative&lt; StateScalarType, TimeType &gt;::convertToOutputSolution()</a>, <a class="el" href="../../d4/def/n_body_encke_state_derivative_8h_source.html#l00213">tudat::propagators::NBodyEnckeStateDerivative&lt; StateScalarType, TimeType &gt;::convertToOutputSolution()</a>, <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00227">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::getBodiesToBeIntegratedNumerically()</a>, <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00268">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::getStateSize()</a>, <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00282">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::getTotalAccelerationForBody()</a>, <a class="el" href="../../d4/def/n_body_encke_state_derivative_8h_source.html#l00070">tudat::propagators::NBodyEnckeStateDerivative&lt; StateScalarType, TimeType &gt;::NBodyEnckeStateDerivative()</a>, <a class="el" href="../../db/d41/n_body_gauss_kepler_state_derivative_8h_source.html#l00103">tudat::propagators::NBodyGaussKeplerStateDerivative&lt; StateScalarType, TimeType &gt;::NBodyGaussKeplerStateDerivative()</a>, <a class="el" href="../../d3/d53/n_body_gauss_modified_equinoctial_state_derivative_8h_source.html#l00064">tudat::propagators::NBodyGaussModifiedEquinictialStateDerivative&lt; StateScalarType, TimeType &gt;::NBodyGaussModifiedEquinictialStateDerivative()</a>, and <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00110">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::NBodyStateDerivative()</a>.</p>
 
 </div>
 </div>
@@ -972,9 +972,9 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00429">429</a> of file <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html">nBodyStateDerivative.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00431">431</a> of file <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html">nBodyStateDerivative.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00109">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::NBodyStateDerivative()</a>, and <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00363">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::sumStateDerivativeContributions()</a>.</p>
+<p>Referenced by <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00110">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::NBodyStateDerivative()</a>, and <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00364">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::sumStateDerivativeContributions()</a>.</p>
 
 </div>
 </div>
@@ -998,9 +998,9 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00433">433</a> of file <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html">nBodyStateDerivative.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00435">435</a> of file <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html">nBodyStateDerivative.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00332">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::createAccelerationModelList()</a>, <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00281">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::getTotalAccelerationForBody()</a>, and <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00363">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::sumStateDerivativeContributions()</a>.</p>
+<p>Referenced by <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00333">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::createAccelerationModelList()</a>, <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00282">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::getTotalAccelerationForBody()</a>, and <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00364">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::sumStateDerivativeContributions()</a>.</p>
 
 </div>
 </div>
@@ -1024,13 +1024,13 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00437">437</a> of file <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html">nBodyStateDerivative.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00439">439</a> of file <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html">nBodyStateDerivative.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00332">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::createAccelerationModelList()</a>, <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00109">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::NBodyStateDerivative()</a>, and <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00363">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::sumStateDerivativeContributions()</a>.</p>
+<p>Referenced by <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00333">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::createAccelerationModelList()</a>, <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00110">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::NBodyStateDerivative()</a>, and <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00364">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::sumStateDerivativeContributions()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="afc6bc65cd868409d374eb558f07770a4"></a>
+<a class="anchor" id="a300ed482766d9b3174f9b8c0f5f05093"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -1040,7 +1040,7 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; Eigen::Matrix&lt; StateScalarType, 6, 1 &gt; &gt; <a class="el" href="../../d2/db7/classtudat_1_1propagators_1_1_n_body_state_derivative.html">tudat::propagators::NBodyStateDerivative</a>&lt; StateScalarType, TimeType &gt;::centralBodyInertialStates_</td>
+          <td class="memname">std::vector&lt; Eigen::Matrix&lt; StateScalarType, 6, 1 &gt; &gt; <a class="el" href="../../d2/db7/classtudat_1_1propagators_1_1_n_body_state_derivative.html">tudat::propagators::NBodyStateDerivative</a>&lt; StateScalarType, TimeType &gt;::centralBodyStatesWrtGlobalOrigin_</td>
         </tr>
       </table>
   </td>
@@ -1050,9 +1050,9 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00440">440</a> of file <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html">nBodyStateDerivative.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00442">442</a> of file <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html">nBodyStateDerivative.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00206">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::convertCurrentStateToGlobalRepresentation()</a>.</p>
+<p>Referenced by <a class="el" href="../../d0/dce/n_body_state_derivative_8h_source.html#l00207">tudat::propagators::NBodyStateDerivative&lt; StateScalarType, TimeType &gt;::convertCurrentStateToGlobalRepresentation()</a>.</p>
 
 </div>
 </div>
@@ -1062,7 +1062,7 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 27 2017 09:33:02 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 7 2017 11:20:34 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

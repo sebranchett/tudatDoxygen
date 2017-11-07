@@ -102,7 +102,6 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <code>#include &lt;map&gt;</code><br />
 <code>#include &lt;boost/shared_ptr.hpp&gt;</code><br />
 <code>#include &lt;boost/assign/list_of.hpp&gt;</code><br />
-<code>#include &lt;boost/lexical_cast.hpp&gt;</code><br />
 <code>#include &lt;Eigen/Geometry&gt;</code><br />
 <code>#include &quot;<a class="el" href="../../dc/d18/single_state_type_derivative_8h_source.html">Tudat/Astrodynamics/Propagators/singleStateTypeDerivative.h</a>&quot;</code><br />
 </div>
@@ -140,23 +139,26 @@ Enumerations</h2></td></tr>
 <a class="el" href="../../d5/d92/namespacetudat_1_1estimatable__parameters.html#aa6910f86d3240d08f92b4541f4032ca8a4a4eb5abc67b90276eaba7a5ab3d9d80">tudat::estimatable_parameters::constant_drag_coefficient</a>, 
 <br />
 &#160;&#160;<a class="el" href="../../d5/d92/namespacetudat_1_1estimatable__parameters.html#aa6910f86d3240d08f92b4541f4032ca8a3f3efb9b507f8f37940872156f32e950">tudat::estimatable_parameters::radiation_pressure_coefficient</a>, 
+<a class="el" href="../../d5/d92/namespacetudat_1_1estimatable__parameters.html#aa6910f86d3240d08f92b4541f4032ca8a5e80c5e839b6e107b737bb9efadb2d5c">tudat::estimatable_parameters::arc_wise_radiation_pressure_coefficient</a>, 
 <a class="el" href="../../d5/d92/namespacetudat_1_1estimatable__parameters.html#aa6910f86d3240d08f92b4541f4032ca8a98c4e20dbcfff1a32c70e68e0829c300">tudat::estimatable_parameters::spherical_harmonics_cosine_coefficient_block</a>, 
 <a class="el" href="../../d5/d92/namespacetudat_1_1estimatable__parameters.html#aa6910f86d3240d08f92b4541f4032ca8a37970ca87efef5970c010ad1beb38ea1">tudat::estimatable_parameters::spherical_harmonics_sine_coefficient_block</a>, 
-<a class="el" href="../../d5/d92/namespacetudat_1_1estimatable__parameters.html#aa6910f86d3240d08f92b4541f4032ca8a750c2d0a6f395f44caf3358b6c186e7d">tudat::estimatable_parameters::constant_rotation_rate</a>, 
 <br />
-&#160;&#160;<a class="el" href="../../d5/d92/namespacetudat_1_1estimatable__parameters.html#aa6910f86d3240d08f92b4541f4032ca8aaf9d7bdb57ac8a29ba503dc5a7faaf88">tudat::estimatable_parameters::rotation_pole_position</a>, 
+&#160;&#160;<a class="el" href="../../d5/d92/namespacetudat_1_1estimatable__parameters.html#aa6910f86d3240d08f92b4541f4032ca8a750c2d0a6f395f44caf3358b6c186e7d">tudat::estimatable_parameters::constant_rotation_rate</a>, 
+<a class="el" href="../../d5/d92/namespacetudat_1_1estimatable__parameters.html#aa6910f86d3240d08f92b4541f4032ca8aaf9d7bdb57ac8a29ba503dc5a7faaf88">tudat::estimatable_parameters::rotation_pole_position</a>, 
 <a class="el" href="../../d5/d92/namespacetudat_1_1estimatable__parameters.html#aa6910f86d3240d08f92b4541f4032ca8a3ca2a999cc0b18b04b86318b2b6a98ad">tudat::estimatable_parameters::constant_additive_observation_bias</a>, 
 <a class="el" href="../../d5/d92/namespacetudat_1_1estimatable__parameters.html#aa6910f86d3240d08f92b4541f4032ca8ae3671fea45e6848b61819d553348296e">tudat::estimatable_parameters::constant_relative_observation_bias</a>, 
-<a class="el" href="../../d5/d92/namespacetudat_1_1estimatable__parameters.html#aa6910f86d3240d08f92b4541f4032ca8a9be11152a6138c73c6dfd75cdc6e3aff">tudat::estimatable_parameters::ppn_parameter_gamma</a>, 
 <br />
-&#160;&#160;<a class="el" href="../../d5/d92/namespacetudat_1_1estimatable__parameters.html#aa6910f86d3240d08f92b4541f4032ca8a1dbeab363b4fe098217f327c5dce0d91">tudat::estimatable_parameters::ppn_parameter_beta</a>, 
+&#160;&#160;<a class="el" href="../../d5/d92/namespacetudat_1_1estimatable__parameters.html#aa6910f86d3240d08f92b4541f4032ca8a9be11152a6138c73c6dfd75cdc6e3aff">tudat::estimatable_parameters::ppn_parameter_gamma</a>, 
+<a class="el" href="../../d5/d92/namespacetudat_1_1estimatable__parameters.html#aa6910f86d3240d08f92b4541f4032ca8a1dbeab363b4fe098217f327c5dce0d91">tudat::estimatable_parameters::ppn_parameter_beta</a>, 
 <a class="el" href="../../d5/d92/namespacetudat_1_1estimatable__parameters.html#aa6910f86d3240d08f92b4541f4032ca8a610122aa079bfce218da04cef3f3c3e3">tudat::estimatable_parameters::ground_station_position</a>, 
 <a class="el" href="../../d5/d92/namespacetudat_1_1estimatable__parameters.html#aa6910f86d3240d08f92b4541f4032ca8a6cb89bd5fef31f912e525e0be869bc38">tudat::estimatable_parameters::equivalence_principle_lpi_violation_parameter</a>, 
-<a class="el" href="../../d5/d92/namespacetudat_1_1estimatable__parameters.html#aa6910f86d3240d08f92b4541f4032ca8af6c9848c08666365d79b57d21d2d5c11">tudat::estimatable_parameters::empirical_acceleration_coefficients</a>, 
 <br />
-&#160;&#160;<a class="el" href="../../d5/d92/namespacetudat_1_1estimatable__parameters.html#aa6910f86d3240d08f92b4541f4032ca8ab02a576d155f3a5de2e60b8f2590ddfc">tudat::estimatable_parameters::arc_wise_empirical_acceleration_coefficients</a>, 
+&#160;&#160;<a class="el" href="../../d5/d92/namespacetudat_1_1estimatable__parameters.html#aa6910f86d3240d08f92b4541f4032ca8af6c9848c08666365d79b57d21d2d5c11">tudat::estimatable_parameters::empirical_acceleration_coefficients</a>, 
+<a class="el" href="../../d5/d92/namespacetudat_1_1estimatable__parameters.html#aa6910f86d3240d08f92b4541f4032ca8ab02a576d155f3a5de2e60b8f2590ddfc">tudat::estimatable_parameters::arc_wise_empirical_acceleration_coefficients</a>, 
 <a class="el" href="../../d5/d92/namespacetudat_1_1estimatable__parameters.html#aa6910f86d3240d08f92b4541f4032ca8a804804dc8b189cd9935096903801e253">tudat::estimatable_parameters::full_degree_tidal_love_number</a>, 
-<a class="el" href="../../d5/d92/namespacetudat_1_1estimatable__parameters.html#aa6910f86d3240d08f92b4541f4032ca8a16c15818b924be4054e8c32aa943b392">tudat::estimatable_parameters::single_degree_variable_tidal_love_number</a>
+<a class="el" href="../../d5/d92/namespacetudat_1_1estimatable__parameters.html#aa6910f86d3240d08f92b4541f4032ca8a16c15818b924be4054e8c32aa943b392">tudat::estimatable_parameters::single_degree_variable_tidal_love_number</a>, 
+<br />
+&#160;&#160;<a class="el" href="../../d5/d92/namespacetudat_1_1estimatable__parameters.html#aa6910f86d3240d08f92b4541f4032ca8a6b62df445bb6e4453ef8051c3b799dc4">tudat::estimatable_parameters::direct_dissipation_tidal_time_lag</a>
 <br />
  }<tr class="memdesc:aa6910f86d3240d08f92b4541f4032ca8"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of parameters that can be estimated by the orbit determination code.  <a href="../../d5/d92/namespacetudat_1_1estimatable__parameters.html#aa6910f86d3240d08f92b4541f4032ca8">More...</a><br /></td></tr>
 </td></tr>
@@ -208,7 +210,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 27 2017 09:32:58 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 7 2017 11:20:30 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

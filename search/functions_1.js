@@ -1,7 +1,8 @@
 var searchData=
 [
+  ['b',['b',['../d5/de7/jquery_8js.html#a2fa551895933fae935a0a6b87282241d',1,'jquery.js']]],
   ['basestateinterface',['BaseStateInterface',['../d9/df4/classtudat_1_1simulation__setup_1_1_base_state_interface.html#aaef83a88c7daddd073c395d2c7f12361',1,'tudat::simulation_setup::BaseStateInterface']]],
-  ['basestateinterfaceimplementation',['BaseStateInterfaceImplementation',['../d3/dfb/classtudat_1_1simulation__setup_1_1_base_state_interface_implementation.html#a93a176a72a12fcd0a16d40c7def9c466',1,'tudat::simulation_setup::BaseStateInterfaceImplementation']]],
+  ['basestateinterfaceimplementation',['BaseStateInterfaceImplementation',['../d3/dfb/classtudat_1_1simulation__setup_1_1_base_state_interface_implementation.html#a905d4d0999b1215b3a6828eb21fea9d0',1,'tudat::simulation_setup::BaseStateInterfaceImplementation']]],
   ['basicfunction',['BasicFunction',['../d8/d11/classtudat_1_1basic__mathematics_1_1_basic_function.html#a6db9f3a2a2b5be0e10132e2b9b648132',1,'tudat::basic_mathematics::BasicFunction']]],
   ['basicsolidbodygravityfieldvariationsettings',['BasicSolidBodyGravityFieldVariationSettings',['../de/d4d/classtudat_1_1simulation__setup_1_1_basic_solid_body_gravity_field_variation_settings.html#a26cb151a6e02b2c97fcc6f912795ecc9',1,'tudat::simulation_setup::BasicSolidBodyGravityFieldVariationSettings']]],
   ['basicsolidbodytidegravityfieldvariations',['BasicSolidBodyTideGravityFieldVariations',['../d5/db1/classtudat_1_1gravitation_1_1_basic_solid_body_tide_gravity_field_variations.html#a698be5ee244e5444650db403b653102c',1,'tudat::gravitation::BasicSolidBodyTideGravityFieldVariations']]],

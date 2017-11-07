@@ -93,9 +93,8 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="title">orbitalElementConversions.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;boost/exception/all.hpp&gt;</code><br />
+<div class="textblock"><code>#include &lt;boost/function.hpp&gt;</code><br />
 <code>#include &lt;boost/math/special_functions/atanh.hpp&gt;</code><br />
-<code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;cmath&gt;</code><br />
 <code>#include &lt;limits&gt;</code><br />
 <code>#include &lt;Eigen/Core&gt;</code><br />
@@ -115,16 +114,22 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a99f38266013844748542dfa15237749b"><td class="memTemplParams" colspan="2">template&lt;typename ScalarType  = double&gt; </td></tr>
-<tr class="memitem:a99f38266013844748542dfa15237749b"><td class="memTemplItemLeft" align="right" valign="top">ScalarType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d1/d3e/namespacetudat_1_1orbital__element__conversions.html#a99f38266013844748542dfa15237749b">tudat::orbital_element_conversions::computeOrbitalAngularMomentum</a> (const ScalarType semiLatusRectum, const ScalarType centralBodyGravitationalParameter)</td></tr>
-<tr class="separator:a99f38266013844748542dfa15237749b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4544948d624e6128ef0edcb788d2dc6a"><td class="memTemplParams" colspan="2">template&lt;typename ScalarType  = double&gt; </td></tr>
+<tr class="memitem:a4544948d624e6128ef0edcb788d2dc6a"><td class="memTemplItemLeft" align="right" valign="top">ScalarType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d1/d3e/namespacetudat_1_1orbital__element__conversions.html#a4544948d624e6128ef0edcb788d2dc6a">tudat::orbital_element_conversions::computeOrbitalAngularMomentumPerUnitMass</a> (const ScalarType semiLatusRectum, const ScalarType centralBodyGravitationalParameter)</td></tr>
+<tr class="memdesc:a4544948d624e6128ef0edcb788d2dc6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to compute orbit angular momentum per unit mass.  <a href="../../d1/d3e/namespacetudat_1_1orbital__element__conversions.html#a4544948d624e6128ef0edcb788d2dc6a">More...</a><br /></td></tr>
+<tr class="separator:a4544948d624e6128ef0edcb788d2dc6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2ca90e89d0bbf3a2eabe69d966bb913"><td class="memTemplParams" colspan="2">template&lt;typename ScalarType  = double&gt; </td></tr>
 <tr class="memitem:ae2ca90e89d0bbf3a2eabe69d966bb913"><td class="memTemplItemLeft" align="right" valign="top">ScalarType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d1/d3e/namespacetudat_1_1orbital__element__conversions.html#ae2ca90e89d0bbf3a2eabe69d966bb913">tudat::orbital_element_conversions::computeSemiLatusRectum</a> (const ScalarType eccentricity, const ScalarType semiMajorAxis, const ScalarType tolerance)</td></tr>
+<tr class="memdesc:ae2ca90e89d0bbf3a2eabe69d966bb913"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to compute orbit semi-latus rectum.  <a href="../../d1/d3e/namespacetudat_1_1orbital__element__conversions.html#ae2ca90e89d0bbf3a2eabe69d966bb913">More...</a><br /></td></tr>
 <tr class="separator:ae2ca90e89d0bbf3a2eabe69d966bb913"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa367c8d39ad23cca71267144313ea0d0"><td class="memTemplParams" colspan="2">template&lt;typename ScalarType  = double&gt; </td></tr>
 <tr class="memitem:aa367c8d39ad23cca71267144313ea0d0"><td class="memTemplItemLeft" align="right" valign="top">Eigen::Matrix&lt; ScalarType, 6, 1 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d1/d3e/namespacetudat_1_1orbital__element__conversions.html#aa367c8d39ad23cca71267144313ea0d0">tudat::orbital_element_conversions::convertCartesianToKeplerianElements</a> (const Eigen::Matrix&lt; ScalarType, 6, 1 &gt; &amp;cartesianElements, const ScalarType centralBodyGravitationalParameter)</td></tr>
 <tr class="memdesc:aa367c8d39ad23cca71267144313ea0d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert Cartesian to Keplerian orbital elements.  <a href="../../d1/d3e/namespacetudat_1_1orbital__element__conversions.html#aa367c8d39ad23cca71267144313ea0d0">More...</a><br /></td></tr>
 <tr class="separator:aa367c8d39ad23cca71267144313ea0d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6b6c93c778ff4f1882f6475e62fb8c3"><td class="memTemplParams" colspan="2">template&lt;typename ScalarType  = double&gt; </td></tr>
+<tr class="memitem:af6b6c93c778ff4f1882f6475e62fb8c3"><td class="memTemplItemLeft" align="right" valign="top">Eigen::Matrix&lt; ScalarType, 6, 1 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d1/d3e/namespacetudat_1_1orbital__element__conversions.html#af6b6c93c778ff4f1882f6475e62fb8c3">tudat::orbital_element_conversions::convertCartesianToKeplerianElementsFromFunctions</a> (const boost::function&lt; Eigen::Matrix&lt; ScalarType, 6, 1 &gt;() &gt; cartesianElementsFunction, const boost::function&lt; ScalarType() &gt; centralBodyGravitationalParameterFunction)</td></tr>
+<tr class="memdesc:af6b6c93c778ff4f1882f6475e62fb8c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert Cartesian to Keplerian orbital elements.  <a href="../../d1/d3e/namespacetudat_1_1orbital__element__conversions.html#af6b6c93c778ff4f1882f6475e62fb8c3">More...</a><br /></td></tr>
+<tr class="separator:af6b6c93c778ff4f1882f6475e62fb8c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac79dc64aaca7e8ca56982c5932b5e995"><td class="memTemplParams" colspan="2">template&lt;typename ScalarType  = double&gt; </td></tr>
 <tr class="memitem:ac79dc64aaca7e8ca56982c5932b5e995"><td class="memTemplItemLeft" align="right" valign="top">ScalarType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d1/d3e/namespacetudat_1_1orbital__element__conversions.html#ac79dc64aaca7e8ca56982c5932b5e995">tudat::orbital_element_conversions::convertEccentricAnomalyToMeanAnomaly</a> (const ScalarType eccentricAnomaly, const ScalarType eccentricity)</td></tr>
 <tr class="memdesc:ac79dc64aaca7e8ca56982c5932b5e995"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert eccentric anomaly to mean anomaly.  <a href="../../d1/d3e/namespacetudat_1_1orbital__element__conversions.html#ac79dc64aaca7e8ca56982c5932b5e995">More...</a><br /></td></tr>
@@ -201,7 +206,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 27 2017 09:32:58 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 7 2017 11:20:29 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

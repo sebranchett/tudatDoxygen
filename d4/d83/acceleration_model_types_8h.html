@@ -99,8 +99,9 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <code>#include &quot;<a class="el" href="../../dd/dd1/spherical_harmonics_gravity_model_8h_source.html">Tudat/Astrodynamics/Gravitation/sphericalHarmonicsGravityModel.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d2/d16/mutual_spherical_harmonic_gravity_model_8h_source.html">Tudat/Astrodynamics/Gravitation/mutualSphericalHarmonicGravityModel.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../db/d3e/third_body_perturbation_8h_source.html">Tudat/Astrodynamics/Gravitation/thirdBodyPerturbation.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d5/dda/direct_tidal_dissipation_acceleration_8h_source.html">Tudat/Astrodynamics/Gravitation/directTidalDissipationAcceleration.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d3/de9/aerodynamic_acceleration_8h_source.html">Tudat/Astrodynamics/Aerodynamics/aerodynamicAcceleration.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d9/dd5/mass_rate_model_8h_source.html">Tudat/Astrodynamics/BasicAstrodynamics/massRateModel.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d9/d06/_astrodynamics_2_basic_astrodynamics_2mass_rate_model_8h_source.html">Tudat/Astrodynamics/BasicAstrodynamics/massRateModel.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d4/d6e/thrust_acceleration_model_8h_source.html">Tudat/Astrodynamics/Propulsion/thrustAccelerationModel.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d8/d8f/mass_rate_from_thrust_8h_source.html">Tudat/Astrodynamics/Propulsion/massRateFromThrust.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d2/d0d/relativistic_acceleration_correction_8h_source.html">Tudat/Astrodynamics/Relativity/relativisticAccelerationCorrection.h</a>&quot;</code><br />
@@ -120,19 +121,23 @@ Namespaces</h2></td></tr>
 Enumerations</h2></td></tr>
 <tr class="memitem:abf29e4420ac7dbbcfe0ff7e2c7910aab"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abf29e4420ac7dbbcfe0ff7e2c7910aab">tudat::basic_astrodynamics::AvailableAcceleration</a> { <br />
 &#160;&#160;<a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abf29e4420ac7dbbcfe0ff7e2c7910aabaf7661d328d6500afd762f6e92f56680a">tudat::basic_astrodynamics::undefined_acceleration</a>, 
-<a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abf29e4420ac7dbbcfe0ff7e2c7910aabac90573463c6654eda51833571c464529">tudat::basic_astrodynamics::central_gravity</a>, 
+<a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abf29e4420ac7dbbcfe0ff7e2c7910aaba9157aa464a5a91c246383bbecc542a1e">tudat::basic_astrodynamics::point_mass_gravity</a>, 
+<a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abf29e4420ac7dbbcfe0ff7e2c7910aabac90573463c6654eda51833571c464529">tudat::basic_astrodynamics::central_gravity</a> = point_mass_gravity, 
 <a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abf29e4420ac7dbbcfe0ff7e2c7910aaba80e754ce5f37b06ac37cdff02fcb6647">tudat::basic_astrodynamics::aerodynamic</a>, 
-<a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abf29e4420ac7dbbcfe0ff7e2c7910aaba61dceebb9257c8a794a79d29211f4c1c">tudat::basic_astrodynamics::cannon_ball_radiation_pressure</a>, 
 <br />
-&#160;&#160;<a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abf29e4420ac7dbbcfe0ff7e2c7910aabad94f46b5869cafa217eb81c6fcf17691">tudat::basic_astrodynamics::spherical_harmonic_gravity</a>, 
+&#160;&#160;<a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abf29e4420ac7dbbcfe0ff7e2c7910aaba61dceebb9257c8a794a79d29211f4c1c">tudat::basic_astrodynamics::cannon_ball_radiation_pressure</a>, 
+<a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abf29e4420ac7dbbcfe0ff7e2c7910aabad94f46b5869cafa217eb81c6fcf17691">tudat::basic_astrodynamics::spherical_harmonic_gravity</a>, 
 <a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abf29e4420ac7dbbcfe0ff7e2c7910aaba23e238eca77ca29bf384a39459d32f50">tudat::basic_astrodynamics::mutual_spherical_harmonic_gravity</a>, 
-<a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abf29e4420ac7dbbcfe0ff7e2c7910aaba68f1450ca4d1e9dad72b00efa9adef2e">tudat::basic_astrodynamics::third_body_central_gravity</a>, 
-<a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abf29e4420ac7dbbcfe0ff7e2c7910aaba93d6b6c6558917c2812e2bfbcd59b911">tudat::basic_astrodynamics::third_body_spherical_harmonic_gravity</a>, 
+<a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abf29e4420ac7dbbcfe0ff7e2c7910aaba8ac3f141c2bbde183bc06da94823b064">tudat::basic_astrodynamics::third_body_point_mass_gravity</a>, 
 <br />
-&#160;&#160;<a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abf29e4420ac7dbbcfe0ff7e2c7910aaba383c824d5b7ae23529f0eeb5dd7edb64">tudat::basic_astrodynamics::third_body_mutual_spherical_harmonic_gravity</a>, 
+&#160;&#160;<a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abf29e4420ac7dbbcfe0ff7e2c7910aaba68f1450ca4d1e9dad72b00efa9adef2e">tudat::basic_astrodynamics::third_body_central_gravity</a> = third_body_point_mass_gravity, 
+<a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abf29e4420ac7dbbcfe0ff7e2c7910aaba93d6b6c6558917c2812e2bfbcd59b911">tudat::basic_astrodynamics::third_body_spherical_harmonic_gravity</a>, 
+<a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abf29e4420ac7dbbcfe0ff7e2c7910aaba383c824d5b7ae23529f0eeb5dd7edb64">tudat::basic_astrodynamics::third_body_mutual_spherical_harmonic_gravity</a>, 
 <a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abf29e4420ac7dbbcfe0ff7e2c7910aaba416d9bad3740dd35452d89fd4db3f921">tudat::basic_astrodynamics::thrust_acceleration</a>, 
-<a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abf29e4420ac7dbbcfe0ff7e2c7910aaba42831f8c9d7bc75202d7a3ba46b70edf">tudat::basic_astrodynamics::relativistic_correction_acceleration</a>, 
-<a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abf29e4420ac7dbbcfe0ff7e2c7910aaba97445509d0b6d2b3ab251f47c05aeb5a">tudat::basic_astrodynamics::empirical_acceleration</a>
+<br />
+&#160;&#160;<a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abf29e4420ac7dbbcfe0ff7e2c7910aaba42831f8c9d7bc75202d7a3ba46b70edf">tudat::basic_astrodynamics::relativistic_correction_acceleration</a>, 
+<a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abf29e4420ac7dbbcfe0ff7e2c7910aaba97445509d0b6d2b3ab251f47c05aeb5a">tudat::basic_astrodynamics::empirical_acceleration</a>, 
+<a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abf29e4420ac7dbbcfe0ff7e2c7910aabad42e52f5834f6a58cdbd24973bb9f1d2">tudat::basic_astrodynamics::direct_tidal_dissipation_acceleration</a>
 <br />
  }<tr class="memdesc:abf29e4420ac7dbbcfe0ff7e2c7910aab"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of accelerations available in simulations.  <a href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abf29e4420ac7dbbcfe0ff7e2c7910aab">More...</a><br /></td></tr>
 </td></tr>
@@ -168,7 +173,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 27 2017 09:32:58 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 7 2017 11:20:29 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

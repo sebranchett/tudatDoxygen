@@ -140,6 +140,9 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a5236b408bc931fabc35fae969b27e6e0"><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr&lt; <a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#a353af08da04f2de519bb836c464bd76a">AccelerationModel3d</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#a5236b408bc931fabc35fae969b27e6e0">AccelerationModel3dPointer</a></td></tr>
 <tr class="memdesc:a5236b408bc931fabc35fae969b27e6e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Typedef for shared-pointer to a 3D acceleration model.  <a href="#a5236b408bc931fabc35fae969b27e6e0">More...</a><br /></td></tr>
 <tr class="separator:a5236b408bc931fabc35fae969b27e6e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a4ee0daac905406865e1cbbe263c718"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; std::string, std::vector&lt; boost::shared_ptr&lt; <a class="el" href="../../de/d08/classtudat_1_1basic__astrodynamics_1_1_mass_rate_model.html">MassRateModel</a> &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#a2a4ee0daac905406865e1cbbe263c718">MassRateModelMap</a></td></tr>
+<tr class="memdesc:a2a4ee0daac905406865e1cbbe263c718"><td class="mdescLeft">&#160;</td><td class="mdescRight">Typedef for the massrate model map.  <a href="#a2a4ee0daac905406865e1cbbe263c718">More...</a><br /></td></tr>
+<tr class="separator:a2a4ee0daac905406865e1cbbe263c718"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad767e9cedb6ba00160950a07c6156ceb"><td class="memItemLeft" align="right" valign="top">typedef std::unordered_map&lt; std::string, std::vector&lt; boost::shared_ptr&lt; <a class="el" href="../../d0/d59/classtudat_1_1basic__astrodynamics_1_1_acceleration_model.html">basic_astrodynamics::AccelerationModel</a>&lt; Eigen::Vector3d &gt; &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#ad767e9cedb6ba00160950a07c6156ceb">SingleBodyAccelerationMap</a></td></tr>
 <tr class="separator:ad767e9cedb6ba00160950a07c6156ceb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e50d452f805eaf1a4c2f92e86361be6"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; std::string, std::vector&lt; boost::shared_ptr&lt; <a class="el" href="../../d1/d03/classtudat_1_1basic__astrodynamics_1_1_torque_model.html">basic_astrodynamics::TorqueModel</a> &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#a3e50d452f805eaf1a4c2f92e86361be6">SingleBodyTorqueModelMap</a></td></tr>
@@ -153,19 +156,23 @@ Typedefs</h2></td></tr>
 Enumerations</h2></td></tr>
 <tr class="memitem:abf29e4420ac7dbbcfe0ff7e2c7910aab"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abf29e4420ac7dbbcfe0ff7e2c7910aab">AvailableAcceleration</a> { <br />
 &#160;&#160;<a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abf29e4420ac7dbbcfe0ff7e2c7910aabaf7661d328d6500afd762f6e92f56680a">undefined_acceleration</a>, 
-<a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abf29e4420ac7dbbcfe0ff7e2c7910aabac90573463c6654eda51833571c464529">central_gravity</a>, 
+<a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abf29e4420ac7dbbcfe0ff7e2c7910aaba9157aa464a5a91c246383bbecc542a1e">point_mass_gravity</a>, 
+<a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abf29e4420ac7dbbcfe0ff7e2c7910aabac90573463c6654eda51833571c464529">central_gravity</a> = point_mass_gravity, 
 <a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abf29e4420ac7dbbcfe0ff7e2c7910aaba80e754ce5f37b06ac37cdff02fcb6647">aerodynamic</a>, 
-<a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abf29e4420ac7dbbcfe0ff7e2c7910aaba61dceebb9257c8a794a79d29211f4c1c">cannon_ball_radiation_pressure</a>, 
 <br />
-&#160;&#160;<a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abf29e4420ac7dbbcfe0ff7e2c7910aabad94f46b5869cafa217eb81c6fcf17691">spherical_harmonic_gravity</a>, 
+&#160;&#160;<a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abf29e4420ac7dbbcfe0ff7e2c7910aaba61dceebb9257c8a794a79d29211f4c1c">cannon_ball_radiation_pressure</a>, 
+<a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abf29e4420ac7dbbcfe0ff7e2c7910aabad94f46b5869cafa217eb81c6fcf17691">spherical_harmonic_gravity</a>, 
 <a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abf29e4420ac7dbbcfe0ff7e2c7910aaba23e238eca77ca29bf384a39459d32f50">mutual_spherical_harmonic_gravity</a>, 
-<a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abf29e4420ac7dbbcfe0ff7e2c7910aaba68f1450ca4d1e9dad72b00efa9adef2e">third_body_central_gravity</a>, 
-<a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abf29e4420ac7dbbcfe0ff7e2c7910aaba93d6b6c6558917c2812e2bfbcd59b911">third_body_spherical_harmonic_gravity</a>, 
+<a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abf29e4420ac7dbbcfe0ff7e2c7910aaba8ac3f141c2bbde183bc06da94823b064">third_body_point_mass_gravity</a>, 
 <br />
-&#160;&#160;<a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abf29e4420ac7dbbcfe0ff7e2c7910aaba383c824d5b7ae23529f0eeb5dd7edb64">third_body_mutual_spherical_harmonic_gravity</a>, 
+&#160;&#160;<a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abf29e4420ac7dbbcfe0ff7e2c7910aaba68f1450ca4d1e9dad72b00efa9adef2e">third_body_central_gravity</a> = third_body_point_mass_gravity, 
+<a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abf29e4420ac7dbbcfe0ff7e2c7910aaba93d6b6c6558917c2812e2bfbcd59b911">third_body_spherical_harmonic_gravity</a>, 
+<a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abf29e4420ac7dbbcfe0ff7e2c7910aaba383c824d5b7ae23529f0eeb5dd7edb64">third_body_mutual_spherical_harmonic_gravity</a>, 
 <a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abf29e4420ac7dbbcfe0ff7e2c7910aaba416d9bad3740dd35452d89fd4db3f921">thrust_acceleration</a>, 
-<a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abf29e4420ac7dbbcfe0ff7e2c7910aaba42831f8c9d7bc75202d7a3ba46b70edf">relativistic_correction_acceleration</a>, 
-<a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abf29e4420ac7dbbcfe0ff7e2c7910aaba97445509d0b6d2b3ab251f47c05aeb5a">empirical_acceleration</a>
+<br />
+&#160;&#160;<a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abf29e4420ac7dbbcfe0ff7e2c7910aaba42831f8c9d7bc75202d7a3ba46b70edf">relativistic_correction_acceleration</a>, 
+<a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abf29e4420ac7dbbcfe0ff7e2c7910aaba97445509d0b6d2b3ab251f47c05aeb5a">empirical_acceleration</a>, 
+<a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abf29e4420ac7dbbcfe0ff7e2c7910aabad42e52f5834f6a58cdbd24973bb9f1d2">direct_tidal_dissipation_acceleration</a>
 <br />
  }<tr class="memdesc:abf29e4420ac7dbbcfe0ff7e2c7910aab"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of accelerations available in simulations.  <a href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abf29e4420ac7dbbcfe0ff7e2c7910aab">More...</a><br /></td></tr>
 </td></tr>
@@ -194,6 +201,28 @@ Enumerations</h2></td></tr>
  }<tr class="memdesc:add400c2cd0b59b750729809df8873f33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum defining shape of empirical accelerations.  <a href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#add400c2cd0b59b750729809df8873f33">More...</a><br /></td></tr>
 </td></tr>
 <tr class="separator:add400c2cd0b59b750729809df8873f33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c1e505c4331efde501dfeadff43e682"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#a8c1e505c4331efde501dfeadff43e682">IAUConventions</a> { <a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#a8c1e505c4331efde501dfeadff43e682add01e4a08ea62d0221f50245d6c169bb">iau_2000_a</a>, 
+<a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#a8c1e505c4331efde501dfeadff43e682a84c8328c472060e49bd8a48362e030b5">iau_2000_b</a>, 
+<a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#a8c1e505c4331efde501dfeadff43e682a95ea2a7426f26d6b9f75364b4377e067">iau_2006</a>
+ }<tr class="memdesc:a8c1e505c4331efde501dfeadff43e682"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum of IAU conventions for Earth rotation.  <a href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#a8c1e505c4331efde501dfeadff43e682">More...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:a8c1e505c4331efde501dfeadff43e682"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1c2b00a3568f988227199b5f77c987c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#ac1c2b00a3568f988227199b5f77c987c">TimeScales</a> { <br />
+&#160;&#160;<a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#ac1c2b00a3568f988227199b5f77c987ca7f8cee360bd3f5d269065f1f2c086d95">dummy_scale</a> = -1, 
+<a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#ac1c2b00a3568f988227199b5f77c987ca9d398fc479c048428f104efbd4607fd4">tai_scale</a> = 0, 
+<a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#ac1c2b00a3568f988227199b5f77c987caf17c847714d3dd685003da4df09bc209">tt_scale</a> = 1, 
+<a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#ac1c2b00a3568f988227199b5f77c987caa131d3c65497863f77589ec295e258a1">tdb_scale</a> = 2, 
+<br />
+&#160;&#160;<a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#ac1c2b00a3568f988227199b5f77c987ca49c34e0955fbbd8f1bfe7dd95c0677b8">utc_scale</a> = 3, 
+<a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#ac1c2b00a3568f988227199b5f77c987ca127202a03befa88ce10f1f4f839600ef">ut1_scale</a> = 4, 
+<a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#ac1c2b00a3568f988227199b5f77c987ca1a07843c68a682981966e7cc3181fbcc">body_centered_coordinate_time_scale</a> = 5, 
+<a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#ac1c2b00a3568f988227199b5f77c987caca05543cf41d44552a9019fc800dd096">barycentric_coordinate_time_scale</a> = 6, 
+<br />
+&#160;&#160;<a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#ac1c2b00a3568f988227199b5f77c987cabec4c0cc4ba2726fc1b2520c7b3127e1">local_proper_time_scale</a> = 7
+<br />
+ }<tr class="memdesc:ac1c2b00a3568f988227199b5f77c987c"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of time scales available.  <a href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#ac1c2b00a3568f988227199b5f77c987c">More...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:ac1c2b00a3568f988227199b5f77c987c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -296,6 +325,15 @@ Functions</h2></td></tr>
 <tr class="memitem:a7f40aea822b509993b0086944356da32"><td class="memItemLeft" align="right" valign="top">boost::gregorian::date&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#a7f40aea822b509993b0086944356da32">convertYearAndDaysInYearToDate</a> (const int year, const int daysInYear)</td></tr>
 <tr class="memdesc:a7f40aea822b509993b0086944356da32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to create the calendar date from the year and the number of days in the year.  <a href="#a7f40aea822b509993b0086944356da32">More...</a><br /></td></tr>
 <tr class="separator:a7f40aea822b509993b0086944356da32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70d0ef97987783cf4c60bb48f084e442"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#a70d0ef97987783cf4c60bb48f084e442">from_json</a> (const nlohmann::json &amp;jsonObject, <a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#aa09ce70cfed2e1f912ff57a2f568adb4">AvailableTorque</a> &amp;torqueType)</td></tr>
+<tr class="memdesc:a70d0ef97987783cf4c60bb48f084e442"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert <code>json</code> to <code>AvailableTorque</code>.  <a href="#a70d0ef97987783cf4c60bb48f084e442">More...</a><br /></td></tr>
+<tr class="separator:a70d0ef97987783cf4c60bb48f084e442"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe0dfe6e688c04423e6a2deda9c859f8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#afe0dfe6e688c04423e6a2deda9c859f8">from_json</a> (const nlohmann::json &amp;jsonObject, <a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abe8f371ac11e30366bab79dd52dc7138">AvailableMassRateModels</a> &amp;massRateType)</td></tr>
+<tr class="memdesc:afe0dfe6e688c04423e6a2deda9c859f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert <code>json</code> to <code>AvailableMassRateModels</code>.  <a href="#afe0dfe6e688c04423e6a2deda9c859f8">More...</a><br /></td></tr>
+<tr class="separator:afe0dfe6e688c04423e6a2deda9c859f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a618b5056be465fde40aaff086d9ea1ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#a618b5056be465fde40aaff086d9ea1ac">from_json</a> (const nlohmann::json &amp;jsonObject, <a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abf29e4420ac7dbbcfe0ff7e2c7910aab">AvailableAcceleration</a> &amp;accelerationType)</td></tr>
+<tr class="memdesc:a618b5056be465fde40aaff086d9ea1ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert <code>json</code> to <code>AvailableAcceleration</code>.  <a href="#a618b5056be465fde40aaff086d9ea1ac">More...</a><br /></td></tr>
+<tr class="separator:a618b5056be465fde40aaff086d9ea1ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb4cc3e4b9f1e801c663b61b3686afe2"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#acb4cc3e4b9f1e801c663b61b3686afe2">getAccelerationModelName</a> (const <a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abf29e4420ac7dbbcfe0ff7e2c7910aab">AvailableAcceleration</a> accelerationType)</td></tr>
 <tr class="memdesc:acb4cc3e4b9f1e801c663b61b3686afe2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to get a string representing a 'named identification' of an acceleration type.  <a href="#acb4cc3e4b9f1e801c663b61b3686afe2">More...</a><br /></td></tr>
 <tr class="separator:acb4cc3e4b9f1e801c663b61b3686afe2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -393,6 +431,10 @@ Functions</h2></td></tr>
 <tr class="memitem:afe7d68090a555c9eebd67e7f85a1d404"><td class="memTemplItemLeft" align="right" valign="top">long double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#afe7d68090a555c9eebd67e7f85a1d404">getTTMinusTai&lt; long double &gt;</a> ()</td></tr>
 <tr class="memdesc:afe7d68090a555c9eebd67e7f85a1d404"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to get the offset of TT from TAI (constant by definition), in long double precision.  <a href="#afe7d68090a555c9eebd67e7f85a1d404">More...</a><br /></td></tr>
 <tr class="separator:afe7d68090a555c9eebd67e7f85a1d404"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca7a4b8b914a4f1309a39eee3bbc01d9"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:aca7a4b8b914a4f1309a39eee3bbc01d9"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d8/df9/classtudat_1_1_time.html">Time</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#aca7a4b8b914a4f1309a39eee3bbc01d9">getTTMinusTai&lt; Time &gt;</a> ()</td></tr>
+<tr class="memdesc:aca7a4b8b914a4f1309a39eee3bbc01d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to get the offset of TT from TAI (constant by definition), in <a class="el" href="../../d8/df9/classtudat_1_1_time.html" title="Class for defining time with a resolution that is sub-fs for very long periods of time...">Time</a> format.  <a href="#aca7a4b8b914a4f1309a39eee3bbc01d9">More...</a><br /></td></tr>
+<tr class="separator:aca7a4b8b914a4f1309a39eee3bbc01d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20124d72a9c74f0810127787a84954ba"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#a20124d72a9c74f0810127787a84954ba">isAccelerationDirectGravitational</a> (const <a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abf29e4420ac7dbbcfe0ff7e2c7910aab">AvailableAcceleration</a> accelerationType)</td></tr>
 <tr class="memdesc:a20124d72a9c74f0810127787a84954ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to check whether an acceleration type is a direct gravitational acceleration.  <a href="#a20124d72a9c74f0810127787a84954ba">More...</a><br /></td></tr>
 <tr class="separator:a20124d72a9c74f0810127787a84954ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -402,6 +444,15 @@ Functions</h2></td></tr>
 <tr class="memitem:aa5c71ce8fb7777345fadd2b8e142d46c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/da5/namespace_eigen.html#a03c917374d8dcb5bb158f2380f92847a">Eigen::Vector6d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#aa5c71ce8fb7777345fadd2b8e142d46c">propagateClohessyWiltshire</a> (const <a class="el" href="../../d0/da5/namespace_eigen.html#a03c917374d8dcb5bb158f2380f92847a">Eigen::Vector6d</a> &amp;initialState, const double propagationDuration, const double centralBodyGravitationalParameter, const double referenceOrbitRadius)</td></tr>
 <tr class="memdesc:aa5c71ce8fb7777345fadd2b8e142d46c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Propagate linearized relative motion.  <a href="#aa5c71ce8fb7777345fadd2b8e142d46c">More...</a><br /></td></tr>
 <tr class="separator:aa5c71ce8fb7777345fadd2b8e142d46c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b2f721c59097d3a3ca9579debab9118"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#a0b2f721c59097d3a3ca9579debab9118">to_json</a> (nlohmann::json &amp;jsonObject, const <a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#aa09ce70cfed2e1f912ff57a2f568adb4">AvailableTorque</a> &amp;torqueType)</td></tr>
+<tr class="memdesc:a0b2f721c59097d3a3ca9579debab9118"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert <code>AvailableTorque</code> to <code>json</code>.  <a href="#a0b2f721c59097d3a3ca9579debab9118">More...</a><br /></td></tr>
+<tr class="separator:a0b2f721c59097d3a3ca9579debab9118"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a115605517a8ea093190ac10108a0ea2c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#a115605517a8ea093190ac10108a0ea2c">to_json</a> (nlohmann::json &amp;jsonObject, const <a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abe8f371ac11e30366bab79dd52dc7138">AvailableMassRateModels</a> &amp;massRateType)</td></tr>
+<tr class="memdesc:a115605517a8ea093190ac10108a0ea2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert <code>AvailableMassRateModels</code> to <code>json</code>.  <a href="#a115605517a8ea093190ac10108a0ea2c">More...</a><br /></td></tr>
+<tr class="separator:a115605517a8ea093190ac10108a0ea2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0ad1923ff6753f89d02f1578b82a728"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#aa0ad1923ff6753f89d02f1578b82a728">to_json</a> (nlohmann::json &amp;jsonObject, const <a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abf29e4420ac7dbbcfe0ff7e2c7910aab">AvailableAcceleration</a> &amp;accelerationType)</td></tr>
+<tr class="memdesc:aa0ad1923ff6753f89d02f1578b82a728"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert <code>AvailableAcceleration</code> to <code>json</code>.  <a href="#aa0ad1923ff6753f89d02f1578b82a728">More...</a><br /></td></tr>
+<tr class="separator:aa0ad1923ff6753f89d02f1578b82a728"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09b262e4b2e0e976498f52143a102d37"><td class="memTemplParams" colspan="2">template&lt;typename AccelerationDataType &gt; </td></tr>
 <tr class="memitem:a09b262e4b2e0e976498f52143a102d37"><td class="memTemplItemLeft" align="right" valign="top">AccelerationDataType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#a09b262e4b2e0e976498f52143a102d37">updateAndGetAcceleration</a> (const boost::shared_ptr&lt; <a class="el" href="../../d0/d59/classtudat_1_1basic__astrodynamics_1_1_acceleration_model.html">AccelerationModel</a>&lt; AccelerationDataType &gt; &gt; accelerationModel, const double currentTime=<a class="el" href="../../d6/d70/mathematical_constants_8h.html#adf3d84f9d3e27cbaa280e9fd0bac8e5f">TUDAT_NAN</a>)</td></tr>
 <tr class="memdesc:a09b262e4b2e0e976498f52143a102d37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the members of an acceleration model and evaluate the acceleration.  <a href="#a09b262e4b2e0e976498f52143a102d37">More...</a><br /></td></tr>
@@ -409,6 +460,9 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
+<tr class="memitem:aa24792bdcf8c8c0fb30a3a8e4ebcc085"><td class="memItemLeft" align="right" valign="top">static std::map&lt; <a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abf29e4420ac7dbbcfe0ff7e2c7910aab">AvailableAcceleration</a>, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#aa24792bdcf8c8c0fb30a3a8e4ebcc085">accelerationTypes</a></td></tr>
+<tr class="memdesc:aa24792bdcf8c8c0fb30a3a8e4ebcc085"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map of <code>AvailableAcceleration</code>s string representations.  <a href="#aa24792bdcf8c8c0fb30a3a8e4ebcc085">More...</a><br /></td></tr>
+<tr class="separator:aa24792bdcf8c8c0fb30a3a8e4ebcc085"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76b2351c85277f6c65b96ce3b7d63369"><td class="memItemLeft" align="right" valign="top">static const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#a76b2351c85277f6c65b96ce3b7d63369">JULIAN_DAY_AT_0_MJD</a> = 2400000.5</td></tr>
 <tr class="memdesc:a76b2351c85277f6c65b96ce3b7d63369"><td class="mdescLeft">&#160;</td><td class="mdescRight">Julian day at Modified Julain Date 0, i.e. Nov 17, 1858, 00:00.  <a href="#a76b2351c85277f6c65b96ce3b7d63369">More...</a><br /></td></tr>
 <tr class="separator:a76b2351c85277f6c65b96ce3b7d63369"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -421,6 +475,9 @@ Variables</h2></td></tr>
 <tr class="memitem:aaae9ec222f182d311a1e25ef615a8096"><td class="memItemLeft" align="right" valign="top">static const long double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#aaae9ec222f182d311a1e25ef615a8096">JULIAN_DAY_ON_J2000_LONG</a> = 2451545.0L</td></tr>
 <tr class="memdesc:aaae9ec222f182d311a1e25ef615a8096"><td class="mdescLeft">&#160;</td><td class="mdescRight">Julian day at J2000, i.e. 01-01-2000, at 12:00 (in TT), in long double precision.  <a href="#aaae9ec222f182d311a1e25ef615a8096">More...</a><br /></td></tr>
 <tr class="separator:aaae9ec222f182d311a1e25ef615a8096"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcdce746b51c753a06cbf9d15c390b2c"><td class="memItemLeft" align="right" valign="top">static std::map&lt; <a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abe8f371ac11e30366bab79dd52dc7138">AvailableMassRateModels</a>, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abcdce746b51c753a06cbf9d15c390b2c">massRateTypes</a></td></tr>
+<tr class="memdesc:abcdce746b51c753a06cbf9d15c390b2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map of <code>AvailableMassRateModels</code> string representations.  <a href="#abcdce746b51c753a06cbf9d15c390b2c">More...</a><br /></td></tr>
+<tr class="separator:abcdce746b51c753a06cbf9d15c390b2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1538644250236d5bbff0cb4be39d62c7"><td class="memItemLeft" align="right" valign="top">static const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#a1538644250236d5bbff0cb4be39d62c7">TAI_JULIAN_DAY_AT_TIME_SYNCHRONIZATION</a> = 2443144.5003725</td></tr>
 <tr class="memdesc:a1538644250236d5bbff0cb4be39d62c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Julian day at which TT, TCG, and TCB all show exact same time (1977 January 1, 00:00:32.184)  <a href="#a1538644250236d5bbff0cb4be39d62c7">More...</a><br /></td></tr>
 <tr class="separator:a1538644250236d5bbff0cb4be39d62c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -433,12 +490,24 @@ Variables</h2></td></tr>
 <tr class="memitem:a0592af5a59c76a0eb3c2469720838d18"><td class="memItemLeft" align="right" valign="top">static const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#a0592af5a59c76a0eb3c2469720838d18">TDB_SECONDS_OFFSET_AT_SYNCHRONIZATION_LONG</a> = -6.55E-5L</td></tr>
 <tr class="memdesc:a0592af5a59c76a0eb3c2469720838d18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Difference between TDB and (TT, TCB and TCB) at TAI_JULIAN_DAY_AT_TIME_SYNCHRONIZATION, in the requested time type.  <a href="#a0592af5a59c76a0eb3c2469720838d18">More...</a><br /></td></tr>
 <tr class="separator:a0592af5a59c76a0eb3c2469720838d18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77fd100bde7f3e392a4595e84d1a25db"><td class="memItemLeft" align="right" valign="top">static std::map&lt; <a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#aa09ce70cfed2e1f912ff57a2f568adb4">AvailableTorque</a>, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#a77fd100bde7f3e392a4595e84d1a25db">torqueTypes</a></td></tr>
+<tr class="memdesc:a77fd100bde7f3e392a4595e84d1a25db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map of <code>AvailableTorque</code>s string representations.  <a href="#a77fd100bde7f3e392a4595e84d1a25db">More...</a><br /></td></tr>
+<tr class="separator:a77fd100bde7f3e392a4595e84d1a25db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ed6141e1d2bbcd3210790440858b8e2"><td class="memItemLeft" align="right" valign="top">static const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#a5ed6141e1d2bbcd3210790440858b8e2">TT_MINUS_TAI</a> = 32.184</td></tr>
 <tr class="memdesc:a5ed6141e1d2bbcd3210790440858b8e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Offset of TT from TAI (constant by definition).  <a href="#a5ed6141e1d2bbcd3210790440858b8e2">More...</a><br /></td></tr>
 <tr class="separator:a5ed6141e1d2bbcd3210790440858b8e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2bb1b153018b825b8c9829d1f66fa674"><td class="memItemLeft" align="right" valign="top">static const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#a2bb1b153018b825b8c9829d1f66fa674">TT_MINUS_TAI_LONG</a> = 32.184L</td></tr>
 <tr class="memdesc:a2bb1b153018b825b8c9829d1f66fa674"><td class="mdescLeft">&#160;</td><td class="mdescRight">Offset of TT from TAI (constant by definition), in long double precision.  <a href="#a2bb1b153018b825b8c9829d1f66fa674">More...</a><br /></td></tr>
 <tr class="separator:a2bb1b153018b825b8c9829d1f66fa674"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a3cc2d571f2402730f1fd42a62c748b"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; <a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abf29e4420ac7dbbcfe0ff7e2c7910aab">AvailableAcceleration</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#a2a3cc2d571f2402730f1fd42a62c748b">unsupportedAccelerationTypes</a></td></tr>
+<tr class="memdesc:a2a3cc2d571f2402730f1fd42a62c748b"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>AvailableAcceleration</code>s not supported by <code><a class="el" href="../../d8/d24/namespacetudat_1_1json__interface.html">json_interface</a></code>.  <a href="#a2a3cc2d571f2402730f1fd42a62c748b">More...</a><br /></td></tr>
+<tr class="separator:a2a3cc2d571f2402730f1fd42a62c748b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36ac4a121e4067412e68fe812a0525f1"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; <a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abe8f371ac11e30366bab79dd52dc7138">AvailableMassRateModels</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#a36ac4a121e4067412e68fe812a0525f1">unsupportedMassRateType</a></td></tr>
+<tr class="memdesc:a36ac4a121e4067412e68fe812a0525f1"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>AvailableMassRateModels</code> not supported by <code><a class="el" href="../../d8/d24/namespacetudat_1_1json__interface.html">json_interface</a></code>.  <a href="#a36ac4a121e4067412e68fe812a0525f1">More...</a><br /></td></tr>
+<tr class="separator:a36ac4a121e4067412e68fe812a0525f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04219f3851b1d30471cbf2efe6f9313a"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; <a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#aa09ce70cfed2e1f912ff57a2f568adb4">AvailableTorque</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#a04219f3851b1d30471cbf2efe6f9313a">unsupportedTorqueTypes</a> = { }</td></tr>
+<tr class="memdesc:a04219f3851b1d30471cbf2efe6f9313a"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>AvailableTorque</code>s not supported by <code><a class="el" href="../../d8/d24/namespacetudat_1_1json__interface.html">json_interface</a></code>.  <a href="#a04219f3851b1d30471cbf2efe6f9313a">More...</a><br /></td></tr>
+<tr class="separator:a04219f3851b1d30471cbf2efe6f9313a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a class="anchor" id="a353af08da04f2de519bb836c464bd76a"></a>
@@ -527,6 +596,20 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a2a4ee0daac905406865e1cbbe263c718"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::map&lt; std::string, std::vector&lt; boost::shared_ptr&lt; <a class="el" href="../../de/d08/classtudat_1_1basic__astrodynamics_1_1_mass_rate_model.html">MassRateModel</a> &gt; &gt; &gt; <a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#a2a4ee0daac905406865e1cbbe263c718">tudat::basic_astrodynamics::MassRateModelMap</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d9/d06/_astrodynamics_2_basic_astrodynamics_2mass_rate_model_8h_source.html#l00131">131</a> of file <a class="el" href="../../d9/d06/_astrodynamics_2_basic_astrodynamics_2mass_rate_model_8h_source.html">massRateModel.h</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a3e50d452f805eaf1a4c2f92e86361be6"></a>
 <div class="memitem">
 <div class="memproto">
@@ -537,7 +620,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d7/daf/torque_model_8h_source.html#l00088">88</a> of file <a class="el" href="../../d7/daf/torque_model_8h_source.html">torqueModel.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/daf/torque_model_8h_source.html#l00089">89</a> of file <a class="el" href="../../d7/daf/torque_model_8h_source.html">torqueModel.h</a>.</p>
 
 </div>
 </div>
@@ -551,7 +634,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d7/daf/torque_model_8h_source.html#l00091">91</a> of file <a class="el" href="../../d7/daf/torque_model_8h_source.html">torqueModel.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/daf/torque_model_8h_source.html#l00092">92</a> of file <a class="el" href="../../d7/daf/torque_model_8h_source.html">torqueModel.h</a>.</p>
 
 </div>
 </div>
@@ -569,6 +652,8 @@ Variables</h2></td></tr>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="abf29e4420ac7dbbcfe0ff7e2c7910aabaf7661d328d6500afd762f6e92f56680a"></a>undefined_acceleration&#160;</td><td class="fielddoc">
 </td></tr>
+<tr><td class="fieldname"><a class="anchor" id="abf29e4420ac7dbbcfe0ff7e2c7910aaba9157aa464a5a91c246383bbecc542a1e"></a>point_mass_gravity&#160;</td><td class="fielddoc">
+</td></tr>
 <tr><td class="fieldname"><a class="anchor" id="abf29e4420ac7dbbcfe0ff7e2c7910aabac90573463c6654eda51833571c464529"></a>central_gravity&#160;</td><td class="fielddoc">
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="abf29e4420ac7dbbcfe0ff7e2c7910aaba80e754ce5f37b06ac37cdff02fcb6647"></a>aerodynamic&#160;</td><td class="fielddoc">
@@ -578,6 +663,8 @@ Variables</h2></td></tr>
 <tr><td class="fieldname"><a class="anchor" id="abf29e4420ac7dbbcfe0ff7e2c7910aabad94f46b5869cafa217eb81c6fcf17691"></a>spherical_harmonic_gravity&#160;</td><td class="fielddoc">
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="abf29e4420ac7dbbcfe0ff7e2c7910aaba23e238eca77ca29bf384a39459d32f50"></a>mutual_spherical_harmonic_gravity&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="abf29e4420ac7dbbcfe0ff7e2c7910aaba8ac3f141c2bbde183bc06da94823b064"></a>third_body_point_mass_gravity&#160;</td><td class="fielddoc">
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="abf29e4420ac7dbbcfe0ff7e2c7910aaba68f1450ca4d1e9dad72b00efa9adef2e"></a>third_body_central_gravity&#160;</td><td class="fielddoc">
 </td></tr>
@@ -591,9 +678,11 @@ Variables</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="abf29e4420ac7dbbcfe0ff7e2c7910aaba97445509d0b6d2b3ab251f47c05aeb5a"></a>empirical_acceleration&#160;</td><td class="fielddoc">
 </td></tr>
+<tr><td class="fieldname"><a class="anchor" id="abf29e4420ac7dbbcfe0ff7e2c7910aabad42e52f5834f6a58cdbd24973bb9f1d2"></a>direct_tidal_dissipation_acceleration&#160;</td><td class="fielddoc">
+</td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="../../d4/d83/acceleration_model_types_8h_source.html#l00041">41</a> of file <a class="el" href="../../d4/d83/acceleration_model_types_8h_source.html">accelerationModelTypes.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/d83/acceleration_model_types_8h_source.html#l00043">43</a> of file <a class="el" href="../../d4/d83/acceleration_model_types_8h_source.html">accelerationModelTypes.h</a>.</p>
 
 </div>
 </div>
@@ -616,7 +705,7 @@ Variables</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="../../d4/d83/acceleration_model_types_8h_source.html#l00070">70</a> of file <a class="el" href="../../d4/d83/acceleration_model_types_8h_source.html">accelerationModelTypes.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/d83/acceleration_model_types_8h_source.html#l00075">75</a> of file <a class="el" href="../../d4/d83/acceleration_model_types_8h_source.html">accelerationModelTypes.h</a>.</p>
 
 </div>
 </div>
@@ -638,7 +727,7 @@ Variables</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="../../db/d7c/empirical_acceleration_8h_source.html#l00036">36</a> of file <a class="el" href="../../db/d7c/empirical_acceleration_8h_source.html">empiricalAcceleration.h</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d7c/empirical_acceleration_8h_source.html#l00035">35</a> of file <a class="el" href="../../db/d7c/empirical_acceleration_8h_source.html">empiricalAcceleration.h</a>.</p>
 
 </div>
 </div>
@@ -660,7 +749,42 @@ Variables</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="../../db/d7c/empirical_acceleration_8h_source.html#l00066">66</a> of file <a class="el" href="../../db/d7c/empirical_acceleration_8h_source.html">empiricalAcceleration.h</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d7c/empirical_acceleration_8h_source.html#l00065">65</a> of file <a class="el" href="../../db/d7c/empirical_acceleration_8h_source.html">empiricalAcceleration.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac1c2b00a3568f988227199b5f77c987c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#ac1c2b00a3568f988227199b5f77c987c">tudat::basic_astrodynamics::TimeScales</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>List of time scales available. Two types of scales are included, earth-based time scales (which can be handled, in part, by SOFA), which represent a unique specific scale, and three relativistic scales, of which only barycentric is unique. The bodycentric and topocentric scales require additional identifiers to fully determine. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="ac1c2b00a3568f988227199b5f77c987ca7f8cee360bd3f5d269065f1f2c086d95"></a>dummy_scale&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ac1c2b00a3568f988227199b5f77c987ca9d398fc479c048428f104efbd4607fd4"></a>tai_scale&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ac1c2b00a3568f988227199b5f77c987caf17c847714d3dd685003da4df09bc209"></a>tt_scale&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ac1c2b00a3568f988227199b5f77c987caa131d3c65497863f77589ec295e258a1"></a>tdb_scale&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ac1c2b00a3568f988227199b5f77c987ca49c34e0955fbbd8f1bfe7dd95c0677b8"></a>utc_scale&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ac1c2b00a3568f988227199b5f77c987ca127202a03befa88ce10f1f4f839600ef"></a>ut1_scale&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ac1c2b00a3568f988227199b5f77c987ca1a07843c68a682981966e7cc3181fbcc"></a>body_centered_coordinate_time_scale&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ac1c2b00a3568f988227199b5f77c987caca05543cf41d44552a9019fc800dd096"></a>barycentric_coordinate_time_scale&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ac1c2b00a3568f988227199b5f77c987cabec4c0cc4ba2726fc1b2520c7b3127e1"></a>local_proper_time_scale&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+<p>Definition at line <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00030">30</a> of file <a class="el" href="../../d4/d01/time_conversions_8h_source.html">timeConversions.h</a>.</p>
 
 </div>
 </div>
@@ -684,6 +808,28 @@ Variables</h2></td></tr>
 </table>
 
 <p>Definition at line <a class="el" href="../../db/d0d/torque_model_types_8h_source.html#l00028">28</a> of file <a class="el" href="../../db/d0d/torque_model_types_8h_source.html">torqueModelTypes.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8c1e505c4331efde501dfeadff43e682"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#a8c1e505c4331efde501dfeadff43e682">tudat::basic_astrodynamics::IAUConventions</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a8c1e505c4331efde501dfeadff43e682add01e4a08ea62d0221f50245d6c169bb"></a>iau_2000_a&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a8c1e505c4331efde501dfeadff43e682a84c8328c472060e49bd8a48362e030b5"></a>iau_2000_b&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a8c1e505c4331efde501dfeadff43e682a95ea2a7426f26d6b9f75364b4377e067"></a>iau_2006&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+<p>Definition at line <a class="el" href="../../d0/d5a/earth_orientation_8h_source.html#l00033">33</a> of file <a class="el" href="../../d0/d5a/earth_orientation_8h_source.html">earthOrientation.h</a>.</p>
 
 </div>
 </div>
@@ -755,9 +901,9 @@ template&lt;typename AccelerationDataType &gt; </div>
 
 <p>Definition at line <a class="el" href="../../d7/db6/acceleration_model_types_8cpp_source.html#l00021">21</a> of file <a class="el" href="../../d7/db6/acceleration_model_types_8cpp_source.html">accelerationModelTypes.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d4/d83/acceleration_model_types_8h_source.html#l00045">aerodynamic</a>, <a class="el" href="../../d4/d83/acceleration_model_types_8h_source.html#l00046">cannon_ball_radiation_pressure</a>, <a class="el" href="../../d4/d83/acceleration_model_types_8h_source.html#l00044">central_gravity</a>, <a class="el" href="../../d4/d83/acceleration_model_types_8h_source.html#l00054">empirical_acceleration</a>, <a class="el" href="../../d4/d83/acceleration_model_types_8h_source.html#l00048">mutual_spherical_harmonic_gravity</a>, <a class="el" href="../../d4/d83/acceleration_model_types_8h_source.html#l00053">relativistic_correction_acceleration</a>, <a class="el" href="../../d4/d83/acceleration_model_types_8h_source.html#l00047">spherical_harmonic_gravity</a>, <a class="el" href="../../d4/d83/acceleration_model_types_8h_source.html#l00049">third_body_central_gravity</a>, <a class="el" href="../../d4/d83/acceleration_model_types_8h_source.html#l00051">third_body_mutual_spherical_harmonic_gravity</a>, <a class="el" href="../../d4/d83/acceleration_model_types_8h_source.html#l00050">third_body_spherical_harmonic_gravity</a>, and <a class="el" href="../../d4/d83/acceleration_model_types_8h_source.html#l00052">thrust_acceleration</a>.</p>
+<p>References <a class="el" href="../../d4/d83/acceleration_model_types_8h_source.html#l00048">aerodynamic</a>, <a class="el" href="../../d4/d83/acceleration_model_types_8h_source.html#l00049">cannon_ball_radiation_pressure</a>, <a class="el" href="../../d4/d83/acceleration_model_types_8h_source.html#l00047">central_gravity</a>, <a class="el" href="../../d4/d83/acceleration_model_types_8h_source.html#l00059">direct_tidal_dissipation_acceleration</a>, <a class="el" href="../../d4/d83/acceleration_model_types_8h_source.html#l00058">empirical_acceleration</a>, <a class="el" href="../../d4/d83/acceleration_model_types_8h_source.html#l00051">mutual_spherical_harmonic_gravity</a>, <a class="el" href="../../d4/d83/acceleration_model_types_8h_source.html#l00057">relativistic_correction_acceleration</a>, <a class="el" href="../../d4/d83/acceleration_model_types_8h_source.html#l00050">spherical_harmonic_gravity</a>, <a class="el" href="../../d4/d83/acceleration_model_types_8h_source.html#l00053">third_body_central_gravity</a>, <a class="el" href="../../d4/d83/acceleration_model_types_8h_source.html#l00055">third_body_mutual_spherical_harmonic_gravity</a>, <a class="el" href="../../d4/d83/acceleration_model_types_8h_source.html#l00054">third_body_spherical_harmonic_gravity</a>, and <a class="el" href="../../d4/d83/acceleration_model_types_8h_source.html#l00056">thrust_acceleration</a>.</p>
 
-<p>Referenced by <a class="el" href="../../de/d48/propagation_output_settings_8cpp_source.html#l00132">tudat::propagators::getDependentVariableId()</a>.</p>
+<p>Referenced by <a class="el" href="../../de/d48/propagation_output_settings_8cpp_source.html#l00171">tudat::propagators::getDependentVariableId()</a>.</p>
 
 </div>
 </div>
@@ -782,11 +928,11 @@ template&lt;typename AccelerationDataType &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Type of the accelerationModel, as identified by AvailableAcceleration enum. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d7/db6/acceleration_model_types_8cpp_source.html#l00069">69</a> of file <a class="el" href="../../d7/db6/acceleration_model_types_8cpp_source.html">accelerationModelTypes.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/db6/acceleration_model_types_8cpp_source.html#l00072">72</a> of file <a class="el" href="../../d7/db6/acceleration_model_types_8cpp_source.html">accelerationModelTypes.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d4/d83/acceleration_model_types_8h_source.html#l00045">aerodynamic</a>, <a class="el" href="../../d4/d83/acceleration_model_types_8h_source.html#l00046">cannon_ball_radiation_pressure</a>, <a class="el" href="../../d4/d83/acceleration_model_types_8h_source.html#l00044">central_gravity</a>, <a class="el" href="../../d4/d83/acceleration_model_types_8h_source.html#l00054">empirical_acceleration</a>, <a class="el" href="../../d4/d83/acceleration_model_types_8h_source.html#l00048">mutual_spherical_harmonic_gravity</a>, <a class="el" href="../../d4/d83/acceleration_model_types_8h_source.html#l00053">relativistic_correction_acceleration</a>, <a class="el" href="../../d4/d83/acceleration_model_types_8h_source.html#l00047">spherical_harmonic_gravity</a>, <a class="el" href="../../d4/d83/acceleration_model_types_8h_source.html#l00049">third_body_central_gravity</a>, <a class="el" href="../../d4/d83/acceleration_model_types_8h_source.html#l00051">third_body_mutual_spherical_harmonic_gravity</a>, <a class="el" href="../../d4/d83/acceleration_model_types_8h_source.html#l00050">third_body_spherical_harmonic_gravity</a>, <a class="el" href="../../d4/d83/acceleration_model_types_8h_source.html#l00052">thrust_acceleration</a>, and <a class="el" href="../../d4/d83/acceleration_model_types_8h_source.html#l00043">undefined_acceleration</a>.</p>
+<p>References <a class="el" href="../../d4/d83/acceleration_model_types_8h_source.html#l00048">aerodynamic</a>, <a class="el" href="../../d4/d83/acceleration_model_types_8h_source.html#l00049">cannon_ball_radiation_pressure</a>, <a class="el" href="../../d4/d83/acceleration_model_types_8h_source.html#l00047">central_gravity</a>, <a class="el" href="../../d4/d83/acceleration_model_types_8h_source.html#l00059">direct_tidal_dissipation_acceleration</a>, <a class="el" href="../../d4/d83/acceleration_model_types_8h_source.html#l00058">empirical_acceleration</a>, <a class="el" href="../../d4/d83/acceleration_model_types_8h_source.html#l00051">mutual_spherical_harmonic_gravity</a>, <a class="el" href="../../d4/d83/acceleration_model_types_8h_source.html#l00057">relativistic_correction_acceleration</a>, <a class="el" href="../../d4/d83/acceleration_model_types_8h_source.html#l00050">spherical_harmonic_gravity</a>, <a class="el" href="../../d4/d83/acceleration_model_types_8h_source.html#l00053">third_body_central_gravity</a>, <a class="el" href="../../d4/d83/acceleration_model_types_8h_source.html#l00055">third_body_mutual_spherical_harmonic_gravity</a>, <a class="el" href="../../d4/d83/acceleration_model_types_8h_source.html#l00054">third_body_spherical_harmonic_gravity</a>, <a class="el" href="../../d4/d83/acceleration_model_types_8h_source.html#l00056">thrust_acceleration</a>, and <a class="el" href="../../d4/d83/acceleration_model_types_8h_source.html#l00045">undefined_acceleration</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d1/d2b/create_acceleration_partials_8h_source.html#l00064">tudat::simulation_setup::createAnalyticalAccelerationPartial()</a>, <a class="el" href="../../df/db3/create_environment_updater_8cpp_source.html#l00180">tudat::propagators::createTranslationalEquationsOfMotionEnvironmentUpdaterSettings()</a>, <a class="el" href="../../d0/db5/create_estimatable_parameters_8cpp_source.html#l00184">tudat::simulation_setup::createVectorParameterToEstimate()</a>, <a class="el" href="../../d7/db6/acceleration_model_types_8cpp_source.html#l00172">getAccelerationModelsOfType()</a>, <a class="el" href="../../d4/dd8/n_body_state_derivative_8cpp_source.html#l00021">tudat::propagators::removeCentralGravityAccelerations()</a>, and <a class="el" href="../../df/dca/create_state_derivative_model_8h_source.html#l00355">tudat::propagators::setMultiTypePropagationClosure()</a>.</p>
+<p>Referenced by <a class="el" href="../../d1/d2b/create_acceleration_partials_8h_source.html#l00065">tudat::simulation_setup::createAnalyticalAccelerationPartial()</a>, <a class="el" href="../../df/db3/create_environment_updater_8cpp_source.html#l00180">tudat::propagators::createTranslationalEquationsOfMotionEnvironmentUpdaterSettings()</a>, <a class="el" href="../../d0/db5/create_estimatable_parameters_8cpp_source.html#l00208">tudat::simulation_setup::createVectorParameterToEstimate()</a>, <a class="el" href="../../d7/db6/acceleration_model_types_8cpp_source.html#l00178">getAccelerationModelsOfType()</a>, <a class="el" href="../../d4/dd8/n_body_state_derivative_8cpp_source.html#l00021">tudat::propagators::removeCentralGravityAccelerations()</a>, and <a class="el" href="../../df/dca/create_state_derivative_model_8h_source.html#l00377">tudat::propagators::setMultiTypePropagationClosure()</a>.</p>
 
 </div>
 </div>
@@ -811,11 +957,11 @@ template&lt;typename AccelerationDataType &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Type of the massRateModel, as identified by AvailableMassRateModels enum. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d7/db6/acceleration_model_types_8cpp_source.html#l00146">146</a> of file <a class="el" href="../../d7/db6/acceleration_model_types_8cpp_source.html">accelerationModelTypes.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/db6/acceleration_model_types_8cpp_source.html#l00153">153</a> of file <a class="el" href="../../d7/db6/acceleration_model_types_8cpp_source.html">accelerationModelTypes.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d4/d83/acceleration_model_types_8h_source.html#l00073">custom_mass_rate_model</a>, <a class="el" href="../../d4/d83/acceleration_model_types_8h_source.html#l00074">from_thrust_mass_rate_model</a>, and <a class="el" href="../../d4/d83/acceleration_model_types_8h_source.html#l00072">undefined_mass_rate_model</a>.</p>
+<p>References <a class="el" href="../../d4/d83/acceleration_model_types_8h_source.html#l00078">custom_mass_rate_model</a>, <a class="el" href="../../d4/d83/acceleration_model_types_8h_source.html#l00079">from_thrust_mass_rate_model</a>, and <a class="el" href="../../d4/d83/acceleration_model_types_8h_source.html#l00077">undefined_mass_rate_model</a>.</p>
 
-<p>Referenced by <a class="el" href="../../df/db3/create_environment_updater_8cpp_source.html#l00388">tudat::propagators::createMassPropagationEnvironmentUpdaterSettings()</a>.</p>
+<p>Referenced by <a class="el" href="../../df/db3/create_environment_updater_8cpp_source.html#l00394">tudat::propagators::createMassPropagationEnvironmentUpdaterSettings()</a>.</p>
 
 </div>
 </div>
@@ -851,11 +997,11 @@ template&lt;typename AccelerationDataType &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Subset of fullList for which the acceleration model type is modelType </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d7/db6/acceleration_model_types_8cpp_source.html#l00172">172</a> of file <a class="el" href="../../d7/db6/acceleration_model_types_8cpp_source.html">accelerationModelTypes.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/db6/acceleration_model_types_8cpp_source.html#l00178">178</a> of file <a class="el" href="../../d7/db6/acceleration_model_types_8cpp_source.html">accelerationModelTypes.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d7/db6/acceleration_model_types_8cpp_source.html#l00069">getAccelerationModelType()</a>.</p>
+<p>References <a class="el" href="../../d7/db6/acceleration_model_types_8cpp_source.html#l00072">getAccelerationModelType()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d9/d52/create_mass_rate_models_8cpp_source.html#l00022">tudat::simulation_setup::createMassRateModel()</a>, and <a class="el" href="../../d5/deb/dynamics_state_derivative_model_8h_source.html#l00570">tudat::propagators::getAccelerationBetweenBodies()</a>.</p>
+<p>Referenced by <a class="el" href="../../d9/d52/create_mass_rate_models_8cpp_source.html#l00022">tudat::simulation_setup::createMassRateModel()</a>, and <a class="el" href="../../d5/deb/dynamics_state_derivative_model_8h_source.html#l00578">tudat::propagators::getAccelerationBetweenBodies()</a>.</p>
 
 </div>
 </div>
@@ -880,11 +1026,11 @@ template&lt;typename AccelerationDataType &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if acceleration type is direct gravitational, false otherwise. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d7/db6/acceleration_model_types_8cpp_source.html#l00188">188</a> of file <a class="el" href="../../d7/db6/acceleration_model_types_8cpp_source.html">accelerationModelTypes.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/db6/acceleration_model_types_8cpp_source.html#l00194">194</a> of file <a class="el" href="../../d7/db6/acceleration_model_types_8cpp_source.html">accelerationModelTypes.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d4/d83/acceleration_model_types_8h_source.html#l00044">central_gravity</a>, <a class="el" href="../../d4/d83/acceleration_model_types_8h_source.html#l00048">mutual_spherical_harmonic_gravity</a>, and <a class="el" href="../../d4/d83/acceleration_model_types_8h_source.html#l00047">spherical_harmonic_gravity</a>.</p>
+<p>References <a class="el" href="../../d4/d83/acceleration_model_types_8h_source.html#l00047">central_gravity</a>, <a class="el" href="../../d4/d83/acceleration_model_types_8h_source.html#l00051">mutual_spherical_harmonic_gravity</a>, and <a class="el" href="../../d4/d83/acceleration_model_types_8h_source.html#l00050">spherical_harmonic_gravity</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d7/db6/acceleration_model_types_8cpp_source.html#l00202">getAssociatedThirdBodyAcceleration()</a>, <a class="el" href="../../db/d91/propagation_output_8h_source.html#l00182">tudat::propagators::getDoubleDependentVariableFunction()</a>, and <a class="el" href="../../db/d91/propagation_output_8h_source.html#l00600">tudat::propagators::getVectorDependentVariableFunction()</a>.</p>
+<p>Referenced by <a class="el" href="../../d7/db6/acceleration_model_types_8cpp_source.html#l00208">getAssociatedThirdBodyAcceleration()</a>, <a class="el" href="../../db/d91/propagation_output_8h_source.html#l00581">tudat::propagators::getDoubleDependentVariableFunction()</a>, and <a class="el" href="../../db/d91/propagation_output_8h_source.html#l00192">tudat::propagators::getVectorDependentVariableFunction()</a>.</p>
 
 </div>
 </div>
@@ -909,11 +1055,11 @@ template&lt;typename AccelerationDataType &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Third-body counterpart of accelerationType. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d7/db6/acceleration_model_types_8cpp_source.html#l00202">202</a> of file <a class="el" href="../../d7/db6/acceleration_model_types_8cpp_source.html">accelerationModelTypes.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/db6/acceleration_model_types_8cpp_source.html#l00208">208</a> of file <a class="el" href="../../d7/db6/acceleration_model_types_8cpp_source.html">accelerationModelTypes.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d4/d83/acceleration_model_types_8h_source.html#l00044">central_gravity</a>, <a class="el" href="../../d7/db6/acceleration_model_types_8cpp_source.html#l00188">isAccelerationDirectGravitational()</a>, <a class="el" href="../../d4/d83/acceleration_model_types_8h_source.html#l00048">mutual_spherical_harmonic_gravity</a>, <a class="el" href="../../d4/d83/acceleration_model_types_8h_source.html#l00047">spherical_harmonic_gravity</a>, <a class="el" href="../../d4/d83/acceleration_model_types_8h_source.html#l00049">third_body_central_gravity</a>, <a class="el" href="../../d4/d83/acceleration_model_types_8h_source.html#l00051">third_body_mutual_spherical_harmonic_gravity</a>, and <a class="el" href="../../d4/d83/acceleration_model_types_8h_source.html#l00050">third_body_spherical_harmonic_gravity</a>.</p>
+<p>References <a class="el" href="../../d4/d83/acceleration_model_types_8h_source.html#l00047">central_gravity</a>, <a class="el" href="../../d7/db6/acceleration_model_types_8cpp_source.html#l00194">isAccelerationDirectGravitational()</a>, <a class="el" href="../../d4/d83/acceleration_model_types_8h_source.html#l00051">mutual_spherical_harmonic_gravity</a>, <a class="el" href="../../d4/d83/acceleration_model_types_8h_source.html#l00050">spherical_harmonic_gravity</a>, <a class="el" href="../../d4/d83/acceleration_model_types_8h_source.html#l00053">third_body_central_gravity</a>, <a class="el" href="../../d4/d83/acceleration_model_types_8h_source.html#l00055">third_body_mutual_spherical_harmonic_gravity</a>, and <a class="el" href="../../d4/d83/acceleration_model_types_8h_source.html#l00054">third_body_spherical_harmonic_gravity</a>.</p>
 
-<p>Referenced by <a class="el" href="../../db/d91/propagation_output_8h_source.html#l00182">tudat::propagators::getDoubleDependentVariableFunction()</a>, and <a class="el" href="../../db/d91/propagation_output_8h_source.html#l00600">tudat::propagators::getVectorDependentVariableFunction()</a>.</p>
+<p>Referenced by <a class="el" href="../../db/d91/propagation_output_8h_source.html#l00581">tudat::propagators::getDoubleDependentVariableFunction()</a>, and <a class="el" href="../../db/d91/propagation_output_8h_source.html#l00192">tudat::propagators::getVectorDependentVariableFunction()</a>.</p>
 
 </div>
 </div>
@@ -959,7 +1105,7 @@ template&lt;typename AccelerationDataType &gt; </div>
 
 <p>Definition at line <a class="el" href="../../d6/db8/astrodynamics_functions_8cpp_source.html#l00028">28</a> of file <a class="el" href="../../d6/db8/astrodynamics_functions_8cpp_source.html">astrodynamicsFunctions.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d4/db3/physical_constants_8h_source.html#l00104">tudat::physical_constants::GRAVITATIONAL_CONSTANT</a>, and <a class="el" href="../../d6/d70/mathematical_constants_8h_source.html#l00064">tudat::mathematical_constants::PI</a>.</p>
+<p>References <a class="el" href="../../d4/db3/physical_constants_8h_source.html#l00103">tudat::physical_constants::GRAVITATIONAL_CONSTANT</a>, and <a class="el" href="../../d6/d70/mathematical_constants_8h_source.html#l00064">tudat::mathematical_constants::PI</a>.</p>
 
 </div>
 </div>
@@ -1056,7 +1202,7 @@ template&lt;typename AccelerationDataType &gt; </div>
 
 <p>Definition at line <a class="el" href="../../d6/db8/astrodynamics_functions_8cpp_source.html#l00048">48</a> of file <a class="el" href="../../d6/db8/astrodynamics_functions_8cpp_source.html">astrodynamicsFunctions.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d4/db3/physical_constants_8h_source.html#l00104">tudat::physical_constants::GRAVITATIONAL_CONSTANT</a>.</p>
+<p>References <a class="el" href="../../d4/db3/physical_constants_8h_source.html#l00103">tudat::physical_constants::GRAVITATIONAL_CONSTANT</a>.</p>
 
 <p>Referenced by <a class="el" href="../../d3/dd7/n_body_gauss_kepler_state_derivative_8cpp_source.html#l00076">tudat::propagators::computeGaussPlanetaryEquationsForKeplerElements()</a>.</p>
 
@@ -1225,9 +1371,9 @@ template&lt;typename AccelerationDataType &gt; </div>
 
 <p>Definition at line <a class="el" href="../../d6/db8/astrodynamics_functions_8cpp_source.html#l00080">80</a> of file <a class="el" href="../../d6/db8/astrodynamics_functions_8cpp_source.html">astrodynamicsFunctions.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d6/db8/astrodynamics_functions_8cpp_source.html#l00072">computePeriapsisAltitudeFromKeplerianState()</a>, and <a class="el" href="../../df/d3d/orbital_element_conversions_8h_source.html#l00237">tudat::orbital_element_conversions::convertCartesianToKeplerianElements()</a>.</p>
+<p>References <a class="el" href="../../d6/db8/astrodynamics_functions_8cpp_source.html#l00072">computePeriapsisAltitudeFromKeplerianState()</a>, and <a class="el" href="../../df/d3d/orbital_element_conversions_8h_source.html#l00251">tudat::orbital_element_conversions::convertCartesianToKeplerianElements()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../db/d91/propagation_output_8h_source.html#l00182">tudat::propagators::getDoubleDependentVariableFunction()</a>.</p>
+<p>Referenced by <a class="el" href="../../db/d91/propagation_output_8h_source.html#l00581">tudat::propagators::getDoubleDependentVariableFunction()</a>.</p>
 
 </div>
 </div>
@@ -1421,9 +1567,9 @@ template&lt;typename AccelerationDataType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../db/d7c/empirical_acceleration_8h_source.html#l00043">43</a> of file <a class="el" href="../../db/d7c/empirical_acceleration_8h_source.html">empiricalAcceleration.h</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d7c/empirical_acceleration_8h_source.html#l00042">42</a> of file <a class="el" href="../../db/d7c/empirical_acceleration_8h_source.html">empiricalAcceleration.h</a>.</p>
 
-<p>References <a class="el" href="../../db/d7c/empirical_acceleration_8h_source.html#l00038">constant_empirical</a>, <a class="el" href="../../db/d7c/empirical_acceleration_8h_source.html#l00040">cosine_empirical</a>, and <a class="el" href="../../db/d7c/empirical_acceleration_8h_source.html#l00039">sine_empirical</a>.</p>
+<p>References <a class="el" href="../../db/d7c/empirical_acceleration_8h_source.html#l00037">constant_empirical</a>, <a class="el" href="../../db/d7c/empirical_acceleration_8h_source.html#l00039">cosine_empirical</a>, and <a class="el" href="../../db/d7c/empirical_acceleration_8h_source.html#l00038">sine_empirical</a>.</p>
 
 <p>Referenced by <a class="el" href="../../d4/ded/empirical_acceleration_coefficients_8h_source.html#l00166">tudat::estimatable_parameters::EmpiricalAccelerationCoefficientsParameter::getParameterDescription()</a>.</p>
 
@@ -1444,9 +1590,9 @@ template&lt;&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html#l00024">24</a> of file <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html">timeConversions.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html#l00025">25</a> of file <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html">timeConversions.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00027">JULIAN_DAY_ON_J2000</a>.</p>
+<p>References <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00044">JULIAN_DAY_ON_J2000</a>.</p>
 
 </div>
 </div>
@@ -1465,9 +1611,9 @@ template&lt;&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html#l00031">31</a> of file <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html">timeConversions.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html#l00032">32</a> of file <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html">timeConversions.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00030">JULIAN_DAY_ON_J2000_LONG</a>.</p>
+<p>References <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00047">JULIAN_DAY_ON_J2000_LONG</a>.</p>
 
 </div>
 </div>
@@ -1486,9 +1632,9 @@ template&lt;&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html#l00038">38</a> of file <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html">timeConversions.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html#l00039">39</a> of file <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html">timeConversions.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00041">JULIAN_DAY_AT_0_MJD</a>.</p>
+<p>References <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00058">JULIAN_DAY_AT_0_MJD</a>.</p>
 
 </div>
 </div>
@@ -1507,9 +1653,9 @@ template&lt;&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html#l00045">45</a> of file <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html">timeConversions.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html#l00046">46</a> of file <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html">timeConversions.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00044">JULIAN_DAY_AT_0_MJD_LONG</a>.</p>
+<p>References <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00061">JULIAN_DAY_AT_0_MJD_LONG</a>.</p>
 
 </div>
 </div>
@@ -1528,9 +1674,9 @@ template&lt;&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html#l00052">52</a> of file <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html">timeConversions.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html#l00053">53</a> of file <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html">timeConversions.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00055">TAI_JULIAN_DAY_AT_TIME_SYNCHRONIZATION</a>.</p>
+<p>References <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00072">TAI_JULIAN_DAY_AT_TIME_SYNCHRONIZATION</a>.</p>
 
 </div>
 </div>
@@ -1549,9 +1695,9 @@ template&lt;&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html#l00059">59</a> of file <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html">timeConversions.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html#l00060">60</a> of file <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html">timeConversions.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00058">TAI_JULIAN_DAY_AT_TIME_SYNCHRONIZATION_LONG</a>.</p>
+<p>References <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00075">TAI_JULIAN_DAY_AT_TIME_SYNCHRONIZATION_LONG</a>.</p>
 
 </div>
 </div>
@@ -1571,9 +1717,9 @@ template&lt;&gt; </div>
 </div><div class="memdoc">
 <p>Function to get the difference between TDB and (TT, TCB and TCB) at TAI_JULIAN_DAY_AT_TIME_SYNCHRONIZATION, in double precision. </p>
 
-<p>Definition at line <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html#l00067">67</a> of file <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html">timeConversions.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html#l00068">68</a> of file <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html">timeConversions.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00081">TDB_SECONDS_OFFSET_AT_SYNCHRONIZATION</a>.</p>
+<p>References <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00098">TDB_SECONDS_OFFSET_AT_SYNCHRONIZATION</a>.</p>
 
 </div>
 </div>
@@ -1593,9 +1739,9 @@ template&lt;&gt; </div>
 </div><div class="memdoc">
 <p>Function to get the difference between TDB and (TT, TCB and TCB) at TAI_JULIAN_DAY_AT_TIME_SYNCHRONIZATION, in long double precision. </p>
 
-<p>Definition at line <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html#l00075">75</a> of file <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html">timeConversions.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html#l00076">76</a> of file <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html">timeConversions.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00084">TDB_SECONDS_OFFSET_AT_SYNCHRONIZATION_LONG</a>.</p>
+<p>References <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00101">TDB_SECONDS_OFFSET_AT_SYNCHRONIZATION_LONG</a>.</p>
 
 </div>
 </div>
@@ -1614,9 +1760,9 @@ template&lt;&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html#l00082">82</a> of file <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html">timeConversions.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html#l00083">83</a> of file <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html">timeConversions.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00096">TT_MINUS_TAI</a>.</p>
+<p>References <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00113">TT_MINUS_TAI</a>.</p>
 
 </div>
 </div>
@@ -1635,9 +1781,30 @@ template&lt;&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html#l00089">89</a> of file <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html">timeConversions.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html#l00090">90</a> of file <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html">timeConversions.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00099">TT_MINUS_TAI_LONG</a>.</p>
+<p>References <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00116">TT_MINUS_TAI_LONG</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aca7a4b8b914a4f1309a39eee3bbc01d9"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/df9/classtudat_1_1_time.html">Time</a> <a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#a83aa1cf39956e70e58e6bfe96c004e5f">tudat::basic_astrodynamics::getTTMinusTai</a>&lt; <a class="el" href="../../d8/df9/classtudat_1_1_time.html">Time</a> &gt; </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html#l00097">97</a> of file <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html">timeConversions.cpp</a>.</p>
+
+<p>References <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00116">TT_MINUS_TAI_LONG</a>.</p>
 
 </div>
 </div>
@@ -1662,11 +1829,11 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Gregorian calendar date at given julian day. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html#l00095">95</a> of file <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html">timeConversions.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html#l00104">104</a> of file <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html">timeConversions.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d9/d63/parse_solar_activity_data_8h_source.html#l00104">tudat::input_output::field_types::time::day</a>, <a class="el" href="../../d9/d63/parse_solar_activity_data_8h_source.html#l00103">tudat::input_output::field_types::time::month</a>, and <a class="el" href="../../d9/d63/parse_solar_activity_data_8h_source.html#l00102">tudat::input_output::field_types::time::year</a>.</p>
+<p>References <a class="el" href="../../d9/d63/parse_solar_activity_data_8h_source.html#l00100">tudat::input_output::field_types::time::day</a>, <a class="el" href="../../d5/de7/jquery_8js_source.html#l00016">L</a>, <a class="el" href="../../d9/d63/parse_solar_activity_data_8h_source.html#l00099">tudat::input_output::field_types::time::month</a>, and <a class="el" href="../../d9/d63/parse_solar_activity_data_8h_source.html#l00098">tudat::input_output::field_types::time::year</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00251">convertSecondsSinceEpochToJulianCenturiesSinceEpoch()</a>.</p>
+<p>Referenced by <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00268">convertSecondsSinceEpochToJulianCenturiesSinceEpoch()</a>.</p>
 
 </div>
 </div>
@@ -1691,9 +1858,9 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if year is a leap year, false otherwise. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html#l00150">150</a> of file <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html">timeConversions.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html#l00159">159</a> of file <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html">timeConversions.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00273">calculateJulianDaySinceEpoch()</a>, and <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html#l00161">getDaysInMonth()</a>.</p>
+<p>Referenced by <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00290">calculateJulianDaySinceEpoch()</a>, and <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html#l00170">getDaysInMonth()</a>.</p>
 
 </div>
 </div>
@@ -1729,11 +1896,11 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Number of days in given month </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html#l00161">161</a> of file <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html">timeConversions.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html#l00170">170</a> of file <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html">timeConversions.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html#l00150">isLeapYear()</a>.</p>
+<p>References <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html#l00159">isLeapYear()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00273">calculateJulianDaySinceEpoch()</a>, and <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html#l00211">convertYearAndDaysInYearToDate()</a>.</p>
+<p>Referenced by <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00290">calculateJulianDaySinceEpoch()</a>, and <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html#l00220">convertYearAndDaysInYearToDate()</a>.</p>
 
 </div>
 </div>
@@ -1776,9 +1943,9 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Number of full days that have passed in current year </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html#l00189">189</a> of file <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html">timeConversions.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html#l00198">198</a> of file <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html">timeConversions.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00273">calculateJulianDaySinceEpoch()</a>.</p>
+<p>Referenced by <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00290">calculateJulianDaySinceEpoch()</a>.</p>
 
 </div>
 </div>
@@ -1803,7 +1970,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Number of full days that have passed in current year </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html#l00197">197</a> of file <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html">timeConversions.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html#l00206">206</a> of file <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html">timeConversions.cpp</a>.</p>
 
 </div>
 </div>
@@ -1828,11 +1995,11 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Number of seconds into current day. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html#l00204">204</a> of file <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html">timeConversions.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html#l00213">213</a> of file <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html">timeConversions.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d4/db3/physical_constants_8h_source.html#l00050">tudat::physical_constants::JULIAN_DAY</a>.</p>
+<p>References <a class="el" href="../../d4/db3/physical_constants_8h_source.html#l00049">tudat::physical_constants::JULIAN_DAY</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00273">calculateJulianDaySinceEpoch()</a>.</p>
+<p>Referenced by <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00290">calculateJulianDaySinceEpoch()</a>.</p>
 
 </div>
 </div>
@@ -1868,11 +2035,11 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Gregorian date object as generated from input </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html#l00211">211</a> of file <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html">timeConversions.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html#l00220">220</a> of file <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html">timeConversions.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html#l00161">getDaysInMonth()</a>.</p>
+<p>References <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html#l00170">getDaysInMonth()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00273">calculateJulianDaySinceEpoch()</a>.</p>
+<p>Referenced by <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00290">calculateJulianDaySinceEpoch()</a>.</p>
 
 </div>
 </div>
@@ -1897,11 +2064,11 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>TDB in seconds since J2000 </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html#l00256">256</a> of file <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html">timeConversions.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html#l00265">265</a> of file <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html">timeConversions.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d4/db3/physical_constants_8h_source.html#l00078">tudat::physical_constants::JULIAN_YEAR</a>.</p>
+<p>References <a class="el" href="../../d4/db3/physical_constants_8h_source.html#l00077">tudat::physical_constants::JULIAN_YEAR</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00416">convertTTtoTAI()</a>.</p>
+<p>Referenced by <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00433">convertTTtoTAI()</a>.</p>
 
 </div>
 </div>
@@ -1975,7 +2142,7 @@ template&lt;typename TimeType &gt; </div>
 </div><div class="memdoc">
 <p>Function to get the synchronization time of TT, TCG, and TCB, in seconds since J2000 (constant by definition). </p><dl class="section return"><dt>Returns</dt><dd>Synchronization time of TT, TCG, and TCB, in seconds since J2000. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00074">74</a> of file <a class="el" href="../../d4/d01/time_conversions_8h_source.html">timeConversions.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00091">91</a> of file <a class="el" href="../../d4/d01/time_conversions_8h_source.html">timeConversions.h</a>.</p>
 
 </div>
 </div>
@@ -2049,9 +2216,9 @@ template&lt;typename TimeScalarType  = double&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Number of seconds since epoch. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00118">118</a> of file <a class="el" href="../../d4/d01/time_conversions_8h_source.html">timeConversions.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00135">135</a> of file <a class="el" href="../../d4/d01/time_conversions_8h_source.html">timeConversions.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d4/da0/nrlmsise00_input_functions_8cpp_source.html#l00038">tudat::aerodynamics::nrlmsiseInputFunction()</a>.</p>
+<p>Referenced by <a class="el" href="../../d4/da0/nrlmsise00_input_functions_8cpp_source.html#l00036">tudat::aerodynamics::nrlmsiseInputFunction()</a>.</p>
 
 </div>
 </div>
@@ -2089,9 +2256,9 @@ template&lt;typename TimeScalarType  = double&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Number of Julian days since epoch. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00133">133</a> of file <a class="el" href="../../d4/d01/time_conversions_8h_source.html">timeConversions.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00150">150</a> of file <a class="el" href="../../d4/d01/time_conversions_8h_source.html">timeConversions.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d7/d12/approximate_planet_positions_circular_coplanar_8cpp_source.html#l00033">tudat::ephemerides::ApproximatePlanetPositionsCircularCoplanar::getCartesianState()</a>, <a class="el" href="../../d0/d61/approximate_planet_positions_8cpp_source.html#l00042">tudat::ephemerides::ApproximatePlanetPositions::getKeplerianStateFromEphemeris()</a>, and <a class="el" href="../../d4/da0/nrlmsise00_input_functions_8cpp_source.html#l00038">tudat::aerodynamics::nrlmsiseInputFunction()</a>.</p>
+<p>Referenced by <a class="el" href="../../d7/d12/approximate_planet_positions_circular_coplanar_8cpp_source.html#l00033">tudat::ephemerides::ApproximatePlanetPositionsCircularCoplanar::getCartesianState()</a>, <a class="el" href="../../d0/d61/approximate_planet_positions_8cpp_source.html#l00042">tudat::ephemerides::ApproximatePlanetPositions::getKeplerianStateFromEphemeris()</a>, and <a class="el" href="../../d4/da0/nrlmsise00_input_functions_8cpp_source.html#l00036">tudat::aerodynamics::nrlmsiseInputFunction()</a>.</p>
 
 </div>
 </div>
@@ -2165,7 +2332,7 @@ template&lt;typename TimeScalarType  = double&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Seconds since referenceJulianDay for input date/time. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00156">156</a> of file <a class="el" href="../../d4/d01/time_conversions_8h_source.html">timeConversions.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00173">173</a> of file <a class="el" href="../../d4/d01/time_conversions_8h_source.html">timeConversions.h</a>.</p>
 
 </div>
 </div>
@@ -2231,9 +2398,9 @@ template&lt;typename TimeScalarType  = double&gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00195">195</a> of file <a class="el" href="../../d4/d01/time_conversions_8h_source.html">timeConversions.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00212">212</a> of file <a class="el" href="../../d4/d01/time_conversions_8h_source.html">timeConversions.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d4/da0/nrlmsise00_input_functions_8cpp_source.html#l00038">tudat::aerodynamics::nrlmsiseInputFunction()</a>, and <a class="el" href="../../d3/db2/solar_activity_data_8cpp_source.html#l00099">tudat::input_output::solar_activity::readSolarActivityData()</a>.</p>
+<p>Referenced by <a class="el" href="../../d4/da0/nrlmsise00_input_functions_8cpp_source.html#l00036">tudat::aerodynamics::nrlmsiseInputFunction()</a>, and <a class="el" href="../../d3/db2/solar_activity_data_8cpp_source.html#l00097">tudat::input_output::solar_activity::readSolarActivityData()</a>.</p>
 
 </div>
 </div>
@@ -2260,7 +2427,7 @@ template&lt;typename TimeScalarType &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Modified julian day as obtained from julian day. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00214">214</a> of file <a class="el" href="../../d4/d01/time_conversions_8h_source.html">timeConversions.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00231">231</a> of file <a class="el" href="../../d4/d01/time_conversions_8h_source.html">timeConversions.h</a>.</p>
 
 </div>
 </div>
@@ -2287,7 +2454,7 @@ template&lt;typename TimeScalarType &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Julian day as obtained from modified julian day. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00226">226</a> of file <a class="el" href="../../d4/d01/time_conversions_8h_source.html">timeConversions.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00243">243</a> of file <a class="el" href="../../d4/d01/time_conversions_8h_source.html">timeConversions.h</a>.</p>
 
 </div>
 </div>
@@ -2314,9 +2481,9 @@ template&lt;typename TimeScalarType  = double&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Number of julian years since epoch </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00238">238</a> of file <a class="el" href="../../d4/d01/time_conversions_8h_source.html">timeConversions.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00255">255</a> of file <a class="el" href="../../d4/d01/time_conversions_8h_source.html">timeConversions.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00251">convertSecondsSinceEpochToJulianCenturiesSinceEpoch()</a>.</p>
+<p>Referenced by <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00268">convertSecondsSinceEpochToJulianCenturiesSinceEpoch()</a>.</p>
 
 </div>
 </div>
@@ -2343,9 +2510,9 @@ template&lt;typename TimeScalarType  = double&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Number of julian centuries since epoch </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00251">251</a> of file <a class="el" href="../../d4/d01/time_conversions_8h_source.html">timeConversions.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00268">268</a> of file <a class="el" href="../../d4/d01/time_conversions_8h_source.html">timeConversions.h</a>.</p>
 
-<p>References <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html#l00095">convertJulianDayToCalendarDate()</a>, and <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00238">convertSecondsSinceEpochToJulianYearsSinceEpoch()</a>.</p>
+<p>References <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html#l00104">convertJulianDayToCalendarDate()</a>, and <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00255">convertSecondsSinceEpochToJulianYearsSinceEpoch()</a>.</p>
 
 <p>Referenced by <a class="el" href="../../db/d20/fundamental_arguments_8cpp_source.html#l00051">tudat::sofa_interface::calculateDelaunayFundamentalArguments()</a>, and <a class="el" href="../../db/d20/fundamental_arguments_8cpp_source.html#l00090">tudat::sofa_interface::calculateDoodsonFundamentalArguments()</a>.</p>
 
@@ -2392,9 +2559,9 @@ template&lt;typename TimeScalarType &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Number of julian days since a reference epoch. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00273">273</a> of file <a class="el" href="../../d4/d01/time_conversions_8h_source.html">timeConversions.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00290">290</a> of file <a class="el" href="../../d4/d01/time_conversions_8h_source.html">timeConversions.h</a>.</p>
 
-<p>References <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html#l00204">calculateSecondsInCurrentJulianDay()</a>, <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html#l00189">convertDayMonthYearToDayOfYear()</a>, <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html#l00211">convertYearAndDaysInYearToDate()</a>, <a class="el" href="../../d9/d63/parse_solar_activity_data_8h_source.html#l00104">tudat::input_output::field_types::time::day</a>, <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html#l00161">getDaysInMonth()</a>, <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html#l00150">isLeapYear()</a>, <a class="el" href="../../d9/d63/parse_solar_activity_data_8h_source.html#l00103">tudat::input_output::field_types::time::month</a>, and <a class="el" href="../../d9/d63/parse_solar_activity_data_8h_source.html#l00102">tudat::input_output::field_types::time::year</a>.</p>
+<p>References <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html#l00213">calculateSecondsInCurrentJulianDay()</a>, <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html#l00198">convertDayMonthYearToDayOfYear()</a>, <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html#l00220">convertYearAndDaysInYearToDate()</a>, <a class="el" href="../../d9/d63/parse_solar_activity_data_8h_source.html#l00100">tudat::input_output::field_types::time::day</a>, <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html#l00170">getDaysInMonth()</a>, <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html#l00159">isLeapYear()</a>, <a class="el" href="../../d9/d63/parse_solar_activity_data_8h_source.html#l00099">tudat::input_output::field_types::time::month</a>, and <a class="el" href="../../d9/d63/parse_solar_activity_data_8h_source.html#l00098">tudat::input_output::field_types::time::year</a>.</p>
 
 </div>
 </div>
@@ -2421,7 +2588,7 @@ template&lt;typename TimeType &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Converted time in TDB scale </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00345">345</a> of file <a class="el" href="../../d4/d01/time_conversions_8h_source.html">timeConversions.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00362">362</a> of file <a class="el" href="../../d4/d01/time_conversions_8h_source.html">timeConversions.h</a>.</p>
 
 </div>
 </div>
@@ -2448,7 +2615,7 @@ template&lt;typename TimeType &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Converted time in TCB scale </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00359">359</a> of file <a class="el" href="../../d4/d01/time_conversions_8h_source.html">timeConversions.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00376">376</a> of file <a class="el" href="../../d4/d01/time_conversions_8h_source.html">timeConversions.h</a>.</p>
 
 </div>
 </div>
@@ -2475,7 +2642,7 @@ template&lt;typename TimeType &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Converted time in TT scale </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00375">375</a> of file <a class="el" href="../../d4/d01/time_conversions_8h_source.html">timeConversions.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00392">392</a> of file <a class="el" href="../../d4/d01/time_conversions_8h_source.html">timeConversions.h</a>.</p>
 
 </div>
 </div>
@@ -2502,7 +2669,7 @@ template&lt;typename TimeType &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Converted time in TCG scale </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00388">388</a> of file <a class="el" href="../../d4/d01/time_conversions_8h_source.html">timeConversions.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00405">405</a> of file <a class="el" href="../../d4/d01/time_conversions_8h_source.html">timeConversions.h</a>.</p>
 
 </div>
 </div>
@@ -2529,9 +2696,9 @@ template&lt;typename TimeType &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="../../d8/df9/classtudat_1_1_time.html" title="Class for defining time with a resolution that is sub-fs for very long periods of time...">Time</a> in TT </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00403">403</a> of file <a class="el" href="../../d4/d01/time_conversions_8h_source.html">timeConversions.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00420">420</a> of file <a class="el" href="../../d4/d01/time_conversions_8h_source.html">timeConversions.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d2/d0f/sofa_time_conversions_8h_source.html#l00110">tudat::sofa_interface::convertUTCtoTT()</a>.</p>
+<p>Referenced by <a class="el" href="../../d2/d0f/sofa_time_conversions_8h_source.html#l00114">tudat::sofa_interface::convertUTCtoTT()</a>.</p>
 
 </div>
 </div>
@@ -2558,11 +2725,11 @@ template&lt;typename TimeType &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="../../d8/df9/classtudat_1_1_time.html" title="Class for defining time with a resolution that is sub-fs for very long periods of time...">Time</a> in TAI </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00416">416</a> of file <a class="el" href="../../d4/d01/time_conversions_8h_source.html">timeConversions.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00433">433</a> of file <a class="el" href="../../d4/d01/time_conversions_8h_source.html">timeConversions.h</a>.</p>
 
-<p>References <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html#l00256">approximateConvertTTtoTDB()</a>.</p>
+<p>References <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html#l00265">approximateConvertTTtoTDB()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d2/d0f/sofa_time_conversions_8h_source.html#l00097">tudat::sofa_interface::convertTTtoUTC()</a>.</p>
+<p>Referenced by <a class="el" href="../../d2/d0f/sofa_time_conversions_8h_source.html#l00101">tudat::sofa_interface::convertTTtoUTC()</a>.</p>
 
 </div>
 </div>
@@ -2591,7 +2758,7 @@ template&lt;typename TimeType &gt; </div>
 
 <p>References <a class="el" href="../../db/d0d/torque_model_types_8h_source.html#l00032">aerodynamic_torque</a>, <a class="el" href="../../db/d0d/torque_model_types_8h_source.html#l00031">second_order_gravitational_torque</a>, and <a class="el" href="../../db/d0d/torque_model_types_8h_source.html#l00030">underfined_torque</a>.</p>
 
-<p>Referenced by <a class="el" href="../../df/db3/create_environment_updater_8cpp_source.html#l00131">tudat::propagators::createRotationalEquationsOfMotionEnvironmentUpdaterSettings()</a>, and <a class="el" href="../../db/de3/torque_model_types_8cpp_source.html#l00066">getTorqueModelsOfType()</a>.</p>
+<p>Referenced by <a class="el" href="../../df/db3/create_environment_updater_8cpp_source.html#l00131">tudat::propagators::createRotationalEquationsOfMotionEnvironmentUpdaterSettings()</a>, and <a class="el" href="../../db/de3/torque_model_types_8cpp_source.html#l00067">getTorqueModelsOfType()</a>.</p>
 
 </div>
 </div>
@@ -2616,11 +2783,11 @@ template&lt;typename TimeType &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>String with torque id. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../db/de3/torque_model_types_8cpp_source.html#l00044">44</a> of file <a class="el" href="../../db/de3/torque_model_types_8cpp_source.html">torqueModelTypes.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../db/de3/torque_model_types_8cpp_source.html#l00045">45</a> of file <a class="el" href="../../db/de3/torque_model_types_8cpp_source.html">torqueModelTypes.cpp</a>.</p>
 
 <p>References <a class="el" href="../../db/d0d/torque_model_types_8h_source.html#l00032">aerodynamic_torque</a>, and <a class="el" href="../../db/d0d/torque_model_types_8h_source.html#l00031">second_order_gravitational_torque</a>.</p>
 
-<p>Referenced by <a class="el" href="../../de/d48/propagation_output_settings_8cpp_source.html#l00132">tudat::propagators::getDependentVariableId()</a>.</p>
+<p>Referenced by <a class="el" href="../../de/d48/propagation_output_settings_8cpp_source.html#l00171">tudat::propagators::getDependentVariableId()</a>.</p>
 
 </div>
 </div>
@@ -2647,12 +2814,252 @@ template&lt;typename TimeType &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Function to get all torque models of a given type from a list of models </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fullList</td><td>List of torque models </td></tr>
+    <tr><td class="paramname">modelType</td><td>Type for which all models are to be retrieved </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Subset of fullList for which the torque model type is modelType </dd></dl>
 
-<p>Definition at line <a class="el" href="../../db/de3/torque_model_types_8cpp_source.html#l00066">66</a> of file <a class="el" href="../../db/de3/torque_model_types_8cpp_source.html">torqueModelTypes.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../db/de3/torque_model_types_8cpp_source.html#l00067">67</a> of file <a class="el" href="../../db/de3/torque_model_types_8cpp_source.html">torqueModelTypes.cpp</a>.</p>
 
 <p>References <a class="el" href="../../db/de3/torque_model_types_8cpp_source.html#l00025">getTorqueModelType()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d5/deb/dynamics_state_derivative_model_8h_source.html#l00620">tudat::propagators::getTorqueBetweenBodies()</a>.</p>
+<p>Referenced by <a class="el" href="../../d5/deb/dynamics_state_derivative_model_8h_source.html#l00638">tudat::propagators::getTorqueBetweenBodies()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa0ad1923ff6753f89d02f1578b82a728"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tudat::basic_astrodynamics::to_json </td>
+          <td>(</td>
+          <td class="paramtype">nlohmann::json &amp;&#160;</td>
+          <td class="paramname"><em>jsonObject</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abf29e4420ac7dbbcfe0ff7e2c7910aab">AvailableAcceleration</a> &amp;&#160;</td>
+          <td class="paramname"><em>accelerationType</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d3/de8/acceleration_8h_source.html#l00062">62</a> of file <a class="el" href="../../d3/de8/acceleration_8h_source.html">acceleration.h</a>.</p>
+
+<p>References <a class="el" href="../../d6/d36/error_handling_8h_source.html#l00420">tudat::json_interface::stringFromEnum()</a>.</p>
+
+<p>Referenced by <a class="el" href="../../d8/d6e/_json_interface_2_propagation_2mass_rate_model_8h_source.html#l00046">from_json()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a618b5056be465fde40aaff086d9ea1ac"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tudat::basic_astrodynamics::from_json </td>
+          <td>(</td>
+          <td class="paramtype">const nlohmann::json &amp;&#160;</td>
+          <td class="paramname"><em>jsonObject</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abf29e4420ac7dbbcfe0ff7e2c7910aab">AvailableAcceleration</a> &amp;&#160;</td>
+          <td class="paramname"><em>accelerationType</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d3/de8/acceleration_8h_source.html#l00068">68</a> of file <a class="el" href="../../d3/de8/acceleration_8h_source.html">acceleration.h</a>.</p>
+
+<p>References <a class="el" href="../../d6/d36/error_handling_8h_source.html#l00392">tudat::json_interface::enumFromString()</a>, and <a class="el" href="../../d3/de8/acceleration_8h_source.html#l00062">to_json()</a>.</p>
+
+<p>Referenced by <a class="el" href="../../d8/d6e/_json_interface_2_propagation_2mass_rate_model_8h_source.html#l00046">from_json()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a115605517a8ea093190ac10108a0ea2c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tudat::basic_astrodynamics::to_json </td>
+          <td>(</td>
+          <td class="paramtype">nlohmann::json &amp;&#160;</td>
+          <td class="paramname"><em>jsonObject</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abe8f371ac11e30366bab79dd52dc7138">AvailableMassRateModels</a> &amp;&#160;</td>
+          <td class="paramname"><em>massRateType</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d8/d6e/_json_interface_2_propagation_2mass_rate_model_8h_source.html#l00040">40</a> of file <a class="el" href="../../d8/d6e/_json_interface_2_propagation_2mass_rate_model_8h_source.html">massRateModel.h</a>.</p>
+
+<p>References <a class="el" href="../../d6/d36/error_handling_8h_source.html#l00420">tudat::json_interface::stringFromEnum()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afe0dfe6e688c04423e6a2deda9c859f8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tudat::basic_astrodynamics::from_json </td>
+          <td>(</td>
+          <td class="paramtype">const nlohmann::json &amp;&#160;</td>
+          <td class="paramname"><em>jsonObject</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abe8f371ac11e30366bab79dd52dc7138">AvailableMassRateModels</a> &amp;&#160;</td>
+          <td class="paramname"><em>massRateType</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d8/d6e/_json_interface_2_propagation_2mass_rate_model_8h_source.html#l00046">46</a> of file <a class="el" href="../../d8/d6e/_json_interface_2_propagation_2mass_rate_model_8h_source.html">massRateModel.h</a>.</p>
+
+<p>References <a class="el" href="../../d6/d36/error_handling_8h_source.html#l00392">tudat::json_interface::enumFromString()</a>, <a class="el" href="../../d3/de8/acceleration_8h_source.html#l00068">from_json()</a>, and <a class="el" href="../../d3/de8/acceleration_8h_source.html#l00062">to_json()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0b2f721c59097d3a3ca9579debab9118"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tudat::basic_astrodynamics::to_json </td>
+          <td>(</td>
+          <td class="paramtype">nlohmann::json &amp;&#160;</td>
+          <td class="paramname"><em>jsonObject</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#aa09ce70cfed2e1f912ff57a2f568adb4">AvailableTorque</a> &amp;&#160;</td>
+          <td class="paramname"><em>torqueType</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d7/dac/torque_8h_source.html#l00036">36</a> of file <a class="el" href="../../d7/dac/torque_8h_source.html">torque.h</a>.</p>
+
+<p>References <a class="el" href="../../d6/d36/error_handling_8h_source.html#l00420">tudat::json_interface::stringFromEnum()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a70d0ef97987783cf4c60bb48f084e442"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tudat::basic_astrodynamics::from_json </td>
+          <td>(</td>
+          <td class="paramtype">const nlohmann::json &amp;&#160;</td>
+          <td class="paramname"><em>jsonObject</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#aa09ce70cfed2e1f912ff57a2f568adb4">AvailableTorque</a> &amp;&#160;</td>
+          <td class="paramname"><em>torqueType</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d7/dac/torque_8h_source.html#l00042">42</a> of file <a class="el" href="../../d7/dac/torque_8h_source.html">torque.h</a>.</p>
+
+<p>References <a class="el" href="../../d6/d36/error_handling_8h_source.html#l00392">tudat::json_interface::enumFromString()</a>, <a class="el" href="../../d3/de8/acceleration_8h_source.html#l00068">from_json()</a>, and <a class="el" href="../../d3/de8/acceleration_8h_source.html#l00062">to_json()</a>.</p>
 
 </div>
 </div>
@@ -2675,9 +3082,9 @@ template&lt;typename TimeType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00027">27</a> of file <a class="el" href="../../d4/d01/time_conversions_8h_source.html">timeConversions.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00044">44</a> of file <a class="el" href="../../d4/d01/time_conversions_8h_source.html">timeConversions.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../db/d20/fundamental_arguments_8cpp_source.html#l00066">tudat::sofa_interface::calculateDelaunayFundamentalArgumentsWithGmst()</a>, <a class="el" href="../../db/d20/fundamental_arguments_8cpp_source.html#l00090">tudat::sofa_interface::calculateDoodsonFundamentalArguments()</a>, <a class="el" href="../../d7/dd2/create_cartesian_state_partials_8cpp_source.html#l00061">tudat::observation_partials::createCartesianStatePartialsWrtParameter()</a>, <a class="el" href="../../d0/da9/sofa_time_conversions_8cpp_source.html#l00055">tudat::sofa_interface::getDeltaAtFromTai()</a>, <a class="el" href="../../d0/da9/sofa_time_conversions_8cpp_source.html#l00024">tudat::sofa_interface::getDeltaAtFromUtc()</a>, <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html#l00024">getJulianDayOnJ2000&lt; double &gt;()</a>, <a class="el" href="../../d0/d6b/ground_station_8h_source.html#l00055">tudat::ground_stations::GroundStation::getStateInPlanetFixedFrame()</a>, <a class="el" href="../../d0/da9/sofa_time_conversions_8cpp_source.html#l00089">tudat::sofa_interface::getTDBminusTT()</a>, <a class="el" href="../../d4/da0/nrlmsise00_input_functions_8cpp_source.html#l00038">tudat::aerodynamics::nrlmsiseInputFunction()</a>, <a class="el" href="../../d5/d89/spice_ephemeris_8cpp_source.html#l00028">tudat::ephemerides::SpiceEphemeris::SpiceEphemeris()</a>, <a class="el" href="../../d5/dd7/spice_rotational_ephemeris_8h_source.html#l00043">tudat::ephemerides::SpiceRotationalEphemeris::SpiceRotationalEphemeris()</a>, and <a class="el" href="../../de/ddd/ground_station_state_8h_source.html#l00066">tudat::ground_stations::GroundStationState::~GroundStationState()</a>.</p>
+<p>Referenced by <a class="el" href="../../db/d20/fundamental_arguments_8cpp_source.html#l00066">tudat::sofa_interface::calculateDelaunayFundamentalArgumentsWithGmst()</a>, <a class="el" href="../../db/d20/fundamental_arguments_8cpp_source.html#l00090">tudat::sofa_interface::calculateDoodsonFundamentalArguments()</a>, <a class="el" href="../../d7/d57/earth_orientation_8cpp_source.html#l00101">tudat::sofa_interface::calculateEarthRotationAngleTemplated&lt; double &gt;()</a>, <a class="el" href="../../d7/d57/earth_orientation_8cpp_source.html#l00109">tudat::sofa_interface::calculateEarthRotationAngleTemplated&lt; Time &gt;()</a>, <a class="el" href="../../d7/dd2/create_cartesian_state_partials_8cpp_source.html#l00061">tudat::observation_partials::createCartesianStatePartialsWrtParameter()</a>, <a class="el" href="../../dd/dea/earth_orientation_calculator_8cpp_source.html#l00022">tudat::earth_orientation::getApproximateTioLocator()</a>, <a class="el" href="../../d1/dce/eop_reader_8h_source.html#l00133">tudat::earth_orientation::EOPReader::getCipInGcrsCorrectionMapInSecondsSinceJ2000()</a>, <a class="el" href="../../d1/dce/eop_reader_8h_source.html#l00109">tudat::earth_orientation::EOPReader::getCipInItrsMapInSecondsSinceJ2000()</a>, <a class="el" href="../../d0/da9/sofa_time_conversions_8cpp_source.html#l00055">tudat::sofa_interface::getDeltaAtFromTai()</a>, <a class="el" href="../../d0/da9/sofa_time_conversions_8cpp_source.html#l00024">tudat::sofa_interface::getDeltaAtFromUtc()</a>, <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html#l00025">getJulianDayOnJ2000&lt; double &gt;()</a>, <a class="el" href="../../d1/dce/eop_reader_8h_source.html#l00085">tudat::earth_orientation::EOPReader::getLengthOfDayMapInSecondsSinceJ2000()</a>, <a class="el" href="../../d0/d6b/ground_station_8h_source.html#l00055">tudat::ground_stations::GroundStation::getStateInPlanetFixedFrame()</a>, <a class="el" href="../../d0/da9/sofa_time_conversions_8cpp_source.html#l00089">tudat::sofa_interface::getTDBminusTT()</a>, <a class="el" href="../../d1/dce/eop_reader_8h_source.html#l00061">tudat::earth_orientation::EOPReader::getUt1MinusUtcMapInSecondsSinceJ2000()</a>, <a class="el" href="../../d4/da0/nrlmsise00_input_functions_8cpp_source.html#l00036">tudat::aerodynamics::nrlmsiseInputFunction()</a>, <a class="el" href="../../dd/d28/precession_nutation_calculator_8cpp_source.html#l00027">tudat::earth_orientation::PrecessionNutationCalculator::PrecessionNutationCalculator()</a>, <a class="el" href="../../d5/d89/spice_ephemeris_8cpp_source.html#l00025">tudat::ephemerides::SpiceEphemeris::SpiceEphemeris()</a>, <a class="el" href="../../d5/dd7/spice_rotational_ephemeris_8h_source.html#l00043">tudat::ephemerides::SpiceRotationalEphemeris::SpiceRotationalEphemeris()</a>, and <a class="el" href="../../de/ddd/ground_station_state_8h_source.html#l00066">tudat::ground_stations::GroundStationState::~GroundStationState()</a>.</p>
 
 </div>
 </div>
@@ -2699,9 +3106,9 @@ template&lt;typename TimeType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00030">30</a> of file <a class="el" href="../../d4/d01/time_conversions_8h_source.html">timeConversions.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00047">47</a> of file <a class="el" href="../../d4/d01/time_conversions_8h_source.html">timeConversions.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html#l00031">getJulianDayOnJ2000&lt; long double &gt;()</a>.</p>
+<p>Referenced by <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html#l00032">getJulianDayOnJ2000&lt; long double &gt;()</a>.</p>
 
 </div>
 </div>
@@ -2723,9 +3130,9 @@ template&lt;typename TimeType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00041">41</a> of file <a class="el" href="../../d4/d01/time_conversions_8h_source.html">timeConversions.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00058">58</a> of file <a class="el" href="../../d4/d01/time_conversions_8h_source.html">timeConversions.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html#l00038">getJulianDayOnMjd0&lt; double &gt;()</a>.</p>
+<p>Referenced by <a class="el" href="../../d1/dce/eop_reader_8h_source.html#l00133">tudat::earth_orientation::EOPReader::getCipInGcrsCorrectionMapInSecondsSinceJ2000()</a>, <a class="el" href="../../d1/dce/eop_reader_8h_source.html#l00109">tudat::earth_orientation::EOPReader::getCipInItrsMapInSecondsSinceJ2000()</a>, <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html#l00039">getJulianDayOnMjd0&lt; double &gt;()</a>, <a class="el" href="../../d1/dce/eop_reader_8h_source.html#l00085">tudat::earth_orientation::EOPReader::getLengthOfDayMapInSecondsSinceJ2000()</a>, and <a class="el" href="../../d1/dce/eop_reader_8h_source.html#l00061">tudat::earth_orientation::EOPReader::getUt1MinusUtcMapInSecondsSinceJ2000()</a>.</p>
 
 </div>
 </div>
@@ -2747,9 +3154,9 @@ template&lt;typename TimeType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00044">44</a> of file <a class="el" href="../../d4/d01/time_conversions_8h_source.html">timeConversions.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00061">61</a> of file <a class="el" href="../../d4/d01/time_conversions_8h_source.html">timeConversions.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html#l00045">getJulianDayOnMjd0&lt; long double &gt;()</a>.</p>
+<p>Referenced by <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html#l00046">getJulianDayOnMjd0&lt; long double &gt;()</a>.</p>
 
 </div>
 </div>
@@ -2771,9 +3178,9 @@ template&lt;typename TimeType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00055">55</a> of file <a class="el" href="../../d4/d01/time_conversions_8h_source.html">timeConversions.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00072">72</a> of file <a class="el" href="../../d4/d01/time_conversions_8h_source.html">timeConversions.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html#l00052">getTimeOfTaiSynchronizationJulianDay&lt; double &gt;()</a>.</p>
+<p>Referenced by <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html#l00053">getTimeOfTaiSynchronizationJulianDay&lt; double &gt;()</a>.</p>
 
 </div>
 </div>
@@ -2795,9 +3202,9 @@ template&lt;typename TimeType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00058">58</a> of file <a class="el" href="../../d4/d01/time_conversions_8h_source.html">timeConversions.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00075">75</a> of file <a class="el" href="../../d4/d01/time_conversions_8h_source.html">timeConversions.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html#l00059">getTimeOfTaiSynchronizationJulianDay&lt; long double &gt;()</a>.</p>
+<p>Referenced by <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html#l00060">getTimeOfTaiSynchronizationJulianDay&lt; long double &gt;()</a>.</p>
 
 </div>
 </div>
@@ -2819,9 +3226,9 @@ template&lt;typename TimeType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00081">81</a> of file <a class="el" href="../../d4/d01/time_conversions_8h_source.html">timeConversions.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00098">98</a> of file <a class="el" href="../../d4/d01/time_conversions_8h_source.html">timeConversions.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html#l00067">getTdbSecondsOffsetAtSynchronization&lt; double &gt;()</a>.</p>
+<p>Referenced by <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html#l00068">getTdbSecondsOffsetAtSynchronization&lt; double &gt;()</a>.</p>
 
 </div>
 </div>
@@ -2843,9 +3250,9 @@ template&lt;typename TimeType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00084">84</a> of file <a class="el" href="../../d4/d01/time_conversions_8h_source.html">timeConversions.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00101">101</a> of file <a class="el" href="../../d4/d01/time_conversions_8h_source.html">timeConversions.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html#l00075">getTdbSecondsOffsetAtSynchronization&lt; long double &gt;()</a>.</p>
+<p>Referenced by <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html#l00076">getTdbSecondsOffsetAtSynchronization&lt; long double &gt;()</a>.</p>
 
 </div>
 </div>
@@ -2867,9 +3274,9 @@ template&lt;typename TimeType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00096">96</a> of file <a class="el" href="../../d4/d01/time_conversions_8h_source.html">timeConversions.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00113">113</a> of file <a class="el" href="../../d4/d01/time_conversions_8h_source.html">timeConversions.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html#l00082">getTTMinusTai&lt; double &gt;()</a>.</p>
+<p>Referenced by <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html#l00083">getTTMinusTai&lt; double &gt;()</a>.</p>
 
 </div>
 </div>
@@ -2891,16 +3298,186 @@ template&lt;typename TimeType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00099">99</a> of file <a class="el" href="../../d4/d01/time_conversions_8h_source.html">timeConversions.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00116">116</a> of file <a class="el" href="../../d4/d01/time_conversions_8h_source.html">timeConversions.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html#l00089">getTTMinusTai&lt; long double &gt;()</a>.</p>
+<p>Referenced by <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html#l00090">getTTMinusTai&lt; long double &gt;()</a>, and <a class="el" href="../../d8/d34/time_conversions_8cpp_source.html#l00097">getTTMinusTai&lt; Time &gt;()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa24792bdcf8c8c0fb30a3a8e4ebcc085"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt; <a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abf29e4420ac7dbbcfe0ff7e2c7910aab">AvailableAcceleration</a>, std::string &gt; tudat::basic_astrodynamics::accelerationTypes</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div><div class="line">{</div><div class="line">    { <a class="code" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abf29e4420ac7dbbcfe0ff7e2c7910aabaf7661d328d6500afd762f6e92f56680a">undefined_acceleration</a>, <span class="stringliteral">&quot;undefined&quot;</span> },</div><div class="line">    { <a class="code" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abf29e4420ac7dbbcfe0ff7e2c7910aaba9157aa464a5a91c246383bbecc542a1e">point_mass_gravity</a>, <span class="stringliteral">&quot;pointMassGravity&quot;</span> },</div><div class="line">    { <a class="code" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abf29e4420ac7dbbcfe0ff7e2c7910aaba80e754ce5f37b06ac37cdff02fcb6647">aerodynamic</a>, <span class="stringliteral">&quot;aerodynamic&quot;</span> },</div><div class="line">    { <a class="code" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abf29e4420ac7dbbcfe0ff7e2c7910aaba61dceebb9257c8a794a79d29211f4c1c">cannon_ball_radiation_pressure</a>, <span class="stringliteral">&quot;cannonBallRadiationPressure&quot;</span> },</div><div class="line">    { <a class="code" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abf29e4420ac7dbbcfe0ff7e2c7910aabad94f46b5869cafa217eb81c6fcf17691">spherical_harmonic_gravity</a>, <span class="stringliteral">&quot;sphericalHarmonicGravity&quot;</span> },</div><div class="line">    { <a class="code" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abf29e4420ac7dbbcfe0ff7e2c7910aaba23e238eca77ca29bf384a39459d32f50">mutual_spherical_harmonic_gravity</a>, <span class="stringliteral">&quot;mutualSphericalHarmonicGravity&quot;</span> },</div><div class="line">    { <a class="code" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abf29e4420ac7dbbcfe0ff7e2c7910aaba8ac3f141c2bbde183bc06da94823b064">third_body_point_mass_gravity</a>, <span class="stringliteral">&quot;thirdBodyPointMassGravity&quot;</span> },</div><div class="line">    { <a class="code" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abf29e4420ac7dbbcfe0ff7e2c7910aaba93d6b6c6558917c2812e2bfbcd59b911">third_body_spherical_harmonic_gravity</a>, <span class="stringliteral">&quot;thirdBodySphericalHarmonicGravity&quot;</span> },</div><div class="line">    { <a class="code" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abf29e4420ac7dbbcfe0ff7e2c7910aaba383c824d5b7ae23529f0eeb5dd7edb64">third_body_mutual_spherical_harmonic_gravity</a>, <span class="stringliteral">&quot;thirdBodyMutualSphericalHarmonicGravity&quot;</span> },</div><div class="line">    { <a class="code" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abf29e4420ac7dbbcfe0ff7e2c7910aaba416d9bad3740dd35452d89fd4db3f921">thrust_acceleration</a>, <span class="stringliteral">&quot;thrust&quot;</span> },</div><div class="line">    { <a class="code" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abf29e4420ac7dbbcfe0ff7e2c7910aaba42831f8c9d7bc75202d7a3ba46b70edf">relativistic_correction_acceleration</a>, <span class="stringliteral">&quot;relativisticCorrection&quot;</span> },</div><div class="line">    { <a class="code" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abf29e4420ac7dbbcfe0ff7e2c7910aaba97445509d0b6d2b3ab251f47c05aeb5a">empirical_acceleration</a>, <span class="stringliteral">&quot;empirical&quot;</span> }</div><div class="line">}</div><div class="ttc" id="namespacetudat_1_1basic__astrodynamics_html_abf29e4420ac7dbbcfe0ff7e2c7910aaba97445509d0b6d2b3ab251f47c05aeb5a"><div class="ttname"><a href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abf29e4420ac7dbbcfe0ff7e2c7910aaba97445509d0b6d2b3ab251f47c05aeb5a">tudat::basic_astrodynamics::empirical_acceleration</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d83/acceleration_model_types_8h_source.html#l00058">accelerationModelTypes.h:58</a></div></div>
+<div class="ttc" id="namespacetudat_1_1basic__astrodynamics_html_abf29e4420ac7dbbcfe0ff7e2c7910aaba93d6b6c6558917c2812e2bfbcd59b911"><div class="ttname"><a href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abf29e4420ac7dbbcfe0ff7e2c7910aaba93d6b6c6558917c2812e2bfbcd59b911">tudat::basic_astrodynamics::third_body_spherical_harmonic_gravity</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d83/acceleration_model_types_8h_source.html#l00054">accelerationModelTypes.h:54</a></div></div>
+<div class="ttc" id="namespacetudat_1_1basic__astrodynamics_html_abf29e4420ac7dbbcfe0ff7e2c7910aaba8ac3f141c2bbde183bc06da94823b064"><div class="ttname"><a href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abf29e4420ac7dbbcfe0ff7e2c7910aaba8ac3f141c2bbde183bc06da94823b064">tudat::basic_astrodynamics::third_body_point_mass_gravity</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d83/acceleration_model_types_8h_source.html#l00052">accelerationModelTypes.h:52</a></div></div>
+<div class="ttc" id="namespacetudat_1_1basic__astrodynamics_html_abf29e4420ac7dbbcfe0ff7e2c7910aabaf7661d328d6500afd762f6e92f56680a"><div class="ttname"><a href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abf29e4420ac7dbbcfe0ff7e2c7910aabaf7661d328d6500afd762f6e92f56680a">tudat::basic_astrodynamics::undefined_acceleration</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d83/acceleration_model_types_8h_source.html#l00045">accelerationModelTypes.h:45</a></div></div>
+<div class="ttc" id="namespacetudat_1_1basic__astrodynamics_html_abf29e4420ac7dbbcfe0ff7e2c7910aaba9157aa464a5a91c246383bbecc542a1e"><div class="ttname"><a href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abf29e4420ac7dbbcfe0ff7e2c7910aaba9157aa464a5a91c246383bbecc542a1e">tudat::basic_astrodynamics::point_mass_gravity</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d83/acceleration_model_types_8h_source.html#l00046">accelerationModelTypes.h:46</a></div></div>
+<div class="ttc" id="namespacetudat_1_1basic__astrodynamics_html_abf29e4420ac7dbbcfe0ff7e2c7910aaba42831f8c9d7bc75202d7a3ba46b70edf"><div class="ttname"><a href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abf29e4420ac7dbbcfe0ff7e2c7910aaba42831f8c9d7bc75202d7a3ba46b70edf">tudat::basic_astrodynamics::relativistic_correction_acceleration</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d83/acceleration_model_types_8h_source.html#l00057">accelerationModelTypes.h:57</a></div></div>
+<div class="ttc" id="namespacetudat_1_1basic__astrodynamics_html_abf29e4420ac7dbbcfe0ff7e2c7910aaba416d9bad3740dd35452d89fd4db3f921"><div class="ttname"><a href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abf29e4420ac7dbbcfe0ff7e2c7910aaba416d9bad3740dd35452d89fd4db3f921">tudat::basic_astrodynamics::thrust_acceleration</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d83/acceleration_model_types_8h_source.html#l00056">accelerationModelTypes.h:56</a></div></div>
+<div class="ttc" id="namespacetudat_1_1basic__astrodynamics_html_abf29e4420ac7dbbcfe0ff7e2c7910aabad94f46b5869cafa217eb81c6fcf17691"><div class="ttname"><a href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abf29e4420ac7dbbcfe0ff7e2c7910aabad94f46b5869cafa217eb81c6fcf17691">tudat::basic_astrodynamics::spherical_harmonic_gravity</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d83/acceleration_model_types_8h_source.html#l00050">accelerationModelTypes.h:50</a></div></div>
+<div class="ttc" id="namespacetudat_1_1basic__astrodynamics_html_abf29e4420ac7dbbcfe0ff7e2c7910aaba23e238eca77ca29bf384a39459d32f50"><div class="ttname"><a href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abf29e4420ac7dbbcfe0ff7e2c7910aaba23e238eca77ca29bf384a39459d32f50">tudat::basic_astrodynamics::mutual_spherical_harmonic_gravity</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d83/acceleration_model_types_8h_source.html#l00051">accelerationModelTypes.h:51</a></div></div>
+<div class="ttc" id="namespacetudat_1_1basic__astrodynamics_html_abf29e4420ac7dbbcfe0ff7e2c7910aaba61dceebb9257c8a794a79d29211f4c1c"><div class="ttname"><a href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abf29e4420ac7dbbcfe0ff7e2c7910aaba61dceebb9257c8a794a79d29211f4c1c">tudat::basic_astrodynamics::cannon_ball_radiation_pressure</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d83/acceleration_model_types_8h_source.html#l00049">accelerationModelTypes.h:49</a></div></div>
+<div class="ttc" id="namespacetudat_1_1basic__astrodynamics_html_abf29e4420ac7dbbcfe0ff7e2c7910aaba80e754ce5f37b06ac37cdff02fcb6647"><div class="ttname"><a href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abf29e4420ac7dbbcfe0ff7e2c7910aaba80e754ce5f37b06ac37cdff02fcb6647">tudat::basic_astrodynamics::aerodynamic</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d83/acceleration_model_types_8h_source.html#l00048">accelerationModelTypes.h:48</a></div></div>
+<div class="ttc" id="namespacetudat_1_1basic__astrodynamics_html_abf29e4420ac7dbbcfe0ff7e2c7910aaba383c824d5b7ae23529f0eeb5dd7edb64"><div class="ttname"><a href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abf29e4420ac7dbbcfe0ff7e2c7910aaba383c824d5b7ae23529f0eeb5dd7edb64">tudat::basic_astrodynamics::third_body_mutual_spherical_harmonic_gravity</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d83/acceleration_model_types_8h_source.html#l00055">accelerationModelTypes.h:55</a></div></div>
+</div><!-- fragment --><p>Map of <code>AvailableAcceleration</code>s string representations.</p>
+<p>There is a naming inconsistency between "pointMassGravity" and <code>central_gravity</code>, and between "thirdBodyPointMassGravity" and <code>third_body_central_gravity</code>.</p>
+<p>The values "thirdBodyPointMassGravity", "thirdBodySphericalHarmonicGravity" and "thirdBodyMutualSphericalHarmonicGravity" are supported by the JSON interface, and are equivalent to "pointMassGravity", "sphericalHarmonicGravity" and "mutualSphericalHarmonicGravity", respectively. However, a warning will be printed indicating that the body causing the acceleration may not be treated as a third body, requesting the user to remove the part "thridBody" in order to silence the warning. </p>
+
+<p>Definition at line <a class="el" href="../../d3/de8/acceleration_8h_source.html#l00037">37</a> of file <a class="el" href="../../d3/de8/acceleration_8h_source.html">acceleration.h</a>.</p>
+
+<p>Referenced by <a class="el" href="../../d3/d5a/acceleration_8cpp_source.html#l00122">tudat::simulation_setup::from_json()</a>, and <a class="el" href="../../d3/d5a/acceleration_8cpp_source.html#l00022">tudat::simulation_setup::to_json()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2a3cc2d571f2402730f1fd42a62c748b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abf29e4420ac7dbbcfe0ff7e2c7910aab">AvailableAcceleration</a> &gt; tudat::basic_astrodynamics::unsupportedAccelerationTypes</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div><div class="line">{</div><div class="line">    <a class="code" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abf29e4420ac7dbbcfe0ff7e2c7910aaba8ac3f141c2bbde183bc06da94823b064">third_body_point_mass_gravity</a>,</div><div class="line">    <a class="code" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abf29e4420ac7dbbcfe0ff7e2c7910aaba93d6b6c6558917c2812e2bfbcd59b911">third_body_spherical_harmonic_gravity</a>,</div><div class="line">    <a class="code" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abf29e4420ac7dbbcfe0ff7e2c7910aaba383c824d5b7ae23529f0eeb5dd7edb64">third_body_mutual_spherical_harmonic_gravity</a></div><div class="line">}</div><div class="ttc" id="namespacetudat_1_1basic__astrodynamics_html_abf29e4420ac7dbbcfe0ff7e2c7910aaba93d6b6c6558917c2812e2bfbcd59b911"><div class="ttname"><a href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abf29e4420ac7dbbcfe0ff7e2c7910aaba93d6b6c6558917c2812e2bfbcd59b911">tudat::basic_astrodynamics::third_body_spherical_harmonic_gravity</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d83/acceleration_model_types_8h_source.html#l00054">accelerationModelTypes.h:54</a></div></div>
+<div class="ttc" id="namespacetudat_1_1basic__astrodynamics_html_abf29e4420ac7dbbcfe0ff7e2c7910aaba8ac3f141c2bbde183bc06da94823b064"><div class="ttname"><a href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abf29e4420ac7dbbcfe0ff7e2c7910aaba8ac3f141c2bbde183bc06da94823b064">tudat::basic_astrodynamics::third_body_point_mass_gravity</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d83/acceleration_model_types_8h_source.html#l00052">accelerationModelTypes.h:52</a></div></div>
+<div class="ttc" id="namespacetudat_1_1basic__astrodynamics_html_abf29e4420ac7dbbcfe0ff7e2c7910aaba383c824d5b7ae23529f0eeb5dd7edb64"><div class="ttname"><a href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abf29e4420ac7dbbcfe0ff7e2c7910aaba383c824d5b7ae23529f0eeb5dd7edb64">tudat::basic_astrodynamics::third_body_mutual_spherical_harmonic_gravity</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d83/acceleration_model_types_8h_source.html#l00055">accelerationModelTypes.h:55</a></div></div>
+</div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d3/de8/acceleration_8h_source.html#l00054">54</a> of file <a class="el" href="../../d3/de8/acceleration_8h_source.html">acceleration.h</a>.</p>
+
+<p>Referenced by <a class="el" href="../../d3/d5a/acceleration_8cpp_source.html#l00122">tudat::simulation_setup::from_json()</a>, and <a class="el" href="../../d3/d5a/acceleration_8cpp_source.html#l00022">tudat::simulation_setup::to_json()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="abcdce746b51c753a06cbf9d15c390b2c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt; <a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abe8f371ac11e30366bab79dd52dc7138">AvailableMassRateModels</a>, std::string &gt; tudat::basic_astrodynamics::massRateTypes</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div><div class="line">{</div><div class="line">    { <a class="code" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abe8f371ac11e30366bab79dd52dc7138ae1f3e3986d8dc0ada93681a6088ef105">undefined_mass_rate_model</a>, <span class="stringliteral">&quot;undefined&quot;</span> },</div><div class="line">    { <a class="code" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abe8f371ac11e30366bab79dd52dc7138aa0d32f06a644e5c72ec52139df96318d">custom_mass_rate_model</a>, <span class="stringliteral">&quot;custom&quot;</span> },</div><div class="line">    { <a class="code" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abe8f371ac11e30366bab79dd52dc7138a9e020528e73e54b5af27ea0b8811783b">from_thrust_mass_rate_model</a>, <span class="stringliteral">&quot;fromThrust&quot;</span> }</div><div class="line">}</div><div class="ttc" id="namespacetudat_1_1basic__astrodynamics_html_abe8f371ac11e30366bab79dd52dc7138a9e020528e73e54b5af27ea0b8811783b"><div class="ttname"><a href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abe8f371ac11e30366bab79dd52dc7138a9e020528e73e54b5af27ea0b8811783b">tudat::basic_astrodynamics::from_thrust_mass_rate_model</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d83/acceleration_model_types_8h_source.html#l00079">accelerationModelTypes.h:79</a></div></div>
+<div class="ttc" id="namespacetudat_1_1basic__astrodynamics_html_abe8f371ac11e30366bab79dd52dc7138aa0d32f06a644e5c72ec52139df96318d"><div class="ttname"><a href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abe8f371ac11e30366bab79dd52dc7138aa0d32f06a644e5c72ec52139df96318d">tudat::basic_astrodynamics::custom_mass_rate_model</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d83/acceleration_model_types_8h_source.html#l00078">accelerationModelTypes.h:78</a></div></div>
+<div class="ttc" id="namespacetudat_1_1basic__astrodynamics_html_abe8f371ac11e30366bab79dd52dc7138ae1f3e3986d8dc0ada93681a6088ef105"><div class="ttname"><a href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abe8f371ac11e30366bab79dd52dc7138ae1f3e3986d8dc0ada93681a6088ef105">tudat::basic_astrodynamics::undefined_mass_rate_model</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d83/acceleration_model_types_8h_source.html#l00077">accelerationModelTypes.h:77</a></div></div>
+</div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/d6e/_json_interface_2_propagation_2mass_rate_model_8h_source.html#l00025">25</a> of file <a class="el" href="../../d8/d6e/_json_interface_2_propagation_2mass_rate_model_8h_source.html">massRateModel.h</a>.</p>
+
+<p>Referenced by <a class="el" href="../../da/da7/mass_rate_model_8cpp_source.html#l00051">tudat::simulation_setup::from_json()</a>, and <a class="el" href="../../da/da7/mass_rate_model_8cpp_source.html#l00021">tudat::simulation_setup::to_json()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a36ac4a121e4067412e68fe812a0525f1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abe8f371ac11e30366bab79dd52dc7138">AvailableMassRateModels</a> &gt; tudat::basic_astrodynamics::unsupportedMassRateType</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div><div class="line">{</div><div class="line">    <a class="code" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abe8f371ac11e30366bab79dd52dc7138ae1f3e3986d8dc0ada93681a6088ef105">undefined_mass_rate_model</a>,</div><div class="line">    <a class="code" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abe8f371ac11e30366bab79dd52dc7138aa0d32f06a644e5c72ec52139df96318d">custom_mass_rate_model</a></div><div class="line">}</div><div class="ttc" id="namespacetudat_1_1basic__astrodynamics_html_abe8f371ac11e30366bab79dd52dc7138aa0d32f06a644e5c72ec52139df96318d"><div class="ttname"><a href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abe8f371ac11e30366bab79dd52dc7138aa0d32f06a644e5c72ec52139df96318d">tudat::basic_astrodynamics::custom_mass_rate_model</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d83/acceleration_model_types_8h_source.html#l00078">accelerationModelTypes.h:78</a></div></div>
+<div class="ttc" id="namespacetudat_1_1basic__astrodynamics_html_abe8f371ac11e30366bab79dd52dc7138ae1f3e3986d8dc0ada93681a6088ef105"><div class="ttname"><a href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#abe8f371ac11e30366bab79dd52dc7138ae1f3e3986d8dc0ada93681a6088ef105">tudat::basic_astrodynamics::undefined_mass_rate_model</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d83/acceleration_model_types_8h_source.html#l00077">accelerationModelTypes.h:77</a></div></div>
+</div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/d6e/_json_interface_2_propagation_2mass_rate_model_8h_source.html#l00033">33</a> of file <a class="el" href="../../d8/d6e/_json_interface_2_propagation_2mass_rate_model_8h_source.html">massRateModel.h</a>.</p>
+
+<p>Referenced by <a class="el" href="../../da/da7/mass_rate_model_8cpp_source.html#l00051">tudat::simulation_setup::from_json()</a>, and <a class="el" href="../../da/da7/mass_rate_model_8cpp_source.html#l00021">tudat::simulation_setup::to_json()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a77fd100bde7f3e392a4595e84d1a25db"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt; <a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#aa09ce70cfed2e1f912ff57a2f568adb4">AvailableTorque</a>, std::string &gt; tudat::basic_astrodynamics::torqueTypes</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div><div class="line">{</div><div class="line">    { <a class="code" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#aa09ce70cfed2e1f912ff57a2f568adb4abc9a75eb9d8e35ebf8e20ac1e9831a6b">underfined_torque</a>, <span class="stringliteral">&quot;undefined&quot;</span> },</div><div class="line">    { <a class="code" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#aa09ce70cfed2e1f912ff57a2f568adb4aed8ccd2aa1575f743814b9d15b4ccc93">second_order_gravitational_torque</a>, <span class="stringliteral">&quot;secondOrderGravitational&quot;</span> },</div><div class="line">    { <a class="code" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#aa09ce70cfed2e1f912ff57a2f568adb4ae92b379c082691d1f77433188bfe893a">aerodynamic_torque</a>, <span class="stringliteral">&quot;aerodynamic&quot;</span> }</div><div class="line">}</div><div class="ttc" id="namespacetudat_1_1basic__astrodynamics_html_aa09ce70cfed2e1f912ff57a2f568adb4abc9a75eb9d8e35ebf8e20ac1e9831a6b"><div class="ttname"><a href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#aa09ce70cfed2e1f912ff57a2f568adb4abc9a75eb9d8e35ebf8e20ac1e9831a6b">tudat::basic_astrodynamics::underfined_torque</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/d0d/torque_model_types_8h_source.html#l00030">torqueModelTypes.h:30</a></div></div>
+<div class="ttc" id="namespacetudat_1_1basic__astrodynamics_html_aa09ce70cfed2e1f912ff57a2f568adb4ae92b379c082691d1f77433188bfe893a"><div class="ttname"><a href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#aa09ce70cfed2e1f912ff57a2f568adb4ae92b379c082691d1f77433188bfe893a">tudat::basic_astrodynamics::aerodynamic_torque</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/d0d/torque_model_types_8h_source.html#l00032">torqueModelTypes.h:32</a></div></div>
+<div class="ttc" id="namespacetudat_1_1basic__astrodynamics_html_aa09ce70cfed2e1f912ff57a2f568adb4aed8ccd2aa1575f743814b9d15b4ccc93"><div class="ttname"><a href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#aa09ce70cfed2e1f912ff57a2f568adb4aed8ccd2aa1575f743814b9d15b4ccc93">tudat::basic_astrodynamics::second_order_gravitational_torque</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/d0d/torque_model_types_8h_source.html#l00031">torqueModelTypes.h:31</a></div></div>
+</div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d7/dac/torque_8h_source.html#l00025">25</a> of file <a class="el" href="../../d7/dac/torque_8h_source.html">torque.h</a>.</p>
+
+<p>Referenced by <a class="el" href="../../d1/d7a/torque_8cpp_source.html#l00045">tudat::simulation_setup::from_json()</a>, and <a class="el" href="../../d1/d7a/torque_8cpp_source.html#l00021">tudat::simulation_setup::to_json()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a04219f3851b1d30471cbf2efe6f9313a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#aa09ce70cfed2e1f912ff57a2f568adb4">AvailableTorque</a> &gt; tudat::basic_astrodynamics::unsupportedTorqueTypes = { }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d7/dac/torque_8h_source.html#l00033">33</a> of file <a class="el" href="../../d7/dac/torque_8h_source.html">torque.h</a>.</p>
+
+<p>Referenced by <a class="el" href="../../d1/d7a/torque_8cpp_source.html#l00045">tudat::simulation_setup::from_json()</a>, and <a class="el" href="../../d1/d7a/torque_8cpp_source.html#l00021">tudat::simulation_setup::to_json()</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 27 2017 09:32:59 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 7 2017 11:20:31 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

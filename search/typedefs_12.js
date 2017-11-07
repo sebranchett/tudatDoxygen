@@ -10,5 +10,6 @@ var searchData=
   ['toruspointer',['TorusPointer',['../d9/dd8/namespacetudat_1_1geometric__shapes.html#ae5304798f39337891a655ae898c07aad',1,'tudat::geometric_shapes']]],
   ['trapezoidnumericalintegratorpointerd',['TrapezoidNumericalIntegratorPointerd',['../d4/d2b/namespacetudat_1_1numerical__quadrature.html#a8c1db7ed405b639930d8969e41f01752',1,'tudat::numerical_quadrature']]],
   ['twolineelementdatapointer',['TwoLineElementDataPointer',['../d0/d8c/namespacetudat_1_1input__output.html#a3b93648387204a7b49fb866f634e5220',1,'tudat::input_output']]],
-  ['twolineelementstextfilereaderpointer',['TwoLineElementsTextFileReaderPointer',['../d0/d8c/namespacetudat_1_1input__output.html#a1bdfebdc7fae6151ff1fdfadd6b2477e',1,'tudat::input_output']]]
+  ['twolineelementstextfilereaderpointer',['TwoLineElementsTextFileReaderPointer',['../d0/d8c/namespacetudat_1_1input__output.html#a1bdfebdc7fae6151ff1fdfadd6b2477e',1,'tudat::input_output']]],
+  ['twowaydopplerpartialreturntype',['TwoWayDopplerPartialReturnType',['../dd/d18/classtudat_1_1observation__partials_1_1_two_way_doppler_partial.html#a17aac3870af2aa83b9ccdd5d6f884b8d',1,'tudat::observation_partials::TwoWayDopplerPartial']]]
 ];

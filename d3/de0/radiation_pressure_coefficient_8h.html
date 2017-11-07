@@ -93,14 +93,21 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="title">radiationPressureCoefficient.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;Eigen/Core&gt;</code><br />
+<div class="textblock"><code>#include &lt;boost/make_shared.hpp&gt;</code><br />
+<code>#include &lt;boost/bind.hpp&gt;</code><br />
+<code>#include &lt;Eigen/Core&gt;</code><br />
+<code>#include &quot;<a class="el" href="../../d2/d81/_basics_2utilities_8h_source.html">Tudat/Basics/utilities.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d4/d89/estimatable_parameter_8h_source.html">Tudat/Astrodynamics/OrbitDetermination/EstimatableParameters/estimatableParameter.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html">Tudat/Astrodynamics/ElectroMagnetism/radiationPressureInterface.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d6/dda/piecewise_constant_interpolator_8h_source.html">Tudat/Mathematics/Interpolators/piecewiseConstantInterpolator.h</a>&quot;</code><br />
 </div>
 <p><a href="../../d3/de0/radiation_pressure_coefficient_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d09/classtudat_1_1estimatable__parameters_1_1_arc_wise_radiation_pressure_coefficient.html">tudat::estimatable_parameters::ArcWiseRadiationPressureCoefficient</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interface class for the estimation of an arc-wise (piecewise constant) radiation pressure coefficient.  <a href="../../d0/d09/classtudat_1_1estimatable__parameters_1_1_arc_wise_radiation_pressure_coefficient.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d4b/classtudat_1_1estimatable__parameters_1_1_radiation_pressure_coefficient.html">tudat::estimatable_parameters::RadiationPressureCoefficient</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interface class for the estimation of a radiation pressure coefficient.  <a href="../../df/d4b/classtudat_1_1estimatable__parameters_1_1_radiation_pressure_coefficient.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -116,7 +123,7 @@ Namespaces</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 27 2017 09:32:58 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 7 2017 11:20:30 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

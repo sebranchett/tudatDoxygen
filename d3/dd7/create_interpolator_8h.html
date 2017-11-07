@@ -95,19 +95,35 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="title">createInterpolator.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;boost/make_shared.hpp&gt;</code><br />
+<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;boost/make_shared.hpp&gt;</code><br />
 <code>#include &lt;boost/shared_ptr.hpp&gt;</code><br />
-<code>#include &lt;boost/lexical_cast.hpp&gt;</code><br />
 <code>#include &quot;<a class="el" href="../../d3/d7b/linear_interpolator_8h_source.html">Tudat/Mathematics/Interpolators/linearInterpolator.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d6/d18/cubic_spline_interpolator_8h_source.html">Tudat/Mathematics/Interpolators/cubicSplineInterpolator.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../db/d44/hermite_cubic_spline_interpolator_8h_source.html">Tudat/Mathematics/Interpolators/hermiteCubicSplineInterpolator.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d8/dcd/lagrange_interpolator_8h_source.html">Tudat/Mathematics/Interpolators/lagrangeInterpolator.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d6/dda/piecewise_constant_interpolator_8h_source.html">Tudat/Mathematics/Interpolators/piecewiseConstantInterpolator.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../db/df3/map_text_file_reader_8h_source.html">Tudat/InputOutput/mapTextFileReader.h</a>&quot;</code><br />
 </div>
 <p><a href="../../d3/dd7/create_interpolator_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d57/classtudat_1_1interpolators_1_1_data_interpolation_settings.html">tudat::interpolators::DataInterpolationSettings&lt; IndependentType, DependentType &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="../../dd/d57/classtudat_1_1interpolators_1_1_data_interpolation_settings.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d26/classtudat_1_1interpolators_1_1_data_map_settings.html">tudat::interpolators::DataMapSettings&lt; IndependentType, DependentType &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class defening the settings to be used to create a map of data (used for interpolation).  <a href="../../db/d26/classtudat_1_1interpolators_1_1_data_map_settings.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de3/classtudat_1_1interpolators_1_1_from_file_data_map_settings.html">tudat::interpolators::FromFileDataMapSettings&lt; EigenVectorType &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class defening the settings to be used to create a map of data (used for interpolation).  <a href="../../db/de3/classtudat_1_1interpolators_1_1_from_file_data_map_settings.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d93/classtudat_1_1interpolators_1_1_hermite_data_settings.html">tudat::interpolators::HermiteDataSettings&lt; IndependentType, DependentType &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class defening the settings to be used to create a map of data (used for interpolation).  <a href="../../dd/d93/classtudat_1_1interpolators_1_1_hermite_data_settings.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dcb/classtudat_1_1interpolators_1_1_independent_dependent_data_map_settings.html">tudat::interpolators::IndependentDependentDataMapSettings&lt; IndependentType, DependentType &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class defening the settings to be used to create a map of data (used for interpolation).  <a href="../../dc/dcb/classtudat_1_1interpolators_1_1_independent_dependent_data_map_settings.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d96/classtudat_1_1interpolators_1_1_interpolator_settings.html">tudat::interpolators::InterpolatorSettings</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for providing settings for creating an interpolator.  <a href="../../dd/d96/classtudat_1_1interpolators_1_1_interpolator_settings.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -121,6 +137,7 @@ Namespaces</h2></td></tr>
 <tr class="memdesc:d6/d6d/namespacetudat"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tudat library namespace. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:d3/d05/namespacetudat_1_1interpolators"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d05/namespacetudat_1_1interpolators.html">tudat::interpolators</a></td></tr>
+<tr class="memdesc:d3/d05/namespacetudat_1_1interpolators"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interpolators namespace. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
@@ -143,11 +160,15 @@ Functions</h2></td></tr>
 <tr class="memitem:a4e088533a90765641b688bd9b094e196"><td class="memTemplItemLeft" align="right" valign="top">boost::shared_ptr&lt; OneDimensionalInterpolator&lt; IndependentVariableType, DependentVariableType &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d3/d05/namespacetudat_1_1interpolators.html#a4e088533a90765641b688bd9b094e196">tudat::interpolators::createOneDimensionalInterpolator</a> (const std::map&lt; IndependentVariableType, DependentVariableType &gt; dataToInterpolate, const boost::shared_ptr&lt; InterpolatorSettings &gt; interpolatorSettings, const std::vector&lt; DependentVariableType &gt; firstDerivativeOfDependentVariables=std::vector&lt; DependentVariableType &gt;())</td></tr>
 <tr class="memdesc:a4e088533a90765641b688bd9b094e196"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to create an interpolator.  <a href="../../d3/d05/namespacetudat_1_1interpolators.html#a4e088533a90765641b688bd9b094e196">More...</a><br /></td></tr>
 <tr class="separator:a4e088533a90765641b688bd9b094e196"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a882511554bcfc8fa70f0b43255fe64c7"><td class="memTemplParams" colspan="2">template&lt;typename IndependentType , typename DependentType &gt; </td></tr>
+<tr class="memitem:a882511554bcfc8fa70f0b43255fe64c7"><td class="memTemplItemLeft" align="right" valign="top">boost::shared_ptr&lt; OneDimensionalInterpolator&lt; IndependentType, DependentType &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d3/d05/namespacetudat_1_1interpolators.html#a882511554bcfc8fa70f0b43255fe64c7">tudat::interpolators::createOneDimensionalInterpolator</a> (const boost::shared_ptr&lt; DataInterpolationSettings&lt; IndependentType, DependentType &gt; &gt; dataInterpolationSettings)</td></tr>
+<tr class="memdesc:a882511554bcfc8fa70f0b43255fe64c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to create an interpolator from <a class="el" href="../../dd/d57/classtudat_1_1interpolators_1_1_data_interpolation_settings.html" title="Constructor. ">DataInterpolationSettings</a>.  <a href="../../d3/d05/namespacetudat_1_1interpolators.html#a882511554bcfc8fa70f0b43255fe64c7">More...</a><br /></td></tr>
+<tr class="separator:a882511554bcfc8fa70f0b43255fe64c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 27 2017 09:32:58 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 7 2017 11:20:30 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

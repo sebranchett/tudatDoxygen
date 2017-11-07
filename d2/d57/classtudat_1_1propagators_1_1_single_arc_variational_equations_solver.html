@@ -140,6 +140,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a2322ade756b37d9ea72c7dbb1d866f0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to return object used for numerically propagating and managing the solution of the equations of motion.  <a href="#a2322ade756b37d9ea72c7dbb1d866f0c">More...</a><br /></td></tr>
 <tr class="separator:a2322ade756b37d9ea72c7dbb1d866f0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aabbfadc2677645669c0eb81629cdf97e"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; <a class="el" href="../../d8/d1c/classtudat_1_1propagators_1_1_dynamics_simulator.html">DynamicsSimulator</a>&lt; StateScalarType, TimeType &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d57/classtudat_1_1propagators_1_1_single_arc_variational_equations_solver.html#aabbfadc2677645669c0eb81629cdf97e">getDynamicsSimulatorBase</a> ()</td></tr>
+<tr class="memdesc:aabbfadc2677645669c0eb81629cdf97e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to retrieve the dynamics simulator object (as base-class pointer)  <a href="#aabbfadc2677645669c0eb81629cdf97e">More...</a><br /></td></tr>
 <tr class="separator:aabbfadc2677645669c0eb81629cdf97e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2834a255dd8c11adb8a8abf750ab0de5"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::map&lt; double, Eigen::MatrixXd &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d57/classtudat_1_1propagators_1_1_single_arc_variational_equations_solver.html#a2834a255dd8c11adb8a8abf750ab0de5">getNumericalVariationalEquationsSolution</a> ()</td></tr>
 <tr class="memdesc:a2834a255dd8c11adb8a8abf750ab0de5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to return the numerical solution history of numerically integrated variational equations.  <a href="#a2834a255dd8c11adb8a8abf750ab0de5">More...</a><br /></td></tr>
@@ -232,7 +233,7 @@ class tudat::propagators::SingleArcVariationalEquationsSolver&lt; StateScalarTyp
 
 <p>Class to manage and execute the numerical integration of variational equations of a dynamical system, in addition to the dynamics itself, in a single arc: i.e. the governing equations a single initial time, and are propagated once for the full prescribed time interval. This is in contrast to multi-arc dynamics, where the time interval is cut into pieces. In this class, the governing equations are set once, but can be re-integrated for different initial conditions using the same instance of the class. </p>
 
-<p>Definition at line <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00478">478</a> of file <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html">variationalEquationsSolver.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00483">483</a> of file <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html">variationalEquationsSolver.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="a9d80f6d3bc92daf7f9f9111e3e849d91"></a>
 <div class="memitem">
@@ -246,7 +247,7 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00483">483</a> of file <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html">variationalEquationsSolver.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00488">488</a> of file <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html">variationalEquationsSolver.h</a>.</p>
 
 </div>
 </div>
@@ -262,7 +263,7 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00484">484</a> of file <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html">variationalEquationsSolver.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00489">489</a> of file <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html">variationalEquationsSolver.h</a>.</p>
 
 </div>
 </div>
@@ -350,9 +351,9 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00512">512</a> of file <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html">variationalEquationsSolver.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00517">517</a> of file <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html">variationalEquationsSolver.h</a>.</p>
 
-<p>References <a class="el" href="../../d3/d66/create_state_derivative_partials_8h_source.html#l00037">tudat::simulation_setup::createStateDerivativePartials()</a>, <a class="el" href="../../df/d97/classtudat_1_1propagators_1_1_variational_equations_solver.html#a9f244c6f24127da4acafa1c3723aac7d">tudat::propagators::VariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::integrateVariationalAndDynamicalEquations()</a>, and <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00180">tudat::propagators::VariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::parametersToEstimate_</a>.</p>
+<p>References <a class="el" href="../../d3/d66/create_state_derivative_partials_8h_source.html#l00037">tudat::simulation_setup::createStateDerivativePartials()</a>, <a class="el" href="../../df/d97/classtudat_1_1propagators_1_1_variational_equations_solver.html#a9f244c6f24127da4acafa1c3723aac7d">tudat::propagators::VariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::integrateVariationalAndDynamicalEquations()</a>, and <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00185">tudat::propagators::VariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::parametersToEstimate_</a>.</p>
 
 </div>
 </div>
@@ -379,7 +380,7 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00579">579</a> of file <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html">variationalEquationsSolver.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00584">584</a> of file <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html">variationalEquationsSolver.h</a>.</p>
 
 </div>
 </div>
@@ -416,7 +417,7 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 
 <p>Implements <a class="el" href="../../df/d97/classtudat_1_1propagators_1_1_variational_equations_solver.html#a7106ce307675456a1e34ca3dbd2aff44">tudat::propagators::VariationalEquationsSolver&lt; StateScalarType, TimeType &gt;</a>.</p>
 
-<p>Definition at line <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00588">588</a> of file <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html">variationalEquationsSolver.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00593">593</a> of file <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html">variationalEquationsSolver.h</a>.</p>
 
 </div>
 </div>
@@ -463,9 +464,9 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 
 <p>Implements <a class="el" href="../../df/d97/classtudat_1_1propagators_1_1_variational_equations_solver.html#a9f244c6f24127da4acafa1c3723aac7d">tudat::propagators::VariationalEquationsSolver&lt; StateScalarType, TimeType &gt;</a>.</p>
 
-<p>Definition at line <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00605">605</a> of file <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html">variationalEquationsSolver.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00610">610</a> of file <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html">variationalEquationsSolver.h</a>.</p>
 
-<p>References <a class="el" href="../../d1/d71/classtudat_1_1propagators_1_1_propagation_termination_condition.html#a2a53592475bbfb408fd12faf21c5f3be">tudat::propagators::PropagationTerminationCondition::checkStopCondition()</a>, <a class="el" href="../../d5/deb/dynamics_state_derivative_model_8h_source.html#l00835">tudat::propagators::convertNumericalStateSolutionsToOutputSolutions()</a>, <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00145">tudat::propagators::VariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::createInitialConditions()</a>, <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00167">tudat::propagators::VariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::createInitialVariationalEquationsSolution()</a>, <a class="el" href="../../de/df0/utilities_8h_source.html#l00119">tudat::utilities::createVectorBlockMatrixHistory()</a>, <a class="el" href="../../d3/d9a/classtudat_1_1propagators_1_1_equation_integration_interface.html#ada0eb90b537454d15b25fd8ee9b60a4d">tudat::propagators::EquationIntegrationInterface&lt; StateType, TimeType &gt;::integrateEquations()</a>, <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00189">tudat::propagators::VariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::parameterVectorSize_</a>, <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00186">tudat::propagators::VariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::stateTransitionMatrixSize_</a>, and <a class="el" href="../../dc/d18/single_state_type_derivative_8h_source.html#l00028">tudat::propagators::transational_state</a>.</p>
+<p>References <a class="el" href="../../d1/d71/classtudat_1_1propagators_1_1_propagation_termination_condition.html#a379032acf2619d19bb774bbd83316f60">tudat::propagators::PropagationTerminationCondition::checkStopCondition()</a>, <a class="el" href="../../d5/deb/dynamics_state_derivative_model_8h_source.html#l00853">tudat::propagators::convertNumericalStateSolutionsToOutputSolutions()</a>, <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00150">tudat::propagators::VariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::createInitialConditions()</a>, <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00172">tudat::propagators::VariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::createInitialVariationalEquationsSolution()</a>, <a class="el" href="../../d2/d81/_basics_2utilities_8h_source.html#l00157">tudat::utilities::createVectorBlockMatrixHistory()</a>, <a class="el" href="../../d3/d9a/classtudat_1_1propagators_1_1_equation_integration_interface.html#acae19637a1949148645ac2b24b604dda">tudat::propagators::EquationIntegrationInterface&lt; StateType, TimeType &gt;::integrateEquations()</a>, <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00194">tudat::propagators::VariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::parameterVectorSize_</a>, <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00191">tudat::propagators::VariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::stateTransitionMatrixSize_</a>, and <a class="el" href="../../dc/d18/single_state_type_derivative_8h_source.html#l00029">tudat::propagators::transational_state</a>.</p>
 
 </div>
 </div>
@@ -493,7 +494,7 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 </div><div class="memdoc">
 <p>Function to return the numerical solution history of numerically integrated variational equations. </p><dl class="section return"><dt>Returns</dt><dd>Vector of mapa of state transition matrix history (first vector entry) and sensitivity matrix history (second vector entry) </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00688">688</a> of file <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html">variationalEquationsSolver.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00696">696</a> of file <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html">variationalEquationsSolver.h</a>.</p>
 
 </div>
 </div>
@@ -521,7 +522,7 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 </div><div class="memdoc">
 <p>Function to return object used for numerically propagating and managing the solution of the equations of motion. </p><dl class="section return"><dt>Returns</dt><dd>Object used for numerically propagating and managing the solution of the equations of motion. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00698">698</a> of file <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html">variationalEquationsSolver.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00706">706</a> of file <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html">variationalEquationsSolver.h</a>.</p>
 
 </div>
 </div>
@@ -547,10 +548,11 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Function to retrieve the dynamics simulator object (as base-class pointer) </p><dl class="section return"><dt>Returns</dt><dd>Dynamics simulator object (as base-class pointer) </dd></dl>
 
 <p>Implements <a class="el" href="../../df/d97/classtudat_1_1propagators_1_1_variational_equations_solver.html#aba3f1ad047016ae715d0def454e8ee85">tudat::propagators::VariationalEquationsSolver&lt; StateScalarType, TimeType &gt;</a>.</p>
 
-<p>Definition at line <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00703">703</a> of file <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html">variationalEquationsSolver.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00716">716</a> of file <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html">variationalEquationsSolver.h</a>.</p>
 
 </div>
 </div>
@@ -597,9 +599,9 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 
 <p>Implements <a class="el" href="../../df/d97/classtudat_1_1propagators_1_1_variational_equations_solver.html#acce9a9b47f9381cb4d985fd9c140369c">tudat::propagators::VariationalEquationsSolver&lt; StateScalarType, TimeType &gt;</a>.</p>
 
-<p>Definition at line <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00717">717</a> of file <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html">variationalEquationsSolver.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00730">730</a> of file <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html">variationalEquationsSolver.h</a>.</p>
 
-<p>References <a class="el" href="../../d4/d89/estimatable_parameter_8h_source.html#l00637">tudat::estimatable_parameters::getInitialStateVectorOfBodiesToEstimate()</a>, <a class="el" href="../../df/d97/classtudat_1_1propagators_1_1_variational_equations_solver.html#a7106ce307675456a1e34ca3dbd2aff44">tudat::propagators::VariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::integrateDynamicalEquationsOfMotionOnly()</a>, <a class="el" href="../../df/d97/classtudat_1_1propagators_1_1_variational_equations_solver.html#a9f244c6f24127da4acafa1c3723aac7d">tudat::propagators::VariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::integrateVariationalAndDynamicalEquations()</a>, and <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00180">tudat::propagators::VariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::parametersToEstimate_</a>.</p>
+<p>References <a class="el" href="../../d4/d89/estimatable_parameter_8h_source.html#l00637">tudat::estimatable_parameters::getInitialStateVectorOfBodiesToEstimate()</a>, <a class="el" href="../../df/d97/classtudat_1_1propagators_1_1_variational_equations_solver.html#a7106ce307675456a1e34ca3dbd2aff44">tudat::propagators::VariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::integrateDynamicalEquationsOfMotionOnly()</a>, <a class="el" href="../../df/d97/classtudat_1_1propagators_1_1_variational_equations_solver.html#a9f244c6f24127da4acafa1c3723aac7d">tudat::propagators::VariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::integrateVariationalAndDynamicalEquations()</a>, and <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00185">tudat::propagators::VariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::parametersToEstimate_</a>.</p>
 
 </div>
 </div>
@@ -627,9 +629,9 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 </div><div class="memdoc">
 <p>Reset solutions of variational equations (stateTransitionMatrixInterpolator_ and sensitivityMatrixInterpolator_), i.e. use numerical integration results to create new look-up tables and interpolators of state transition and sensitivity matrix through the createInterpolatorsForVariationalSolution function </p>
 
-<p>Definition at line <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00752">752</a> of file <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html">variationalEquationsSolver.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00765">765</a> of file <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html">variationalEquationsSolver.h</a>.</p>
 
-<p>References <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00196">tudat::propagators::VariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::clearNumericalSolution_</a>, <a class="el" href="../../d6/d08/variational_equations_solver_8cpp_source.html#l00020">tudat::propagators::createStateTransitionAndSensitivityMatrixInterpolator()</a>, <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00189">tudat::propagators::VariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::parameterVectorSize_</a>, and <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00199">tudat::propagators::VariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::stateTransitionInterface_</a>.</p>
+<p>References <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00201">tudat::propagators::VariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::clearNumericalSolution_</a>, <a class="el" href="../../d6/d08/variational_equations_solver_8cpp_source.html#l00020">tudat::propagators::createStateTransitionAndSensitivityMatrixInterpolator()</a>, <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00194">tudat::propagators::VariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::parameterVectorSize_</a>, and <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00204">tudat::propagators::VariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::stateTransitionInterface_</a>.</p>
 
 </div>
 </div>
@@ -654,7 +656,7 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00782">782</a> of file <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html">variationalEquationsSolver.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00795">795</a> of file <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html">variationalEquationsSolver.h</a>.</p>
 
 </div>
 </div>
@@ -678,7 +680,7 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00785">785</a> of file <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html">variationalEquationsSolver.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00798">798</a> of file <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html">variationalEquationsSolver.h</a>.</p>
 
 </div>
 </div>
@@ -703,7 +705,7 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 </div><div class="memdoc">
 <p>Map of history of numerically integrated variational equations. Key of map denotes time, values are state transition matrix Phi (first vector entry) and sensitivity matrix S (second vector entry) </p>
 
-<p>Definition at line <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00792">792</a> of file <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html">variationalEquationsSolver.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00805">805</a> of file <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html">variationalEquationsSolver.h</a>.</p>
 
 </div>
 </div>
@@ -727,7 +729,7 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00796">796</a> of file <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html">variationalEquationsSolver.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00809">809</a> of file <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html">variationalEquationsSolver.h</a>.</p>
 
 </div>
 </div>
@@ -751,7 +753,7 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00799">799</a> of file <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html">variationalEquationsSolver.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00812">812</a> of file <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html">variationalEquationsSolver.h</a>.</p>
 
 </div>
 </div>
@@ -775,7 +777,7 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00802">802</a> of file <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html">variationalEquationsSolver.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00815">815</a> of file <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html">variationalEquationsSolver.h</a>.</p>
 
 </div>
 </div>
@@ -800,7 +802,7 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 </div><div class="memdoc">
 <p>Object used to compute the full state derivative in equations of motion and variational equations, including relevant updates of environment from current state and time. Object may be used for either full or separate propagation of equations. </p>
 
-<p>Definition at line <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00810">810</a> of file <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html">variationalEquationsSolver.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00823">823</a> of file <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html">variationalEquationsSolver.h</a>.</p>
 
 </div>
 </div>
@@ -810,7 +812,7 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 27 2017 09:33:02 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 7 2017 11:20:34 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

@@ -98,6 +98,9 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
+<p>Class for calculation of aerodynamic torques.  
+ <a href="../../de/d64/classtudat_1_1aerodynamics_1_1_aerodynamic_torque.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html">aerodynamicTorque.h</a>&gt;</code></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Inheritance diagram for tudat::aerodynamics::AerodynamicTorque:</div>
@@ -114,6 +117,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a974e9939264fe6069d86379a760a2b44"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d64/classtudat_1_1aerodynamics_1_1_aerodynamic_torque.html#a974e9939264fe6069d86379a760a2b44">AerodynamicTorque</a> (const <a class="el" href="../../de/d64/classtudat_1_1aerodynamics_1_1_aerodynamic_torque.html#aaebddf70237a4846bd4ef0088b17ad50">CoefficientReturningFunction</a> coefficientFunction, const <a class="el" href="../../de/d64/classtudat_1_1aerodynamics_1_1_aerodynamic_torque.html#a56b0df2fcc392f8bfbe10f91c4fd8114">DoubleReturningFunction</a> densityFunction, const <a class="el" href="../../de/d64/classtudat_1_1aerodynamics_1_1_aerodynamic_torque.html#a56b0df2fcc392f8bfbe10f91c4fd8114">DoubleReturningFunction</a> airSpeedFunction, const <a class="el" href="../../de/d64/classtudat_1_1aerodynamics_1_1_aerodynamic_torque.html#a56b0df2fcc392f8bfbe10f91c4fd8114">DoubleReturningFunction</a> referenceAreaFunction, const <a class="el" href="../../de/d64/classtudat_1_1aerodynamics_1_1_aerodynamic_torque.html#aaebddf70237a4846bd4ef0088b17ad50">CoefficientReturningFunction</a> referenceLengthsFunction, const bool areCoefficientsInNegativeDirection=true)</td></tr>
+<tr class="memdesc:a974e9939264fe6069d86379a760a2b44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Acceleration torque constructor.  <a href="#a974e9939264fe6069d86379a760a2b44">More...</a><br /></td></tr>
 <tr class="separator:a974e9939264fe6069d86379a760a2b44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a651bab3beb67874d430eec3b8ec36f45"><td class="memItemLeft" align="right" valign="top">Eigen::Vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d64/classtudat_1_1aerodynamics_1_1_aerodynamic_torque.html#a651bab3beb67874d430eec3b8ec36f45">getTorque</a> ()</td></tr>
 <tr class="memdesc:a651bab3beb67874d430eec3b8ec36f45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get aerodynamic torque.  <a href="#a651bab3beb67874d430eec3b8ec36f45">More...</a><br /></td></tr>
@@ -153,20 +157,22 @@ Private Attributes</h2></td></tr>
 <tr class="memdesc:aea5cb2f3b853ad633643afb9ce305f70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplier to reverse direction of coefficients.  <a href="#aea5cb2f3b853ad633643afb9ce305f70">More...</a><br /></td></tr>
 <tr class="separator:aea5cb2f3b853ad633643afb9ce305f70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26fbd85f7d2502473b296ae0581defe4"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d64/classtudat_1_1aerodynamics_1_1_aerodynamic_torque.html#a26fbd85f7d2502473b296ae0581defe4">currentAirspeed_</a></td></tr>
-<tr class="memdesc:a26fbd85f7d2502473b296ae0581defe4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current airspeed.  <a href="#a26fbd85f7d2502473b296ae0581defe4">More...</a><br /></td></tr>
+<tr class="memdesc:a26fbd85f7d2502473b296ae0581defe4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current airspeed, as set by updateMembers function.  <a href="#a26fbd85f7d2502473b296ae0581defe4">More...</a><br /></td></tr>
 <tr class="separator:a26fbd85f7d2502473b296ae0581defe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56ca582c65e32ac090e6c76aeae1db55"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d64/classtudat_1_1aerodynamics_1_1_aerodynamic_torque.html#a56ca582c65e32ac090e6c76aeae1db55">currentDensity_</a></td></tr>
-<tr class="memdesc:a56ca582c65e32ac090e6c76aeae1db55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current density.  <a href="#a56ca582c65e32ac090e6c76aeae1db55">More...</a><br /></td></tr>
+<tr class="memdesc:a56ca582c65e32ac090e6c76aeae1db55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current density, as set by updateMembers function.  <a href="#a56ca582c65e32ac090e6c76aeae1db55">More...</a><br /></td></tr>
 <tr class="separator:a56ca582c65e32ac090e6c76aeae1db55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52612702195fd763bb970d2420210a79"><td class="memItemLeft" align="right" valign="top">Eigen::Vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d64/classtudat_1_1aerodynamics_1_1_aerodynamic_torque.html#a52612702195fd763bb970d2420210a79">currentMomentCoefficients_</a></td></tr>
-<tr class="memdesc:a52612702195fd763bb970d2420210a79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current aerodynamic moment coefficients.  <a href="#a52612702195fd763bb970d2420210a79">More...</a><br /></td></tr>
+<tr class="memdesc:a52612702195fd763bb970d2420210a79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current aerodynamic moment coefficients, as set by updateMembers function.  <a href="#a52612702195fd763bb970d2420210a79">More...</a><br /></td></tr>
 <tr class="separator:a52612702195fd763bb970d2420210a79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a36f5abf205fe12c5f362d0b20ca74624"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d64/classtudat_1_1aerodynamics_1_1_aerodynamic_torque.html#a36f5abf205fe12c5f362d0b20ca74624">currentReferenceArea_</a></td></tr>
-<tr class="memdesc:a36f5abf205fe12c5f362d0b20ca74624"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current reference area, as set by referenceAreaFunction_.  <a href="#a36f5abf205fe12c5f362d0b20ca74624">More...</a><br /></td></tr>
+<tr class="memdesc:a36f5abf205fe12c5f362d0b20ca74624"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current reference area, as set by updateMembers function.  <a href="#a36f5abf205fe12c5f362d0b20ca74624">More...</a><br /></td></tr>
 <tr class="separator:a36f5abf205fe12c5f362d0b20ca74624"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a147d6651c373a074523381dd211f3f74"><td class="memItemLeft" align="right" valign="top">Eigen::Vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d64/classtudat_1_1aerodynamics_1_1_aerodynamic_torque.html#a147d6651c373a074523381dd211f3f74">currentReferenceLengths_</a></td></tr>
+<tr class="memdesc:a147d6651c373a074523381dd211f3f74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current aerodynamic reference lengths, as set by updateMembers function.  <a href="#a147d6651c373a074523381dd211f3f74">More...</a><br /></td></tr>
 <tr class="separator:a147d6651c373a074523381dd211f3f74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a267f51b44f141be64560f8a1630906aa"><td class="memItemLeft" align="right" valign="top">Eigen::Vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d64/classtudat_1_1aerodynamics_1_1_aerodynamic_torque.html#a267f51b44f141be64560f8a1630906aa">currentTorque_</a></td></tr>
+<tr class="memdesc:a267f51b44f141be64560f8a1630906aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current aerodynamic torque, as set by updateMembers function.  <a href="#a267f51b44f141be64560f8a1630906aa">More...</a><br /></td></tr>
 <tr class="separator:a267f51b44f141be64560f8a1630906aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d98c0714aa264bd060632a032c88a91"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../de/d64/classtudat_1_1aerodynamics_1_1_aerodynamic_torque.html#a56b0df2fcc392f8bfbe10f91c4fd8114">DoubleReturningFunction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d64/classtudat_1_1aerodynamics_1_1_aerodynamic_torque.html#a4d98c0714aa264bd060632a032c88a91">densityFunction_</a></td></tr>
 <tr class="memdesc:a4d98c0714aa264bd060632a032c88a91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to retrieve the current density.  <a href="#a4d98c0714aa264bd060632a032c88a91">More...</a><br /></td></tr>
@@ -186,7 +192,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00069">69</a> of file <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html">aerodynamicTorque.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00081">81</a> of file <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html">aerodynamicTorque.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="a56b0df2fcc392f8bfbe10f91c4fd8114"></a>
 <div class="memitem">
@@ -206,7 +212,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00074">74</a> of file <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html">aerodynamicTorque.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00086">86</a> of file <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html">aerodynamicTorque.h</a>.</p>
 
 </div>
 </div>
@@ -228,7 +234,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00077">77</a> of file <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html">aerodynamicTorque.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00089">89</a> of file <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html">aerodynamicTorque.h</a>.</p>
 
 </div>
 </div>
@@ -288,10 +294,21 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Acceleration torque constructor, taking function pointers for all member variables. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">coefficientFunction</td><td>Function which retrieves current values of aerodynamic moment coefficients. </td></tr>
+    <tr><td class="paramname">densityFunction</td><td>Function which retrieves current value of the density. </td></tr>
+    <tr><td class="paramname">airSpeedFunction</td><td>Function which retrieves current value of the airspeed. </td></tr>
+    <tr><td class="paramname">referenceAreaFunction</td><td>Function which retrieves current value of the aerodynamic coefficient reference area. </td></tr>
+    <tr><td class="paramname">referenceLengthsFunction</td><td>Function which retrieves current values of the aerodynamic coefficient reference lengths. </td></tr>
+    <tr><td class="paramname">areCoefficientsInNegativeDirection</td><td>Boolean that determines whether to invert direction of aerodynamic coefficients. This is typically done for lift, drag and side force coefficients that point in negative direction in the local frame (default true). </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p>Definition at line <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00082">82</a> of file <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html">aerodynamicTorque.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00106">106</a> of file <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html">aerodynamicTorque.h</a>.</p>
 
-<p>References <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00171">coefficientMultiplier_</a>.</p>
+<p>References <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00197">coefficientMultiplier_</a>.</p>
 
 </div>
 </div>
@@ -316,14 +333,14 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Returns the aerodynamic torque. All data required for the computation is taken from member variables, which are set to their latest values by the last call of the updateMembers function. The returned torque is in the same reference frame as the aerodynamic coefficients, with the coefficients assumed to be in positive direction in the frame. </p><dl class="section return"><dt>Returns</dt><dd>Acceleration. </dd></dl>
+<p>Returns the aerodynamic torque. All data required for the computation is taken from member variables, which are set to their latest values by the last call of the updateMembers function. The returned torque is in the same reference frame as the aerodynamic coefficients, with the coefficients assumed to be in positive direction in the frame. </p><dl class="section return"><dt>Returns</dt><dd>Aerodynamic torque. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../de/d64/classtudat_1_1aerodynamics_1_1_aerodynamic_torque.html#a696dc6ac58fd9a7b9db3195ef65f8bd7" title="Update member variables used by the aerodynamic torque model. ">updateMembers()</a>. </dd></dl>
 
 <p>Implements <a class="el" href="../../d1/d03/classtudat_1_1basic__astrodynamics_1_1_torque_model.html#a6d9549c6be6ff7955697d132a5439546">tudat::basic_astrodynamics::TorqueModel</a>.</p>
 
-<p>Definition at line <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00107">107</a> of file <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html">aerodynamicTorque.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00131">131</a> of file <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html">aerodynamicTorque.h</a>.</p>
 
-<p>References <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00158">currentTorque_</a>.</p>
+<p>References <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00184">currentTorque_</a>.</p>
 
 </div>
 </div>
@@ -357,9 +374,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d1/d03/classtudat_1_1basic__astrodynamics_1_1_torque_model.html#a547de9f7c418d4721d3ae9e1b5acdcaa">tudat::basic_astrodynamics::TorqueModel</a>.</p>
 
-<p>Definition at line <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00120">120</a> of file <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html">aerodynamicTorque.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00144">144</a> of file <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html">aerodynamicTorque.h</a>.</p>
 
-<p>References <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00146">airSpeedFunction_</a>, <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00140">coefficientFunction_</a>, <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00171">coefficientMultiplier_</a>, <a class="el" href="../../dc/deb/aerodynamic_torque_8cpp_source.html#l00020">tudat::aerodynamics::computeAerodynamicMoment()</a>, <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00164">currentAirspeed_</a>, <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00161">currentDensity_</a>, <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00154">currentMomentCoefficients_</a>, <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00168">currentReferenceArea_</a>, <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00156">currentReferenceLengths_</a>, <a class="el" href="../../d7/daf/torque_model_8h_source.html#l00082">tudat::basic_astrodynamics::TorqueModel::currentTime_</a>, <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00158">currentTorque_</a>, <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00143">densityFunction_</a>, <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00149">referenceAreaFunction_</a>, and <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00151">referenceLengthsFunction_</a>.</p>
+<p>References <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00170">airSpeedFunction_</a>, <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00164">coefficientFunction_</a>, <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00197">coefficientMultiplier_</a>, <a class="el" href="../../dc/deb/aerodynamic_torque_8cpp_source.html#l00020">tudat::aerodynamics::computeAerodynamicMoment()</a>, <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00190">currentAirspeed_</a>, <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00187">currentDensity_</a>, <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00178">currentMomentCoefficients_</a>, <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00194">currentReferenceArea_</a>, <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00181">currentReferenceLengths_</a>, <a class="el" href="../../d7/daf/torque_model_8h_source.html#l00082">tudat::basic_astrodynamics::TorqueModel::currentTime_</a>, <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00184">currentTorque_</a>, <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00167">densityFunction_</a>, <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00173">referenceAreaFunction_</a>, and <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00175">referenceLengthsFunction_</a>.</p>
 
 </div>
 </div>
@@ -382,9 +399,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00140">140</a> of file <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html">aerodynamicTorque.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00164">164</a> of file <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html">aerodynamicTorque.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00120">updateMembers()</a>.</p>
+<p>Referenced by <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00144">updateMembers()</a>.</p>
 
 </div>
 </div>
@@ -406,9 +423,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00143">143</a> of file <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html">aerodynamicTorque.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00167">167</a> of file <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html">aerodynamicTorque.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00120">updateMembers()</a>.</p>
+<p>Referenced by <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00144">updateMembers()</a>.</p>
 
 </div>
 </div>
@@ -430,9 +447,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00146">146</a> of file <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html">aerodynamicTorque.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00170">170</a> of file <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html">aerodynamicTorque.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00120">updateMembers()</a>.</p>
+<p>Referenced by <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00144">updateMembers()</a>.</p>
 
 </div>
 </div>
@@ -454,9 +471,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00149">149</a> of file <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html">aerodynamicTorque.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00173">173</a> of file <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html">aerodynamicTorque.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00120">updateMembers()</a>.</p>
+<p>Referenced by <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00144">updateMembers()</a>.</p>
 
 </div>
 </div>
@@ -478,9 +495,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00151">151</a> of file <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html">aerodynamicTorque.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00175">175</a> of file <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html">aerodynamicTorque.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00120">updateMembers()</a>.</p>
+<p>Referenced by <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00144">updateMembers()</a>.</p>
 
 </div>
 </div>
@@ -502,9 +519,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00154">154</a> of file <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html">aerodynamicTorque.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00178">178</a> of file <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html">aerodynamicTorque.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00120">updateMembers()</a>.</p>
+<p>Referenced by <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00144">updateMembers()</a>.</p>
 
 </div>
 </div>
@@ -526,9 +543,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00156">156</a> of file <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html">aerodynamicTorque.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00181">181</a> of file <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html">aerodynamicTorque.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00120">updateMembers()</a>.</p>
+<p>Referenced by <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00144">updateMembers()</a>.</p>
 
 </div>
 </div>
@@ -550,9 +567,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00158">158</a> of file <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html">aerodynamicTorque.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00184">184</a> of file <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html">aerodynamicTorque.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00107">getTorque()</a>, and <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00120">updateMembers()</a>.</p>
+<p>Referenced by <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00131">getTorque()</a>, and <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00144">updateMembers()</a>.</p>
 
 </div>
 </div>
@@ -574,9 +591,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00161">161</a> of file <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html">aerodynamicTorque.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00187">187</a> of file <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html">aerodynamicTorque.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00120">updateMembers()</a>.</p>
+<p>Referenced by <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00144">updateMembers()</a>.</p>
 
 </div>
 </div>
@@ -598,9 +615,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00164">164</a> of file <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html">aerodynamicTorque.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00190">190</a> of file <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html">aerodynamicTorque.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00120">updateMembers()</a>.</p>
+<p>Referenced by <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00144">updateMembers()</a>.</p>
 
 </div>
 </div>
@@ -622,9 +639,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00168">168</a> of file <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html">aerodynamicTorque.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00194">194</a> of file <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html">aerodynamicTorque.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00120">updateMembers()</a>.</p>
+<p>Referenced by <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00144">updateMembers()</a>.</p>
 
 </div>
 </div>
@@ -646,9 +663,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00171">171</a> of file <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html">aerodynamicTorque.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00197">197</a> of file <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html">aerodynamicTorque.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00082">AerodynamicTorque()</a>, and <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00120">updateMembers()</a>.</p>
+<p>Referenced by <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00106">AerodynamicTorque()</a>, and <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00144">updateMembers()</a>.</p>
 
 </div>
 </div>
@@ -658,7 +675,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 27 2017 09:32:59 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 7 2017 11:20:31 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

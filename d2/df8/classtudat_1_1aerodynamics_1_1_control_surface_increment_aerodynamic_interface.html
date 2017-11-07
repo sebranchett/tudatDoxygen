@@ -161,7 +161,7 @@ Protected Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base class to hold an aerodynamic coefficient interface for a vehicle control surface. This interface can, for instance, be a database of coefficients or an aerodynamic analysis code which generates coefficients.The aerodynamic coefficients are defined as a function of any number of independent variables, the physical meaning of which is stored in the coefficient interface. The control surface increment interface is always stored in an <a class="el" href="../../d8/d94/classtudat_1_1aerodynamics_1_1_aerodynamic_coefficient_interface.html" title="Base class to hold an aerodynamic coefficient interface. ">AerodynamicCoefficientInterface</a>, and never used independently in propagation. As such, the aerodynamic reference quantities of this interface are not stored here, but are instead implicitly assumed to be equal to the <a class="el" href="../../d8/d94/classtudat_1_1aerodynamics_1_1_aerodynamic_coefficient_interface.html" title="Base class to hold an aerodynamic coefficient interface. ">AerodynamicCoefficientInterface</a> hosting it. </p>
 
-<p>Definition at line <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html#l00041">41</a> of file <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html">controlSurfaceAerodynamicCoefficientInterface.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html#l00039">39</a> of file <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html">controlSurfaceAerodynamicCoefficientInterface.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a6e394a5420a42d40ba7f7fd39d97dfbe"></a>
 <div class="memitem">
@@ -191,9 +191,9 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html#l00051">51</a> of file <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html">controlSurfaceAerodynamicCoefficientInterface.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html#l00049">49</a> of file <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html">controlSurfaceAerodynamicCoefficientInterface.h</a>.</p>
 
-<p>References <a class="el" href="../../d5/d70/aerodynamics_8h_source.html#l00051">tudat::aerodynamics::control_surface_deflection_dependent</a>, <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html#l00174">independentVariableNames_</a>, and <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html#l00181">numberOfIndependentVariables_</a>.</p>
+<p>References <a class="el" href="../../d2/d1e/_astrodynamics_2_aerodynamics_2aerodynamics_8h_source.html#l00051">tudat::aerodynamics::control_surface_deflection_dependent</a>, <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html#l00172">independentVariableNames_</a>, and <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html#l00179">numberOfIndependentVariables_</a>.</p>
 
 </div>
 </div>
@@ -218,7 +218,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html#l00077">77</a> of file <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html">controlSurfaceAerodynamicCoefficientInterface.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html#l00075">75</a> of file <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html">controlSurfaceAerodynamicCoefficientInterface.h</a>.</p>
 
 <p>References <a class="el" href="../../d2/df8/classtudat_1_1aerodynamics_1_1_control_surface_increment_aerodynamic_interface.html#a50d3f4808de9cab082355ba42a9121cf">updateCurrentCoefficients()</a>.</p>
 
@@ -255,7 +255,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implemented in <a class="el" href="../../d3/d2f/classtudat_1_1aerodynamics_1_1_custom_control_surface_increment_aerodynamic_interface.html#a8c5c91fb0c3fb66e5b4a599f117a8ddc">tudat::aerodynamics::CustomControlSurfaceIncrementAerodynamicInterface</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html#l00077">~ControlSurfaceIncrementAerodynamicInterface()</a>.</p>
+<p>Referenced by <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html#l00075">~ControlSurfaceIncrementAerodynamicInterface()</a>.</p>
 
 </div>
 </div>
@@ -281,11 +281,11 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Function for returning current aerodynamic force coefficients. </p><dl class="section return"><dt>Returns</dt><dd>Force coefficients at current independent variables </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html#l00095">95</a> of file <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html">controlSurfaceAerodynamicCoefficientInterface.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html#l00093">93</a> of file <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html">controlSurfaceAerodynamicCoefficientInterface.h</a>.</p>
 
-<p>References <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html#l00187">currentForceCoefficients_</a>.</p>
+<p>References <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html#l00185">currentForceCoefficients_</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html#l00115">getCurrentAerodynamicCoefficients()</a>.</p>
+<p>Referenced by <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html#l00113">getCurrentAerodynamicCoefficients()</a>.</p>
 
 </div>
 </div>
@@ -311,11 +311,11 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Function for returning current aerodynamic moment coefficients. </p><dl class="section return"><dt>Returns</dt><dd>Moment coefficients at current independent variables </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html#l00105">105</a> of file <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html">controlSurfaceAerodynamicCoefficientInterface.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html#l00103">103</a> of file <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html">controlSurfaceAerodynamicCoefficientInterface.h</a>.</p>
 
-<p>References <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html#l00193">currentMomentCoefficients_</a>.</p>
+<p>References <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html#l00191">currentMomentCoefficients_</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html#l00115">getCurrentAerodynamicCoefficients()</a>.</p>
+<p>Referenced by <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html#l00113">getCurrentAerodynamicCoefficients()</a>.</p>
 
 </div>
 </div>
@@ -341,9 +341,9 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Function for returning current aerodynamic force and moment coefficients </p><dl class="section return"><dt>Returns</dt><dd>Force and moment coefficients at given independent variables </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html#l00115">115</a> of file <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html">controlSurfaceAerodynamicCoefficientInterface.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html#l00113">113</a> of file <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html">controlSurfaceAerodynamicCoefficientInterface.h</a>.</p>
 
-<p>References <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html#l00095">getCurrentForceCoefficients()</a>, and <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html#l00105">getCurrentMomentCoefficients()</a>.</p>
+<p>References <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html#l00093">getCurrentForceCoefficients()</a>, and <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html#l00103">getCurrentMomentCoefficients()</a>.</p>
 
 </div>
 </div>
@@ -369,9 +369,9 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Function to return the identifiers of the physical meaning of each independent variable of the aerodynamic coefficient interface. </p><dl class="section return"><dt>Returns</dt><dd>A vector with the identifiers of the physical meaning of each independent variable. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html#l00129">129</a> of file <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html">controlSurfaceAerodynamicCoefficientInterface.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html#l00127">127</a> of file <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html">controlSurfaceAerodynamicCoefficientInterface.h</a>.</p>
 
-<p>References <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html#l00174">independentVariableNames_</a>.</p>
+<p>References <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html#l00172">independentVariableNames_</a>.</p>
 
 </div>
 </div>
@@ -404,9 +404,9 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The identifiers of the physical meaning of the independent variable at the position of the input variable. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html#l00143">143</a> of file <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html">controlSurfaceAerodynamicCoefficientInterface.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html#l00141">141</a> of file <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html">controlSurfaceAerodynamicCoefficientInterface.h</a>.</p>
 
-<p>References <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html#l00174">independentVariableNames_</a>, and <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html#l00181">numberOfIndependentVariables_</a>.</p>
+<p>References <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html#l00172">independentVariableNames_</a>, and <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html#l00179">numberOfIndependentVariables_</a>.</p>
 
 </div>
 </div>
@@ -432,9 +432,9 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Function to return the number of independent variables upon which the coeficients depend. The size of the vector used as input for updateCurrentCoefficients should always have the size returned by this variable. </p><dl class="section return"><dt>Returns</dt><dd>Number of independent variables upon which the coeficients depend </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html#l00166">166</a> of file <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html">controlSurfaceAerodynamicCoefficientInterface.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html#l00164">164</a> of file <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html">controlSurfaceAerodynamicCoefficientInterface.h</a>.</p>
 
-<p>References <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html#l00181">numberOfIndependentVariables_</a>.</p>
+<p>References <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html#l00179">numberOfIndependentVariables_</a>.</p>
 
 </div>
 </div>
@@ -457,9 +457,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html#l00174">174</a> of file <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html">controlSurfaceAerodynamicCoefficientInterface.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html#l00172">172</a> of file <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html">controlSurfaceAerodynamicCoefficientInterface.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html#l00051">ControlSurfaceIncrementAerodynamicInterface()</a>, <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html#l00143">getIndependentVariableName()</a>, and <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html#l00129">getIndependentVariableNames()</a>.</p>
+<p>Referenced by <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html#l00049">ControlSurfaceIncrementAerodynamicInterface()</a>, <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html#l00141">getIndependentVariableName()</a>, and <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html#l00127">getIndependentVariableNames()</a>.</p>
 
 </div>
 </div>
@@ -482,9 +482,9 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Number of independent variables upon which the force and moment coefficient increments depend, i.e. the length of the vectors that should be used as input to updateCurrentCoefficients </p>
 
-<p>Definition at line <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html#l00181">181</a> of file <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html">controlSurfaceAerodynamicCoefficientInterface.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html#l00179">179</a> of file <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html">controlSurfaceAerodynamicCoefficientInterface.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html#l00051">ControlSurfaceIncrementAerodynamicInterface()</a>, <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html#l00143">getIndependentVariableName()</a>, <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html#l00166">getNumberOfIndependentVariables()</a>, and <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html#l00245">tudat::aerodynamics::CustomControlSurfaceIncrementAerodynamicInterface::updateCurrentCoefficients()</a>.</p>
+<p>Referenced by <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html#l00049">ControlSurfaceIncrementAerodynamicInterface()</a>, <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html#l00141">getIndependentVariableName()</a>, <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html#l00164">getNumberOfIndependentVariables()</a>, and <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html#l00243">tudat::aerodynamics::CustomControlSurfaceIncrementAerodynamicInterface::updateCurrentCoefficients()</a>.</p>
 
 </div>
 </div>
@@ -507,9 +507,9 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>The force coefficients increments at the current flight condition. </p>
 
-<p>Definition at line <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html#l00187">187</a> of file <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html">controlSurfaceAerodynamicCoefficientInterface.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html#l00185">185</a> of file <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html">controlSurfaceAerodynamicCoefficientInterface.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html#l00095">getCurrentForceCoefficients()</a>, and <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html#l00245">tudat::aerodynamics::CustomControlSurfaceIncrementAerodynamicInterface::updateCurrentCoefficients()</a>.</p>
+<p>Referenced by <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html#l00093">getCurrentForceCoefficients()</a>, and <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html#l00243">tudat::aerodynamics::CustomControlSurfaceIncrementAerodynamicInterface::updateCurrentCoefficients()</a>.</p>
 
 </div>
 </div>
@@ -532,9 +532,9 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>The moment coefficient increments at the current flight condition. </p>
 
-<p>Definition at line <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html#l00193">193</a> of file <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html">controlSurfaceAerodynamicCoefficientInterface.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html#l00191">191</a> of file <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html">controlSurfaceAerodynamicCoefficientInterface.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html#l00105">getCurrentMomentCoefficients()</a>, and <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html#l00245">tudat::aerodynamics::CustomControlSurfaceIncrementAerodynamicInterface::updateCurrentCoefficients()</a>.</p>
+<p>Referenced by <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html#l00103">getCurrentMomentCoefficients()</a>, and <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html#l00243">tudat::aerodynamics::CustomControlSurfaceIncrementAerodynamicInterface::updateCurrentCoefficients()</a>.</p>
 
 </div>
 </div>
@@ -544,7 +544,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 27 2017 09:32:59 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 7 2017 11:20:31 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

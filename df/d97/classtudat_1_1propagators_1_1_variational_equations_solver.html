@@ -132,6 +132,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a8ab517cef832fcbb800f06b7d7e6c738"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#a8ab517cef832fcbb800f06b7d7e6c738">More...</a><br /></td></tr>
 <tr class="separator:a8ab517cef832fcbb800f06b7d7e6c738"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba3f1ad047016ae715d0def454e8ee85"><td class="memItemLeft" align="right" valign="top">virtual boost::shared_ptr&lt; <a class="el" href="../../d8/d1c/classtudat_1_1propagators_1_1_dynamics_simulator.html">DynamicsSimulator</a>&lt; StateScalarType, TimeType &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d97/classtudat_1_1propagators_1_1_variational_equations_solver.html#aba3f1ad047016ae715d0def454e8ee85">getDynamicsSimulatorBase</a> ()=0</td></tr>
+<tr class="memdesc:aba3f1ad047016ae715d0def454e8ee85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pure virtual function to retrieve the dynamics simulator object (as base-class pointer)  <a href="#aba3f1ad047016ae715d0def454e8ee85">More...</a><br /></td></tr>
 <tr class="separator:aba3f1ad047016ae715d0def454e8ee85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab4c6a0701b54811fd3cb6ee01c15d9a1"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; <a class="el" href="../../d5/d06/classtudat_1_1estimatable__parameters_1_1_estimatable_parameter_set.html">estimatable_parameters::EstimatableParameterSet</a>&lt; StateScalarType &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d97/classtudat_1_1propagators_1_1_variational_equations_solver.html#ab4c6a0701b54811fd3cb6ee01c15d9a1">getParametersToEstimate</a> ()</td></tr>
 <tr class="memdesc:ab4c6a0701b54811fd3cb6ee01c15d9a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to get the list of objects representing the parameters that are to be integrated.  <a href="#ab4c6a0701b54811fd3cb6ee01c15d9a1">More...</a><br /></td></tr>
@@ -345,7 +346,7 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 
 <p>Implemented in <a class="el" href="../../d2/d0e/classtudat_1_1propagators_1_1_multi_arc_variational_equations_solver.html#afee8860dded9ae1c95c6d04f0edd43bf">tudat::propagators::MultiArcVariationalEquationsSolver&lt; StateScalarType, TimeType &gt;</a>, and <a class="el" href="../../d2/d57/classtudat_1_1propagators_1_1_single_arc_variational_equations_solver.html#afdd42247007e9ea8765d05c99b82c2c0">tudat::propagators::SingleArcVariationalEquationsSolver&lt; StateScalarType, TimeType &gt;</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l01035">tudat::propagators::MultiArcVariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::integrateVariationalAndDynamicalEquations()</a>, <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00906">tudat::propagators::MultiArcVariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::MultiArcVariationalEquationsSolver()</a>, <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00717">tudat::propagators::SingleArcVariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::resetParameterEstimate()</a>, <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l01267">tudat::propagators::MultiArcVariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::resetParameterEstimate()</a>, <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00512">tudat::propagators::SingleArcVariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::SingleArcVariationalEquationsSolver()</a>, and <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00075">tudat::propagators::VariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::~VariationalEquationsSolver()</a>.</p>
+<p>Referenced by <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l01048">tudat::propagators::MultiArcVariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::integrateVariationalAndDynamicalEquations()</a>, <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00919">tudat::propagators::MultiArcVariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::MultiArcVariationalEquationsSolver()</a>, <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00730">tudat::propagators::SingleArcVariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::resetParameterEstimate()</a>, <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l01296">tudat::propagators::MultiArcVariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::resetParameterEstimate()</a>, <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00517">tudat::propagators::SingleArcVariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::SingleArcVariationalEquationsSolver()</a>, and <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00075">tudat::propagators::VariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::~VariationalEquationsSolver()</a>.</p>
 
 </div>
 </div>
@@ -381,7 +382,7 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 
 <p>Implemented in <a class="el" href="../../d2/d0e/classtudat_1_1propagators_1_1_multi_arc_variational_equations_solver.html#a7b26a4e0ca1aa7d03bf8bd86836122ec">tudat::propagators::MultiArcVariationalEquationsSolver&lt; StateScalarType, TimeType &gt;</a>, and <a class="el" href="../../d2/d57/classtudat_1_1propagators_1_1_single_arc_variational_equations_solver.html#a601b7d2e6202e1e8e0adb66d53e969ec">tudat::propagators::SingleArcVariationalEquationsSolver&lt; StateScalarType, TimeType &gt;</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00717">tudat::propagators::SingleArcVariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::resetParameterEstimate()</a>, <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l01267">tudat::propagators::MultiArcVariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::resetParameterEstimate()</a>, and <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00075">tudat::propagators::VariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::~VariationalEquationsSolver()</a>.</p>
+<p>Referenced by <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00730">tudat::propagators::SingleArcVariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::resetParameterEstimate()</a>, <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l01296">tudat::propagators::MultiArcVariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::resetParameterEstimate()</a>, and <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00075">tudat::propagators::VariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::~VariationalEquationsSolver()</a>.</p>
 
 </div>
 </div>
@@ -411,7 +412,7 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 
 <p>Definition at line <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00103">103</a> of file <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html">variationalEquationsSolver.h</a>.</p>
 
-<p>References <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00180">tudat::propagators::VariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::parametersToEstimate_</a>, and <a class="el" href="../../df/d97/classtudat_1_1propagators_1_1_variational_equations_solver.html#acce9a9b47f9381cb4d985fd9c140369c">tudat::propagators::VariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::resetParameterEstimate()</a>.</p>
+<p>References <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00185">tudat::propagators::VariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::parametersToEstimate_</a>, and <a class="el" href="../../df/d97/classtudat_1_1propagators_1_1_variational_equations_solver.html#acce9a9b47f9381cb4d985fd9c140369c">tudat::propagators::VariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::resetParameterEstimate()</a>.</p>
 
 </div>
 </div>
@@ -488,7 +489,7 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 
 <p>Definition at line <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00125">125</a> of file <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html">variationalEquationsSolver.h</a>.</p>
 
-<p>References <a class="el" href="../../df/d97/classtudat_1_1propagators_1_1_variational_equations_solver.html#aba3f1ad047016ae715d0def454e8ee85">tudat::propagators::VariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::getDynamicsSimulatorBase()</a>, and <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00199">tudat::propagators::VariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::stateTransitionInterface_</a>.</p>
+<p>References <a class="el" href="../../df/d97/classtudat_1_1propagators_1_1_variational_equations_solver.html#aba3f1ad047016ae715d0def454e8ee85">tudat::propagators::VariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::getDynamicsSimulatorBase()</a>, and <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00204">tudat::propagators::VariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::stateTransitionInterface_</a>.</p>
 
 </div>
 </div>
@@ -514,6 +515,7 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Pure virtual function to retrieve the dynamics simulator object (as base-class pointer) </p><dl class="section return"><dt>Returns</dt><dd>Dynamics simulator object (as base-class pointer) </dd></dl>
 
 <p>Implemented in <a class="el" href="../../d2/d0e/classtudat_1_1propagators_1_1_multi_arc_variational_equations_solver.html#ab5065819c013c1c2a2b8063e003e0eb3">tudat::propagators::MultiArcVariationalEquationsSolver&lt; StateScalarType, TimeType &gt;</a>, and <a class="el" href="../../d2/d57/classtudat_1_1propagators_1_1_single_arc_variational_equations_solver.html#aabbfadc2677645669c0eb81629cdf97e">tudat::propagators::SingleArcVariationalEquationsSolver&lt; StateScalarType, TimeType &gt;</a>.</p>
 
@@ -552,11 +554,11 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Initial matrix of numerical soluation to variation + state equations. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00145">145</a> of file <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html">variationalEquationsSolver.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00150">150</a> of file <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html">variationalEquationsSolver.h</a>.</p>
 
-<p>References <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00189">tudat::propagators::VariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::parameterVectorSize_</a>, and <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00186">tudat::propagators::VariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::stateTransitionMatrixSize_</a>.</p>
+<p>References <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00194">tudat::propagators::VariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::parameterVectorSize_</a>, and <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00191">tudat::propagators::VariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::stateTransitionMatrixSize_</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00605">tudat::propagators::SingleArcVariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::integrateVariationalAndDynamicalEquations()</a>, and <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l01067">tudat::propagators::MultiArcVariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::integrateVariationalAndDynamicalEquations()</a>.</p>
+<p>Referenced by <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00610">tudat::propagators::SingleArcVariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::integrateVariationalAndDynamicalEquations()</a>, and <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l01080">tudat::propagators::MultiArcVariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::integrateVariationalAndDynamicalEquations()</a>.</p>
 
 </div>
 </div>
@@ -584,11 +586,11 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 </div><div class="memdoc">
 <p>Create initial matrix of numerical soluation to variational equations, with structure [Phi;S]. Initial state transition matrix Phi is identity matrix. Initial sensitivity matrix S is all zeros. </p><dl class="section return"><dt>Returns</dt><dd>Initial matrix solution to variational equations. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00167">167</a> of file <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html">variationalEquationsSolver.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00172">172</a> of file <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html">variationalEquationsSolver.h</a>.</p>
 
-<p>References <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00189">tudat::propagators::VariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::parameterVectorSize_</a>, and <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00186">tudat::propagators::VariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::stateTransitionMatrixSize_</a>.</p>
+<p>References <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00194">tudat::propagators::VariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::parameterVectorSize_</a>, and <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00191">tudat::propagators::VariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::stateTransitionMatrixSize_</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00605">tudat::propagators::SingleArcVariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::integrateVariationalAndDynamicalEquations()</a>, and <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l01067">tudat::propagators::MultiArcVariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::integrateVariationalAndDynamicalEquations()</a>.</p>
+<p>Referenced by <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00610">tudat::propagators::SingleArcVariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::integrateVariationalAndDynamicalEquations()</a>, and <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l01080">tudat::propagators::MultiArcVariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::integrateVariationalAndDynamicalEquations()</a>.</p>
 
 </div>
 </div>
@@ -613,9 +615,9 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00180">180</a> of file <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html">variationalEquationsSolver.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00185">185</a> of file <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html">variationalEquationsSolver.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00103">tudat::propagators::VariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::getParametersToEstimate()</a>, <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l01067">tudat::propagators::MultiArcVariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::integrateVariationalAndDynamicalEquations()</a>, <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00906">tudat::propagators::MultiArcVariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::MultiArcVariationalEquationsSolver()</a>, <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00717">tudat::propagators::SingleArcVariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::resetParameterEstimate()</a>, <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l01267">tudat::propagators::MultiArcVariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::resetParameterEstimate()</a>, <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l01312">tudat::propagators::MultiArcVariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::resetVariationalEquationsInterpolators()</a>, and <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00512">tudat::propagators::SingleArcVariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::SingleArcVariationalEquationsSolver()</a>.</p>
+<p>Referenced by <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00103">tudat::propagators::VariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::getParametersToEstimate()</a>, <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l01080">tudat::propagators::MultiArcVariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::integrateVariationalAndDynamicalEquations()</a>, <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00919">tudat::propagators::MultiArcVariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::MultiArcVariationalEquationsSolver()</a>, <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00730">tudat::propagators::SingleArcVariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::resetParameterEstimate()</a>, <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l01296">tudat::propagators::MultiArcVariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::resetParameterEstimate()</a>, <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l01341">tudat::propagators::MultiArcVariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::resetVariationalEquationsInterpolators()</a>, and <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00517">tudat::propagators::SingleArcVariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::SingleArcVariationalEquationsSolver()</a>.</p>
 
 </div>
 </div>
@@ -639,7 +641,7 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00183">183</a> of file <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html">variationalEquationsSolver.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00188">188</a> of file <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html">variationalEquationsSolver.h</a>.</p>
 
 </div>
 </div>
@@ -663,9 +665,9 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00186">186</a> of file <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html">variationalEquationsSolver.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00191">191</a> of file <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html">variationalEquationsSolver.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00145">tudat::propagators::VariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::createInitialConditions()</a>, <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00167">tudat::propagators::VariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::createInitialVariationalEquationsSolution()</a>, <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00605">tudat::propagators::SingleArcVariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::integrateVariationalAndDynamicalEquations()</a>, <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l01067">tudat::propagators::MultiArcVariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::integrateVariationalAndDynamicalEquations()</a>, and <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00906">tudat::propagators::MultiArcVariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::MultiArcVariationalEquationsSolver()</a>.</p>
+<p>Referenced by <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00150">tudat::propagators::VariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::createInitialConditions()</a>, <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00172">tudat::propagators::VariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::createInitialVariationalEquationsSolution()</a>, <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00610">tudat::propagators::SingleArcVariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::integrateVariationalAndDynamicalEquations()</a>, <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l01080">tudat::propagators::MultiArcVariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::integrateVariationalAndDynamicalEquations()</a>, and <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00919">tudat::propagators::MultiArcVariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::MultiArcVariationalEquationsSolver()</a>.</p>
 
 </div>
 </div>
@@ -689,9 +691,9 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00189">189</a> of file <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html">variationalEquationsSolver.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00194">194</a> of file <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html">variationalEquationsSolver.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00145">tudat::propagators::VariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::createInitialConditions()</a>, <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00167">tudat::propagators::VariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::createInitialVariationalEquationsSolution()</a>, <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00605">tudat::propagators::SingleArcVariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::integrateVariationalAndDynamicalEquations()</a>, <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l01067">tudat::propagators::MultiArcVariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::integrateVariationalAndDynamicalEquations()</a>, <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00906">tudat::propagators::MultiArcVariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::MultiArcVariationalEquationsSolver()</a>, and <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00752">tudat::propagators::SingleArcVariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::resetVariationalEquationsInterpolators()</a>.</p>
+<p>Referenced by <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00150">tudat::propagators::VariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::createInitialConditions()</a>, <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00172">tudat::propagators::VariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::createInitialVariationalEquationsSolution()</a>, <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00610">tudat::propagators::SingleArcVariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::integrateVariationalAndDynamicalEquations()</a>, <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l01080">tudat::propagators::MultiArcVariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::integrateVariationalAndDynamicalEquations()</a>, <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00919">tudat::propagators::MultiArcVariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::MultiArcVariationalEquationsSolver()</a>, and <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00765">tudat::propagators::SingleArcVariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::resetVariationalEquationsInterpolators()</a>.</p>
 
 </div>
 </div>
@@ -716,9 +718,9 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 </div><div class="memdoc">
 <p>Boolean to determine whether to clear the raw numerical solution member variables after propagation and resetting of state transition interface. </p>
 
-<p>Definition at line <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00196">196</a> of file <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html">variationalEquationsSolver.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00201">201</a> of file <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html">variationalEquationsSolver.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00752">tudat::propagators::SingleArcVariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::resetVariationalEquationsInterpolators()</a>, and <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l01312">tudat::propagators::MultiArcVariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::resetVariationalEquationsInterpolators()</a>.</p>
+<p>Referenced by <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00765">tudat::propagators::SingleArcVariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::resetVariationalEquationsInterpolators()</a>, and <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l01341">tudat::propagators::MultiArcVariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::resetVariationalEquationsInterpolators()</a>.</p>
 
 </div>
 </div>
@@ -742,9 +744,9 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00199">199</a> of file <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html">variationalEquationsSolver.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00204">204</a> of file <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html">variationalEquationsSolver.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00125">tudat::propagators::VariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::getStateTransitionMatrixInterface()</a>, <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00752">tudat::propagators::SingleArcVariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::resetVariationalEquationsInterpolators()</a>, and <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l01312">tudat::propagators::MultiArcVariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::resetVariationalEquationsInterpolators()</a>.</p>
+<p>Referenced by <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00125">tudat::propagators::VariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::getStateTransitionMatrixInterface()</a>, <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00765">tudat::propagators::SingleArcVariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::resetVariationalEquationsInterpolators()</a>, and <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l01341">tudat::propagators::MultiArcVariationalEquationsSolver&lt; StateScalarType, TimeType &gt;::resetVariationalEquationsInterpolators()</a>.</p>
 
 </div>
 </div>
@@ -754,7 +756,7 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 27 2017 09:33:02 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 7 2017 11:20:34 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

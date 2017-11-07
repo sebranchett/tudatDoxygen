@@ -109,11 +109,9 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
  <div class="center">
   <img src="../../da/d34/classtudat_1_1ephemerides_1_1_rotational_ephemeris.png" usemap="#tudat::ephemerides::RotationalEphemeris_map" alt=""/>
   <map id="tudat::ephemerides::RotationalEphemeris_map" name="tudat::ephemerides::RotationalEphemeris_map">
-<area href="../../d1/dda/classtudat_1_1ephemerides_1_1_constant_rotational_ephemeris.html" alt="tudat::ephemerides::ConstantRotationalEphemeris" shape="rect" coords="0,56,472,80"/>
-<area href="../../dc/d28/classtudat_1_1ephemerides_1_1_simple_rotational_ephemeris.html" title="Class to model the rotation of bodies with constant rotation axis and rate. " alt="tudat::ephemerides::SimpleRotationalEphemeris" shape="rect" coords="482,56,954,80"/>
-<area href="../../d4/d8a/classtudat_1_1ephemerides_1_1_spice_rotational_ephemeris.html" title="Class to directly calculate rotational state of body from spice kernel(s) " alt="tudat::ephemerides::SpiceRotationalEphemeris" shape="rect" coords="964,56,1436,80"/>
-<area href="../../d3/def/classtudat_1_1ephemerides_1_1_tabulated_rotational_ephemeris.html" title="Class that computes the current rotational state from tabulated values of the rotational state with t..." alt="tudat::ephemerides::TabulatedRotationalEphemeris&lt; StateScalarType, TimeType &gt;" shape="rect" coords="1446,56,1918,80"/>
-<area href="../../d2/dbf/classtudat_1_1ephemerides_1_1_wrapper_rotational_ephemeris.html" alt="tudat::ephemerides::WrapperRotationalEphemeris" shape="rect" coords="1928,56,2400,80"/>
+<area href="../../dc/d28/classtudat_1_1ephemerides_1_1_simple_rotational_ephemeris.html" title="Class to model the rotation of bodies with constant rotation axis and rate. " alt="tudat::ephemerides::SimpleRotationalEphemeris" shape="rect" coords="0,56,472,80"/>
+<area href="../../d4/d8a/classtudat_1_1ephemerides_1_1_spice_rotational_ephemeris.html" title="Class to directly calculate rotational state of body from spice kernel(s) " alt="tudat::ephemerides::SpiceRotationalEphemeris" shape="rect" coords="482,56,954,80"/>
+<area href="../../d3/def/classtudat_1_1ephemerides_1_1_tabulated_rotational_ephemeris.html" title="Class that computes the current rotational state from tabulated values of the rotational state with t..." alt="tudat::ephemerides::TabulatedRotationalEphemeris&lt; StateScalarType, TimeType &gt;" shape="rect" coords="964,56,1436,80"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -131,12 +129,57 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae3d4f6abdc820c309328747397b25afc"><td class="memItemLeft" align="right" valign="top">virtual Eigen::Matrix3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d34/classtudat_1_1ephemerides_1_1_rotational_ephemeris.html#ae3d4f6abdc820c309328747397b25afc">getDerivativeOfRotationToBaseFrame</a> (const double secondsSinceEpoch)=0</td></tr>
 <tr class="memdesc:ae3d4f6abdc820c309328747397b25afc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to calculate the derivative of the rotation matrix from target frame to original frame.  <a href="#ae3d4f6abdc820c309328747397b25afc">More...</a><br /></td></tr>
 <tr class="separator:ae3d4f6abdc820c309328747397b25afc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a204fc299543c55e9adafd9c5db9ce28b"><td class="memItemLeft" align="right" valign="top">virtual Eigen::Matrix3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d34/classtudat_1_1ephemerides_1_1_rotational_ephemeris.html#a204fc299543c55e9adafd9c5db9ce28b">getDerivativeOfRotationToBaseFrameFromExtendedTime</a> (const <a class="el" href="../../d8/df9/classtudat_1_1_time.html">Time</a> timeSinceEpoch)</td></tr>
+<tr class="memdesc:a204fc299543c55e9adafd9c5db9ce28b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to calculate the derivative of the rotation matrix from target frame to original frame in <a class="el" href="../../d8/df9/classtudat_1_1_time.html" title="Class for defining time with a resolution that is sub-fs for very long periods of time...">Time</a> precision.  <a href="#a204fc299543c55e9adafd9c5db9ce28b">More...</a><br /></td></tr>
+<tr class="separator:a204fc299543c55e9adafd9c5db9ce28b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bddf1e55952da8c91762cf862f3166d"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:a2bddf1e55952da8c91762cf862f3166d"><td class="memTemplItemLeft" align="right" valign="top">Eigen::Matrix3d&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../da/d34/classtudat_1_1ephemerides_1_1_rotational_ephemeris.html#a2bddf1e55952da8c91762cf862f3166d">getDerivativeOfRotationToBaseFrameTemplated</a> (const double timeSinceEpoch)</td></tr>
+<tr class="memdesc:a2bddf1e55952da8c91762cf862f3166d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to calculate the derivative of the rotation matrix from target frame to original frame.  <a href="#a2bddf1e55952da8c91762cf862f3166d">More...</a><br /></td></tr>
+<tr class="separator:a2bddf1e55952da8c91762cf862f3166d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa4d6f50a9745fc2d97c35c7eaf8f79b"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:aaa4d6f50a9745fc2d97c35c7eaf8f79b"><td class="memTemplItemLeft" align="right" valign="top">Eigen::Matrix3d&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../da/d34/classtudat_1_1ephemerides_1_1_rotational_ephemeris.html#aaa4d6f50a9745fc2d97c35c7eaf8f79b">getDerivativeOfRotationToBaseFrameTemplated</a> (const <a class="el" href="../../d8/df9/classtudat_1_1_time.html">Time</a> timeSinceEpoch)</td></tr>
+<tr class="memdesc:aaa4d6f50a9745fc2d97c35c7eaf8f79b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to calculate the derivative of the rotation matrix from target frame to original frame.  <a href="#aaa4d6f50a9745fc2d97c35c7eaf8f79b">More...</a><br /></td></tr>
+<tr class="separator:aaa4d6f50a9745fc2d97c35c7eaf8f79b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6748042b7a97dc7573b7fd3679d2e11"><td class="memTemplParams" colspan="2">template&lt;typename TimeType &gt; </td></tr>
+<tr class="memitem:af6748042b7a97dc7573b7fd3679d2e11"><td class="memTemplItemLeft" align="right" valign="top">Eigen::Matrix3d&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../da/d34/classtudat_1_1ephemerides_1_1_rotational_ephemeris.html#af6748042b7a97dc7573b7fd3679d2e11">getDerivativeOfRotationToBaseFrameTemplated</a> (const TimeType timeSinceEpoch)</td></tr>
+<tr class="memdesc:af6748042b7a97dc7573b7fd3679d2e11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to calculate the derivative of the rotation matrix from target frame to original frame in templated precision.  <a href="#af6748042b7a97dc7573b7fd3679d2e11">More...</a><br /></td></tr>
+<tr class="separator:af6748042b7a97dc7573b7fd3679d2e11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8749ef7c763d598973acf970c546c601"><td class="memItemLeft" align="right" valign="top">virtual Eigen::Matrix3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d34/classtudat_1_1ephemerides_1_1_rotational_ephemeris.html#a8749ef7c763d598973acf970c546c601">getDerivativeOfRotationToTargetFrame</a> (const double secondsSinceEpoch)=0</td></tr>
 <tr class="memdesc:a8749ef7c763d598973acf970c546c601"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to calculate the derivative of the rotation matrix from original frame to target frame.  <a href="#a8749ef7c763d598973acf970c546c601">More...</a><br /></td></tr>
 <tr class="separator:a8749ef7c763d598973acf970c546c601"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a99d3f0f093dd19dd99d54b89baeecc"><td class="memItemLeft" align="right" valign="top">virtual Eigen::Matrix3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d34/classtudat_1_1ephemerides_1_1_rotational_ephemeris.html#a3a99d3f0f093dd19dd99d54b89baeecc">getDerivativeOfRotationToTargetFrameFromExtendedTime</a> (const <a class="el" href="../../d8/df9/classtudat_1_1_time.html">Time</a> timeSinceEpoch)</td></tr>
+<tr class="memdesc:a3a99d3f0f093dd19dd99d54b89baeecc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to calculate the derivative of the rotation matrix from original frame to target frame in <a class="el" href="../../d8/df9/classtudat_1_1_time.html" title="Class for defining time with a resolution that is sub-fs for very long periods of time...">Time</a> precision.  <a href="#a3a99d3f0f093dd19dd99d54b89baeecc">More...</a><br /></td></tr>
+<tr class="separator:a3a99d3f0f093dd19dd99d54b89baeecc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17929bac936040d7a3d3d8fb5a52c6c6"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:a17929bac936040d7a3d3d8fb5a52c6c6"><td class="memTemplItemLeft" align="right" valign="top">Eigen::Matrix3d&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../da/d34/classtudat_1_1ephemerides_1_1_rotational_ephemeris.html#a17929bac936040d7a3d3d8fb5a52c6c6">getDerivativeOfRotationToTargetFrameTemplated</a> (const double secondsSinceEpoch)</td></tr>
+<tr class="memdesc:a17929bac936040d7a3d3d8fb5a52c6c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to calculate the derivative of the rotation matrix to target frame from original frame.  <a href="#a17929bac936040d7a3d3d8fb5a52c6c6">More...</a><br /></td></tr>
+<tr class="separator:a17929bac936040d7a3d3d8fb5a52c6c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4528fd7b41c14e3edac5ce544daf5fab"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:a4528fd7b41c14e3edac5ce544daf5fab"><td class="memTemplItemLeft" align="right" valign="top">Eigen::Matrix3d&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../da/d34/classtudat_1_1ephemerides_1_1_rotational_ephemeris.html#a4528fd7b41c14e3edac5ce544daf5fab">getDerivativeOfRotationToTargetFrameTemplated</a> (const <a class="el" href="../../d8/df9/classtudat_1_1_time.html">Time</a> secondsSinceEpoch)</td></tr>
+<tr class="memdesc:a4528fd7b41c14e3edac5ce544daf5fab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to calculate the derivative of the rotation matrix to target frame from original frame.  <a href="#a4528fd7b41c14e3edac5ce544daf5fab">More...</a><br /></td></tr>
+<tr class="separator:a4528fd7b41c14e3edac5ce544daf5fab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94d0afac3f13531cb5d4be27397045da"><td class="memTemplParams" colspan="2">template&lt;typename TimeType &gt; </td></tr>
+<tr class="memitem:a94d0afac3f13531cb5d4be27397045da"><td class="memTemplItemLeft" align="right" valign="top">Eigen::Matrix3d&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../da/d34/classtudat_1_1ephemerides_1_1_rotational_ephemeris.html#a94d0afac3f13531cb5d4be27397045da">getDerivativeOfRotationToTargetFrameTemplated</a> (const TimeType secondsSinceEpoch)</td></tr>
+<tr class="memdesc:a94d0afac3f13531cb5d4be27397045da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to calculate the derivative of the rotation matrix from original frame to target frame in templated precision.  <a href="#a94d0afac3f13531cb5d4be27397045da">More...</a><br /></td></tr>
+<tr class="separator:a94d0afac3f13531cb5d4be27397045da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af26529c506f7eed75689b57e70c29b64"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d34/classtudat_1_1ephemerides_1_1_rotational_ephemeris.html#af26529c506f7eed75689b57e70c29b64">getFullRotationalQuantitiesToTargetFrame</a> (Eigen::Quaterniond &amp;currentRotationToLocalFrame, Eigen::Matrix3d &amp;currentRotationToLocalFrameDerivative, Eigen::Vector3d &amp;currentAngularVelocityVectorInGlobalFrame, const double secondsSinceEpoch)</td></tr>
 <tr class="memdesc:af26529c506f7eed75689b57e70c29b64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to calculate the full rotational state at given time.  <a href="#af26529c506f7eed75689b57e70c29b64">More...</a><br /></td></tr>
 <tr class="separator:af26529c506f7eed75689b57e70c29b64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fb1cf6cfb681f835e5837160a04b6a3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d34/classtudat_1_1ephemerides_1_1_rotational_ephemeris.html#a3fb1cf6cfb681f835e5837160a04b6a3">getFullRotationalQuantitiesToTargetFrameFromExtendedTime</a> (Eigen::Quaterniond &amp;currentRotationToLocalFrame, Eigen::Matrix3d &amp;currentRotationToLocalFrameDerivative, Eigen::Vector3d &amp;currentAngularVelocityVectorInGlobalFrame, const <a class="el" href="../../d8/df9/classtudat_1_1_time.html">Time</a> timeSinceEpoch)</td></tr>
+<tr class="memdesc:a3fb1cf6cfb681f835e5837160a04b6a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to calculate the full rotational state at given time.  <a href="#a3fb1cf6cfb681f835e5837160a04b6a3">More...</a><br /></td></tr>
+<tr class="separator:a3fb1cf6cfb681f835e5837160a04b6a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ede523d08816231de795a38371c198d"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:a4ede523d08816231de795a38371c198d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../da/d34/classtudat_1_1ephemerides_1_1_rotational_ephemeris.html#a4ede523d08816231de795a38371c198d">getFullRotationalQuantitiesToTargetFrameTemplated</a> (Eigen::Quaterniond &amp;currentRotationToLocalFrame, Eigen::Matrix3d &amp;currentRotationToLocalFrameDerivative, Eigen::Vector3d &amp;currentAngularVelocityVectorInGlobalFrame, const double timeSinceEpoch)</td></tr>
+<tr class="memdesc:a4ede523d08816231de795a38371c198d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to calculate the full rotational state at given time.  <a href="#a4ede523d08816231de795a38371c198d">More...</a><br /></td></tr>
+<tr class="separator:a4ede523d08816231de795a38371c198d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac758d76f05ad8d37130b0fb895790e65"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:ac758d76f05ad8d37130b0fb895790e65"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../da/d34/classtudat_1_1ephemerides_1_1_rotational_ephemeris.html#ac758d76f05ad8d37130b0fb895790e65">getFullRotationalQuantitiesToTargetFrameTemplated</a> (Eigen::Quaterniond &amp;currentRotationToLocalFrame, Eigen::Matrix3d &amp;currentRotationToLocalFrameDerivative, Eigen::Vector3d &amp;currentAngularVelocityVectorInGlobalFrame, const <a class="el" href="../../d8/df9/classtudat_1_1_time.html">Time</a> timeSinceEpoch)</td></tr>
+<tr class="memdesc:ac758d76f05ad8d37130b0fb895790e65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to calculate the full rotational state at given time.  <a href="#ac758d76f05ad8d37130b0fb895790e65">More...</a><br /></td></tr>
+<tr class="separator:ac758d76f05ad8d37130b0fb895790e65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae51124f5f545aea0fd3a38784fbae27d"><td class="memTemplParams" colspan="2">template&lt;typename TimeType &gt; </td></tr>
+<tr class="memitem:ae51124f5f545aea0fd3a38784fbae27d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../da/d34/classtudat_1_1ephemerides_1_1_rotational_ephemeris.html#ae51124f5f545aea0fd3a38784fbae27d">getFullRotationalQuantitiesToTargetFrameTemplated</a> (Eigen::Quaterniond &amp;currentRotationToLocalFrame, Eigen::Matrix3d &amp;currentRotationToLocalFrameDerivative, Eigen::Vector3d &amp;currentAngularVelocityVectorInGlobalFrame, const TimeType timeSinceEpoch)</td></tr>
+<tr class="memdesc:ae51124f5f545aea0fd3a38784fbae27d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to calculate the full rotational state at given time.  <a href="#ae51124f5f545aea0fd3a38784fbae27d">More...</a><br /></td></tr>
+<tr class="separator:ae51124f5f545aea0fd3a38784fbae27d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88502baa383390473f016d197a42c5a3"><td class="memItemLeft" align="right" valign="top">virtual Eigen::Vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d34/classtudat_1_1ephemerides_1_1_rotational_ephemeris.html#a88502baa383390473f016d197a42c5a3">getRotationalVelocityVectorInBaseFrame</a> (const double secondsSinceEpoch)</td></tr>
 <tr class="memdesc:a88502baa383390473f016d197a42c5a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to retrieve the angular velocity vector, expressed in base frame.  <a href="#a88502baa383390473f016d197a42c5a3">More...</a><br /></td></tr>
 <tr class="separator:a88502baa383390473f016d197a42c5a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -146,9 +189,39 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a48c05e29f3a225433eb02feb09d1b77a"><td class="memItemLeft" align="right" valign="top">virtual Eigen::Quaterniond&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d34/classtudat_1_1ephemerides_1_1_rotational_ephemeris.html#a48c05e29f3a225433eb02feb09d1b77a">getRotationToBaseFrame</a> (const double secondsSinceEpoch)=0</td></tr>
 <tr class="memdesc:a48c05e29f3a225433eb02feb09d1b77a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get rotation quaternion from target frame to base frame.  <a href="#a48c05e29f3a225433eb02feb09d1b77a">More...</a><br /></td></tr>
 <tr class="separator:a48c05e29f3a225433eb02feb09d1b77a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a138692d3669026de1302eeb8e2bdf7ca"><td class="memItemLeft" align="right" valign="top">virtual Eigen::Quaterniond&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d34/classtudat_1_1ephemerides_1_1_rotational_ephemeris.html#a138692d3669026de1302eeb8e2bdf7ca">getRotationToBaseFrameFromExtendedTime</a> (const <a class="el" href="../../d8/df9/classtudat_1_1_time.html">Time</a> timeSinceEpoch)</td></tr>
+<tr class="memdesc:a138692d3669026de1302eeb8e2bdf7ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get rotation quaternion from target frame to base frame in <a class="el" href="../../d8/df9/classtudat_1_1_time.html" title="Class for defining time with a resolution that is sub-fs for very long periods of time...">Time</a> precision.  <a href="#a138692d3669026de1302eeb8e2bdf7ca">More...</a><br /></td></tr>
+<tr class="separator:a138692d3669026de1302eeb8e2bdf7ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44a158bf6844a49666f92496bf4d2236"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:a44a158bf6844a49666f92496bf4d2236"><td class="memTemplItemLeft" align="right" valign="top">Eigen::Quaterniond&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../da/d34/classtudat_1_1ephemerides_1_1_rotational_ephemeris.html#a44a158bf6844a49666f92496bf4d2236">getRotationToBaseFrameTemplated</a> (const double timeSinceEpoch)</td></tr>
+<tr class="memdesc:a44a158bf6844a49666f92496bf4d2236"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get rotation quaternion from target frame to base frame.  <a href="#a44a158bf6844a49666f92496bf4d2236">More...</a><br /></td></tr>
+<tr class="separator:a44a158bf6844a49666f92496bf4d2236"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f1752bfb88addfc7300e053aad61d31"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:a9f1752bfb88addfc7300e053aad61d31"><td class="memTemplItemLeft" align="right" valign="top">Eigen::Quaterniond&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../da/d34/classtudat_1_1ephemerides_1_1_rotational_ephemeris.html#a9f1752bfb88addfc7300e053aad61d31">getRotationToBaseFrameTemplated</a> (const <a class="el" href="../../d8/df9/classtudat_1_1_time.html">Time</a> timeSinceEpoch)</td></tr>
+<tr class="memdesc:a9f1752bfb88addfc7300e053aad61d31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get rotation quaternion from target frame to base frame.  <a href="#a9f1752bfb88addfc7300e053aad61d31">More...</a><br /></td></tr>
+<tr class="separator:a9f1752bfb88addfc7300e053aad61d31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6a4f20094027fc014ca2ec1dd3a47f1"><td class="memTemplParams" colspan="2">template&lt;typename TimeType &gt; </td></tr>
+<tr class="memitem:aa6a4f20094027fc014ca2ec1dd3a47f1"><td class="memTemplItemLeft" align="right" valign="top">Eigen::Quaterniond&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../da/d34/classtudat_1_1ephemerides_1_1_rotational_ephemeris.html#aa6a4f20094027fc014ca2ec1dd3a47f1">getRotationToBaseFrameTemplated</a> (const TimeType timeSinceEpoch)</td></tr>
+<tr class="memdesc:aa6a4f20094027fc014ca2ec1dd3a47f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get rotation quaternion from target frame to base frame in templated precision.  <a href="#aa6a4f20094027fc014ca2ec1dd3a47f1">More...</a><br /></td></tr>
+<tr class="separator:aa6a4f20094027fc014ca2ec1dd3a47f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a569eeb2b7416693589b6f2b4707932a7"><td class="memItemLeft" align="right" valign="top">virtual Eigen::Quaterniond&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d34/classtudat_1_1ephemerides_1_1_rotational_ephemeris.html#a569eeb2b7416693589b6f2b4707932a7">getRotationToTargetFrame</a> (const double secondsSinceEpoch)=0</td></tr>
 <tr class="memdesc:a569eeb2b7416693589b6f2b4707932a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get rotation quaternion to target frame from base frame.  <a href="#a569eeb2b7416693589b6f2b4707932a7">More...</a><br /></td></tr>
 <tr class="separator:a569eeb2b7416693589b6f2b4707932a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac231daac9a3aec42d42c9221952c76fd"><td class="memItemLeft" align="right" valign="top">virtual Eigen::Quaterniond&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d34/classtudat_1_1ephemerides_1_1_rotational_ephemeris.html#ac231daac9a3aec42d42c9221952c76fd">getRotationToTargetFrameFromExtendedTime</a> (const <a class="el" href="../../d8/df9/classtudat_1_1_time.html">Time</a> timeSinceEpoch)</td></tr>
+<tr class="memdesc:ac231daac9a3aec42d42c9221952c76fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get rotation quaternion to target frame from base frame in <a class="el" href="../../d8/df9/classtudat_1_1_time.html" title="Class for defining time with a resolution that is sub-fs for very long periods of time...">Time</a> precision.  <a href="#ac231daac9a3aec42d42c9221952c76fd">More...</a><br /></td></tr>
+<tr class="separator:ac231daac9a3aec42d42c9221952c76fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd307cdb6cee2197d9a1e729efdf0e7f"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:afd307cdb6cee2197d9a1e729efdf0e7f"><td class="memTemplItemLeft" align="right" valign="top">Eigen::Quaterniond&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../da/d34/classtudat_1_1ephemerides_1_1_rotational_ephemeris.html#afd307cdb6cee2197d9a1e729efdf0e7f">getRotationToTargetFrameTemplated</a> (const double secondsSinceEpoch)</td></tr>
+<tr class="memdesc:afd307cdb6cee2197d9a1e729efdf0e7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get rotation quaternion to target frame from base frame.  <a href="#afd307cdb6cee2197d9a1e729efdf0e7f">More...</a><br /></td></tr>
+<tr class="separator:afd307cdb6cee2197d9a1e729efdf0e7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45a4c306e66fefda96e41deb1ebb0620"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:a45a4c306e66fefda96e41deb1ebb0620"><td class="memTemplItemLeft" align="right" valign="top">Eigen::Quaterniond&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../da/d34/classtudat_1_1ephemerides_1_1_rotational_ephemeris.html#a45a4c306e66fefda96e41deb1ebb0620">getRotationToTargetFrameTemplated</a> (const <a class="el" href="../../d8/df9/classtudat_1_1_time.html">Time</a> secondsSinceEpoch)</td></tr>
+<tr class="memdesc:a45a4c306e66fefda96e41deb1ebb0620"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get rotation quaternion to target frame from base frame.  <a href="#a45a4c306e66fefda96e41deb1ebb0620">More...</a><br /></td></tr>
+<tr class="separator:a45a4c306e66fefda96e41deb1ebb0620"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80f1c27c08f514a0326ff3dafd15801c"><td class="memTemplParams" colspan="2">template&lt;typename TimeType &gt; </td></tr>
+<tr class="memitem:a80f1c27c08f514a0326ff3dafd15801c"><td class="memTemplItemLeft" align="right" valign="top">Eigen::Quaterniond&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../da/d34/classtudat_1_1ephemerides_1_1_rotational_ephemeris.html#a80f1c27c08f514a0326ff3dafd15801c">getRotationToTargetFrameTemplated</a> (const TimeType secondsSinceEpoch)</td></tr>
+<tr class="memdesc:a80f1c27c08f514a0326ff3dafd15801c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get rotation quaternion to target frame from base frame in templated precision.  <a href="#a80f1c27c08f514a0326ff3dafd15801c">More...</a><br /></td></tr>
+<tr class="separator:a80f1c27c08f514a0326ff3dafd15801c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a9beaf6621a5305b5b8ba50c4c4724a"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d34/classtudat_1_1ephemerides_1_1_rotational_ephemeris.html#a0a9beaf6621a5305b5b8ba50c4c4724a">getTargetFrameOrientation</a> ()</td></tr>
 <tr class="memdesc:a0a9beaf6621a5305b5b8ba50c4c4724a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get target reference frame orientation.  <a href="#a0a9beaf6621a5305b5b8ba50c4c4724a">More...</a><br /></td></tr>
 <tr class="separator:a0a9beaf6621a5305b5b8ba50c4c4724a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -165,7 +238,7 @@ Protected Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base class for rotational ephemerides of bodies. The rotation (quaternion) between two frames specified by member variable ids can be calculated as a function of time in the manner determined by the derived class. </p>
 
-<p>Definition at line <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html#l00165">165</a> of file <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html">rotationalEphemeris.h</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html#l00166">166</a> of file <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html">rotationalEphemeris.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a224420ee5a24d5ffe7d64b64f81d11f3"></a>
 <div class="memitem">
@@ -206,7 +279,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html#l00175">175</a> of file <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html">rotationalEphemeris.h</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html#l00176">176</a> of file <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html">rotationalEphemeris.h</a>.</p>
 
 </div>
 </div>
@@ -232,9 +305,9 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Virtual destructor. </p>
 
-<p>Definition at line <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html#l00185">185</a> of file <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html">rotationalEphemeris.h</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html#l00186">186</a> of file <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html">rotationalEphemeris.h</a>.</p>
 
-<p>References <a class="el" href="../../da/d34/classtudat_1_1ephemerides_1_1_rotational_ephemeris.html#ae3d4f6abdc820c309328747397b25afc">getDerivativeOfRotationToBaseFrame()</a>, <a class="el" href="../../da/d34/classtudat_1_1ephemerides_1_1_rotational_ephemeris.html#a8749ef7c763d598973acf970c546c601">getDerivativeOfRotationToTargetFrame()</a>, <a class="el" href="../../da/d34/classtudat_1_1ephemerides_1_1_rotational_ephemeris.html#a48c05e29f3a225433eb02feb09d1b77a">getRotationToBaseFrame()</a>, and <a class="el" href="../../da/d34/classtudat_1_1ephemerides_1_1_rotational_ephemeris.html#a569eeb2b7416693589b6f2b4707932a7">getRotationToTargetFrame()</a>.</p>
+<p>References <a class="el" href="../../da/d34/classtudat_1_1ephemerides_1_1_rotational_ephemeris.html#a48c05e29f3a225433eb02feb09d1b77a">getRotationToBaseFrame()</a>.</p>
 
 </div>
 </div>
@@ -268,9 +341,71 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Rotation quaternion computed. </dd></dl>
 
-<p>Implemented in <a class="el" href="../../d3/def/classtudat_1_1ephemerides_1_1_tabulated_rotational_ephemeris.html#ab8b42bf1ac0cd09a3c140b893b4c940b">tudat::ephemerides::TabulatedRotationalEphemeris&lt; StateScalarType, TimeType &gt;</a>, <a class="el" href="../../dc/d28/classtudat_1_1ephemerides_1_1_simple_rotational_ephemeris.html#a2d8ba0d2ff99412fe30a1446ab39cf44">tudat::ephemerides::SimpleRotationalEphemeris</a>, <a class="el" href="../../d4/d8a/classtudat_1_1ephemerides_1_1_spice_rotational_ephemeris.html#ab3ac9ee4633524110222c0afb4c27bb4">tudat::ephemerides::SpiceRotationalEphemeris</a>, <a class="el" href="../../d2/dbf/classtudat_1_1ephemerides_1_1_wrapper_rotational_ephemeris.html#a9bb39357bcf4d24f2e53c0759e09374a">tudat::ephemerides::WrapperRotationalEphemeris</a>, and <a class="el" href="../../d1/dda/classtudat_1_1ephemerides_1_1_constant_rotational_ephemeris.html#adeb061ca081ac9d78f8d095b8ede8703">tudat::ephemerides::ConstantRotationalEphemeris</a>.</p>
+<p>Implemented in <a class="el" href="../../d3/def/classtudat_1_1ephemerides_1_1_tabulated_rotational_ephemeris.html#ab8b42bf1ac0cd09a3c140b893b4c940b">tudat::ephemerides::TabulatedRotationalEphemeris&lt; StateScalarType, TimeType &gt;</a>, <a class="el" href="../../dc/d28/classtudat_1_1ephemerides_1_1_simple_rotational_ephemeris.html#a2d8ba0d2ff99412fe30a1446ab39cf44">tudat::ephemerides::SimpleRotationalEphemeris</a>, and <a class="el" href="../../d4/d8a/classtudat_1_1ephemerides_1_1_spice_rotational_ephemeris.html#ab3ac9ee4633524110222c0afb4c27bb4">tudat::ephemerides::SpiceRotationalEphemeris</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d1/df0/composite_ephemeris_8h_source.html#l00356">tudat::ephemerides::createReferencePointEphemeris()</a>, and <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html#l00185">~RotationalEphemeris()</a>.</p>
+<p>Referenced by <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html#l00205">getRotationToBaseFrameFromExtendedTime()</a>, and <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html#l00186">~RotationalEphemeris()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a138692d3669026de1302eeb8e2bdf7ca"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual Eigen::Quaterniond tudat::ephemerides::RotationalEphemeris::getRotationToBaseFrameFromExtendedTime </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d8/df9/classtudat_1_1_time.html">Time</a>&#160;</td>
+          <td class="paramname"><em>timeSinceEpoch</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Pure virtual function to calculate and return the rotation quaternion from target frame to base frame at specified time. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">timeSinceEpoch</td><td>Seconds since Julian day reference epoch. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Rotation quaternion computed. </dd></dl>
+
+<p>Definition at line <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html#l00205">205</a> of file <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html">rotationalEphemeris.h</a>.</p>
+
+<p>References <a class="el" href="../../da/d34/classtudat_1_1ephemerides_1_1_rotational_ephemeris.html#a48c05e29f3a225433eb02feb09d1b77a">getRotationToBaseFrame()</a>, <a class="el" href="../../da/d34/classtudat_1_1ephemerides_1_1_rotational_ephemeris.html#aa6a4f20094027fc014ca2ec1dd3a47f1">getRotationToBaseFrameTemplated()</a>, <a class="el" href="../../da/d34/classtudat_1_1ephemerides_1_1_rotational_ephemeris.html#a569eeb2b7416693589b6f2b4707932a7">getRotationToTargetFrame()</a>, and <a class="el" href="../../d6/dde/time_type_8h_source.html#l00926">tudat::Time::getSeconds()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa6a4f20094027fc014ca2ec1dd3a47f1"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TimeType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">Eigen::Quaterniond tudat::ephemerides::RotationalEphemeris::getRotationToBaseFrameTemplated </td>
+          <td>(</td>
+          <td class="paramtype">const TimeType&#160;</td>
+          <td class="paramname"><em>timeSinceEpoch</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Pure virtual function to calculate and return the rotation quaternion from target frame to base frame at specified time. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">timeSinceEpoch</td><td>Seconds since Julian day reference epoch. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Rotation quaternion computed. </dd></dl>
+
+<p>Referenced by <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html#l00205">getRotationToBaseFrameFromExtendedTime()</a>.</p>
 
 </div>
 </div>
@@ -305,7 +440,71 @@ Protected Attributes</h2></td></tr>
 
 <p>Implemented in <a class="el" href="../../d3/def/classtudat_1_1ephemerides_1_1_tabulated_rotational_ephemeris.html#a60210e2b95459aac462f8c83b9482ee7">tudat::ephemerides::TabulatedRotationalEphemeris&lt; StateScalarType, TimeType &gt;</a>, <a class="el" href="../../dc/d28/classtudat_1_1ephemerides_1_1_simple_rotational_ephemeris.html#a7c1ec7c84f042ab174556727f052f927">tudat::ephemerides::SimpleRotationalEphemeris</a>, and <a class="el" href="../../d4/d8a/classtudat_1_1ephemerides_1_1_spice_rotational_ephemeris.html#abef7ce85bb808b2f7471ef59e3d3ac9c">tudat::ephemerides::SpiceRotationalEphemeris</a>.</p>
 
-<p>Referenced by <a class="el" href="../../db/da3/create_gravity_field_variations_8cpp_source.html#l00095">tudat::simulation_setup::createGravityFieldVariationsModel()</a>, <a class="el" href="../../df/d8a/create_ground_stations_8cpp_source.html#l00021">tudat::simulation_setup::createGroundStation()</a>, <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html#l00271">getFullRotationalQuantitiesToTargetFrame()</a>, <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html#l00237">getRotationalVelocityVectorInBaseFrame()</a>, <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html#l00253">getRotationalVelocityVectorInTargetFrame()</a>, <a class="el" href="../../db/d44/aerodynamic_angle_calculator_8cpp_source.html#l00536">tudat::reference_frames::setAerodynamicDependentOrientationCalculatorClosure()</a>, and <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html#l00185">~RotationalEphemeris()</a>.</p>
+<p>Referenced by <a class="el" href="../../db/da3/create_gravity_field_variations_8cpp_source.html#l00093">tudat::simulation_setup::createGravityFieldVariationsModel()</a>, <a class="el" href="../../df/d8a/create_ground_stations_8cpp_source.html#l00021">tudat::simulation_setup::createGroundStation()</a>, <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html#l00372">getFullRotationalQuantitiesToTargetFrame()</a>, <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html#l00338">getRotationalVelocityVectorInBaseFrame()</a>, <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html#l00354">getRotationalVelocityVectorInTargetFrame()</a>, <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html#l00205">getRotationToBaseFrameFromExtendedTime()</a>, <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html#l00239">getRotationToTargetFrameFromExtendedTime()</a>, and <a class="el" href="../../db/d44/aerodynamic_angle_calculator_8cpp_source.html#l00535">tudat::reference_frames::setAerodynamicDependentOrientationCalculatorClosure()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac231daac9a3aec42d42c9221952c76fd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual Eigen::Quaterniond tudat::ephemerides::RotationalEphemeris::getRotationToTargetFrameFromExtendedTime </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d8/df9/classtudat_1_1_time.html">Time</a>&#160;</td>
+          <td class="paramname"><em>timeSinceEpoch</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Pure virtual function to calculate and return the rotation quaternion to target frame from base frame at specified time. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">timeSinceEpoch</td><td>Seconds since Julian day reference epoch. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Rotation quaternion computed. </dd></dl>
+
+<p>Definition at line <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html#l00239">239</a> of file <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html">rotationalEphemeris.h</a>.</p>
+
+<p>References <a class="el" href="../../da/d34/classtudat_1_1ephemerides_1_1_rotational_ephemeris.html#ae3d4f6abdc820c309328747397b25afc">getDerivativeOfRotationToBaseFrame()</a>, <a class="el" href="../../da/d34/classtudat_1_1ephemerides_1_1_rotational_ephemeris.html#a569eeb2b7416693589b6f2b4707932a7">getRotationToTargetFrame()</a>, <a class="el" href="../../da/d34/classtudat_1_1ephemerides_1_1_rotational_ephemeris.html#a80f1c27c08f514a0326ff3dafd15801c">getRotationToTargetFrameTemplated()</a>, and <a class="el" href="../../d6/dde/time_type_8h_source.html#l00926">tudat::Time::getSeconds()</a>.</p>
+
+<p>Referenced by <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html#l00395">getFullRotationalQuantitiesToTargetFrameFromExtendedTime()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a80f1c27c08f514a0326ff3dafd15801c"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TimeType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">Eigen::Quaterniond tudat::ephemerides::RotationalEphemeris::getRotationToTargetFrameTemplated </td>
+          <td>(</td>
+          <td class="paramtype">const TimeType&#160;</td>
+          <td class="paramname"><em>secondsSinceEpoch</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Pure virtual function to calculate and return the rotation quaternion to target frame from base frame at specified time. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">secondsSinceEpoch</td><td>Seconds since Julian day reference epoch. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Rotation quaternion computed. </dd></dl>
+
+<p>Referenced by <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html#l00239">getRotationToTargetFrameFromExtendedTime()</a>.</p>
 
 </div>
 </div>
@@ -340,7 +539,69 @@ Protected Attributes</h2></td></tr>
 
 <p>Implemented in <a class="el" href="../../d3/def/classtudat_1_1ephemerides_1_1_tabulated_rotational_ephemeris.html#aa5a87645c6240662b94bc5d8a58aa528">tudat::ephemerides::TabulatedRotationalEphemeris&lt; StateScalarType, TimeType &gt;</a>, <a class="el" href="../../dc/d28/classtudat_1_1ephemerides_1_1_simple_rotational_ephemeris.html#a8a73dcb9267d9fed8d187e3a6da0587b">tudat::ephemerides::SimpleRotationalEphemeris</a>, and <a class="el" href="../../d4/d8a/classtudat_1_1ephemerides_1_1_spice_rotational_ephemeris.html#ab99c74c3949251affc7829f28cd39671">tudat::ephemerides::SpiceRotationalEphemeris</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d1/df0/composite_ephemeris_8h_source.html#l00356">tudat::ephemerides::createReferencePointEphemeris()</a>, <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html#l00237">getRotationalVelocityVectorInBaseFrame()</a>, and <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html#l00185">~RotationalEphemeris()</a>.</p>
+<p>Referenced by <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html#l00275">getDerivativeOfRotationToBaseFrameFromExtendedTime()</a>, <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html#l00338">getRotationalVelocityVectorInBaseFrame()</a>, and <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html#l00239">getRotationToTargetFrameFromExtendedTime()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a204fc299543c55e9adafd9c5db9ce28b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual Eigen::Matrix3d tudat::ephemerides::RotationalEphemeris::getDerivativeOfRotationToBaseFrameFromExtendedTime </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d8/df9/classtudat_1_1_time.html">Time</a>&#160;</td>
+          <td class="paramname"><em>timeSinceEpoch</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Function to calculate the derivative of the rotation matrix from target frame to original frame at specified time, to be implemented by derived class. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">timeSinceEpoch</td><td>Seconds since Julian day reference epoch. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Derivative of rotation from target (typically local) to original (typically global) frame at specified time. </dd></dl>
+
+<p>Definition at line <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html#l00275">275</a> of file <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html">rotationalEphemeris.h</a>.</p>
+
+<p>References <a class="el" href="../../da/d34/classtudat_1_1ephemerides_1_1_rotational_ephemeris.html#ae3d4f6abdc820c309328747397b25afc">getDerivativeOfRotationToBaseFrame()</a>, <a class="el" href="../../da/d34/classtudat_1_1ephemerides_1_1_rotational_ephemeris.html#af6748042b7a97dc7573b7fd3679d2e11">getDerivativeOfRotationToBaseFrameTemplated()</a>, <a class="el" href="../../da/d34/classtudat_1_1ephemerides_1_1_rotational_ephemeris.html#a8749ef7c763d598973acf970c546c601">getDerivativeOfRotationToTargetFrame()</a>, and <a class="el" href="../../d6/dde/time_type_8h_source.html#l00926">tudat::Time::getSeconds()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af6748042b7a97dc7573b7fd3679d2e11"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TimeType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">Eigen::Matrix3d tudat::ephemerides::RotationalEphemeris::getDerivativeOfRotationToBaseFrameTemplated </td>
+          <td>(</td>
+          <td class="paramtype">const TimeType&#160;</td>
+          <td class="paramname"><em>timeSinceEpoch</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Function to calculate the derivative of the rotation matrix from target frame to original frame at specified time, to be implemented by derived class. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">timeSinceEpoch</td><td>Seconds since Julian day reference epoch. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Derivative of rotation from target (typically local) to original (typically global) frame at specified time. </dd></dl>
+
+<p>Referenced by <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html#l00275">getDerivativeOfRotationToBaseFrameFromExtendedTime()</a>.</p>
 
 </div>
 </div>
@@ -375,7 +636,71 @@ Protected Attributes</h2></td></tr>
 
 <p>Implemented in <a class="el" href="../../d3/def/classtudat_1_1ephemerides_1_1_tabulated_rotational_ephemeris.html#a239ffea2ca24848e52548de6645f8d66">tudat::ephemerides::TabulatedRotationalEphemeris&lt; StateScalarType, TimeType &gt;</a>, <a class="el" href="../../dc/d28/classtudat_1_1ephemerides_1_1_simple_rotational_ephemeris.html#a0195bb027ba27691e2eb7306dd8312fa">tudat::ephemerides::SimpleRotationalEphemeris</a>, and <a class="el" href="../../d4/d8a/classtudat_1_1ephemerides_1_1_spice_rotational_ephemeris.html#a0108d04795daa600b6614d9c48046ce0">tudat::ephemerides::SpiceRotationalEphemeris</a>.</p>
 
-<p>Referenced by <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html#l00271">getFullRotationalQuantitiesToTargetFrame()</a>, and <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html#l00185">~RotationalEphemeris()</a>.</p>
+<p>Referenced by <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html#l00275">getDerivativeOfRotationToBaseFrameFromExtendedTime()</a>, <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html#l00312">getDerivativeOfRotationToTargetFrameFromExtendedTime()</a>, and <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html#l00372">getFullRotationalQuantitiesToTargetFrame()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3a99d3f0f093dd19dd99d54b89baeecc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual Eigen::Matrix3d tudat::ephemerides::RotationalEphemeris::getDerivativeOfRotationToTargetFrameFromExtendedTime </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d8/df9/classtudat_1_1_time.html">Time</a>&#160;</td>
+          <td class="paramname"><em>timeSinceEpoch</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Function to calculate the derivative of the rotation matrix from original frame to target frame at specified time, to be implemented by derived class. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">timeSinceEpoch</td><td>Seconds since epoch at which ephemeris is to be evaluated. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Derivative of rotation from original (typically global) to target (typically local) frame at specified time. </dd></dl>
+
+<p>Definition at line <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html#l00312">312</a> of file <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html">rotationalEphemeris.h</a>.</p>
+
+<p>References <a class="el" href="../../da/d34/classtudat_1_1ephemerides_1_1_rotational_ephemeris.html#a8749ef7c763d598973acf970c546c601">getDerivativeOfRotationToTargetFrame()</a>, <a class="el" href="../../da/d34/classtudat_1_1ephemerides_1_1_rotational_ephemeris.html#a94d0afac3f13531cb5d4be27397045da">getDerivativeOfRotationToTargetFrameTemplated()</a>, and <a class="el" href="../../d6/dde/time_type_8h_source.html#l00926">tudat::Time::getSeconds()</a>.</p>
+
+<p>Referenced by <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html#l00395">getFullRotationalQuantitiesToTargetFrameFromExtendedTime()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a94d0afac3f13531cb5d4be27397045da"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TimeType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">Eigen::Matrix3d tudat::ephemerides::RotationalEphemeris::getDerivativeOfRotationToTargetFrameTemplated </td>
+          <td>(</td>
+          <td class="paramtype">const TimeType&#160;</td>
+          <td class="paramname"><em>secondsSinceEpoch</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Function to calculate the derivative of the rotation matrix from original frame to target frame at specified time, to be implemented by derived class. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">secondsSinceEpoch</td><td>Seconds since epoch at which ephemeris is to be evaluated. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Derivative of rotation from original (typically global) to target (typically local) frame at specified time. </dd></dl>
+
+<p>Referenced by <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html#l00312">getDerivativeOfRotationToTargetFrameFromExtendedTime()</a>.</p>
 
 </div>
 </div>
@@ -410,11 +735,11 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="../../d3/def/classtudat_1_1ephemerides_1_1_tabulated_rotational_ephemeris.html#ad65e676f3b0c368a2df28c360d9c6522">tudat::ephemerides::TabulatedRotationalEphemeris&lt; StateScalarType, TimeType &gt;</a>.</p>
 
-<p>Definition at line <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html#l00237">237</a> of file <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html">rotationalEphemeris.h</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html#l00338">338</a> of file <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html">rotationalEphemeris.h</a>.</p>
 
 <p>References <a class="el" href="../../da/d34/classtudat_1_1ephemerides_1_1_rotational_ephemeris.html#ae3d4f6abdc820c309328747397b25afc">getDerivativeOfRotationToBaseFrame()</a>, <a class="el" href="../../da/d6c/rotational_ephemeris_8cpp_source.html#l00020">tudat::ephemerides::getRotationalVelocityVectorInBaseFrameFromMatrices()</a>, and <a class="el" href="../../da/d34/classtudat_1_1ephemerides_1_1_rotational_ephemeris.html#a569eeb2b7416693589b6f2b4707932a7">getRotationToTargetFrame()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html#l00253">getRotationalVelocityVectorInTargetFrame()</a>.</p>
+<p>Referenced by <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html#l00354">getRotationalVelocityVectorInTargetFrame()</a>.</p>
 
 </div>
 </div>
@@ -449,9 +774,9 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="../../d3/def/classtudat_1_1ephemerides_1_1_tabulated_rotational_ephemeris.html#a730feb94fe4163373e89d0826f052cb0">tudat::ephemerides::TabulatedRotationalEphemeris&lt; StateScalarType, TimeType &gt;</a>.</p>
 
-<p>Definition at line <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html#l00253">253</a> of file <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html">rotationalEphemeris.h</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html#l00354">354</a> of file <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html">rotationalEphemeris.h</a>.</p>
 
-<p>References <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html#l00237">getRotationalVelocityVectorInBaseFrame()</a>, and <a class="el" href="../../da/d34/classtudat_1_1ephemerides_1_1_rotational_ephemeris.html#a569eeb2b7416693589b6f2b4707932a7">getRotationToTargetFrame()</a>.</p>
+<p>References <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html#l00338">getRotationalVelocityVectorInBaseFrame()</a>, and <a class="el" href="../../da/d34/classtudat_1_1ephemerides_1_1_rotational_ephemeris.html#a569eeb2b7416693589b6f2b4707932a7">getRotationToTargetFrame()</a>.</p>
 
 </div>
 </div>
@@ -510,9 +835,119 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="../../d4/d8a/classtudat_1_1ephemerides_1_1_spice_rotational_ephemeris.html#af7a669375d65d14ac82b54e3a4b84ae1">tudat::ephemerides::SpiceRotationalEphemeris</a>.</p>
 
-<p>Definition at line <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html#l00271">271</a> of file <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html">rotationalEphemeris.h</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html#l00372">372</a> of file <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html">rotationalEphemeris.h</a>.</p>
 
 <p>References <a class="el" href="../../da/d34/classtudat_1_1ephemerides_1_1_rotational_ephemeris.html#a8749ef7c763d598973acf970c546c601">getDerivativeOfRotationToTargetFrame()</a>, <a class="el" href="../../da/d6c/rotational_ephemeris_8cpp_source.html#l00020">tudat::ephemerides::getRotationalVelocityVectorInBaseFrameFromMatrices()</a>, and <a class="el" href="../../da/d34/classtudat_1_1ephemerides_1_1_rotational_ephemeris.html#a569eeb2b7416693589b6f2b4707932a7">getRotationToTargetFrame()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3fb1cf6cfb681f835e5837160a04b6a3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void tudat::ephemerides::RotationalEphemeris::getFullRotationalQuantitiesToTargetFrameFromExtendedTime </td>
+          <td>(</td>
+          <td class="paramtype">Eigen::Quaterniond &amp;&#160;</td>
+          <td class="paramname"><em>currentRotationToLocalFrame</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Eigen::Matrix3d &amp;&#160;</td>
+          <td class="paramname"><em>currentRotationToLocalFrameDerivative</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Eigen::Vector3d &amp;&#160;</td>
+          <td class="paramname"><em>currentAngularVelocityVectorInGlobalFrame</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d8/df9/classtudat_1_1_time.html">Time</a>&#160;</td>
+          <td class="paramname"><em>timeSinceEpoch</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Function to calculate the full rotational state at given time (rotation matrix, derivative of rotation matrix and angular velocity vector). </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">currentRotationToLocalFrame</td><td>Current rotation to local frame (returned by reference) </td></tr>
+    <tr><td class="paramname">currentRotationToLocalFrameDerivative</td><td>Current derivative of rotation matrix to local frame (returned by reference) </td></tr>
+    <tr><td class="paramname">currentAngularVelocityVectorInGlobalFrame</td><td>Current angular velocity vector, expressed in global frame (returned by reference) </td></tr>
+    <tr><td class="paramname">timeSinceEpoch</td><td>Seconds since epoch at which ephemeris is to be evaluated. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html#l00395">395</a> of file <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html">rotationalEphemeris.h</a>.</p>
+
+<p>References <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html#l00312">getDerivativeOfRotationToTargetFrameFromExtendedTime()</a>, <a class="el" href="../../da/d34/classtudat_1_1ephemerides_1_1_rotational_ephemeris.html#ae51124f5f545aea0fd3a38784fbae27d">getFullRotationalQuantitiesToTargetFrameTemplated()</a>, <a class="el" href="../../da/d6c/rotational_ephemeris_8cpp_source.html#l00020">tudat::ephemerides::getRotationalVelocityVectorInBaseFrameFromMatrices()</a>, and <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html#l00239">getRotationToTargetFrameFromExtendedTime()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae51124f5f545aea0fd3a38784fbae27d"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TimeType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void tudat::ephemerides::RotationalEphemeris::getFullRotationalQuantitiesToTargetFrameTemplated </td>
+          <td>(</td>
+          <td class="paramtype">Eigen::Quaterniond &amp;&#160;</td>
+          <td class="paramname"><em>currentRotationToLocalFrame</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Eigen::Matrix3d &amp;&#160;</td>
+          <td class="paramname"><em>currentRotationToLocalFrameDerivative</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Eigen::Vector3d &amp;&#160;</td>
+          <td class="paramname"><em>currentAngularVelocityVectorInGlobalFrame</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const TimeType&#160;</td>
+          <td class="paramname"><em>timeSinceEpoch</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Function to calculate the full rotational state at given time (rotation matrix, derivative of rotation matrix and angular velocity vector). </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">currentRotationToLocalFrame</td><td>Current rotation to local frame (returned by reference) </td></tr>
+    <tr><td class="paramname">currentRotationToLocalFrameDerivative</td><td>Current derivative of rotation matrix to local frame (returned by reference) </td></tr>
+    <tr><td class="paramname">currentAngularVelocityVectorInGlobalFrame</td><td>Current angular velocity vector, expressed in global frame (returned by reference) </td></tr>
+    <tr><td class="paramname">timeSinceEpoch</td><td>Seconds since epoch at which ephemeris is to be evaluated. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Referenced by <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html#l00395">getFullRotationalQuantitiesToTargetFrameFromExtendedTime()</a>.</p>
 
 </div>
 </div>
@@ -538,9 +973,9 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Function to retrieve the base reference frame orientation. </p><dl class="section return"><dt>Returns</dt><dd>Base reference frame orientation. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html#l00288">288</a> of file <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html">rotationalEphemeris.h</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html#l00430">430</a> of file <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html">rotationalEphemeris.h</a>.</p>
 
-<p>References <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html#l00303">baseFrameOrientation_</a>.</p>
+<p>References <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html#l00445">baseFrameOrientation_</a>.</p>
 
 </div>
 </div>
@@ -566,9 +1001,253 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Function to retrieve the target reference frame orientation. </p><dl class="section return"><dt>Returns</dt><dd>Target reference frame orientation. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html#l00295">295</a> of file <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html">rotationalEphemeris.h</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html#l00437">437</a> of file <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html">rotationalEphemeris.h</a>.</p>
 
-<p>References <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html#l00309">targetFrameOrientation_</a>.</p>
+<p>References <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html#l00451">targetFrameOrientation_</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a44a158bf6844a49666f92496bf4d2236"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">Eigen::Quaterniond tudat::ephemerides::RotationalEphemeris::getRotationToBaseFrameTemplated </td>
+          <td>(</td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>timeSinceEpoch</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../da/d6c/rotational_ephemeris_8cpp_source.html#l00043">43</a> of file <a class="el" href="../../da/d6c/rotational_ephemeris_8cpp_source.html">rotationalEphemeris.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9f1752bfb88addfc7300e053aad61d31"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">Eigen::Quaterniond tudat::ephemerides::RotationalEphemeris::getRotationToBaseFrameTemplated </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d8/df9/classtudat_1_1_time.html">Time</a>&#160;</td>
+          <td class="paramname"><em>timeSinceEpoch</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../da/d6c/rotational_ephemeris_8cpp_source.html#l00051">51</a> of file <a class="el" href="../../da/d6c/rotational_ephemeris_8cpp_source.html">rotationalEphemeris.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afd307cdb6cee2197d9a1e729efdf0e7f"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">Eigen::Quaterniond tudat::ephemerides::RotationalEphemeris::getRotationToTargetFrameTemplated </td>
+          <td>(</td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>secondsSinceEpoch</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../da/d6c/rotational_ephemeris_8cpp_source.html#l00059">59</a> of file <a class="el" href="../../da/d6c/rotational_ephemeris_8cpp_source.html">rotationalEphemeris.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a45a4c306e66fefda96e41deb1ebb0620"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">Eigen::Quaterniond tudat::ephemerides::RotationalEphemeris::getRotationToTargetFrameTemplated </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d8/df9/classtudat_1_1_time.html">Time</a>&#160;</td>
+          <td class="paramname"><em>secondsSinceEpoch</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../da/d6c/rotational_ephemeris_8cpp_source.html#l00067">67</a> of file <a class="el" href="../../da/d6c/rotational_ephemeris_8cpp_source.html">rotationalEphemeris.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2bddf1e55952da8c91762cf862f3166d"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">Eigen::Matrix3d tudat::ephemerides::RotationalEphemeris::getDerivativeOfRotationToBaseFrameTemplated </td>
+          <td>(</td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>timeSinceEpoch</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../da/d6c/rotational_ephemeris_8cpp_source.html#l00075">75</a> of file <a class="el" href="../../da/d6c/rotational_ephemeris_8cpp_source.html">rotationalEphemeris.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aaa4d6f50a9745fc2d97c35c7eaf8f79b"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">Eigen::Matrix3d tudat::ephemerides::RotationalEphemeris::getDerivativeOfRotationToBaseFrameTemplated </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d8/df9/classtudat_1_1_time.html">Time</a>&#160;</td>
+          <td class="paramname"><em>timeSinceEpoch</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../da/d6c/rotational_ephemeris_8cpp_source.html#l00083">83</a> of file <a class="el" href="../../da/d6c/rotational_ephemeris_8cpp_source.html">rotationalEphemeris.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a17929bac936040d7a3d3d8fb5a52c6c6"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">Eigen::Matrix3d tudat::ephemerides::RotationalEphemeris::getDerivativeOfRotationToTargetFrameTemplated </td>
+          <td>(</td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>secondsSinceEpoch</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../da/d6c/rotational_ephemeris_8cpp_source.html#l00092">92</a> of file <a class="el" href="../../da/d6c/rotational_ephemeris_8cpp_source.html">rotationalEphemeris.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4528fd7b41c14e3edac5ce544daf5fab"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">Eigen::Matrix3d tudat::ephemerides::RotationalEphemeris::getDerivativeOfRotationToTargetFrameTemplated </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d8/df9/classtudat_1_1_time.html">Time</a>&#160;</td>
+          <td class="paramname"><em>secondsSinceEpoch</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../da/d6c/rotational_ephemeris_8cpp_source.html#l00100">100</a> of file <a class="el" href="../../da/d6c/rotational_ephemeris_8cpp_source.html">rotationalEphemeris.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4ede523d08816231de795a38371c198d"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void tudat::ephemerides::RotationalEphemeris::getFullRotationalQuantitiesToTargetFrameTemplated </td>
+          <td>(</td>
+          <td class="paramtype">Eigen::Quaterniond &amp;&#160;</td>
+          <td class="paramname"><em>currentRotationToLocalFrame</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Eigen::Matrix3d &amp;&#160;</td>
+          <td class="paramname"><em>currentRotationToLocalFrameDerivative</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Eigen::Vector3d &amp;&#160;</td>
+          <td class="paramname"><em>currentAngularVelocityVectorInGlobalFrame</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>timeSinceEpoch</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../da/d6c/rotational_ephemeris_8cpp_source.html#l00108">108</a> of file <a class="el" href="../../da/d6c/rotational_ephemeris_8cpp_source.html">rotationalEphemeris.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac758d76f05ad8d37130b0fb895790e65"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void tudat::ephemerides::RotationalEphemeris::getFullRotationalQuantitiesToTargetFrameTemplated </td>
+          <td>(</td>
+          <td class="paramtype">Eigen::Quaterniond &amp;&#160;</td>
+          <td class="paramname"><em>currentRotationToLocalFrame</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Eigen::Matrix3d &amp;&#160;</td>
+          <td class="paramname"><em>currentRotationToLocalFrameDerivative</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Eigen::Vector3d &amp;&#160;</td>
+          <td class="paramname"><em>currentAngularVelocityVectorInGlobalFrame</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d8/df9/classtudat_1_1_time.html">Time</a>&#160;</td>
+          <td class="paramname"><em>timeSinceEpoch</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../da/d6c/rotational_ephemeris_8cpp_source.html#l00121">121</a> of file <a class="el" href="../../da/d6c/rotational_ephemeris_8cpp_source.html">rotationalEphemeris.cpp</a>.</p>
 
 </div>
 </div>
@@ -592,9 +1271,9 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Base reference frame orientation. </p>
 
-<p>Definition at line <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html#l00303">303</a> of file <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html">rotationalEphemeris.h</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html#l00445">445</a> of file <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html">rotationalEphemeris.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html#l00288">getBaseFrameOrientation()</a>, <a class="el" href="../../d3/d61/spice_rotational_ephemeris_8cpp_source.html#l00038">tudat::ephemerides::SpiceRotationalEphemeris::getDerivativeOfRotationToBaseFrame()</a>, <a class="el" href="../../d3/d61/spice_rotational_ephemeris_8cpp_source.html#l00047">tudat::ephemerides::SpiceRotationalEphemeris::getFullRotationalQuantitiesToTargetFrame()</a>, and <a class="el" href="../../d3/d61/spice_rotational_ephemeris_8cpp_source.html#l00028">tudat::ephemerides::SpiceRotationalEphemeris::getRotationToBaseFrame()</a>.</p>
+<p>Referenced by <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html#l00430">getBaseFrameOrientation()</a>, <a class="el" href="../../d3/d61/spice_rotational_ephemeris_8cpp_source.html#l00035">tudat::ephemerides::SpiceRotationalEphemeris::getDerivativeOfRotationToBaseFrame()</a>, <a class="el" href="../../d3/d61/spice_rotational_ephemeris_8cpp_source.html#l00044">tudat::ephemerides::SpiceRotationalEphemeris::getFullRotationalQuantitiesToTargetFrame()</a>, and <a class="el" href="../../d3/d61/spice_rotational_ephemeris_8cpp_source.html#l00025">tudat::ephemerides::SpiceRotationalEphemeris::getRotationToBaseFrame()</a>.</p>
 
 </div>
 </div>
@@ -617,19 +1296,20 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Target reference frame orientation. </p>
 
-<p>Definition at line <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html#l00309">309</a> of file <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html">rotationalEphemeris.h</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html#l00451">451</a> of file <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html">rotationalEphemeris.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d3/d61/spice_rotational_ephemeris_8cpp_source.html#l00038">tudat::ephemerides::SpiceRotationalEphemeris::getDerivativeOfRotationToBaseFrame()</a>, <a class="el" href="../../d3/d61/spice_rotational_ephemeris_8cpp_source.html#l00047">tudat::ephemerides::SpiceRotationalEphemeris::getFullRotationalQuantitiesToTargetFrame()</a>, <a class="el" href="../../d3/d61/spice_rotational_ephemeris_8cpp_source.html#l00028">tudat::ephemerides::SpiceRotationalEphemeris::getRotationToBaseFrame()</a>, and <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html#l00295">getTargetFrameOrientation()</a>.</p>
+<p>Referenced by <a class="el" href="../../d3/d61/spice_rotational_ephemeris_8cpp_source.html#l00035">tudat::ephemerides::SpiceRotationalEphemeris::getDerivativeOfRotationToBaseFrame()</a>, <a class="el" href="../../d3/d61/spice_rotational_ephemeris_8cpp_source.html#l00044">tudat::ephemerides::SpiceRotationalEphemeris::getFullRotationalQuantitiesToTargetFrame()</a>, <a class="el" href="../../d3/d61/spice_rotational_ephemeris_8cpp_source.html#l00025">tudat::ephemerides::SpiceRotationalEphemeris::getRotationToBaseFrame()</a>, and <a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html#l00437">getTargetFrameOrientation()</a>.</p>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>Astrodynamics/Ephemerides/<a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html">rotationalEphemeris.h</a></li>
+<li>Astrodynamics/Ephemerides/<a class="el" href="../../da/d6c/rotational_ephemeris_8cpp_source.html">rotationalEphemeris.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 27 2017 09:32:59 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 7 2017 11:20:31 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

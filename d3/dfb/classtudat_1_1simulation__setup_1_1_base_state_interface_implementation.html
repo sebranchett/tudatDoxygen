@@ -101,7 +101,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <p>Class used for the determination of the inertial state of a <a class="el" href="../../d5/de5/classtudat_1_1simulation__setup_1_1_body.html" title="Body class representing the properties of a celestial body (natural or artificial). ">Body</a>'s ephemeris origin.  
  <a href="../../d3/dfb/classtudat_1_1simulation__setup_1_1_base_state_interface_implementation.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="../../d0/d77/body_8h_source.html">body.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>&gt;</code></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Inheritance diagram for tudat::simulation_setup::BaseStateInterfaceImplementation&lt; TimeType, StateScalarType &gt;:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -116,9 +116,9 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a93a176a72a12fcd0a16d40c7def9c466"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dfb/classtudat_1_1simulation__setup_1_1_base_state_interface_implementation.html#a93a176a72a12fcd0a16d40c7def9c466">BaseStateInterfaceImplementation</a> (const std::string baseFrameId, const boost::function&lt; Eigen::Matrix&lt; StateScalarType, 6, 1 &gt;(const TimeType) &gt; stateFunction)</td></tr>
-<tr class="memdesc:a93a176a72a12fcd0a16d40c7def9c466"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a93a176a72a12fcd0a16d40c7def9c466">More...</a><br /></td></tr>
-<tr class="separator:a93a176a72a12fcd0a16d40c7def9c466"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a905d4d0999b1215b3a6828eb21fea9d0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dfb/classtudat_1_1simulation__setup_1_1_base_state_interface_implementation.html#a905d4d0999b1215b3a6828eb21fea9d0">BaseStateInterfaceImplementation</a> (const std::string baseFrameId, const boost::function&lt; Eigen::Matrix&lt; StateScalarType, 6, 1 &gt;(const TimeType) &gt; stateFunction, const bool subtractStateFunction=0)</td></tr>
+<tr class="memdesc:a905d4d0999b1215b3a6828eb21fea9d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a905d4d0999b1215b3a6828eb21fea9d0">More...</a><br /></td></tr>
+<tr class="separator:a905d4d0999b1215b3a6828eb21fea9d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f082ae2a3552dcdf8cdfccb7f9454e3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dfb/classtudat_1_1simulation__setup_1_1_base_state_interface_implementation.html#a7f082ae2a3552dcdf8cdfccb7f9454e3">~BaseStateInterfaceImplementation</a> ()</td></tr>
 <tr class="memdesc:a7f082ae2a3552dcdf8cdfccb7f9454e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#a7f082ae2a3552dcdf8cdfccb7f9454e3">More...</a><br /></td></tr>
 <tr class="separator:a7f082ae2a3552dcdf8cdfccb7f9454e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -170,6 +170,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a249af10ca834158c9c2a6a76ec8845b3"><td class="memItemLeft" align="right" valign="top">boost::function&lt; Eigen::Matrix&lt; StateScalarType, 6, 1 &gt; const TimeType) &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dfb/classtudat_1_1simulation__setup_1_1_base_state_interface_implementation.html#a249af10ca834158c9c2a6a76ec8845b3">stateFunction_</a></td></tr>
 <tr class="memdesc:a249af10ca834158c9c2a6a76ec8845b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function returning frame's inertial state as a function of time.  <a href="#a249af10ca834158c9c2a6a76ec8845b3">More...</a><br /></td></tr>
 <tr class="separator:a249af10ca834158c9c2a6a76ec8845b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27befcd202106f9b3213b4a5dc059aa4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dfb/classtudat_1_1simulation__setup_1_1_base_state_interface_implementation.html#a27befcd202106f9b3213b4a5dc059aa4">stateMultiplier_</a></td></tr>
+<tr class="memdesc:a27befcd202106f9b3213b4a5dc059aa4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Value (1 or -1) by which to multiply the state returned by stateFunction_.  <a href="#a27befcd202106f9b3213b4a5dc059aa4">More...</a><br /></td></tr>
+<tr class="separator:a27befcd202106f9b3213b4a5dc059aa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -183,9 +186,9 @@ Additional Inherited Members</h2></td></tr>
 class tudat::simulation_setup::BaseStateInterfaceImplementation&lt; TimeType, StateScalarType &gt;</h3>
 
 
-<p>Definition at line <a class="el" href="../../d0/d77/body_8h_source.html#l00123">123</a> of file <a class="el" href="../../d0/d77/body_8h_source.html">body.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l00121">121</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a93a176a72a12fcd0a16d40c7def9c466"></a>
+<a class="anchor" id="a905d4d0999b1215b3a6828eb21fea9d0"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -204,7 +207,13 @@ template&lt;typename TimeType , typename StateScalarType &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const boost::function&lt; Eigen::Matrix&lt; StateScalarType, 6, 1 &gt;(const TimeType) &gt;&#160;</td>
-          <td class="paramname"><em>stateFunction</em>&#160;</td>
+          <td class="paramname"><em>stateFunction</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>subtractStateFunction</em> = <code>0</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -222,11 +231,12 @@ template&lt;typename TimeType , typename StateScalarType &gt; </div>
   <table class="params">
     <tr><td class="paramname">baseFrameId</td><td>Name of frame origin for which inertial state is computed by this class </td></tr>
     <tr><td class="paramname">stateFunction</td><td>Function returning frame's inertial state as a function of time. </td></tr>
+    <tr><td class="paramname">subtractStateFunction</td><td>Boolean denoting whether to subtract or add the state function (i.e. whether to multiply result of stateFunction by -1). </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d0/d77/body_8h_source.html#l00133">133</a> of file <a class="el" href="../../d0/d77/body_8h_source.html">body.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l00133">133</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
 
 </div>
 </div>
@@ -253,7 +263,7 @@ template&lt;typename TimeType , typename StateScalarType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d0/d77/body_8h_source.html#l00140">140</a> of file <a class="el" href="../../d0/d77/body_8h_source.html">body.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l00142">142</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
 
 </div>
 </div>
@@ -291,7 +301,7 @@ template&lt;typename TimeType , typename StateScalarType &gt; </div>
 
 <p>Implements <a class="el" href="../../d9/df4/classtudat_1_1simulation__setup_1_1_base_state_interface.html#a008eb954015cfc4b02359126b2a29604">tudat::simulation_setup::BaseStateInterface</a>.</p>
 
-<p>Definition at line <a class="el" href="../../d0/d77/body_8h_source.html#l00152">152</a> of file <a class="el" href="../../d0/d77/body_8h_source.html">body.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l00154">154</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
 
 </div>
 </div>
@@ -328,7 +338,7 @@ template&lt;typename TimeType , typename StateScalarType &gt; </div>
 
 <p>Implements <a class="el" href="../../d9/df4/classtudat_1_1simulation__setup_1_1_base_state_interface.html#a0701e50ccd7a59be8ff1ce0576dc6af0">tudat::simulation_setup::BaseStateInterface</a>.</p>
 
-<p>Definition at line <a class="el" href="../../d0/d77/body_8h_source.html#l00164">164</a> of file <a class="el" href="../../d0/d77/body_8h_source.html">body.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l00166">166</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
 
 </div>
 </div>
@@ -365,7 +375,7 @@ template&lt;typename TimeType , typename StateScalarType &gt; </div>
 
 <p>Implements <a class="el" href="../../d9/df4/classtudat_1_1simulation__setup_1_1_base_state_interface.html#aacd675d056aebe9af2f5d1642f799952">tudat::simulation_setup::BaseStateInterface</a>.</p>
 
-<p>Definition at line <a class="el" href="../../d0/d77/body_8h_source.html#l00176">176</a> of file <a class="el" href="../../d0/d77/body_8h_source.html">body.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l00178">178</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
 
 </div>
 </div>
@@ -402,7 +412,7 @@ template&lt;typename TimeType , typename StateScalarType &gt; </div>
 
 <p>Implements <a class="el" href="../../d9/df4/classtudat_1_1simulation__setup_1_1_base_state_interface.html#afeaa791b565e385d8a8b0c9224b1e37f">tudat::simulation_setup::BaseStateInterface</a>.</p>
 
-<p>Definition at line <a class="el" href="../../d0/d77/body_8h_source.html#l00188">188</a> of file <a class="el" href="../../d0/d77/body_8h_source.html">body.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l00190">190</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
 
 </div>
 </div>
@@ -427,17 +437,41 @@ template&lt;typename TimeType , typename StateScalarType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d0/d77/body_8h_source.html#l00196">196</a> of file <a class="el" href="../../d0/d77/body_8h_source.html">body.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l00198">198</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a27befcd202106f9b3213b4a5dc059aa4"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TimeType , typename StateScalarType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="../../d3/dfb/classtudat_1_1simulation__setup_1_1_base_state_interface_implementation.html">tudat::simulation_setup::BaseStateInterfaceImplementation</a>&lt; TimeType, StateScalarType &gt;::stateMultiplier_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l00201">201</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>SimulationSetup/EnvironmentSetup/<a class="el" href="../../d0/d77/body_8h_source.html">body.h</a></li>
+<li>SimulationSetup/EnvironmentSetup/<a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 27 2017 09:33:02 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 7 2017 11:20:35 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

@@ -172,7 +172,7 @@ Protected Attributes</h2></td></tr>
 <div class="textblock"><p>Virual base class for spherical harmonic gravity field variations (i.e. time-dependencies of sine and cosine coefficients)</p>
 <p>time-dependencies of sine and cosine coefficients). The interface of derived classes with <a class="el" href="../../d0/d00/classtudat_1_1gravitation_1_1_time_dependent_spherical_harmonics_gravity_field.html" title="Class for time dependent spherical harmonic gravity field. ">TimeDependentSphericalHarmonicsGravityField</a>, which combines all corrections and adds them to nominal values, can be performed either directly, or through an interpolator (see <a class="el" href="../../d8/d63/classtudat_1_1gravitation_1_1_pair_interpolation_interface.html" title="Interface class between GravityFieldVariations objects that are interpolated and TimeDependentSpheric...">PairInterpolationInterface</a> and createInterpolatedSphericalHarmonicCorrectionFunctions) to save on computation time when evaluating slowly changing functions at very short intervals. All correction coefficients are calculated as rectangular blocks in both the cosine and sine matrices (of equal size). </p>
 
-<p>Definition at line <a class="el" href="../../d3/d48/gravity_field_variations_8h_source.html#l00133">133</a> of file <a class="el" href="../../d3/d48/gravity_field_variations_8h_source.html">gravityFieldVariations.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d48/gravity_field_variations_8h_source.html#l00131">131</a> of file <a class="el" href="../../d3/d48/gravity_field_variations_8h_source.html">gravityFieldVariations.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="acda33e409345701ee320c046987f3831"></a>
 <div class="memitem">
@@ -227,9 +227,9 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d3/d48/gravity_field_variations_8h_source.html#l00146">146</a> of file <a class="el" href="../../d3/d48/gravity_field_variations_8h_source.html">gravityFieldVariations.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d48/gravity_field_variations_8h_source.html#l00144">144</a> of file <a class="el" href="../../d3/d48/gravity_field_variations_8h_source.html">gravityFieldVariations.h</a>.</p>
 
-<p>References <a class="el" href="../../d3/d48/gravity_field_variations_8h_source.html#l00112">tudat::gravitation::PairInterpolationInterface::numberOfDegrees_</a>, and <a class="el" href="../../d3/d48/gravity_field_variations_8h_source.html#l00118">tudat::gravitation::PairInterpolationInterface::numberOfOrders_</a>.</p>
+<p>References <a class="el" href="../../d3/d48/gravity_field_variations_8h_source.html#l00110">tudat::gravitation::PairInterpolationInterface::numberOfDegrees_</a>, and <a class="el" href="../../d3/d48/gravity_field_variations_8h_source.html#l00116">tudat::gravitation::PairInterpolationInterface::numberOfOrders_</a>.</p>
 
 </div>
 </div>
@@ -255,7 +255,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Virtual destructor </p>
 
-<p>Definition at line <a class="el" href="../../d3/d48/gravity_field_variations_8h_source.html#l00160">160</a> of file <a class="el" href="../../d3/d48/gravity_field_variations_8h_source.html">gravityFieldVariations.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d48/gravity_field_variations_8h_source.html#l00158">158</a> of file <a class="el" href="../../d3/d48/gravity_field_variations_8h_source.html">gravityFieldVariations.h</a>.</p>
 
 </div>
 </div>
@@ -333,7 +333,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../de/db0/gravity_field_variations_8cpp_source.html#l00039">39</a> of file <a class="el" href="../../de/db0/gravity_field_variations_8cpp_source.html">gravityFieldVariations.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d3/d48/gravity_field_variations_8h_source.html#l00112">tudat::gravitation::PairInterpolationInterface::numberOfDegrees_</a>, and <a class="el" href="../../d3/d48/gravity_field_variations_8h_source.html#l00118">tudat::gravitation::PairInterpolationInterface::numberOfOrders_</a>.</p>
+<p>References <a class="el" href="../../d3/d48/gravity_field_variations_8h_source.html#l00110">tudat::gravitation::PairInterpolationInterface::numberOfDegrees_</a>, and <a class="el" href="../../d3/d48/gravity_field_variations_8h_source.html#l00116">tudat::gravitation::PairInterpolationInterface::numberOfOrders_</a>.</p>
 
 <p>Referenced by <a class="el" href="../../de/db0/gravity_field_variations_8cpp_source.html#l00229">tudat::gravitation::GravityFieldVariationsSet::getVariationFunctions()</a>.</p>
 
@@ -361,7 +361,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Function to return the maximum degree of the corrections. </p>
 
-<p>Definition at line <a class="el" href="../../d3/d48/gravity_field_variations_8h_source.html#l00193">193</a> of file <a class="el" href="../../d3/d48/gravity_field_variations_8h_source.html">gravityFieldVariations.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d48/gravity_field_variations_8h_source.html#l00191">191</a> of file <a class="el" href="../../d3/d48/gravity_field_variations_8h_source.html">gravityFieldVariations.h</a>.</p>
 
 </div>
 </div>
@@ -387,7 +387,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Function to return the maximum order of the corrections. </p>
 
-<p>Definition at line <a class="el" href="../../d3/d48/gravity_field_variations_8h_source.html#l00202">202</a> of file <a class="el" href="../../d3/d48/gravity_field_variations_8h_source.html">gravityFieldVariations.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d48/gravity_field_variations_8h_source.html#l00200">200</a> of file <a class="el" href="../../d3/d48/gravity_field_variations_8h_source.html">gravityFieldVariations.h</a>.</p>
 
 </div>
 </div>
@@ -413,7 +413,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Function to return the minimum degree of the corrections. </p>
 
-<p>Definition at line <a class="el" href="../../d3/d48/gravity_field_variations_8h_source.html#l00211">211</a> of file <a class="el" href="../../d3/d48/gravity_field_variations_8h_source.html">gravityFieldVariations.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d48/gravity_field_variations_8h_source.html#l00209">209</a> of file <a class="el" href="../../d3/d48/gravity_field_variations_8h_source.html">gravityFieldVariations.h</a>.</p>
 
 </div>
 </div>
@@ -439,7 +439,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Function to return the minimum order of the corrections. </p>
 
-<p>Definition at line <a class="el" href="../../d3/d48/gravity_field_variations_8h_source.html#l00220">220</a> of file <a class="el" href="../../d3/d48/gravity_field_variations_8h_source.html">gravityFieldVariations.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d48/gravity_field_variations_8h_source.html#l00218">218</a> of file <a class="el" href="../../d3/d48/gravity_field_variations_8h_source.html">gravityFieldVariations.h</a>.</p>
 
 </div>
 </div>
@@ -465,9 +465,9 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Function to return the number of degrees of the corrections. </p>
 
-<p>Definition at line <a class="el" href="../../d3/d48/gravity_field_variations_8h_source.html#l00229">229</a> of file <a class="el" href="../../d3/d48/gravity_field_variations_8h_source.html">gravityFieldVariations.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d48/gravity_field_variations_8h_source.html#l00227">227</a> of file <a class="el" href="../../d3/d48/gravity_field_variations_8h_source.html">gravityFieldVariations.h</a>.</p>
 
-<p>References <a class="el" href="../../d3/d48/gravity_field_variations_8h_source.html#l00112">tudat::gravitation::PairInterpolationInterface::numberOfDegrees_</a>.</p>
+<p>References <a class="el" href="../../d3/d48/gravity_field_variations_8h_source.html#l00110">tudat::gravitation::PairInterpolationInterface::numberOfDegrees_</a>.</p>
 
 </div>
 </div>
@@ -493,9 +493,9 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Function to return the number of orders of the corrections. </p>
 
-<p>Definition at line <a class="el" href="../../d3/d48/gravity_field_variations_8h_source.html#l00238">238</a> of file <a class="el" href="../../d3/d48/gravity_field_variations_8h_source.html">gravityFieldVariations.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d48/gravity_field_variations_8h_source.html#l00236">236</a> of file <a class="el" href="../../d3/d48/gravity_field_variations_8h_source.html">gravityFieldVariations.h</a>.</p>
 
-<p>References <a class="el" href="../../d3/d48/gravity_field_variations_8h_source.html#l00118">tudat::gravitation::PairInterpolationInterface::numberOfOrders_</a>.</p>
+<p>References <a class="el" href="../../d3/d48/gravity_field_variations_8h_source.html#l00116">tudat::gravitation::PairInterpolationInterface::numberOfOrders_</a>.</p>
 
 </div>
 </div>
@@ -519,7 +519,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Minimum degree of variations </p>
 
-<p>Definition at line <a class="el" href="../../d3/d48/gravity_field_variations_8h_source.html#l00248">248</a> of file <a class="el" href="../../d3/d48/gravity_field_variations_8h_source.html">gravityFieldVariations.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d48/gravity_field_variations_8h_source.html#l00246">246</a> of file <a class="el" href="../../d3/d48/gravity_field_variations_8h_source.html">gravityFieldVariations.h</a>.</p>
 
 <p>Referenced by <a class="el" href="../../d0/db9/basic_solid_body_tide_gravity_field_variations_8cpp_source.html#l00180">tudat::gravitation::BasicSolidBodyTideGravityFieldVariations::addBasicSolidBodyTideCorrections()</a>, and <a class="el" href="../../df/d9d/basic_solid_body_tide_gravity_field_variations_8h_source.html#l00152">tudat::gravitation::BasicSolidBodyTideGravityFieldVariations::BasicSolidBodyTideGravityFieldVariations()</a>.</p>
 
@@ -544,7 +544,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Minimum order of variations </p>
 
-<p>Definition at line <a class="el" href="../../d3/d48/gravity_field_variations_8h_source.html#l00254">254</a> of file <a class="el" href="../../d3/d48/gravity_field_variations_8h_source.html">gravityFieldVariations.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d48/gravity_field_variations_8h_source.html#l00252">252</a> of file <a class="el" href="../../d3/d48/gravity_field_variations_8h_source.html">gravityFieldVariations.h</a>.</p>
 
 <p>Referenced by <a class="el" href="../../d0/db9/basic_solid_body_tide_gravity_field_variations_8cpp_source.html#l00180">tudat::gravitation::BasicSolidBodyTideGravityFieldVariations::addBasicSolidBodyTideCorrections()</a>, and <a class="el" href="../../df/d9d/basic_solid_body_tide_gravity_field_variations_8h_source.html#l00152">tudat::gravitation::BasicSolidBodyTideGravityFieldVariations::BasicSolidBodyTideGravityFieldVariations()</a>.</p>
 
@@ -569,7 +569,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Maximum degree of variations </p>
 
-<p>Definition at line <a class="el" href="../../d3/d48/gravity_field_variations_8h_source.html#l00260">260</a> of file <a class="el" href="../../d3/d48/gravity_field_variations_8h_source.html">gravityFieldVariations.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d48/gravity_field_variations_8h_source.html#l00258">258</a> of file <a class="el" href="../../d3/d48/gravity_field_variations_8h_source.html">gravityFieldVariations.h</a>.</p>
 
 <p>Referenced by <a class="el" href="../../d0/db9/basic_solid_body_tide_gravity_field_variations_8cpp_source.html#l00180">tudat::gravitation::BasicSolidBodyTideGravityFieldVariations::addBasicSolidBodyTideCorrections()</a>, and <a class="el" href="../../df/d9d/basic_solid_body_tide_gravity_field_variations_8h_source.html#l00152">tudat::gravitation::BasicSolidBodyTideGravityFieldVariations::BasicSolidBodyTideGravityFieldVariations()</a>.</p>
 
@@ -594,7 +594,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Maximum order of variations </p>
 
-<p>Definition at line <a class="el" href="../../d3/d48/gravity_field_variations_8h_source.html#l00266">266</a> of file <a class="el" href="../../d3/d48/gravity_field_variations_8h_source.html">gravityFieldVariations.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d48/gravity_field_variations_8h_source.html#l00264">264</a> of file <a class="el" href="../../d3/d48/gravity_field_variations_8h_source.html">gravityFieldVariations.h</a>.</p>
 
 <p>Referenced by <a class="el" href="../../d0/db9/basic_solid_body_tide_gravity_field_variations_8cpp_source.html#l00180">tudat::gravitation::BasicSolidBodyTideGravityFieldVariations::addBasicSolidBodyTideCorrections()</a>, and <a class="el" href="../../df/d9d/basic_solid_body_tide_gravity_field_variations_8h_source.html#l00152">tudat::gravitation::BasicSolidBodyTideGravityFieldVariations::BasicSolidBodyTideGravityFieldVariations()</a>.</p>
 
@@ -619,7 +619,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Number of degrees of variations </p>
 
-<p>Definition at line <a class="el" href="../../d3/d48/gravity_field_variations_8h_source.html#l00272">272</a> of file <a class="el" href="../../d3/d48/gravity_field_variations_8h_source.html">gravityFieldVariations.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d48/gravity_field_variations_8h_source.html#l00270">270</a> of file <a class="el" href="../../d3/d48/gravity_field_variations_8h_source.html">gravityFieldVariations.h</a>.</p>
 
 <p>Referenced by <a class="el" href="../../d0/db9/basic_solid_body_tide_gravity_field_variations_8cpp_source.html#l00154">tudat::gravitation::BasicSolidBodyTideGravityFieldVariations::calculateBasicSphericalHarmonicsCorrections()</a>, <a class="el" href="../../d3/db9/tabulated_gravity_field_variations_8cpp_source.html#l00107">tudat::gravitation::TabulatedGravityFieldVariations::calculateSphericalHarmonicsCorrections()</a>, and <a class="el" href="../../d3/db9/tabulated_gravity_field_variations_8cpp_source.html#l00037">tudat::gravitation::TabulatedGravityFieldVariations::resetCoefficientInterpolator()</a>.</p>
 
@@ -644,7 +644,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Number of orders of variations </p>
 
-<p>Definition at line <a class="el" href="../../d3/d48/gravity_field_variations_8h_source.html#l00278">278</a> of file <a class="el" href="../../d3/d48/gravity_field_variations_8h_source.html">gravityFieldVariations.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d48/gravity_field_variations_8h_source.html#l00276">276</a> of file <a class="el" href="../../d3/d48/gravity_field_variations_8h_source.html">gravityFieldVariations.h</a>.</p>
 
 <p>Referenced by <a class="el" href="../../d0/db9/basic_solid_body_tide_gravity_field_variations_8cpp_source.html#l00154">tudat::gravitation::BasicSolidBodyTideGravityFieldVariations::calculateBasicSphericalHarmonicsCorrections()</a>, <a class="el" href="../../d3/db9/tabulated_gravity_field_variations_8cpp_source.html#l00107">tudat::gravitation::TabulatedGravityFieldVariations::calculateSphericalHarmonicsCorrections()</a>, and <a class="el" href="../../d3/db9/tabulated_gravity_field_variations_8cpp_source.html#l00037">tudat::gravitation::TabulatedGravityFieldVariations::resetCoefficientInterpolator()</a>.</p>
 
@@ -657,7 +657,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 27 2017 09:33:00 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 7 2017 11:20:32 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

@@ -194,6 +194,11 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/de4/classtudat_1_1observation__partials_1_1_rotation_matrix_partial_wrt_pole_orientation.html">RotationMatrixPartialWrtPoleOrientation</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class to calculate a rotation matrix from a body-fixed to inertial frame, as computed by the SimpleRotationalEphemeris class, w.r.t.  <a href="../../da/de4/classtudat_1_1observation__partials_1_1_rotation_matrix_partial_wrt_pole_orientation.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d18/classtudat_1_1observation__partials_1_1_two_way_doppler_partial.html">TwoWayDopplerPartial</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class to compute the partial derivatives of an two-way range observation partial.  <a href="../../dd/d18/classtudat_1_1observation__partials_1_1_two_way_doppler_partial.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dd3/classtudat_1_1observation__partials_1_1_two_way_doppler_scaling.html">TwoWayDopplerScaling</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -299,7 +304,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:a8e21db667b1291f72c7eea3536937bde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to generate one-way doppler partials and associated scaler for single link end.  <a href="#a8e21db667b1291f72c7eea3536937bde">More...</a><br /></td></tr>
 <tr class="separator:a8e21db667b1291f72c7eea3536937bde"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd8335455424d7b053bd3fb83f32a2ae"><td class="memTemplParams" colspan="2">template&lt;typename ObservationScalarType , typename TimeType &gt; </td></tr>
-<tr class="memitem:afd8335455424d7b053bd3fb83f32a2ae"><td class="memTemplItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="../../d2/df9/namespacetudat_1_1observation__models.html#a7a66b5e78e636627f69a082a10c57b52">observation_models::LinkEnds</a>, std::pair&lt; <a class="el" href="../../d0/ddd/namespacetudat_1_1observation__partials.html#a3f32bfb0b5f174fc6e4638c0c9a3d54e">SingleLinkObservationPartialList</a>, boost::shared_ptr&lt; <a class="el" href="../../d7/db3/classtudat_1_1observation__partials_1_1_position_partial_scaling.html">PositionPartialScaling</a> &gt; &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/ddd/namespacetudat_1_1observation__partials.html#afd8335455424d7b053bd3fb83f32a2ae">createOneWayDopplerPartials</a> (const std::map&lt; <a class="el" href="../../d2/df9/namespacetudat_1_1observation__models.html#a7a66b5e78e636627f69a082a10c57b52">observation_models::LinkEnds</a>, boost::shared_ptr&lt; <a class="el" href="../../de/dc0/classtudat_1_1observation__models_1_1_observation_model.html">observation_models::ObservationModel</a>&lt; 1, ObservationScalarType, TimeType &gt; &gt; &gt; observationModelList, const <a class="el" href="../../d4/da8/namespacetudat_1_1simulation__setup.html#a4a7938c5b0b78593806673957cc169c4">simulation_setup::NamedBodyMap</a> &amp;bodyMap, const boost::shared_ptr&lt; <a class="el" href="../../d5/d06/classtudat_1_1estimatable__parameters_1_1_estimatable_parameter_set.html">estimatable_parameters::EstimatableParameterSet</a>&lt; ObservationScalarType &gt; &gt; parametersToEstimate)</td></tr>
+<tr class="memitem:afd8335455424d7b053bd3fb83f32a2ae"><td class="memTemplItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="../../d2/df9/namespacetudat_1_1observation__models.html#a7a66b5e78e636627f69a082a10c57b52">observation_models::LinkEnds</a>, std::pair&lt; <a class="el" href="../../d0/ddd/namespacetudat_1_1observation__partials.html#a3f32bfb0b5f174fc6e4638c0c9a3d54e">SingleLinkObservationPartialList</a>, boost::shared_ptr&lt; <a class="el" href="../../d7/db3/classtudat_1_1observation__partials_1_1_position_partial_scaling.html">PositionPartialScaling</a> &gt; &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/ddd/namespacetudat_1_1observation__partials.html#afd8335455424d7b053bd3fb83f32a2ae">createOneWayDopplerPartials</a> (const std::map&lt; <a class="el" href="../../d2/df9/namespacetudat_1_1observation__models.html#a7a66b5e78e636627f69a082a10c57b52">observation_models::LinkEnds</a>, boost::shared_ptr&lt; <a class="el" href="../../de/dc0/classtudat_1_1observation__models_1_1_observation_model.html">observation_models::ObservationModel</a>&lt; 1, <a class="el" href="../../d0/d6f/classes__e_8js.html#aee24a28d672b815552e3b29a7c94c0d6">ObservationScalarType</a>, TimeType &gt; &gt; &gt; observationModelList, const <a class="el" href="../../d4/da8/namespacetudat_1_1simulation__setup.html#a4a7938c5b0b78593806673957cc169c4">simulation_setup::NamedBodyMap</a> &amp;bodyMap, const boost::shared_ptr&lt; <a class="el" href="../../d5/d06/classtudat_1_1estimatable__parameters_1_1_estimatable_parameter_set.html">estimatable_parameters::EstimatableParameterSet</a>&lt; <a class="el" href="../../d0/d6f/classes__e_8js.html#aee24a28d672b815552e3b29a7c94c0d6">ObservationScalarType</a> &gt; &gt; parametersToEstimate)</td></tr>
 <tr class="memdesc:afd8335455424d7b053bd3fb83f32a2ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to generate one-way doppler partials for all parameters that are to be estimated, for all sets of link ends.  <a href="#afd8335455424d7b053bd3fb83f32a2ae">More...</a><br /></td></tr>
 <tr class="separator:afd8335455424d7b053bd3fb83f32a2ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add107bb914ae280d05671bf0e75a8f72"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; <a class="el" href="../../d8/d8d/classtudat_1_1observation__partials_1_1_one_way_doppler_partial.html">OneWayDopplerPartial</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/ddd/namespacetudat_1_1observation__partials.html#add107bb914ae280d05671bf0e75a8f72">createOneWayDopplerPartialWrtBodyState</a> (const <a class="el" href="../../d2/df9/namespacetudat_1_1observation__models.html#a7a66b5e78e636627f69a082a10c57b52">observation_models::LinkEnds</a> oneWayDopplerLinkEnds, const <a class="el" href="../../d4/da8/namespacetudat_1_1simulation__setup.html#a4a7938c5b0b78593806673957cc169c4">simulation_setup::NamedBodyMap</a> &amp;bodyMap, const std::string bodyToEstimate, const boost::shared_ptr&lt; <a class="el" href="../../d7/db3/classtudat_1_1observation__partials_1_1_position_partial_scaling.html">PositionPartialScaling</a> &gt; oneWayDopplerScaler, const std::vector&lt; boost::shared_ptr&lt; <a class="el" href="../../d5/d11/classtudat_1_1observation__partials_1_1_light_time_correction_partial.html">observation_partials::LightTimeCorrectionPartial</a> &gt; &gt; &amp;lightTimeCorrectionPartialObjects)</td></tr>
@@ -345,8 +350,16 @@ Functions</h2></td></tr>
 <tr class="memitem:a165c0d7de0593f6d151a1667c31c1ee2"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; <a class="el" href="../../de/df9/classtudat_1_1observation__partials_1_1_rotation_matrix_partial.html">RotationMatrixPartial</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/ddd/namespacetudat_1_1observation__partials.html#a165c0d7de0593f6d151a1667c31c1ee2">createRotationMatrixPartialsWrtParameter</a> (const <a class="el" href="../../d4/da8/namespacetudat_1_1simulation__setup.html#a4a7938c5b0b78593806673957cc169c4">simulation_setup::NamedBodyMap</a> &amp;bodyMap, const boost::shared_ptr&lt; <a class="el" href="../../d9/d2c/classtudat_1_1estimatable__parameters_1_1_estimatable_parameter.html">estimatable_parameters::EstimatableParameter</a>&lt; Eigen::VectorXd &gt; &gt; parameterToEstimate)</td></tr>
 <tr class="memdesc:a165c0d7de0593f6d151a1667c31c1ee2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to create partial object(s) of rotation matrix wrt a (vector) parameter.  <a href="#a165c0d7de0593f6d151a1667c31c1ee2">More...</a><br /></td></tr>
 <tr class="separator:a165c0d7de0593f6d151a1667c31c1ee2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e6f10bace7a04104fd669400c1c053b"><td class="memTemplParams" colspan="2">template&lt;typename ParameterType , typename TimeType &gt; </td></tr>
+<tr class="memitem:a2e6f10bace7a04104fd669400c1c053b"><td class="memTemplItemLeft" align="right" valign="top">std::pair&lt; <a class="el" href="../../d0/ddd/namespacetudat_1_1observation__partials.html#a3f32bfb0b5f174fc6e4638c0c9a3d54e">SingleLinkObservationPartialList</a>, boost::shared_ptr&lt; <a class="el" href="../../d7/db3/classtudat_1_1observation__partials_1_1_position_partial_scaling.html">PositionPartialScaling</a> &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/ddd/namespacetudat_1_1observation__partials.html#a2e6f10bace7a04104fd669400c1c053b">createTwoWayDopplerPartials</a> (const <a class="el" href="../../d2/df9/namespacetudat_1_1observation__models.html#a7a66b5e78e636627f69a082a10c57b52">observation_models::LinkEnds</a> &amp;twoWayDopplerLinkEnds, const boost::shared_ptr&lt; <a class="el" href="../../df/db4/classtudat_1_1observation__models_1_1_two_way_doppler_observation_model.html">observation_models::TwoWayDopplerObservationModel</a>&lt; ParameterType, TimeType &gt; &gt; twoWayObservationModel, const <a class="el" href="../../d4/da8/namespacetudat_1_1simulation__setup.html#a4a7938c5b0b78593806673957cc169c4">simulation_setup::NamedBodyMap</a> &amp;bodyMap, const boost::shared_ptr&lt; <a class="el" href="../../d5/d06/classtudat_1_1estimatable__parameters_1_1_estimatable_parameter_set.html">estimatable_parameters::EstimatableParameterSet</a>&lt; ParameterType &gt; &gt; parametersToEstimate, const std::vector&lt; std::vector&lt; boost::shared_ptr&lt; <a class="el" href="../../df/d20/classtudat_1_1observation__models_1_1_light_time_correction.html">observation_models::LightTimeCorrection</a> &gt; &gt; &gt; lightTimeCorrections=std::vector&lt; std::vector&lt; boost::shared_ptr&lt; <a class="el" href="../../df/d20/classtudat_1_1observation__models_1_1_light_time_correction.html">observation_models::LightTimeCorrection</a> &gt; &gt; &gt;())</td></tr>
+<tr class="memdesc:a2e6f10bace7a04104fd669400c1c053b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to generate tow-way Doppler partials and associated scaler for single link ends.  <a href="#a2e6f10bace7a04104fd669400c1c053b">More...</a><br /></td></tr>
+<tr class="separator:a2e6f10bace7a04104fd669400c1c053b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1c26ff761871a1e898761321dec80b5"><td class="memTemplParams" colspan="2">template&lt;typename ParameterType , typename TimeType &gt; </td></tr>
+<tr class="memitem:ab1c26ff761871a1e898761321dec80b5"><td class="memTemplItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="../../d2/df9/namespacetudat_1_1observation__models.html#a7a66b5e78e636627f69a082a10c57b52">observation_models::LinkEnds</a>, std::pair&lt; <a class="el" href="../../d0/ddd/namespacetudat_1_1observation__partials.html#a3f32bfb0b5f174fc6e4638c0c9a3d54e">SingleLinkObservationPartialList</a>, boost::shared_ptr&lt; <a class="el" href="../../d7/db3/classtudat_1_1observation__partials_1_1_position_partial_scaling.html">PositionPartialScaling</a> &gt; &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/ddd/namespacetudat_1_1observation__partials.html#ab1c26ff761871a1e898761321dec80b5">createTwoWayDopplerPartials</a> (const std::map&lt; <a class="el" href="../../d2/df9/namespacetudat_1_1observation__models.html#a7a66b5e78e636627f69a082a10c57b52">observation_models::LinkEnds</a>, boost::shared_ptr&lt; <a class="el" href="../../de/dc0/classtudat_1_1observation__models_1_1_observation_model.html">observation_models::ObservationModel</a>&lt; 1, ParameterType, TimeType &gt; &gt; &gt; observationModelList, const <a class="el" href="../../d4/da8/namespacetudat_1_1simulation__setup.html#a4a7938c5b0b78593806673957cc169c4">simulation_setup::NamedBodyMap</a> &amp;bodyMap, const boost::shared_ptr&lt; <a class="el" href="../../d5/d06/classtudat_1_1estimatable__parameters_1_1_estimatable_parameter_set.html">estimatable_parameters::EstimatableParameterSet</a>&lt; ParameterType &gt; &gt; parametersToEstimate, const std::map&lt; <a class="el" href="../../d2/df9/namespacetudat_1_1observation__models.html#a7a66b5e78e636627f69a082a10c57b52">observation_models::LinkEnds</a>, std::vector&lt; std::vector&lt; boost::shared_ptr&lt; <a class="el" href="../../df/d20/classtudat_1_1observation__models_1_1_light_time_correction.html">observation_models::LightTimeCorrection</a> &gt; &gt; &gt; &gt; &amp;lightTimeCorrections=std::map&lt; <a class="el" href="../../d2/df9/namespacetudat_1_1observation__models.html#a7a66b5e78e636627f69a082a10c57b52">observation_models::LinkEnds</a>, std::vector&lt; std::vector&lt; boost::shared_ptr&lt; <a class="el" href="../../df/d20/classtudat_1_1observation__models_1_1_light_time_correction.html">observation_models::LightTimeCorrection</a> &gt; &gt; &gt; &gt;())</td></tr>
+<tr class="memdesc:ab1c26ff761871a1e898761321dec80b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to generate two-way Doppler partials for all parameters that are to be estimated, for all sets of link ends.  <a href="#ab1c26ff761871a1e898761321dec80b5">More...</a><br /></td></tr>
+<tr class="separator:ab1c26ff761871a1e898761321dec80b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf7e64296b59a8a80c7d93c3d2a5151f"><td class="memTemplParams" colspan="2">template&lt;typename ObservationScalarType , typename TimeType , int ObservationSize&gt; </td></tr>
-<tr class="memitem:abf7e64296b59a8a80c7d93c3d2a5151f"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d0/ddd/namespacetudat_1_1observation__partials.html#add9a8e2da02390b44ac4063fe9d76a40">PerLinkEndPerLightTimeSolutionCorrections</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/ddd/namespacetudat_1_1observation__partials.html#abf7e64296b59a8a80c7d93c3d2a5151f">getLightTimeCorrectionsList</a> (const std::map&lt; <a class="el" href="../../d2/df9/namespacetudat_1_1observation__models.html#a7a66b5e78e636627f69a082a10c57b52">observation_models::LinkEnds</a>, boost::shared_ptr&lt; <a class="el" href="../../de/dc0/classtudat_1_1observation__models_1_1_observation_model.html">observation_models::ObservationModel</a>&lt; ObservationSize, ObservationScalarType, TimeType &gt; &gt; &gt; observationModels)</td></tr>
+<tr class="memitem:abf7e64296b59a8a80c7d93c3d2a5151f"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d0/ddd/namespacetudat_1_1observation__partials.html#add9a8e2da02390b44ac4063fe9d76a40">PerLinkEndPerLightTimeSolutionCorrections</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/ddd/namespacetudat_1_1observation__partials.html#abf7e64296b59a8a80c7d93c3d2a5151f">getLightTimeCorrectionsList</a> (const std::map&lt; <a class="el" href="../../d2/df9/namespacetudat_1_1observation__models.html#a7a66b5e78e636627f69a082a10c57b52">observation_models::LinkEnds</a>, boost::shared_ptr&lt; <a class="el" href="../../de/dc0/classtudat_1_1observation__models_1_1_observation_model.html">observation_models::ObservationModel</a>&lt; ObservationSize, <a class="el" href="../../d0/d6f/classes__e_8js.html#aee24a28d672b815552e3b29a7c94c0d6">ObservationScalarType</a>, TimeType &gt; &gt; &gt; observationModels)</td></tr>
 <tr class="memdesc:abf7e64296b59a8a80c7d93c3d2a5151f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to retrieve a list of light-time corrections per link end from a list of observation models.  <a href="#abf7e64296b59a8a80c7d93c3d2a5151f">More...</a><br /></td></tr>
 <tr class="separator:abf7e64296b59a8a80c7d93c3d2a5151f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e202af9b66b93d0a0a2185caee9e14c"><td class="memItemLeft" align="right" valign="top">std::pair&lt; boost::function&lt; <a class="el" href="../../d5/d11/classtudat_1_1observation__partials_1_1_light_time_correction_partial.html#a7a759098d3629d8d00a83648d81f9e9a">LightTimeCorrectionPartial::SingleOneWayRangePartialReturnType</a>(const std::vector&lt; <a class="el" href="../../d0/da5/namespace_eigen.html#a03c917374d8dcb5bb158f2380f92847a">Eigen::Vector6d</a> &gt; &amp;, const std::vector&lt; double &gt; &amp;) &gt;, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/ddd/namespacetudat_1_1observation__partials.html#a8e202af9b66b93d0a0a2185caee9e14c">getLightTimeParameterPartialFunction</a> (const <a class="el" href="../../d5/d92/namespacetudat_1_1estimatable__parameters.html#a62f1a23030576659d0fa6b023e199dce">estimatable_parameters::EstimatebleParameterIdentifier</a> parameterId, const boost::shared_ptr&lt; <a class="el" href="../../d5/d11/classtudat_1_1observation__partials_1_1_light_time_correction_partial.html">LightTimeCorrectionPartial</a> &gt; lightTimeCorrectionPartial)</td></tr>
@@ -480,7 +493,7 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Partial derivative of 1st order relativistic correction w.r.t. gravitational parameter. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d6/dda/first_order_relativistic_light_time_correction_partial_8cpp_source.html#l00021">21</a> of file <a class="el" href="../../d6/dda/first_order_relativistic_light_time_correction_partial_8cpp_source.html">firstOrderRelativisticLightTimeCorrectionPartial.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d6/dda/first_order_relativistic_light_time_correction_partial_8cpp_source.html#l00020">20</a> of file <a class="el" href="../../d6/dda/first_order_relativistic_light_time_correction_partial_8cpp_source.html">firstOrderRelativisticLightTimeCorrectionPartial.cpp</a>.</p>
 
 <p>Referenced by <a class="el" href="../../de/d91/first_order_relativistic_light_time_correction_partial_8h_source.html#l00075">tudat::observation_partials::FirstOrderRelativisticLightTimeCorrectionPartial::wrtBodyGravitationalParameter()</a>.</p>
 
@@ -518,7 +531,7 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Partial derivative of 1st order relativistic correction w.r.t. PPN parameter gamma. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d6/dda/first_order_relativistic_light_time_correction_partial_8cpp_source.html#l00028">28</a> of file <a class="el" href="../../d6/dda/first_order_relativistic_light_time_correction_partial_8cpp_source.html">firstOrderRelativisticLightTimeCorrectionPartial.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d6/dda/first_order_relativistic_light_time_correction_partial_8cpp_source.html#l00027">27</a> of file <a class="el" href="../../d6/dda/first_order_relativistic_light_time_correction_partial_8cpp_source.html">firstOrderRelativisticLightTimeCorrectionPartial.cpp</a>.</p>
 
 <p>Referenced by <a class="el" href="../../de/d91/first_order_relativistic_light_time_correction_partial_8h_source.html#l00099">tudat::observation_partials::FirstOrderRelativisticLightTimeCorrectionPartial::wrtPpnParameterGamma()</a>.</p>
 
@@ -550,7 +563,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d3/d89/light_time_correction_partial_8cpp_source.html#l00026">26</a> of file <a class="el" href="../../d3/d89/light_time_correction_partial_8cpp_source.html">lightTimeCorrectionPartial.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d3/d6e/light_time_correction_8h_source.html#l00026">tudat::observation_models::first_order_relativistic</a>, <a class="el" href="../../d4/d89/estimatable_parameter_8h_source.html#l00039">tudat::estimatable_parameters::gravitational_parameter</a>, <a class="el" href="../../d4/d89/estimatable_parameter_8h_source.html#l00048">tudat::estimatable_parameters::ppn_parameter_gamma</a>, <a class="el" href="../../de/d91/first_order_relativistic_light_time_correction_partial_8h_source.html#l00075">tudat::observation_partials::FirstOrderRelativisticLightTimeCorrectionPartial::wrtBodyGravitationalParameter()</a>, and <a class="el" href="../../de/d91/first_order_relativistic_light_time_correction_partial_8h_source.html#l00099">tudat::observation_partials::FirstOrderRelativisticLightTimeCorrectionPartial::wrtPpnParameterGamma()</a>.</p>
+<p>References <a class="el" href="../../d3/d6e/light_time_correction_8h_source.html#l00026">tudat::observation_models::first_order_relativistic</a>, <a class="el" href="../../d4/d89/estimatable_parameter_8h_source.html#l00037">tudat::estimatable_parameters::gravitational_parameter</a>, <a class="el" href="../../d4/d89/estimatable_parameter_8h_source.html#l00047">tudat::estimatable_parameters::ppn_parameter_gamma</a>, <a class="el" href="../../de/d91/first_order_relativistic_light_time_correction_partial_8h_source.html#l00075">tudat::observation_partials::FirstOrderRelativisticLightTimeCorrectionPartial::wrtBodyGravitationalParameter()</a>, and <a class="el" href="../../de/d91/first_order_relativistic_light_time_correction_partial_8h_source.html#l00099">tudat::observation_partials::FirstOrderRelativisticLightTimeCorrectionPartial::wrtPpnParameterGamma()</a>.</p>
 
 </div>
 </div>
@@ -715,7 +728,7 @@ template&lt;int ObservationSize&gt; </div>
 
 <p>Definition at line <a class="el" href="../../d9/dbd/observation_partial_8h_source.html#l00284">284</a> of file <a class="el" href="../../d9/dbd/observation_partial_8h_source.html">observationPartial.h</a>.</p>
 
-<p>References <a class="el" href="../../d4/d89/estimatable_parameter_8h_source.html#l00046">tudat::estimatable_parameters::constant_additive_observation_bias</a>, and <a class="el" href="../../d4/d89/estimatable_parameter_8h_source.html#l00047">tudat::estimatable_parameters::constant_relative_observation_bias</a>.</p>
+<p>References <a class="el" href="../../d4/d89/estimatable_parameter_8h_source.html#l00045">tudat::estimatable_parameters::constant_additive_observation_bias</a>, and <a class="el" href="../../d4/d89/estimatable_parameter_8h_source.html#l00046">tudat::estimatable_parameters::constant_relative_observation_bias</a>.</p>
 
 </div>
 </div>
@@ -970,7 +983,7 @@ template&lt;int ObservationSize&gt; </div>
 
 <p>Definition at line <a class="el" href="../../d2/d90/rotation_matrix_partial_8cpp_source.html#l00037">37</a> of file <a class="el" href="../../d2/d90/rotation_matrix_partial_8cpp_source.html">rotationMatrixPartial.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d2/db9/reference_frame_transformations_8h_source.html#l00501">tudat::reference_frames::Z_AXIS_ROTATION_MATRIX_DERIVATIVE_PREMULTIPLIER</a>.</p>
+<p>References <a class="el" href="../../d2/db9/reference_frame_transformations_8h_source.html#l00510">tudat::reference_frames::Z_AXIS_ROTATION_MATRIX_DERIVATIVE_PREMULTIPLIER</a>.</p>
 
 <p>Referenced by <a class="el" href="../../d6/dc8/rotation_matrix_partial_8h_source.html#l00231">tudat::observation_partials::RotationMatrixPartialWrtConstantRotationRate::calculatePartialOfRotationMatrixDerivativeToBaseFrameWrParameter()</a>.</p>
 
@@ -1019,7 +1032,7 @@ template&lt;int ObservationSize&gt; </div>
 
 <p>Definition at line <a class="el" href="../../d2/d90/rotation_matrix_partial_8cpp_source.html#l00048">48</a> of file <a class="el" href="../../d2/d90/rotation_matrix_partial_8cpp_source.html">rotationMatrixPartial.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00496">tudat::reference_frames::getDerivativeOfXAxisRotationWrtAngle()</a>, <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00523">tudat::reference_frames::getDerivativeOfZAxisRotationWrtAngle()</a>, and <a class="el" href="../../d6/d70/mathematical_constants_8h_source.html#l00064">tudat::mathematical_constants::PI</a>.</p>
+<p>References <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00495">tudat::reference_frames::getDerivativeOfXAxisRotationWrtAngle()</a>, <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00525">tudat::reference_frames::getDerivativeOfZAxisRotationWrtAngle()</a>, and <a class="el" href="../../d6/d70/mathematical_constants_8h_source.html#l00064">tudat::mathematical_constants::PI</a>.</p>
 
 <p>Referenced by <a class="el" href="../../d2/d90/rotation_matrix_partial_8cpp_source.html#l00085">calculatePartialOfRotationMatrixFromLocalFrameDerivativeWrtPoleOrientation()</a>, and <a class="el" href="../../d6/dc8/rotation_matrix_partial_8h_source.html#l00279">tudat::observation_partials::RotationMatrixPartialWrtPoleOrientation::calculatePartialOfRotationMatrixToBaseFrameWrParameter()</a>.</p>
 
@@ -1068,7 +1081,7 @@ template&lt;int ObservationSize&gt; </div>
 
 <p>Definition at line <a class="el" href="../../d2/d90/rotation_matrix_partial_8cpp_source.html#l00085">85</a> of file <a class="el" href="../../d2/d90/rotation_matrix_partial_8cpp_source.html">rotationMatrixPartial.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d2/d90/rotation_matrix_partial_8cpp_source.html#l00048">calculatePartialOfRotationMatrixFromLocalFrameWrtPoleOrientation()</a>, and <a class="el" href="../../d2/db9/reference_frame_transformations_8h_source.html#l00501">tudat::reference_frames::Z_AXIS_ROTATION_MATRIX_DERIVATIVE_PREMULTIPLIER</a>.</p>
+<p>References <a class="el" href="../../d2/d90/rotation_matrix_partial_8cpp_source.html#l00048">calculatePartialOfRotationMatrixFromLocalFrameWrtPoleOrientation()</a>, and <a class="el" href="../../d2/db9/reference_frame_transformations_8h_source.html#l00510">tudat::reference_frames::Z_AXIS_ROTATION_MATRIX_DERIVATIVE_PREMULTIPLIER</a>.</p>
 
 <p>Referenced by <a class="el" href="../../d6/dc8/rotation_matrix_partial_8h_source.html#l00296">tudat::observation_partials::RotationMatrixPartialWrtPoleOrientation::calculatePartialOfRotationMatrixDerivativeToBaseFrameWrParameter()</a>.</p>
 
@@ -1129,7 +1142,7 @@ template&lt;int ObservationSize&gt; </div>
 
 <p>Definition at line <a class="el" href="../../d5/d2b/create_angular_position_partials_8cpp_source.html#l00026">26</a> of file <a class="el" href="../../d5/d2b/create_angular_position_partials_8cpp_source.html">createAngularPositionPartials.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d7/dd2/create_cartesian_state_partials_8cpp_source.html#l00022">createCartesianStatePartialsWrtBodyState()</a>, and <a class="el" href="../../d4/d89/estimatable_parameter_8h_source.html#l00038">tudat::estimatable_parameters::initial_body_state</a>.</p>
+<p>References <a class="el" href="../../d7/dd2/create_cartesian_state_partials_8cpp_source.html#l00022">createCartesianStatePartialsWrtBodyState()</a>, and <a class="el" href="../../d4/d89/estimatable_parameter_8h_source.html#l00036">tudat::estimatable_parameters::initial_body_state</a>.</p>
 
 <p>Referenced by <a class="el" href="../../dc/d5d/create_angular_position_partials_8h_source.html#l00117">createAngularPositionPartials()</a>.</p>
 
@@ -1254,7 +1267,7 @@ template&lt;typename ParameterType &gt; </div>
 
 <p>Definition at line <a class="el" href="../../dc/d5d/create_angular_position_partials_8h_source.html#l00117">117</a> of file <a class="el" href="../../dc/d5d/create_angular_position_partials_8h_source.html">createAngularPositionPartials.h</a>.</p>
 
-<p>References <a class="el" href="../../d9/d93/observable_types_8h_source.html#l00029">tudat::observation_models::angular_position</a>, <a class="el" href="../../d4/d89/estimatable_parameter_8h_source.html#l00037">tudat::estimatable_parameters::arc_wise_initial_body_state</a>, <a class="el" href="../../d5/d2b/create_angular_position_partials_8cpp_source.html#l00026">createAngularPositionPartialWrtBodyPosition()</a>, <a class="el" href="../../dc/d5d/create_angular_position_partials_8h_source.html#l00071">createAngularPositionPartialWrtParameter()</a>, <a class="el" href="../../dd/d7a/create_light_time_correction_partials_8cpp_source.html#l00024">createLightTimeCorrectionPartials()</a>, <a class="el" href="../../d4/d89/estimatable_parameter_8h_source.html#l00151">tudat::estimatable_parameters::EstimatableParameter&lt; ParameterType &gt;::getParameterName()</a>, <a class="el" href="../../d4/d89/estimatable_parameter_8h_source.html#l00038">tudat::estimatable_parameters::initial_body_state</a>, and <a class="el" href="../../dc/dbd/estimatable_parameter_8cpp_source.html#l00192">tudat::estimatable_parameters::isParameterObservationLinkProperty()</a>.</p>
+<p>References <a class="el" href="../../d9/d93/observable_types_8h_source.html#l00029">tudat::observation_models::angular_position</a>, <a class="el" href="../../d4/d89/estimatable_parameter_8h_source.html#l00035">tudat::estimatable_parameters::arc_wise_initial_body_state</a>, <a class="el" href="../../d5/d2b/create_angular_position_partials_8cpp_source.html#l00026">createAngularPositionPartialWrtBodyPosition()</a>, <a class="el" href="../../dc/d5d/create_angular_position_partials_8h_source.html#l00071">createAngularPositionPartialWrtParameter()</a>, <a class="el" href="../../dd/d7a/create_light_time_correction_partials_8cpp_source.html#l00024">createLightTimeCorrectionPartials()</a>, <a class="el" href="../../d4/d89/estimatable_parameter_8h_source.html#l00151">tudat::estimatable_parameters::EstimatableParameter&lt; ParameterType &gt;::getParameterName()</a>, <a class="el" href="../../d4/d89/estimatable_parameter_8h_source.html#l00036">tudat::estimatable_parameters::initial_body_state</a>, and <a class="el" href="../../dc/dbd/estimatable_parameter_8cpp_source.html#l00204">tudat::estimatable_parameters::isParameterObservationLinkProperty()</a>.</p>
 
 <p>Referenced by <a class="el" href="../../dc/d5d/create_angular_position_partials_8h_source.html#l00256">createAngularPositionPartials()</a>.</p>
 
@@ -1356,7 +1369,7 @@ template&lt;typename ParameterType &gt; </div>
 
 <p>Definition at line <a class="el" href="../../d7/dd2/create_cartesian_state_partials_8cpp_source.html#l00022">22</a> of file <a class="el" href="../../d7/dd2/create_cartesian_state_partials_8cpp_source.html">createCartesianStatePartials.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d5/d2b/create_angular_position_partials_8cpp_source.html#l00026">createAngularPositionPartialWrtBodyPosition()</a>, <a class="el" href="../../de/dc7/create_one_way_doppler_partials_8cpp_source.html#l00028">createOneWayDopplerPartialWrtBodyState()</a>, <a class="el" href="../../d7/d24/create_one_way_range_partials_8cpp_source.html#l00027">createOneWayRangePartialWrtBodyPosition()</a>, and <a class="el" href="../../d7/dd2/create_cartesian_state_partials_8cpp_source.html#l00310">createPositionObservablePartialWrtPosition()</a>.</p>
+<p>Referenced by <a class="el" href="../../d5/d2b/create_angular_position_partials_8cpp_source.html#l00026">createAngularPositionPartialWrtBodyPosition()</a>, <a class="el" href="../../d7/d1f/create_doppler_partials_8cpp_source.html#l00028">createOneWayDopplerPartialWrtBodyState()</a>, <a class="el" href="../../d7/d24/create_one_way_range_partials_8cpp_source.html#l00027">createOneWayRangePartialWrtBodyPosition()</a>, and <a class="el" href="../../d7/dd2/create_cartesian_state_partials_8cpp_source.html#l00312">createPositionObservablePartialWrtPosition()</a>.</p>
 
 </div>
 </div>
@@ -1401,9 +1414,9 @@ template&lt;typename ParameterType &gt; </div>
 
 <p>Definition at line <a class="el" href="../../d7/dd2/create_cartesian_state_partials_8cpp_source.html#l00061">61</a> of file <a class="el" href="../../d7/dd2/create_cartesian_state_partials_8cpp_source.html">createCartesianStatePartials.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d4/d89/estimatable_parameter_8h_source.html#l00040">tudat::estimatable_parameters::constant_drag_coefficient</a>, <a class="el" href="../../d7/dd2/create_cartesian_state_partials_8cpp_source.html#l00223">createRotationMatrixPartialsWrtParameter()</a>, <a class="el" href="../../de/ddd/ground_station_state_8h_source.html#l00090">tudat::ground_stations::GroundStationState::getCartesianPositionInTime()</a>, <a class="el" href="../../d4/d89/estimatable_parameter_8h_source.html#l00039">tudat::estimatable_parameters::gravitational_parameter</a>, <a class="el" href="../../dc/dbd/estimatable_parameter_8cpp_source.html#l00173">tudat::estimatable_parameters::isParameterRotationMatrixProperty()</a>, <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00027">tudat::basic_astrodynamics::JULIAN_DAY_ON_J2000</a>, and <a class="el" href="../../d4/d89/estimatable_parameter_8h_source.html#l00041">tudat::estimatable_parameters::radiation_pressure_coefficient</a>.</p>
+<p>References <a class="el" href="../../d4/d89/estimatable_parameter_8h_source.html#l00038">tudat::estimatable_parameters::constant_drag_coefficient</a>, <a class="el" href="../../d7/dd2/create_cartesian_state_partials_8cpp_source.html#l00225">createRotationMatrixPartialsWrtParameter()</a>, <a class="el" href="../../de/ddd/ground_station_state_8h_source.html#l00090">tudat::ground_stations::GroundStationState::getCartesianPositionInTime()</a>, <a class="el" href="../../d4/d89/estimatable_parameter_8h_source.html#l00037">tudat::estimatable_parameters::gravitational_parameter</a>, <a class="el" href="../../dc/dbd/estimatable_parameter_8cpp_source.html#l00185">tudat::estimatable_parameters::isParameterRotationMatrixProperty()</a>, <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00044">tudat::basic_astrodynamics::JULIAN_DAY_ON_J2000</a>, and <a class="el" href="../../d4/d89/estimatable_parameter_8h_source.html#l00039">tudat::estimatable_parameters::radiation_pressure_coefficient</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dc/d5d/create_angular_position_partials_8h_source.html#l00071">createAngularPositionPartialWrtParameter()</a>, <a class="el" href="../../d0/d8c/create_one_way_doppler_partials_8h_source.html#l00053">createOneWayDopplerPartialWrtParameter()</a>, and <a class="el" href="../../dc/d71/create_one_way_range_partials_8h_source.html#l00052">createOneWayRangePartialWrtParameter()</a>.</p>
+<p>Referenced by <a class="el" href="../../dc/d5d/create_angular_position_partials_8h_source.html#l00071">createAngularPositionPartialWrtParameter()</a>, <a class="el" href="../../de/deb/create_doppler_partials_8h_source.html#l00055">createOneWayDopplerPartialWrtParameter()</a>, and <a class="el" href="../../dc/d71/create_one_way_range_partials_8h_source.html#l00052">createOneWayRangePartialWrtParameter()</a>.</p>
 
 </div>
 </div>
@@ -1449,7 +1462,7 @@ template&lt;typename ParameterType &gt; </div>
 
 <p>Definition at line <a class="el" href="../../d7/dd2/create_cartesian_state_partials_8cpp_source.html#l00134">134</a> of file <a class="el" href="../../d7/dd2/create_cartesian_state_partials_8cpp_source.html">createCartesianStatePartials.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d7/dd2/create_cartesian_state_partials_8cpp_source.html#l00223">createRotationMatrixPartialsWrtParameter()</a>, <a class="el" href="../../de/ddd/ground_station_state_8h_source.html#l00090">tudat::ground_stations::GroundStationState::getCartesianPositionInTime()</a>, <a class="el" href="../../d4/d89/estimatable_parameter_8h_source.html#l00050">tudat::estimatable_parameters::ground_station_position</a>, <a class="el" href="../../dc/dbd/estimatable_parameter_8cpp_source.html#l00173">tudat::estimatable_parameters::isParameterRotationMatrixProperty()</a>, <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00027">tudat::basic_astrodynamics::JULIAN_DAY_ON_J2000</a>, <a class="el" href="../../d4/d89/estimatable_parameter_8h_source.html#l00042">tudat::estimatable_parameters::spherical_harmonics_cosine_coefficient_block</a>, and <a class="el" href="../../d4/d89/estimatable_parameter_8h_source.html#l00043">tudat::estimatable_parameters::spherical_harmonics_sine_coefficient_block</a>.</p>
+<p>References <a class="el" href="../../d4/d89/estimatable_parameter_8h_source.html#l00040">tudat::estimatable_parameters::arc_wise_radiation_pressure_coefficient</a>, <a class="el" href="../../d7/dd2/create_cartesian_state_partials_8cpp_source.html#l00225">createRotationMatrixPartialsWrtParameter()</a>, <a class="el" href="../../de/ddd/ground_station_state_8h_source.html#l00090">tudat::ground_stations::GroundStationState::getCartesianPositionInTime()</a>, <a class="el" href="../../d4/d89/estimatable_parameter_8h_source.html#l00049">tudat::estimatable_parameters::ground_station_position</a>, <a class="el" href="../../dc/dbd/estimatable_parameter_8cpp_source.html#l00185">tudat::estimatable_parameters::isParameterRotationMatrixProperty()</a>, <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00044">tudat::basic_astrodynamics::JULIAN_DAY_ON_J2000</a>, <a class="el" href="../../d4/d89/estimatable_parameter_8h_source.html#l00041">tudat::estimatable_parameters::spherical_harmonics_cosine_coefficient_block</a>, and <a class="el" href="../../d4/d89/estimatable_parameter_8h_source.html#l00042">tudat::estimatable_parameters::spherical_harmonics_sine_coefficient_block</a>.</p>
 
 </div>
 </div>
@@ -1485,9 +1498,9 @@ template&lt;typename ParameterType &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Requested rotation matrix partial object. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d7/dd2/create_cartesian_state_partials_8cpp_source.html#l00223">223</a> of file <a class="el" href="../../d7/dd2/create_cartesian_state_partials_8cpp_source.html">createCartesianStatePartials.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/dd2/create_cartesian_state_partials_8cpp_source.html#l00225">225</a> of file <a class="el" href="../../d7/dd2/create_cartesian_state_partials_8cpp_source.html">createCartesianStatePartials.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d4/d89/estimatable_parameter_8h_source.html#l00044">tudat::estimatable_parameters::constant_rotation_rate</a>.</p>
+<p>References <a class="el" href="../../d4/d89/estimatable_parameter_8h_source.html#l00043">tudat::estimatable_parameters::constant_rotation_rate</a>.</p>
 
 <p>Referenced by <a class="el" href="../../d7/dd2/create_cartesian_state_partials_8cpp_source.html#l00061">createCartesianStatePartialsWrtParameter()</a>, and <a class="el" href="../../d9/d52/create_cartesian_state_partials_8h_source.html#l00121">createRotationMatrixPartials()</a>.</p>
 
@@ -1525,9 +1538,9 @@ template&lt;typename ParameterType &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Requested rotation matrix partial object. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d7/dd2/create_cartesian_state_partials_8cpp_source.html#l00265">265</a> of file <a class="el" href="../../d7/dd2/create_cartesian_state_partials_8cpp_source.html">createCartesianStatePartials.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/dd2/create_cartesian_state_partials_8cpp_source.html#l00267">267</a> of file <a class="el" href="../../d7/dd2/create_cartesian_state_partials_8cpp_source.html">createCartesianStatePartials.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d4/d89/estimatable_parameter_8h_source.html#l00045">tudat::estimatable_parameters::rotation_pole_position</a>.</p>
+<p>References <a class="el" href="../../d4/d89/estimatable_parameter_8h_source.html#l00044">tudat::estimatable_parameters::rotation_pole_position</a>.</p>
 
 </div>
 </div>
@@ -1579,9 +1592,9 @@ template&lt;typename ParameterType &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Single object that computes partial of given observable w.r.t. given parameter. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d7/dd2/create_cartesian_state_partials_8cpp_source.html#l00310">310</a> of file <a class="el" href="../../d7/dd2/create_cartesian_state_partials_8cpp_source.html">createCartesianStatePartials.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/dd2/create_cartesian_state_partials_8cpp_source.html#l00312">312</a> of file <a class="el" href="../../d7/dd2/create_cartesian_state_partials_8cpp_source.html">createCartesianStatePartials.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d7/dd2/create_cartesian_state_partials_8cpp_source.html#l00022">createCartesianStatePartialsWrtBodyState()</a>, and <a class="el" href="../../d4/d89/estimatable_parameter_8h_source.html#l00038">tudat::estimatable_parameters::initial_body_state</a>.</p>
+<p>References <a class="el" href="../../d7/dd2/create_cartesian_state_partials_8cpp_source.html#l00022">createCartesianStatePartialsWrtBodyState()</a>, and <a class="el" href="../../d4/d89/estimatable_parameter_8h_source.html#l00036">tudat::estimatable_parameters::initial_body_state</a>.</p>
 
 <p>Referenced by <a class="el" href="../../d9/d52/create_cartesian_state_partials_8h_source.html#l00208">createPositionObservablePartials()</a>, and <a class="el" href="../../d9/d52/create_cartesian_state_partials_8h_source.html#l00121">createRotationMatrixPartials()</a>.</p>
 
@@ -1631,9 +1644,9 @@ template&lt;typename ParameterType &gt; </div>
 
 <p>Definition at line <a class="el" href="../../d9/d52/create_cartesian_state_partials_8h_source.html#l00121">121</a> of file <a class="el" href="../../d9/d52/create_cartesian_state_partials_8h_source.html">createCartesianStatePartials.h</a>.</p>
 
-<p>References <a class="el" href="../../d7/dd2/create_cartesian_state_partials_8cpp_source.html#l00310">createPositionObservablePartialWrtPosition()</a>, <a class="el" href="../../d7/dd2/create_cartesian_state_partials_8cpp_source.html#l00223">createRotationMatrixPartialsWrtParameter()</a>, and <a class="el" href="../../dc/dbd/estimatable_parameter_8cpp_source.html#l00173">tudat::estimatable_parameters::isParameterRotationMatrixProperty()</a>.</p>
+<p>References <a class="el" href="../../d7/dd2/create_cartesian_state_partials_8cpp_source.html#l00312">createPositionObservablePartialWrtPosition()</a>, <a class="el" href="../../d7/dd2/create_cartesian_state_partials_8cpp_source.html#l00225">createRotationMatrixPartialsWrtParameter()</a>, and <a class="el" href="../../dc/dbd/estimatable_parameter_8cpp_source.html#l00185">tudat::estimatable_parameters::isParameterRotationMatrixProperty()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d1/d2b/create_acceleration_partials_8h_source.html#l00064">tudat::simulation_setup::createAnalyticalAccelerationPartial()</a>.</p>
+<p>Referenced by <a class="el" href="../../d1/d2b/create_acceleration_partials_8h_source.html#l00065">tudat::simulation_setup::createAnalyticalAccelerationPartial()</a>.</p>
 
 </div>
 </div>
@@ -1680,7 +1693,7 @@ template&lt;typename ParameterType &gt; </div>
 
 <p>Definition at line <a class="el" href="../../d9/d52/create_cartesian_state_partials_8h_source.html#l00208">208</a> of file <a class="el" href="../../d9/d52/create_cartesian_state_partials_8h_source.html">createCartesianStatePartials.h</a>.</p>
 
-<p>References <a class="el" href="../../d7/dd2/create_cartesian_state_partials_8cpp_source.html#l00310">createPositionObservablePartialWrtPosition()</a>.</p>
+<p>References <a class="el" href="../../d7/dd2/create_cartesian_state_partials_8cpp_source.html#l00312">createPositionObservablePartialWrtPosition()</a>.</p>
 
 <p>Referenced by <a class="el" href="../../d9/d52/create_cartesian_state_partials_8h_source.html#l00276">createPositionObservablePartials()</a>.</p>
 
@@ -1814,219 +1827,6 @@ template&lt;typename ParameterType &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a8d677a768950373961466ded898b2960"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt; boost::shared_ptr&lt; <a class="el" href="../../d5/d11/classtudat_1_1observation__partials_1_1_light_time_correction_partial.html">LightTimeCorrectionPartial</a> &gt; &gt; tudat::observation_partials::createLightTimeCorrectionPartials </td>
-          <td>(</td>
-          <td class="paramtype">const std::vector&lt; boost::shared_ptr&lt; <a class="el" href="../../df/d20/classtudat_1_1observation__models_1_1_light_time_correction.html">observation_models::LightTimeCorrection</a> &gt; &gt; &amp;&#160;</td>
-          <td class="paramname"><em>lightTimeCorrectionList</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Function to create a partial objects from list of light time corrections. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">lightTimeCorrectionList</td><td>List of light time corrections. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>List of light-time correction partial objects </dd></dl>
-
-<p>Definition at line <a class="el" href="../../dd/d7a/create_light_time_correction_partials_8cpp_source.html#l00024">24</a> of file <a class="el" href="../../dd/d7a/create_light_time_correction_partials_8cpp_source.html">createLightTimeCorrectionPartials.cpp</a>.</p>
-
-<p>References <a class="el" href="../../d3/d6e/light_time_correction_8h_source.html#l00026">tudat::observation_models::first_order_relativistic</a>.</p>
-
-<p>Referenced by <a class="el" href="../../dc/d5d/create_angular_position_partials_8h_source.html#l00117">createAngularPositionPartials()</a>, <a class="el" href="../../d0/d8c/create_one_way_doppler_partials_8h_source.html#l00143">createOneWayDopplerPartials()</a>, and <a class="el" href="../../dc/d71/create_one_way_range_partials_8h_source.html#l00119">createOneWayRangePartials()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a5264f9cd532946c2a40e1489be35fb09"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename ParameterType &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">std::pair&lt; <a class="el" href="../../d0/ddd/namespacetudat_1_1observation__partials.html#a3f32bfb0b5f174fc6e4638c0c9a3d54e">SingleLinkObservationPartialList</a>, boost::shared_ptr&lt; <a class="el" href="../../d7/db3/classtudat_1_1observation__partials_1_1_position_partial_scaling.html">PositionPartialScaling</a> &gt; &gt; tudat::observation_partials::createNWayRangePartials </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d2/df9/namespacetudat_1_1observation__models.html#a7a66b5e78e636627f69a082a10c57b52">observation_models::LinkEnds</a> &amp;&#160;</td>
-          <td class="paramname"><em>nWayRangeLinkEnds</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="../../d4/da8/namespacetudat_1_1simulation__setup.html#a4a7938c5b0b78593806673957cc169c4">simulation_setup::NamedBodyMap</a> &amp;&#160;</td>
-          <td class="paramname"><em>bodyMap</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const boost::shared_ptr&lt; <a class="el" href="../../d5/d06/classtudat_1_1estimatable__parameters_1_1_estimatable_parameter_set.html">estimatable_parameters::EstimatableParameterSet</a>&lt; ParameterType &gt; &gt;&#160;</td>
-          <td class="paramname"><em>parametersToEstimate</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::vector&lt; std::vector&lt; boost::shared_ptr&lt; <a class="el" href="../../df/d20/classtudat_1_1observation__models_1_1_light_time_correction.html">observation_models::LightTimeCorrection</a> &gt; &gt; &gt;&#160;</td>
-          <td class="paramname"><em>lightTimeCorrections</em> = <code>std::vector&lt;&#160;std::vector&lt;&#160;boost::shared_ptr&lt;&#160;<a class="el" href="../../df/d20/classtudat_1_1observation__models_1_1_light_time_correction.html">observation_models::LightTimeCorrection</a>&#160;&gt;&#160;&gt;&#160;&gt;(&#160;)</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Function to generate n-way range partials and associated scaler for all parameters that are to be estimated, for a single link ends set. The set of parameters and bodies that are to be estimated, as well as the set of link ends (each of which must contain a transmitter and receiever linkEndType) that are to be used. The n-way range partials are built from one-way range partials of the constituent links </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">nWayRangeLinkEnds</td><td>Link ends (transmitter and receiever) for which n-way range partials are to be calculated (i.e. for which n-way range observations are to be processed). </td></tr>
-    <tr><td class="paramname">bodyMap</td><td>List of all bodies, for creating n-way range partials. </td></tr>
-    <tr><td class="paramname">parametersToEstimate</td><td>Set of parameters that are to be estimated (in addition to initial states of requested bodies) </td></tr>
-    <tr><td class="paramname">lightTimeCorrections</td><td>List of light time correction partials to be used (empty by default). First vector entry is index of link in n-way link ends, second vector is list of light-time corrections. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Set of observation partials with associated indices in complete vector of parameters that are estimated, representing all necessary n-way range partials of a single link end, and <a class="el" href="../../de/d81/classtudat_1_1observation__partials_1_1_n_way_range_scaling.html" title="Derived class for scaling three-dimensional position partial to n-way range observable partial...">NWayRangeScaling</a>, object, used for scaling the position partial members of all NWayRangePartials in link end. </dd></dl>
-
-<p>Definition at line <a class="el" href="../../d8/d2c/create_n_way_range_partials_8h_source.html#l00053">53</a> of file <a class="el" href="../../d8/d2c/create_n_way_range_partials_8h_source.html">createNWayRangePartials.h</a>.</p>
-
-<p>References <a class="el" href="../../dc/d71/create_one_way_range_partials_8h_source.html#l00119">createOneWayRangePartials()</a>, <a class="el" href="../../dd/d68/link_type_defs_8cpp_source.html#l00107">tudat::observation_models::getNWayLinkEnumFromIndex()</a>, <a class="el" href="../../d9/d56/link_type_defs_8h_source.html#l00036">tudat::observation_models::receiver</a>, and <a class="el" href="../../d9/d56/link_type_defs_8h_source.html#l00031">tudat::observation_models::transmitter</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a45dcdcaffbaa289e200352f6f83e05fb"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename ParameterType &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">std::map&lt; <a class="el" href="../../d2/df9/namespacetudat_1_1observation__models.html#a7a66b5e78e636627f69a082a10c57b52">observation_models::LinkEnds</a>, std::pair&lt; <a class="el" href="../../d0/ddd/namespacetudat_1_1observation__partials.html#a3f32bfb0b5f174fc6e4638c0c9a3d54e">SingleLinkObservationPartialList</a>, boost::shared_ptr&lt; <a class="el" href="../../d7/db3/classtudat_1_1observation__partials_1_1_position_partial_scaling.html">PositionPartialScaling</a> &gt; &gt; &gt; tudat::observation_partials::createNWayRangePartials </td>
-          <td>(</td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="../../d2/df9/namespacetudat_1_1observation__models.html#a7a66b5e78e636627f69a082a10c57b52">observation_models::LinkEnds</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>linkEnds</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="../../d4/da8/namespacetudat_1_1simulation__setup.html#a4a7938c5b0b78593806673957cc169c4">simulation_setup::NamedBodyMap</a> &amp;&#160;</td>
-          <td class="paramname"><em>bodyMap</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const boost::shared_ptr&lt; <a class="el" href="../../d5/d06/classtudat_1_1estimatable__parameters_1_1_estimatable_parameter_set.html">estimatable_parameters::EstimatableParameterSet</a>&lt; ParameterType &gt; &gt;&#160;</td>
-          <td class="paramname"><em>parametersToEstimate</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::map&lt; <a class="el" href="../../d2/df9/namespacetudat_1_1observation__models.html#a7a66b5e78e636627f69a082a10c57b52">observation_models::LinkEnds</a>, std::vector&lt; std::vector&lt; boost::shared_ptr&lt; <a class="el" href="../../df/d20/classtudat_1_1observation__models_1_1_light_time_correction.html">observation_models::LightTimeCorrection</a> &gt; &gt; &gt; &gt; &amp;&#160;</td>
-          <td class="paramname"><em>lightTimeCorrections</em> = <code>std::map&lt;&#160;<a class="el" href="../../d2/df9/namespacetudat_1_1observation__models.html#a7a66b5e78e636627f69a082a10c57b52">observation_models::LinkEnds</a>,&#160;std::vector&lt;&#160;std::vector&lt;&#160;boost::shared_ptr&lt;&#160;<a class="el" href="../../df/d20/classtudat_1_1observation__models_1_1_light_time_correction.html">observation_models::LightTimeCorrection</a>&#160;&gt;&#160;&gt;&#160;&gt;&#160;&gt;(&#160;)</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Function to generate n-way range partials for all parameters that are to be estimated, for all sets of link ends. The n-way range partials are generated per set of link ends. The set of parameters and bodies that are to be estimated, as well as the set of link ends (each of which must contain a transmitter and receiever linkEndType) that are to be used. The n-way range partials are built from one-way range partials of the constituent links </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">linkEnds</td><td>List of all n-way link ends sets with observation models for which partials are to be created </td></tr>
-    <tr><td class="paramname">bodyMap</td><td>List of all bodies, for creating n-way range partials. </td></tr>
-    <tr><td class="paramname">parametersToEstimate</td><td>Set of parameters that are to be estimated (in addition to initial states of requested bodies) </td></tr>
-    <tr><td class="paramname">lightTimeCorrections</td><td>List of light time correction partials to be used (empty by default). First vector entry is index of link in n-way link ends, second vector is list of light-time corrections. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Map of SingleLinkObservationPartialList, representing all necessary n-way range partials of a single link end, and <a class="el" href="../../de/d81/classtudat_1_1observation__partials_1_1_n_way_range_scaling.html" title="Derived class for scaling three-dimensional position partial to n-way range observable partial...">NWayRangeScaling</a>, object, used for scaling the position partial members of all NWayRangePartials in link end. </dd></dl>
-
-<p>Definition at line <a class="el" href="../../d8/d2c/create_n_way_range_partials_8h_source.html#l00157">157</a> of file <a class="el" href="../../d8/d2c/create_n_way_range_partials_8h_source.html">createNWayRangePartials.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="abf7e64296b59a8a80c7d93c3d2a5151f"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename ObservationScalarType , typename TimeType , int ObservationSize&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../d0/ddd/namespacetudat_1_1observation__partials.html#add9a8e2da02390b44ac4063fe9d76a40">PerLinkEndPerLightTimeSolutionCorrections</a> tudat::observation_partials::getLightTimeCorrectionsList </td>
-          <td>(</td>
-          <td class="paramtype">const std::map&lt; <a class="el" href="../../d2/df9/namespacetudat_1_1observation__models.html#a7a66b5e78e636627f69a082a10c57b52">observation_models::LinkEnds</a>, boost::shared_ptr&lt; <a class="el" href="../../de/dc0/classtudat_1_1observation__models_1_1_observation_model.html">observation_models::ObservationModel</a>&lt; ObservationSize, ObservationScalarType, TimeType &gt; &gt; &gt;&#160;</td>
-          <td class="paramname"><em>observationModels</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Function to retrieve a list of light-time corrections per link end from a list of observation models. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">observationModels</td><td>Map of observation models (may not be of mixed type) with LinkEnds of observable as map key </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Map of light-time corrections, with associated link ends as key. </dd></dl>
-
-<p>Definition at line <a class="el" href="../../df/de7/create_observation_partials_8h_source.html#l00044">44</a> of file <a class="el" href="../../df/de7/create_observation_partials_8h_source.html">createObservationPartials.h</a>.</p>
-
-<p>References <a class="el" href="../../d9/d93/observable_types_8h_source.html#l00029">tudat::observation_models::angular_position</a>, <a class="el" href="../../d4/d88/n_way_range_observation_model_8h_source.html#l00212">tudat::observation_models::NWayRangeObservationModel&lt; ObservationScalarType, TimeType &gt;::getLightTimeCalculators()</a>, <a class="el" href="../../d9/d93/observable_types_8h_source.html#l00033">tudat::observation_models::n_way_range</a>, <a class="el" href="../../d9/d93/observable_types_8h_source.html#l00032">tudat::observation_models::one_way_differenced_range</a>, <a class="el" href="../../d9/d93/observable_types_8h_source.html#l00031">tudat::observation_models::one_way_doppler</a>, <a class="el" href="../../d9/d93/observable_types_8h_source.html#l00028">tudat::observation_models::one_way_range</a>, and <a class="el" href="../../d9/d93/observable_types_8h_source.html#l00030">tudat::observation_models::position_observable</a>.</p>
-
-<p>Referenced by <a class="el" href="../../df/de7/create_observation_partials_8h_source.html#l00256">tudat::observation_partials::ObservationPartialCreator&lt; 1, ObservationScalarType, TimeType &gt;::createObservationPartials()</a>, and <a class="el" href="../../df/de7/create_observation_partials_8h_source.html#l00322">tudat::observation_partials::ObservationPartialCreator&lt; 2, ObservationScalarType, TimeType &gt;::createObservationPartials()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="aa7c40808a0481fb7eb4b37e85e6d5f93"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;int ObservationSize&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void tudat::observation_partials::splitObservationPartialsAndScalers </td>
-          <td>(</td>
-          <td class="paramtype">const std::map&lt; <a class="el" href="../../d2/df9/namespacetudat_1_1observation__models.html#a7a66b5e78e636627f69a082a10c57b52">observation_models::LinkEnds</a>, std::pair&lt; std::map&lt; std::pair&lt; int, int &gt;, boost::shared_ptr&lt; <a class="el" href="../../d1/d55/classtudat_1_1observation__partials_1_1_observation_partial.html">ObservationPartial</a>&lt; ObservationSize &gt; &gt; &gt;, boost::shared_ptr&lt; <a class="el" href="../../d7/db3/classtudat_1_1observation__partials_1_1_position_partial_scaling.html">PositionPartialScaling</a> &gt; &gt; &gt; &amp;&#160;</td>
-          <td class="paramname"><em>observationPartialsAndScalers</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::map&lt; <a class="el" href="../../d2/df9/namespacetudat_1_1observation__models.html#a7a66b5e78e636627f69a082a10c57b52">observation_models::LinkEnds</a>, std::map&lt; std::pair&lt; int, int &gt;, boost::shared_ptr&lt; <a class="el" href="../../d1/d55/classtudat_1_1observation__partials_1_1_observation_partial.html">observation_partials::ObservationPartial</a>&lt; ObservationSize &gt; &gt; &gt; &gt; &amp;&#160;</td>
-          <td class="paramname"><em>observationPartials</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::map&lt; <a class="el" href="../../d2/df9/namespacetudat_1_1observation__models.html#a7a66b5e78e636627f69a082a10c57b52">observation_models::LinkEnds</a>, boost::shared_ptr&lt; <a class="el" href="../../d7/db3/classtudat_1_1observation__partials_1_1_position_partial_scaling.html">observation_partials::PositionPartialScaling</a> &gt; &gt; &amp;&#160;</td>
-          <td class="paramname"><em>observationPartialScalers</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Function to split observation partials and scaling object (produced by observationPartialsAndScaler function) into separate containers</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">observationPartialsAndScalers</td><td>Combined list of observation partials and scaling objects </td></tr>
-    <tr><td class="paramname">observationPartials</td><td>List of observation partials, per link ends, and per parameter indices (returned by reference) </td></tr>
-    <tr><td class="paramname">observationPartialScalers</td><td>List of position partial scaling objects, per link ends (returned by reference) </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Definition at line <a class="el" href="../../df/de7/create_observation_partials_8h_source.html#l00173">173</a> of file <a class="el" href="../../df/de7/create_observation_partials_8h_source.html">createObservationPartials.h</a>.</p>
-
-<p>Referenced by <a class="el" href="../../d3/dcf/create_observation_manager_8h_source.html#l00197">tudat::observation_models::createObservationManager()</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="add107bb914ae280d05671bf0e75a8f72"></a>
 <div class="memitem">
 <div class="memproto">
@@ -2081,11 +1881,11 @@ template&lt;int ObservationSize&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>One-way doppler partial object wrt a current position of a body (is NULL if no parameter dependency exists). </dd></dl>
 
-<p>Definition at line <a class="el" href="../../de/dc7/create_one_way_doppler_partials_8cpp_source.html#l00028">28</a> of file <a class="el" href="../../de/dc7/create_one_way_doppler_partials_8cpp_source.html">createOneWayDopplerPartials.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d1f/create_doppler_partials_8cpp_source.html#l00028">28</a> of file <a class="el" href="../../d7/d1f/create_doppler_partials_8cpp_source.html">createDopplerPartials.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d7/dd2/create_cartesian_state_partials_8cpp_source.html#l00022">createCartesianStatePartialsWrtBodyState()</a>, and <a class="el" href="../../d4/d89/estimatable_parameter_8h_source.html#l00038">tudat::estimatable_parameters::initial_body_state</a>.</p>
+<p>References <a class="el" href="../../d7/dd2/create_cartesian_state_partials_8cpp_source.html#l00022">createCartesianStatePartialsWrtBodyState()</a>, and <a class="el" href="../../d4/d89/estimatable_parameter_8h_source.html#l00036">tudat::estimatable_parameters::initial_body_state</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d0/d8c/create_one_way_doppler_partials_8h_source.html#l00143">createOneWayDopplerPartials()</a>, and <a class="el" href="../../d0/d8c/create_one_way_doppler_partials_8h_source.html#l00053">createOneWayDopplerPartialWrtParameter()</a>.</p>
+<p>Referenced by <a class="el" href="../../de/deb/create_doppler_partials_8h_source.html#l00145">createOneWayDopplerPartials()</a>, and <a class="el" href="../../de/deb/create_doppler_partials_8h_source.html#l00055">createOneWayDopplerPartialWrtParameter()</a>.</p>
 
 </div>
 </div>
@@ -2128,9 +1928,9 @@ template&lt;int ObservationSize&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Scaling object for proper-time rate partials </dd></dl>
 
-<p>Definition at line <a class="el" href="../../de/dc7/create_one_way_doppler_partials_8cpp_source.html#l00061">61</a> of file <a class="el" href="../../de/dc7/create_one_way_doppler_partials_8cpp_source.html">createOneWayDopplerPartials.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d1f/create_doppler_partials_8cpp_source.html#l00061">61</a> of file <a class="el" href="../../d7/d1f/create_doppler_partials_8cpp_source.html">createDopplerPartials.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d0/d8c/create_one_way_doppler_partials_8h_source.html#l00143">createOneWayDopplerPartials()</a>, and <a class="el" href="../../d0/d8c/create_one_way_doppler_partials_8h_source.html#l00053">createOneWayDopplerPartialWrtParameter()</a>.</p>
+<p>Referenced by <a class="el" href="../../de/deb/create_doppler_partials_8h_source.html#l00145">createOneWayDopplerPartials()</a>, and <a class="el" href="../../de/deb/create_doppler_partials_8h_source.html#l00055">createOneWayDopplerPartialWrtParameter()</a>.</p>
 
 </div>
 </div>
@@ -2195,11 +1995,11 @@ template&lt;typename ParameterType &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>One-way doppler partial object wrt a single parameter (is NULL if no parameter dependency exists). </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d0/d8c/create_one_way_doppler_partials_8h_source.html#l00053">53</a> of file <a class="el" href="../../d0/d8c/create_one_way_doppler_partials_8h_source.html">createOneWayDopplerPartials.h</a>.</p>
+<p>Definition at line <a class="el" href="../../de/deb/create_doppler_partials_8h_source.html#l00055">55</a> of file <a class="el" href="../../de/deb/create_doppler_partials_8h_source.html">createDopplerPartials.h</a>.</p>
 
-<p>References <a class="el" href="../../d7/dd2/create_cartesian_state_partials_8cpp_source.html#l00061">createCartesianStatePartialsWrtParameter()</a>, <a class="el" href="../../de/dc7/create_one_way_doppler_partials_8cpp_source.html#l00061">createDopplerProperTimePartials()</a>, and <a class="el" href="../../de/dc7/create_one_way_doppler_partials_8cpp_source.html#l00028">createOneWayDopplerPartialWrtBodyState()</a>.</p>
+<p>References <a class="el" href="../../d7/dd2/create_cartesian_state_partials_8cpp_source.html#l00061">createCartesianStatePartialsWrtParameter()</a>, <a class="el" href="../../d7/d1f/create_doppler_partials_8cpp_source.html#l00061">createDopplerProperTimePartials()</a>, and <a class="el" href="../../d7/d1f/create_doppler_partials_8cpp_source.html#l00028">createOneWayDopplerPartialWrtBodyState()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d0/d8c/create_one_way_doppler_partials_8h_source.html#l00143">createOneWayDopplerPartials()</a>.</p>
+<p>Referenced by <a class="el" href="../../de/deb/create_doppler_partials_8h_source.html#l00145">createOneWayDopplerPartials()</a>.</p>
 
 </div>
 </div>
@@ -2265,9 +2065,11 @@ template&lt;typename ParameterType &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Set of observation partials with associated indices in complete vector of parameters that are estimated, representing all necessary one-way doppler partials of a single link end, and <a class="el" href="../../d1/d9b/classtudat_1_1observation__partials_1_1_one_way_doppler_scaling.html" title="Derived class for scaling three-dimensional position partial to one-way doppler observable partial...">OneWayDopplerScaling</a>, object, used for scaling the position partial members of all OneWayDopplerPartials in link end. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d0/d8c/create_one_way_doppler_partials_8h_source.html#l00143">143</a> of file <a class="el" href="../../d0/d8c/create_one_way_doppler_partials_8h_source.html">createOneWayDopplerPartials.h</a>.</p>
+<p>Definition at line <a class="el" href="../../de/deb/create_doppler_partials_8h_source.html#l00145">145</a> of file <a class="el" href="../../de/deb/create_doppler_partials_8h_source.html">createDopplerPartials.h</a>.</p>
 
-<p>References <a class="el" href="../../d4/d89/estimatable_parameter_8h_source.html#l00037">tudat::estimatable_parameters::arc_wise_initial_body_state</a>, <a class="el" href="../../de/dc7/create_one_way_doppler_partials_8cpp_source.html#l00061">createDopplerProperTimePartials()</a>, <a class="el" href="../../dd/d7a/create_light_time_correction_partials_8cpp_source.html#l00024">createLightTimeCorrectionPartials()</a>, <a class="el" href="../../de/dc7/create_one_way_doppler_partials_8cpp_source.html#l00028">createOneWayDopplerPartialWrtBodyState()</a>, <a class="el" href="../../d0/d8c/create_one_way_doppler_partials_8h_source.html#l00053">createOneWayDopplerPartialWrtParameter()</a>, <a class="el" href="../../d9/d59/linear_algebra_8cpp_source.html#l00111">tudat::linear_algebra::evaluateSecondBlockInStateVector()</a>, <a class="el" href="../../d4/d89/estimatable_parameter_8h_source.html#l00151">tudat::estimatable_parameters::EstimatableParameter&lt; ParameterType &gt;::getParameterName()</a>, <a class="el" href="../../d4/d89/estimatable_parameter_8h_source.html#l00038">tudat::estimatable_parameters::initial_body_state</a>, <a class="el" href="../../dc/dbd/estimatable_parameter_8cpp_source.html#l00192">tudat::estimatable_parameters::isParameterObservationLinkProperty()</a>, <a class="el" href="../../d9/d93/observable_types_8h_source.html#l00031">tudat::observation_models::one_way_doppler</a>, <a class="el" href="../../d5/da6/numerical_derivative_8h_source.html#l00044">tudat::numerical_derivatives::order8</a>, <a class="el" href="../../d9/d56/link_type_defs_8h_source.html#l00036">tudat::observation_models::receiver</a>, and <a class="el" href="../../d9/d56/link_type_defs_8h_source.html#l00031">tudat::observation_models::transmitter</a>.</p>
+<p>References <a class="el" href="../../d4/d89/estimatable_parameter_8h_source.html#l00035">tudat::estimatable_parameters::arc_wise_initial_body_state</a>, <a class="el" href="../../d7/d1f/create_doppler_partials_8cpp_source.html#l00061">createDopplerProperTimePartials()</a>, <a class="el" href="../../dd/d7a/create_light_time_correction_partials_8cpp_source.html#l00024">createLightTimeCorrectionPartials()</a>, <a class="el" href="../../d7/d1f/create_doppler_partials_8cpp_source.html#l00028">createOneWayDopplerPartialWrtBodyState()</a>, <a class="el" href="../../de/deb/create_doppler_partials_8h_source.html#l00055">createOneWayDopplerPartialWrtParameter()</a>, <a class="el" href="../../d9/d59/linear_algebra_8cpp_source.html#l00104">tudat::linear_algebra::evaluateSecondBlockInStateVector()</a>, <a class="el" href="../../d4/d89/estimatable_parameter_8h_source.html#l00151">tudat::estimatable_parameters::EstimatableParameter&lt; ParameterType &gt;::getParameterName()</a>, <a class="el" href="../../d4/d89/estimatable_parameter_8h_source.html#l00036">tudat::estimatable_parameters::initial_body_state</a>, <a class="el" href="../../dc/dbd/estimatable_parameter_8cpp_source.html#l00204">tudat::estimatable_parameters::isParameterObservationLinkProperty()</a>, <a class="el" href="../../d9/d93/observable_types_8h_source.html#l00031">tudat::observation_models::one_way_doppler</a>, <a class="el" href="../../d5/da6/numerical_derivative_8h_source.html#l00042">tudat::numerical_derivatives::order8</a>, <a class="el" href="../../d9/d56/link_type_defs_8h_source.html#l00036">tudat::observation_models::receiver</a>, and <a class="el" href="../../d9/d56/link_type_defs_8h_source.html#l00031">tudat::observation_models::transmitter</a>.</p>
+
+<p>Referenced by <a class="el" href="../../de/deb/create_doppler_partials_8h_source.html#l00375">createTwoWayDopplerPartials()</a>.</p>
 
 </div>
 </div>
@@ -2280,7 +2082,7 @@ template&lt;typename ObservationScalarType , typename TimeType &gt; </div>
         <tr>
           <td class="memname">std::map&lt; <a class="el" href="../../d2/df9/namespacetudat_1_1observation__models.html#a7a66b5e78e636627f69a082a10c57b52">observation_models::LinkEnds</a>, std::pair&lt; <a class="el" href="../../d0/ddd/namespacetudat_1_1observation__partials.html#a3f32bfb0b5f174fc6e4638c0c9a3d54e">SingleLinkObservationPartialList</a>,boost::shared_ptr&lt; <a class="el" href="../../d7/db3/classtudat_1_1observation__partials_1_1_position_partial_scaling.html">PositionPartialScaling</a> &gt; &gt; &gt; tudat::observation_partials::createOneWayDopplerPartials </td>
           <td>(</td>
-          <td class="paramtype">const std::map&lt; <a class="el" href="../../d2/df9/namespacetudat_1_1observation__models.html#a7a66b5e78e636627f69a082a10c57b52">observation_models::LinkEnds</a>, boost::shared_ptr&lt; <a class="el" href="../../de/dc0/classtudat_1_1observation__models_1_1_observation_model.html">observation_models::ObservationModel</a>&lt; 1, ObservationScalarType, TimeType &gt; &gt; &gt;&#160;</td>
+          <td class="paramtype">const std::map&lt; <a class="el" href="../../d2/df9/namespacetudat_1_1observation__models.html#a7a66b5e78e636627f69a082a10c57b52">observation_models::LinkEnds</a>, boost::shared_ptr&lt; <a class="el" href="../../de/dc0/classtudat_1_1observation__models_1_1_observation_model.html">observation_models::ObservationModel</a>&lt; 1, <a class="el" href="../../d0/d6f/classes__e_8js.html#aee24a28d672b815552e3b29a7c94c0d6">ObservationScalarType</a>, TimeType &gt; &gt; &gt;&#160;</td>
           <td class="paramname"><em>observationModelList</em>, </td>
         </tr>
         <tr>
@@ -2292,7 +2094,7 @@ template&lt;typename ObservationScalarType , typename TimeType &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const boost::shared_ptr&lt; <a class="el" href="../../d5/d06/classtudat_1_1estimatable__parameters_1_1_estimatable_parameter_set.html">estimatable_parameters::EstimatableParameterSet</a>&lt; ObservationScalarType &gt; &gt;&#160;</td>
+          <td class="paramtype">const boost::shared_ptr&lt; <a class="el" href="../../d5/d06/classtudat_1_1estimatable__parameters_1_1_estimatable_parameter_set.html">estimatable_parameters::EstimatableParameterSet</a>&lt; <a class="el" href="../../d0/d6f/classes__e_8js.html#aee24a28d672b815552e3b29a7c94c0d6">ObservationScalarType</a> &gt; &gt;&#160;</td>
           <td class="paramname"><em>parametersToEstimate</em>&#160;</td>
         </tr>
         <tr>
@@ -2312,9 +2114,335 @@ template&lt;typename ObservationScalarType , typename TimeType &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Map of SingleLinkObservationPartialList, representing all necessary one-way doppler partials of a single link end, and <a class="el" href="../../d1/d9b/classtudat_1_1observation__partials_1_1_one_way_doppler_scaling.html" title="Derived class for scaling three-dimensional position partial to one-way doppler observable partial...">OneWayDopplerScaling</a>, object, used for scaling the position partial members of all OneWayDopplerPartials in link end. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d0/d8c/create_one_way_doppler_partials_8h_source.html#l00301">301</a> of file <a class="el" href="../../d0/d8c/create_one_way_doppler_partials_8h_source.html">createOneWayDopplerPartials.h</a>.</p>
+<p>Definition at line <a class="el" href="../../de/deb/create_doppler_partials_8h_source.html#l00303">303</a> of file <a class="el" href="../../de/deb/create_doppler_partials_8h_source.html">createDopplerPartials.h</a>.</p>
 
-<p>References <a class="el" href="../../d9/d56/link_type_defs_8h_source.html#l00036">tudat::observation_models::receiver</a>, and <a class="el" href="../../d9/d56/link_type_defs_8h_source.html#l00031">tudat::observation_models::transmitter</a>.</p>
+<p>References <a class="el" href="../../d6/d08/all__f_8js_source.html#l00037">ObservationScalarType</a>, <a class="el" href="../../d9/d56/link_type_defs_8h_source.html#l00036">tudat::observation_models::receiver</a>, and <a class="el" href="../../d9/d56/link_type_defs_8h_source.html#l00031">tudat::observation_models::transmitter</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2e6f10bace7a04104fd669400c1c053b"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ParameterType , typename TimeType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::pair&lt; <a class="el" href="../../d0/ddd/namespacetudat_1_1observation__partials.html#a3f32bfb0b5f174fc6e4638c0c9a3d54e">SingleLinkObservationPartialList</a>, boost::shared_ptr&lt; <a class="el" href="../../d7/db3/classtudat_1_1observation__partials_1_1_position_partial_scaling.html">PositionPartialScaling</a> &gt; &gt; tudat::observation_partials::createTwoWayDopplerPartials </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d2/df9/namespacetudat_1_1observation__models.html#a7a66b5e78e636627f69a082a10c57b52">observation_models::LinkEnds</a> &amp;&#160;</td>
+          <td class="paramname"><em>twoWayDopplerLinkEnds</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const boost::shared_ptr&lt; <a class="el" href="../../df/db4/classtudat_1_1observation__models_1_1_two_way_doppler_observation_model.html">observation_models::TwoWayDopplerObservationModel</a>&lt; ParameterType, TimeType &gt; &gt;&#160;</td>
+          <td class="paramname"><em>twoWayObservationModel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d4/da8/namespacetudat_1_1simulation__setup.html#a4a7938c5b0b78593806673957cc169c4">simulation_setup::NamedBodyMap</a> &amp;&#160;</td>
+          <td class="paramname"><em>bodyMap</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const boost::shared_ptr&lt; <a class="el" href="../../d5/d06/classtudat_1_1estimatable__parameters_1_1_estimatable_parameter_set.html">estimatable_parameters::EstimatableParameterSet</a>&lt; ParameterType &gt; &gt;&#160;</td>
+          <td class="paramname"><em>parametersToEstimate</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; std::vector&lt; boost::shared_ptr&lt; <a class="el" href="../../df/d20/classtudat_1_1observation__models_1_1_light_time_correction.html">observation_models::LightTimeCorrection</a> &gt; &gt; &gt;&#160;</td>
+          <td class="paramname"><em>lightTimeCorrections</em> = <code>std::vector&lt;&#160;std::vector&lt;&#160;boost::shared_ptr&lt;&#160;<a class="el" href="../../df/d20/classtudat_1_1observation__models_1_1_light_time_correction.html">observation_models::LightTimeCorrection</a>&#160;&gt;&#160;&gt;&#160;&gt;(&#160;)</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Function to generate tow-way Doppler partials and associated scaler for all parameters that are to be estimated, for a single link ends set. The set of parameters and bodies that are to be estimated, as well as the set of link ends (each of which must contain a transmitter and receiever linkEndType) that are to be used. The tow-way Doppler partials are built from one-way Doppler partials of the constituent links </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">twoWayDopplerLinkEnds</td><td>Link ends (transmitter and receiever) for which tow-way Doppler partials are to be calculated (i.e. for which tow-way Doppler observations are to be processed). </td></tr>
+    <tr><td class="paramname">twoWayObservationModel</td><td>Observation model for two-way Doppler for which partials are to be created </td></tr>
+    <tr><td class="paramname">bodyMap</td><td>List of all bodies, for creating tow-way Doppler partials. </td></tr>
+    <tr><td class="paramname">parametersToEstimate</td><td>Set of parameters that are to be estimated (in addition to initial states of requested bodies) </td></tr>
+    <tr><td class="paramname">lightTimeCorrections</td><td>List of light time correction partials to be used (empty by default). First vector entry is index of link in 2-way link ends (up and downlink), second vector is list of light-time corrections. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Set of observation partials with associated indices in complete vector of parameters that are estimated, representing all necessary two-way Doppler partials of a single link end, and <a class="el" href="../../d7/dd3/classtudat_1_1observation__partials_1_1_two_way_doppler_scaling.html">TwoWayDopplerScaling</a>, object, used for scaling the position partial members of all TwoWayDopplerPartials in link end. </dd></dl>
+
+<p>Definition at line <a class="el" href="../../de/deb/create_doppler_partials_8h_source.html#l00375">375</a> of file <a class="el" href="../../de/deb/create_doppler_partials_8h_source.html">createDopplerPartials.h</a>.</p>
+
+<p>References <a class="el" href="../../de/deb/create_doppler_partials_8h_source.html#l00145">createOneWayDopplerPartials()</a>, <a class="el" href="../../dc/d71/create_one_way_range_partials_8h_source.html#l00119">createOneWayRangePartials()</a>, <a class="el" href="../../dd/d68/link_type_defs_8cpp_source.html#l00104">tudat::observation_models::getNWayLinkEnumFromIndex()</a>, <a class="el" href="../../dd/d14/observation_model_8h_source.html#l00333">tudat::observation_models::getSizeOneObservationFunctionAtDoublePrecisionFromObservationModel()</a>, <a class="el" href="../../d9/d56/link_type_defs_8h_source.html#l00036">tudat::observation_models::receiver</a>, and <a class="el" href="../../d9/d56/link_type_defs_8h_source.html#l00031">tudat::observation_models::transmitter</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab1c26ff761871a1e898761321dec80b5"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ParameterType , typename TimeType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt; <a class="el" href="../../d2/df9/namespacetudat_1_1observation__models.html#a7a66b5e78e636627f69a082a10c57b52">observation_models::LinkEnds</a>, std::pair&lt; <a class="el" href="../../d0/ddd/namespacetudat_1_1observation__partials.html#a3f32bfb0b5f174fc6e4638c0c9a3d54e">SingleLinkObservationPartialList</a>, boost::shared_ptr&lt; <a class="el" href="../../d7/db3/classtudat_1_1observation__partials_1_1_position_partial_scaling.html">PositionPartialScaling</a> &gt; &gt; &gt; tudat::observation_partials::createTwoWayDopplerPartials </td>
+          <td>(</td>
+          <td class="paramtype">const std::map&lt; <a class="el" href="../../d2/df9/namespacetudat_1_1observation__models.html#a7a66b5e78e636627f69a082a10c57b52">observation_models::LinkEnds</a>, boost::shared_ptr&lt; <a class="el" href="../../de/dc0/classtudat_1_1observation__models_1_1_observation_model.html">observation_models::ObservationModel</a>&lt; 1, ParameterType, TimeType &gt; &gt; &gt;&#160;</td>
+          <td class="paramname"><em>observationModelList</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d4/da8/namespacetudat_1_1simulation__setup.html#a4a7938c5b0b78593806673957cc169c4">simulation_setup::NamedBodyMap</a> &amp;&#160;</td>
+          <td class="paramname"><em>bodyMap</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const boost::shared_ptr&lt; <a class="el" href="../../d5/d06/classtudat_1_1estimatable__parameters_1_1_estimatable_parameter_set.html">estimatable_parameters::EstimatableParameterSet</a>&lt; ParameterType &gt; &gt;&#160;</td>
+          <td class="paramname"><em>parametersToEstimate</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::map&lt; <a class="el" href="../../d2/df9/namespacetudat_1_1observation__models.html#a7a66b5e78e636627f69a082a10c57b52">observation_models::LinkEnds</a>, std::vector&lt; std::vector&lt; boost::shared_ptr&lt; <a class="el" href="../../df/d20/classtudat_1_1observation__models_1_1_light_time_correction.html">observation_models::LightTimeCorrection</a> &gt; &gt; &gt; &gt; &amp;&#160;</td>
+          <td class="paramname"><em>lightTimeCorrections</em> = <code>std::map&lt;&#160;<a class="el" href="../../d2/df9/namespacetudat_1_1observation__models.html#a7a66b5e78e636627f69a082a10c57b52">observation_models::LinkEnds</a>,&#160;std::vector&lt;&#160;std::vector&lt;&#160;boost::shared_ptr&lt;&#160;<a class="el" href="../../df/d20/classtudat_1_1observation__models_1_1_light_time_correction.html">observation_models::LightTimeCorrection</a>&#160;&gt;&#160;&gt;&#160;&gt;&#160;&gt;(&#160;)</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Function to generate two-way Doppler partials for all parameters that are to be estimated, for all sets of link ends. The two-way Doppler partials are generated per set of link ends. The set of parameters and bodies that are to be estimated, as well as the set of link ends (each of which must contain a transmitter and receiever linkEndType) that are to be used. The two-way Doppler partials are built from one-way range partials of the constituent links </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">observationModelList</td><td>List of all two-way Doppler models (as a function of LinkEnds) for which partials are to be created. </td></tr>
+    <tr><td class="paramname">bodyMap</td><td>List of all bodies, for creating two-way Doppler partials. </td></tr>
+    <tr><td class="paramname">parametersToEstimate</td><td>Set of parameters that are to be estimated (in addition to initial states of requested bodies) </td></tr>
+    <tr><td class="paramname">lightTimeCorrections</td><td>List of light time correction used (empty by default). First vector entry is index of link in 2-way link ends (up and downlink), second vector is list of light-time corrections. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Map of SingleLinkObservationPartialList, representing all necessary two-way Doppler partials of a single link end, and <a class="el" href="../../d7/dd3/classtudat_1_1observation__partials_1_1_two_way_doppler_scaling.html">TwoWayDopplerScaling</a>, object, used for scaling the position partial members of all TwoWayDopplerPartials in link end. </dd></dl>
+
+<p>Definition at line <a class="el" href="../../de/deb/create_doppler_partials_8h_source.html#l00555">555</a> of file <a class="el" href="../../de/deb/create_doppler_partials_8h_source.html">createDopplerPartials.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8d677a768950373961466ded898b2960"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; boost::shared_ptr&lt; <a class="el" href="../../d5/d11/classtudat_1_1observation__partials_1_1_light_time_correction_partial.html">LightTimeCorrectionPartial</a> &gt; &gt; tudat::observation_partials::createLightTimeCorrectionPartials </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; boost::shared_ptr&lt; <a class="el" href="../../df/d20/classtudat_1_1observation__models_1_1_light_time_correction.html">observation_models::LightTimeCorrection</a> &gt; &gt; &amp;&#160;</td>
+          <td class="paramname"><em>lightTimeCorrectionList</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Function to create a partial objects from list of light time corrections. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lightTimeCorrectionList</td><td>List of light time corrections. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>List of light-time correction partial objects </dd></dl>
+
+<p>Definition at line <a class="el" href="../../dd/d7a/create_light_time_correction_partials_8cpp_source.html#l00024">24</a> of file <a class="el" href="../../dd/d7a/create_light_time_correction_partials_8cpp_source.html">createLightTimeCorrectionPartials.cpp</a>.</p>
+
+<p>References <a class="el" href="../../d3/d6e/light_time_correction_8h_source.html#l00026">tudat::observation_models::first_order_relativistic</a>.</p>
+
+<p>Referenced by <a class="el" href="../../dc/d5d/create_angular_position_partials_8h_source.html#l00117">createAngularPositionPartials()</a>, <a class="el" href="../../de/deb/create_doppler_partials_8h_source.html#l00145">createOneWayDopplerPartials()</a>, and <a class="el" href="../../dc/d71/create_one_way_range_partials_8h_source.html#l00119">createOneWayRangePartials()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5264f9cd532946c2a40e1489be35fb09"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ParameterType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::pair&lt; <a class="el" href="../../d0/ddd/namespacetudat_1_1observation__partials.html#a3f32bfb0b5f174fc6e4638c0c9a3d54e">SingleLinkObservationPartialList</a>, boost::shared_ptr&lt; <a class="el" href="../../d7/db3/classtudat_1_1observation__partials_1_1_position_partial_scaling.html">PositionPartialScaling</a> &gt; &gt; tudat::observation_partials::createNWayRangePartials </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d2/df9/namespacetudat_1_1observation__models.html#a7a66b5e78e636627f69a082a10c57b52">observation_models::LinkEnds</a> &amp;&#160;</td>
+          <td class="paramname"><em>nWayRangeLinkEnds</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d4/da8/namespacetudat_1_1simulation__setup.html#a4a7938c5b0b78593806673957cc169c4">simulation_setup::NamedBodyMap</a> &amp;&#160;</td>
+          <td class="paramname"><em>bodyMap</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const boost::shared_ptr&lt; <a class="el" href="../../d5/d06/classtudat_1_1estimatable__parameters_1_1_estimatable_parameter_set.html">estimatable_parameters::EstimatableParameterSet</a>&lt; ParameterType &gt; &gt;&#160;</td>
+          <td class="paramname"><em>parametersToEstimate</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; std::vector&lt; boost::shared_ptr&lt; <a class="el" href="../../df/d20/classtudat_1_1observation__models_1_1_light_time_correction.html">observation_models::LightTimeCorrection</a> &gt; &gt; &gt;&#160;</td>
+          <td class="paramname"><em>lightTimeCorrections</em> = <code>std::vector&lt;&#160;std::vector&lt;&#160;boost::shared_ptr&lt;&#160;<a class="el" href="../../df/d20/classtudat_1_1observation__models_1_1_light_time_correction.html">observation_models::LightTimeCorrection</a>&#160;&gt;&#160;&gt;&#160;&gt;(&#160;)</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Function to generate n-way range partials and associated scaler for all parameters that are to be estimated, for a single link ends set. The set of parameters and bodies that are to be estimated, as well as the set of link ends (each of which must contain a transmitter and receiever linkEndType) that are to be used. The n-way range partials are built from one-way range partials of the constituent links </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nWayRangeLinkEnds</td><td>Link ends (transmitter and receiever) for which n-way range partials are to be calculated (i.e. for which n-way range observations are to be processed). </td></tr>
+    <tr><td class="paramname">bodyMap</td><td>List of all bodies, for creating n-way range partials. </td></tr>
+    <tr><td class="paramname">parametersToEstimate</td><td>Set of parameters that are to be estimated (in addition to initial states of requested bodies) </td></tr>
+    <tr><td class="paramname">lightTimeCorrections</td><td>List of light time correction partials to be used (empty by default). First vector entry is index of link in n-way link ends, second vector is list of light-time corrections. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Set of observation partials with associated indices in complete vector of parameters that are estimated, representing all necessary n-way range partials of a single link end, and <a class="el" href="../../de/d81/classtudat_1_1observation__partials_1_1_n_way_range_scaling.html" title="Derived class for scaling three-dimensional position partial to n-way range observable partial...">NWayRangeScaling</a>, object, used for scaling the position partial members of all NWayRangePartials in link end. </dd></dl>
+
+<p>Definition at line <a class="el" href="../../d8/d2c/create_n_way_range_partials_8h_source.html#l00053">53</a> of file <a class="el" href="../../d8/d2c/create_n_way_range_partials_8h_source.html">createNWayRangePartials.h</a>.</p>
+
+<p>References <a class="el" href="../../dc/d71/create_one_way_range_partials_8h_source.html#l00119">createOneWayRangePartials()</a>, <a class="el" href="../../dd/d68/link_type_defs_8cpp_source.html#l00104">tudat::observation_models::getNWayLinkEnumFromIndex()</a>, <a class="el" href="../../d9/d56/link_type_defs_8h_source.html#l00036">tudat::observation_models::receiver</a>, and <a class="el" href="../../d9/d56/link_type_defs_8h_source.html#l00031">tudat::observation_models::transmitter</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a45dcdcaffbaa289e200352f6f83e05fb"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ParameterType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt; <a class="el" href="../../d2/df9/namespacetudat_1_1observation__models.html#a7a66b5e78e636627f69a082a10c57b52">observation_models::LinkEnds</a>, std::pair&lt; <a class="el" href="../../d0/ddd/namespacetudat_1_1observation__partials.html#a3f32bfb0b5f174fc6e4638c0c9a3d54e">SingleLinkObservationPartialList</a>, boost::shared_ptr&lt; <a class="el" href="../../d7/db3/classtudat_1_1observation__partials_1_1_position_partial_scaling.html">PositionPartialScaling</a> &gt; &gt; &gt; tudat::observation_partials::createNWayRangePartials </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="../../d2/df9/namespacetudat_1_1observation__models.html#a7a66b5e78e636627f69a082a10c57b52">observation_models::LinkEnds</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>linkEnds</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d4/da8/namespacetudat_1_1simulation__setup.html#a4a7938c5b0b78593806673957cc169c4">simulation_setup::NamedBodyMap</a> &amp;&#160;</td>
+          <td class="paramname"><em>bodyMap</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const boost::shared_ptr&lt; <a class="el" href="../../d5/d06/classtudat_1_1estimatable__parameters_1_1_estimatable_parameter_set.html">estimatable_parameters::EstimatableParameterSet</a>&lt; ParameterType &gt; &gt;&#160;</td>
+          <td class="paramname"><em>parametersToEstimate</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::map&lt; <a class="el" href="../../d2/df9/namespacetudat_1_1observation__models.html#a7a66b5e78e636627f69a082a10c57b52">observation_models::LinkEnds</a>, std::vector&lt; std::vector&lt; boost::shared_ptr&lt; <a class="el" href="../../df/d20/classtudat_1_1observation__models_1_1_light_time_correction.html">observation_models::LightTimeCorrection</a> &gt; &gt; &gt; &gt; &amp;&#160;</td>
+          <td class="paramname"><em>lightTimeCorrections</em> = <code>std::map&lt;&#160;<a class="el" href="../../d2/df9/namespacetudat_1_1observation__models.html#a7a66b5e78e636627f69a082a10c57b52">observation_models::LinkEnds</a>,&#160;std::vector&lt;&#160;std::vector&lt;&#160;boost::shared_ptr&lt;&#160;<a class="el" href="../../df/d20/classtudat_1_1observation__models_1_1_light_time_correction.html">observation_models::LightTimeCorrection</a>&#160;&gt;&#160;&gt;&#160;&gt;&#160;&gt;(&#160;)</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Function to generate n-way range partials for all parameters that are to be estimated, for all sets of link ends. The n-way range partials are generated per set of link ends. The set of parameters and bodies that are to be estimated, as well as the set of link ends (each of which must contain a transmitter and receiever linkEndType) that are to be used. The n-way range partials are built from one-way range partials of the constituent links </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">linkEnds</td><td>List of all n-way link ends sets with observation models for which partials are to be created </td></tr>
+    <tr><td class="paramname">bodyMap</td><td>List of all bodies, for creating n-way range partials. </td></tr>
+    <tr><td class="paramname">parametersToEstimate</td><td>Set of parameters that are to be estimated (in addition to initial states of requested bodies) </td></tr>
+    <tr><td class="paramname">lightTimeCorrections</td><td>List of light time correction partials to be used (empty by default). First vector entry is index of link in n-way link ends, second vector is list of light-time corrections. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Map of SingleLinkObservationPartialList, representing all necessary n-way range partials of a single link end, and <a class="el" href="../../de/d81/classtudat_1_1observation__partials_1_1_n_way_range_scaling.html" title="Derived class for scaling three-dimensional position partial to n-way range observable partial...">NWayRangeScaling</a>, object, used for scaling the position partial members of all NWayRangePartials in link end. </dd></dl>
+
+<p>Definition at line <a class="el" href="../../d8/d2c/create_n_way_range_partials_8h_source.html#l00157">157</a> of file <a class="el" href="../../d8/d2c/create_n_way_range_partials_8h_source.html">createNWayRangePartials.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="abf7e64296b59a8a80c7d93c3d2a5151f"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ObservationScalarType , typename TimeType , int ObservationSize&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d0/ddd/namespacetudat_1_1observation__partials.html#add9a8e2da02390b44ac4063fe9d76a40">PerLinkEndPerLightTimeSolutionCorrections</a> tudat::observation_partials::getLightTimeCorrectionsList </td>
+          <td>(</td>
+          <td class="paramtype">const std::map&lt; <a class="el" href="../../d2/df9/namespacetudat_1_1observation__models.html#a7a66b5e78e636627f69a082a10c57b52">observation_models::LinkEnds</a>, boost::shared_ptr&lt; <a class="el" href="../../de/dc0/classtudat_1_1observation__models_1_1_observation_model.html">observation_models::ObservationModel</a>&lt; ObservationSize, <a class="el" href="../../d0/d6f/classes__e_8js.html#aee24a28d672b815552e3b29a7c94c0d6">ObservationScalarType</a>, TimeType &gt; &gt; &gt;&#160;</td>
+          <td class="paramname"><em>observationModels</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Function to retrieve a list of light-time corrections per link end from a list of observation models. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">observationModels</td><td>Map of observation models (may not be of mixed type) with LinkEnds of observable as map key </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Map of light-time corrections, with associated link ends as key. </dd></dl>
+
+<p>Definition at line <a class="el" href="../../df/de7/create_observation_partials_8h_source.html#l00044">44</a> of file <a class="el" href="../../df/de7/create_observation_partials_8h_source.html">createObservationPartials.h</a>.</p>
+
+<p>References <a class="el" href="../../d9/d93/observable_types_8h_source.html#l00029">tudat::observation_models::angular_position</a>, <a class="el" href="../../d4/d88/n_way_range_observation_model_8h_source.html#l00211">tudat::observation_models::NWayRangeObservationModel&lt; ObservationScalarType, TimeType &gt;::getLightTimeCalculators()</a>, <a class="el" href="../../d9/d93/observable_types_8h_source.html#l00033">tudat::observation_models::n_way_range</a>, <a class="el" href="../../d6/d08/all__f_8js_source.html#l00037">ObservationScalarType</a>, <a class="el" href="../../d9/d93/observable_types_8h_source.html#l00032">tudat::observation_models::one_way_differenced_range</a>, <a class="el" href="../../d9/d93/observable_types_8h_source.html#l00031">tudat::observation_models::one_way_doppler</a>, <a class="el" href="../../d9/d93/observable_types_8h_source.html#l00028">tudat::observation_models::one_way_range</a>, <a class="el" href="../../d9/d93/observable_types_8h_source.html#l00030">tudat::observation_models::position_observable</a>, and <a class="el" href="../../d9/d93/observable_types_8h_source.html#l00034">tudat::observation_models::two_way_doppler</a>.</p>
+
+<p>Referenced by <a class="el" href="../../df/de7/create_observation_partials_8h_source.html#l00269">tudat::observation_partials::ObservationPartialCreator&lt; 1, ObservationScalarType, TimeType &gt;::createObservationPartials()</a>, and <a class="el" href="../../df/de7/create_observation_partials_8h_source.html#l00340">tudat::observation_partials::ObservationPartialCreator&lt; 2, ObservationScalarType, TimeType &gt;::createObservationPartials()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa7c40808a0481fb7eb4b37e85e6d5f93"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int ObservationSize&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void tudat::observation_partials::splitObservationPartialsAndScalers </td>
+          <td>(</td>
+          <td class="paramtype">const std::map&lt; <a class="el" href="../../d2/df9/namespacetudat_1_1observation__models.html#a7a66b5e78e636627f69a082a10c57b52">observation_models::LinkEnds</a>, std::pair&lt; std::map&lt; std::pair&lt; int, int &gt;, boost::shared_ptr&lt; <a class="el" href="../../d1/d55/classtudat_1_1observation__partials_1_1_observation_partial.html">ObservationPartial</a>&lt; ObservationSize &gt; &gt; &gt;, boost::shared_ptr&lt; <a class="el" href="../../d7/db3/classtudat_1_1observation__partials_1_1_position_partial_scaling.html">PositionPartialScaling</a> &gt; &gt; &gt; &amp;&#160;</td>
+          <td class="paramname"><em>observationPartialsAndScalers</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::map&lt; <a class="el" href="../../d2/df9/namespacetudat_1_1observation__models.html#a7a66b5e78e636627f69a082a10c57b52">observation_models::LinkEnds</a>, std::map&lt; std::pair&lt; int, int &gt;, boost::shared_ptr&lt; <a class="el" href="../../d1/d55/classtudat_1_1observation__partials_1_1_observation_partial.html">observation_partials::ObservationPartial</a>&lt; ObservationSize &gt; &gt; &gt; &gt; &amp;&#160;</td>
+          <td class="paramname"><em>observationPartials</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::map&lt; <a class="el" href="../../d2/df9/namespacetudat_1_1observation__models.html#a7a66b5e78e636627f69a082a10c57b52">observation_models::LinkEnds</a>, boost::shared_ptr&lt; <a class="el" href="../../d7/db3/classtudat_1_1observation__partials_1_1_position_partial_scaling.html">observation_partials::PositionPartialScaling</a> &gt; &gt; &amp;&#160;</td>
+          <td class="paramname"><em>observationPartialScalers</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Function to split observation partials and scaling object (produced by observationPartialsAndScaler function) into separate containers</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">observationPartialsAndScalers</td><td>Combined list of observation partials and scaling objects </td></tr>
+    <tr><td class="paramname">observationPartials</td><td>List of observation partials, per link ends, and per parameter indices (returned by reference) </td></tr>
+    <tr><td class="paramname">observationPartialScalers</td><td>List of position partial scaling objects, per link ends (returned by reference) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="../../df/de7/create_observation_partials_8h_source.html#l00186">186</a> of file <a class="el" href="../../df/de7/create_observation_partials_8h_source.html">createObservationPartials.h</a>.</p>
+
+<p>Referenced by <a class="el" href="../../d3/dcf/create_observation_manager_8h_source.html#l00197">tudat::observation_models::createObservationManager()</a>.</p>
 
 </div>
 </div>
@@ -2374,7 +2502,7 @@ template&lt;typename ObservationScalarType , typename TimeType &gt; </div>
 
 <p>Definition at line <a class="el" href="../../d7/d24/create_one_way_range_partials_8cpp_source.html#l00027">27</a> of file <a class="el" href="../../d7/d24/create_one_way_range_partials_8cpp_source.html">createOneWayRangePartials.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d7/dd2/create_cartesian_state_partials_8cpp_source.html#l00022">createCartesianStatePartialsWrtBodyState()</a>, and <a class="el" href="../../d4/d89/estimatable_parameter_8h_source.html#l00038">tudat::estimatable_parameters::initial_body_state</a>.</p>
+<p>References <a class="el" href="../../d7/dd2/create_cartesian_state_partials_8cpp_source.html#l00022">createCartesianStatePartialsWrtBodyState()</a>, and <a class="el" href="../../d4/d89/estimatable_parameter_8h_source.html#l00036">tudat::estimatable_parameters::initial_body_state</a>.</p>
 
 <p>Referenced by <a class="el" href="../../dc/d71/create_one_way_range_partials_8h_source.html#l00119">createOneWayRangePartials()</a>, and <a class="el" href="../../dc/d71/create_one_way_range_partials_8h_source.html#l00052">createOneWayRangePartialWrtParameter()</a>.</p>
 
@@ -2499,9 +2627,9 @@ template&lt;typename ParameterType &gt; </div>
 
 <p>Definition at line <a class="el" href="../../dc/d71/create_one_way_range_partials_8h_source.html#l00119">119</a> of file <a class="el" href="../../dc/d71/create_one_way_range_partials_8h_source.html">createOneWayRangePartials.h</a>.</p>
 
-<p>References <a class="el" href="../../d4/d89/estimatable_parameter_8h_source.html#l00037">tudat::estimatable_parameters::arc_wise_initial_body_state</a>, <a class="el" href="../../dd/d7a/create_light_time_correction_partials_8cpp_source.html#l00024">createLightTimeCorrectionPartials()</a>, <a class="el" href="../../d7/d24/create_one_way_range_partials_8cpp_source.html#l00027">createOneWayRangePartialWrtBodyPosition()</a>, <a class="el" href="../../dc/d71/create_one_way_range_partials_8h_source.html#l00052">createOneWayRangePartialWrtParameter()</a>, <a class="el" href="../../d4/d89/estimatable_parameter_8h_source.html#l00151">tudat::estimatable_parameters::EstimatableParameter&lt; ParameterType &gt;::getParameterName()</a>, <a class="el" href="../../d4/d89/estimatable_parameter_8h_source.html#l00038">tudat::estimatable_parameters::initial_body_state</a>, <a class="el" href="../../dc/dbd/estimatable_parameter_8cpp_source.html#l00192">tudat::estimatable_parameters::isParameterObservationLinkProperty()</a>, and <a class="el" href="../../d9/d93/observable_types_8h_source.html#l00028">tudat::observation_models::one_way_range</a>.</p>
+<p>References <a class="el" href="../../d4/d89/estimatable_parameter_8h_source.html#l00035">tudat::estimatable_parameters::arc_wise_initial_body_state</a>, <a class="el" href="../../dd/d7a/create_light_time_correction_partials_8cpp_source.html#l00024">createLightTimeCorrectionPartials()</a>, <a class="el" href="../../d7/d24/create_one_way_range_partials_8cpp_source.html#l00027">createOneWayRangePartialWrtBodyPosition()</a>, <a class="el" href="../../dc/d71/create_one_way_range_partials_8h_source.html#l00052">createOneWayRangePartialWrtParameter()</a>, <a class="el" href="../../d4/d89/estimatable_parameter_8h_source.html#l00151">tudat::estimatable_parameters::EstimatableParameter&lt; ParameterType &gt;::getParameterName()</a>, <a class="el" href="../../d4/d89/estimatable_parameter_8h_source.html#l00036">tudat::estimatable_parameters::initial_body_state</a>, <a class="el" href="../../dc/dbd/estimatable_parameter_8cpp_source.html#l00204">tudat::estimatable_parameters::isParameterObservationLinkProperty()</a>, and <a class="el" href="../../d9/d93/observable_types_8h_source.html#l00028">tudat::observation_models::one_way_range</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d0/d28/create_differenced_one_way_range_rate_partials_8h_source.html#l00063">createDifferencedOneWayRangeRatePartials()</a>, and <a class="el" href="../../d8/d2c/create_n_way_range_partials_8h_source.html#l00053">createNWayRangePartials()</a>.</p>
+<p>Referenced by <a class="el" href="../../d0/d28/create_differenced_one_way_range_rate_partials_8h_source.html#l00063">createDifferencedOneWayRangeRatePartials()</a>, <a class="el" href="../../d8/d2c/create_n_way_range_partials_8h_source.html#l00053">createNWayRangePartials()</a>, and <a class="el" href="../../de/deb/create_doppler_partials_8h_source.html#l00375">createTwoWayDopplerPartials()</a>.</p>
 
 </div>
 </div>
@@ -2580,14 +2708,14 @@ template&lt;typename ParameterType &gt; </div>
 
 <p>Definition at line <a class="el" href="../../d1/d53/light_time_correction_partial_8h_source.html#l00082">82</a> of file <a class="el" href="../../d1/d53/light_time_correction_partial_8h_source.html">lightTimeCorrectionPartial.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d4/d8c/angular_position_partial_8h_source.html#l00151">tudat::observation_partials::AngularPositionPartial::AngularPositionPartial()</a>, <a class="el" href="../../d3/d6c/one_way_doppler_partial_8cpp_source.html#l00339">tudat::observation_partials::OneWayDopplerPartial::OneWayDopplerPartial()</a>, and <a class="el" href="../../d0/d20/one_way_range_partial_8h_source.html#l00122">tudat::observation_partials::OneWayRangePartial::OneWayRangePartial()</a>.</p>
+<p>Referenced by <a class="el" href="../../d4/d8c/angular_position_partial_8h_source.html#l00151">tudat::observation_partials::AngularPositionPartial::AngularPositionPartial()</a>, <a class="el" href="../../d3/d6c/one_way_doppler_partial_8cpp_source.html#l00339">tudat::observation_partials::OneWayDopplerPartial::OneWayDopplerPartial()</a>, and <a class="el" href="../../d0/d20/one_way_range_partial_8h_source.html#l00120">tudat::observation_partials::OneWayRangePartial::OneWayRangePartial()</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 27 2017 09:33:01 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 7 2017 11:20:33 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

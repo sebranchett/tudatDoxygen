@@ -98,8 +98,12 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="textblock"><code>#include &lt;Eigen/Core&gt;</code><br />
 <code>#include &lt;Eigen/Geometry&gt;</code><br />
 <code>#include &lt;boost/shared_ptr.hpp&gt;</code><br />
-<code>#include &quot;<a class="el" href="../../d0/d77/body_8h_source.html">Tudat/SimulationSetup/EnvironmentSetup/body.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d0/da1/basic_input_output_8h_source.html">Tudat/InputOutput/basicInputOutput.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">Tudat/SimulationSetup/EnvironmentSetup/body.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../df/d78/rotational_ephemeris_8h_source.html">Tudat/Astrodynamics/Ephemerides/rotationalEphemeris.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d4/db3/physical_constants_8h_source.html">Tudat/Astrodynamics/BasicAstrodynamics/physicalConstants.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../dd/d07/unit_conversions_8h_source.html">Tudat/Astrodynamics/BasicAstrodynamics/unitConversions.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d0/d5a/earth_orientation_8h_source.html">Tudat/External/SofaInterface/earthOrientation.h</a>&quot;</code><br />
 </div>
 <p><a href="../../d8/dd1/create_rotation_model_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -123,7 +127,8 @@ Namespaces</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:aa5497750edd6264351a07cad4380b588"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da8/namespacetudat_1_1simulation__setup.html#aa5497750edd6264351a07cad4380b588">tudat::simulation_setup::RotationModelType</a> { <a class="el" href="../../d4/da8/namespacetudat_1_1simulation__setup.html#aa5497750edd6264351a07cad4380b588ae20a7968d0e87a75232b679d3675d8b6">tudat::simulation_setup::simple_rotation_model</a>, 
-<a class="el" href="../../d4/da8/namespacetudat_1_1simulation__setup.html#aa5497750edd6264351a07cad4380b588a9cef1ffde7116c59f743f821a3876987">tudat::simulation_setup::spice_rotation_model</a>
+<a class="el" href="../../d4/da8/namespacetudat_1_1simulation__setup.html#aa5497750edd6264351a07cad4380b588a9cef1ffde7116c59f743f821a3876987">tudat::simulation_setup::spice_rotation_model</a>, 
+<a class="el" href="../../d4/da8/namespacetudat_1_1simulation__setup.html#aa5497750edd6264351a07cad4380b588ab071d525db7d4ff702afc346b6023fbf">tudat::simulation_setup::gcrs_to_itrs_rotation_model</a>
  }<tr class="memdesc:aa5497750edd6264351a07cad4380b588"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of rotation models available in simulations.  <a href="../../d4/da8/namespacetudat_1_1simulation__setup.html#aa5497750edd6264351a07cad4380b588">More...</a><br /></td></tr>
 </td></tr>
 <tr class="separator:aa5497750edd6264351a07cad4380b588"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -137,7 +142,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 27 2017 09:32:58 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 7 2017 11:20:30 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

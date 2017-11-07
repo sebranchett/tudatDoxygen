@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['keplerephemeris',['KeplerEphemeris',['../d7/d39/classtudat_1_1ephemerides_1_1_kepler_ephemeris.html',1,'tudat::ephemerides']]],
-  ['keplerephemerissettings',['KeplerEphemerisSettings',['../d9/dd7/classtudat_1_1simulation__setup_1_1_kepler_ephemeris_settings.html',1,'tudat::simulation_setup']]],
-  ['keplerstateextractor',['KeplerStateExtractor',['../d7/dd7/classtudat_1_1ephemerides_1_1_kepler_state_extractor.html',1,'tudat::ephemerides']]],
-  ['kerneldensitydistribution',['KernelDensityDistribution',['../dd/dca/classtudat_1_1statistics_1_1_kernel_density_distribution.html',1,'tudat::statistics']]]
+  ['jsonsimulationmanager',['JsonSimulationManager',['../d2/dce/classtudat_1_1json__interface_1_1_json_simulation_manager.html',1,'tudat::json_interface']]],
+  ['jumpdatalinearinterpolator',['JumpDataLinearInterpolator',['../db/d00/classtudat_1_1interpolators_1_1_jump_data_linear_interpolator.html',1,'tudat::interpolators']]]
 ];

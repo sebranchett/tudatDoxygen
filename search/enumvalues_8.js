@@ -1,10 +1,10 @@
 var searchData=
 [
-  ['iau_5f2000_5fa',['iau_2000_a',['../d6/d6d/namespacetudat.html#aaae1879970189f05ea61fd28047d7593a80253080877f6a9f6b76029e767cd014',1,'tudat']]],
-  ['iau_5f2000_5fb',['iau_2000_b',['../d6/d6d/namespacetudat.html#aaae1879970189f05ea61fd28047d7593a1f168fdaa8b1b5cbd7c69a4d9ad5568c',1,'tudat']]],
-  ['iau_5f2006',['iau_2006',['../d6/d6d/namespacetudat.html#aaae1879970189f05ea61fd28047d7593ab3e360803f155c43a8737df7832e7cd6',1,'tudat']]],
+  ['iau_5f2000_5fa',['iau_2000_a',['../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#a8c1e505c4331efde501dfeadff43e682add01e4a08ea62d0221f50245d6c169bb',1,'tudat::basic_astrodynamics']]],
+  ['iau_5f2000_5fb',['iau_2000_b',['../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#a8c1e505c4331efde501dfeadff43e682a84c8328c472060e49bd8a48362e030b5',1,'tudat::basic_astrodynamics']]],
+  ['iau_5f2006',['iau_2006',['../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#a8c1e505c4331efde501dfeadff43e682a95ea2a7426f26d6b9f75364b4377e067',1,'tudat::basic_astrodynamics']]],
   ['inclinationindex',['inclinationIndex',['../d1/d3e/namespacetudat_1_1orbital__element__conversions.html#a36d63f93f6571946fcf36aed50bb6070a51ab4208ab945a8dfef7b577526aaa4c',1,'tudat::orbital_element_conversions']]],
-  ['inertial',['inertial',['../d2/d9c/namespacetudat_1_1propagators.html#a75543347a0571f08ef1b056612924e4bae5eadb9074d0a33924a4f2a156017cbe',1,'tudat::propagators']]],
+  ['independentvariable',['independentVariable',['../d2/d9c/namespacetudat_1_1propagators.html#a58a59a1f326ecebafc38d7c298885477aed8efaf6c989ca35700d5e0b5b6d1ac7',1,'tudat::propagators']]],
   ['inertial_5fframe',['inertial_frame',['../d5/d98/namespacetudat_1_1reference__frames.html#ac12482df307b5867b2572ff4323b36a5adf1573183453843c0f0d736b496bf39c',1,'tudat::reference_frames']]],
   ['inertial_5fthurst_5fframe',['inertial_thurst_frame',['../d4/da8/namespacetudat_1_1simulation__setup.html#a2b45f4bc721aafa496686077bf729a13a9c74d7c11740441bf9f191c57d141eef',1,'tudat::simulation_setup']]],
   ['initial_5fbody_5fstate',['initial_body_state',['../d5/d92/namespacetudat_1_1estimatable__parameters.html#aa6910f86d3240d08f92b4541f4032ca8aeb76decc0de1cb858d75afa95bf516d7',1,'tudat::estimatable_parameters']]],

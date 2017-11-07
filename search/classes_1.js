@@ -7,6 +7,7 @@ var searchData=
   ['basicsolidbodytidegravityfieldvariations',['BasicSolidBodyTideGravityFieldVariations',['../d5/db1/classtudat_1_1gravitation_1_1_basic_solid_body_tide_gravity_field_variations.html',1,'tudat::gravitation']]],
   ['binarysearchlookupscheme',['BinarySearchLookupScheme',['../d9/d60/classtudat_1_1interpolators_1_1_binary_search_lookup_scheme.html',1,'tudat::interpolators']]],
   ['bisectioncore',['BisectionCore',['../d9/d67/classtudat_1_1root__finders_1_1_bisection_core.html',1,'tudat::root_finders']]],
+  ['body',['Body',['../d3/df8/structtudat_1_1json__interface_1_1_keys_1_1_body.html',1,'tudat::json_interface::Keys']]],
   ['body',['Body',['../d5/de5/classtudat_1_1simulation__setup_1_1_body.html',1,'tudat::simulation_setup']]],
   ['bodyaerodynamicanglevariablesavesettings',['BodyAerodynamicAngleVariableSaveSettings',['../d2/d63/classtudat_1_1propagators_1_1_body_aerodynamic_angle_variable_save_settings.html',1,'tudat::propagators']]],
   ['bodyavoidanceanglecalculator',['BodyAvoidanceAngleCalculator',['../d1/db1/classtudat_1_1observation__models_1_1_body_avoidance_angle_calculator.html',1,'tudat::observation_models']]],

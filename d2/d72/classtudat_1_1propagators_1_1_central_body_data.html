@@ -105,9 +105,9 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af3cd6886afefbd57578d501a230b9818"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d72/classtudat_1_1propagators_1_1_central_body_data.html#af3cd6886afefbd57578d501a230b9818">CentralBodyData</a> (const std::vector&lt; std::string &gt; &amp;centralBodies, const std::vector&lt; std::string &gt; &amp;bodiesToIntegrate, const std::map&lt; std::string, boost::function&lt; Eigen::Matrix&lt; StateScalarType, 6, 1 &gt;(const TimeType) &gt; &gt; &amp;bodyStateFunctions)</td></tr>
-<tr class="memdesc:af3cd6886afefbd57578d501a230b9818"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor of the central bodies and the integrated bodies.  <a href="#af3cd6886afefbd57578d501a230b9818">More...</a><br /></td></tr>
-<tr class="separator:af3cd6886afefbd57578d501a230b9818"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a32b234a4853f8c06c55b4d99534b3e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d72/classtudat_1_1propagators_1_1_central_body_data.html#a6a32b234a4853f8c06c55b4d99534b3e">CentralBodyData</a> (const std::vector&lt; std::string &gt; &amp;centralBodies, const std::vector&lt; std::string &gt; &amp;bodiesToIntegrate, const std::map&lt; std::string, boost::function&lt; Eigen::Matrix&lt; StateScalarType, 6, 1 &gt;(const TimeType) &gt; &gt; &amp;bodyStateFunctions, const boost::function&lt; Eigen::Matrix&lt; StateScalarType, 6, 1 &gt;(const TimeType) &gt; globalFrameOriginBarycentricStateFunction, const std::string globalFrameOrigin)</td></tr>
+<tr class="memdesc:a6a32b234a4853f8c06c55b4d99534b3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor of the central bodies and the integrated bodies.  <a href="#a6a32b234a4853f8c06c55b4d99534b3e">More...</a><br /></td></tr>
+<tr class="separator:a6a32b234a4853f8c06c55b4d99534b3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64c84ff949475898c8a7bf4bb9803cfc"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../d2/d9c/namespacetudat_1_1propagators.html#a75543347a0571f08ef1b056612924e4b">OriginType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d72/classtudat_1_1propagators_1_1_central_body_data.html#a64c84ff949475898c8a7bf4bb9803cfc">getBodyOriginType</a> ()</td></tr>
 <tr class="memdesc:a64c84ff949475898c8a7bf4bb9803cfc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to get the type of reference frame origin for each of the propagated bodies.  <a href="#a64c84ff949475898c8a7bf4bb9803cfc">More...</a><br /></td></tr>
 <tr class="separator:a64c84ff949475898c8a7bf4bb9803cfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -139,6 +139,8 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a3f70b4d15bc183638c2afdaf3d96b72a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a37f16dda31cd61ba7905bbd7027400"><td class="memItemLeft" align="right" valign="top">std::map&lt; int, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d72/classtudat_1_1propagators_1_1_central_body_data.html#a6a37f16dda31cd61ba7905bbd7027400">centralBodiesFromIntegration_</a></td></tr>
 <tr class="separator:a6a37f16dda31cd61ba7905bbd7027400"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0bacdfe03101324131ed02880e2e583"><td class="memItemLeft" align="right" valign="top">boost::function&lt; Eigen::Matrix&lt; StateScalarType, 6, 1 &gt; const TimeType) &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d72/classtudat_1_1propagators_1_1_central_body_data.html#aa0bacdfe03101324131ed02880e2e583">globalFrameOriginBarycentricStateFunction_</a></td></tr>
+<tr class="separator:aa0bacdfe03101324131ed02880e2e583"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a493240b0da2120bfc02dd5494d6a336c"><td class="memItemLeft" align="right" valign="top">Eigen::Matrix&lt; StateScalarType, Eigen::Dynamic, 1 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d72/classtudat_1_1propagators_1_1_central_body_data.html#a493240b0da2120bfc02dd5494d6a336c">localInternalState_</a></td></tr>
 <tr class="memdesc:a493240b0da2120bfc02dd5494d6a336c"><td class="mdescLeft">&#160;</td><td class="mdescRight">State of propagated bodies, with the origins translated to the global origin.  <a href="#a493240b0da2120bfc02dd5494d6a336c">More...</a><br /></td></tr>
 <tr class="separator:a493240b0da2120bfc02dd5494d6a336c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -151,9 +153,9 @@ class tudat::propagators::CentralBodyData&lt; StateScalarType, TimeType &gt;</h3
 
 <p>This class acts as a data container for properties of central bodies in a numerical integration. It makes a distinction between central bodies that are integrated and those for which the state is taken from ephemeris The state of the central bodies in an inertial frame can be retrieved from it. </p>
 
-<p>Definition at line <a class="el" href="../../d9/d94/central_body_data_8h_source.html#l00044">44</a> of file <a class="el" href="../../d9/d94/central_body_data_8h_source.html">centralBodyData.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/d94/central_body_data_8h_source.html#l00043">43</a> of file <a class="el" href="../../d9/d94/central_body_data_8h_source.html">centralBodyData.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="af3cd6886afefbd57578d501a230b9818"></a>
+<a class="anchor" id="a6a32b234a4853f8c06c55b4d99534b3e"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -178,7 +180,19 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const std::map&lt; std::string, boost::function&lt; Eigen::Matrix&lt; StateScalarType, 6, 1 &gt;(const TimeType) &gt; &gt; &amp;&#160;</td>
-          <td class="paramname"><em>bodyStateFunctions</em>&#160;</td>
+          <td class="paramname"><em>bodyStateFunctions</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const boost::function&lt; Eigen::Matrix&lt; StateScalarType, 6, 1 &gt;(const TimeType) &gt;&#160;</td>
+          <td class="paramname"><em>globalFrameOriginBarycentricStateFunction</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string&#160;</td>
+          <td class="paramname"><em>globalFrameOrigin</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -197,13 +211,15 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
     <tr><td class="paramname">centralBodies</td><td>Names of central bodies, belonging to the entries in the bodiesToIntegrate vector of same index. </td></tr>
     <tr><td class="paramname">bodiesToIntegrate</td><td>Names of bodies that are to be integrated numerically. </td></tr>
     <tr><td class="paramname">bodyStateFunctions</td><td>List of functions for the origins of selected bodies. </td></tr>
+    <tr><td class="paramname">globalFrameOriginBarycentricStateFunction</td><td>State function of global frame origin w.r.t. barycenter </td></tr>
+    <tr><td class="paramname">globalFrameOrigin</td><td>Origin of global frame. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d9/d94/central_body_data_8h_source.html#l00057">57</a> of file <a class="el" href="../../d9/d94/central_body_data_8h_source.html">centralBodyData.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/d94/central_body_data_8h_source.html#l00058">58</a> of file <a class="el" href="../../d9/d94/central_body_data_8h_source.html">centralBodyData.h</a>.</p>
 
-<p>References <a class="el" href="../../d9/d94/central_body_data_8h_source.html#l00248">tudat::propagators::CentralBodyData&lt; StateScalarType, TimeType &gt;::bodyOriginType_</a>, <a class="el" href="../../d9/d94/central_body_data_8h_source.html#l00252">tudat::propagators::CentralBodyData&lt; StateScalarType, TimeType &gt;::centralBodiesFromEphemerides_</a>, <a class="el" href="../../d9/d94/central_body_data_8h_source.html#l00256">tudat::propagators::CentralBodyData&lt; StateScalarType, TimeType &gt;::centralBodiesFromIntegration_</a>, <a class="el" href="../../d9/d94/central_body_data_8h_source.html#l00032">tudat::propagators::from_ephemeris</a>, <a class="el" href="../../d9/d94/central_body_data_8h_source.html#l00033">tudat::propagators::from_integration</a>, <a class="el" href="../../d9/d94/central_body_data_8h_source.html#l00031">tudat::propagators::inertial</a>, <a class="el" href="../../d9/d94/central_body_data_8h_source.html#l00259">tudat::propagators::CentralBodyData&lt; StateScalarType, TimeType &gt;::localInternalState_</a>, and <a class="el" href="../../d9/d94/central_body_data_8h_source.html#l00245">tudat::propagators::CentralBodyData&lt; StateScalarType, TimeType &gt;::updateOrder_</a>.</p>
+<p>References <a class="el" href="../../d9/d94/central_body_data_8h_source.html#l00252">tudat::propagators::CentralBodyData&lt; StateScalarType, TimeType &gt;::bodyOriginType_</a>, <a class="el" href="../../d9/d94/central_body_data_8h_source.html#l00256">tudat::propagators::CentralBodyData&lt; StateScalarType, TimeType &gt;::centralBodiesFromEphemerides_</a>, <a class="el" href="../../d9/d94/central_body_data_8h_source.html#l00260">tudat::propagators::CentralBodyData&lt; StateScalarType, TimeType &gt;::centralBodiesFromIntegration_</a>, <a class="el" href="../../d9/d94/central_body_data_8h_source.html#l00031">tudat::propagators::from_ephemeris</a>, <a class="el" href="../../d9/d94/central_body_data_8h_source.html#l00032">tudat::propagators::from_integration</a>, <a class="el" href="../../d9/d94/central_body_data_8h_source.html#l00030">tudat::propagators::global_frame_origin</a>, <a class="el" href="../../d9/d94/central_body_data_8h_source.html#l00263">tudat::propagators::CentralBodyData&lt; StateScalarType, TimeType &gt;::localInternalState_</a>, and <a class="el" href="../../d9/d94/central_body_data_8h_source.html#l00249">tudat::propagators::CentralBodyData&lt; StateScalarType, TimeType &gt;::updateOrder_</a>.</p>
 
 </div>
 </div>
@@ -263,9 +279,9 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d9/d94/central_body_data_8h_source.html#l00184">184</a> of file <a class="el" href="../../d9/d94/central_body_data_8h_source.html">centralBodyData.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/d94/central_body_data_8h_source.html#l00186">186</a> of file <a class="el" href="../../d9/d94/central_body_data_8h_source.html">centralBodyData.h</a>.</p>
 
-<p>References <a class="el" href="../../d9/d94/central_body_data_8h_source.html#l00274">tudat::propagators::CentralBodyData&lt; StateScalarType, TimeType &gt;::getSingleReferenceFrameOriginInertialState()</a>, <a class="el" href="../../d9/d94/central_body_data_8h_source.html#l00259">tudat::propagators::CentralBodyData&lt; StateScalarType, TimeType &gt;::localInternalState_</a>, and <a class="el" href="../../d9/d94/central_body_data_8h_source.html#l00245">tudat::propagators::CentralBodyData&lt; StateScalarType, TimeType &gt;::updateOrder_</a>.</p>
+<p>References <a class="el" href="../../d9/d94/central_body_data_8h_source.html#l00278">tudat::propagators::CentralBodyData&lt; StateScalarType, TimeType &gt;::getSingleReferenceFrameOriginInertialState()</a>, <a class="el" href="../../d9/d94/central_body_data_8h_source.html#l00263">tudat::propagators::CentralBodyData&lt; StateScalarType, TimeType &gt;::localInternalState_</a>, and <a class="el" href="../../d9/d94/central_body_data_8h_source.html#l00249">tudat::propagators::CentralBodyData&lt; StateScalarType, TimeType &gt;::updateOrder_</a>.</p>
 
 </div>
 </div>
@@ -293,9 +309,9 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 </div><div class="memdoc">
 <p>Function to get the order in which the body states are to be called when getting global states. </p><dl class="section return"><dt>Returns</dt><dd>Order in which the body states are to be called when getting global states. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d9/d94/central_body_data_8h_source.html#l00218">218</a> of file <a class="el" href="../../d9/d94/central_body_data_8h_source.html">centralBodyData.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/d94/central_body_data_8h_source.html#l00220">220</a> of file <a class="el" href="../../d9/d94/central_body_data_8h_source.html">centralBodyData.h</a>.</p>
 
-<p>References <a class="el" href="../../d9/d94/central_body_data_8h_source.html#l00245">tudat::propagators::CentralBodyData&lt; StateScalarType, TimeType &gt;::updateOrder_</a>.</p>
+<p>References <a class="el" href="../../d9/d94/central_body_data_8h_source.html#l00249">tudat::propagators::CentralBodyData&lt; StateScalarType, TimeType &gt;::updateOrder_</a>.</p>
 
 </div>
 </div>
@@ -323,9 +339,9 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 </div><div class="memdoc">
 <p>Function to get the type of reference frame origin for each of the propagated bodies. </p><dl class="section return"><dt>Returns</dt><dd>Type of reference frame origin for each of the propagated bodies. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d9/d94/central_body_data_8h_source.html#l00225">225</a> of file <a class="el" href="../../d9/d94/central_body_data_8h_source.html">centralBodyData.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/d94/central_body_data_8h_source.html#l00227">227</a> of file <a class="el" href="../../d9/d94/central_body_data_8h_source.html">centralBodyData.h</a>.</p>
 
-<p>References <a class="el" href="../../d9/d94/central_body_data_8h_source.html#l00248">tudat::propagators::CentralBodyData&lt; StateScalarType, TimeType &gt;::bodyOriginType_</a>.</p>
+<p>References <a class="el" href="../../d9/d94/central_body_data_8h_source.html#l00252">tudat::propagators::CentralBodyData&lt; StateScalarType, TimeType &gt;::bodyOriginType_</a>.</p>
 
 </div>
 </div>
@@ -353,9 +369,9 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 </div><div class="memdoc">
 <p>Function to get the names of central bodies, belonging to the entries in the bodiesToIntegrate vector of same index. </p><dl class="section return"><dt>Returns</dt><dd>Names of central bodies, belonging to the entries in the bodiesToIntegrate vector of same index. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d9/d94/central_body_data_8h_source.html#l00234">234</a> of file <a class="el" href="../../d9/d94/central_body_data_8h_source.html">centralBodyData.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/d94/central_body_data_8h_source.html#l00236">236</a> of file <a class="el" href="../../d9/d94/central_body_data_8h_source.html">centralBodyData.h</a>.</p>
 
-<p>References <a class="el" href="../../d9/d94/central_body_data_8h_source.html#l00241">tudat::propagators::CentralBodyData&lt; StateScalarType, TimeType &gt;::centralBodies_</a>.</p>
+<p>References <a class="el" href="../../d9/d94/central_body_data_8h_source.html#l00243">tudat::propagators::CentralBodyData&lt; StateScalarType, TimeType &gt;::centralBodies_</a>.</p>
 
 </div>
 </div>
@@ -422,11 +438,11 @@ updateOrder </dd></dl>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d9/d94/central_body_data_8h_source.html#l00274">274</a> of file <a class="el" href="../../d9/d94/central_body_data_8h_source.html">centralBodyData.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/d94/central_body_data_8h_source.html#l00278">278</a> of file <a class="el" href="../../d9/d94/central_body_data_8h_source.html">centralBodyData.h</a>.</p>
 
-<p>References <a class="el" href="../../d9/d94/central_body_data_8h_source.html#l00252">tudat::propagators::CentralBodyData&lt; StateScalarType, TimeType &gt;::centralBodiesFromEphemerides_</a>, <a class="el" href="../../d9/d94/central_body_data_8h_source.html#l00032">tudat::propagators::from_ephemeris</a>, <a class="el" href="../../d9/d94/central_body_data_8h_source.html#l00033">tudat::propagators::from_integration</a>, and <a class="el" href="../../d9/d94/central_body_data_8h_source.html#l00031">tudat::propagators::inertial</a>.</p>
+<p>References <a class="el" href="../../d9/d94/central_body_data_8h_source.html#l00256">tudat::propagators::CentralBodyData&lt; StateScalarType, TimeType &gt;::centralBodiesFromEphemerides_</a>, <a class="el" href="../../d9/d94/central_body_data_8h_source.html#l00031">tudat::propagators::from_ephemeris</a>, <a class="el" href="../../d9/d94/central_body_data_8h_source.html#l00032">tudat::propagators::from_integration</a>, and <a class="el" href="../../d9/d94/central_body_data_8h_source.html#l00030">tudat::propagators::global_frame_origin</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d9/d94/central_body_data_8h_source.html#l00184">tudat::propagators::CentralBodyData&lt; StateScalarType, TimeType &gt;::getReferenceFrameOriginInertialStates()</a>.</p>
+<p>Referenced by <a class="el" href="../../d9/d94/central_body_data_8h_source.html#l00186">tudat::propagators::CentralBodyData&lt; StateScalarType, TimeType &gt;::getReferenceFrameOriginInertialStates()</a>.</p>
 
 </div>
 </div>
@@ -452,9 +468,33 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 </div><div class="memdoc">
 <p>Names of central bodies, belonging to the entries in the bodiesToIntegrate vector of same index. </p>
 
-<p>Definition at line <a class="el" href="../../d9/d94/central_body_data_8h_source.html#l00241">241</a> of file <a class="el" href="../../d9/d94/central_body_data_8h_source.html">centralBodyData.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/d94/central_body_data_8h_source.html#l00243">243</a> of file <a class="el" href="../../d9/d94/central_body_data_8h_source.html">centralBodyData.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d9/d94/central_body_data_8h_source.html#l00234">tudat::propagators::CentralBodyData&lt; StateScalarType, TimeType &gt;::getCentralBodies()</a>.</p>
+<p>Referenced by <a class="el" href="../../d9/d94/central_body_data_8h_source.html#l00236">tudat::propagators::CentralBodyData&lt; StateScalarType, TimeType &gt;::getCentralBodies()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa0bacdfe03101324131ed02880e2e583"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">boost::function&lt; Eigen::Matrix&lt; StateScalarType, 6, 1 &gt; const TimeType ) &gt; <a class="el" href="../../d2/d72/classtudat_1_1propagators_1_1_central_body_data.html">tudat::propagators::CentralBodyData</a>&lt; StateScalarType, TimeType &gt;::globalFrameOriginBarycentricStateFunction_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d9/d94/central_body_data_8h_source.html#l00245">245</a> of file <a class="el" href="../../d9/d94/central_body_data_8h_source.html">centralBodyData.h</a>.</p>
 
 </div>
 </div>
@@ -479,9 +519,9 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 </div><div class="memdoc">
 <p>Order in which the body states are to be called when getting global states (taking into account frame origin dependencies). </p>
 
-<p>Definition at line <a class="el" href="../../d9/d94/central_body_data_8h_source.html#l00245">245</a> of file <a class="el" href="../../d9/d94/central_body_data_8h_source.html">centralBodyData.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/d94/central_body_data_8h_source.html#l00249">249</a> of file <a class="el" href="../../d9/d94/central_body_data_8h_source.html">centralBodyData.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d9/d94/central_body_data_8h_source.html#l00057">tudat::propagators::CentralBodyData&lt; StateScalarType, TimeType &gt;::CentralBodyData()</a>, <a class="el" href="../../d9/d94/central_body_data_8h_source.html#l00184">tudat::propagators::CentralBodyData&lt; StateScalarType, TimeType &gt;::getReferenceFrameOriginInertialStates()</a>, and <a class="el" href="../../d9/d94/central_body_data_8h_source.html#l00218">tudat::propagators::CentralBodyData&lt; StateScalarType, TimeType &gt;::getUpdateOrder()</a>.</p>
+<p>Referenced by <a class="el" href="../../d9/d94/central_body_data_8h_source.html#l00058">tudat::propagators::CentralBodyData&lt; StateScalarType, TimeType &gt;::CentralBodyData()</a>, <a class="el" href="../../d9/d94/central_body_data_8h_source.html#l00186">tudat::propagators::CentralBodyData&lt; StateScalarType, TimeType &gt;::getReferenceFrameOriginInertialStates()</a>, and <a class="el" href="../../d9/d94/central_body_data_8h_source.html#l00220">tudat::propagators::CentralBodyData&lt; StateScalarType, TimeType &gt;::getUpdateOrder()</a>.</p>
 
 </div>
 </div>
@@ -505,9 +545,9 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d9/d94/central_body_data_8h_source.html#l00248">248</a> of file <a class="el" href="../../d9/d94/central_body_data_8h_source.html">centralBodyData.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/d94/central_body_data_8h_source.html#l00252">252</a> of file <a class="el" href="../../d9/d94/central_body_data_8h_source.html">centralBodyData.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d9/d94/central_body_data_8h_source.html#l00057">tudat::propagators::CentralBodyData&lt; StateScalarType, TimeType &gt;::CentralBodyData()</a>, and <a class="el" href="../../d9/d94/central_body_data_8h_source.html#l00225">tudat::propagators::CentralBodyData&lt; StateScalarType, TimeType &gt;::getBodyOriginType()</a>.</p>
+<p>Referenced by <a class="el" href="../../d9/d94/central_body_data_8h_source.html#l00058">tudat::propagators::CentralBodyData&lt; StateScalarType, TimeType &gt;::CentralBodyData()</a>, and <a class="el" href="../../d9/d94/central_body_data_8h_source.html#l00227">tudat::propagators::CentralBodyData&lt; StateScalarType, TimeType &gt;::getBodyOriginType()</a>.</p>
 
 </div>
 </div>
@@ -531,9 +571,9 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d9/d94/central_body_data_8h_source.html#l00252">252</a> of file <a class="el" href="../../d9/d94/central_body_data_8h_source.html">centralBodyData.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/d94/central_body_data_8h_source.html#l00256">256</a> of file <a class="el" href="../../d9/d94/central_body_data_8h_source.html">centralBodyData.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d9/d94/central_body_data_8h_source.html#l00057">tudat::propagators::CentralBodyData&lt; StateScalarType, TimeType &gt;::CentralBodyData()</a>, and <a class="el" href="../../d9/d94/central_body_data_8h_source.html#l00274">tudat::propagators::CentralBodyData&lt; StateScalarType, TimeType &gt;::getSingleReferenceFrameOriginInertialState()</a>.</p>
+<p>Referenced by <a class="el" href="../../d9/d94/central_body_data_8h_source.html#l00058">tudat::propagators::CentralBodyData&lt; StateScalarType, TimeType &gt;::CentralBodyData()</a>, and <a class="el" href="../../d9/d94/central_body_data_8h_source.html#l00278">tudat::propagators::CentralBodyData&lt; StateScalarType, TimeType &gt;::getSingleReferenceFrameOriginInertialState()</a>.</p>
 
 </div>
 </div>
@@ -558,9 +598,9 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 </div><div class="memdoc">
 <p>Map defining frame origin body index, for bodies having one of the other propagated bodies as propagation origin </p>
 
-<p>Definition at line <a class="el" href="../../d9/d94/central_body_data_8h_source.html#l00256">256</a> of file <a class="el" href="../../d9/d94/central_body_data_8h_source.html">centralBodyData.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/d94/central_body_data_8h_source.html#l00260">260</a> of file <a class="el" href="../../d9/d94/central_body_data_8h_source.html">centralBodyData.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d9/d94/central_body_data_8h_source.html#l00057">tudat::propagators::CentralBodyData&lt; StateScalarType, TimeType &gt;::CentralBodyData()</a>.</p>
+<p>Referenced by <a class="el" href="../../d9/d94/central_body_data_8h_source.html#l00058">tudat::propagators::CentralBodyData&lt; StateScalarType, TimeType &gt;::CentralBodyData()</a>.</p>
 
 </div>
 </div>
@@ -584,9 +624,9 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d9/d94/central_body_data_8h_source.html#l00259">259</a> of file <a class="el" href="../../d9/d94/central_body_data_8h_source.html">centralBodyData.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/d94/central_body_data_8h_source.html#l00263">263</a> of file <a class="el" href="../../d9/d94/central_body_data_8h_source.html">centralBodyData.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d9/d94/central_body_data_8h_source.html#l00057">tudat::propagators::CentralBodyData&lt; StateScalarType, TimeType &gt;::CentralBodyData()</a>, and <a class="el" href="../../d9/d94/central_body_data_8h_source.html#l00184">tudat::propagators::CentralBodyData&lt; StateScalarType, TimeType &gt;::getReferenceFrameOriginInertialStates()</a>.</p>
+<p>Referenced by <a class="el" href="../../d9/d94/central_body_data_8h_source.html#l00058">tudat::propagators::CentralBodyData&lt; StateScalarType, TimeType &gt;::CentralBodyData()</a>, and <a class="el" href="../../d9/d94/central_body_data_8h_source.html#l00186">tudat::propagators::CentralBodyData&lt; StateScalarType, TimeType &gt;::getReferenceFrameOriginInertialStates()</a>.</p>
 
 </div>
 </div>
@@ -596,7 +636,7 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 27 2017 09:33:02 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 7 2017 11:20:34 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

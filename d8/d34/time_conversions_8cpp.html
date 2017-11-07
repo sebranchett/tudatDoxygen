@@ -96,6 +96,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="textblock"><code>#include &lt;boost/date_time/gregorian/gregorian.hpp&gt;</code><br />
 <code>#include &quot;<a class="el" href="../../d4/db3/physical_constants_8h_source.html">Tudat/Astrodynamics/BasicAstrodynamics/physicalConstants.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d4/d01/time_conversions_8h_source.html">Tudat/Astrodynamics/BasicAstrodynamics/timeConversions.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d6/dde/time_type_8h_source.html">Tudat/Basics/timeType.h</a>&quot;</code><br />
 </div>
 <p><a href="../../d8/d34/time_conversions_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -168,6 +169,10 @@ Functions</h2></td></tr>
 <tr class="memitem:afe7d68090a555c9eebd67e7f85a1d404"><td class="memTemplItemLeft" align="right" valign="top">long double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#afe7d68090a555c9eebd67e7f85a1d404">tudat::basic_astrodynamics::getTTMinusTai&lt; long double &gt;</a> ()</td></tr>
 <tr class="memdesc:afe7d68090a555c9eebd67e7f85a1d404"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to get the offset of TT from TAI (constant by definition), in long double precision.  <a href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#afe7d68090a555c9eebd67e7f85a1d404">More...</a><br /></td></tr>
 <tr class="separator:afe7d68090a555c9eebd67e7f85a1d404"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca7a4b8b914a4f1309a39eee3bbc01d9"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:aca7a4b8b914a4f1309a39eee3bbc01d9"><td class="memTemplItemLeft" align="right" valign="top">Time&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#aca7a4b8b914a4f1309a39eee3bbc01d9">tudat::basic_astrodynamics::getTTMinusTai&lt; Time &gt;</a> ()</td></tr>
+<tr class="memdesc:aca7a4b8b914a4f1309a39eee3bbc01d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to get the offset of TT from TAI (constant by definition), in <a class="el" href="../../d8/df9/classtudat_1_1_time.html" title="Class for defining time with a resolution that is sub-fs for very long periods of time...">Time</a> format.  <a href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#aca7a4b8b914a4f1309a39eee3bbc01d9">More...</a><br /></td></tr>
+<tr class="separator:aca7a4b8b914a4f1309a39eee3bbc01d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa09335d95a7614ee3392293eef8b1166"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#aa09335d95a7614ee3392293eef8b1166">tudat::basic_astrodynamics::isLeapYear</a> (const int year)</td></tr>
 <tr class="memdesc:aa09335d95a7614ee3392293eef8b1166"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to determine whether the given year is a leap year (i.e. has 366 days)  <a href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#aa09335d95a7614ee3392293eef8b1166">More...</a><br /></td></tr>
 <tr class="separator:aa09335d95a7614ee3392293eef8b1166"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -175,7 +180,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 27 2017 09:32:58 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 7 2017 11:20:29 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

@@ -167,6 +167,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ab948e1c41257869b3e5413c399314135"><td class="memItemLeft" align="right" valign="top">Eigen::Vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d98/namespacetudat_1_1reference__frames.html#ab948e1c41257869b3e5413c399314135">computeEulerAcceleration</a> (const Eigen::Vector3d &amp;angularAccelerationOfNonInertialReferenceFrame, const Eigen::Vector3d &amp;positionOfBodyInNonInertialReferenceFrame)</td></tr>
 <tr class="memdesc:ab948e1c41257869b3e5413c399314135"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute Euler acceleration due to non-inertiality of reference frame.  <a href="#ab948e1c41257869b3e5413c399314135">More...</a><br /></td></tr>
 <tr class="separator:ab948e1c41257869b3e5413c399314135"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38c900ddd680435ea5eb1a9c1a162c07"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d98/namespacetudat_1_1reference__frames.html#a38c900ddd680435ea5eb1a9c1a162c07">from_json</a> (const nlohmann::json &amp;jsonObject, <a class="el" href="../../d5/d98/namespacetudat_1_1reference__frames.html#ac12482df307b5867b2572ff4323b36a5">AerodynamicsReferenceFrames</a> &amp;aerodynamicsReferenceFrame)</td></tr>
+<tr class="memdesc:a38c900ddd680435ea5eb1a9c1a162c07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert <code>json</code> to <code>AerodynamicsReferenceFrames</code>.  <a href="#a38c900ddd680435ea5eb1a9c1a162c07">More...</a><br /></td></tr>
+<tr class="separator:a38c900ddd680435ea5eb1a9c1a162c07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0d78c3e8cb1e385a705c62cb1f5b25e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d98/namespacetudat_1_1reference__frames.html#af0d78c3e8cb1e385a705c62cb1f5b25e">from_json</a> (const nlohmann::json &amp;jsonObject, <a class="el" href="../../d5/d98/namespacetudat_1_1reference__frames.html#ad068ab76c2367eb248432d4ed34d9610">AerodynamicsReferenceFrameAngles</a> &amp;aerodynamicsReferenceFrameAngle)</td></tr>
+<tr class="memdesc:af0d78c3e8cb1e385a705c62cb1f5b25e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert <code>json</code> to <code>AerodynamicsReferenceFrameAngles</code>.  <a href="#af0d78c3e8cb1e385a705c62cb1f5b25e">More...</a><br /></td></tr>
+<tr class="separator:af0d78c3e8cb1e385a705c62cb1f5b25e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac52e112e86e20a8a4b7481062e2a0b06"><td class="memItemLeft" align="right" valign="top">Eigen::Vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d98/namespacetudat_1_1reference__frames.html#ac52e112e86e20a8a4b7481062e2a0b06">get132EulerAnglesFromRotationMatrix</a> (const Eigen::Matrix3d &amp;rotationMatrix)</td></tr>
 <tr class="memdesc:ac52e112e86e20a8a4b7481062e2a0b06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get classical 1-3-2 Euler angles set from rotation matrix.  <a href="#ac52e112e86e20a8a4b7481062e2a0b06">More...</a><br /></td></tr>
 <tr class="separator:ac52e112e86e20a8a4b7481062e2a0b06"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -198,16 +204,22 @@ Functions</h2></td></tr>
 <tr class="memdesc:afaa54b5371a7656ffe1459ebbe7dafef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get transformation quaternion fom the B- to the AA-frame.  <a href="#afaa54b5371a7656ffe1459ebbe7dafef">More...</a><br /></td></tr>
 <tr class="separator:afaa54b5371a7656ffe1459ebbe7dafef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1bfc022e894c481768523c5c2b16d225"><td class="memItemLeft" align="right" valign="top">Eigen::Matrix3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d98/namespacetudat_1_1reference__frames.html#a1bfc022e894c481768523c5c2b16d225">getDerivativeOfXAxisRotationWrtAngle</a> (const double angle)</td></tr>
+<tr class="memdesc:a1bfc022e894c481768523c5c2b16d225"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to compute the derivative of a rotation about the x-axis w.r.t. the rotation angle.  <a href="#a1bfc022e894c481768523c5c2b16d225">More...</a><br /></td></tr>
 <tr class="separator:a1bfc022e894c481768523c5c2b16d225"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5cdab1be25e742108809bf9b2e6922e6"><td class="memItemLeft" align="right" valign="top">Eigen::Matrix3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d98/namespacetudat_1_1reference__frames.html#a5cdab1be25e742108809bf9b2e6922e6">getDerivativeOfXAxisRotationWrtAngle</a> (const Eigen::Matrix3d &amp;rotationMatrix)</td></tr>
+<tr class="memdesc:a5cdab1be25e742108809bf9b2e6922e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to compute the derivative of a rotation about the x-axis w.r.t. the rotation angle.  <a href="#a5cdab1be25e742108809bf9b2e6922e6">More...</a><br /></td></tr>
 <tr class="separator:a5cdab1be25e742108809bf9b2e6922e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d37db17dd018384431726531cc639a5"><td class="memItemLeft" align="right" valign="top">Eigen::Matrix3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d98/namespacetudat_1_1reference__frames.html#a7d37db17dd018384431726531cc639a5">getDerivativeOfYAxisRotationWrtAngle</a> (const double angle)</td></tr>
+<tr class="memdesc:a7d37db17dd018384431726531cc639a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to compute the derivative of a rotation about the y-axis w.r.t. the rotation angle.  <a href="#a7d37db17dd018384431726531cc639a5">More...</a><br /></td></tr>
 <tr class="separator:a7d37db17dd018384431726531cc639a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43f90db622e2eb769c92ea34fe79e4a7"><td class="memItemLeft" align="right" valign="top">Eigen::Matrix3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d98/namespacetudat_1_1reference__frames.html#a43f90db622e2eb769c92ea34fe79e4a7">getDerivativeOfYAxisRotationWrtAngle</a> (const Eigen::Matrix3d &amp;rotationMatrix)</td></tr>
+<tr class="memdesc:a43f90db622e2eb769c92ea34fe79e4a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to compute the derivative of a rotation about the y-axis w.r.t. the rotation angle.  <a href="#a43f90db622e2eb769c92ea34fe79e4a7">More...</a><br /></td></tr>
 <tr class="separator:a43f90db622e2eb769c92ea34fe79e4a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52ca167cfe2eb5ee611b451edb3ccf77"><td class="memItemLeft" align="right" valign="top">Eigen::Matrix3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d98/namespacetudat_1_1reference__frames.html#a52ca167cfe2eb5ee611b451edb3ccf77">getDerivativeOfZAxisRotationWrtAngle</a> (const double angle)</td></tr>
+<tr class="memdesc:a52ca167cfe2eb5ee611b451edb3ccf77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to compute the derivative of a rotation about the z-axis w.r.t. the rotation angle.  <a href="#a52ca167cfe2eb5ee611b451edb3ccf77">More...</a><br /></td></tr>
 <tr class="separator:a52ca167cfe2eb5ee611b451edb3ccf77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e46e42ce769e08197010bde059d6987"><td class="memItemLeft" align="right" valign="top">Eigen::Matrix3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d98/namespacetudat_1_1reference__frames.html#a3e46e42ce769e08197010bde059d6987">getDerivativeOfZAxisRotationWrtAngle</a> (const Eigen::Matrix3d &amp;rotationMatrix)</td></tr>
+<tr class="memdesc:a3e46e42ce769e08197010bde059d6987"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to compute the derivative of a rotation about the z-axis w.r.t. the rotation angle.  <a href="#a3e46e42ce769e08197010bde059d6987">More...</a><br /></td></tr>
 <tr class="separator:a3e46e42ce769e08197010bde059d6987"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad60d8f8b76a700bc08bbf4fc6b031dfa"><td class="memItemLeft" align="right" valign="top">Eigen::Quaterniond&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d98/namespacetudat_1_1reference__frames.html#ad60d8f8b76a700bc08bbf4fc6b031dfa">getEnuLocalVerticalToRotatingPlanetocentricFrameTransformationQuaternion</a> (double longitude, double latitude)</td></tr>
 <tr class="memdesc:ad60d8f8b76a700bc08bbf4fc6b031dfa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get transformation quaternion between V-frame and ECEF.  <a href="#ad60d8f8b76a700bc08bbf4fc6b031dfa">More...</a><br /></td></tr>
@@ -222,6 +234,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:ab77e397fe16f7f2ee1137aa561ea43f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get rotation from inertial to planet-fixed frame.  <a href="#ab77e397fe16f7f2ee1137aa561ea43f0">More...</a><br /></td></tr>
 <tr class="separator:ab77e397fe16f7f2ee1137aa561ea43f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03528940ede836300b76650bf9c833d5"><td class="memItemLeft" align="right" valign="top">Eigen::Matrix3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d98/namespacetudat_1_1reference__frames.html#a03528940ede836300b76650bf9c833d5">getInertialToRswSatelliteCenteredFrameRotationMatrx</a> (const <a class="el" href="../../d0/da5/namespace_eigen.html#a03c917374d8dcb5bb158f2380f92847a">Eigen::Vector6d</a> bodyState)</td></tr>
+<tr class="memdesc:a03528940ede836300b76650bf9c833d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to compute the rotation matrix to RSW frame, from the frame in which the input state is given.  <a href="#a03528940ede836300b76650bf9c833d5">More...</a><br /></td></tr>
 <tr class="separator:a03528940ede836300b76650bf9c833d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad2dbf9417192f28054f228b9e45558f"><td class="memItemLeft" align="right" valign="top">Eigen::Matrix3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d98/namespacetudat_1_1reference__frames.html#aad2dbf9417192f28054f228b9e45558f">getLocalVerticalFrameToTrajectoryTransformationMatrix</a> (const double flightPathAngle, const double headingAngle)</td></tr>
 <tr class="memdesc:aad2dbf9417192f28054f228b9e45558f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get transformation matrix from the local V- to TA/TG-frame.  <a href="#aad2dbf9417192f28054f228b9e45558f">More...</a><br /></td></tr>
@@ -286,6 +299,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a2f83d64c9704d39777899a3e85b8c7c4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d98/namespacetudat_1_1reference__frames.html#a2f83d64c9704d39777899a3e85b8c7c4">setAerodynamicDependentOrientationCalculatorClosure</a> (boost::shared_ptr&lt; <a class="el" href="../../da/d34/classtudat_1_1ephemerides_1_1_rotational_ephemeris.html">ephemerides::RotationalEphemeris</a> &gt; rotationalEphemeris, boost::shared_ptr&lt; <a class="el" href="../../dd/dde/classtudat_1_1reference__frames_1_1_aerodynamic_angle_calculator.html">AerodynamicAngleCalculator</a> &gt; aerodynamicAngleCalculator)</td></tr>
 <tr class="memdesc:a2f83d64c9704d39777899a3e85b8c7c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to make aerodynamic angle computation consistent with existing rotational ephemeris.  <a href="#a2f83d64c9704d39777899a3e85b8c7c4">More...</a><br /></td></tr>
 <tr class="separator:a2f83d64c9704d39777899a3e85b8c7c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe1bba516dac76a97184bee605cdc570"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d98/namespacetudat_1_1reference__frames.html#afe1bba516dac76a97184bee605cdc570">to_json</a> (nlohmann::json &amp;jsonObject, const <a class="el" href="../../d5/d98/namespacetudat_1_1reference__frames.html#ac12482df307b5867b2572ff4323b36a5">AerodynamicsReferenceFrames</a> &amp;aerodynamicsReferenceFrame)</td></tr>
+<tr class="memdesc:afe1bba516dac76a97184bee605cdc570"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert <code>AerodynamicsReferenceFrames</code> to <code>json</code>.  <a href="#afe1bba516dac76a97184bee605cdc570">More...</a><br /></td></tr>
+<tr class="separator:afe1bba516dac76a97184bee605cdc570"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad010e9e0a7fc9febdd27c09ee600f998"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d98/namespacetudat_1_1reference__frames.html#ad010e9e0a7fc9febdd27c09ee600f998">to_json</a> (nlohmann::json &amp;jsonObject, const <a class="el" href="../../d5/d98/namespacetudat_1_1reference__frames.html#ad068ab76c2367eb248432d4ed34d9610">AerodynamicsReferenceFrameAngles</a> &amp;aerodynamicsReferenceFrameAngle)</td></tr>
+<tr class="memdesc:ad010e9e0a7fc9febdd27c09ee600f998"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert <code>AerodynamicsReferenceFrameAngles</code> to <code>json</code>.  <a href="#ad010e9e0a7fc9febdd27c09ee600f998">More...</a><br /></td></tr>
+<tr class="separator:ad010e9e0a7fc9febdd27c09ee600f998"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a66ac2a6986977315b2b4562b57ed0ec3"><td class="memItemLeft" align="right" valign="top">Eigen::Vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d98/namespacetudat_1_1reference__frames.html#a66ac2a6986977315b2b4562b57ed0ec3">transformVectorFromQuaternionFunction</a> (const Eigen::Vector3d &amp;originalVector, const boost::function&lt; Eigen::Quaterniond() &gt; rotation)</td></tr>
 <tr class="memdesc:a66ac2a6986977315b2b4562b57ed0ec3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper function to transform a vector to a different frame from a single rotation function.  <a href="#a66ac2a6986977315b2b4562b57ed0ec3">More...</a><br /></td></tr>
 <tr class="separator:a66ac2a6986977315b2b4562b57ed0ec3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -298,14 +317,29 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
+<tr class="memitem:ab2235b506c20e03309f82af6142d1fda"><td class="memItemLeft" align="right" valign="top">static std::map&lt; <a class="el" href="../../d5/d98/namespacetudat_1_1reference__frames.html#ad068ab76c2367eb248432d4ed34d9610">AerodynamicsReferenceFrameAngles</a>, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d98/namespacetudat_1_1reference__frames.html#ab2235b506c20e03309f82af6142d1fda">aerodynamicsReferenceFrameAngles</a></td></tr>
+<tr class="memdesc:ab2235b506c20e03309f82af6142d1fda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map of <code>AerodynamicsReferenceFrameAngles</code> string representations.  <a href="#ab2235b506c20e03309f82af6142d1fda">More...</a><br /></td></tr>
+<tr class="separator:ab2235b506c20e03309f82af6142d1fda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a327ce9ef3be9bcc3dcf20dccd21cdcbe"><td class="memItemLeft" align="right" valign="top">static std::map&lt; <a class="el" href="../../d5/d98/namespacetudat_1_1reference__frames.html#ac12482df307b5867b2572ff4323b36a5">AerodynamicsReferenceFrames</a>, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d98/namespacetudat_1_1reference__frames.html#a327ce9ef3be9bcc3dcf20dccd21cdcbe">aerodynamicsReferenceFrames</a></td></tr>
+<tr class="memdesc:a327ce9ef3be9bcc3dcf20dccd21cdcbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map of <code>AerodynamicsReferenceFrames</code> string representations.  <a href="#a327ce9ef3be9bcc3dcf20dccd21cdcbe">More...</a><br /></td></tr>
+<tr class="separator:a327ce9ef3be9bcc3dcf20dccd21cdcbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e52bc69f9dff273ce83153bda67c95a"><td class="memItemLeft" align="right" valign="top">boost::function&lt; Eigen::Vector3d(const Eigen::Vector3d &amp;) &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d98/namespacetudat_1_1reference__frames.html#a3e52bc69f9dff273ce83153bda67c95a">getAerodynamicForceTransformationFunction</a> (const boost::shared_ptr&lt; <a class="el" href="../../dd/dde/classtudat_1_1reference__frames_1_1_aerodynamic_angle_calculator.html">AerodynamicAngleCalculator</a> &gt; aerodynamicAngleCalculator, const <a class="el" href="../../d5/d98/namespacetudat_1_1reference__frames.html#ac12482df307b5867b2572ff4323b36a5">AerodynamicsReferenceFrames</a> accelerationFrame, const boost::function&lt; Eigen::Quaterniond() &gt; bodyFixedToInertialFrameFunction=boost::lambda::constant(Eigen::Quaterniond(Eigen::Matrix3d::Identity())), const <a class="el" href="../../d5/d98/namespacetudat_1_1reference__frames.html#ac12482df307b5867b2572ff4323b36a5">AerodynamicsReferenceFrames</a> propagationFrame=<a class="el" href="../../d5/d98/namespacetudat_1_1reference__frames.html#ac12482df307b5867b2572ff4323b36a5adf1573183453843c0f0d736b496bf39c">inertial_frame</a>)</td></tr>
 <tr class="memdesc:a3e52bc69f9dff273ce83153bda67c95a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a function to transform aerodynamic force from local to propagation frame.  <a href="#a3e52bc69f9dff273ce83153bda67c95a">More...</a><br /></td></tr>
 <tr class="separator:a3e52bc69f9dff273ce83153bda67c95a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6fb653214edffbce146089c706ccfee"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; <a class="el" href="../../d5/d98/namespacetudat_1_1reference__frames.html#ad068ab76c2367eb248432d4ed34d9610">AerodynamicsReferenceFrameAngles</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d98/namespacetudat_1_1reference__frames.html#ab6fb653214edffbce146089c706ccfee">unsupportedAerodynamicsReferenceFrameAngles</a> = { }</td></tr>
+<tr class="memdesc:ab6fb653214edffbce146089c706ccfee"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>AerodynamicsReferenceFrameAngles</code> not supported by <code><a class="el" href="../../d8/d24/namespacetudat_1_1json__interface.html">json_interface</a></code>.  <a href="#ab6fb653214edffbce146089c706ccfee">More...</a><br /></td></tr>
+<tr class="separator:ab6fb653214edffbce146089c706ccfee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34de2ed2a63db57a4683371badccbc15"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; <a class="el" href="../../d5/d98/namespacetudat_1_1reference__frames.html#ac12482df307b5867b2572ff4323b36a5">AerodynamicsReferenceFrames</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d98/namespacetudat_1_1reference__frames.html#a34de2ed2a63db57a4683371badccbc15">unsupportedAerodynamicsReferenceFrames</a> = { }</td></tr>
+<tr class="memdesc:a34de2ed2a63db57a4683371badccbc15"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>AerodynamicsReferenceFrames</code> not supported by <code><a class="el" href="../../d8/d24/namespacetudat_1_1json__interface.html">json_interface</a></code>.  <a href="#a34de2ed2a63db57a4683371badccbc15">More...</a><br /></td></tr>
+<tr class="separator:a34de2ed2a63db57a4683371badccbc15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac5dee4679465a9c03868328be4f0cf94"><td class="memItemLeft" align="right" valign="top">static const Eigen::Matrix3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d98/namespacetudat_1_1reference__frames.html#ac5dee4679465a9c03868328be4f0cf94">X_AXIS_ROTATION_MATRIX_DERIVATIVE_PREMULTIPLIER</a></td></tr>
+<tr class="memdesc:ac5dee4679465a9c03868328be4f0cf94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pre-multiplier used to take derivative of rotation matrix about x-axis w.r.t. the rotation angle.  <a href="#ac5dee4679465a9c03868328be4f0cf94">More...</a><br /></td></tr>
 <tr class="separator:ac5dee4679465a9c03868328be4f0cf94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f4abefd66ce045e70b231c1e4a27a38"><td class="memItemLeft" align="right" valign="top">static const Eigen::Matrix3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d98/namespacetudat_1_1reference__frames.html#a0f4abefd66ce045e70b231c1e4a27a38">Y_AXIS_ROTATION_MATRIX_DERIVATIVE_PREMULTIPLIER</a></td></tr>
+<tr class="memdesc:a0f4abefd66ce045e70b231c1e4a27a38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pre-multiplier used to take derivative of rotation matrix about y-axis w.r.t. the rotation angle.  <a href="#a0f4abefd66ce045e70b231c1e4a27a38">More...</a><br /></td></tr>
 <tr class="separator:a0f4abefd66ce045e70b231c1e4a27a38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec20d3f4eebd725852106fea9bf95280"><td class="memItemLeft" align="right" valign="top">static const Eigen::Matrix3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d98/namespacetudat_1_1reference__frames.html#aec20d3f4eebd725852106fea9bf95280">Z_AXIS_ROTATION_MATRIX_DERIVATIVE_PREMULTIPLIER</a></td></tr>
+<tr class="memdesc:aec20d3f4eebd725852106fea9bf95280"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pre-multiplier used to take derivative of rotation matrix about z-axis w.r.t. the rotation angle.  <a href="#aec20d3f4eebd725852106fea9bf95280">More...</a><br /></td></tr>
 <tr class="separator:aec20d3f4eebd725852106fea9bf95280"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
@@ -406,11 +440,11 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>String with reference frame id. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../db/d44/aerodynamic_angle_calculator_8cpp_source.html#l00031">31</a> of file <a class="el" href="../../db/d44/aerodynamic_angle_calculator_8cpp_source.html">aerodynamicAngleCalculator.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d44/aerodynamic_angle_calculator_8cpp_source.html#l00030">30</a> of file <a class="el" href="../../db/d44/aerodynamic_angle_calculator_8cpp_source.html">aerodynamicAngleCalculator.cpp</a>.</p>
 
 <p>References <a class="el" href="../../db/d65/aerodynamic_angle_calculator_8h_source.html#l00046">aerodynamic_frame</a>, <a class="el" href="../../db/d65/aerodynamic_angle_calculator_8h_source.html#l00047">body_frame</a>, <a class="el" href="../../db/d65/aerodynamic_angle_calculator_8h_source.html#l00043">corotating_frame</a>, <a class="el" href="../../db/d65/aerodynamic_angle_calculator_8h_source.html#l00042">inertial_frame</a>, <a class="el" href="../../db/d65/aerodynamic_angle_calculator_8h_source.html#l00045">trajectory_frame</a>, and <a class="el" href="../../db/d65/aerodynamic_angle_calculator_8h_source.html#l00044">vertical_frame</a>.</p>
 
-<p>Referenced by <a class="el" href="../../de/d48/propagation_output_settings_8cpp_source.html#l00132">tudat::propagators::getDependentVariableId()</a>.</p>
+<p>Referenced by <a class="el" href="../../de/d48/propagation_output_settings_8cpp_source.html#l00171">tudat::propagators::getDependentVariableId()</a>.</p>
 
 </div>
 </div>
@@ -435,11 +469,11 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>String withaerodynamic angle id. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../db/d44/aerodynamic_angle_calculator_8cpp_source.html#l00064">64</a> of file <a class="el" href="../../db/d44/aerodynamic_angle_calculator_8cpp_source.html">aerodynamicAngleCalculator.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d44/aerodynamic_angle_calculator_8cpp_source.html#l00063">63</a> of file <a class="el" href="../../db/d44/aerodynamic_angle_calculator_8cpp_source.html">aerodynamicAngleCalculator.cpp</a>.</p>
 
 <p>References <a class="el" href="../../db/d65/aerodynamic_angle_calculator_8h_source.html#l00066">angle_of_attack</a>, <a class="el" href="../../db/d65/aerodynamic_angle_calculator_8h_source.html#l00067">angle_of_sideslip</a>, <a class="el" href="../../db/d65/aerodynamic_angle_calculator_8h_source.html#l00068">bank_angle</a>, <a class="el" href="../../db/d65/aerodynamic_angle_calculator_8h_source.html#l00065">flight_path_angle</a>, <a class="el" href="../../db/d65/aerodynamic_angle_calculator_8h_source.html#l00064">heading_angle</a>, <a class="el" href="../../db/d65/aerodynamic_angle_calculator_8h_source.html#l00062">latitude_angle</a>, and <a class="el" href="../../db/d65/aerodynamic_angle_calculator_8h_source.html#l00063">longitude_angle</a>.</p>
 
-<p>Referenced by <a class="el" href="../../de/d48/propagation_output_settings_8cpp_source.html#l00132">tudat::propagators::getDependentVariableId()</a>.</p>
+<p>Referenced by <a class="el" href="../../de/d48/propagation_output_settings_8cpp_source.html#l00171">tudat::propagators::getDependentVariableId()</a>.</p>
 
 </div>
 </div>
@@ -479,9 +513,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../db/d44/aerodynamic_angle_calculator_8cpp_source.html#l00448">448</a> of file <a class="el" href="../../db/d44/aerodynamic_angle_calculator_8cpp_source.html">aerodynamicAngleCalculator.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d44/aerodynamic_angle_calculator_8cpp_source.html#l00447">447</a> of file <a class="el" href="../../db/d44/aerodynamic_angle_calculator_8cpp_source.html">aerodynamicAngleCalculator.cpp</a>.</p>
 
-<p>References <a class="el" href="../../db/d65/aerodynamic_angle_calculator_8h_source.html#l00043">corotating_frame</a>, <a class="el" href="../../db/d44/aerodynamic_angle_calculator_8cpp_source.html#l00187">tudat::reference_frames::AerodynamicAngleCalculator::getRotationQuaternionBetweenFrames()</a>, <a class="el" href="../../db/d65/aerodynamic_angle_calculator_8h_source.html#l00042">inertial_frame</a>, <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00062">transformVectorFromQuaternionFunction()</a>, and <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00078">transformVectorFromVectorFunctions()</a>.</p>
+<p>References <a class="el" href="../../db/d65/aerodynamic_angle_calculator_8h_source.html#l00043">corotating_frame</a>, <a class="el" href="../../db/d44/aerodynamic_angle_calculator_8cpp_source.html#l00186">tudat::reference_frames::AerodynamicAngleCalculator::getRotationQuaternionBetweenFrames()</a>, <a class="el" href="../../db/d65/aerodynamic_angle_calculator_8h_source.html#l00042">inertial_frame</a>, <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00059">transformVectorFromQuaternionFunction()</a>, and <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00075">transformVectorFromVectorFunctions()</a>.</p>
 
 </div>
 </div>
@@ -516,11 +550,11 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../db/d44/aerodynamic_angle_calculator_8cpp_source.html#l00511">511</a> of file <a class="el" href="../../db/d44/aerodynamic_angle_calculator_8cpp_source.html">aerodynamicAngleCalculator.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d44/aerodynamic_angle_calculator_8cpp_source.html#l00510">510</a> of file <a class="el" href="../../db/d44/aerodynamic_angle_calculator_8cpp_source.html">aerodynamicAngleCalculator.cpp</a>.</p>
 
-<p>References <a class="el" href="../../db/d65/aerodynamic_angle_calculator_8h_source.html#l00409">tudat::reference_frames::AerodynamicAnglesClosure::getCurrentAngleOfAttack()</a>, <a class="el" href="../../db/d65/aerodynamic_angle_calculator_8h_source.html#l00419">tudat::reference_frames::AerodynamicAnglesClosure::getCurrentAngleOfSideslip()</a>, <a class="el" href="../../db/d65/aerodynamic_angle_calculator_8h_source.html#l00429">tudat::reference_frames::AerodynamicAnglesClosure::getCurrentBankAngle()</a>, and <a class="el" href="../../db/d44/aerodynamic_angle_calculator_8cpp_source.html#l00494">tudat::reference_frames::AerodynamicAnglesClosure::updateAngles()</a>.</p>
+<p>References <a class="el" href="../../db/d65/aerodynamic_angle_calculator_8h_source.html#l00409">tudat::reference_frames::AerodynamicAnglesClosure::getCurrentAngleOfAttack()</a>, <a class="el" href="../../db/d65/aerodynamic_angle_calculator_8h_source.html#l00419">tudat::reference_frames::AerodynamicAnglesClosure::getCurrentAngleOfSideslip()</a>, <a class="el" href="../../db/d65/aerodynamic_angle_calculator_8h_source.html#l00429">tudat::reference_frames::AerodynamicAnglesClosure::getCurrentBankAngle()</a>, and <a class="el" href="../../db/d44/aerodynamic_angle_calculator_8cpp_source.html#l00493">tudat::reference_frames::AerodynamicAnglesClosure::updateAngles()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../db/d44/aerodynamic_angle_calculator_8cpp_source.html#l00526">setAerodynamicDependentOrientationCalculatorClosure()</a>, <a class="el" href="../../d0/d77/body_8h_source.html#l00635">tudat::simulation_setup::Body::setDependentOrientationCalculator()</a>, <a class="el" href="../../d0/d77/body_8h_source.html#l00702">tudat::simulation_setup::Body::setFlightConditions()</a>, and <a class="el" href="../../df/dca/create_state_derivative_model_8h_source.html#l00355">tudat::propagators::setMultiTypePropagationClosure()</a>.</p>
+<p>Referenced by <a class="el" href="../../db/d44/aerodynamic_angle_calculator_8cpp_source.html#l00525">setAerodynamicDependentOrientationCalculatorClosure()</a>, <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l00713">tudat::simulation_setup::Body::setDependentOrientationCalculator()</a>, <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l00780">tudat::simulation_setup::Body::setFlightConditions()</a>, and <a class="el" href="../../df/dca/create_state_derivative_model_8h_source.html#l00377">tudat::propagators::setMultiTypePropagationClosure()</a>.</p>
 
 </div>
 </div>
@@ -555,9 +589,9 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../db/d44/aerodynamic_angle_calculator_8cpp_source.html#l00526">526</a> of file <a class="el" href="../../db/d44/aerodynamic_angle_calculator_8cpp_source.html">aerodynamicAngleCalculator.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d44/aerodynamic_angle_calculator_8cpp_source.html#l00525">525</a> of file <a class="el" href="../../db/d44/aerodynamic_angle_calculator_8cpp_source.html">aerodynamicAngleCalculator.cpp</a>.</p>
 
-<p>References <a class="el" href="../../dd/dc3/classtudat_1_1reference__frames_1_1_dependent_orientation_calculator.html#ae55893820994179e02ec6189cd9fb00b">tudat::reference_frames::DependentOrientationCalculator::getRotationToLocalFrame()</a>, and <a class="el" href="../../db/d44/aerodynamic_angle_calculator_8cpp_source.html#l00511">setAerodynamicDependentOrientationCalculatorClosure()</a>.</p>
+<p>References <a class="el" href="../../dd/dc3/classtudat_1_1reference__frames_1_1_dependent_orientation_calculator.html#ae55893820994179e02ec6189cd9fb00b">tudat::reference_frames::DependentOrientationCalculator::getRotationToLocalFrame()</a>, and <a class="el" href="../../db/d44/aerodynamic_angle_calculator_8cpp_source.html#l00510">setAerodynamicDependentOrientationCalculatorClosure()</a>.</p>
 
 </div>
 </div>
@@ -592,9 +626,9 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../db/d44/aerodynamic_angle_calculator_8cpp_source.html#l00536">536</a> of file <a class="el" href="../../db/d44/aerodynamic_angle_calculator_8cpp_source.html">aerodynamicAngleCalculator.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d44/aerodynamic_angle_calculator_8cpp_source.html#l00535">535</a> of file <a class="el" href="../../db/d44/aerodynamic_angle_calculator_8cpp_source.html">aerodynamicAngleCalculator.cpp</a>.</p>
 
-<p>References <a class="el" href="../../da/d34/classtudat_1_1ephemerides_1_1_rotational_ephemeris.html#a569eeb2b7416693589b6f2b4707932a7">tudat::ephemerides::RotationalEphemeris::getRotationToTargetFrame()</a>, and <a class="el" href="../../db/d44/aerodynamic_angle_calculator_8cpp_source.html#l00511">setAerodynamicDependentOrientationCalculatorClosure()</a>.</p>
+<p>References <a class="el" href="../../da/d34/classtudat_1_1ephemerides_1_1_rotational_ephemeris.html#a569eeb2b7416693589b6f2b4707932a7">tudat::ephemerides::RotationalEphemeris::getRotationToTargetFrame()</a>, and <a class="el" href="../../db/d44/aerodynamic_angle_calculator_8cpp_source.html#l00510">setAerodynamicDependentOrientationCalculatorClosure()</a>.</p>
 
 </div>
 </div>
@@ -806,9 +840,9 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Euler angles x,y,z (about 1, 3 and 2 axes, respectively). </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00036">36</a> of file <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html">referenceFrameTransformations.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00033">33</a> of file <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html">referenceFrameTransformations.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="../../db/d44/aerodynamic_angle_calculator_8cpp_source.html#l00494">tudat::reference_frames::AerodynamicAnglesClosure::updateAngles()</a>.</p>
+<p>Referenced by <a class="el" href="../../db/d44/aerodynamic_angle_calculator_8cpp_source.html#l00493">tudat::reference_frames::AerodynamicAnglesClosure::updateAngles()</a>.</p>
 
 </div>
 </div>
@@ -833,7 +867,7 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Pole right ascension and declination, and prime meridian of date, from rotation matrix </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00047">47</a> of file <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html">referenceFrameTransformations.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00044">44</a> of file <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html">referenceFrameTransformations.cpp</a>.</p>
 
 <p>References <a class="el" href="../../df/d63/basic_mathematics_functions_8h_source.html#l00058">tudat::basic_mathematics::computeModulo()</a>, and <a class="el" href="../../d6/d70/mathematical_constants_8h_source.html#l00064">tudat::mathematical_constants::PI</a>.</p>
 
@@ -873,9 +907,9 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Vector originalVector, transformed to new frame. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00062">62</a> of file <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html">referenceFrameTransformations.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00059">59</a> of file <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html">referenceFrameTransformations.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="../../db/d44/aerodynamic_angle_calculator_8cpp_source.html#l00448">getAerodynamicForceTransformationFunction()</a>.</p>
+<p>Referenced by <a class="el" href="../../db/d44/aerodynamic_angle_calculator_8cpp_source.html#l00447">getAerodynamicForceTransformationFunction()</a>.</p>
 
 </div>
 </div>
@@ -911,9 +945,9 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Vector originalVector, transformed to new frame. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00070">70</a> of file <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html">referenceFrameTransformations.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00067">67</a> of file <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html">referenceFrameTransformations.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d2/d02/create_acceleration_models_8cpp_source.html#l00660">tudat::simulation_setup::createAerodynamicAcceleratioModel()</a>, and <a class="el" href="../../dd/d95/create_torque_model_8cpp_source.html#l00020">tudat::simulation_setup::createAerodynamicTorqueModel()</a>.</p>
+<p>Referenced by <a class="el" href="../../d2/d02/create_acceleration_models_8cpp_source.html#l00658">tudat::simulation_setup::createAerodynamicAcceleratioModel()</a>, and <a class="el" href="../../dd/d95/create_torque_model_8cpp_source.html#l00021">tudat::simulation_setup::createAerodynamicTorqueModel()</a>.</p>
 
 </div>
 </div>
@@ -949,9 +983,9 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Vector originalVector, transformed to new frame. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00078">78</a> of file <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html">referenceFrameTransformations.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00075">75</a> of file <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html">referenceFrameTransformations.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="../../db/d44/aerodynamic_angle_calculator_8cpp_source.html#l00448">getAerodynamicForceTransformationFunction()</a>.</p>
+<p>Referenced by <a class="el" href="../../db/d44/aerodynamic_angle_calculator_8cpp_source.html#l00447">getAerodynamicForceTransformationFunction()</a>.</p>
 
 </div>
 </div>
@@ -976,9 +1010,9 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Reference frame (R) to inertial reference frame (I) transformation matrix. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00096">96</a> of file <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html">referenceFrameTransformations.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00093">93</a> of file <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html">referenceFrameTransformations.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00147">getInertialToPlanetocentricFrameTransformationMatrix()</a>.</p>
+<p>References <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00144">getInertialToPlanetocentricFrameTransformationMatrix()</a>.</p>
 
 </div>
 </div>
@@ -1003,7 +1037,7 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Reference frame (R) to inertial reference frame (I) transformation quaternion. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00111">111</a> of file <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html">referenceFrameTransformations.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00108">108</a> of file <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html">referenceFrameTransformations.cpp</a>.</p>
 
 </div>
 </div>
@@ -1046,7 +1080,7 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Rotation quaternion computed. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00125">125</a> of file <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html">referenceFrameTransformations.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00122">122</a> of file <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html">referenceFrameTransformations.cpp</a>.</p>
 
 <p>References <a class="el" href="../../d6/d70/mathematical_constants_8h_source.html#l00064">tudat::mathematical_constants::PI</a>.</p>
 
@@ -1073,9 +1107,9 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Inertial (I) to planetocentric reference frame (R) transformation matrix. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00147">147</a> of file <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html">referenceFrameTransformations.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00144">144</a> of file <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html">referenceFrameTransformations.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00096">getRotatingPlanetocentricToInertialFrameTransformationMatrix()</a>.</p>
+<p>Referenced by <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00093">getRotatingPlanetocentricToInertialFrameTransformationMatrix()</a>.</p>
 
 </div>
 </div>
@@ -1119,9 +1153,9 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Velocity based LVLH to inertial (I) frame transformation matrix. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00160">160</a> of file <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html">referenceFrameTransformations.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00157">157</a> of file <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html">referenceFrameTransformations.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00190">getVelocityBasedLvlhToInertialRotationFromFunctions()</a>.</p>
+<p>Referenced by <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00187">getVelocityBasedLvlhToInertialRotationFromFunctions()</a>.</p>
 
 </div>
 </div>
@@ -1165,11 +1199,11 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Velocity based LVLH to inertial (I) frame transformation matrix. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00190">190</a> of file <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html">referenceFrameTransformations.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00187">187</a> of file <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html">referenceFrameTransformations.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00160">getVelocityBasedLvlhToInertialRotation()</a>.</p>
+<p>References <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00157">getVelocityBasedLvlhToInertialRotation()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d2/d02/create_acceleration_models_8cpp_source.html#l00951">tudat::simulation_setup::createThrustAcceleratioModel()</a>, and <a class="el" href="../../db/d91/propagation_output_8h_source.html#l00600">tudat::propagators::getVectorDependentVariableFunction()</a>.</p>
+<p>Referenced by <a class="el" href="../../d2/d02/create_acceleration_models_8cpp_source.html#l00949">tudat::simulation_setup::createThrustAcceleratioModel()</a>, and <a class="el" href="../../db/d91/propagation_output_8h_source.html#l00192">tudat::propagators::getVectorDependentVariableFunction()</a>.</p>
 
 </div>
 </div>
@@ -1195,7 +1229,7 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Computed rotation quaternion.Get rotation from velocity based LVLH frame to planetocentric frame. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00200">200</a> of file <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html">referenceFrameTransformations.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00197">197</a> of file <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html">referenceFrameTransformations.cpp</a>.</p>
 
 <p>References <a class="el" href="../../d8/d40/field_type_8h_source.html#l00141">tudat::input_output::field_types::state::argumentOfPeriapsis</a>, <a class="el" href="../../d8/d40/field_type_8h_source.html#l00129">tudat::input_output::field_types::state::eccentricity</a>, <a class="el" href="../../d8/d40/field_type_8h_source.html#l00133">tudat::input_output::field_types::state::inclination</a>, <a class="el" href="../../d6/d70/mathematical_constants_8h_source.html#l00064">tudat::mathematical_constants::PI</a>, and <a class="el" href="../../d8/d40/field_type_8h_source.html#l00153">tudat::input_output::field_types::state::trueAnomaly</a>.</p>
 
@@ -1214,10 +1248,17 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Function to compute the rotation matrix to RSW frame, from the frame in which the input state is given. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bodyState</td><td>State for which the RSW frame rotation is to be computed. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Rotation matrix to RSW frame </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00231">231</a> of file <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html">referenceFrameTransformations.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00229">229</a> of file <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html">referenceFrameTransformations.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d3/d53/n_body_gauss_modified_equinoctial_state_derivative_8h_source.html#l00122">tudat::propagators::NBodyGaussModifiedEquinictialStateDerivative&lt; StateScalarType, TimeType &gt;::calculateSystemStateDerivative()</a>, <a class="el" href="../../db/d41/n_body_gauss_kepler_state_derivative_8h_source.html#l00137">tudat::propagators::NBodyGaussKeplerStateDerivative&lt; StateScalarType, TimeType &gt;::calculateSystemStateDerivative()</a>, <a class="el" href="../../d3/dd7/n_body_gauss_kepler_state_derivative_8cpp_source.html#l00100">tudat::propagators::computeGaussPlanetaryEquationsForKeplerElements()</a>, and <a class="el" href="../../db/d7c/empirical_acceleration_8h_source.html#l00136">tudat::basic_astrodynamics::EmpiricalAcceleration::updateMembers()</a>.</p>
+<p>Referenced by <a class="el" href="../../d3/d53/n_body_gauss_modified_equinoctial_state_derivative_8h_source.html#l00122">tudat::propagators::NBodyGaussModifiedEquinictialStateDerivative&lt; StateScalarType, TimeType &gt;::calculateSystemStateDerivative()</a>, <a class="el" href="../../db/d41/n_body_gauss_kepler_state_derivative_8h_source.html#l00137">tudat::propagators::NBodyGaussKeplerStateDerivative&lt; StateScalarType, TimeType &gt;::calculateSystemStateDerivative()</a>, <a class="el" href="../../d3/dd7/n_body_gauss_kepler_state_derivative_8cpp_source.html#l00100">tudat::propagators::computeGaussPlanetaryEquationsForKeplerElements()</a>, and <a class="el" href="../../db/d7c/empirical_acceleration_8h_source.html#l00135">tudat::basic_astrodynamics::EmpiricalAcceleration::updateMembers()</a>.</p>
 
 </div>
 </div>
@@ -1243,9 +1284,9 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Inertial (I) to planetocentric reference frame (R) transformation quaternion. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00257">257</a> of file <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html">referenceFrameTransformations.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00255">255</a> of file <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html">referenceFrameTransformations.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d7/d48/simple_rotational_ephemeris_8cpp_source.html#l00040">tudat::ephemerides::SimpleRotationalEphemeris::getDerivativeOfRotationToTargetFrame()</a>, <a class="el" href="../../d7/d48/simple_rotational_ephemeris_8cpp_source.html#l00023">tudat::ephemerides::SimpleRotationalEphemeris::getRotationToTargetFrame()</a>, and <a class="el" href="../../d7/d48/simple_rotational_ephemeris_8cpp_source.html#l00058">tudat::ephemerides::SimpleRotationalEphemeris::resetInitialPoleRightAscensionAndDeclination()</a>.</p>
+<p>Referenced by <a class="el" href="../../d7/d48/simple_rotational_ephemeris_8cpp_source.html#l00037">tudat::ephemerides::SimpleRotationalEphemeris::getDerivativeOfRotationToTargetFrame()</a>, <a class="el" href="../../d7/d48/simple_rotational_ephemeris_8cpp_source.html#l00023">tudat::ephemerides::SimpleRotationalEphemeris::getRotationToTargetFrame()</a>, and <a class="el" href="../../d7/d48/simple_rotational_ephemeris_8cpp_source.html#l00053">tudat::ephemerides::SimpleRotationalEphemeris::resetInitialPoleRightAscensionAndDeclination()</a>.</p>
 
 </div>
 </div>
@@ -1288,7 +1329,7 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Rotation quaternion computed. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00272">272</a> of file <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html">referenceFrameTransformations.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00270">270</a> of file <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html">referenceFrameTransformations.cpp</a>.</p>
 
 <p>References <a class="el" href="../../d6/d70/mathematical_constants_8h_source.html#l00064">tudat::mathematical_constants::PI</a>.</p>
 
@@ -1317,7 +1358,7 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Transformation quaternion. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00294">294</a> of file <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html">referenceFrameTransformations.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00292">292</a> of file <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html">referenceFrameTransformations.cpp</a>.</p>
 
 </div>
 </div>
@@ -1353,11 +1394,11 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Transformation matrix from Planetocentric (R) to the local vertical (V) frame. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00307">307</a> of file <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html">referenceFrameTransformations.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00305">305</a> of file <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html">referenceFrameTransformations.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00315">getRotatingPlanetocentricToLocalVerticalFrameTransformationQuaternion()</a>.</p>
+<p>References <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00313">getRotatingPlanetocentricToLocalVerticalFrameTransformationQuaternion()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00333">getLocalVerticalToRotatingPlanetocentricFrameTransformationMatrix()</a>.</p>
+<p>Referenced by <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00331">getLocalVerticalToRotatingPlanetocentricFrameTransformationMatrix()</a>.</p>
 
 </div>
 </div>
@@ -1394,11 +1435,11 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Transformation quaternion from Planetocentric (R) to the local vertical (V) frame. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00315">315</a> of file <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html">referenceFrameTransformations.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00313">313</a> of file <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html">referenceFrameTransformations.cpp</a>.</p>
 
 <p>References <a class="el" href="../../d6/d70/mathematical_constants_8h_source.html#l00064">tudat::mathematical_constants::PI</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d3/d49/spherical_state_conversions_8cpp_source.html#l00039">tudat::orbital_element_conversions::convertCartesianToSphericalOrbitalState()</a>, <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00341">getLocalVerticalToRotatingPlanetocentricFrameTransformationQuaternion()</a>, <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00307">getRotatingPlanetocentricToLocalVerticalFrameTransformationMatrix()</a>, <a class="el" href="../../db/d44/aerodynamic_angle_calculator_8cpp_source.html#l00187">tudat::reference_frames::AerodynamicAngleCalculator::getRotationQuaternionBetweenFrames()</a>, and <a class="el" href="../../db/d44/aerodynamic_angle_calculator_8cpp_source.html#l00101">tudat::reference_frames::AerodynamicAngleCalculator::update()</a>.</p>
+<p>Referenced by <a class="el" href="../../d3/d49/spherical_state_conversions_8cpp_source.html#l00037">tudat::orbital_element_conversions::convertCartesianToSphericalOrbitalState()</a>, <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00339">getLocalVerticalToRotatingPlanetocentricFrameTransformationQuaternion()</a>, <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00305">getRotatingPlanetocentricToLocalVerticalFrameTransformationMatrix()</a>, <a class="el" href="../../db/d44/aerodynamic_angle_calculator_8cpp_source.html#l00186">tudat::reference_frames::AerodynamicAngleCalculator::getRotationQuaternionBetweenFrames()</a>, and <a class="el" href="../../db/d44/aerodynamic_angle_calculator_8cpp_source.html#l00100">tudat::reference_frames::AerodynamicAngleCalculator::update()</a>.</p>
 
 </div>
 </div>
@@ -1434,9 +1475,9 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Transformation matrix from local vertical (V) to the Planetocentric (R) frame. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00333">333</a> of file <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html">referenceFrameTransformations.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00331">331</a> of file <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html">referenceFrameTransformations.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00307">getRotatingPlanetocentricToLocalVerticalFrameTransformationMatrix()</a>.</p>
+<p>References <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00305">getRotatingPlanetocentricToLocalVerticalFrameTransformationMatrix()</a>.</p>
 
 </div>
 </div>
@@ -1472,11 +1513,11 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Transformation quaternion from local vertical (V) to the Planetocentric (R) frame. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00341">341</a> of file <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html">referenceFrameTransformations.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00339">339</a> of file <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html">referenceFrameTransformations.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00315">getRotatingPlanetocentricToLocalVerticalFrameTransformationQuaternion()</a>.</p>
+<p>References <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00313">getRotatingPlanetocentricToLocalVerticalFrameTransformationQuaternion()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d3/d49/spherical_state_conversions_8cpp_source.html#l00067">tudat::orbital_element_conversions::convertSphericalOrbitalToCartesianState()</a>, and <a class="el" href="../../db/d44/aerodynamic_angle_calculator_8cpp_source.html#l00187">tudat::reference_frames::AerodynamicAngleCalculator::getRotationQuaternionBetweenFrames()</a>.</p>
+<p>Referenced by <a class="el" href="../../d3/d49/spherical_state_conversions_8cpp_source.html#l00065">tudat::orbital_element_conversions::convertSphericalOrbitalToCartesianState()</a>, and <a class="el" href="../../db/d44/aerodynamic_angle_calculator_8cpp_source.html#l00186">tudat::reference_frames::AerodynamicAngleCalculator::getRotationQuaternionBetweenFrames()</a>.</p>
 
 </div>
 </div>
@@ -1512,11 +1553,11 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Transformation matrix from trajectory frame (T) to the local vertical frame (V). </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00349">349</a> of file <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html">referenceFrameTransformations.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00347">347</a> of file <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html">referenceFrameTransformations.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00357">getTrajectoryToLocalVerticalFrameTransformationQuaternion()</a>.</p>
+<p>References <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00355">getTrajectoryToLocalVerticalFrameTransformationQuaternion()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00371">getLocalVerticalFrameToTrajectoryTransformationMatrix()</a>.</p>
+<p>Referenced by <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00369">getLocalVerticalFrameToTrajectoryTransformationMatrix()</a>.</p>
 
 </div>
 </div>
@@ -1552,9 +1593,9 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Transformation quaternion from trajectory frame (T) to the local vertical frame (V). </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00357">357</a> of file <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html">referenceFrameTransformations.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00355">355</a> of file <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html">referenceFrameTransformations.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00379">getLocalVerticalFrameToTrajectoryTransformationQuaternion()</a>, <a class="el" href="../../db/d44/aerodynamic_angle_calculator_8cpp_source.html#l00187">tudat::reference_frames::AerodynamicAngleCalculator::getRotationQuaternionBetweenFrames()</a>, and <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00349">getTrajectoryToLocalVerticalFrameTransformationMatrix()</a>.</p>
+<p>Referenced by <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00377">getLocalVerticalFrameToTrajectoryTransformationQuaternion()</a>, <a class="el" href="../../db/d44/aerodynamic_angle_calculator_8cpp_source.html#l00186">tudat::reference_frames::AerodynamicAngleCalculator::getRotationQuaternionBetweenFrames()</a>, and <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00347">getTrajectoryToLocalVerticalFrameTransformationMatrix()</a>.</p>
 
 </div>
 </div>
@@ -1590,9 +1631,9 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Transformation matrix from the local vertical (V) to the trajectory (T) frame. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00371">371</a> of file <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html">referenceFrameTransformations.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00369">369</a> of file <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html">referenceFrameTransformations.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00349">getTrajectoryToLocalVerticalFrameTransformationMatrix()</a>.</p>
+<p>References <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00347">getTrajectoryToLocalVerticalFrameTransformationMatrix()</a>.</p>
 
 </div>
 </div>
@@ -1628,11 +1669,11 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Transformation quaternion from the local vertical (V) to the trajectory (T) frame. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00379">379</a> of file <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html">referenceFrameTransformations.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00377">377</a> of file <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html">referenceFrameTransformations.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00357">getTrajectoryToLocalVerticalFrameTransformationQuaternion()</a>.</p>
+<p>References <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00355">getTrajectoryToLocalVerticalFrameTransformationQuaternion()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../db/d44/aerodynamic_angle_calculator_8cpp_source.html#l00187">tudat::reference_frames::AerodynamicAngleCalculator::getRotationQuaternionBetweenFrames()</a>.</p>
+<p>Referenced by <a class="el" href="../../db/d44/aerodynamic_angle_calculator_8cpp_source.html#l00186">tudat::reference_frames::AerodynamicAngleCalculator::getRotationQuaternionBetweenFrames()</a>.</p>
 
 </div>
 </div>
@@ -1657,11 +1698,11 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Transformation matrix from the TA- to the AA-frame. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00387">387</a> of file <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html">referenceFrameTransformations.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00385">385</a> of file <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html">referenceFrameTransformations.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00395">getTrajectoryToAerodynamicFrameTransformationQuaternion()</a>.</p>
+<p>References <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00393">getTrajectoryToAerodynamicFrameTransformationQuaternion()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00406">getAerodynamicToTrajectoryFrameTransformationMatrix()</a>.</p>
+<p>Referenced by <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00404">getAerodynamicToTrajectoryFrameTransformationMatrix()</a>.</p>
 
 </div>
 </div>
@@ -1686,9 +1727,9 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Transformation quaternion from the TA- to the AA-frame. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00395">395</a> of file <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html">referenceFrameTransformations.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00393">393</a> of file <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html">referenceFrameTransformations.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00413">getAerodynamicToTrajectoryFrameTransformationQuaternion()</a>, <a class="el" href="../../db/d44/aerodynamic_angle_calculator_8cpp_source.html#l00187">tudat::reference_frames::AerodynamicAngleCalculator::getRotationQuaternionBetweenFrames()</a>, and <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00387">getTrajectoryToAerodynamicFrameTransformationMatrix()</a>.</p>
+<p>Referenced by <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00411">getAerodynamicToTrajectoryFrameTransformationQuaternion()</a>, <a class="el" href="../../db/d44/aerodynamic_angle_calculator_8cpp_source.html#l00186">tudat::reference_frames::AerodynamicAngleCalculator::getRotationQuaternionBetweenFrames()</a>, and <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00385">getTrajectoryToAerodynamicFrameTransformationMatrix()</a>.</p>
 
 </div>
 </div>
@@ -1713,9 +1754,9 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Transformation matrix from the AA- to the TA-frame. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00406">406</a> of file <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html">referenceFrameTransformations.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00404">404</a> of file <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html">referenceFrameTransformations.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00387">getTrajectoryToAerodynamicFrameTransformationMatrix()</a>.</p>
+<p>References <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00385">getTrajectoryToAerodynamicFrameTransformationMatrix()</a>.</p>
 
 </div>
 </div>
@@ -1740,11 +1781,11 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Transformation quaternion from the AA- to the TA-frame. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00413">413</a> of file <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html">referenceFrameTransformations.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00411">411</a> of file <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html">referenceFrameTransformations.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00395">getTrajectoryToAerodynamicFrameTransformationQuaternion()</a>.</p>
+<p>References <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00393">getTrajectoryToAerodynamicFrameTransformationQuaternion()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../db/d44/aerodynamic_angle_calculator_8cpp_source.html#l00187">tudat::reference_frames::AerodynamicAngleCalculator::getRotationQuaternionBetweenFrames()</a>.</p>
+<p>Referenced by <a class="el" href="../../db/d44/aerodynamic_angle_calculator_8cpp_source.html#l00186">tudat::reference_frames::AerodynamicAngleCalculator::getRotationQuaternionBetweenFrames()</a>.</p>
 
 </div>
 </div>
@@ -1780,11 +1821,11 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Transformation matrix from the B- to the AA-frame. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00420">420</a> of file <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html">referenceFrameTransformations.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00418">418</a> of file <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html">referenceFrameTransformations.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00428">getBodyToAirspeedBasedAerodynamicFrameTransformationQuaternion()</a>.</p>
+<p>References <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00426">getBodyToAirspeedBasedAerodynamicFrameTransformationQuaternion()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00442">getAirspeedBasedAerodynamicToBodyFrameTransformationMatrix()</a>.</p>
+<p>Referenced by <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00440">getAirspeedBasedAerodynamicToBodyFrameTransformationMatrix()</a>.</p>
 
 </div>
 </div>
@@ -1820,9 +1861,9 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Transformation quaternion from the B- to the AA-frame. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00428">428</a> of file <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html">referenceFrameTransformations.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00426">426</a> of file <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html">referenceFrameTransformations.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00450">getAirspeedBasedAerodynamicToBodyFrameTransformationQuaternion()</a>, <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00420">getBodyToAirspeedBasedAerodynamicFrameTransformationMatrix()</a>, and <a class="el" href="../../db/d44/aerodynamic_angle_calculator_8cpp_source.html#l00187">tudat::reference_frames::AerodynamicAngleCalculator::getRotationQuaternionBetweenFrames()</a>.</p>
+<p>Referenced by <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00448">getAirspeedBasedAerodynamicToBodyFrameTransformationQuaternion()</a>, <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00418">getBodyToAirspeedBasedAerodynamicFrameTransformationMatrix()</a>, and <a class="el" href="../../db/d44/aerodynamic_angle_calculator_8cpp_source.html#l00186">tudat::reference_frames::AerodynamicAngleCalculator::getRotationQuaternionBetweenFrames()</a>.</p>
 
 </div>
 </div>
@@ -1858,9 +1899,9 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Transformation matrix from the AA- to the B-frame. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00442">442</a> of file <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html">referenceFrameTransformations.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00440">440</a> of file <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html">referenceFrameTransformations.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00420">getBodyToAirspeedBasedAerodynamicFrameTransformationMatrix()</a>.</p>
+<p>References <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00418">getBodyToAirspeedBasedAerodynamicFrameTransformationMatrix()</a>.</p>
 
 </div>
 </div>
@@ -1896,11 +1937,11 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Transformation quaternion from the AA- to the B-frame. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00450">450</a> of file <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html">referenceFrameTransformations.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00448">448</a> of file <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html">referenceFrameTransformations.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00428">getBodyToAirspeedBasedAerodynamicFrameTransformationQuaternion()</a>.</p>
+<p>References <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00426">getBodyToAirspeedBasedAerodynamicFrameTransformationQuaternion()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../db/d44/aerodynamic_angle_calculator_8cpp_source.html#l00187">tudat::reference_frames::AerodynamicAngleCalculator::getRotationQuaternionBetweenFrames()</a>.</p>
+<p>Referenced by <a class="el" href="../../db/d44/aerodynamic_angle_calculator_8cpp_source.html#l00186">tudat::reference_frames::AerodynamicAngleCalculator::getRotationQuaternionBetweenFrames()</a>.</p>
 
 </div>
 </div>
@@ -1925,9 +1966,9 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Current heading angle. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00458">458</a> of file <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html">referenceFrameTransformations.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00456">456</a> of file <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html">referenceFrameTransformations.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="../../db/d44/aerodynamic_angle_calculator_8cpp_source.html#l00101">tudat::reference_frames::AerodynamicAngleCalculator::update()</a>.</p>
+<p>Referenced by <a class="el" href="../../db/d44/aerodynamic_angle_calculator_8cpp_source.html#l00100">tudat::reference_frames::AerodynamicAngleCalculator::update()</a>.</p>
 
 </div>
 </div>
@@ -1953,9 +1994,9 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Current flight path angle. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00464">464</a> of file <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html">referenceFrameTransformations.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00462">462</a> of file <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html">referenceFrameTransformations.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="../../db/d44/aerodynamic_angle_calculator_8cpp_source.html#l00101">tudat::reference_frames::AerodynamicAngleCalculator::update()</a>.</p>
+<p>Referenced by <a class="el" href="../../db/d44/aerodynamic_angle_calculator_8cpp_source.html#l00100">tudat::reference_frames::AerodynamicAngleCalculator::update()</a>.</p>
 
 </div>
 </div>
@@ -1992,9 +2033,9 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Transformation quaternion. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00470">470</a> of file <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html">referenceFrameTransformations.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00468">468</a> of file <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html">referenceFrameTransformations.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00478">getEnuLocalVerticalToRotatingPlanetocentricFrameTransformationQuaternion()</a>.</p>
+<p>References <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00476">getEnuLocalVerticalToRotatingPlanetocentricFrameTransformationQuaternion()</a>.</p>
 
 </div>
 </div>
@@ -2032,11 +2073,11 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Transformation quaternion. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00478">478</a> of file <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html">referenceFrameTransformations.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00476">476</a> of file <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html">referenceFrameTransformations.cpp</a>.</p>
 
 <p>References <a class="el" href="../../d6/d70/mathematical_constants_8h_source.html#l00064">tudat::mathematical_constants::PI</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d4/d4b/ground_station_state_8cpp_source.html#l00041">tudat::ground_stations::getGeocentricLocalUnitVectors()</a>, and <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00470">getRotatingPlanetocentricToEnuLocalVerticalFrameTransformationQuaternion()</a>.</p>
+<p>Referenced by <a class="el" href="../../d4/d4b/ground_station_state_8cpp_source.html#l00041">tudat::ground_stations::getGeocentricLocalUnitVectors()</a>, and <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00468">getRotatingPlanetocentricToEnuLocalVerticalFrameTransformationQuaternion()</a>.</p>
 
 </div>
 </div>
@@ -2053,8 +2094,15 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Function to compute the derivative of a rotation about the x-axis w.r.t. the rotation angle </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">angle</td><td>Angle about which rotation is taken. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Derivative of a rotation about the x-axis w.r.t. the rotation angle </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00496">496</a> of file <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html">referenceFrameTransformations.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00495">495</a> of file <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html">referenceFrameTransformations.cpp</a>.</p>
 
 <p>Referenced by <a class="el" href="../../d2/d90/rotation_matrix_partial_8cpp_source.html#l00048">tudat::observation_partials::calculatePartialOfRotationMatrixFromLocalFrameWrtPoleOrientation()</a>.</p>
 
@@ -2073,10 +2121,17 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Function to compute the derivative of a rotation about the x-axis w.r.t. the rotation angle </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rotationMatrix</td><td>Rotation matrix for which partial is to be computed </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Derivative of a rotation about the x-axis w.r.t. the rotation angle </dd></dl>
 
 <p>Definition at line <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00504">504</a> of file <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html">referenceFrameTransformations.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d2/db9/reference_frame_transformations_8h_source.html#l00489">X_AXIS_ROTATION_MATRIX_DERIVATIVE_PREMULTIPLIER</a>.</p>
+<p>References <a class="el" href="../../d2/db9/reference_frame_transformations_8h_source.html#l00496">X_AXIS_ROTATION_MATRIX_DERIVATIVE_PREMULTIPLIER</a>.</p>
 
 </div>
 </div>
@@ -2093,6 +2148,13 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Function to compute the derivative of a rotation about the y-axis w.r.t. the rotation angle </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">angle</td><td>Angle about which rotation is taken. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Derivative of a rotation about the x-axis w.r.t. the rotation angle </dd></dl>
 
 <p>Definition at line <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00510">510</a> of file <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html">referenceFrameTransformations.cpp</a>.</p>
 
@@ -2111,10 +2173,17 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Function to compute the derivative of a rotation about the y-axis w.r.t. the rotation angle </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rotationMatrix</td><td>Rotation matrix for which partial is to be computed </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Derivative of a rotation about the x-axis w.r.t. the rotation angle </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00518">518</a> of file <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html">referenceFrameTransformations.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00519">519</a> of file <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html">referenceFrameTransformations.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d2/db9/reference_frame_transformations_8h_source.html#l00495">Y_AXIS_ROTATION_MATRIX_DERIVATIVE_PREMULTIPLIER</a>.</p>
+<p>References <a class="el" href="../../d2/db9/reference_frame_transformations_8h_source.html#l00503">Y_AXIS_ROTATION_MATRIX_DERIVATIVE_PREMULTIPLIER</a>.</p>
 
 </div>
 </div>
@@ -2131,8 +2200,15 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Function to compute the derivative of a rotation about the z-axis w.r.t. the rotation angle </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">angle</td><td>Angle about which rotation is taken. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Derivative of a rotation about the x-axis w.r.t. the rotation angle </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00523">523</a> of file <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html">referenceFrameTransformations.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00525">525</a> of file <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html">referenceFrameTransformations.cpp</a>.</p>
 
 <p>Referenced by <a class="el" href="../../d2/d90/rotation_matrix_partial_8cpp_source.html#l00048">tudat::observation_partials::calculatePartialOfRotationMatrixFromLocalFrameWrtPoleOrientation()</a>.</p>
 
@@ -2151,10 +2227,169 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Function to compute the derivative of a rotation about the z-axis w.r.t. the rotation angle </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rotationMatrix</td><td>Rotation matrix for which partial is to be computed </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Derivative of a rotation about the x-axis w.r.t. the rotation angle </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00531">531</a> of file <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html">referenceFrameTransformations.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00534">534</a> of file <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html">referenceFrameTransformations.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d2/db9/reference_frame_transformations_8h_source.html#l00501">Z_AXIS_ROTATION_MATRIX_DERIVATIVE_PREMULTIPLIER</a>.</p>
+<p>References <a class="el" href="../../d2/db9/reference_frame_transformations_8h_source.html#l00510">Z_AXIS_ROTATION_MATRIX_DERIVATIVE_PREMULTIPLIER</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afe1bba516dac76a97184bee605cdc570"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tudat::reference_frames::to_json </td>
+          <td>(</td>
+          <td class="paramtype">nlohmann::json &amp;&#160;</td>
+          <td class="paramname"><em>jsonObject</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d5/d98/namespacetudat_1_1reference__frames.html#ac12482df307b5867b2572ff4323b36a5">AerodynamicsReferenceFrames</a> &amp;&#160;</td>
+          <td class="paramname"><em>aerodynamicsReferenceFrame</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../da/dc6/reference_frames_8h_source.html#l00041">41</a> of file <a class="el" href="../../da/dc6/reference_frames_8h_source.html">referenceFrames.h</a>.</p>
+
+<p>References <a class="el" href="../../d6/d36/error_handling_8h_source.html#l00420">tudat::json_interface::stringFromEnum()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a38c900ddd680435ea5eb1a9c1a162c07"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tudat::reference_frames::from_json </td>
+          <td>(</td>
+          <td class="paramtype">const nlohmann::json &amp;&#160;</td>
+          <td class="paramname"><em>jsonObject</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d5/d98/namespacetudat_1_1reference__frames.html#ac12482df307b5867b2572ff4323b36a5">AerodynamicsReferenceFrames</a> &amp;&#160;</td>
+          <td class="paramname"><em>aerodynamicsReferenceFrame</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../da/dc6/reference_frames_8h_source.html#l00047">47</a> of file <a class="el" href="../../da/dc6/reference_frames_8h_source.html">referenceFrames.h</a>.</p>
+
+<p>References <a class="el" href="../../d6/d36/error_handling_8h_source.html#l00392">tudat::json_interface::enumFromString()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad010e9e0a7fc9febdd27c09ee600f998"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tudat::reference_frames::to_json </td>
+          <td>(</td>
+          <td class="paramtype">nlohmann::json &amp;&#160;</td>
+          <td class="paramname"><em>jsonObject</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d5/d98/namespacetudat_1_1reference__frames.html#ad068ab76c2367eb248432d4ed34d9610">AerodynamicsReferenceFrameAngles</a> &amp;&#160;</td>
+          <td class="paramname"><em>aerodynamicsReferenceFrameAngle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../da/dc6/reference_frames_8h_source.html#l00072">72</a> of file <a class="el" href="../../da/dc6/reference_frames_8h_source.html">referenceFrames.h</a>.</p>
+
+<p>References <a class="el" href="../../d6/d36/error_handling_8h_source.html#l00420">tudat::json_interface::stringFromEnum()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af0d78c3e8cb1e385a705c62cb1f5b25e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tudat::reference_frames::from_json </td>
+          <td>(</td>
+          <td class="paramtype">const nlohmann::json &amp;&#160;</td>
+          <td class="paramname"><em>jsonObject</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d5/d98/namespacetudat_1_1reference__frames.html#ad068ab76c2367eb248432d4ed34d9610">AerodynamicsReferenceFrameAngles</a> &amp;&#160;</td>
+          <td class="paramname"><em>aerodynamicsReferenceFrameAngle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../da/dc6/reference_frames_8h_source.html#l00078">78</a> of file <a class="el" href="../../da/dc6/reference_frames_8h_source.html">referenceFrames.h</a>.</p>
+
+<p>References <a class="el" href="../../d6/d36/error_handling_8h_source.html#l00392">tudat::json_interface::enumFromString()</a>.</p>
 
 </div>
 </div>
@@ -2181,7 +2416,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../db/d65/aerodynamic_angle_calculator_8h_source.html#l00364">364</a> of file <a class="el" href="../../db/d65/aerodynamic_angle_calculator_8h_source.html">aerodynamicAngleCalculator.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d2/d02/create_acceleration_models_8cpp_source.html#l00660">tudat::simulation_setup::createAerodynamicAcceleratioModel()</a>, and <a class="el" href="../../dd/d95/create_torque_model_8cpp_source.html#l00020">tudat::simulation_setup::createAerodynamicTorqueModel()</a>.</p>
+<p>Referenced by <a class="el" href="../../d2/d02/create_acceleration_models_8cpp_source.html#l00658">tudat::simulation_setup::createAerodynamicAcceleratioModel()</a>, and <a class="el" href="../../dd/d95/create_torque_model_8cpp_source.html#l00021">tudat::simulation_setup::createAerodynamicTorqueModel()</a>.</p>
 
 </div>
 </div>
@@ -2202,8 +2437,8 @@ Variables</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">=</div><div class="line">        ( Eigen::Matrix3d( )&lt;&lt;</div><div class="line">          0.0, 0.0, 0.0,</div><div class="line">          0.0, 0.0, 1.0,</div><div class="line">          0.0, -1.0, 0.0 ).finished( )</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="../../d2/db9/reference_frame_transformations_8h_source.html#l00489">489</a> of file <a class="el" href="../../d2/db9/reference_frame_transformations_8h_source.html">referenceFrameTransformations.h</a>.</p>
+<b>Initial value:</b><div class="fragment"><div class="line">=</div><div class="line">        ( Eigen::Matrix3d( ) &lt;&lt;</div><div class="line">          0.0, 0.0, 0.0,</div><div class="line">          0.0, 0.0, 1.0,</div><div class="line">          0.0, -1.0, 0.0 ).finished( )</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d2/db9/reference_frame_transformations_8h_source.html#l00496">496</a> of file <a class="el" href="../../d2/db9/reference_frame_transformations_8h_source.html">referenceFrameTransformations.h</a>.</p>
 
 <p>Referenced by <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00504">getDerivativeOfXAxisRotationWrtAngle()</a>.</p>
 
@@ -2226,10 +2461,10 @@ Variables</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">=</div><div class="line">        ( Eigen::Matrix3d( )&lt;&lt;</div><div class="line">          0.0, 0.0, -1.0,</div><div class="line">          0.0, 0.0, 0.0,</div><div class="line">          1.0, 0.0, 0.0 ).finished( )</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="../../d2/db9/reference_frame_transformations_8h_source.html#l00495">495</a> of file <a class="el" href="../../d2/db9/reference_frame_transformations_8h_source.html">referenceFrameTransformations.h</a>.</p>
+<b>Initial value:</b><div class="fragment"><div class="line">=</div><div class="line">        ( Eigen::Matrix3d( ) &lt;&lt;</div><div class="line">          0.0, 0.0, -1.0,</div><div class="line">          0.0, 0.0, 0.0,</div><div class="line">          1.0, 0.0, 0.0 ).finished( )</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d2/db9/reference_frame_transformations_8h_source.html#l00503">503</a> of file <a class="el" href="../../d2/db9/reference_frame_transformations_8h_source.html">referenceFrameTransformations.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00518">getDerivativeOfYAxisRotationWrtAngle()</a>.</p>
+<p>Referenced by <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00519">getDerivativeOfYAxisRotationWrtAngle()</a>.</p>
 
 </div>
 </div>
@@ -2250,17 +2485,118 @@ Variables</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">=</div><div class="line">        ( Eigen::Matrix3d( )&lt;&lt;</div><div class="line">          0.0, 1.0, 0.0,</div><div class="line">          -1.0, 0.0, 0.0,</div><div class="line">          0.0, 0.0, 0.0 ).finished( )</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="../../d2/db9/reference_frame_transformations_8h_source.html#l00501">501</a> of file <a class="el" href="../../d2/db9/reference_frame_transformations_8h_source.html">referenceFrameTransformations.h</a>.</p>
+<b>Initial value:</b><div class="fragment"><div class="line">=</div><div class="line">        ( Eigen::Matrix3d( ) &lt;&lt;</div><div class="line">          0.0, 1.0, 0.0,</div><div class="line">          -1.0, 0.0, 0.0,</div><div class="line">          0.0, 0.0, 0.0 ).finished( )</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d2/db9/reference_frame_transformations_8h_source.html#l00510">510</a> of file <a class="el" href="../../d2/db9/reference_frame_transformations_8h_source.html">referenceFrameTransformations.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d2/d90/rotation_matrix_partial_8cpp_source.html#l00037">tudat::observation_partials::calculatePartialOfRotationMatrixFromLocalFrameDerivativeWrtConstantRotationRate()</a>, <a class="el" href="../../d2/d90/rotation_matrix_partial_8cpp_source.html#l00085">tudat::observation_partials::calculatePartialOfRotationMatrixFromLocalFrameDerivativeWrtPoleOrientation()</a>, <a class="el" href="../../d7/d48/simple_rotational_ephemeris_8cpp_source.html#l00040">tudat::ephemerides::SimpleRotationalEphemeris::getDerivativeOfRotationToTargetFrame()</a>, and <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00531">getDerivativeOfZAxisRotationWrtAngle()</a>.</p>
+<p>Referenced by <a class="el" href="../../d2/d90/rotation_matrix_partial_8cpp_source.html#l00037">tudat::observation_partials::calculatePartialOfRotationMatrixFromLocalFrameDerivativeWrtConstantRotationRate()</a>, <a class="el" href="../../d2/d90/rotation_matrix_partial_8cpp_source.html#l00085">tudat::observation_partials::calculatePartialOfRotationMatrixFromLocalFrameDerivativeWrtPoleOrientation()</a>, <a class="el" href="../../d2/ddf/earth_orientation_calculator_8h_source.html#l00087">tudat::earth_orientation::calculateRotationRateFromItrsToGcrs()</a>, <a class="el" href="../../d7/d48/simple_rotational_ephemeris_8cpp_source.html#l00037">tudat::ephemerides::SimpleRotationalEphemeris::getDerivativeOfRotationToTargetFrame()</a>, and <a class="el" href="../../d2/d70/reference_frame_transformations_8cpp_source.html#l00534">getDerivativeOfZAxisRotationWrtAngle()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a327ce9ef3be9bcc3dcf20dccd21cdcbe"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt; <a class="el" href="../../d5/d98/namespacetudat_1_1reference__frames.html#ac12482df307b5867b2572ff4323b36a5">AerodynamicsReferenceFrames</a>, std::string &gt; tudat::reference_frames::aerodynamicsReferenceFrames</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div><div class="line">{</div><div class="line">    { <a class="code" href="../../d5/d98/namespacetudat_1_1reference__frames.html#ac12482df307b5867b2572ff4323b36a5adf1573183453843c0f0d736b496bf39c">inertial_frame</a>, <span class="stringliteral">&quot;intertial&quot;</span> },</div><div class="line">    { <a class="code" href="../../d5/d98/namespacetudat_1_1reference__frames.html#ac12482df307b5867b2572ff4323b36a5aedc1f83b92437512c43004e41e313f31">corotating_frame</a>, <span class="stringliteral">&quot;corotating&quot;</span> },</div><div class="line">    { <a class="code" href="../../d5/d98/namespacetudat_1_1reference__frames.html#ac12482df307b5867b2572ff4323b36a5a3a4a99e6d6cae8d05257e733c1a9fd42">vertical_frame</a>, <span class="stringliteral">&quot;vertical&quot;</span> },</div><div class="line">    { <a class="code" href="../../d5/d98/namespacetudat_1_1reference__frames.html#ac12482df307b5867b2572ff4323b36a5a443d2e5f17ad47dc222eff26e0d18b37">trajectory_frame</a>, <span class="stringliteral">&quot;trajectory&quot;</span> },</div><div class="line">    { <a class="code" href="../../d5/d98/namespacetudat_1_1reference__frames.html#ac12482df307b5867b2572ff4323b36a5a8e6a2ba313c7d58bfa00136881e57c4f">aerodynamic_frame</a>, <span class="stringliteral">&quot;aerodynamic&quot;</span> },</div><div class="line">    { <a class="code" href="../../d5/d98/namespacetudat_1_1reference__frames.html#ac12482df307b5867b2572ff4323b36a5afa8cdbf516ee4394129d25af981ffdec">body_frame</a>, <span class="stringliteral">&quot;body&quot;</span> }</div><div class="line">}</div><div class="ttc" id="namespacetudat_1_1reference__frames_html_ac12482df307b5867b2572ff4323b36a5adf1573183453843c0f0d736b496bf39c"><div class="ttname"><a href="../../d5/d98/namespacetudat_1_1reference__frames.html#ac12482df307b5867b2572ff4323b36a5adf1573183453843c0f0d736b496bf39c">tudat::reference_frames::inertial_frame</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/d65/aerodynamic_angle_calculator_8h_source.html#l00042">aerodynamicAngleCalculator.h:42</a></div></div>
+<div class="ttc" id="namespacetudat_1_1reference__frames_html_ac12482df307b5867b2572ff4323b36a5afa8cdbf516ee4394129d25af981ffdec"><div class="ttname"><a href="../../d5/d98/namespacetudat_1_1reference__frames.html#ac12482df307b5867b2572ff4323b36a5afa8cdbf516ee4394129d25af981ffdec">tudat::reference_frames::body_frame</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/d65/aerodynamic_angle_calculator_8h_source.html#l00047">aerodynamicAngleCalculator.h:47</a></div></div>
+<div class="ttc" id="namespacetudat_1_1reference__frames_html_ac12482df307b5867b2572ff4323b36a5a8e6a2ba313c7d58bfa00136881e57c4f"><div class="ttname"><a href="../../d5/d98/namespacetudat_1_1reference__frames.html#ac12482df307b5867b2572ff4323b36a5a8e6a2ba313c7d58bfa00136881e57c4f">tudat::reference_frames::aerodynamic_frame</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/d65/aerodynamic_angle_calculator_8h_source.html#l00046">aerodynamicAngleCalculator.h:46</a></div></div>
+<div class="ttc" id="namespacetudat_1_1reference__frames_html_ac12482df307b5867b2572ff4323b36a5a3a4a99e6d6cae8d05257e733c1a9fd42"><div class="ttname"><a href="../../d5/d98/namespacetudat_1_1reference__frames.html#ac12482df307b5867b2572ff4323b36a5a3a4a99e6d6cae8d05257e733c1a9fd42">tudat::reference_frames::vertical_frame</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/d65/aerodynamic_angle_calculator_8h_source.html#l00044">aerodynamicAngleCalculator.h:44</a></div></div>
+<div class="ttc" id="namespacetudat_1_1reference__frames_html_ac12482df307b5867b2572ff4323b36a5a443d2e5f17ad47dc222eff26e0d18b37"><div class="ttname"><a href="../../d5/d98/namespacetudat_1_1reference__frames.html#ac12482df307b5867b2572ff4323b36a5a443d2e5f17ad47dc222eff26e0d18b37">tudat::reference_frames::trajectory_frame</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/d65/aerodynamic_angle_calculator_8h_source.html#l00045">aerodynamicAngleCalculator.h:45</a></div></div>
+<div class="ttc" id="namespacetudat_1_1reference__frames_html_ac12482df307b5867b2572ff4323b36a5aedc1f83b92437512c43004e41e313f31"><div class="ttname"><a href="../../d5/d98/namespacetudat_1_1reference__frames.html#ac12482df307b5867b2572ff4323b36a5aedc1f83b92437512c43004e41e313f31">tudat::reference_frames::corotating_frame</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/d65/aerodynamic_angle_calculator_8h_source.html#l00043">aerodynamicAngleCalculator.h:43</a></div></div>
+</div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../da/dc6/reference_frames_8h_source.html#l00027">27</a> of file <a class="el" href="../../da/dc6/reference_frames_8h_source.html">referenceFrames.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a34de2ed2a63db57a4683371badccbc15"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="../../d5/d98/namespacetudat_1_1reference__frames.html#ac12482df307b5867b2572ff4323b36a5">AerodynamicsReferenceFrames</a> &gt; tudat::reference_frames::unsupportedAerodynamicsReferenceFrames = { }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../da/dc6/reference_frames_8h_source.html#l00038">38</a> of file <a class="el" href="../../da/dc6/reference_frames_8h_source.html">referenceFrames.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab2235b506c20e03309f82af6142d1fda"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt; <a class="el" href="../../d5/d98/namespacetudat_1_1reference__frames.html#ad068ab76c2367eb248432d4ed34d9610">AerodynamicsReferenceFrameAngles</a>, std::string &gt; tudat::reference_frames::aerodynamicsReferenceFrameAngles</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div><div class="line">{</div><div class="line">    { <a class="code" href="../../d5/d98/namespacetudat_1_1reference__frames.html#ad068ab76c2367eb248432d4ed34d9610a181308d4e18363ba28fd131f1920e5d2">latitude_angle</a>, <span class="stringliteral">&quot;latitude&quot;</span> },</div><div class="line">    { <a class="code" href="../../d5/d98/namespacetudat_1_1reference__frames.html#ad068ab76c2367eb248432d4ed34d9610ade85b894df2b93fee39bfd6ea38dd1de">longitude_angle</a>, <span class="stringliteral">&quot;longitude&quot;</span> },</div><div class="line">    { <a class="code" href="../../d5/d98/namespacetudat_1_1reference__frames.html#ad068ab76c2367eb248432d4ed34d9610a8052862cd37f0137124c9a1e28a2984d">heading_angle</a>, <span class="stringliteral">&quot;heading&quot;</span> },</div><div class="line">    { <a class="code" href="../../d5/d98/namespacetudat_1_1reference__frames.html#ad068ab76c2367eb248432d4ed34d9610ae04ed2be96e41587aa9017f17803eb3d">flight_path_angle</a>, <span class="stringliteral">&quot;flightPath&quot;</span> },</div><div class="line">    { <a class="code" href="../../d5/d98/namespacetudat_1_1reference__frames.html#ad068ab76c2367eb248432d4ed34d9610a838904c5109703f643dd16432f87d887">angle_of_attack</a>, <span class="stringliteral">&quot;angleOfAttach&quot;</span> },</div><div class="line">    { <a class="code" href="../../d5/d98/namespacetudat_1_1reference__frames.html#ad068ab76c2367eb248432d4ed34d9610a0ef1d4155c4afafee8d2f71b2fba8a4d">angle_of_sideslip</a>, <span class="stringliteral">&quot;sideslip&quot;</span> },</div><div class="line">    { <a class="code" href="../../d5/d98/namespacetudat_1_1reference__frames.html#ad068ab76c2367eb248432d4ed34d9610a6f08d1bea3e9b9c5bc2e23cd71bd6e26">bank_angle</a>, <span class="stringliteral">&quot;bank&quot;</span> }</div><div class="line">}</div><div class="ttc" id="namespacetudat_1_1reference__frames_html_ad068ab76c2367eb248432d4ed34d9610ade85b894df2b93fee39bfd6ea38dd1de"><div class="ttname"><a href="../../d5/d98/namespacetudat_1_1reference__frames.html#ad068ab76c2367eb248432d4ed34d9610ade85b894df2b93fee39bfd6ea38dd1de">tudat::reference_frames::longitude_angle</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/d65/aerodynamic_angle_calculator_8h_source.html#l00063">aerodynamicAngleCalculator.h:63</a></div></div>
+<div class="ttc" id="namespacetudat_1_1reference__frames_html_ad068ab76c2367eb248432d4ed34d9610a838904c5109703f643dd16432f87d887"><div class="ttname"><a href="../../d5/d98/namespacetudat_1_1reference__frames.html#ad068ab76c2367eb248432d4ed34d9610a838904c5109703f643dd16432f87d887">tudat::reference_frames::angle_of_attack</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/d65/aerodynamic_angle_calculator_8h_source.html#l00066">aerodynamicAngleCalculator.h:66</a></div></div>
+<div class="ttc" id="namespacetudat_1_1reference__frames_html_ad068ab76c2367eb248432d4ed34d9610a0ef1d4155c4afafee8d2f71b2fba8a4d"><div class="ttname"><a href="../../d5/d98/namespacetudat_1_1reference__frames.html#ad068ab76c2367eb248432d4ed34d9610a0ef1d4155c4afafee8d2f71b2fba8a4d">tudat::reference_frames::angle_of_sideslip</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/d65/aerodynamic_angle_calculator_8h_source.html#l00067">aerodynamicAngleCalculator.h:67</a></div></div>
+<div class="ttc" id="namespacetudat_1_1reference__frames_html_ad068ab76c2367eb248432d4ed34d9610a6f08d1bea3e9b9c5bc2e23cd71bd6e26"><div class="ttname"><a href="../../d5/d98/namespacetudat_1_1reference__frames.html#ad068ab76c2367eb248432d4ed34d9610a6f08d1bea3e9b9c5bc2e23cd71bd6e26">tudat::reference_frames::bank_angle</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/d65/aerodynamic_angle_calculator_8h_source.html#l00068">aerodynamicAngleCalculator.h:68</a></div></div>
+<div class="ttc" id="namespacetudat_1_1reference__frames_html_ad068ab76c2367eb248432d4ed34d9610ae04ed2be96e41587aa9017f17803eb3d"><div class="ttname"><a href="../../d5/d98/namespacetudat_1_1reference__frames.html#ad068ab76c2367eb248432d4ed34d9610ae04ed2be96e41587aa9017f17803eb3d">tudat::reference_frames::flight_path_angle</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/d65/aerodynamic_angle_calculator_8h_source.html#l00065">aerodynamicAngleCalculator.h:65</a></div></div>
+<div class="ttc" id="namespacetudat_1_1reference__frames_html_ad068ab76c2367eb248432d4ed34d9610a181308d4e18363ba28fd131f1920e5d2"><div class="ttname"><a href="../../d5/d98/namespacetudat_1_1reference__frames.html#ad068ab76c2367eb248432d4ed34d9610a181308d4e18363ba28fd131f1920e5d2">tudat::reference_frames::latitude_angle</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/d65/aerodynamic_angle_calculator_8h_source.html#l00062">aerodynamicAngleCalculator.h:62</a></div></div>
+<div class="ttc" id="namespacetudat_1_1reference__frames_html_ad068ab76c2367eb248432d4ed34d9610a8052862cd37f0137124c9a1e28a2984d"><div class="ttname"><a href="../../d5/d98/namespacetudat_1_1reference__frames.html#ad068ab76c2367eb248432d4ed34d9610a8052862cd37f0137124c9a1e28a2984d">tudat::reference_frames::heading_angle</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/d65/aerodynamic_angle_calculator_8h_source.html#l00064">aerodynamicAngleCalculator.h:64</a></div></div>
+</div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../da/dc6/reference_frames_8h_source.html#l00057">57</a> of file <a class="el" href="../../da/dc6/reference_frames_8h_source.html">referenceFrames.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab6fb653214edffbce146089c706ccfee"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="../../d5/d98/namespacetudat_1_1reference__frames.html#ad068ab76c2367eb248432d4ed34d9610">AerodynamicsReferenceFrameAngles</a> &gt; tudat::reference_frames::unsupportedAerodynamicsReferenceFrameAngles = { }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../da/dc6/reference_frames_8h_source.html#l00069">69</a> of file <a class="el" href="../../da/dc6/reference_frames_8h_source.html">referenceFrames.h</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 27 2017 09:33:02 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 7 2017 11:20:34 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

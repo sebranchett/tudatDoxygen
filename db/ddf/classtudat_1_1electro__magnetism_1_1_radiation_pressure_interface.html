@@ -144,8 +144,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a9e423805f25996b655563ad4c4aaa27b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to return the function returning the current position of the target body.  <a href="#a9e423805f25996b655563ad4c4aaa27b">More...</a><br /></td></tr>
 <tr class="separator:a9e423805f25996b655563ad4c4aaa27b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8677c222996dd15c80037739d643731c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/ddf/classtudat_1_1electro__magnetism_1_1_radiation_pressure_interface.html#a8677c222996dd15c80037739d643731c">resetRadiationPressureCoefficient</a> (const double radiationPressureCoefficient)</td></tr>
-<tr class="memdesc:a8677c222996dd15c80037739d643731c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to reset the radiation pressure coefficient of the target body.  <a href="#a8677c222996dd15c80037739d643731c">More...</a><br /></td></tr>
+<tr class="memdesc:a8677c222996dd15c80037739d643731c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to reset a constant radiation pressure coefficient of the target body.  <a href="#a8677c222996dd15c80037739d643731c">More...</a><br /></td></tr>
 <tr class="separator:a8677c222996dd15c80037739d643731c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a193c29be57db7fedcabe155dc332fc9e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/ddf/classtudat_1_1electro__magnetism_1_1_radiation_pressure_interface.html#a193c29be57db7fedcabe155dc332fc9e">resetRadiationPressureCoefficientFunction</a> (const boost::function&lt; double(const double) &gt; radiationPressureCoefficientFunction)</td></tr>
+<tr class="memdesc:a193c29be57db7fedcabe155dc332fc9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to reset the function to obtain the radiation pressure coefficient of the target body.  <a href="#a193c29be57db7fedcabe155dc332fc9e">More...</a><br /></td></tr>
+<tr class="separator:a193c29be57db7fedcabe155dc332fc9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a48081c956952226fe91447b405a993"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/ddf/classtudat_1_1electro__magnetism_1_1_radiation_pressure_interface.html#a3a48081c956952226fe91447b405a993">updateInterface</a> (const double currentTime=<a class="el" href="../../d6/d70/mathematical_constants_8h.html#adf3d84f9d3e27cbaa280e9fd0bac8e5f">TUDAT_NAN</a>)</td></tr>
 <tr class="memdesc:a3a48081c956952226fe91447b405a993"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to update the current value of the radiation pressure.  <a href="#a3a48081c956952226fe91447b405a993">More...</a><br /></td></tr>
 <tr class="separator:a3a48081c956952226fe91447b405a993"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -173,6 +176,9 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:ac18b9903296ad8cb5b48940fee633696"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/ddf/classtudat_1_1electro__magnetism_1_1_radiation_pressure_interface.html#ac18b9903296ad8cb5b48940fee633696">radiationPressureCoefficient_</a></td></tr>
 <tr class="memdesc:ac18b9903296ad8cb5b48940fee633696"><td class="mdescLeft">&#160;</td><td class="mdescRight">Radiation pressure coefficient of the target body.  <a href="#ac18b9903296ad8cb5b48940fee633696">More...</a><br /></td></tr>
 <tr class="separator:ac18b9903296ad8cb5b48940fee633696"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b838ab8ad829d0430ee5a0492288941"><td class="memItemLeft" align="right" valign="top">boost::function&lt; double(const double) &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/ddf/classtudat_1_1electro__magnetism_1_1_radiation_pressure_interface.html#a6b838ab8ad829d0430ee5a0492288941">radiationPressureCoefficientFunction_</a></td></tr>
+<tr class="memdesc:a6b838ab8ad829d0430ee5a0492288941"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to reset a constant radiation pressure coefficient of the target body.  <a href="#a6b838ab8ad829d0430ee5a0492288941">More...</a><br /></td></tr>
+<tr class="separator:a6b838ab8ad829d0430ee5a0492288941"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b5a361fefba821f2ae123ac0ee8cca0"><td class="memItemLeft" align="right" valign="top">boost::function&lt; Eigen::Vector3d() &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/ddf/classtudat_1_1electro__magnetism_1_1_radiation_pressure_interface.html#a4b5a361fefba821f2ae123ac0ee8cca0">sourcePositionFunction_</a></td></tr>
 <tr class="memdesc:a4b5a361fefba821f2ae123ac0ee8cca0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function returning the current position of the source body.  <a href="#a4b5a361fefba821f2ae123ac0ee8cca0">More...</a><br /></td></tr>
 <tr class="separator:a4b5a361fefba821f2ae123ac0ee8cca0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -189,7 +195,7 @@ Protected Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Class in which the properties of a solar radiation pressure acceleration model are stored and the current radiation pressure is calculated based on the source power and geometry. The current implementation is limited to a cannonball model. </p>
 
-<p>Definition at line <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00046">46</a> of file <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html">radiationPressureInterface.h</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00047">47</a> of file <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html">radiationPressureInterface.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a8948315705d771b072ddc84a745336cb"></a>
 <div class="memitem">
@@ -272,7 +278,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00064">64</a> of file <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html">radiationPressureInterface.h</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00065">65</a> of file <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html">radiationPressureInterface.h</a>.</p>
 
 </div>
 </div>
@@ -297,7 +303,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00085">85</a> of file <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html">radiationPressureInterface.h</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00088">88</a> of file <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html">radiationPressureInterface.h</a>.</p>
 
 <p>References <a class="el" href="../../d6/d70/mathematical_constants_8h_source.html#l00076">TUDAT_NAN</a>, and <a class="el" href="../../d1/d77/radiation_pressure_interface_8cpp_source.html#l00032">updateInterface()</a>.</p>
 
@@ -326,9 +332,9 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d1/d77/radiation_pressure_interface_8cpp_source.html#l00032">32</a> of file <a class="el" href="../../d1/d77/radiation_pressure_interface_8cpp_source.html">radiationPressureInterface.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d1/d77/radiation_pressure_interface_8cpp_source.html#l00025">tudat::electro_magnetism::calculateRadiationPressure()</a>, <a class="el" href="../../da/dbc/mission_geometry_8cpp_source.html#l00062">tudat::mission_geometry::computeShadowFunction()</a>, <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00248">currentRadiationPressure_</a>, <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00251">currentSolarVector_</a>, <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00254">currentTime_</a>, <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00239">occultingBodyPositions_</a>, <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00242">occultingBodyRadii_</a>, <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00227">sourcePositionFunction_</a>, <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00224">sourcePower_</a>, <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00245">sourceRadius_</a>, and <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00230">targetPositionFunction_</a>.</p>
+<p>References <a class="el" href="../../d1/d77/radiation_pressure_interface_8cpp_source.html#l00025">tudat::electro_magnetism::calculateRadiationPressure()</a>, <a class="el" href="../../da/dbc/mission_geometry_8cpp_source.html#l00062">tudat::mission_geometry::computeShadowFunction()</a>, <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00266">currentRadiationPressure_</a>, <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00269">currentSolarVector_</a>, <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00272">currentTime_</a>, <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00257">occultingBodyPositions_</a>, <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00260">occultingBodyRadii_</a>, <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00248">radiationPressureCoefficient_</a>, <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00251">radiationPressureCoefficientFunction_</a>, <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00242">sourcePositionFunction_</a>, <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00239">sourcePower_</a>, <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00263">sourceRadius_</a>, and <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00245">targetPositionFunction_</a>.</p>
 
-<p>Referenced by <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00085">~RadiationPressureInterface()</a>.</p>
+<p>Referenced by <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00088">~RadiationPressureInterface()</a>.</p>
 
 </div>
 </div>
@@ -354,11 +360,11 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Function to return the current radiation pressure due to source at target (in N/m^2). </p><dl class="section return"><dt>Returns</dt><dd>Current radiation pressure due to source at target (in N/m^2). </dd></dl>
 
-<p>Definition at line <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00100">100</a> of file <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html">radiationPressureInterface.h</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00103">103</a> of file <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html">radiationPressureInterface.h</a>.</p>
 
-<p>References <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00248">currentRadiationPressure_</a>.</p>
+<p>References <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00266">currentRadiationPressure_</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d2/d02/create_acceleration_models_8cpp_source.html#l00743">tudat::simulation_setup::createCannonballRadiationPressureAcceleratioModel()</a>, and <a class="el" href="../../db/d91/propagation_output_8h_source.html#l00182">tudat::propagators::getDoubleDependentVariableFunction()</a>.</p>
+<p>Referenced by <a class="el" href="../../d2/d02/create_acceleration_models_8cpp_source.html#l00741">tudat::simulation_setup::createCannonballRadiationPressureAcceleratioModel()</a>, and <a class="el" href="../../db/d91/propagation_output_8h_source.html#l00581">tudat::propagators::getDoubleDependentVariableFunction()</a>.</p>
 
 </div>
 </div>
@@ -384,9 +390,9 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Function to return the current vector from the target to the source. </p><dl class="section return"><dt>Returns</dt><dd>Current vector from the target to the source. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00110">110</a> of file <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html">radiationPressureInterface.h</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00113">113</a> of file <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html">radiationPressureInterface.h</a>.</p>
 
-<p>References <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00251">currentSolarVector_</a>.</p>
+<p>References <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00269">currentSolarVector_</a>.</p>
 
 </div>
 </div>
@@ -412,9 +418,9 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Function to return the function returning the current position of the source body. </p><dl class="section return"><dt>Returns</dt><dd>The function returning the current position of the source body. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00120">120</a> of file <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html">radiationPressureInterface.h</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00123">123</a> of file <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html">radiationPressureInterface.h</a>.</p>
 
-<p>References <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00227">sourcePositionFunction_</a>.</p>
+<p>References <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00242">sourcePositionFunction_</a>.</p>
 
 </div>
 </div>
@@ -440,9 +446,9 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Function to return the function returning the current position of the target body. </p><dl class="section return"><dt>Returns</dt><dd>The function returning the current position of the target body. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00130">130</a> of file <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html">radiationPressureInterface.h</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00133">133</a> of file <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html">radiationPressureInterface.h</a>.</p>
 
-<p>References <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00230">targetPositionFunction_</a>.</p>
+<p>References <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00245">targetPositionFunction_</a>.</p>
 
 </div>
 </div>
@@ -468,11 +474,11 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Function to return the reflecting area of the target body. </p><dl class="section return"><dt>Returns</dt><dd>The reflecting area of the target body. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00140">140</a> of file <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html">radiationPressureInterface.h</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00143">143</a> of file <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html">radiationPressureInterface.h</a>.</p>
 
-<p>References <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00236">area_</a>.</p>
+<p>References <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00254">area_</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d2/d02/create_acceleration_models_8cpp_source.html#l00743">tudat::simulation_setup::createCannonballRadiationPressureAcceleratioModel()</a>.</p>
+<p>Referenced by <a class="el" href="../../d2/d02/create_acceleration_models_8cpp_source.html#l00741">tudat::simulation_setup::createCannonballRadiationPressureAcceleratioModel()</a>.</p>
 
 </div>
 </div>
@@ -498,11 +504,11 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Function to return the radiation pressure coefficient of the target body. </p><dl class="section return"><dt>Returns</dt><dd>The radiation pressure coefficient of the target body. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00150">150</a> of file <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html">radiationPressureInterface.h</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00153">153</a> of file <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html">radiationPressureInterface.h</a>.</p>
 
-<p>References <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00233">radiationPressureCoefficient_</a>.</p>
+<p>References <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00248">radiationPressureCoefficient_</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d2/d02/create_acceleration_models_8cpp_source.html#l00743">tudat::simulation_setup::createCannonballRadiationPressureAcceleratioModel()</a>.</p>
+<p>Referenced by <a class="el" href="../../d2/d02/create_acceleration_models_8cpp_source.html#l00741">tudat::simulation_setup::createCannonballRadiationPressureAcceleratioModel()</a>.</p>
 
 </div>
 </div>
@@ -527,16 +533,50 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Function to reset the radiation pressure coefficient of the target body. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Function to reset a constant radiation pressure coefficient of the target body. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">radiationPressureCoefficient</td><td>The new radiation pressure coefficient of the target body. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00160">160</a> of file <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html">radiationPressureInterface.h</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00163">163</a> of file <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html">radiationPressureInterface.h</a>.</p>
 
-<p>References <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00233">radiationPressureCoefficient_</a>.</p>
+<p>References <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00248">radiationPressureCoefficient_</a>, and <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00251">radiationPressureCoefficientFunction_</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a193c29be57db7fedcabe155dc332fc9e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tudat::electro_magnetism::RadiationPressureInterface::resetRadiationPressureCoefficientFunction </td>
+          <td>(</td>
+          <td class="paramtype">const boost::function&lt; double(const double) &gt;&#160;</td>
+          <td class="paramname"><em>radiationPressureCoefficientFunction</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Function to reset the function to obtain the radiation pressure coefficient of the target body. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">radiationPressureCoefficientFunction</td><td>New function to obtain the radiation pressure coefficient of the target body. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00174">174</a> of file <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html">radiationPressureInterface.h</a>.</p>
+
+<p>References <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00251">radiationPressureCoefficientFunction_</a>.</p>
 
 </div>
 </div>
@@ -563,9 +603,9 @@ Protected Attributes</h2></td></tr>
 <p>Function to return the function returning the current total power (in W) emitted by the source body.</p>
 <dl class="section return"><dt>Returns</dt><dd>The function returning the current total power emitted by the source body. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00172">172</a> of file <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html">radiationPressureInterface.h</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00187">187</a> of file <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html">radiationPressureInterface.h</a>.</p>
 
-<p>References <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00224">sourcePower_</a>.</p>
+<p>References <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00239">sourcePower_</a>.</p>
 
 </div>
 </div>
@@ -591,9 +631,9 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Function to return the current time of interface (i.e. time of last updateInterface call). </p><dl class="section return"><dt>Returns</dt><dd>Current time of interface (i.e. time of last updateInterface call). </dd></dl>
 
-<p>Definition at line <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00182">182</a> of file <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html">radiationPressureInterface.h</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00197">197</a> of file <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html">radiationPressureInterface.h</a>.</p>
 
-<p>References <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00254">currentTime_</a>.</p>
+<p>References <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00272">currentTime_</a>.</p>
 
 </div>
 </div>
@@ -620,9 +660,9 @@ Protected Attributes</h2></td></tr>
 <p>Function to return the list of functions returning the positions of the bodies causing occultations</p>
 <dl class="section return"><dt>Returns</dt><dd>List of functions returning the positions of the bodies causing occultations </dd></dl>
 
-<p>Definition at line <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00195">195</a> of file <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html">radiationPressureInterface.h</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00210">210</a> of file <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html">radiationPressureInterface.h</a>.</p>
 
-<p>References <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00239">occultingBodyPositions_</a>.</p>
+<p>References <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00257">occultingBodyPositions_</a>.</p>
 
 </div>
 </div>
@@ -648,9 +688,9 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Function to return the list of radii of the bodies causing occultations </p><dl class="section return"><dt>Returns</dt><dd>List of radii of the bodies causing occultations </dd></dl>
 
-<p>Definition at line <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00205">205</a> of file <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html">radiationPressureInterface.h</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00220">220</a> of file <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html">radiationPressureInterface.h</a>.</p>
 
-<p>References <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00242">occultingBodyRadii_</a>.</p>
+<p>References <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00260">occultingBodyRadii_</a>.</p>
 
 </div>
 </div>
@@ -676,9 +716,9 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Function to return the source radius of the target body. </p><dl class="section return"><dt>Returns</dt><dd>The source radius of the target body. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00215">215</a> of file <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html">radiationPressureInterface.h</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00230">230</a> of file <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html">radiationPressureInterface.h</a>.</p>
 
-<p>References <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00245">sourceRadius_</a>.</p>
+<p>References <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00263">sourceRadius_</a>.</p>
 
 </div>
 </div>
@@ -701,9 +741,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00224">224</a> of file <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html">radiationPressureInterface.h</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00239">239</a> of file <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html">radiationPressureInterface.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00172">getSourcePowerFunction()</a>, and <a class="el" href="../../d1/d77/radiation_pressure_interface_8cpp_source.html#l00032">updateInterface()</a>.</p>
+<p>Referenced by <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00187">getSourcePowerFunction()</a>, and <a class="el" href="../../d1/d77/radiation_pressure_interface_8cpp_source.html#l00032">updateInterface()</a>.</p>
 
 </div>
 </div>
@@ -725,9 +765,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00227">227</a> of file <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html">radiationPressureInterface.h</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00242">242</a> of file <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html">radiationPressureInterface.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00120">getSourcePositionFunction()</a>, and <a class="el" href="../../d1/d77/radiation_pressure_interface_8cpp_source.html#l00032">updateInterface()</a>.</p>
+<p>Referenced by <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00123">getSourcePositionFunction()</a>, and <a class="el" href="../../d1/d77/radiation_pressure_interface_8cpp_source.html#l00032">updateInterface()</a>.</p>
 
 </div>
 </div>
@@ -749,9 +789,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00230">230</a> of file <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html">radiationPressureInterface.h</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00245">245</a> of file <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html">radiationPressureInterface.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00130">getTargetPositionFunction()</a>, and <a class="el" href="../../d1/d77/radiation_pressure_interface_8cpp_source.html#l00032">updateInterface()</a>.</p>
+<p>Referenced by <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00133">getTargetPositionFunction()</a>, and <a class="el" href="../../d1/d77/radiation_pressure_interface_8cpp_source.html#l00032">updateInterface()</a>.</p>
 
 </div>
 </div>
@@ -773,9 +813,33 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00233">233</a> of file <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html">radiationPressureInterface.h</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00248">248</a> of file <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html">radiationPressureInterface.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00150">getRadiationPressureCoefficient()</a>, and <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00160">resetRadiationPressureCoefficient()</a>.</p>
+<p>Referenced by <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00153">getRadiationPressureCoefficient()</a>, <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00163">resetRadiationPressureCoefficient()</a>, and <a class="el" href="../../d1/d77/radiation_pressure_interface_8cpp_source.html#l00032">updateInterface()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6b838ab8ad829d0430ee5a0492288941"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">boost::function&lt; double( const double ) &gt; tudat::electro_magnetism::RadiationPressureInterface::radiationPressureCoefficientFunction_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00251">251</a> of file <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html">radiationPressureInterface.h</a>.</p>
+
+<p>Referenced by <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00163">resetRadiationPressureCoefficient()</a>, <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00174">resetRadiationPressureCoefficientFunction()</a>, and <a class="el" href="../../d1/d77/radiation_pressure_interface_8cpp_source.html#l00032">updateInterface()</a>.</p>
 
 </div>
 </div>
@@ -797,9 +861,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00236">236</a> of file <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html">radiationPressureInterface.h</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00254">254</a> of file <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html">radiationPressureInterface.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00140">getArea()</a>.</p>
+<p>Referenced by <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00143">getArea()</a>.</p>
 
 </div>
 </div>
@@ -821,9 +885,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00239">239</a> of file <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html">radiationPressureInterface.h</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00257">257</a> of file <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html">radiationPressureInterface.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00195">getOccultingBodyPositions()</a>, and <a class="el" href="../../d1/d77/radiation_pressure_interface_8cpp_source.html#l00032">updateInterface()</a>.</p>
+<p>Referenced by <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00210">getOccultingBodyPositions()</a>, and <a class="el" href="../../d1/d77/radiation_pressure_interface_8cpp_source.html#l00032">updateInterface()</a>.</p>
 
 </div>
 </div>
@@ -845,9 +909,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00242">242</a> of file <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html">radiationPressureInterface.h</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00260">260</a> of file <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html">radiationPressureInterface.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00205">getOccultingBodyRadii()</a>, and <a class="el" href="../../d1/d77/radiation_pressure_interface_8cpp_source.html#l00032">updateInterface()</a>.</p>
+<p>Referenced by <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00220">getOccultingBodyRadii()</a>, and <a class="el" href="../../d1/d77/radiation_pressure_interface_8cpp_source.html#l00032">updateInterface()</a>.</p>
 
 </div>
 </div>
@@ -869,9 +933,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00245">245</a> of file <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html">radiationPressureInterface.h</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00263">263</a> of file <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html">radiationPressureInterface.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00215">getSourceRadius()</a>, and <a class="el" href="../../d1/d77/radiation_pressure_interface_8cpp_source.html#l00032">updateInterface()</a>.</p>
+<p>Referenced by <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00230">getSourceRadius()</a>, and <a class="el" href="../../d1/d77/radiation_pressure_interface_8cpp_source.html#l00032">updateInterface()</a>.</p>
 
 </div>
 </div>
@@ -893,9 +957,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00248">248</a> of file <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html">radiationPressureInterface.h</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00266">266</a> of file <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html">radiationPressureInterface.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00100">getCurrentRadiationPressure()</a>, and <a class="el" href="../../d1/d77/radiation_pressure_interface_8cpp_source.html#l00032">updateInterface()</a>.</p>
+<p>Referenced by <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00103">getCurrentRadiationPressure()</a>, and <a class="el" href="../../d1/d77/radiation_pressure_interface_8cpp_source.html#l00032">updateInterface()</a>.</p>
 
 </div>
 </div>
@@ -917,9 +981,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00251">251</a> of file <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html">radiationPressureInterface.h</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00269">269</a> of file <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html">radiationPressureInterface.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00110">getCurrentSolarVector()</a>, and <a class="el" href="../../d1/d77/radiation_pressure_interface_8cpp_source.html#l00032">updateInterface()</a>.</p>
+<p>Referenced by <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00113">getCurrentSolarVector()</a>, and <a class="el" href="../../d1/d77/radiation_pressure_interface_8cpp_source.html#l00032">updateInterface()</a>.</p>
 
 </div>
 </div>
@@ -941,9 +1005,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00254">254</a> of file <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html">radiationPressureInterface.h</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00272">272</a> of file <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html">radiationPressureInterface.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00182">getCurrentTime()</a>, and <a class="el" href="../../d1/d77/radiation_pressure_interface_8cpp_source.html#l00032">updateInterface()</a>.</p>
+<p>Referenced by <a class="el" href="../../db/d6d/radiation_pressure_interface_8h_source.html#l00197">getCurrentTime()</a>, and <a class="el" href="../../d1/d77/radiation_pressure_interface_8cpp_source.html#l00032">updateInterface()</a>.</p>
 
 </div>
 </div>
@@ -954,7 +1018,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 27 2017 09:32:59 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 7 2017 11:20:31 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

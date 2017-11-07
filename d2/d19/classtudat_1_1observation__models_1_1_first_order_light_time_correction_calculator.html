@@ -125,8 +125,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a068dc8bfba9d0c432f68bdf1dad5018e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to calculate first-order relativistic light time correction due to set of gravitating point masses.  <a href="#a068dc8bfba9d0c432f68bdf1dad5018e">More...</a><br /></td></tr>
 <tr class="separator:a068dc8bfba9d0c432f68bdf1dad5018e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa262d73fdc27b860ad742953eae36d7d"><td class="memItemLeft" align="right" valign="top">Eigen::Matrix&lt; double, 3, 1 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d19/classtudat_1_1observation__models_1_1_first_order_light_time_correction_calculator.html#aa262d73fdc27b860ad742953eae36d7d">calculateLightTimeCorrectionPartialDerivativeWrtLinkEndPosition</a> (const <a class="el" href="../../d0/da5/namespace_eigen.html#a03c917374d8dcb5bb158f2380f92847a">Eigen::Vector6d</a> &amp;transmitterState, const <a class="el" href="../../d0/da5/namespace_eigen.html#a03c917374d8dcb5bb158f2380f92847a">Eigen::Vector6d</a> &amp;receiverState, const double transmissionTime, const double receptionTime, const <a class="el" href="../../d2/df9/namespacetudat_1_1observation__models.html#a48c0d529a455bf73ae57991768625e6e">LinkEndType</a> linkEndAtWhichPartialIsEvaluated)</td></tr>
+<tr class="memdesc:aa262d73fdc27b860ad742953eae36d7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to compute the partial derivative of the light-time correction w.r.t. link end position.  <a href="#aa262d73fdc27b860ad742953eae36d7d">More...</a><br /></td></tr>
 <tr class="separator:aa262d73fdc27b860ad742953eae36d7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75d50e79d24b759be649b8d35811e556"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d19/classtudat_1_1observation__models_1_1_first_order_light_time_correction_calculator.html#a75d50e79d24b759be649b8d35811e556">calculateLightTimeCorrectionPartialDerivativeWrtLinkEndTime</a> (const <a class="el" href="../../d0/da5/namespace_eigen.html#a03c917374d8dcb5bb158f2380f92847a">Eigen::Vector6d</a> &amp;transmitterState, const <a class="el" href="../../d0/da5/namespace_eigen.html#a03c917374d8dcb5bb158f2380f92847a">Eigen::Vector6d</a> &amp;receiverState, const double transmissionTime, const double receptionTime, const <a class="el" href="../../d2/df9/namespacetudat_1_1observation__models.html#a48c0d529a455bf73ae57991768625e6e">LinkEndType</a> fixedLinkEnd, const <a class="el" href="../../d2/df9/namespacetudat_1_1observation__models.html#a48c0d529a455bf73ae57991768625e6e">LinkEndType</a> linkEndAtWhichPartialIsEvaluated)</td></tr>
+<tr class="memdesc:a75d50e79d24b759be649b8d35811e556"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to compute the partial derivative of the light-time correction w.r.t. observation time.  <a href="#a75d50e79d24b759be649b8d35811e556">More...</a><br /></td></tr>
 <tr class="separator:a75d50e79d24b759be649b8d35811e556"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a822e03d3eb61af5a7691e17286a83e81"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d19/classtudat_1_1observation__models_1_1_first_order_light_time_correction_calculator.html#a822e03d3eb61af5a7691e17286a83e81">getCurrentLightTimeCorrectionComponent</a> (const int bodyIndex)</td></tr>
 <tr class="memdesc:a822e03d3eb61af5a7691e17286a83e81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to get the light-time correction of given perturbing body, as computed by last call to calculateLightTimeCorrection.  <a href="#a822e03d3eb61af5a7691e17286a83e81">More...</a><br /></td></tr>
@@ -151,6 +153,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ab60099af529c7966175180888fa00e7e inherit pub_methods_classtudat_1_1observation__models_1_1_light_time_correction"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#ab60099af529c7966175180888fa00e7e">More...</a><br /></td></tr>
 <tr class="separator:ab60099af529c7966175180888fa00e7e inherit pub_methods_classtudat_1_1observation__models_1_1_light_time_correction"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada107956af1cb8c94e40efc6fdcba5b0 inherit pub_methods_classtudat_1_1observation__models_1_1_light_time_correction"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d20/classtudat_1_1observation__models_1_1_light_time_correction.html#ada107956af1cb8c94e40efc6fdcba5b0">calculateLightTimeCorrectionDerivativeWrtLinkEndTime</a> (const <a class="el" href="../../d0/da5/namespace_eigen.html#a03c917374d8dcb5bb158f2380f92847a">Eigen::Vector6d</a> &amp;transmitterState, const <a class="el" href="../../d0/da5/namespace_eigen.html#a03c917374d8dcb5bb158f2380f92847a">Eigen::Vector6d</a> &amp;receiverState, const double transmissionTime, const double receptionTime, const <a class="el" href="../../d2/df9/namespacetudat_1_1observation__models.html#a48c0d529a455bf73ae57991768625e6e">LinkEndType</a> fixedLinkEnd, const <a class="el" href="../../d2/df9/namespacetudat_1_1observation__models.html#a48c0d529a455bf73ae57991768625e6e">LinkEndType</a> linkEndAtWhichPartialIsEvaluated)</td></tr>
+<tr class="memdesc:ada107956af1cb8c94e40efc6fdcba5b0 inherit pub_methods_classtudat_1_1observation__models_1_1_light_time_correction"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to compute the full derivative of the light-time correction w.r.t. observation time.  <a href="#ada107956af1cb8c94e40efc6fdcba5b0">More...</a><br /></td></tr>
 <tr class="separator:ada107956af1cb8c94e40efc6fdcba5b0 inherit pub_methods_classtudat_1_1observation__models_1_1_light_time_correction"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a737da4f572539d1fa8e80dfbaf2b2074 inherit pub_methods_classtudat_1_1observation__models_1_1_light_time_correction"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/df9/namespacetudat_1_1observation__models.html#aabbb594fc72baa01e93bac9d75fbdf18">LightTimeCorrectionType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d20/classtudat_1_1observation__models_1_1_light_time_correction.html#a737da4f572539d1fa8e80dfbaf2b2074">getLightTimeCorrectionType</a> ()</td></tr>
 <tr class="memdesc:a737da4f572539d1fa8e80dfbaf2b2074 inherit pub_methods_classtudat_1_1observation__models_1_1_light_time_correction"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to retrieve the type of light-time correction represented by instance of class.  <a href="#a737da4f572539d1fa8e80dfbaf2b2074">More...</a><br /></td></tr>
@@ -260,7 +263,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html#l00058">58</a> of file <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html">firstOrderRelativisticLightTimeCorrection.h</a>.</p>
 
-<p>References <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html#l00207">currentLighTimeCorrectionComponents_</a>, <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html#l00210">currentTotalLightTimeCorrection_</a>, <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html#l00203">lightTimeEvaluationContribution_</a>, and <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html#l00193">perturbingBodyNames_</a>.</p>
+<p>References <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html#l00229">currentLighTimeCorrectionComponents_</a>, <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html#l00232">currentTotalLightTimeCorrection_</a>, <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html#l00225">lightTimeEvaluationContribution_</a>, and <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html#l00215">perturbingBodyNames_</a>.</p>
 
 </div>
 </div>
@@ -351,7 +354,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d8/d9e/first_order_relativistic_light_time_correction_8cpp_source.html#l00024">24</a> of file <a class="el" href="../../d8/d9e/first_order_relativistic_light_time_correction_8cpp_source.html">firstOrderRelativisticLightTimeCorrection.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d1/d0c/relativistic_light_time_correction_8cpp_source.html#l00021">tudat::relativity::calculateFirstOrderLightTimeCorrectionFromCentralBody()</a>, <a class="el" href="../../d8/d9e/first_order_relativistic_light_time_correction_8cpp_source.html#l00054">calculateLightTimeCorrectionPartialDerivativeWrtLinkEndPosition()</a>, <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html#l00207">currentLighTimeCorrectionComponents_</a>, <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html#l00210">currentTotalLightTimeCorrection_</a>, <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html#l00203">lightTimeEvaluationContribution_</a>, <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html#l00190">perturbingBodyGravitationalParameterFunctions_</a>, <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html#l00187">perturbingBodyStateFunctions_</a>, <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html#l00200">ppnParameterGammaFunction_</a>, and <a class="el" href="../../d6/d70/mathematical_constants_8h_source.html#l00076">TUDAT_NAN</a>.</p>
+<p>References <a class="el" href="../../d1/d0c/relativistic_light_time_correction_8cpp_source.html#l00020">tudat::relativity::calculateFirstOrderLightTimeCorrectionFromCentralBody()</a>, <a class="el" href="../../d8/d9e/first_order_relativistic_light_time_correction_8cpp_source.html#l00055">calculateLightTimeCorrectionPartialDerivativeWrtLinkEndPosition()</a>, <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html#l00229">currentLighTimeCorrectionComponents_</a>, <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html#l00232">currentTotalLightTimeCorrection_</a>, <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html#l00225">lightTimeEvaluationContribution_</a>, <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html#l00212">perturbingBodyGravitationalParameterFunctions_</a>, <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html#l00209">perturbingBodyStateFunctions_</a>, <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html#l00222">ppnParameterGammaFunction_</a>, and <a class="el" href="../../d6/d70/mathematical_constants_8h_source.html#l00076">TUDAT_NAN</a>.</p>
 
 <p>Referenced by <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html#l00093">~FirstOrderLightTimeCorrectionCalculator()</a>.</p>
 
@@ -412,12 +415,24 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Function to compute the partial derivative of the light-time correction w.r.t. observation time, equal to zero in this model. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">transmitterState</td><td>State of transmitted at transmission time </td></tr>
+    <tr><td class="paramname">receiverState</td><td>State of receiver at reception time </td></tr>
+    <tr><td class="paramname">transmissionTime</td><td><a class="el" href="../../d8/df9/classtudat_1_1_time.html" title="Class for defining time with a resolution that is sub-fs for very long periods of time...">Time</a> of signal transmission </td></tr>
+    <tr><td class="paramname">receptionTime</td><td><a class="el" href="../../d8/df9/classtudat_1_1_time.html" title="Class for defining time with a resolution that is sub-fs for very long periods of time...">Time</a> of singal reception </td></tr>
+    <tr><td class="paramname">fixedLinkEnd</td><td>Reference link end for observation </td></tr>
+    <tr><td class="paramname">linkEndAtWhichPartialIsEvaluated</td><td>Link end at which the time partial is to be taken </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Light-time correction w.r.t. observation time </dd></dl>
 
 <p>Implements <a class="el" href="../../df/d20/classtudat_1_1observation__models_1_1_light_time_correction.html#a15ab47460c4a06e5d56ec48241cf6d1a">tudat::observation_models::LightTimeCorrection</a>.</p>
 
-<p>Definition at line <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html#l00112">112</a> of file <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html">firstOrderRelativisticLightTimeCorrection.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html#l00124">124</a> of file <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html">firstOrderRelativisticLightTimeCorrection.h</a>.</p>
 
-<p>References <a class="el" href="../../d8/d9e/first_order_relativistic_light_time_correction_8cpp_source.html#l00054">calculateLightTimeCorrectionPartialDerivativeWrtLinkEndPosition()</a>.</p>
+<p>References <a class="el" href="../../d8/d9e/first_order_relativistic_light_time_correction_8cpp_source.html#l00055">calculateLightTimeCorrectionPartialDerivativeWrtLinkEndPosition()</a>.</p>
 
 </div>
 </div>
@@ -470,14 +485,25 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Function to compute the partial derivative of the light-time correction w.r.t. link end position </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">transmitterState</td><td>State of transmitted at transmission time </td></tr>
+    <tr><td class="paramname">receiverState</td><td>State of receiver at reception time </td></tr>
+    <tr><td class="paramname">transmissionTime</td><td><a class="el" href="../../d8/df9/classtudat_1_1_time.html" title="Class for defining time with a resolution that is sub-fs for very long periods of time...">Time</a> of signal transmission </td></tr>
+    <tr><td class="paramname">receptionTime</td><td><a class="el" href="../../d8/df9/classtudat_1_1_time.html" title="Class for defining time with a resolution that is sub-fs for very long periods of time...">Time</a> of singal reception </td></tr>
+    <tr><td class="paramname">linkEndAtWhichPartialIsEvaluated</td><td>Link end at which the position partial is to be taken </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Light-time correction w.r.t. link end position </dd></dl>
 
 <p>Implements <a class="el" href="../../df/d20/classtudat_1_1observation__models_1_1_light_time_correction.html#a1fa82259d8e53cc7884d58b0ef7e9232">tudat::observation_models::LightTimeCorrection</a>.</p>
 
-<p>Definition at line <a class="el" href="../../d8/d9e/first_order_relativistic_light_time_correction_8cpp_source.html#l00054">54</a> of file <a class="el" href="../../d8/d9e/first_order_relativistic_light_time_correction_8cpp_source.html">firstOrderRelativisticLightTimeCorrection.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d9e/first_order_relativistic_light_time_correction_8cpp_source.html#l00055">55</a> of file <a class="el" href="../../d8/d9e/first_order_relativistic_light_time_correction_8cpp_source.html">firstOrderRelativisticLightTimeCorrection.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d1/d0c/relativistic_light_time_correction_8cpp_source.html#l00039">tudat::relativity::calculateFirstOrderCentralBodyLightTimeCorrectionGradient()</a>, <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html#l00203">lightTimeEvaluationContribution_</a>, <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html#l00190">perturbingBodyGravitationalParameterFunctions_</a>, <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html#l00187">perturbingBodyStateFunctions_</a>, <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html#l00200">ppnParameterGammaFunction_</a>, <a class="el" href="../../d9/d56/link_type_defs_8h_source.html#l00036">tudat::observation_models::receiver</a>, and <a class="el" href="../../d6/d70/mathematical_constants_8h_source.html#l00076">TUDAT_NAN</a>.</p>
+<p>References <a class="el" href="../../d1/d0c/relativistic_light_time_correction_8cpp_source.html#l00039">tudat::relativity::calculateFirstOrderCentralBodyLightTimeCorrectionGradient()</a>, <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html#l00225">lightTimeEvaluationContribution_</a>, <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html#l00212">perturbingBodyGravitationalParameterFunctions_</a>, <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html#l00209">perturbingBodyStateFunctions_</a>, <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html#l00222">ppnParameterGammaFunction_</a>, <a class="el" href="../../d9/d56/link_type_defs_8h_source.html#l00036">tudat::observation_models::receiver</a>, and <a class="el" href="../../d6/d70/mathematical_constants_8h_source.html#l00076">TUDAT_NAN</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d8/d9e/first_order_relativistic_light_time_correction_8cpp_source.html#l00024">calculateLightTimeCorrection()</a>, and <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html#l00112">calculateLightTimeCorrectionPartialDerivativeWrtLinkEndTime()</a>.</p>
+<p>Referenced by <a class="el" href="../../d8/d9e/first_order_relativistic_light_time_correction_8cpp_source.html#l00024">calculateLightTimeCorrection()</a>, and <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html#l00124">calculateLightTimeCorrectionPartialDerivativeWrtLinkEndTime()</a>.</p>
 
 </div>
 </div>
@@ -503,9 +529,9 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Function to get the names of bodies causing light-time correction. </p><dl class="section return"><dt>Returns</dt><dd>Names of bodies causing light-time correction. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html#l00135">135</a> of file <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html">firstOrderRelativisticLightTimeCorrection.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html#l00157">157</a> of file <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html">firstOrderRelativisticLightTimeCorrection.h</a>.</p>
 
-<p>References <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html#l00193">perturbingBodyNames_</a>.</p>
+<p>References <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html#l00215">perturbingBodyNames_</a>.</p>
 
 </div>
 </div>
@@ -531,9 +557,9 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Function to get the set of functions returning the gravitational parameters of the gravitating bodies. </p><dl class="section return"><dt>Returns</dt><dd>Set of functions returning the gravitational parameters of the gravitating bodies. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html#l00145">145</a> of file <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html">firstOrderRelativisticLightTimeCorrection.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html#l00167">167</a> of file <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html">firstOrderRelativisticLightTimeCorrection.h</a>.</p>
 
-<p>References <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html#l00190">perturbingBodyGravitationalParameterFunctions_</a>.</p>
+<p>References <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html#l00212">perturbingBodyGravitationalParameterFunctions_</a>.</p>
 
 </div>
 </div>
@@ -559,9 +585,9 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Function to get the total light-time correction, as computed by last call to calculateLightTimeCorrection. </p><dl class="section return"><dt>Returns</dt><dd>Total light-time correction, as computed by last call to calculateLightTimeCorrection. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html#l00155">155</a> of file <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html">firstOrderRelativisticLightTimeCorrection.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html#l00177">177</a> of file <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html">firstOrderRelativisticLightTimeCorrection.h</a>.</p>
 
-<p>References <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html#l00210">currentTotalLightTimeCorrection_</a>.</p>
+<p>References <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html#l00232">currentTotalLightTimeCorrection_</a>.</p>
 
 </div>
 </div>
@@ -595,9 +621,9 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Light-time correction of given perturbing body, as computed by last call to calculateLightTimeCorrection. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html#l00169">169</a> of file <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html">firstOrderRelativisticLightTimeCorrection.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html#l00191">191</a> of file <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html">firstOrderRelativisticLightTimeCorrection.h</a>.</p>
 
-<p>References <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html#l00207">currentLighTimeCorrectionComponents_</a>.</p>
+<p>References <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html#l00229">currentLighTimeCorrectionComponents_</a>.</p>
 
 </div>
 </div>
@@ -623,9 +649,9 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Function to get the function returning the parametric post-Newtonian parameter gamma </p><dl class="section return"><dt>Returns</dt><dd>Function returning the parametric post-Newtonian parameter gamma </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html#l00179">179</a> of file <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html">firstOrderRelativisticLightTimeCorrection.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html#l00201">201</a> of file <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html">firstOrderRelativisticLightTimeCorrection.h</a>.</p>
 
-<p>References <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html#l00200">ppnParameterGammaFunction_</a>.</p>
+<p>References <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html#l00222">ppnParameterGammaFunction_</a>.</p>
 
 </div>
 </div>
@@ -648,9 +674,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html#l00187">187</a> of file <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html">firstOrderRelativisticLightTimeCorrection.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html#l00209">209</a> of file <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html">firstOrderRelativisticLightTimeCorrection.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d8/d9e/first_order_relativistic_light_time_correction_8cpp_source.html#l00024">calculateLightTimeCorrection()</a>, and <a class="el" href="../../d8/d9e/first_order_relativistic_light_time_correction_8cpp_source.html#l00054">calculateLightTimeCorrectionPartialDerivativeWrtLinkEndPosition()</a>.</p>
+<p>Referenced by <a class="el" href="../../d8/d9e/first_order_relativistic_light_time_correction_8cpp_source.html#l00024">calculateLightTimeCorrection()</a>, and <a class="el" href="../../d8/d9e/first_order_relativistic_light_time_correction_8cpp_source.html#l00055">calculateLightTimeCorrectionPartialDerivativeWrtLinkEndPosition()</a>.</p>
 
 </div>
 </div>
@@ -672,9 +698,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html#l00190">190</a> of file <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html">firstOrderRelativisticLightTimeCorrection.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html#l00212">212</a> of file <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html">firstOrderRelativisticLightTimeCorrection.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d8/d9e/first_order_relativistic_light_time_correction_8cpp_source.html#l00024">calculateLightTimeCorrection()</a>, <a class="el" href="../../d8/d9e/first_order_relativistic_light_time_correction_8cpp_source.html#l00054">calculateLightTimeCorrectionPartialDerivativeWrtLinkEndPosition()</a>, and <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html#l00145">getPerturbingBodyGravitationalParameterFunctions()</a>.</p>
+<p>Referenced by <a class="el" href="../../d8/d9e/first_order_relativistic_light_time_correction_8cpp_source.html#l00024">calculateLightTimeCorrection()</a>, <a class="el" href="../../d8/d9e/first_order_relativistic_light_time_correction_8cpp_source.html#l00055">calculateLightTimeCorrectionPartialDerivativeWrtLinkEndPosition()</a>, and <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html#l00167">getPerturbingBodyGravitationalParameterFunctions()</a>.</p>
 
 </div>
 </div>
@@ -696,9 +722,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html#l00193">193</a> of file <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html">firstOrderRelativisticLightTimeCorrection.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html#l00215">215</a> of file <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html">firstOrderRelativisticLightTimeCorrection.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html#l00058">FirstOrderLightTimeCorrectionCalculator()</a>, and <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html#l00135">getPerturbingBodyNames()</a>.</p>
+<p>Referenced by <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html#l00058">FirstOrderLightTimeCorrectionCalculator()</a>, and <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html#l00157">getPerturbingBodyNames()</a>.</p>
 
 </div>
 </div>
@@ -721,9 +747,9 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Function returning the parametric post-Newtonian parameter gamma, a measure for the space-time curvature due to a unit rest mass (1.0 in GR) </p>
 
-<p>Definition at line <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html#l00200">200</a> of file <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html">firstOrderRelativisticLightTimeCorrection.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html#l00222">222</a> of file <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html">firstOrderRelativisticLightTimeCorrection.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d8/d9e/first_order_relativistic_light_time_correction_8cpp_source.html#l00024">calculateLightTimeCorrection()</a>, <a class="el" href="../../d8/d9e/first_order_relativistic_light_time_correction_8cpp_source.html#l00054">calculateLightTimeCorrectionPartialDerivativeWrtLinkEndPosition()</a>, and <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html#l00179">getPpnParameterGammaFunction_()</a>.</p>
+<p>Referenced by <a class="el" href="../../d8/d9e/first_order_relativistic_light_time_correction_8cpp_source.html#l00024">calculateLightTimeCorrection()</a>, <a class="el" href="../../d8/d9e/first_order_relativistic_light_time_correction_8cpp_source.html#l00055">calculateLightTimeCorrectionPartialDerivativeWrtLinkEndPosition()</a>, and <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html#l00201">getPpnParameterGammaFunction_()</a>.</p>
 
 </div>
 </div>
@@ -745,9 +771,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html#l00203">203</a> of file <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html">firstOrderRelativisticLightTimeCorrection.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html#l00225">225</a> of file <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html">firstOrderRelativisticLightTimeCorrection.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d8/d9e/first_order_relativistic_light_time_correction_8cpp_source.html#l00024">calculateLightTimeCorrection()</a>, <a class="el" href="../../d8/d9e/first_order_relativistic_light_time_correction_8cpp_source.html#l00054">calculateLightTimeCorrectionPartialDerivativeWrtLinkEndPosition()</a>, and <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html#l00058">FirstOrderLightTimeCorrectionCalculator()</a>.</p>
+<p>Referenced by <a class="el" href="../../d8/d9e/first_order_relativistic_light_time_correction_8cpp_source.html#l00024">calculateLightTimeCorrection()</a>, <a class="el" href="../../d8/d9e/first_order_relativistic_light_time_correction_8cpp_source.html#l00055">calculateLightTimeCorrectionPartialDerivativeWrtLinkEndPosition()</a>, and <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html#l00058">FirstOrderLightTimeCorrectionCalculator()</a>.</p>
 
 </div>
 </div>
@@ -770,9 +796,9 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>List of light-time correction due to each separate perturbing body, as computed by last call to calculateLightTimeCorrection. </p>
 
-<p>Definition at line <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html#l00207">207</a> of file <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html">firstOrderRelativisticLightTimeCorrection.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html#l00229">229</a> of file <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html">firstOrderRelativisticLightTimeCorrection.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d8/d9e/first_order_relativistic_light_time_correction_8cpp_source.html#l00024">calculateLightTimeCorrection()</a>, <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html#l00058">FirstOrderLightTimeCorrectionCalculator()</a>, and <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html#l00169">getCurrentLightTimeCorrectionComponent()</a>.</p>
+<p>Referenced by <a class="el" href="../../d8/d9e/first_order_relativistic_light_time_correction_8cpp_source.html#l00024">calculateLightTimeCorrection()</a>, <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html#l00058">FirstOrderLightTimeCorrectionCalculator()</a>, and <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html#l00191">getCurrentLightTimeCorrectionComponent()</a>.</p>
 
 </div>
 </div>
@@ -794,9 +820,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html#l00210">210</a> of file <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html">firstOrderRelativisticLightTimeCorrection.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html#l00232">232</a> of file <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html">firstOrderRelativisticLightTimeCorrection.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d8/d9e/first_order_relativistic_light_time_correction_8cpp_source.html#l00024">calculateLightTimeCorrection()</a>, <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html#l00058">FirstOrderLightTimeCorrectionCalculator()</a>, and <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html#l00155">getCurrentTotalLightTimeCorrection()</a>.</p>
+<p>Referenced by <a class="el" href="../../d8/d9e/first_order_relativistic_light_time_correction_8cpp_source.html#l00024">calculateLightTimeCorrection()</a>, <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html#l00058">FirstOrderLightTimeCorrectionCalculator()</a>, and <a class="el" href="../../d2/d85/first_order_relativistic_light_time_correction_8h_source.html#l00177">getCurrentTotalLightTimeCorrection()</a>.</p>
 
 </div>
 </div>
@@ -807,7 +833,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 27 2017 09:33:01 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 7 2017 11:20:33 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

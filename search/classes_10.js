@@ -1,32 +1,4 @@
 var searchData=
 [
-  ['radiationpressurecoefficient',['RadiationPressureCoefficient',['../df/d4b/classtudat_1_1estimatable__parameters_1_1_radiation_pressure_coefficient.html',1,'tudat::estimatable_parameters']]],
-  ['radiationpressureinterface',['RadiationPressureInterface',['../db/ddf/classtudat_1_1electro__magnetism_1_1_radiation_pressure_interface.html',1,'tudat::electro_magnetism']]],
-  ['radiationpressureinterfacesettings',['RadiationPressureInterfaceSettings',['../df/dac/classtudat_1_1simulation__setup_1_1_radiation_pressure_interface_settings.html',1,'tudat::simulation_setup']]],
-  ['randomvariablegenerator',['RandomVariableGenerator',['../d1/de1/classtudat_1_1statistics_1_1_random_variable_generator.html',1,'tudat::statistics']]],
-  ['randomvariablegenerator_3c_20double_20_3e',['RandomVariableGenerator&lt; double &gt;',['../d1/de1/classtudat_1_1statistics_1_1_random_variable_generator.html',1,'tudat::statistics']]],
-  ['referenceframemanager',['ReferenceFrameManager',['../da/d93/classtudat_1_1ephemerides_1_1_reference_frame_manager.html',1,'tudat::ephemerides']]],
-  ['reinitializablenumericalintegrator',['ReinitializableNumericalIntegrator',['../dd/d7d/classtudat_1_1numerical__integrators_1_1_reinitializable_numerical_integrator.html',1,'tudat::numerical_integrators']]],
-  ['relativisticaccelerationcorrection',['RelativisticAccelerationCorrection',['../d6/d98/classtudat_1_1relativity_1_1_relativistic_acceleration_correction.html',1,'tudat::relativity']]],
-  ['relativisticaccelerationcorrectionsettings',['RelativisticAccelerationCorrectionSettings',['../d9/d37/classtudat_1_1simulation__setup_1_1_relativistic_acceleration_correction_settings.html',1,'tudat::simulation_setup']]],
-  ['relativisticaccelerationpartial',['RelativisticAccelerationPartial',['../df/d5b/classtudat_1_1acceleration__partials_1_1_relativistic_acceleration_partial.html',1,'tudat::acceleration_partials']]],
-  ['removecomment',['RemoveComment',['../d0/d2f/classtudat_1_1input__output_1_1stream__filters_1_1_remove_comment.html',1,'tudat::input_output::stream_filters']]],
-  ['replaceelements',['ReplaceElements',['../d1/d89/classtudat_1_1input__output_1_1stream__filters_1_1_replace_elements.html',1,'tudat::input_output::stream_filters']]],
-  ['rootabsoluteorrelativetoleranceterminationcondition',['RootAbsoluteOrRelativeToleranceTerminationCondition',['../d4/df8/classtudat_1_1root__finders_1_1termination__conditions_1_1_root_absolute_or_relative_tolerance_termination_condition.html',1,'tudat::root_finders::termination_conditions']]],
-  ['rootabsolutetoleranceterminationcondition',['RootAbsoluteToleranceTerminationCondition',['../d4/db2/classtudat_1_1root__finders_1_1termination__conditions_1_1_root_absolute_tolerance_termination_condition.html',1,'tudat::root_finders::termination_conditions']]],
-  ['rootfindercore',['RootFinderCore',['../d3/d13/classtudat_1_1root__finders_1_1_root_finder_core.html',1,'tudat::root_finders']]],
-  ['rootrelativetoleranceterminationcondition',['RootRelativeToleranceTerminationCondition',['../d6/dc8/classtudat_1_1root__finders_1_1termination__conditions_1_1_root_relative_tolerance_termination_condition.html',1,'tudat::root_finders::termination_conditions']]],
-  ['rotationalephemeris',['RotationalEphemeris',['../da/d34/classtudat_1_1ephemerides_1_1_rotational_ephemeris.html',1,'tudat::ephemerides']]],
-  ['rotationalmotionstatederivative',['RotationalMotionStateDerivative',['../db/db4/classtudat_1_1propagators_1_1_rotational_motion_state_derivative.html',1,'tudat::propagators']]],
-  ['rotationalstateintegratedstateprocessor',['RotationalStateIntegratedStateProcessor',['../df/d10/classtudat_1_1propagators_1_1_rotational_state_integrated_state_processor.html',1,'tudat::propagators']]],
-  ['rotationalstatepropagatorsettings',['RotationalStatePropagatorSettings',['../dc/d2a/classtudat_1_1propagators_1_1_rotational_state_propagator_settings.html',1,'tudat::propagators']]],
-  ['rotationmatrixpartial',['RotationMatrixPartial',['../de/df9/classtudat_1_1observation__partials_1_1_rotation_matrix_partial.html',1,'tudat::observation_partials']]],
-  ['rotationmatrixpartialwrtconstantrotationrate',['RotationMatrixPartialWrtConstantRotationRate',['../d4/d59/classtudat_1_1observation__partials_1_1_rotation_matrix_partial_wrt_constant_rotation_rate.html',1,'tudat::observation_partials']]],
-  ['rotationmatrixpartialwrtpoleorientation',['RotationMatrixPartialWrtPoleOrientation',['../da/de4/classtudat_1_1observation__partials_1_1_rotation_matrix_partial_wrt_pole_orientation.html',1,'tudat::observation_partials']]],
-  ['rotationmodelsettings',['RotationModelSettings',['../de/d19/classtudat_1_1simulation__setup_1_1_rotation_model_settings.html',1,'tudat::simulation_setup']]],
-  ['rotationrate',['RotationRate',['../d0/dab/classtudat_1_1estimatable__parameters_1_1_rotation_rate.html',1,'tudat::estimatable_parameters']]],
-  ['rungekutta4integrator',['RungeKutta4Integrator',['../d9/dd4/classtudat_1_1numerical__integrators_1_1_runge_kutta4_integrator.html',1,'tudat::numerical_integrators']]],
-  ['rungekuttacoefficients',['RungeKuttaCoefficients',['../d0/d19/structtudat_1_1numerical__integrators_1_1_runge_kutta_coefficients.html',1,'tudat::numerical_integrators']]],
-  ['rungekuttavariablestepsizeintegrator',['RungeKuttaVariableStepSizeIntegrator',['../da/d75/classtudat_1_1numerical__integrators_1_1_runge_kutta_variable_step_size_integrator.html',1,'tudat::numerical_integrators']]],
-  ['rungekuttavariablestepsizesettings',['RungeKuttaVariableStepSizeSettings',['../d7/d33/classtudat_1_1numerical__integrators_1_1_runge_kutta_variable_step_size_settings.html',1,'tudat::numerical_integrators']]]
+  ['quadrilateralmeshedsurfacegeometry',['QuadrilateralMeshedSurfaceGeometry',['../d9/d64/classtudat_1_1geometric__shapes_1_1_quadrilateral_meshed_surface_geometry.html',1,'tudat::geometric_shapes']]]
 ];

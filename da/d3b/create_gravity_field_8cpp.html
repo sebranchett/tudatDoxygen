@@ -97,6 +97,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <code>#include &quot;<a class="el" href="../../df/dda/time_dependent_spherical_harmonics_gravity_field_8h_source.html">Tudat/Astrodynamics/Gravitation/timeDependentSphericalHarmonicsGravityField.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d4/d7e/tri_axial_ellipsoid_gravity_8h_source.html">Tudat/Astrodynamics/Gravitation/triAxialEllipsoidGravity.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../da/df6/create_gravity_field_8h_source.html">Tudat/SimulationSetup/EnvironmentSetup/createGravityField.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d0/da1/basic_input_output_8h_source.html">Tudat/InputOutput/basicInputOutput.h</a>&quot;</code><br />
 </div>
 <p><a href="../../da/d3b/create_gravity_field_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -116,6 +117,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a6f453b4b1e255807768ad31b75b03a08"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; SphericalHarmonicsGravityFieldSettings &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da8/namespacetudat_1_1simulation__setup.html#a6f453b4b1e255807768ad31b75b03a08">tudat::simulation_setup::createHomogeneousTriAxialEllipsoidGravitySettings</a> (const double axisA, const double axisB, const double axisC, const double ellipsoidDensity, const int maximumDegree, const int maximumOrder, const std::string &amp;associatedReferenceFrame)</td></tr>
 <tr class="memdesc:a6f453b4b1e255807768ad31b75b03a08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to create gravity field settings for a homogeneous triaxial ellipsoid.  <a href="../../d4/da8/namespacetudat_1_1simulation__setup.html#a6f453b4b1e255807768ad31b75b03a08">More...</a><br /></td></tr>
 <tr class="separator:a6f453b4b1e255807768ad31b75b03a08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64280fcd6cb838a26734b8bcfb6ff0ad"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da8/namespacetudat_1_1simulation__setup.html#a64280fcd6cb838a26734b8bcfb6ff0ad">tudat::simulation_setup::getPathForSphericalHarmonicsModel</a> (const SphericalHarmonicsModel sphericalHarmonicsModel)</td></tr>
+<tr class="memdesc:a64280fcd6cb838a26734b8bcfb6ff0ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the path of the SH file for a SH model.  <a href="../../d4/da8/namespacetudat_1_1simulation__setup.html#a64280fcd6cb838a26734b8bcfb6ff0ad">More...</a><br /></td></tr>
+<tr class="separator:a64280fcd6cb838a26734b8bcfb6ff0ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaae0fd82ecc5d3ada107e77622715c05"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da8/namespacetudat_1_1simulation__setup.html#aaae0fd82ecc5d3ada107e77622715c05">tudat::simulation_setup::getReferenceFrameForSphericalHarmonicsModel</a> (const SphericalHarmonicsModel sphericalHarmonicsModel)</td></tr>
+<tr class="memdesc:aaae0fd82ecc5d3ada107e77622715c05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the associated reference frame for a SH model.  <a href="../../d4/da8/namespacetudat_1_1simulation__setup.html#aaae0fd82ecc5d3ada107e77622715c05">More...</a><br /></td></tr>
+<tr class="separator:aaae0fd82ecc5d3ada107e77622715c05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a859ea8402c912e2e2fa21bb66f1f6802"><td class="memItemLeft" align="right" valign="top">std::pair&lt; double, double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da8/namespacetudat_1_1simulation__setup.html#a859ea8402c912e2e2fa21bb66f1f6802">tudat::simulation_setup::readGravityFieldFile</a> (const std::string &amp;fileName, const int maximumDegree, const int maximumOrder, std::pair&lt; Eigen::MatrixXd, Eigen::MatrixXd &gt; &amp;coefficients, const int gravitationalParameterIndex, const int referenceRadiusIndex)</td></tr>
 <tr class="memdesc:a859ea8402c912e2e2fa21bb66f1f6802"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to read a gravity field file.  <a href="../../d4/da8/namespacetudat_1_1simulation__setup.html#a859ea8402c912e2e2fa21bb66f1f6802">More...</a><br /></td></tr>
 <tr class="separator:a859ea8402c912e2e2fa21bb66f1f6802"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -123,7 +130,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 27 2017 09:32:58 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 7 2017 11:20:30 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

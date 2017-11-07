@@ -4,5 +4,6 @@ var searchData=
   ['basicfunctionpointer',['BasicFunctionPointer',['../d0/df3/namespacetudat_1_1basic__mathematics.html#a9740ad9bee942a134aac9beb17349fa8',1,'tudat::basic_mathematics']]],
   ['binarysearchlookupschemedoublepointer',['BinarySearchLookupSchemeDoublePointer',['../d3/d05/namespacetudat_1_1interpolators.html#accbee97df7c92900adefdadb81e9bd36',1,'tudat::interpolators']]],
   ['bisection',['Bisection',['../dc/d19/namespacetudat_1_1root__finders.html#a334776b7fe2cdb46cb296d584208d4d3',1,'tudat::root_finders']]],
-  ['bisectionpointer',['BisectionPointer',['../dc/d19/namespacetudat_1_1root__finders.html#ad7179716509dc4449034750b2edaa8b5',1,'tudat::root_finders']]]
+  ['bisectionpointer',['BisectionPointer',['../dc/d19/namespacetudat_1_1root__finders.html#ad7179716509dc4449034750b2edaa8b5',1,'tudat::root_finders']]],
+  ['bodytobodymap',['BodyToBodyMap',['../d8/d24/namespacetudat_1_1json__interface.html#a4f5378f74e491d2e2efb888c557c4355',1,'tudat::json_interface']]]
 ];

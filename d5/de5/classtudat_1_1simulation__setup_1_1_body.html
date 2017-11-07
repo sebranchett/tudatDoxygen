@@ -100,7 +100,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <p><a class="el" href="../../d5/de5/classtudat_1_1simulation__setup_1_1_body.html" title="Body class representing the properties of a celestial body (natural or artificial). ">Body</a> class representing the properties of a celestial body (natural or artificial).  
  <a href="../../d5/de5/classtudat_1_1simulation__setup_1_1_body.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="../../d0/d77/body_8h_source.html">body.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -125,6 +125,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a74dd82ccc5ffb2bb1dcaad58615bf620"><td class="memItemLeft" align="right" valign="top">boost::function&lt; double(const double) &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/de5/classtudat_1_1simulation__setup_1_1_body.html#a74dd82ccc5ffb2bb1dcaad58615bf620">getBodyMassFunction</a> ()</td></tr>
 <tr class="memdesc:a74dd82ccc5ffb2bb1dcaad58615bf620"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to get the function returning body mass as a function of time.  <a href="#a74dd82ccc5ffb2bb1dcaad58615bf620">More...</a><br /></td></tr>
 <tr class="separator:a74dd82ccc5ffb2bb1dcaad58615bf620"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4842639c5c21effaaaf34805a3969a89"><td class="memItemLeft" align="right" valign="top">Eigen::Vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/de5/classtudat_1_1simulation__setup_1_1_body.html#a4842639c5c21effaaaf34805a3969a89">getCurrentAngularVelocityVectorInGlobalFrame</a> ()</td></tr>
+<tr class="memdesc:a4842639c5c21effaaaf34805a3969a89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current angular velocity vector for body's rotation, expressed in the global frame.  <a href="#a4842639c5c21effaaaf34805a3969a89">More...</a><br /></td></tr>
+<tr class="separator:a4842639c5c21effaaaf34805a3969a89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0946c1b5fa661abd9935041ca7bc37ac"><td class="memItemLeft" align="right" valign="top">Eigen::Matrix3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/de5/classtudat_1_1simulation__setup_1_1_body.html#a0946c1b5fa661abd9935041ca7bc37ac">getCurrentRotationMatrixDerivativeToGlobalFrame</a> ()</td></tr>
 <tr class="memdesc:a0946c1b5fa661abd9935041ca7bc37ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current rotation matrix derivative from body-fixed to global frame.  <a href="#a0946c1b5fa661abd9935041ca7bc37ac">More...</a><br /></td></tr>
 <tr class="separator:a0946c1b5fa661abd9935041ca7bc37ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -149,6 +152,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:abf095882cd458103d85419fc3d306cb4"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; <a class="el" href="../../d1/dec/classtudat_1_1aerodynamics_1_1_flight_conditions.html">aerodynamics::FlightConditions</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/de5/classtudat_1_1simulation__setup_1_1_body.html#abf095882cd458103d85419fc3d306cb4">getFlightConditions</a> ()</td></tr>
 <tr class="memdesc:abf095882cd458103d85419fc3d306cb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to retrieve the body flight conditions.  <a href="#abf095882cd458103d85419fc3d306cb4">More...</a><br /></td></tr>
 <tr class="separator:abf095882cd458103d85419fc3d306cb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52afe83452a8a497c6b975d75d7a42e8"><td class="memTemplParams" colspan="2">template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; </td></tr>
+<tr class="memitem:a52afe83452a8a497c6b975d75d7a42e8"><td class="memTemplItemLeft" align="right" valign="top">Eigen::Matrix&lt; StateScalarType, 6, 1 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/de5/classtudat_1_1simulation__setup_1_1_body.html#a52afe83452a8a497c6b975d75d7a42e8">getGlobalFrameOriginBarycentricStateFromEphemeris</a> (const TimeType time)</td></tr>
+<tr class="memdesc:a52afe83452a8a497c6b975d75d7a42e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Templated function to get the current berycentric state of the body from its ephemeris andcglobal-to-ephemeris-frame function.  <a href="#a52afe83452a8a497c6b975d75d7a42e8">More...</a><br /></td></tr>
+<tr class="separator:a52afe83452a8a497c6b975d75d7a42e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adddf3831784320b9bc7a4c2f18ddc57d"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; <a class="el" href="../../d2/dab/classtudat_1_1gravitation_1_1_gravity_field_model.html">gravitation::GravityFieldModel</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/de5/classtudat_1_1simulation__setup_1_1_body.html#adddf3831784320b9bc7a4c2f18ddc57d">getGravityFieldModel</a> ()</td></tr>
 <tr class="memdesc:adddf3831784320b9bc7a4c2f18ddc57d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to get the gravity field model of the body.  <a href="#adddf3831784320b9bc7a4c2f18ddc57d">More...</a><br /></td></tr>
 <tr class="separator:adddf3831784320b9bc7a4c2f18ddc57d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -164,6 +171,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad0116ec0c6ef74c0ad8bcdf9b22b548e"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, boost::shared_ptr&lt; <a class="el" href="../../d5/dab/classtudat_1_1ground__stations_1_1_ground_station.html">ground_stations::GroundStation</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/de5/classtudat_1_1simulation__setup_1_1_body.html#ad0116ec0c6ef74c0ad8bcdf9b22b548e">getGroundStationMap</a> () const </td></tr>
 <tr class="memdesc:ad0116ec0c6ef74c0ad8bcdf9b22b548e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to retrieve full list of ground stations.  <a href="#ad0116ec0c6ef74c0ad8bcdf9b22b548e">More...</a><br /></td></tr>
 <tr class="separator:ad0116ec0c6ef74c0ad8bcdf9b22b548e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf4ed1270e9b52ec62f6d756f7098699"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/de5/classtudat_1_1simulation__setup_1_1_body.html#aaf4ed1270e9b52ec62f6d756f7098699">getIsBodyGlobalFrameOrigin</a> ()</td></tr>
+<tr class="memdesc:aaf4ed1270e9b52ec62f6d756f7098699"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to retrieve variable denoting whether this body is the global frame origin.  <a href="#aaf4ed1270e9b52ec62f6d756f7098699">More...</a><br /></td></tr>
+<tr class="separator:aaf4ed1270e9b52ec62f6d756f7098699"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad60f6964ee99fca9f6a7ea5047a108ff"><td class="memItemLeft" align="right" valign="top">Eigen::Matrix&lt; long double, 3, 1 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/de5/classtudat_1_1simulation__setup_1_1_body.html#ad60f6964ee99fca9f6a7ea5047a108ff">getLongPosition</a> ()</td></tr>
 <tr class="memdesc:ad60f6964ee99fca9f6a7ea5047a108ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current position, in long double precision.  <a href="#ad60f6964ee99fca9f6a7ea5047a108ff">More...</a><br /></td></tr>
 <tr class="separator:ad60f6964ee99fca9f6a7ea5047a108ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -232,9 +242,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad866cbce7a0cd9843850ee8dedd2c9de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/de5/classtudat_1_1simulation__setup_1_1_body.html#ad866cbce7a0cd9843850ee8dedd2c9de">setCurrentRotationalStateToLocalFrame</a> (const Eigen::Matrix&lt; double, 7, 1 &gt; currentRotationalStateFromLocalToGlobalFrame)</td></tr>
 <tr class="memdesc:ad866cbce7a0cd9843850ee8dedd2c9de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to set the full rotational state directly.  <a href="#ad866cbce7a0cd9843850ee8dedd2c9de">More...</a><br /></td></tr>
 <tr class="separator:ad866cbce7a0cd9843850ee8dedd2c9de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb338d46d3f9de1df04b929ed3766292"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/de5/classtudat_1_1simulation__setup_1_1_body.html#afb338d46d3f9de1df04b929ed3766292">setCurrentRotationalStateToLocalFrameFromEphemeris</a> (const double time)</td></tr>
-<tr class="memdesc:afb338d46d3f9de1df04b929ed3766292"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to set the full rotational state at given time.  <a href="#afb338d46d3f9de1df04b929ed3766292">More...</a><br /></td></tr>
-<tr class="separator:afb338d46d3f9de1df04b929ed3766292"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa12b1ec8e9e1a04ab1111e21e2bf772c"><td class="memTemplParams" colspan="2">template&lt;typename TimeType &gt; </td></tr>
+<tr class="memitem:aa12b1ec8e9e1a04ab1111e21e2bf772c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/de5/classtudat_1_1simulation__setup_1_1_body.html#aa12b1ec8e9e1a04ab1111e21e2bf772c">setCurrentRotationalStateToLocalFrameFromEphemeris</a> (const TimeType time)</td></tr>
+<tr class="memdesc:aa12b1ec8e9e1a04ab1111e21e2bf772c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to set the full rotational state at given time.  <a href="#aa12b1ec8e9e1a04ab1111e21e2bf772c">More...</a><br /></td></tr>
+<tr class="separator:aa12b1ec8e9e1a04ab1111e21e2bf772c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a352f45d815d365b742e55e94e0ec8f4c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/de5/classtudat_1_1simulation__setup_1_1_body.html#a352f45d815d365b742e55e94e0ec8f4c">setCurrentRotationToLocalFrameDerivativeFromEphemeris</a> (const double time)</td></tr>
 <tr class="memdesc:a352f45d815d365b742e55e94e0ec8f4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to set the rotation matrix derivative from global to body-fixed frame at given time.  <a href="#a352f45d815d365b742e55e94e0ec8f4c">More...</a><br /></td></tr>
 <tr class="separator:a352f45d815d365b742e55e94e0ec8f4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -259,6 +270,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a72d039d757b7e8b70654b79c776a32d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/de5/classtudat_1_1simulation__setup_1_1_body.html#a72d039d757b7e8b70654b79c776a32d4">setGravityFieldVariationSet</a> (const boost::shared_ptr&lt; <a class="el" href="../../d0/db7/classtudat_1_1gravitation_1_1_gravity_field_variations_set.html">gravitation::GravityFieldVariationsSet</a> &gt; gravityFieldVariationSet)</td></tr>
 <tr class="memdesc:a72d039d757b7e8b70654b79c776a32d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to set object containing all variations in the gravity field of this body.  <a href="#a72d039d757b7e8b70654b79c776a32d4">More...</a><br /></td></tr>
 <tr class="separator:a72d039d757b7e8b70654b79c776a32d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8d0967ac71eee4a9b3040e99529b42b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/de5/classtudat_1_1simulation__setup_1_1_body.html#ad8d0967ac71eee4a9b3040e99529b42b">setIsBodyGlobalFrameOrigin</a> (const int bodyIsGlobalFrameOrigin)</td></tr>
+<tr class="memdesc:ad8d0967ac71eee4a9b3040e99529b42b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to set variable denoting whether this body is the global frame origin.  <a href="#ad8d0967ac71eee4a9b3040e99529b42b">More...</a><br /></td></tr>
+<tr class="separator:ad8d0967ac71eee4a9b3040e99529b42b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae5f634a6c751ad8922dc6e6662f6a502"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/de5/classtudat_1_1simulation__setup_1_1_body.html#ae5f634a6c751ad8922dc6e6662f6a502">setLongState</a> (const Eigen::Matrix&lt; long double, 6, 1 &gt; &amp;longState)</td></tr>
 <tr class="memdesc:ae5f634a6c751ad8922dc6e6662f6a502"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set current state of body manually in long double precision.  <a href="#ae5f634a6c751ad8922dc6e6662f6a502">More...</a><br /></td></tr>
 <tr class="separator:ae5f634a6c751ad8922dc6e6662f6a502"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -317,12 +331,21 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:ad79920645c54a70e978d7c13cda96b9c"><td class="memItemLeft" align="right" valign="top">Eigen::Matrix3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/de5/classtudat_1_1simulation__setup_1_1_body.html#ad79920645c54a70e978d7c13cda96b9c">bodyInertiaTensor_</a></td></tr>
 <tr class="memdesc:ad79920645c54a70e978d7c13cda96b9c"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d5/de5/classtudat_1_1simulation__setup_1_1_body.html" title="Body class representing the properties of a celestial body (natural or artificial). ">Body</a> moment-of-inertia tensor.  <a href="#ad79920645c54a70e978d7c13cda96b9c">More...</a><br /></td></tr>
 <tr class="separator:ad79920645c54a70e978d7c13cda96b9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82711e18c5a133fafaa1d1e87d564dc5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/de5/classtudat_1_1simulation__setup_1_1_body.html#a82711e18c5a133fafaa1d1e87d564dc5">bodyIsGlobalFrameOrigin_</a></td></tr>
+<tr class="memdesc:a82711e18c5a133fafaa1d1e87d564dc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variable denoting whether this body is the global frame origin (1 if true, 0 if false, -1 if not yet set)  <a href="#a82711e18c5a133fafaa1d1e87d564dc5">More...</a><br /></td></tr>
+<tr class="separator:a82711e18c5a133fafaa1d1e87d564dc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20dbc97382e176e1c9359f9dd5d4d292"><td class="memItemLeft" align="right" valign="top">boost::function&lt; double(const double) &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/de5/classtudat_1_1simulation__setup_1_1_body.html#a20dbc97382e176e1c9359f9dd5d4d292">bodyMassFunction_</a></td></tr>
 <tr class="memdesc:a20dbc97382e176e1c9359f9dd5d4d292"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function returning body mass as a function of time.  <a href="#a20dbc97382e176e1c9359f9dd5d4d292">More...</a><br /></td></tr>
 <tr class="separator:a20dbc97382e176e1c9359f9dd5d4d292"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc8f784401832fc59230776a6f01c1d3"><td class="memItemLeft" align="right" valign="top">Eigen::Vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/de5/classtudat_1_1simulation__setup_1_1_body.html#abc8f784401832fc59230776a6f01c1d3">currentAngularVelocityVectorInGlobalFrame_</a></td></tr>
 <tr class="memdesc:abc8f784401832fc59230776a6f01c1d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current angular velocity vector for body's rotation, expressed in the global frame.  <a href="#abc8f784401832fc59230776a6f01c1d3">More...</a><br /></td></tr>
 <tr class="separator:abc8f784401832fc59230776a6f01c1d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47a939cb9eec52f7cb67e829db063eae"><td class="memItemLeft" align="right" valign="top">Eigen::Matrix&lt; long double, 6, 1 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/de5/classtudat_1_1simulation__setup_1_1_body.html#a47a939cb9eec52f7cb67e829db063eae">currentBarycentricLongState_</a></td></tr>
+<tr class="memdesc:a47a939cb9eec52f7cb67e829db063eae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current state with long double precision.  <a href="#a47a939cb9eec52f7cb67e829db063eae">More...</a><br /></td></tr>
+<tr class="separator:a47a939cb9eec52f7cb67e829db063eae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ec1a8150811a10e7ca27b0885511df4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/da5/namespace_eigen.html#a03c917374d8dcb5bb158f2380f92847a">Eigen::Vector6d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/de5/classtudat_1_1simulation__setup_1_1_body.html#a0ec1a8150811a10e7ca27b0885511df4">currentBarycentricState_</a></td></tr>
+<tr class="memdesc:a0ec1a8150811a10e7ca27b0885511df4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current state.  <a href="#a0ec1a8150811a10e7ca27b0885511df4">More...</a><br /></td></tr>
+<tr class="separator:a0ec1a8150811a10e7ca27b0885511df4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a96f3c5b0311e89beb58396941174b350"><td class="memItemLeft" align="right" valign="top">Eigen::Matrix&lt; long double, 6, 1 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/de5/classtudat_1_1simulation__setup_1_1_body.html#a96f3c5b0311e89beb58396941174b350">currentLongState_</a></td></tr>
 <tr class="memdesc:a96f3c5b0311e89beb58396941174b350"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current state with long double precision.  <a href="#a96f3c5b0311e89beb58396941174b350">More...</a><br /></td></tr>
 <tr class="separator:a96f3c5b0311e89beb58396941174b350"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -373,7 +396,7 @@ Private Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="../../d5/de5/classtudat_1_1simulation__setup_1_1_body.html" title="Body class representing the properties of a celestial body (natural or artificial). ">Body</a> class representing the properties of a celestial body (natural or artificial). By storing all properties of bodies (ephemeris, rotation, gravity, etc.) in a set of body objects, the simulation environment can be defined in a clear and modular way. To create body objects, the <a class="el" href="../../d8/d72/create_bodies_8h.html">createBodies.h</a> function provides a range of functionality. The <a class="el" href="../../df/d19/create_acceleration_models_8h.html">createAccelerationModels.h</a> file provides functions to use body objects to create acceleration objects. </p>
 
-<p>Definition at line <a class="el" href="../../d0/d77/body_8h_source.html#l00208">208</a> of file <a class="el" href="../../d0/d77/body_8h_source.html">body.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l00213">213</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a802232493506b5fc4956779e74468f06"></a>
 <div class="memitem">
@@ -403,7 +426,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d0/d77/body_8h_source.html#l00217">217</a> of file <a class="el" href="../../d0/d77/body_8h_source.html">body.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l00222">222</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
 
 </div>
 </div>
@@ -430,7 +453,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Function to retrieve the class returning the state of this body's ephemeris origin w.r.t. the global origin </p><dl class="section return"><dt>Returns</dt><dd>Class returning the state of this body's ephemeris origin w.r.t. the global origin </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d0/d77/body_8h_source.html#l00236">236</a> of file <a class="el" href="../../d0/d77/body_8h_source.html">body.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l00241">241</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
 
 </div>
 </div>
@@ -462,7 +485,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d0/d77/body_8h_source.html#l00246">246</a> of file <a class="el" href="../../d0/d77/body_8h_source.html">body.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l00251">251</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
 
 </div>
 </div>
@@ -494,9 +517,9 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d0/d77/body_8h_source.html#l00259">259</a> of file <a class="el" href="../../d0/d77/body_8h_source.html">body.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l00264">264</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d1/d2b/create_acceleration_partials_8h_source.html#l00064">tudat::simulation_setup::createAnalyticalAccelerationPartial()</a>.</p>
+<p>Referenced by <a class="el" href="../../d1/d2b/create_acceleration_partials_8h_source.html#l00065">tudat::simulation_setup::createAnalyticalAccelerationPartial()</a>.</p>
 
 </div>
 </div>
@@ -528,7 +551,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d0/d77/body_8h_source.html#l00271">271</a> of file <a class="el" href="../../d0/d77/body_8h_source.html">body.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l00276">276</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
 
 </div>
 </div>
@@ -587,7 +610,7 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d0/d77/body_8h_source.html#l00294">294</a> of file <a class="el" href="../../d0/d77/body_8h_source.html">body.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l00299">299</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
 
 </div>
 </div>
@@ -615,11 +638,53 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 </table>
 </div><div class="memdoc">
 <p>Templated function to get the current state of the body from its ephemeris and global-to-ephemeris-frame function.</p>
-<p>It calls the setStateFromEphemeris state, resetting the currentState_ / currentLongState_ variables, and returning the state with the requested precision </p><dl class="section return"><dt>Returns</dt><dd>State at requested time </dd></dl>
+<p>It calls the setStateFromEphemeris state, resetting the currentState_ / currentLongState_ variables, and returning the state with the requested precision </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">time</td><td><a class="el" href="../../d8/df9/classtudat_1_1_time.html" title="Class for defining time with a resolution that is sub-fs for very long periods of time...">Time</a> at which to evaluate states. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>State at requested time </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d0/d77/body_8h_source.html#l00328">328</a> of file <a class="el" href="../../d0/d77/body_8h_source.html">body.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l00363">363</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../df/dca/create_state_derivative_model_8h_source.html#l00048">tudat::propagators::createCentralBodyData()</a>, <a class="el" href="../../de/d72/create_observation_model_8h_source.html#l00972">tudat::observation_models::ObservationModelCreator&lt; 3, ObservationScalarType, TimeType &gt;::createObservationModel()</a>, and <a class="el" href="../../de/d4d/create_light_time_calculator_8h_source.html#l00036">tudat::observation_models::createReferencePointEphemeris()</a>.</p>
+<p>Referenced by <a class="el" href="../../df/dca/create_state_derivative_model_8h_source.html#l00049">tudat::propagators::createCentralBodyData()</a>, <a class="el" href="../../de/d72/create_observation_model_8h_source.html#l01103">tudat::observation_models::ObservationModelCreator&lt; 3, ObservationScalarType, TimeType &gt;::createObservationModel()</a>, and <a class="el" href="../../de/d4d/create_light_time_calculator_8h_source.html#l00036">tudat::observation_models::createReferencePointEphemeris()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a52afe83452a8a497c6b975d75d7a42e8"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Eigen::Matrix&lt; StateScalarType, 6, 1 &gt; tudat::simulation_setup::Body::getGlobalFrameOriginBarycentricStateFromEphemeris </td>
+          <td>(</td>
+          <td class="paramtype">const TimeType&#160;</td>
+          <td class="paramname"><em>time</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Templated function to get the current berycentric state of the body from its ephemeris andcglobal-to-ephemeris-frame function.</p>
+<p>It calls the setStateFromEphemeris state, resetting the currentBarycentricState_ / currentBarycentricLongState_ variables, and returning the state with the requested precision. This function can ONLY be called if this body is the global frame origin, otherwise an exception is thrown </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">time</td><td><a class="el" href="../../d8/df9/classtudat_1_1_time.html" title="Class for defining time with a resolution that is sub-fs for very long periods of time...">Time</a> at which to evaluate states. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Barycentric State at requested time </dd></dl>
+
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l00387">387</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
 
 </div>
 </div>
@@ -645,9 +710,9 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 </div><div class="memdoc">
 <p>Returns the internally stored current state vector. </p><dl class="section return"><dt>Returns</dt><dd>Current state. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d0/d77/body_8h_source.html#l00347">347</a> of file <a class="el" href="../../d0/d77/body_8h_source.html">body.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l00413">413</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d1/d2b/create_acceleration_partials_8h_source.html#l00064">tudat::simulation_setup::createAnalyticalAccelerationPartial()</a>, <a class="el" href="../../d2/d02/create_acceleration_models_8cpp_source.html#l00904">tudat::simulation_setup::createEmpiricalAcceleration()</a>, <a class="el" href="../../df/d07/create_flight_conditions_8cpp_source.html#l00036">tudat::simulation_setup::createFlightConditions()</a>, <a class="el" href="../../db/da3/create_gravity_field_variations_8cpp_source.html#l00095">tudat::simulation_setup::createGravityFieldVariationsModel()</a>, <a class="el" href="../../d2/d02/create_acceleration_models_8cpp_source.html#l00774">tudat::simulation_setup::createRelativisticCorrectionAcceleration()</a>, <a class="el" href="../../d2/d02/create_acceleration_models_8cpp_source.html#l00951">tudat::simulation_setup::createThrustAcceleratioModel()</a>, <a class="el" href="../../d7/d6d/create_thrust_model_guidance_8cpp_source.html#l00020">tudat::simulation_setup::createThrustGuidanceModel()</a>, <a class="el" href="../../db/d91/propagation_output_8h_source.html#l00182">tudat::propagators::getDoubleDependentVariableFunction()</a>, and <a class="el" href="../../db/d91/propagation_output_8h_source.html#l00600">tudat::propagators::getVectorDependentVariableFunction()</a>.</p>
+<p>Referenced by <a class="el" href="../../d1/d2b/create_acceleration_partials_8h_source.html#l00065">tudat::simulation_setup::createAnalyticalAccelerationPartial()</a>, <a class="el" href="../../d2/d02/create_acceleration_models_8cpp_source.html#l01046">tudat::simulation_setup::createDirectTidalDissipationAcceleration()</a>, <a class="el" href="../../d2/d02/create_acceleration_models_8cpp_source.html#l00902">tudat::simulation_setup::createEmpiricalAcceleration()</a>, <a class="el" href="../../df/d07/create_flight_conditions_8cpp_source.html#l00031">tudat::simulation_setup::createFlightConditions()</a>, <a class="el" href="../../db/da3/create_gravity_field_variations_8cpp_source.html#l00093">tudat::simulation_setup::createGravityFieldVariationsModel()</a>, <a class="el" href="../../d2/d02/create_acceleration_models_8cpp_source.html#l00772">tudat::simulation_setup::createRelativisticCorrectionAcceleration()</a>, <a class="el" href="../../d2/d02/create_acceleration_models_8cpp_source.html#l00949">tudat::simulation_setup::createThrustAcceleratioModel()</a>, <a class="el" href="../../d7/d6d/create_thrust_model_guidance_8cpp_source.html#l00020">tudat::simulation_setup::createThrustGuidanceModel()</a>, <a class="el" href="../../db/d91/propagation_output_8h_source.html#l00581">tudat::propagators::getDoubleDependentVariableFunction()</a>, and <a class="el" href="../../db/d91/propagation_output_8h_source.html#l00192">tudat::propagators::getVectorDependentVariableFunction()</a>.</p>
 
 </div>
 </div>
@@ -673,9 +738,9 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 </div><div class="memdoc">
 <p>Returns the internally stored current position vector. </p><dl class="section return"><dt>Returns</dt><dd>Current position. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d0/d77/body_8h_source.html#l00354">354</a> of file <a class="el" href="../../d0/d77/body_8h_source.html">body.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l00420">420</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d2/d02/create_acceleration_models_8cpp_source.html#l00743">tudat::simulation_setup::createCannonballRadiationPressureAcceleratioModel()</a>, <a class="el" href="../../d2/d02/create_acceleration_models_8cpp_source.html#l00204">tudat::simulation_setup::createCentralGravityAcceleratioModel()</a>, <a class="el" href="../../d2/d02/create_acceleration_models_8cpp_source.html#l00371">tudat::simulation_setup::createMutualSphericalHarmonicsGravityAcceleration()</a>, <a class="el" href="../../db/dda/create_radiation_pressure_interface_8cpp_source.html#l00054">tudat::simulation_setup::createRadiationPressureInterface()</a>, <a class="el" href="../../dd/d95/create_torque_model_8cpp_source.html#l00100">tudat::simulation_setup::createSecondDegreeGravitationalTorqueModel()</a>, <a class="el" href="../../d2/d02/create_acceleration_models_8cpp_source.html#l00264">tudat::simulation_setup::createSphericalHarmonicsGravityAcceleration()</a>, <a class="el" href="../../db/dec/create_acceleration_partials_8cpp_source.html#l00022">tudat::simulation_setup::createTidalLoveNumberInterfaces()</a>, <a class="el" href="../../db/d91/propagation_output_8h_source.html#l00182">tudat::propagators::getDoubleDependentVariableFunction()</a>, <a class="el" href="../../db/dda/create_radiation_pressure_interface_8cpp_source.html#l00024">tudat::simulation_setup::getOccultingBodiesInformation()</a>, and <a class="el" href="../../db/d91/propagation_output_8h_source.html#l00600">tudat::propagators::getVectorDependentVariableFunction()</a>.</p>
+<p>Referenced by <a class="el" href="../../d2/d02/create_acceleration_models_8cpp_source.html#l00741">tudat::simulation_setup::createCannonballRadiationPressureAcceleratioModel()</a>, <a class="el" href="../../d2/d02/create_acceleration_models_8cpp_source.html#l00202">tudat::simulation_setup::createCentralGravityAcceleratioModel()</a>, <a class="el" href="../../d2/d02/create_acceleration_models_8cpp_source.html#l00369">tudat::simulation_setup::createMutualSphericalHarmonicsGravityAcceleration()</a>, <a class="el" href="../../db/dda/create_radiation_pressure_interface_8cpp_source.html#l00054">tudat::simulation_setup::createRadiationPressureInterface()</a>, <a class="el" href="../../dd/d95/create_torque_model_8cpp_source.html#l00102">tudat::simulation_setup::createSecondDegreeGravitationalTorqueModel()</a>, <a class="el" href="../../d2/d02/create_acceleration_models_8cpp_source.html#l00262">tudat::simulation_setup::createSphericalHarmonicsGravityAcceleration()</a>, <a class="el" href="../../db/dec/create_acceleration_partials_8cpp_source.html#l00022">tudat::simulation_setup::createTidalLoveNumberInterfaces()</a>, <a class="el" href="../../db/d91/propagation_output_8h_source.html#l00581">tudat::propagators::getDoubleDependentVariableFunction()</a>, <a class="el" href="../../db/dda/create_radiation_pressure_interface_8cpp_source.html#l00024">tudat::simulation_setup::getOccultingBodiesInformation()</a>, and <a class="el" href="../../db/d91/propagation_output_8h_source.html#l00192">tudat::propagators::getVectorDependentVariableFunction()</a>.</p>
 
 </div>
 </div>
@@ -701,9 +766,9 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 </div><div class="memdoc">
 <p>Returns the internally stored current velocity vector. </p><dl class="section return"><dt>Returns</dt><dd>Current velocity. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d0/d77/body_8h_source.html#l00361">361</a> of file <a class="el" href="../../d0/d77/body_8h_source.html">body.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l00427">427</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../db/d91/propagation_output_8h_source.html#l00182">tudat::propagators::getDoubleDependentVariableFunction()</a>, and <a class="el" href="../../db/d91/propagation_output_8h_source.html#l00600">tudat::propagators::getVectorDependentVariableFunction()</a>.</p>
+<p>Referenced by <a class="el" href="../../db/d91/propagation_output_8h_source.html#l00581">tudat::propagators::getDoubleDependentVariableFunction()</a>, and <a class="el" href="../../db/d91/propagation_output_8h_source.html#l00192">tudat::propagators::getVectorDependentVariableFunction()</a>.</p>
 
 </div>
 </div>
@@ -729,7 +794,7 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 </div><div class="memdoc">
 <p>Returns the internally stored current state vector, in long double precision </p><dl class="section return"><dt>Returns</dt><dd>Current state, in long double precisio </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d0/d77/body_8h_source.html#l00369">369</a> of file <a class="el" href="../../d0/d77/body_8h_source.html">body.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l00435">435</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
 
 </div>
 </div>
@@ -755,7 +820,7 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 </div><div class="memdoc">
 <p>Returns the internally stored current position vector, in long double precision </p><dl class="section return"><dt>Returns</dt><dd>Current position, in long double precision </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d0/d77/body_8h_source.html#l00376">376</a> of file <a class="el" href="../../d0/d77/body_8h_source.html">body.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l00442">442</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
 
 </div>
 </div>
@@ -781,7 +846,7 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 </div><div class="memdoc">
 <p>Returns the internally stored current velocity vector. </p><dl class="section return"><dt>Returns</dt><dd>Current velocity, in long double precision </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d0/d77/body_8h_source.html#l00383">383</a> of file <a class="el" href="../../d0/d77/body_8h_source.html">body.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l00449">449</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
 
 </div>
 </div>
@@ -831,7 +896,7 @@ template&lt;typename ScalarStateType &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d0/d77/body_8h_source.html#l00399">399</a> of file <a class="el" href="../../d0/d77/body_8h_source.html">body.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l00465">465</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
 
 </div>
 </div>
@@ -863,7 +928,7 @@ template&lt;typename ScalarStateType &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d0/d77/body_8h_source.html#l00422">422</a> of file <a class="el" href="../../d0/d77/body_8h_source.html">body.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l00488">488</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
 
 </div>
 </div>
@@ -895,13 +960,15 @@ template&lt;typename ScalarStateType &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d0/d77/body_8h_source.html#l00446">446</a> of file <a class="el" href="../../d0/d77/body_8h_source.html">body.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l00512">512</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="afb338d46d3f9de1df04b929ed3766292"></a>
+<a class="anchor" id="aa12b1ec8e9e1a04ab1111e21e2bf772c"></a>
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename TimeType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -909,7 +976,7 @@ template&lt;typename ScalarStateType &gt; </div>
         <tr>
           <td class="memname">void tudat::simulation_setup::Body::setCurrentRotationalStateToLocalFrameFromEphemeris </td>
           <td>(</td>
-          <td class="paramtype">const double&#160;</td>
+          <td class="paramtype">const TimeType&#160;</td>
           <td class="paramname"><em>time</em></td><td>)</td>
           <td></td>
         </tr>
@@ -927,7 +994,7 @@ template&lt;typename ScalarStateType &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d0/d77/body_8h_source.html#l00471">471</a> of file <a class="el" href="../../d0/d77/body_8h_source.html">body.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l00538">538</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
 
 </div>
 </div>
@@ -959,7 +1026,7 @@ template&lt;typename ScalarStateType &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d0/d77/body_8h_source.html#l00500">500</a> of file <a class="el" href="../../d0/d77/body_8h_source.html">body.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l00567">567</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
 
 <p>References <a class="el" href="../../d9/d59/linear_algebra_8cpp_source.html#l00040">tudat::linear_algebra::getCrossProductMatrix()</a>.</p>
 
@@ -987,9 +1054,9 @@ template&lt;typename ScalarStateType &gt; </div>
 </div><div class="memdoc">
 <p>Get current rotation from body-fixed to inertial frame, as set from the rotationalEphemeris_ by the setCurrentRotationalStateToLocalFrameFromEphemeris or setCurrentRotationToLocalFrameFromEphemeris function. If body has no rotational ephemeris, an identity quaternion (no rotation) is returned. </p><dl class="section return"><dt>Returns</dt><dd>Current rotation from body-fixed to inertial frame </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d0/d77/body_8h_source.html#l00526">526</a> of file <a class="el" href="../../d0/d77/body_8h_source.html">body.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l00593">593</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d2/d02/create_acceleration_models_8cpp_source.html#l00660">tudat::simulation_setup::createAerodynamicAcceleratioModel()</a>, <a class="el" href="../../dd/d95/create_torque_model_8cpp_source.html#l00020">tudat::simulation_setup::createAerodynamicTorqueModel()</a>, <a class="el" href="../../df/d07/create_flight_conditions_8cpp_source.html#l00036">tudat::simulation_setup::createFlightConditions()</a>, <a class="el" href="../../d2/d02/create_acceleration_models_8cpp_source.html#l00371">tudat::simulation_setup::createMutualSphericalHarmonicsGravityAcceleration()</a>, <a class="el" href="../../d2/d02/create_acceleration_models_8cpp_source.html#l00264">tudat::simulation_setup::createSphericalHarmonicsGravityAcceleration()</a>, and <a class="el" href="../../d7/d6d/create_thrust_model_guidance_8cpp_source.html#l00020">tudat::simulation_setup::createThrustGuidanceModel()</a>.</p>
+<p>Referenced by <a class="el" href="../../d2/d02/create_acceleration_models_8cpp_source.html#l00658">tudat::simulation_setup::createAerodynamicAcceleratioModel()</a>, <a class="el" href="../../dd/d95/create_torque_model_8cpp_source.html#l00021">tudat::simulation_setup::createAerodynamicTorqueModel()</a>, <a class="el" href="../../df/d07/create_flight_conditions_8cpp_source.html#l00031">tudat::simulation_setup::createFlightConditions()</a>, <a class="el" href="../../d2/d02/create_acceleration_models_8cpp_source.html#l00369">tudat::simulation_setup::createMutualSphericalHarmonicsGravityAcceleration()</a>, <a class="el" href="../../d2/d02/create_acceleration_models_8cpp_source.html#l00262">tudat::simulation_setup::createSphericalHarmonicsGravityAcceleration()</a>, and <a class="el" href="../../d7/d6d/create_thrust_model_guidance_8cpp_source.html#l00020">tudat::simulation_setup::createThrustGuidanceModel()</a>.</p>
 
 </div>
 </div>
@@ -1015,9 +1082,9 @@ template&lt;typename ScalarStateType &gt; </div>
 </div><div class="memdoc">
 <p>Get current rotation from inertial to body-fixed frame, as set from the rotationalEphemeris_ by the setCurrentRotationalStateToLocalFrameFromEphemeris or setCurrentRotationToLocalFrameFromEphemeris function. If body has no rotational ephemeris, an identity quaternion (no rotation) is returned. </p><dl class="section return"><dt>Returns</dt><dd>Current rotation from inertial to body-fixed frame </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d0/d77/body_8h_source.html#l00539">539</a> of file <a class="el" href="../../d0/d77/body_8h_source.html">body.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l00606">606</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../df/d07/create_flight_conditions_8cpp_source.html#l00036">tudat::simulation_setup::createFlightConditions()</a>, <a class="el" href="../../db/da3/create_gravity_field_variations_8cpp_source.html#l00095">tudat::simulation_setup::createGravityFieldVariationsModel()</a>, <a class="el" href="../../dd/d95/create_torque_model_8cpp_source.html#l00100">tudat::simulation_setup::createSecondDegreeGravitationalTorqueModel()</a>, <a class="el" href="../../db/dec/create_acceleration_partials_8cpp_source.html#l00022">tudat::simulation_setup::createTidalLoveNumberInterfaces()</a>, <a class="el" href="../../db/d91/propagation_output_8h_source.html#l00600">tudat::propagators::getVectorDependentVariableFunction()</a>, and <a class="el" href="../../df/dca/create_state_derivative_model_8h_source.html#l00355">tudat::propagators::setMultiTypePropagationClosure()</a>.</p>
+<p>Referenced by <a class="el" href="../../df/d07/create_flight_conditions_8cpp_source.html#l00031">tudat::simulation_setup::createFlightConditions()</a>, <a class="el" href="../../db/da3/create_gravity_field_variations_8cpp_source.html#l00093">tudat::simulation_setup::createGravityFieldVariationsModel()</a>, <a class="el" href="../../dd/d95/create_torque_model_8cpp_source.html#l00102">tudat::simulation_setup::createSecondDegreeGravitationalTorqueModel()</a>, <a class="el" href="../../db/dec/create_acceleration_partials_8cpp_source.html#l00022">tudat::simulation_setup::createTidalLoveNumberInterfaces()</a>, <a class="el" href="../../db/d91/propagation_output_8h_source.html#l00192">tudat::propagators::getVectorDependentVariableFunction()</a>, and <a class="el" href="../../df/dca/create_state_derivative_model_8h_source.html#l00377">tudat::propagators::setMultiTypePropagationClosure()</a>.</p>
 
 </div>
 </div>
@@ -1043,7 +1110,7 @@ template&lt;typename ScalarStateType &gt; </div>
 </div><div class="memdoc">
 <p>Get current rotation matrix derivative from body-fixed frame to global, as set from the rotationalEphemeris_ by the setCurrentRotationalStateToLocalFrameFromEphemeris or setCurrentRotationToLocalFrameDerivativeFromEphemeris function. If body has no rotational ephemeris, an zero matrix (no rotation) is returned. </p><dl class="section return"><dt>Returns</dt><dd>Current otation matrix derivative from global to body-fixed frame. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d0/d77/body_8h_source.html#l00552">552</a> of file <a class="el" href="../../d0/d77/body_8h_source.html">body.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l00619">619</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
 
 </div>
 </div>
@@ -1069,9 +1136,37 @@ template&lt;typename ScalarStateType &gt; </div>
 </div><div class="memdoc">
 <p>Get current rotation matrix derivative from global to body-fixed frame, as set from the rotationalEphemeris_ by the setCurrentRotationalStateToLocalFrameFromEphemeris or setCurrentRotationToLocalFrameDerivativeFromEphemeris function. If body has no rotational ephemeris, an zero matrix (no rotation) is returned. </p><dl class="section return"><dt>Returns</dt><dd>Current otation matrix derivative from global to body-fixed frame. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d0/d77/body_8h_source.html#l00565">565</a> of file <a class="el" href="../../d0/d77/body_8h_source.html">body.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l00632">632</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../df/d07/create_flight_conditions_8cpp_source.html#l00036">tudat::simulation_setup::createFlightConditions()</a>.</p>
+<p>Referenced by <a class="el" href="../../df/d07/create_flight_conditions_8cpp_source.html#l00031">tudat::simulation_setup::createFlightConditions()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4842639c5c21effaaaf34805a3969a89"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Eigen::Vector3d tudat::simulation_setup::Body::getCurrentAngularVelocityVectorInGlobalFrame </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get current angular velocity vector for body's rotation, expressed in the global frame </p><dl class="section return"><dt>Returns</dt><dd>Current angular velocity vector for body's rotation, expressed in the global frame. </dd></dl>
+
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l00642">642</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
+
+<p>Referenced by <a class="el" href="../../d2/d02/create_acceleration_models_8cpp_source.html#l01046">tudat::simulation_setup::createDirectTidalDissipationAcceleration()</a>.</p>
 
 </div>
 </div>
@@ -1103,7 +1198,7 @@ template&lt;typename ScalarStateType &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d0/d77/body_8h_source.html#l00576">576</a> of file <a class="el" href="../../d0/d77/body_8h_source.html">body.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l00654">654</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
 
 </div>
 </div>
@@ -1135,9 +1230,9 @@ template&lt;typename ScalarStateType &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d0/d77/body_8h_source.html#l00587">587</a> of file <a class="el" href="../../d0/d77/body_8h_source.html">body.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l00665">665</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
 
-<p>References <a class="el" href="../../d4/db3/physical_constants_8h_source.html#l00104">tudat::physical_constants::GRAVITATIONAL_CONSTANT</a>.</p>
+<p>References <a class="el" href="../../d4/db3/physical_constants_8h_source.html#l00103">tudat::physical_constants::GRAVITATIONAL_CONSTANT</a>.</p>
 
 </div>
 </div>
@@ -1169,7 +1264,7 @@ template&lt;typename ScalarStateType &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d0/d77/body_8h_source.html#l00608">608</a> of file <a class="el" href="../../d0/d77/body_8h_source.html">body.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l00686">686</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
 
 </div>
 </div>
@@ -1201,7 +1296,7 @@ template&lt;typename ScalarStateType &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d0/d77/body_8h_source.html#l00619">619</a> of file <a class="el" href="../../d0/d77/body_8h_source.html">body.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l00697">697</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
 
 </div>
 </div>
@@ -1233,9 +1328,9 @@ template&lt;typename ScalarStateType &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d0/d77/body_8h_source.html#l00635">635</a> of file <a class="el" href="../../d0/d77/body_8h_source.html">body.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l00713">713</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
 
-<p>References <a class="el" href="../../db/d44/aerodynamic_angle_calculator_8cpp_source.html#l00511">tudat::reference_frames::setAerodynamicDependentOrientationCalculatorClosure()</a>.</p>
+<p>References <a class="el" href="../../db/d44/aerodynamic_angle_calculator_8cpp_source.html#l00510">tudat::reference_frames::setAerodynamicDependentOrientationCalculatorClosure()</a>.</p>
 
 </div>
 </div>
@@ -1267,7 +1362,7 @@ template&lt;typename ScalarStateType &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d0/d77/body_8h_source.html#l00679">679</a> of file <a class="el" href="../../d0/d77/body_8h_source.html">body.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l00757">757</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
 
 </div>
 </div>
@@ -1299,7 +1394,7 @@ template&lt;typename ScalarStateType &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d0/d77/body_8h_source.html#l00689">689</a> of file <a class="el" href="../../d0/d77/body_8h_source.html">body.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l00767">767</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
 
 </div>
 </div>
@@ -1331,9 +1426,9 @@ template&lt;typename ScalarStateType &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d0/d77/body_8h_source.html#l00702">702</a> of file <a class="el" href="../../d0/d77/body_8h_source.html">body.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l00780">780</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
 
-<p>References <a class="el" href="../../db/d44/aerodynamic_angle_calculator_8cpp_source.html#l00511">tudat::reference_frames::setAerodynamicDependentOrientationCalculatorClosure()</a>.</p>
+<p>References <a class="el" href="../../db/d44/aerodynamic_angle_calculator_8cpp_source.html#l00510">tudat::reference_frames::setAerodynamicDependentOrientationCalculatorClosure()</a>.</p>
 
 </div>
 </div>
@@ -1376,7 +1471,7 @@ template&lt;typename ScalarStateType &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d0/d77/body_8h_source.html#l00732">732</a> of file <a class="el" href="../../d0/d77/body_8h_source.html">body.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l00810">810</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
 
 </div>
 </div>
@@ -1408,7 +1503,7 @@ template&lt;typename ScalarStateType &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d0/d77/body_8h_source.html#l00745">745</a> of file <a class="el" href="../../d0/d77/body_8h_source.html">body.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l00823">823</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
 
 </div>
 </div>
@@ -1434,7 +1529,7 @@ template&lt;typename ScalarStateType &gt; </div>
 </div><div class="memdoc">
 <p>Function to get the gravity field model of the body. </p><dl class="section return"><dt>Returns</dt><dd>Gravity field model of the body. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d0/d77/body_8h_source.html#l00757">757</a> of file <a class="el" href="../../d0/d77/body_8h_source.html">body.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l00835">835</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
 
 </div>
 </div>
@@ -1460,7 +1555,7 @@ template&lt;typename ScalarStateType &gt; </div>
 </div><div class="memdoc">
 <p>Function to get the ephemeris of the body. </p><dl class="section return"><dt>Returns</dt><dd>Ephemeris of the body. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d0/d77/body_8h_source.html#l00767">767</a> of file <a class="el" href="../../d0/d77/body_8h_source.html">body.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l00845">845</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
 
 </div>
 </div>
@@ -1486,7 +1581,7 @@ template&lt;typename ScalarStateType &gt; </div>
 </div><div class="memdoc">
 <p>Function to get the atmosphere model of the body. </p><dl class="section return"><dt>Returns</dt><dd>Atmosphere model of the body. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d0/d77/body_8h_source.html#l00777">777</a> of file <a class="el" href="../../d0/d77/body_8h_source.html">body.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l00855">855</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
 
 </div>
 </div>
@@ -1512,7 +1607,7 @@ template&lt;typename ScalarStateType &gt; </div>
 </div><div class="memdoc">
 <p>Function to get the rotation model of the body. </p><dl class="section return"><dt>Returns</dt><dd>Rotation model of the body. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d0/d77/body_8h_source.html#l00787">787</a> of file <a class="el" href="../../d0/d77/body_8h_source.html">body.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l00865">865</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
 
 </div>
 </div>
@@ -1538,7 +1633,7 @@ template&lt;typename ScalarStateType &gt; </div>
 </div><div class="memdoc">
 <p>Function to retrieve the model to compute the rotation of the body based on the current state of the environment (model is only valid during propagation). </p><dl class="section return"><dt>Returns</dt><dd>Model to compute the rotation of the body based on the current state of the environment </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d0/d77/body_8h_source.html#l00798">798</a> of file <a class="el" href="../../d0/d77/body_8h_source.html">body.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l00876">876</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
 
 </div>
 </div>
@@ -1564,7 +1659,7 @@ template&lt;typename ScalarStateType &gt; </div>
 </div><div class="memdoc">
 <p>Function to retrieve the shape model of body. </p><dl class="section return"><dt>Returns</dt><dd>Shape model of body. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d0/d77/body_8h_source.html#l00808">808</a> of file <a class="el" href="../../d0/d77/body_8h_source.html">body.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l00886">886</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
 
 </div>
 </div>
@@ -1590,7 +1685,7 @@ template&lt;typename ScalarStateType &gt; </div>
 </div><div class="memdoc">
 <p>Function to retrieve the body aerodynamic coefficient model of body. </p><dl class="section return"><dt>Returns</dt><dd>Aerodynamic coefficient model of body. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d0/d77/body_8h_source.html#l00819">819</a> of file <a class="el" href="../../d0/d77/body_8h_source.html">body.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l00897">897</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
 
 </div>
 </div>
@@ -1616,7 +1711,7 @@ template&lt;typename ScalarStateType &gt; </div>
 </div><div class="memdoc">
 <p>Function to retrieve the body flight conditions, which calculates current aerodynamic angles, altitude, etc. </p><dl class="section return"><dt>Returns</dt><dd><a class="el" href="../../d5/de5/classtudat_1_1simulation__setup_1_1_body.html" title="Body class representing the properties of a celestial body (natural or artificial). ">Body</a> flight conditions </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d0/d77/body_8h_source.html#l00830">830</a> of file <a class="el" href="../../d0/d77/body_8h_source.html">body.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l00908">908</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
 
 </div>
 </div>
@@ -1642,7 +1737,7 @@ template&lt;typename ScalarStateType &gt; </div>
 </div><div class="memdoc">
 <p>Function to retrieve the shape model of the body. </p><dl class="section return"><dt>Returns</dt><dd>Shape model of the body. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d0/d77/body_8h_source.html#l00841">841</a> of file <a class="el" href="../../d0/d77/body_8h_source.html">body.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l00919">919</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
 
 </div>
 </div>
@@ -1686,7 +1781,7 @@ template&lt;typename ScalarStateType &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object describing requested variation in the gravity field of this body. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d0/d77/body_8h_source.html#l00855">855</a> of file <a class="el" href="../../d0/d77/body_8h_source.html">body.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l00933">933</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
 
 </div>
 </div>
@@ -1712,7 +1807,7 @@ template&lt;typename ScalarStateType &gt; </div>
 </div><div class="memdoc">
 <p>Function to retrieve object containing all variations in the gravity field of this body. </p><dl class="section return"><dt>Returns</dt><dd>Object containing all variations in the gravity field of this body. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d0/d77/body_8h_source.html#l00867">867</a> of file <a class="el" href="../../d0/d77/body_8h_source.html">body.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l00945">945</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
 
 </div>
 </div>
@@ -1738,7 +1833,7 @@ template&lt;typename ScalarStateType &gt; </div>
 </div><div class="memdoc">
 <p>Function to retrieve container object with hardware systems present on/in body. </p><dl class="section return"><dt>Returns</dt><dd>Container object with hardware systems present on/in body </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d0/d77/body_8h_source.html#l00877">877</a> of file <a class="el" href="../../d0/d77/body_8h_source.html">body.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l00955">955</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
 
 </div>
 </div>
@@ -1770,7 +1865,7 @@ template&lt;typename ScalarStateType &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d0/d77/body_8h_source.html#l00887">887</a> of file <a class="el" href="../../d0/d77/body_8h_source.html">body.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l00965">965</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
 
 </div>
 </div>
@@ -1802,7 +1897,7 @@ template&lt;typename ScalarStateType &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d0/d77/body_8h_source.html#l00897">897</a> of file <a class="el" href="../../d0/d77/body_8h_source.html">body.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l00975">975</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
 
 </div>
 </div>
@@ -1834,7 +1929,7 @@ template&lt;typename ScalarStateType &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d0/d77/body_8h_source.html#l00907">907</a> of file <a class="el" href="../../d0/d77/body_8h_source.html">body.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l00985">985</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
 
 </div>
 </div>
@@ -1860,7 +1955,7 @@ template&lt;typename ScalarStateType &gt; </div>
 </div><div class="memdoc">
 <p>Function to get the function returning body mass as a function of time </p><dl class="section return"><dt>Returns</dt><dd>Function returning body mass as a function of time </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d0/d77/body_8h_source.html#l00918">918</a> of file <a class="el" href="../../d0/d77/body_8h_source.html">body.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l00996">996</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
 
 </div>
 </div>
@@ -1892,7 +1987,7 @@ template&lt;typename ScalarStateType &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d0/d77/body_8h_source.html#l00928">928</a> of file <a class="el" href="../../d0/d77/body_8h_source.html">body.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l01006">1006</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
 
 <p>Referenced by <a class="el" href="../../d8/d75/environment_updater_8h_source.html#l00397">tudat::propagators::EnvironmentUpdater&lt; StateScalarType, TimeType &gt;::setUpdateFunctions()</a>.</p>
 
@@ -1920,9 +2015,9 @@ template&lt;typename ScalarStateType &gt; </div>
 </div><div class="memdoc">
 <p>Function to retrieve the current body mass </p><dl class="section return"><dt>Returns</dt><dd>Current body mass. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d0/d77/body_8h_source.html#l00945">945</a> of file <a class="el" href="../../d0/d77/body_8h_source.html">body.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l01023">1023</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d2/d02/create_acceleration_models_8cpp_source.html#l00660">tudat::simulation_setup::createAerodynamicAcceleratioModel()</a>, <a class="el" href="../../d2/d02/create_acceleration_models_8cpp_source.html#l00743">tudat::simulation_setup::createCannonballRadiationPressureAcceleratioModel()</a>, and <a class="el" href="../../d2/d02/create_acceleration_models_8cpp_source.html#l00951">tudat::simulation_setup::createThrustAcceleratioModel()</a>.</p>
+<p>Referenced by <a class="el" href="../../d2/d02/create_acceleration_models_8cpp_source.html#l00658">tudat::simulation_setup::createAerodynamicAcceleratioModel()</a>, <a class="el" href="../../d2/d02/create_acceleration_models_8cpp_source.html#l00741">tudat::simulation_setup::createCannonballRadiationPressureAcceleratioModel()</a>, and <a class="el" href="../../d2/d02/create_acceleration_models_8cpp_source.html#l00949">tudat::simulation_setup::createThrustAcceleratioModel()</a>.</p>
 
 </div>
 </div>
@@ -1948,9 +2043,9 @@ template&lt;typename ScalarStateType &gt; </div>
 </div><div class="memdoc">
 <p>Function to retrieve the body moment-of-inertia tensor. </p><dl class="section return"><dt>Returns</dt><dd><a class="el" href="../../d5/de5/classtudat_1_1simulation__setup_1_1_body.html" title="Body class representing the properties of a celestial body (natural or artificial). ">Body</a> moment-of-inertia tensor. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d0/d77/body_8h_source.html#l00955">955</a> of file <a class="el" href="../../d0/d77/body_8h_source.html">body.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l01033">1033</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../df/dca/create_state_derivative_model_8h_source.html#l00219">tudat::propagators::createRotationalStateDerivativeModel()</a>, and <a class="el" href="../../dd/d95/create_torque_model_8cpp_source.html#l00100">tudat::simulation_setup::createSecondDegreeGravitationalTorqueModel()</a>.</p>
+<p>Referenced by <a class="el" href="../../df/dca/create_state_derivative_model_8h_source.html#l00235">tudat::propagators::createRotationalStateDerivativeModel()</a>, and <a class="el" href="../../dd/d95/create_torque_model_8cpp_source.html#l00102">tudat::simulation_setup::createSecondDegreeGravitationalTorqueModel()</a>.</p>
 
 </div>
 </div>
@@ -1982,7 +2077,7 @@ template&lt;typename ScalarStateType &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d0/d77/body_8h_source.html#l00965">965</a> of file <a class="el" href="../../d0/d77/body_8h_source.html">body.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l01043">1043</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
 
 </div>
 </div>
@@ -2025,7 +2120,7 @@ template&lt;typename ScalarStateType &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d0/d77/body_8h_source.html#l00976">976</a> of file <a class="el" href="../../d0/d77/body_8h_source.html">body.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l01054">1054</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
 
 </div>
 </div>
@@ -2058,7 +2153,7 @@ template&lt;typename ScalarStateType &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Ground station object that is retrieved </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d0/d77/body_8h_source.html#l00988">988</a> of file <a class="el" href="../../d0/d77/body_8h_source.html">body.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l01066">1066</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
 
 </div>
 </div>
@@ -2084,7 +2179,7 @@ template&lt;typename ScalarStateType &gt; </div>
 </div><div class="memdoc">
 <p>Function to retrieve full list of ground stations </p><dl class="section return"><dt>Returns</dt><dd>Full list of ground stations </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d0/d77/body_8h_source.html#l01003">1003</a> of file <a class="el" href="../../d0/d77/body_8h_source.html">body.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l01081">1081</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
 
 </div>
 </div>
@@ -2110,7 +2205,7 @@ template&lt;typename ScalarStateType &gt; </div>
 </div><div class="memdoc">
 <p>Function to recompute the internal variables of member variables that depend on the ephemerides of this and other bodies. This function is typically called after equations of motion have been computed and set in environment to ensure full model consistency. </p>
 
-<p>Definition at line <a class="el" href="../../d0/d77/body_8h_source.html#l01014">1014</a> of file <a class="el" href="../../d0/d77/body_8h_source.html">body.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l01092">1092</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
 
 </div>
 </div>
@@ -2136,11 +2231,69 @@ template&lt;typename ScalarStateType &gt; </div>
 </div><div class="memdoc">
 <p>Function to reset the time to which the state was last updated using setStateFromEphemeris function to nan, thereby singalling that it needs to be recomputed upon next call. </p>
 
-<p>Definition at line <a class="el" href="../../d0/d77/body_8h_source.html#l01029">1029</a> of file <a class="el" href="../../d0/d77/body_8h_source.html">body.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l01107">1107</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
 
 <p>References <a class="el" href="../../d6/d70/mathematical_constants_8h_source.html#l00076">TUDAT_NAN</a>.</p>
 
 <p>Referenced by <a class="el" href="../../d8/d75/environment_updater_8h_source.html#l00397">tudat::propagators::EnvironmentUpdater&lt; StateScalarType, TimeType &gt;::setUpdateFunctions()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aaf4ed1270e9b52ec62f6d756f7098699"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tudat::simulation_setup::Body::getIsBodyGlobalFrameOrigin </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Function to retrieve variable denoting whether this body is the global frame origin </p><dl class="section return"><dt>Returns</dt><dd>Variable denoting whether this body is the global frame origin </dd></dl>
+
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l01117">1117</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad8d0967ac71eee4a9b3040e99529b42b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tudat::simulation_setup::Body::setIsBodyGlobalFrameOrigin </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>bodyIsGlobalFrameOrigin</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Function to set variable denoting whether this body is the global frame origin </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bodyIsGlobalFrameOrigin</td><td>Variable denoting whether this body is the global frame origin </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l01127">1127</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
 
 </div>
 </div>
@@ -2159,7 +2312,7 @@ template&lt;&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d1/d5f/body_8cpp_source.html#l00053">53</a> of file <a class="el" href="../../d1/d5f/body_8cpp_source.html">body.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dcc/_simulation_setup_2_environment_setup_2body_8cpp_source.html#l00053">53</a> of file <a class="el" href="../../d5/dcc/_simulation_setup_2_environment_setup_2body_8cpp_source.html">body.cpp</a>.</p>
 
 </div>
 </div>
@@ -2178,7 +2331,7 @@ template&lt;&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d1/d5f/body_8cpp_source.html#l00059">59</a> of file <a class="el" href="../../d1/d5f/body_8cpp_source.html">body.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dcc/_simulation_setup_2_environment_setup_2body_8cpp_source.html#l00059">59</a> of file <a class="el" href="../../d5/dcc/_simulation_setup_2_environment_setup_2body_8cpp_source.html">body.cpp</a>.</p>
 
 </div>
 </div>
@@ -2198,7 +2351,7 @@ template&lt;&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d1/d5f/body_8cpp_source.html#l00066">66</a> of file <a class="el" href="../../d1/d5f/body_8cpp_source.html">body.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dcc/_simulation_setup_2_environment_setup_2body_8cpp_source.html#l00066">66</a> of file <a class="el" href="../../d5/dcc/_simulation_setup_2_environment_setup_2body_8cpp_source.html">body.cpp</a>.</p>
 
 </div>
 </div>
@@ -2218,11 +2371,33 @@ template&lt;&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d1/d5f/body_8cpp_source.html#l00073">73</a> of file <a class="el" href="../../d1/d5f/body_8cpp_source.html">body.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dcc/_simulation_setup_2_environment_setup_2body_8cpp_source.html#l00073">73</a> of file <a class="el" href="../../d5/dcc/_simulation_setup_2_environment_setup_2body_8cpp_source.html">body.cpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a82711e18c5a133fafaa1d1e87d564dc5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tudat::simulation_setup::Body::bodyIsGlobalFrameOrigin_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l01137">1137</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a42671533290d255a4e2b67e78ff2497b"></a>
 <div class="memitem">
 <div class="memproto">
@@ -2241,7 +2416,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d0/d77/body_8h_source.html#l01039">1039</a> of file <a class="el" href="../../d0/d77/body_8h_source.html">body.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l01140">1140</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
 
 </div>
 </div>
@@ -2263,7 +2438,51 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d0/d77/body_8h_source.html#l01042">1042</a> of file <a class="el" href="../../d0/d77/body_8h_source.html">body.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l01143">1143</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0ec1a8150811a10e7ca27b0885511df4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d0/da5/namespace_eigen.html#a03c917374d8dcb5bb158f2380f92847a">Eigen::Vector6d</a> tudat::simulation_setup::Body::currentBarycentricState_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l01146">1146</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a47a939cb9eec52f7cb67e829db063eae"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Eigen::Matrix&lt; long double, 6, 1 &gt; tudat::simulation_setup::Body::currentBarycentricLongState_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l01149">1149</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
 
 </div>
 </div>
@@ -2285,7 +2504,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d0/d77/body_8h_source.html#l01045">1045</a> of file <a class="el" href="../../d0/d77/body_8h_source.html">body.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l01155">1155</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
 
 </div>
 </div>
@@ -2308,7 +2527,7 @@ template&lt;&gt; </div>
 </div><div class="memdoc">
 <p>Class returning the state of this body's ephemeris origin w.r.t. the global origin (as typically created by setGlobalFrameBodyEphemerides function). </p>
 
-<p>Definition at line <a class="el" href="../../d0/d77/body_8h_source.html#l01051">1051</a> of file <a class="el" href="../../d0/d77/body_8h_source.html">body.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l01161">1161</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
 
 </div>
 </div>
@@ -2330,7 +2549,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d0/d77/body_8h_source.html#l01054">1054</a> of file <a class="el" href="../../d0/d77/body_8h_source.html">body.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l01164">1164</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
 
 </div>
 </div>
@@ -2353,7 +2572,7 @@ template&lt;&gt; </div>
 </div><div class="memdoc">
 <p>Current first derivative w.r.t. time of the rotation matrix from the global to the body-fixed frame. </p>
 
-<p>Definition at line <a class="el" href="../../d0/d77/body_8h_source.html#l01058">1058</a> of file <a class="el" href="../../d0/d77/body_8h_source.html">body.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l01168">1168</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
 
 </div>
 </div>
@@ -2375,7 +2594,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d0/d77/body_8h_source.html#l01061">1061</a> of file <a class="el" href="../../d0/d77/body_8h_source.html">body.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l01171">1171</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
 
 </div>
 </div>
@@ -2397,7 +2616,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d0/d77/body_8h_source.html#l01065">1065</a> of file <a class="el" href="../../d0/d77/body_8h_source.html">body.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l01175">1175</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
 
 </div>
 </div>
@@ -2419,7 +2638,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d0/d77/body_8h_source.html#l01068">1068</a> of file <a class="el" href="../../d0/d77/body_8h_source.html">body.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l01178">1178</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
 
 </div>
 </div>
@@ -2441,7 +2660,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d0/d77/body_8h_source.html#l01072">1072</a> of file <a class="el" href="../../d0/d77/body_8h_source.html">body.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l01182">1182</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
 
 </div>
 </div>
@@ -2463,7 +2682,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d0/d77/body_8h_source.html#l01076">1076</a> of file <a class="el" href="../../d0/d77/body_8h_source.html">body.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l01186">1186</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
 
 </div>
 </div>
@@ -2485,7 +2704,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d0/d77/body_8h_source.html#l01079">1079</a> of file <a class="el" href="../../d0/d77/body_8h_source.html">body.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l01189">1189</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
 
 </div>
 </div>
@@ -2507,7 +2726,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d0/d77/body_8h_source.html#l01082">1082</a> of file <a class="el" href="../../d0/d77/body_8h_source.html">body.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l01192">1192</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
 
 </div>
 </div>
@@ -2529,7 +2748,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d0/d77/body_8h_source.html#l01085">1085</a> of file <a class="el" href="../../d0/d77/body_8h_source.html">body.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l01195">1195</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
 
 </div>
 </div>
@@ -2551,7 +2770,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d0/d77/body_8h_source.html#l01088">1088</a> of file <a class="el" href="../../d0/d77/body_8h_source.html">body.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l01198">1198</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
 
 </div>
 </div>
@@ -2573,7 +2792,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d0/d77/body_8h_source.html#l01091">1091</a> of file <a class="el" href="../../d0/d77/body_8h_source.html">body.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l01201">1201</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
 
 </div>
 </div>
@@ -2595,7 +2814,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d0/d77/body_8h_source.html#l01094">1094</a> of file <a class="el" href="../../d0/d77/body_8h_source.html">body.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l01204">1204</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
 
 </div>
 </div>
@@ -2617,7 +2836,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d0/d77/body_8h_source.html#l01097">1097</a> of file <a class="el" href="../../d0/d77/body_8h_source.html">body.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l01207">1207</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
 
 </div>
 </div>
@@ -2639,7 +2858,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d0/d77/body_8h_source.html#l01100">1100</a> of file <a class="el" href="../../d0/d77/body_8h_source.html">body.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l01210">1210</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
 
 </div>
 </div>
@@ -2661,7 +2880,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d0/d77/body_8h_source.html#l01104">1104</a> of file <a class="el" href="../../d0/d77/body_8h_source.html">body.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l01214">1214</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
 
 </div>
 </div>
@@ -2683,7 +2902,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d0/d77/body_8h_source.html#l01109">1109</a> of file <a class="el" href="../../d0/d77/body_8h_source.html">body.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l01219">1219</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
 
 </div>
 </div>
@@ -2705,7 +2924,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d0/d77/body_8h_source.html#l01112">1112</a> of file <a class="el" href="../../d0/d77/body_8h_source.html">body.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l01222">1222</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
 
 </div>
 </div>
@@ -2727,18 +2946,18 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d0/d77/body_8h_source.html#l01115">1115</a> of file <a class="el" href="../../d0/d77/body_8h_source.html">body.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html#l01225">1225</a> of file <a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>SimulationSetup/EnvironmentSetup/<a class="el" href="../../d0/d77/body_8h_source.html">body.h</a></li>
-<li>SimulationSetup/EnvironmentSetup/<a class="el" href="../../d1/d5f/body_8cpp_source.html">body.cpp</a></li>
+<li>SimulationSetup/EnvironmentSetup/<a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">body.h</a></li>
+<li>SimulationSetup/EnvironmentSetup/<a class="el" href="../../d5/dcc/_simulation_setup_2_environment_setup_2body_8cpp_source.html">body.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 27 2017 09:33:02 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 7 2017 11:20:35 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

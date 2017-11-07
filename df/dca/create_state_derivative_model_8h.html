@@ -93,7 +93,8 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="title">createStateDerivativeModel.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;boost/bind.hpp&gt;</code><br />
+<div class="textblock"><code>#include &lt;string&gt;</code><br />
+<code>#include &lt;boost/bind.hpp&gt;</code><br />
 <code>#include &quot;<a class="el" href="../../df/d3d/orbital_element_conversions_8h_source.html">Tudat/Astrodynamics/BasicAstrodynamics/orbitalElementConversions.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../dc/d18/single_state_type_derivative_8h_source.html">Tudat/Astrodynamics/Propagators/singleStateTypeDerivative.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d8/db7/propagation_settings_8h_source.html">Tudat/SimulationSetup/PropagationSetup/propagationSettings.h</a>&quot;</code><br />
@@ -106,7 +107,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <code>#include &quot;<a class="el" href="../../dc/d31/body_mass_state_derivative_8h_source.html">Tudat/Astrodynamics/Propagators/bodyMassStateDerivative.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../de/db6/custom_state_derivative_8h_source.html">Tudat/Astrodynamics/Propagators/customStateDerivative.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d9/dc2/state_derivative_circular_restricted_three_body_problem_8h_source.html">Tudat/Astrodynamics/Propagators/stateDerivativeCircularRestrictedThreeBodyProblem.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d0/d77/body_8h_source.html">Tudat/SimulationSetup/EnvironmentSetup/body.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d3/d8c/_simulation_setup_2_environment_setup_2body_8h_source.html">Tudat/SimulationSetup/EnvironmentSetup/body.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../da/dd3/create_numerical_integrator_8h_source.html">Tudat/Mathematics/NumericalIntegrators/createNumericalIntegrator.h</a>&quot;</code><br />
 </div>
 <p><a href="../../df/dca/create_state_derivative_model_8h_source.html">Go to the source code of this file.</a></p>
@@ -153,12 +154,13 @@ Functions</h2></td></tr>
 <tr class="separator:a892ffe4787c55fbdf2c2198b9d0f66fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6cd2ff3c7293458f631d07733844b06"><td class="memTemplParams" colspan="2">template&lt;typename StateScalarType  = double&gt; </td></tr>
 <tr class="memitem:ad6cd2ff3c7293458f631d07733844b06"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d2/d9c/namespacetudat_1_1propagators.html#ad6cd2ff3c7293458f631d07733844b06">tudat::propagators::setMultiTypePropagationClosure</a> (const boost::shared_ptr&lt; SingleArcPropagatorSettings&lt; StateScalarType &gt; &gt; propagatorSettings, const simulation_setup::NamedBodyMap &amp;bodyMap)</td></tr>
+<tr class="memdesc:ad6cd2ff3c7293458f631d07733844b06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function that finalized multi-type propagator creation by ensuring that any mutual dependencies are correctly set.  <a href="../../d2/d9c/namespacetudat_1_1propagators.html#ad6cd2ff3c7293458f631d07733844b06">More...</a><br /></td></tr>
 <tr class="separator:ad6cd2ff3c7293458f631d07733844b06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 27 2017 09:32:58 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 7 2017 11:20:30 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

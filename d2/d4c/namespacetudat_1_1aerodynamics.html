@@ -111,6 +111,7 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d8a/classtudat_1_1aerodynamics_1_1_aerodynamic_guidance.html">AerodynamicGuidance</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d64/classtudat_1_1aerodynamics_1_1_aerodynamic_torque.html">AerodynamicTorque</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class for calculation of aerodynamic torques.  <a href="../../de/d64/classtudat_1_1aerodynamics_1_1_aerodynamic_torque.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d18/classtudat_1_1aerodynamics_1_1_atmosphere_model.html">AtmosphereModel</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atmosphere model class.  <a href="../../d4/d18/classtudat_1_1aerodynamics_1_1_atmosphere_model.html#details">More...</a><br /></td></tr>
@@ -325,6 +326,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a6f0a393c161cb09267ddb9c1307e2c49"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d4c/namespacetudat_1_1aerodynamics.html#a6f0a393c161cb09267ddb9c1307e2c49">eigenToStlVector</a> (const Eigen::VectorXd &amp;vector)</td></tr>
 <tr class="memdesc:a6f0a393c161cb09267ddb9c1307e2c49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to convert Eigen::VectorXd to std::vector&lt;double&gt;  <a href="#a6f0a393c161cb09267ddb9c1307e2c49">More...</a><br /></td></tr>
 <tr class="separator:a6f0a393c161cb09267ddb9c1307e2c49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34add6c3299c0a12f064d90a9cba1260"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d4c/namespacetudat_1_1aerodynamics.html#a34add6c3299c0a12f064d90a9cba1260">from_json</a> (const nlohmann::json &amp;jsonObject, <a class="el" href="../../d2/d4c/namespacetudat_1_1aerodynamics.html#a4f89d9b6963c83642465a3936d1d424d">AerodynamicCoefficientsIndependentVariables</a> &amp;aerodynamicVariable)</td></tr>
+<tr class="memdesc:a34add6c3299c0a12f064d90a9cba1260"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert <code>json</code> to <code>AerodynamicCoefficientsIndependentVariables</code>.  <a href="#a34add6c3299c0a12f064d90a9cba1260">More...</a><br /></td></tr>
+<tr class="separator:a34add6c3299c0a12f064d90a9cba1260"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a130c7f599c99adc4aafc9df1b3284300"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d4c/namespacetudat_1_1aerodynamics.html#a130c7f599c99adc4aafc9df1b3284300">getDefaultHypersonicLocalInclinationAngleOfAttackPoints</a> ()</td></tr>
 <tr class="memdesc:a130c7f599c99adc4aafc9df1b3284300"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns default values of angle of attack for use in <a class="el" href="../../d7/dc6/classtudat_1_1aerodynamics_1_1_hypersonic_local_inclination_analysis.html" title="Class for inviscid hypersonic aerodynamic analysis using local inclination methods. ">HypersonicLocalInclinationAnalysis</a>.  <a href="#a130c7f599c99adc4aafc9df1b3284300">More...</a><br /></td></tr>
 <tr class="separator:a130c7f599c99adc4aafc9df1b3284300"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -343,9 +347,15 @@ Functions</h2></td></tr>
 <tr class="memitem:a2aa7846f7e8b954a0104f1502e881eab"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; <a class="el" href="../../d1/d83/classtudat_1_1aerodynamics_1_1_trim_orientation_calculator.html">TrimOrientationCalculator</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d4c/namespacetudat_1_1aerodynamics.html#a2aa7846f7e8b954a0104f1502e881eab">setTrimmedConditions</a> (const boost::shared_ptr&lt; <a class="el" href="../../d1/dec/classtudat_1_1aerodynamics_1_1_flight_conditions.html">FlightConditions</a> &gt; flightConditions)</td></tr>
 <tr class="memdesc:a2aa7846f7e8b954a0104f1502e881eab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to set the angle of attack to trimmed conditions.  <a href="#a2aa7846f7e8b954a0104f1502e881eab">More...</a><br /></td></tr>
 <tr class="separator:a2aa7846f7e8b954a0104f1502e881eab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1a3d87c2f6c63e38b9ce46298f0641a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d4c/namespacetudat_1_1aerodynamics.html#ad1a3d87c2f6c63e38b9ce46298f0641a">to_json</a> (nlohmann::json &amp;jsonObject, const <a class="el" href="../../d2/d4c/namespacetudat_1_1aerodynamics.html#a4f89d9b6963c83642465a3936d1d424d">AerodynamicCoefficientsIndependentVariables</a> &amp;aerodynamicVariable)</td></tr>
+<tr class="memdesc:ad1a3d87c2f6c63e38b9ce46298f0641a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert <code>AerodynamicCoefficientsIndependentVariables</code> to <code>json</code>.  <a href="#ad1a3d87c2f6c63e38b9ce46298f0641a">More...</a><br /></td></tr>
+<tr class="separator:ad1a3d87c2f6c63e38b9ce46298f0641a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
+<tr class="memitem:a4903bbbc586b9b2de027967f41c92847"><td class="memItemLeft" align="right" valign="top">static std::map&lt; <a class="el" href="../../d2/d4c/namespacetudat_1_1aerodynamics.html#a4f89d9b6963c83642465a3936d1d424d">AerodynamicCoefficientsIndependentVariables</a>, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d4c/namespacetudat_1_1aerodynamics.html#a4903bbbc586b9b2de027967f41c92847">aerodynamicVariables</a></td></tr>
+<tr class="memdesc:a4903bbbc586b9b2de027967f41c92847"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map of <code>AerodynamicCoefficientsIndependentVariables</code> string representations.  <a href="#a4903bbbc586b9b2de027967f41c92847">More...</a><br /></td></tr>
+<tr class="separator:a4903bbbc586b9b2de027967f41c92847"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adeb3a313a4fb4bf0c61a7e13d712d10f"><td class="memItemLeft" align="right" valign="top">static const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d4c/namespacetudat_1_1aerodynamics.html#adeb3a313a4fb4bf0c61a7e13d712d10f">FAY_RIDDEL_HEAT_FLUX_CONSTANT</a> = 3.53E-4</td></tr>
 <tr class="separator:adeb3a313a4fb4bf0c61a7e13d712d10f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2e570713cd245b3ded585006f2e7990"><td class="memItemLeft" align="right" valign="top">static const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d4c/namespacetudat_1_1aerodynamics.html#ab2e570713cd245b3ded585006f2e7990">maximumPrandtlMeyerFunctionValue</a></td></tr>
@@ -366,6 +376,9 @@ Variables</h2></td></tr>
 <tr class="memitem:a267f68fd20307e7b9fa83bfd1531a67a"><td class="memItemLeft" align="right" valign="top">static const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d4c/namespacetudat_1_1aerodynamics.html#a267f68fd20307e7b9fa83bfd1531a67a">PrandtlMeyerParameter5</a> = -0.3278</td></tr>
 <tr class="memdesc:a267f68fd20307e7b9fa83bfd1531a67a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constant for use in inverse Prandtl-Meyer function calculation.  <a href="#a267f68fd20307e7b9fa83bfd1531a67a">More...</a><br /></td></tr>
 <tr class="separator:a267f68fd20307e7b9fa83bfd1531a67a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad55ed538dff8640817c2347c40fe8e9a"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; <a class="el" href="../../d2/d4c/namespacetudat_1_1aerodynamics.html#a4f89d9b6963c83642465a3936d1d424d">AerodynamicCoefficientsIndependentVariables</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d4c/namespacetudat_1_1aerodynamics.html#ad55ed538dff8640817c2347c40fe8e9a">unsupportedAerodynamicVariables</a> = { }</td></tr>
+<tr class="memdesc:ad55ed538dff8640817c2347c40fe8e9a"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>AerodynamicCoefficientsIndependentVariables</code> not supported by <code><a class="el" href="../../d8/d24/namespacetudat_1_1json__interface.html">json_interface</a></code>.  <a href="#ad55ed538dff8640817c2347c40fe8e9a">More...</a><br /></td></tr>
+<tr class="separator:ad55ed538dff8640817c2347c40fe8e9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a class="anchor" id="a07e0163b2966ccf68be52299b7167008"></a>
@@ -378,7 +391,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d3/de9/aerodynamic_acceleration_8h_source.html#l00234">234</a> of file <a class="el" href="../../d3/de9/aerodynamic_acceleration_8h_source.html">aerodynamicAcceleration.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/de9/aerodynamic_acceleration_8h_source.html#l00232">232</a> of file <a class="el" href="../../d3/de9/aerodynamic_acceleration_8h_source.html">aerodynamicAcceleration.h</a>.</p>
 
 </div>
 </div>
@@ -392,7 +405,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dd/d82/aerodynamic_coefficient_interface_8h_source.html#l00453">453</a> of file <a class="el" href="../../dd/d82/aerodynamic_coefficient_interface_8h_source.html">aerodynamicCoefficientInterface.h</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/d82/aerodynamic_coefficient_interface_8h_source.html#l00460">460</a> of file <a class="el" href="../../dd/d82/aerodynamic_coefficient_interface_8h_source.html">aerodynamicCoefficientInterface.h</a>.</p>
 
 </div>
 </div>
@@ -420,7 +433,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d2/d86/exponential_atmosphere_8h_source.html#l00252">252</a> of file <a class="el" href="../../d2/d86/exponential_atmosphere_8h_source.html">exponentialAtmosphere.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/d86/exponential_atmosphere_8h_source.html#l00251">251</a> of file <a class="el" href="../../d2/d86/exponential_atmosphere_8h_source.html">exponentialAtmosphere.h</a>.</p>
 
 </div>
 </div>
@@ -492,7 +505,7 @@ Variables</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="../../d5/d70/aerodynamics_8h_source.html#l00045">45</a> of file <a class="el" href="../../d5/d70/aerodynamics_8h_source.html">aerodynamics.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/d1e/_astrodynamics_2_aerodynamics_2aerodynamics_8h_source.html#l00045">45</a> of file <a class="el" href="../../d2/d1e/_astrodynamics_2_aerodynamics_2aerodynamics_8h_source.html">aerodynamics.h</a>.</p>
 
 </div>
 </div>
@@ -547,7 +560,7 @@ Variables</h2></td></tr>
 
 <p>References <a class="el" href="../../d1/d21/aerodynamic_force_8cpp_source.html#l00019">computeAerodynamicForce()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d3/de9/aerodynamic_acceleration_8h_source.html#l00157">tudat::aerodynamics::AerodynamicAcceleration::getAcceleration()</a>.</p>
+<p>Referenced by <a class="el" href="../../d3/de9/aerodynamic_acceleration_8h_source.html#l00155">tudat::aerodynamics::AerodynamicAcceleration::getAcceleration()</a>.</p>
 
 </div>
 </div>
@@ -711,9 +724,9 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Local-to-static pressure ratio. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html#l00041">41</a> of file <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html">aerodynamics.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html#l00041">41</a> of file <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html">aerodynamics.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html#l00290">computePrandtlMeyerFreestreamPressureCoefficient()</a>.</p>
+<p>Referenced by <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html#l00290">computePrandtlMeyerFreestreamPressureCoefficient()</a>.</p>
 
 </div>
 </div>
@@ -749,7 +762,7 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Prandtl-Meyer function value. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html#l00050">50</a> of file <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html">aerodynamics.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html#l00050">50</a> of file <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html">aerodynamics.cpp</a>.</p>
 
 <p>Referenced by <a class="el" href="../../d2/d2f/hypersonic_local_inclination_analysis_8cpp_source.html#l00540">tudat::aerodynamics::HypersonicLocalInclinationAnalysis::updateExpansionPressures()</a>.</p>
 
@@ -787,7 +800,7 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Stagnation pressure coefficient. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html#l00064">64</a> of file <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html">aerodynamics.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html#l00064">64</a> of file <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html">aerodynamics.cpp</a>.</p>
 
 <p>Referenced by <a class="el" href="../../d2/d2f/hypersonic_local_inclination_analysis_8cpp_source.html#l00341">tudat::aerodynamics::HypersonicLocalInclinationAnalysis::determinePressureCoefficients()</a>.</p>
 
@@ -814,9 +827,9 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Newtonian pressure coefficient. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html#l00083">83</a> of file <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html">aerodynamics.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html#l00083">83</a> of file <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html">aerodynamics.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html#l00131">computeModifiedDahlemBuckPressureCoefficient()</a>, and <a class="el" href="../../d2/d2f/hypersonic_local_inclination_analysis_8cpp_source.html#l00456">tudat::aerodynamics::HypersonicLocalInclinationAnalysis::updateCompressionPressures()</a>.</p>
+<p>Referenced by <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html#l00131">computeModifiedDahlemBuckPressureCoefficient()</a>, and <a class="el" href="../../d2/d2f/hypersonic_local_inclination_analysis_8cpp_source.html#l00456">tudat::aerodynamics::HypersonicLocalInclinationAnalysis::updateCompressionPressures()</a>.</p>
 
 </div>
 </div>
@@ -852,9 +865,9 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Newtonian pressure coefficient. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html#l00090">90</a> of file <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html">aerodynamics.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html#l00090">90</a> of file <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html">aerodynamics.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html#l00179">computeHankeyFlatSurfacePressureCoefficient()</a>, and <a class="el" href="../../d2/d2f/hypersonic_local_inclination_analysis_8cpp_source.html#l00456">tudat::aerodynamics::HypersonicLocalInclinationAnalysis::updateCompressionPressures()</a>.</p>
+<p>Referenced by <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html#l00179">computeHankeyFlatSurfacePressureCoefficient()</a>, and <a class="el" href="../../d2/d2f/hypersonic_local_inclination_analysis_8cpp_source.html#l00456">tudat::aerodynamics::HypersonicLocalInclinationAnalysis::updateCompressionPressures()</a>.</p>
 
 </div>
 </div>
@@ -890,7 +903,7 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Empirical tangent wedge pressure coefficient. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html#l00098">98</a> of file <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html">aerodynamics.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html#l00098">98</a> of file <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html">aerodynamics.cpp</a>.</p>
 
 <p>Referenced by <a class="el" href="../../d2/d2f/hypersonic_local_inclination_analysis_8cpp_source.html#l00456">tudat::aerodynamics::HypersonicLocalInclinationAnalysis::updateCompressionPressures()</a>.</p>
 
@@ -928,7 +941,7 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Empirical tangent wedge pressure coefficient. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html#l00113">113</a> of file <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html">aerodynamics.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html#l00113">113</a> of file <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html">aerodynamics.cpp</a>.</p>
 
 <p>Referenced by <a class="el" href="../../d2/d2f/hypersonic_local_inclination_analysis_8cpp_source.html#l00456">tudat::aerodynamics::HypersonicLocalInclinationAnalysis::updateCompressionPressures()</a>.</p>
 
@@ -966,9 +979,9 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Dahlem-Buck pressure coefficient. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html#l00131">131</a> of file <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html">aerodynamics.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html#l00131">131</a> of file <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html">aerodynamics.cpp</a>.</p>
 
-<p>References <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html#l00083">computeNewtonianPressureCoefficient()</a>, and <a class="el" href="../../d6/d70/mathematical_constants_8h_source.html#l00064">tudat::mathematical_constants::PI</a>.</p>
+<p>References <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html#l00083">computeNewtonianPressureCoefficient()</a>, and <a class="el" href="../../d6/d70/mathematical_constants_8h_source.html#l00064">tudat::mathematical_constants::PI</a>.</p>
 
 <p>Referenced by <a class="el" href="../../d2/d2f/hypersonic_local_inclination_analysis_8cpp_source.html#l00456">tudat::aerodynamics::HypersonicLocalInclinationAnalysis::updateCompressionPressures()</a>.</p>
 
@@ -1006,9 +1019,9 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Hankey Flat surface pressure coefficient. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html#l00179">179</a> of file <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html">aerodynamics.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html#l00179">179</a> of file <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html">aerodynamics.cpp</a>.</p>
 
-<p>References <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html#l00090">computeModifiedNewtonianPressureCoefficient()</a>, and <a class="el" href="../../d6/d70/mathematical_constants_8h_source.html#l00064">tudat::mathematical_constants::PI</a>.</p>
+<p>References <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html#l00090">computeModifiedNewtonianPressureCoefficient()</a>, and <a class="el" href="../../d6/d70/mathematical_constants_8h_source.html#l00064">tudat::mathematical_constants::PI</a>.</p>
 
 <p>Referenced by <a class="el" href="../../d2/d2f/hypersonic_local_inclination_analysis_8cpp_source.html#l00456">tudat::aerodynamics::HypersonicLocalInclinationAnalysis::updateCompressionPressures()</a>.</p>
 
@@ -1046,7 +1059,7 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Smyth delta wing pressure coefficient. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html#l00207">207</a> of file <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html">aerodynamics.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html#l00207">207</a> of file <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html">aerodynamics.cpp</a>.</p>
 
 <p>References <a class="el" href="../../d6/d70/mathematical_constants_8h_source.html#l00064">tudat::mathematical_constants::PI</a>.</p>
 
@@ -1100,9 +1113,9 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Hankey Flat surface pressure coefficient. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html#l00236">236</a> of file <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html">aerodynamics.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html#l00236">236</a> of file <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html">aerodynamics.cpp</a>.</p>
 
-<p>References <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html#l00332">computeVacuumPressureCoefficient()</a>.</p>
+<p>References <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html#l00332">computeVacuumPressureCoefficient()</a>.</p>
 
 <p>Referenced by <a class="el" href="../../d2/d2f/hypersonic_local_inclination_analysis_8cpp_source.html#l00456">tudat::aerodynamics::HypersonicLocalInclinationAnalysis::updateCompressionPressures()</a>.</p>
 
@@ -1154,9 +1167,9 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Prandtl-Meyer pressure coefficient. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html#l00290">290</a> of file <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html">aerodynamics.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html#l00290">290</a> of file <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html">aerodynamics.cpp</a>.</p>
 
-<p>References <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html#l00378">computeInversePrandtlMeyerFunction()</a>, <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html#l00041">computeLocalToStaticPressureRatio()</a>, <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html#l00332">computeVacuumPressureCoefficient()</a>, and <a class="el" href="../../d5/d70/aerodynamics_8h_source.html#l00083">maximumPrandtlMeyerFunctionValue</a>.</p>
+<p>References <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html#l00378">computeInversePrandtlMeyerFunction()</a>, <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html#l00041">computeLocalToStaticPressureRatio()</a>, <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html#l00332">computeVacuumPressureCoefficient()</a>, and <a class="el" href="../../d2/d1e/_astrodynamics_2_aerodynamics_2aerodynamics_8h_source.html#l00083">maximumPrandtlMeyerFunctionValue</a>.</p>
 
 <p>Referenced by <a class="el" href="../../d2/d2f/hypersonic_local_inclination_analysis_8cpp_source.html#l00540">tudat::aerodynamics::HypersonicLocalInclinationAnalysis::updateExpansionPressures()</a>.</p>
 
@@ -1194,9 +1207,9 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Vacuum pressure coefficient. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html#l00332">332</a> of file <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html">aerodynamics.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html#l00332">332</a> of file <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html">aerodynamics.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html#l00290">computePrandtlMeyerFreestreamPressureCoefficient()</a>, <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html#l00236">computeVanDykeUnifiedPressureCoefficient()</a>, and <a class="el" href="../../d2/d2f/hypersonic_local_inclination_analysis_8cpp_source.html#l00540">tudat::aerodynamics::HypersonicLocalInclinationAnalysis::updateExpansionPressures()</a>.</p>
+<p>Referenced by <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html#l00290">computePrandtlMeyerFreestreamPressureCoefficient()</a>, <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html#l00236">computeVanDykeUnifiedPressureCoefficient()</a>, and <a class="el" href="../../d2/d2f/hypersonic_local_inclination_analysis_8cpp_source.html#l00540">tudat::aerodynamics::HypersonicLocalInclinationAnalysis::updateExpansionPressures()</a>.</p>
 
 </div>
 </div>
@@ -1221,7 +1234,7 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Vacuum pressure coefficient. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html#l00340">340</a> of file <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html">aerodynamics.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html#l00340">340</a> of file <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html">aerodynamics.cpp</a>.</p>
 
 <p>Referenced by <a class="el" href="../../d2/d2f/hypersonic_local_inclination_analysis_8cpp_source.html#l00540">tudat::aerodynamics::HypersonicLocalInclinationAnalysis::updateExpansionPressures()</a>.</p>
 
@@ -1259,7 +1272,7 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>ACM empirical surface pressure coefficient. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html#l00347">347</a> of file <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html">aerodynamics.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html#l00347">347</a> of file <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html">aerodynamics.cpp</a>.</p>
 
 <p>References <a class="el" href="../../d6/d70/mathematical_constants_8h_source.html#l00064">tudat::mathematical_constants::PI</a>.</p>
 
@@ -1288,11 +1301,11 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Mach number. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html#l00378">378</a> of file <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html">aerodynamics.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html#l00378">378</a> of file <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html">aerodynamics.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d5/d70/aerodynamics_8h_source.html#l00083">maximumPrandtlMeyerFunctionValue</a>, <a class="el" href="../../d5/d70/aerodynamics_8h_source.html#l00091">PrandtlMeyerParameter1</a>, <a class="el" href="../../d5/d70/aerodynamics_8h_source.html#l00098">PrandtlMeyerParameter2</a>, <a class="el" href="../../d5/d70/aerodynamics_8h_source.html#l00105">PrandtlMeyerParameter3</a>, <a class="el" href="../../d5/d70/aerodynamics_8h_source.html#l00112">PrandtlMeyerParameter4</a>, and <a class="el" href="../../d5/d70/aerodynamics_8h_source.html#l00119">PrandtlMeyerParameter5</a>.</p>
+<p>References <a class="el" href="../../d2/d1e/_astrodynamics_2_aerodynamics_2aerodynamics_8h_source.html#l00083">maximumPrandtlMeyerFunctionValue</a>, <a class="el" href="../../d2/d1e/_astrodynamics_2_aerodynamics_2aerodynamics_8h_source.html#l00091">PrandtlMeyerParameter1</a>, <a class="el" href="../../d2/d1e/_astrodynamics_2_aerodynamics_2aerodynamics_8h_source.html#l00098">PrandtlMeyerParameter2</a>, <a class="el" href="../../d2/d1e/_astrodynamics_2_aerodynamics_2aerodynamics_8h_source.html#l00105">PrandtlMeyerParameter3</a>, <a class="el" href="../../d2/d1e/_astrodynamics_2_aerodynamics_2aerodynamics_8h_source.html#l00112">PrandtlMeyerParameter4</a>, and <a class="el" href="../../d2/d1e/_astrodynamics_2_aerodynamics_2aerodynamics_8h_source.html#l00119">PrandtlMeyerParameter5</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html#l00290">computePrandtlMeyerFreestreamPressureCoefficient()</a>.</p>
+<p>Referenced by <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html#l00290">computePrandtlMeyerFreestreamPressureCoefficient()</a>.</p>
 
 </div>
 </div>
@@ -1327,9 +1340,9 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html#l00402">402</a> of file <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html">aerodynamics.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html#l00402">402</a> of file <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html">aerodynamics.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html#l00435">computeShockEntropyJump()</a>, and <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html#l00426">computeShockTemperatureRatio()</a>.</p>
+<p>Referenced by <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html#l00435">computeShockEntropyJump()</a>, and <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html#l00426">computeShockTemperatureRatio()</a>.</p>
 
 </div>
 </div>
@@ -1364,9 +1377,9 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html#l00411">411</a> of file <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html">aerodynamics.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html#l00411">411</a> of file <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html">aerodynamics.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html#l00426">computeShockTemperatureRatio()</a>.</p>
+<p>Referenced by <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html#l00426">computeShockTemperatureRatio()</a>.</p>
 
 </div>
 </div>
@@ -1401,11 +1414,11 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html#l00426">426</a> of file <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html">aerodynamics.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html#l00426">426</a> of file <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html">aerodynamics.cpp</a>.</p>
 
-<p>References <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html#l00411">computeShockDensityRatio()</a>, and <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html#l00402">computeShockPressureRatio()</a>.</p>
+<p>References <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html#l00411">computeShockDensityRatio()</a>, and <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html#l00402">computeShockPressureRatio()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html#l00435">computeShockEntropyJump()</a>.</p>
+<p>Referenced by <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html#l00435">computeShockEntropyJump()</a>.</p>
 
 </div>
 </div>
@@ -1447,11 +1460,11 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html#l00435">435</a> of file <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html">aerodynamics.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html#l00435">435</a> of file <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html">aerodynamics.cpp</a>.</p>
 
-<p>References <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html#l00402">computeShockPressureRatio()</a>, and <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html#l00426">computeShockTemperatureRatio()</a>.</p>
+<p>References <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html#l00402">computeShockPressureRatio()</a>, and <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html#l00426">computeShockTemperatureRatio()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html#l00454">computeShockTotalPressureRatio()</a>.</p>
+<p>Referenced by <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html#l00454">computeShockTotalPressureRatio()</a>.</p>
 
 </div>
 </div>
@@ -1493,9 +1506,9 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html#l00454">454</a> of file <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html">aerodynamics.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html#l00454">454</a> of file <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html">aerodynamics.cpp</a>.</p>
 
-<p>References <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html#l00435">computeShockEntropyJump()</a>.</p>
+<p>References <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html#l00435">computeShockEntropyJump()</a>.</p>
 
 </div>
 </div>
@@ -1537,7 +1550,7 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html#l00464">464</a> of file <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html">aerodynamics.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html#l00464">464</a> of file <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html">aerodynamics.cpp</a>.</p>
 
 </div>
 </div>
@@ -1580,9 +1593,9 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Speed of sound in the gas. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html#l00481">481</a> of file <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html">aerodynamics.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html#l00481">481</a> of file <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html">aerodynamics.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d0/d2b/nrlmsise00_atmosphere_8cpp_source.html#l00021">tudat::aerodynamics::NRLMSISE00Atmosphere::computeProperties()</a>, <a class="el" href="../../de/d06/tabulated_atmosphere_8h_source.html#l00164">tudat::aerodynamics::TabulatedAtmosphere::getSpeedOfSound()</a>, and <a class="el" href="../../d2/d86/exponential_atmosphere_8h_source.html#l00201">tudat::aerodynamics::ExponentialAtmosphere::getSpeedOfSound()</a>.</p>
+<p>Referenced by <a class="el" href="../../d0/d2b/nrlmsise00_atmosphere_8cpp_source.html#l00021">tudat::aerodynamics::NRLMSISE00Atmosphere::computeProperties()</a>, <a class="el" href="../../de/d06/tabulated_atmosphere_8h_source.html#l00164">tudat::aerodynamics::TabulatedAtmosphere::getSpeedOfSound()</a>, and <a class="el" href="../../d2/d86/exponential_atmosphere_8h_source.html#l00200">tudat::aerodynamics::ExponentialAtmosphere::getSpeedOfSound()</a>.</p>
 
 </div>
 </div>
@@ -1618,9 +1631,9 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Mach number </dd></dl>
 
-<p>Definition at line <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html#l00488">488</a> of file <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html">aerodynamics.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html#l00488">488</a> of file <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html">aerodynamics.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="../../db/d91/propagation_output_8h_source.html#l00182">tudat::propagators::getDoubleDependentVariableFunction()</a>.</p>
+<p>Referenced by <a class="el" href="../../db/d91/propagation_output_8h_source.html#l00581">tudat::propagators::getDoubleDependentVariableFunction()</a>.</p>
 
 </div>
 </div>
@@ -1656,7 +1669,7 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Mean free path of a particle in the gas. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html#l00494">494</a> of file <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html">aerodynamics.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html#l00494">494</a> of file <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html">aerodynamics.cpp</a>.</p>
 
 <p>References <a class="el" href="../../d6/d70/mathematical_constants_8h_source.html#l00064">tudat::mathematical_constants::PI</a>.</p>
 
@@ -1718,9 +1731,9 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Aerodynamic load experienced by the vehicle. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html#l00501">501</a> of file <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html">aerodynamics.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html#l00501">501</a> of file <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html">aerodynamics.cpp</a>.</p>
 
-<p>References <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html#l00513">computeAerodynamicLoadFromAcceleration()</a>.</p>
+<p>References <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html#l00513">computeAerodynamicLoadFromAcceleration()</a>.</p>
 
 </div>
 </div>
@@ -1745,11 +1758,11 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Aerodynamic load experienced by the vehicle. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html#l00513">513</a> of file <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html">aerodynamics.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html#l00513">513</a> of file <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html">aerodynamics.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d4/db3/physical_constants_8h_source.html#l00046">tudat::physical_constants::SEA_LEVEL_GRAVITATIONAL_ACCELERATION</a>.</p>
+<p>References <a class="el" href="../../d4/db3/physical_constants_8h_source.html#l00045">tudat::physical_constants::SEA_LEVEL_GRAVITATIONAL_ACCELERATION</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html#l00501">computeAerodynamicLoad()</a>, and <a class="el" href="../../db/d91/propagation_output_8h_source.html#l00182">tudat::propagators::getDoubleDependentVariableFunction()</a>.</p>
+<p>Referenced by <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html#l00501">computeAerodynamicLoad()</a>, and <a class="el" href="../../db/d91/propagation_output_8h_source.html#l00581">tudat::propagators::getDoubleDependentVariableFunction()</a>.</p>
 
 </div>
 </div>
@@ -1792,11 +1805,11 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Convective heat flux experienced acording to Fay Riddell model at equilibrium wall temperature. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html#l00519">519</a> of file <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html">aerodynamics.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html#l00519">519</a> of file <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html">aerodynamics.cpp</a>.</p>
 
 <p>References <a class="el" href="../../d6/d8d/equilibrium_wall_temperature_8cpp_source.html#l00023">computeEquilibiumWallTemperature()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html#l00528">computeEquilibriumFayRiddellHeatFlux()</a>.</p>
+<p>Referenced by <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html#l00528">computeEquilibriumFayRiddellHeatFlux()</a>.</p>
 
 </div>
 </div>
@@ -1860,9 +1873,9 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Convective heat flux experienced by the vehicle. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html#l00528">528</a> of file <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html">aerodynamics.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html#l00528">528</a> of file <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html">aerodynamics.cpp</a>.</p>
 
-<p>References <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html#l00561">computeAdiabaticWallTemperature()</a>, <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html#l00519">computeEquilibriumHeatflux()</a>, and <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html#l00548">computeFayRiddellHeatFlux()</a>.</p>
+<p>References <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html#l00561">computeAdiabaticWallTemperature()</a>, <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html#l00519">computeEquilibriumHeatflux()</a>, and <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html#l00548">computeFayRiddellHeatFlux()</a>.</p>
 
 <p>Referenced by <a class="el" href="../../d0/d87/propagation_output_8cpp_source.html#l00078">tudat::propagators::computeEquilibriumFayRiddellHeatFluxFromProperties()</a>.</p>
 
@@ -1921,11 +1934,11 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Convective heat flux experienced by the vehicle. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html#l00548">548</a> of file <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html">aerodynamics.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html#l00548">548</a> of file <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html">aerodynamics.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d5/d70/aerodynamics_8h_source.html#l00454">FAY_RIDDEL_HEAT_FLUX_CONSTANT</a>.</p>
+<p>References <a class="el" href="../../d2/d1e/_astrodynamics_2_aerodynamics_2aerodynamics_8h_source.html#l00454">FAY_RIDDEL_HEAT_FLUX_CONSTANT</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html#l00528">computeEquilibriumFayRiddellHeatFlux()</a>.</p>
+<p>Referenced by <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html#l00528">computeEquilibriumFayRiddellHeatFlux()</a>.</p>
 
 </div>
 </div>
@@ -1976,9 +1989,9 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Adiabatic wall temperature experienced by the vehicle. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html#l00561">561</a> of file <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html">aerodynamics.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html#l00561">561</a> of file <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html">aerodynamics.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html#l00528">computeEquilibriumFayRiddellHeatFlux()</a>.</p>
+<p>Referenced by <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html#l00528">computeEquilibriumFayRiddellHeatFlux()</a>.</p>
 
 </div>
 </div>
@@ -2028,9 +2041,9 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d5/d70/aerodynamics_8h_source.html#l00068">68</a> of file <a class="el" href="../../d5/d70/aerodynamics_8h_source.html">aerodynamics.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/d1e/_astrodynamics_2_aerodynamics_2aerodynamics_8h_source.html#l00068">68</a> of file <a class="el" href="../../d2/d1e/_astrodynamics_2_aerodynamics_2aerodynamics_8h_source.html">aerodynamics.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dc/dd1/custom_aerodynamic_coefficient_interface_8h_source.html#l00068">tudat::aerodynamics::CustomAerodynamicCoefficientInterface::CustomAerodynamicCoefficientInterface()</a>, and <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html#l00223">tudat::aerodynamics::CustomControlSurfaceIncrementAerodynamicInterface::CustomControlSurfaceIncrementAerodynamicInterface()</a>.</p>
+<p>Referenced by <a class="el" href="../../dc/dd1/custom_aerodynamic_coefficient_interface_8h_source.html#l00068">tudat::aerodynamics::CustomAerodynamicCoefficientInterface::CustomAerodynamicCoefficientInterface()</a>, and <a class="el" href="../../d1/dec/control_surface_aerodynamic_coefficient_interface_8h_source.html#l00221">tudat::aerodynamics::CustomControlSurfaceIncrementAerodynamicInterface::CustomControlSurfaceIncrementAerodynamicInterface()</a>.</p>
 
 </div>
 </div>
@@ -2069,7 +2082,8 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This function calculates the aerodynamic moment. It takes primitive types as arguments to perform the calculations. Therefor, these quantities (dynamic pressure, reference area and aerodynamic coefficients) have to computed before passing them to this function. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Compute the aerodynamic moment in same reference frame as input coefficients, with same reference lengths for each axis.</p>
+<p>This function calculates the aerodynamic moment. It takes primitive types as arguments to perform the calculations. Therefor, these quantities (dynamic pressure, reference area, reference length and aerodynamic coefficients) have to computed before passing them to this function. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">dynamicPressure</td><td>Dynamic pressure at which the body undergoing the force flies. </td></tr>
     <tr><td class="paramname">referenceArea</td><td>Reference area of the aerodynamic coefficients. </td></tr>
@@ -2082,7 +2096,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../dc/deb/aerodynamic_torque_8cpp_source.html#l00020">20</a> of file <a class="el" href="../../dc/deb/aerodynamic_torque_8cpp_source.html">aerodynamicTorque.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dc/deb/aerodynamic_torque_8cpp_source.html#l00036">computeAerodynamicMoment()</a>, and <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00120">tudat::aerodynamics::AerodynamicTorque::updateMembers()</a>.</p>
+<p>Referenced by <a class="el" href="../../dc/deb/aerodynamic_torque_8cpp_source.html#l00036">computeAerodynamicMoment()</a>, and <a class="el" href="../../da/d55/aerodynamic_torque_8h_source.html#l00144">tudat::aerodynamics::AerodynamicTorque::updateMembers()</a>.</p>
 
 </div>
 </div>
@@ -2121,6 +2135,17 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Compute the aerodynamic moment in same reference frame as input coefficients, with different reference lengths for each axis.</p>
+<p>This function calculates the aerodynamic moment. It takes primitive types as arguments to perform the calculations. Therefor, these quantities (dynamic pressure, reference area, reference lengths and aerodynamic coefficients) have to computed before passing them to this function. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dynamicPressure</td><td>Dynamic pressure at which the body undergoing the force flies. </td></tr>
+    <tr><td class="paramname">referenceArea</td><td>Reference area of the aerodynamic coefficients. </td></tr>
+    <tr><td class="paramname">referenceLengths</td><td>Reference lengths of the aerodynamic coefficients, used in x, y and z directions. </td></tr>
+    <tr><td class="paramname">momentCoefficients</td><td>Aerodynamic moment coefficients in right-handed reference frame. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Resultant aerodynamic moment, given in reference frame in which the aerodynamic coefficients were given, but with opposite sign. i.e., a positive drag coefficient will give a negative force in -x direction (in the aerodynamic frame). </dd></dl>
 
 <p>Definition at line <a class="el" href="../../dc/deb/aerodynamic_torque_8cpp_source.html#l00028">28</a> of file <a class="el" href="../../dc/deb/aerodynamic_torque_8cpp_source.html">aerodynamicTorque.cpp</a>.</p>
 
@@ -2206,9 +2231,9 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d6/d8d/equilibrium_wall_temperature_8cpp_source.html#l00023">23</a> of file <a class="el" href="../../d6/d8d/equilibrium_wall_temperature_8cpp_source.html">equilibriumWallTemperature.cpp</a>.</p>
 
-<p>References <a class="el" href="../../db/dd8/secant_root_finder_8h_source.html#l00132">tudat::root_finders::SecantRootFinderCore&lt; DataType &gt;::execute()</a>, <a class="el" href="../../d1/d84/bisection_8h_source.html#l00132">tudat::root_finders::BisectionCore&lt; DataType &gt;::execute()</a>, and <a class="el" href="../../d6/d70/mathematical_constants_8h_source.html#l00076">TUDAT_NAN</a>.</p>
+<p>References <a class="el" href="../../d1/d84/bisection_8h_source.html#l00129">tudat::root_finders::BisectionCore&lt; DataType &gt;::execute()</a>, <a class="el" href="../../db/dd8/secant_root_finder_8h_source.html#l00132">tudat::root_finders::SecantRootFinderCore&lt; DataType &gt;::execute()</a>, and <a class="el" href="../../d6/d70/mathematical_constants_8h_source.html#l00076">TUDAT_NAN</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html#l00519">computeEquilibriumHeatflux()</a>.</p>
+<p>Referenced by <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html#l00519">computeEquilibriumHeatflux()</a>.</p>
 
 </div>
 </div>
@@ -2228,7 +2253,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d6/d9c/flight_conditions_8cpp_source.html#l00217">217</a> of file <a class="el" href="../../d6/d9c/flight_conditions_8cpp_source.html">flightConditions.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d5/d3d/trim_orientation_8h_source.html#l00083">tudat::aerodynamics::TrimOrientationCalculator::findTrimAngleOfAttackFromFunction()</a>, <a class="el" href="../../de/d94/flight_conditions_8h_source.html#l00309">tudat::aerodynamics::FlightConditions::getAerodynamicCoefficientIndependentVariables()</a>, and <a class="el" href="../../de/d94/flight_conditions_8h_source.html#l00326">tudat::aerodynamics::FlightConditions::getControlSurfaceAerodynamicCoefficientIndependentVariables()</a>.</p>
+<p>References <a class="el" href="../../d5/d3d/trim_orientation_8h_source.html#l00082">tudat::aerodynamics::TrimOrientationCalculator::findTrimAngleOfAttackFromFunction()</a>, <a class="el" href="../../de/d94/flight_conditions_8h_source.html#l00309">tudat::aerodynamics::FlightConditions::getAerodynamicCoefficientIndependentVariables()</a>, and <a class="el" href="../../de/d94/flight_conditions_8h_source.html#l00326">tudat::aerodynamics::FlightConditions::getControlSurfaceAerodynamicCoefficientIndependentVariables()</a>.</p>
 
 </div>
 </div>
@@ -2335,9 +2360,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d4/da0/nrlmsise00_input_functions_8cpp_source.html#l00026">26</a> of file <a class="el" href="../../d4/da0/nrlmsise00_input_functions_8cpp_source.html">nrlmsise00InputFunctions.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/da0/nrlmsise00_input_functions_8cpp_source.html#l00024">24</a> of file <a class="el" href="../../d4/da0/nrlmsise00_input_functions_8cpp_source.html">nrlmsise00InputFunctions.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d4/da0/nrlmsise00_input_functions_8cpp_source.html#l00038">nrlmsiseInputFunction()</a>.</p>
+<p>Referenced by <a class="el" href="../../d4/da0/nrlmsise00_input_functions_8cpp_source.html#l00036">nrlmsiseInputFunction()</a>.</p>
 
 </div>
 </div>
@@ -2409,11 +2434,91 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="../../da/d08/structtudat_1_1aerodynamics_1_1_n_r_l_m_s_i_s_e00_input.html" title="Struct for Solar Activity data. ">NRLMSISE00Input</a> nrlmsiseInputFunction </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d4/da0/nrlmsise00_input_functions_8cpp_source.html#l00038">38</a> of file <a class="el" href="../../d4/da0/nrlmsise00_input_functions_8cpp_source.html">nrlmsise00InputFunctions.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/da0/nrlmsise00_input_functions_8cpp_source.html#l00036">36</a> of file <a class="el" href="../../d4/da0/nrlmsise00_input_functions_8cpp_source.html">nrlmsise00InputFunctions.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d5/d71/nrlmsise00_atmosphere_8h_source.html#l00165">tudat::aerodynamics::NRLMSISE00Input::apDaily</a>, <a class="el" href="../../d5/d71/nrlmsise00_atmosphere_8h_source.html#l00168">tudat::aerodynamics::NRLMSISE00Input::apVector</a>, <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00195">tudat::basic_astrodynamics::convertCalendarDateToJulianDay()</a>, <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00118">tudat::basic_astrodynamics::convertJulianDayToSecondsSinceEpoch()</a>, <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00133">tudat::basic_astrodynamics::convertSecondsSinceEpochToJulianDay()</a>, <a class="el" href="../../d5/d71/nrlmsise00_atmosphere_8h_source.html#l00150">tudat::aerodynamics::NRLMSISE00Input::dayOfTheYear</a>, <a class="el" href="../../d4/da0/nrlmsise00_input_functions_8cpp_source.html#l00026">eigenToStlVector()</a>, <a class="el" href="../../d5/d71/nrlmsise00_atmosphere_8h_source.html#l00159">tudat::aerodynamics::NRLMSISE00Input::f107</a>, <a class="el" href="../../d5/d71/nrlmsise00_atmosphere_8h_source.html#l00162">tudat::aerodynamics::NRLMSISE00Input::f107a</a>, <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00027">tudat::basic_astrodynamics::JULIAN_DAY_ON_J2000</a>, <a class="el" href="../../d5/d71/nrlmsise00_atmosphere_8h_source.html#l00156">tudat::aerodynamics::NRLMSISE00Input::localSolarTime</a>, <a class="el" href="../../d6/d70/mathematical_constants_8h_source.html#l00064">tudat::mathematical_constants::PI</a>, <a class="el" href="../../d5/d71/nrlmsise00_atmosphere_8h_source.html#l00153">tudat::aerodynamics::NRLMSISE00Input::secondOfTheDay</a>, and <a class="el" href="../../d5/d71/nrlmsise00_atmosphere_8h_source.html#l00147">tudat::aerodynamics::NRLMSISE00Input::year</a>.</p>
+<p>References <a class="el" href="../../d5/d71/nrlmsise00_atmosphere_8h_source.html#l00165">tudat::aerodynamics::NRLMSISE00Input::apDaily</a>, <a class="el" href="../../d5/d71/nrlmsise00_atmosphere_8h_source.html#l00168">tudat::aerodynamics::NRLMSISE00Input::apVector</a>, <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00212">tudat::basic_astrodynamics::convertCalendarDateToJulianDay()</a>, <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00135">tudat::basic_astrodynamics::convertJulianDayToSecondsSinceEpoch()</a>, <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00150">tudat::basic_astrodynamics::convertSecondsSinceEpochToJulianDay()</a>, <a class="el" href="../../d5/d71/nrlmsise00_atmosphere_8h_source.html#l00150">tudat::aerodynamics::NRLMSISE00Input::dayOfTheYear</a>, <a class="el" href="../../d4/da0/nrlmsise00_input_functions_8cpp_source.html#l00024">eigenToStlVector()</a>, <a class="el" href="../../d5/d71/nrlmsise00_atmosphere_8h_source.html#l00159">tudat::aerodynamics::NRLMSISE00Input::f107</a>, <a class="el" href="../../d5/d71/nrlmsise00_atmosphere_8h_source.html#l00162">tudat::aerodynamics::NRLMSISE00Input::f107a</a>, <a class="el" href="../../d4/d01/time_conversions_8h_source.html#l00044">tudat::basic_astrodynamics::JULIAN_DAY_ON_J2000</a>, <a class="el" href="../../d5/d71/nrlmsise00_atmosphere_8h_source.html#l00156">tudat::aerodynamics::NRLMSISE00Input::localSolarTime</a>, <a class="el" href="../../d6/d70/mathematical_constants_8h_source.html#l00064">tudat::mathematical_constants::PI</a>, <a class="el" href="../../d5/d71/nrlmsise00_atmosphere_8h_source.html#l00153">tudat::aerodynamics::NRLMSISE00Input::secondOfTheDay</a>, and <a class="el" href="../../d5/d71/nrlmsise00_atmosphere_8h_source.html#l00147">tudat::aerodynamics::NRLMSISE00Input::year</a>.</p>
 
-<p>Referenced by <a class="el" href="../../de/dbe/create_atmosphere_model_8cpp_source.html#l00063">tudat::simulation_setup::createAtmosphereModel()</a>.</p>
+<p>Referenced by <a class="el" href="../../de/dbe/create_atmosphere_model_8cpp_source.html#l00062">tudat::simulation_setup::createAtmosphereModel()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad1a3d87c2f6c63e38b9ce46298f0641a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tudat::aerodynamics::to_json </td>
+          <td>(</td>
+          <td class="paramtype">nlohmann::json &amp;&#160;</td>
+          <td class="paramname"><em>jsonObject</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d2/d4c/namespacetudat_1_1aerodynamics.html#a4f89d9b6963c83642465a3936d1d424d">AerodynamicCoefficientsIndependentVariables</a> &amp;&#160;</td>
+          <td class="paramname"><em>aerodynamicVariable</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d2/db5/_json_interface_2_environment_2aerodynamics_8h_source.html#l00041">41</a> of file <a class="el" href="../../d2/db5/_json_interface_2_environment_2aerodynamics_8h_source.html">aerodynamics.h</a>.</p>
+
+<p>References <a class="el" href="../../d6/d36/error_handling_8h_source.html#l00420">tudat::json_interface::stringFromEnum()</a>.</p>
+
+<p>Referenced by <a class="el" href="../../d2/db5/_json_interface_2_environment_2aerodynamics_8h_source.html#l00081">tudat::simulation_setup::from_json()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a34add6c3299c0a12f064d90a9cba1260"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tudat::aerodynamics::from_json </td>
+          <td>(</td>
+          <td class="paramtype">const nlohmann::json &amp;&#160;</td>
+          <td class="paramname"><em>jsonObject</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d2/d4c/namespacetudat_1_1aerodynamics.html#a4f89d9b6963c83642465a3936d1d424d">AerodynamicCoefficientsIndependentVariables</a> &amp;&#160;</td>
+          <td class="paramname"><em>aerodynamicVariable</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d2/db5/_json_interface_2_environment_2aerodynamics_8h_source.html#l00047">47</a> of file <a class="el" href="../../d2/db5/_json_interface_2_environment_2aerodynamics_8h_source.html">aerodynamics.h</a>.</p>
+
+<p>References <a class="el" href="../../d6/d36/error_handling_8h_source.html#l00392">tudat::json_interface::enumFromString()</a>.</p>
+
+<p>Referenced by <a class="el" href="../../d2/db5/_json_interface_2_environment_2aerodynamics_8h_source.html#l00081">tudat::simulation_setup::from_json()</a>.</p>
 
 </div>
 </div>
@@ -2438,9 +2543,9 @@ Variables</h2></td></tr>
 <b>Initial value:</b><div class="fragment"><div class="line">= </div><div class="line">    <a class="code" href="../../db/dcc/namespacetudat_1_1mathematical__constants.html#a9cc120cf228da3778dbc3824f4a3f929">mathematical_constants::PI</a> / 2.0 * ( std::sqrt( 6.0 ) - 1.0 )</div><div class="ttc" id="namespacetudat_1_1mathematical__constants_html_a9cc120cf228da3778dbc3824f4a3f929"><div class="ttname"><a href="../../db/dcc/namespacetudat_1_1mathematical__constants.html#a9cc120cf228da3778dbc3824f4a3f929">tudat::mathematical_constants::PI</a></div><div class="ttdeci">static const double PI</div><div class="ttdoc">The constant PI  3.14159. </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d70/mathematical_constants_8h_source.html#l00064">mathematicalConstants.h:64</a></div></div>
 </div><!-- fragment --><p>Maximum Prandtl-Meyer function value for ratio of specific heats = 1.4. </p>
 
-<p>Definition at line <a class="el" href="../../d5/d70/aerodynamics_8h_source.html#l00083">83</a> of file <a class="el" href="../../d5/d70/aerodynamics_8h_source.html">aerodynamics.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/d1e/_astrodynamics_2_aerodynamics_2aerodynamics_8h_source.html#l00083">83</a> of file <a class="el" href="../../d2/d1e/_astrodynamics_2_aerodynamics_2aerodynamics_8h_source.html">aerodynamics.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html#l00378">computeInversePrandtlMeyerFunction()</a>, and <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html#l00290">computePrandtlMeyerFreestreamPressureCoefficient()</a>.</p>
+<p>Referenced by <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html#l00378">computeInversePrandtlMeyerFunction()</a>, and <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html#l00290">computePrandtlMeyerFreestreamPressureCoefficient()</a>.</p>
 
 </div>
 </div>
@@ -2463,9 +2568,9 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>Constant for use in inverse Prandtl-Meyer function calculation for ratio of specific heats = 1.4. </p>
 
-<p>Definition at line <a class="el" href="../../d5/d70/aerodynamics_8h_source.html#l00091">91</a> of file <a class="el" href="../../d5/d70/aerodynamics_8h_source.html">aerodynamics.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/d1e/_astrodynamics_2_aerodynamics_2aerodynamics_8h_source.html#l00091">91</a> of file <a class="el" href="../../d2/d1e/_astrodynamics_2_aerodynamics_2aerodynamics_8h_source.html">aerodynamics.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html#l00378">computeInversePrandtlMeyerFunction()</a>.</p>
+<p>Referenced by <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html#l00378">computeInversePrandtlMeyerFunction()</a>.</p>
 
 </div>
 </div>
@@ -2488,9 +2593,9 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>Constant for use in inverse Prandtl-Meyer function calculation for ratio of specific heats = 1.4. </p>
 
-<p>Definition at line <a class="el" href="../../d5/d70/aerodynamics_8h_source.html#l00098">98</a> of file <a class="el" href="../../d5/d70/aerodynamics_8h_source.html">aerodynamics.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/d1e/_astrodynamics_2_aerodynamics_2aerodynamics_8h_source.html#l00098">98</a> of file <a class="el" href="../../d2/d1e/_astrodynamics_2_aerodynamics_2aerodynamics_8h_source.html">aerodynamics.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html#l00378">computeInversePrandtlMeyerFunction()</a>.</p>
+<p>Referenced by <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html#l00378">computeInversePrandtlMeyerFunction()</a>.</p>
 
 </div>
 </div>
@@ -2513,9 +2618,9 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>Constant for use in inverse Prandtl-Meyer function calculation for ratio of specific heats = 1.4. </p>
 
-<p>Definition at line <a class="el" href="../../d5/d70/aerodynamics_8h_source.html#l00105">105</a> of file <a class="el" href="../../d5/d70/aerodynamics_8h_source.html">aerodynamics.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/d1e/_astrodynamics_2_aerodynamics_2aerodynamics_8h_source.html#l00105">105</a> of file <a class="el" href="../../d2/d1e/_astrodynamics_2_aerodynamics_2aerodynamics_8h_source.html">aerodynamics.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html#l00378">computeInversePrandtlMeyerFunction()</a>.</p>
+<p>Referenced by <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html#l00378">computeInversePrandtlMeyerFunction()</a>.</p>
 
 </div>
 </div>
@@ -2538,9 +2643,9 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>Constant for use in inverse Prandtl-Meyer function calculation for ratio of specific heats = 1.4. </p>
 
-<p>Definition at line <a class="el" href="../../d5/d70/aerodynamics_8h_source.html#l00112">112</a> of file <a class="el" href="../../d5/d70/aerodynamics_8h_source.html">aerodynamics.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/d1e/_astrodynamics_2_aerodynamics_2aerodynamics_8h_source.html#l00112">112</a> of file <a class="el" href="../../d2/d1e/_astrodynamics_2_aerodynamics_2aerodynamics_8h_source.html">aerodynamics.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html#l00378">computeInversePrandtlMeyerFunction()</a>.</p>
+<p>Referenced by <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html#l00378">computeInversePrandtlMeyerFunction()</a>.</p>
 
 </div>
 </div>
@@ -2563,9 +2668,9 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>Constant for use in inverse Prandtl-Meyer function calculation for ratio of specific heats = 1.4. </p>
 
-<p>Definition at line <a class="el" href="../../d5/d70/aerodynamics_8h_source.html#l00119">119</a> of file <a class="el" href="../../d5/d70/aerodynamics_8h_source.html">aerodynamics.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/d1e/_astrodynamics_2_aerodynamics_2aerodynamics_8h_source.html#l00119">119</a> of file <a class="el" href="../../d2/d1e/_astrodynamics_2_aerodynamics_2aerodynamics_8h_source.html">aerodynamics.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html#l00378">computeInversePrandtlMeyerFunction()</a>.</p>
+<p>Referenced by <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html#l00378">computeInversePrandtlMeyerFunction()</a>.</p>
 
 </div>
 </div>
@@ -2587,16 +2692,66 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d5/d70/aerodynamics_8h_source.html#l00454">454</a> of file <a class="el" href="../../d5/d70/aerodynamics_8h_source.html">aerodynamics.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/d1e/_astrodynamics_2_aerodynamics_2aerodynamics_8h_source.html#l00454">454</a> of file <a class="el" href="../../d2/d1e/_astrodynamics_2_aerodynamics_2aerodynamics_8h_source.html">aerodynamics.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dd/d34/aerodynamics_8cpp_source.html#l00548">computeFayRiddellHeatFlux()</a>.</p>
+<p>Referenced by <a class="el" href="../../df/d3e/_astrodynamics_2_aerodynamics_2aerodynamics_8cpp_source.html#l00548">computeFayRiddellHeatFlux()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4903bbbc586b9b2de027967f41c92847"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt; <a class="el" href="../../d2/d4c/namespacetudat_1_1aerodynamics.html#a4f89d9b6963c83642465a3936d1d424d">AerodynamicCoefficientsIndependentVariables</a>, std::string &gt; tudat::aerodynamics::aerodynamicVariables</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div><div class="line">{</div><div class="line">    { <a class="code" href="../../d2/d4c/namespacetudat_1_1aerodynamics.html#a4f89d9b6963c83642465a3936d1d424da8c9b86019868bfead31c035955e0b046">mach_number_dependent</a>, <span class="stringliteral">&quot;machNumber&quot;</span> },</div><div class="line">    { <a class="code" href="../../d2/d4c/namespacetudat_1_1aerodynamics.html#a4f89d9b6963c83642465a3936d1d424dabd76ced4d407ca17b54f014a5766c92f">angle_of_attack_dependent</a>, <span class="stringliteral">&quot;angleOfAttack&quot;</span> },</div><div class="line">    { <a class="code" href="../../d2/d4c/namespacetudat_1_1aerodynamics.html#a4f89d9b6963c83642465a3936d1d424da77214568cfc7bfbdddc24d2218a61887">angle_of_sideslip_dependent</a>, <span class="stringliteral">&quot;angleOfSideslip&quot;</span> },</div><div class="line">    { <a class="code" href="../../d2/d4c/namespacetudat_1_1aerodynamics.html#a4f89d9b6963c83642465a3936d1d424daa9f513d52a90c9c3c9024c02f8439904">altitude_dependent</a>, <span class="stringliteral">&quot;altitude&quot;</span> },</div><div class="line">    { <a class="code" href="../../d2/d4c/namespacetudat_1_1aerodynamics.html#a4f89d9b6963c83642465a3936d1d424daf44030f7e9920cb2ae0aa6e7658503a1">control_surface_deflection_dependent</a>, <span class="stringliteral">&quot;controlSurfaceDeflection&quot;</span> },</div><div class="line">    { <a class="code" href="../../d2/d4c/namespacetudat_1_1aerodynamics.html#a4f89d9b6963c83642465a3936d1d424da6e2f91a6887bee9b4179ea6e1c6d82ab">undefined_independent_variable</a>, <span class="stringliteral">&quot;undefined&quot;</span> }</div><div class="line">}</div><div class="ttc" id="namespacetudat_1_1aerodynamics_html_a4f89d9b6963c83642465a3936d1d424da6e2f91a6887bee9b4179ea6e1c6d82ab"><div class="ttname"><a href="../../d2/d4c/namespacetudat_1_1aerodynamics.html#a4f89d9b6963c83642465a3936d1d424da6e2f91a6887bee9b4179ea6e1c6d82ab">tudat::aerodynamics::undefined_independent_variable</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d1e/_astrodynamics_2_aerodynamics_2aerodynamics_8h_source.html#l00052">aerodynamics.h:52</a></div></div>
+<div class="ttc" id="namespacetudat_1_1aerodynamics_html_a4f89d9b6963c83642465a3936d1d424dabd76ced4d407ca17b54f014a5766c92f"><div class="ttname"><a href="../../d2/d4c/namespacetudat_1_1aerodynamics.html#a4f89d9b6963c83642465a3936d1d424dabd76ced4d407ca17b54f014a5766c92f">tudat::aerodynamics::angle_of_attack_dependent</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d1e/_astrodynamics_2_aerodynamics_2aerodynamics_8h_source.html#l00048">aerodynamics.h:48</a></div></div>
+<div class="ttc" id="namespacetudat_1_1aerodynamics_html_a4f89d9b6963c83642465a3936d1d424da8c9b86019868bfead31c035955e0b046"><div class="ttname"><a href="../../d2/d4c/namespacetudat_1_1aerodynamics.html#a4f89d9b6963c83642465a3936d1d424da8c9b86019868bfead31c035955e0b046">tudat::aerodynamics::mach_number_dependent</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d1e/_astrodynamics_2_aerodynamics_2aerodynamics_8h_source.html#l00047">aerodynamics.h:47</a></div></div>
+<div class="ttc" id="namespacetudat_1_1aerodynamics_html_a4f89d9b6963c83642465a3936d1d424daf44030f7e9920cb2ae0aa6e7658503a1"><div class="ttname"><a href="../../d2/d4c/namespacetudat_1_1aerodynamics.html#a4f89d9b6963c83642465a3936d1d424daf44030f7e9920cb2ae0aa6e7658503a1">tudat::aerodynamics::control_surface_deflection_dependent</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d1e/_astrodynamics_2_aerodynamics_2aerodynamics_8h_source.html#l00051">aerodynamics.h:51</a></div></div>
+<div class="ttc" id="namespacetudat_1_1aerodynamics_html_a4f89d9b6963c83642465a3936d1d424da77214568cfc7bfbdddc24d2218a61887"><div class="ttname"><a href="../../d2/d4c/namespacetudat_1_1aerodynamics.html#a4f89d9b6963c83642465a3936d1d424da77214568cfc7bfbdddc24d2218a61887">tudat::aerodynamics::angle_of_sideslip_dependent</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d1e/_astrodynamics_2_aerodynamics_2aerodynamics_8h_source.html#l00049">aerodynamics.h:49</a></div></div>
+<div class="ttc" id="namespacetudat_1_1aerodynamics_html_a4f89d9b6963c83642465a3936d1d424daa9f513d52a90c9c3c9024c02f8439904"><div class="ttname"><a href="../../d2/d4c/namespacetudat_1_1aerodynamics.html#a4f89d9b6963c83642465a3936d1d424daa9f513d52a90c9c3c9024c02f8439904">tudat::aerodynamics::altitude_dependent</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d1e/_astrodynamics_2_aerodynamics_2aerodynamics_8h_source.html#l00050">aerodynamics.h:50</a></div></div>
+</div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d2/db5/_json_interface_2_environment_2aerodynamics_8h_source.html#l00027">27</a> of file <a class="el" href="../../d2/db5/_json_interface_2_environment_2aerodynamics_8h_source.html">aerodynamics.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad55ed538dff8640817c2347c40fe8e9a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="../../d2/d4c/namespacetudat_1_1aerodynamics.html#a4f89d9b6963c83642465a3936d1d424d">AerodynamicCoefficientsIndependentVariables</a> &gt; tudat::aerodynamics::unsupportedAerodynamicVariables = { }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d2/db5/_json_interface_2_environment_2aerodynamics_8h_source.html#l00038">38</a> of file <a class="el" href="../../d2/db5/_json_interface_2_environment_2aerodynamics_8h_source.html">aerodynamics.h</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 27 2017 09:32:59 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 7 2017 11:20:31 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

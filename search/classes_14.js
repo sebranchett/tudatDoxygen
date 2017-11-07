@@ -1,6 +1,8 @@
 var searchData=
 [
-  ['windmodel',['WindModel',['../de/d7d/classtudat_1_1aerodynamics_1_1_wind_model.html',1,'tudat::aerodynamics']]],
-  ['windmodelsettings',['WindModelSettings',['../df/d64/classtudat_1_1simulation__setup_1_1_wind_model_settings.html',1,'tudat::simulation_setup']]],
-  ['wrapperrotationalephemeris',['WrapperRotationalEphemeris',['../d2/dbf/classtudat_1_1ephemerides_1_1_wrapper_rotational_ephemeris.html',1,'tudat::ephemerides']]]
+  ['undefinedkeyerror',['UndefinedKeyError',['../dc/d36/classtudat_1_1json__interface_1_1_undefined_key_error.html',1,'tudat::json_interface']]],
+  ['unimplementedenumerror',['UnimplementedEnumError',['../dd/d0a/classtudat_1_1json__interface_1_1_unimplemented_enum_error.html',1,'tudat::json_interface']]],
+  ['unknownenumerror',['UnknownEnumError',['../d8/de1/classtudat_1_1json__interface_1_1_unknown_enum_error.html',1,'tudat::json_interface']]],
+  ['unrecognizedvalueaccesserror',['UnrecognizedValueAccessError',['../dd/d8c/classtudat_1_1json__interface_1_1_unrecognized_value_access_error.html',1,'tudat::json_interface']]],
+  ['unsupportedenumerror',['UnsupportedEnumError',['../d8/d78/classtudat_1_1json__interface_1_1_unsupported_enum_error.html',1,'tudat::json_interface']]]
 ];

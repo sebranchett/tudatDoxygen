@@ -118,9 +118,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ade483b5bce614156367b642cf5fe6947"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/de5/classtudat_1_1simulation__setup_1_1_thrust_acceleration_settings.html#ade483b5bce614156367b642cf5fe6947">ThrustAccelerationSettings</a> (const boost::shared_ptr&lt; <a class="el" href="../../d9/d43/classtudat_1_1simulation__setup_1_1_thrust_direction_guidance_settings.html">ThrustDirectionGuidanceSettings</a> &gt; thrustDirectionGuidanceSettings, const boost::shared_ptr&lt; <a class="el" href="../../d1/db8/classtudat_1_1simulation__setup_1_1_thrust_engine_settings.html">ThrustEngineSettings</a> &gt; thrustMagnitudeSettings)</td></tr>
 <tr class="memdesc:ade483b5bce614156367b642cf5fe6947"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor from separate magnitude and diretion settings.  <a href="#ade483b5bce614156367b642cf5fe6947">More...</a><br /></td></tr>
 <tr class="separator:ade483b5bce614156367b642cf5fe6947"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af43db3815c573db4cad4573f3cf96274"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/de5/classtudat_1_1simulation__setup_1_1_thrust_acceleration_settings.html#af43db3815c573db4cad4573f3cf96274">ThrustAccelerationSettings</a> (const boost::shared_ptr&lt; <a class="el" href="../../dd/d1b/classtudat_1_1interpolators_1_1_one_dimensional_interpolator.html">interpolators::OneDimensionalInterpolator</a>&lt; double, Eigen::Vector3d &gt; &gt; fullThrustInterpolator, const boost::function&lt; double(const double) &gt; specificImpulseFunction, const <a class="el" href="../../d4/da8/namespacetudat_1_1simulation__setup.html#a2b45f4bc721aafa496686077bf729a13">ThrustFrames</a> thrustFrame=<a class="el" href="../../d4/da8/namespacetudat_1_1simulation__setup.html#a2b45f4bc721aafa496686077bf729a13af833e2f919823a51d3e1b934100637c1">unspecified_thurst_frame</a>, const std::string centralBody=&quot;&quot;)</td></tr>
-<tr class="memdesc:af43db3815c573db4cad4573f3cf96274"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor used for defining total thrust vector (in local or inertial frame) from interpolator.  <a href="#af43db3815c573db4cad4573f3cf96274">More...</a><br /></td></tr>
-<tr class="separator:af43db3815c573db4cad4573f3cf96274"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a968109d88f50704bc1015195ebe7f8dd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/de5/classtudat_1_1simulation__setup_1_1_thrust_acceleration_settings.html#a968109d88f50704bc1015195ebe7f8dd">ThrustAccelerationSettings</a> (const boost::shared_ptr&lt; <a class="el" href="../../dd/d57/classtudat_1_1interpolators_1_1_data_interpolation_settings.html">interpolators::DataInterpolationSettings</a>&lt; double, Eigen::Vector3d &gt; &gt; &amp;dataInterpolationSettings, const boost::function&lt; double(const double) &gt; specificImpulseFunction, const <a class="el" href="../../d4/da8/namespacetudat_1_1simulation__setup.html#a2b45f4bc721aafa496686077bf729a13">ThrustFrames</a> thrustFrame=<a class="el" href="../../d4/da8/namespacetudat_1_1simulation__setup.html#a2b45f4bc721aafa496686077bf729a13af833e2f919823a51d3e1b934100637c1">unspecified_thurst_frame</a>, const std::string centralBody=&quot;&quot;)</td></tr>
+<tr class="memdesc:a968109d88f50704bc1015195ebe7f8dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor used for defining total thrust vector (in local or inertial frame) from interpolator using variable specific impulse.  <a href="#a968109d88f50704bc1015195ebe7f8dd">More...</a><br /></td></tr>
+<tr class="separator:a968109d88f50704bc1015195ebe7f8dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a382a3dd454fdf7ce70ca397eedd1d066"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/de5/classtudat_1_1simulation__setup_1_1_thrust_acceleration_settings.html#a382a3dd454fdf7ce70ca397eedd1d066">ThrustAccelerationSettings</a> (const boost::shared_ptr&lt; <a class="el" href="../../dd/d57/classtudat_1_1interpolators_1_1_data_interpolation_settings.html">interpolators::DataInterpolationSettings</a>&lt; double, Eigen::Vector3d &gt; &gt; &amp;dataInterpolationSettings, const double constantSpecificImpulse, const <a class="el" href="../../d4/da8/namespacetudat_1_1simulation__setup.html#a2b45f4bc721aafa496686077bf729a13">ThrustFrames</a> thrustFrame=<a class="el" href="../../d4/da8/namespacetudat_1_1simulation__setup.html#a2b45f4bc721aafa496686077bf729a13af833e2f919823a51d3e1b934100637c1">unspecified_thurst_frame</a>, const std::string centralBody=&quot;&quot;)</td></tr>
+<tr class="memdesc:a382a3dd454fdf7ce70ca397eedd1d066"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor used for defining total thrust vector (in local or inertial frame) from interpolator using constant specific impulse.  <a href="#a382a3dd454fdf7ce70ca397eedd1d066">More...</a><br /></td></tr>
+<tr class="separator:a382a3dd454fdf7ce70ca397eedd1d066"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8454a64ad1922663d0e7ab1e19aa4860"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/de5/classtudat_1_1simulation__setup_1_1_thrust_acceleration_settings.html#a8454a64ad1922663d0e7ab1e19aa4860">~ThrustAccelerationSettings</a> ()</td></tr>
 <tr class="memdesc:a8454a64ad1922663d0e7ab1e19aa4860"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#a8454a64ad1922663d0e7ab1e19aa4860">More...</a><br /></td></tr>
 <tr class="separator:a8454a64ad1922663d0e7ab1e19aa4860"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -137,6 +140,11 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:ad5c45c7305e18e1decb708f122cb7b70"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/de5/classtudat_1_1simulation__setup_1_1_thrust_acceleration_settings.html#ad5c45c7305e18e1decb708f122cb7b70">centralBody_</a></td></tr>
 <tr class="memdesc:ad5c45c7305e18e1decb708f122cb7b70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Central body identifier for thrustFrame.  <a href="#ad5c45c7305e18e1decb708f122cb7b70">More...</a><br /></td></tr>
 <tr class="separator:ad5c45c7305e18e1decb708f122cb7b70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e65899e335590c983e024a1ab6808e5"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/de5/classtudat_1_1simulation__setup_1_1_thrust_acceleration_settings.html#a8e65899e335590c983e024a1ab6808e5">constantSpecificImpulse_</a> = <a class="el" href="../../d6/d70/mathematical_constants_8h.html#adf3d84f9d3e27cbaa280e9fd0bac8e5f">TUDAT_NAN</a></td></tr>
+<tr class="separator:a8e65899e335590c983e024a1ab6808e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5af192cbe744bae69df5a08c79b7f414"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; <a class="el" href="../../dd/d57/classtudat_1_1interpolators_1_1_data_interpolation_settings.html">interpolators::DataInterpolationSettings</a>&lt; double, Eigen::Vector3d &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/de5/classtudat_1_1simulation__setup_1_1_thrust_acceleration_settings.html#a5af192cbe744bae69df5a08c79b7f414">dataInterpolationSettings_</a></td></tr>
+<tr class="memdesc:a5af192cbe744bae69df5a08c79b7f414"><td class="mdescLeft">&#160;</td><td class="mdescRight">Settings to create the interpolator interface.  <a href="#a5af192cbe744bae69df5a08c79b7f414">More...</a><br /></td></tr>
+<tr class="separator:a5af192cbe744bae69df5a08c79b7f414"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a279e108bba5fbde40e939c54278691f5"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; <a class="el" href="../../dc/d31/classtudat_1_1simulation__setup_1_1_full_thrust_interpolation_interface.html">FullThrustInterpolationInterface</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/de5/classtudat_1_1simulation__setup_1_1_thrust_acceleration_settings.html#a279e108bba5fbde40e939c54278691f5">interpolatorInterface_</a></td></tr>
 <tr class="memdesc:a279e108bba5fbde40e939c54278691f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interface object used when full thrust (direction and magnitude) are defined by a single user-supplied interpolation.  <a href="#a279e108bba5fbde40e939c54278691f5">More...</a><br /></td></tr>
 <tr class="separator:a279e108bba5fbde40e939c54278691f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -157,7 +165,7 @@ Public Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Class for providing acceleration settings for a thrust acceleration model. Settings for the direction and magnitude guidance of the thrust are provided/ </p>
 
-<p>Definition at line <a class="el" href="../../da/d46/acceleration_settings_8h_source.html#l00334">334</a> of file <a class="el" href="../../da/d46/acceleration_settings_8h_source.html">accelerationSettings.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d46/acceleration_settings_8h_source.html#l00343">343</a> of file <a class="el" href="../../da/d46/acceleration_settings_8h_source.html">accelerationSettings.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ade483b5bce614156367b642cf5fe6947"></a>
 <div class="memitem">
@@ -198,11 +206,11 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../da/d46/acceleration_settings_8h_source.html#l00344">344</a> of file <a class="el" href="../../da/d46/acceleration_settings_8h_source.html">accelerationSettings.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d46/acceleration_settings_8h_source.html#l00353">353</a> of file <a class="el" href="../../da/d46/acceleration_settings_8h_source.html">accelerationSettings.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="af43db3815c573db4cad4573f3cf96274"></a>
+<a class="anchor" id="a968109d88f50704bc1015195ebe7f8dd"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -212,8 +220,8 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="memname">tudat::simulation_setup::ThrustAccelerationSettings::ThrustAccelerationSettings </td>
           <td>(</td>
-          <td class="paramtype">const boost::shared_ptr&lt; <a class="el" href="../../dd/d1b/classtudat_1_1interpolators_1_1_one_dimensional_interpolator.html">interpolators::OneDimensionalInterpolator</a>&lt; double, Eigen::Vector3d &gt; &gt;&#160;</td>
-          <td class="paramname"><em>fullThrustInterpolator</em>, </td>
+          <td class="paramtype">const boost::shared_ptr&lt; <a class="el" href="../../dd/d57/classtudat_1_1interpolators_1_1_data_interpolation_settings.html">interpolators::DataInterpolationSettings</a>&lt; double, Eigen::Vector3d &gt; &gt; &amp;&#160;</td>
+          <td class="paramname"><em>dataInterpolationSettings</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -245,9 +253,10 @@ Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Constructor used for defining total thrust vector (in local or inertial frame) from interpolator </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Constructor used for defining total thrust vector (in local or inertial frame) from interpolator using variable specific impulse</p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">fullThrustInterpolator</td><td>Interpolator that returns the thrust as a function of time in frame defined by thrustFrame </td></tr>
+    <tr><td class="paramname">dataInterpolationSettings</td><td>Settings to create the interpolator that returns the thrust as a function of time in frame defined by thrustFrame </td></tr>
     <tr><td class="paramname">specificImpulseFunction</td><td>Function returning the specific impulse as a function of time </td></tr>
     <tr><td class="paramname">thrustFrame</td><td>Identifier of frame in which thrust returned by fullThrustInterpolator is expressed </td></tr>
     <tr><td class="paramname">centralBody</td><td>Central body identifier for thrustFrame (if needed; empty by default). </td></tr>
@@ -255,9 +264,67 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../da/d46/acceleration_settings_8h_source.html#l00361">361</a> of file <a class="el" href="../../da/d46/acceleration_settings_8h_source.html">accelerationSettings.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d46/acceleration_settings_8h_source.html#l00372">372</a> of file <a class="el" href="../../da/d46/acceleration_settings_8h_source.html">accelerationSettings.h</a>.</p>
 
-<p>References <a class="el" href="../../da/d46/acceleration_settings_8h_source.html#l00269">tudat::simulation_setup::FullThrustInterpolationInterface::getThrustDirection()</a>, <a class="el" href="../../da/d46/acceleration_settings_8h_source.html#l00255">tudat::simulation_setup::FullThrustInterpolationInterface::getThrustMagnitude()</a>, and <a class="el" href="../../da/d46/acceleration_settings_8h_source.html#l00286">tudat::simulation_setup::FullThrustInterpolationInterface::resetTime()</a>.</p>
+<p>References <a class="el" href="../../d3/dd7/create_interpolator_8h_source.html#l00379">tudat::interpolators::createOneDimensionalInterpolator()</a>, <a class="el" href="../../da/d46/acceleration_settings_8h_source.html#l00269">tudat::simulation_setup::FullThrustInterpolationInterface::getThrustDirection()</a>, <a class="el" href="../../da/d46/acceleration_settings_8h_source.html#l00255">tudat::simulation_setup::FullThrustInterpolationInterface::getThrustMagnitude()</a>, and <a class="el" href="../../da/d46/acceleration_settings_8h_source.html#l00286">tudat::simulation_setup::FullThrustInterpolationInterface::resetTime()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a382a3dd454fdf7ce70ca397eedd1d066"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">tudat::simulation_setup::ThrustAccelerationSettings::ThrustAccelerationSettings </td>
+          <td>(</td>
+          <td class="paramtype">const boost::shared_ptr&lt; <a class="el" href="../../dd/d57/classtudat_1_1interpolators_1_1_data_interpolation_settings.html">interpolators::DataInterpolationSettings</a>&lt; double, Eigen::Vector3d &gt; &gt; &amp;&#160;</td>
+          <td class="paramname"><em>dataInterpolationSettings</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>constantSpecificImpulse</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d4/da8/namespacetudat_1_1simulation__setup.html#a2b45f4bc721aafa496686077bf729a13">ThrustFrames</a>&#160;</td>
+          <td class="paramname"><em>thrustFrame</em> = <code><a class="el" href="../../d4/da8/namespacetudat_1_1simulation__setup.html#a2b45f4bc721aafa496686077bf729a13af833e2f919823a51d3e1b934100637c1">unspecified_thurst_frame</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string&#160;</td>
+          <td class="paramname"><em>centralBody</em> = <code>&quot;&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Constructor used for defining total thrust vector (in local or inertial frame) from interpolator using constant specific impulse</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dataInterpolationSettings</td><td>Settings to create the interpolator that returns the thrust as a function of time in frame defined by thrustFrame </td></tr>
+    <tr><td class="paramname">constantSpecificImpulse</td><td>Constant specific impulse </td></tr>
+    <tr><td class="paramname">thrustFrame</td><td>Identifier of frame in which thrust returned by fullThrustInterpolator is expressed </td></tr>
+    <tr><td class="paramname">centralBody</td><td>Central body identifier for thrustFrame (if needed; empty by default). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="../../da/d46/acceleration_settings_8h_source.html#l00404">404</a> of file <a class="el" href="../../da/d46/acceleration_settings_8h_source.html">accelerationSettings.h</a>.</p>
 
 </div>
 </div>
@@ -282,7 +349,7 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/d46/acceleration_settings_8h_source.html#l00382">382</a> of file <a class="el" href="../../da/d46/acceleration_settings_8h_source.html">accelerationSettings.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d46/acceleration_settings_8h_source.html#l00420">420</a> of file <a class="el" href="../../da/d46/acceleration_settings_8h_source.html">accelerationSettings.h</a>.</p>
 
 </div>
 </div>
@@ -297,7 +364,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/d46/acceleration_settings_8h_source.html#l00386">386</a> of file <a class="el" href="../../da/d46/acceleration_settings_8h_source.html">accelerationSettings.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d46/acceleration_settings_8h_source.html#l00424">424</a> of file <a class="el" href="../../da/d46/acceleration_settings_8h_source.html">accelerationSettings.h</a>.</p>
 
 </div>
 </div>
@@ -311,7 +378,22 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/d46/acceleration_settings_8h_source.html#l00389">389</a> of file <a class="el" href="../../da/d46/acceleration_settings_8h_source.html">accelerationSettings.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d46/acceleration_settings_8h_source.html#l00427">427</a> of file <a class="el" href="../../da/d46/acceleration_settings_8h_source.html">accelerationSettings.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8e65899e335590c983e024a1ab6808e5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double tudat::simulation_setup::ThrustAccelerationSettings::constantSpecificImpulse_ = <a class="el" href="../../d6/d70/mathematical_constants_8h.html#adf3d84f9d3e27cbaa280e9fd0bac8e5f">TUDAT_NAN</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Constant specific impulse used when determining the direction and magnitude of thrust from an interpolator. NaN if the specific impulse is not constant (i.e. is defined using a boost::function). </p>
+
+<p>Definition at line <a class="el" href="../../da/d46/acceleration_settings_8h_source.html#l00431">431</a> of file <a class="el" href="../../da/d46/acceleration_settings_8h_source.html">accelerationSettings.h</a>.</p>
 
 </div>
 </div>
@@ -326,7 +408,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Identifier of frame in which thrust returned by fullThrustInterpolator is expressed. Unspecifief by default, only used if interpolatorInterface_ is set </p>
 
-<p>Definition at line <a class="el" href="../../da/d46/acceleration_settings_8h_source.html#l00396">396</a> of file <a class="el" href="../../da/d46/acceleration_settings_8h_source.html">accelerationSettings.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d46/acceleration_settings_8h_source.html#l00438">438</a> of file <a class="el" href="../../da/d46/acceleration_settings_8h_source.html">accelerationSettings.h</a>.</p>
 
 </div>
 </div>
@@ -341,7 +423,21 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Central body identifier for thrustFrame. Empty by default, only used if interpolatorInterface_ is set </p>
 
-<p>Definition at line <a class="el" href="../../da/d46/acceleration_settings_8h_source.html#l00403">403</a> of file <a class="el" href="../../da/d46/acceleration_settings_8h_source.html">accelerationSettings.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d46/acceleration_settings_8h_source.html#l00445">445</a> of file <a class="el" href="../../da/d46/acceleration_settings_8h_source.html">accelerationSettings.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5af192cbe744bae69df5a08c79b7f414"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boost::shared_ptr&lt; <a class="el" href="../../dd/d57/classtudat_1_1interpolators_1_1_data_interpolation_settings.html">interpolators::DataInterpolationSettings</a>&lt; double, Eigen::Vector3d &gt; &gt; tudat::simulation_setup::ThrustAccelerationSettings::dataInterpolationSettings_</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../da/d46/acceleration_settings_8h_source.html#l00448">448</a> of file <a class="el" href="../../da/d46/acceleration_settings_8h_source.html">accelerationSettings.h</a>.</p>
 
 </div>
 </div>
@@ -355,7 +451,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/d46/acceleration_settings_8h_source.html#l00406">406</a> of file <a class="el" href="../../da/d46/acceleration_settings_8h_source.html">accelerationSettings.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d46/acceleration_settings_8h_source.html#l00451">451</a> of file <a class="el" href="../../da/d46/acceleration_settings_8h_source.html">accelerationSettings.h</a>.</p>
 
 </div>
 </div>
@@ -365,7 +461,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 27 2017 09:33:03 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 7 2017 11:20:35 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

@@ -130,6 +130,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:adab7eabdb0659b3be137cf9eb44c0145"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d96/classtudat_1_1interpolators_1_1_interpolator_settings.html#adab7eabdb0659b3be137cf9eb44c0145">getUseLongDoubleTimeStep</a> ()</td></tr>
 <tr class="memdesc:adab7eabdb0659b3be137cf9eb44c0145"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to get a boolean denoting whether time step is to be a long double.  <a href="#adab7eabdb0659b3be137cf9eb44c0145">More...</a><br /></td></tr>
 <tr class="separator:adab7eabdb0659b3be137cf9eb44c0145"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a859c8702309670b6d3aac2d58468764c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d96/classtudat_1_1interpolators_1_1_interpolator_settings.html#a859c8702309670b6d3aac2d58468764c">resetUseLongDoubleTimeStep</a> (const bool useLongDoubleTimeStep)</td></tr>
+<tr class="separator:a859c8702309670b6d3aac2d58468764c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -146,7 +148,7 @@ Protected Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base class for providing settings for creating an interpolator using the createInterpolator function. This base class is functional, i.e. may be used directly for interpolator types requiring no additional information. For interpolators that do require more information, a derived class is provided. </p>
 
-<p>Definition at line <a class="el" href="../../d3/dd7/create_interpolator_8h_source.html#l00047">47</a> of file <a class="el" href="../../d3/dd7/create_interpolator_8h_source.html">createInterpolator.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/dd7/create_interpolator_8h_source.html#l00050">50</a> of file <a class="el" href="../../d3/dd7/create_interpolator_8h_source.html">createInterpolator.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a71512d63540bb770739b9be0e85980b4"></a>
 <div class="memitem">
@@ -194,7 +196,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d3/dd7/create_interpolator_8h_source.html#l00059">59</a> of file <a class="el" href="../../d3/dd7/create_interpolator_8h_source.html">createInterpolator.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/dd7/create_interpolator_8h_source.html#l00062">62</a> of file <a class="el" href="../../d3/dd7/create_interpolator_8h_source.html">createInterpolator.h</a>.</p>
 
 </div>
 </div>
@@ -219,7 +221,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d3/dd7/create_interpolator_8h_source.html#l00066">66</a> of file <a class="el" href="../../d3/dd7/create_interpolator_8h_source.html">createInterpolator.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/dd7/create_interpolator_8h_source.html#l00069">69</a> of file <a class="el" href="../../d3/dd7/create_interpolator_8h_source.html">createInterpolator.h</a>.</p>
 
 </div>
 </div>
@@ -246,9 +248,9 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Function to get the selected type of interpolator. </p><dl class="section return"><dt>Returns</dt><dd>Selected type of interpolator. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d3/dd7/create_interpolator_8h_source.html#l00073">73</a> of file <a class="el" href="../../d3/dd7/create_interpolator_8h_source.html">createInterpolator.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/dd7/create_interpolator_8h_source.html#l00076">76</a> of file <a class="el" href="../../d3/dd7/create_interpolator_8h_source.html">createInterpolator.h</a>.</p>
 
-<p>References <a class="el" href="../../d3/dd7/create_interpolator_8h_source.html#l00102">interpolatorType_</a>.</p>
+<p>References <a class="el" href="../../d3/dd7/create_interpolator_8h_source.html#l00110">interpolatorType_</a>.</p>
 
 </div>
 </div>
@@ -274,9 +276,39 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Function to get the selected type of lookup scheme for independent variables. </p><dl class="section return"><dt>Returns</dt><dd>Selected type of lookup scheme for independent variables. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d3/dd7/create_interpolator_8h_source.html#l00083">83</a> of file <a class="el" href="../../d3/dd7/create_interpolator_8h_source.html">createInterpolator.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/dd7/create_interpolator_8h_source.html#l00086">86</a> of file <a class="el" href="../../d3/dd7/create_interpolator_8h_source.html">createInterpolator.h</a>.</p>
 
-<p>References <a class="el" href="../../d3/dd7/create_interpolator_8h_source.html#l00105">selectedLookupScheme_</a>.</p>
+<p>References <a class="el" href="../../d3/dd7/create_interpolator_8h_source.html#l00113">selectedLookupScheme_</a>.</p>
+
+<p>Referenced by <a class="el" href="../../d2/d6c/interpolation_8cpp_source.html#l00060">tudat::interpolators::from_json()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a859c8702309670b6d3aac2d58468764c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tudat::interpolators::InterpolatorSettings::resetUseLongDoubleTimeStep </td>
+          <td>(</td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>useLongDoubleTimeStep</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d3/dd7/create_interpolator_8h_source.html#l00092">92</a> of file <a class="el" href="../../d3/dd7/create_interpolator_8h_source.html">createInterpolator.h</a>.</p>
+
+<p>References <a class="el" href="../../d3/dd7/create_interpolator_8h_source.html#l00116">useLongDoubleTimeStep_</a>.</p>
 
 </div>
 </div>
@@ -302,9 +334,11 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Function to get a boolean denoting whether time step is to be a long double </p><dl class="section return"><dt>Returns</dt><dd>Boolean denoting whether time step is to be a long double </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d3/dd7/create_interpolator_8h_source.html#l00094">94</a> of file <a class="el" href="../../d3/dd7/create_interpolator_8h_source.html">createInterpolator.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/dd7/create_interpolator_8h_source.html#l00102">102</a> of file <a class="el" href="../../d3/dd7/create_interpolator_8h_source.html">createInterpolator.h</a>.</p>
 
-<p>References <a class="el" href="../../d3/dd7/create_interpolator_8h_source.html#l00108">useLongDoubleTimeStep_</a>.</p>
+<p>References <a class="el" href="../../d3/dd7/create_interpolator_8h_source.html#l00116">useLongDoubleTimeStep_</a>.</p>
+
+<p>Referenced by <a class="el" href="../../d2/d6c/interpolation_8cpp_source.html#l00060">tudat::interpolators::from_json()</a>.</p>
 
 </div>
 </div>
@@ -327,9 +361,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d3/dd7/create_interpolator_8h_source.html#l00102">102</a> of file <a class="el" href="../../d3/dd7/create_interpolator_8h_source.html">createInterpolator.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/dd7/create_interpolator_8h_source.html#l00110">110</a> of file <a class="el" href="../../d3/dd7/create_interpolator_8h_source.html">createInterpolator.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d3/dd7/create_interpolator_8h_source.html#l00073">getInterpolatorType()</a>.</p>
+<p>Referenced by <a class="el" href="../../d3/dd7/create_interpolator_8h_source.html#l00076">getInterpolatorType()</a>.</p>
 
 </div>
 </div>
@@ -351,9 +385,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d3/dd7/create_interpolator_8h_source.html#l00105">105</a> of file <a class="el" href="../../d3/dd7/create_interpolator_8h_source.html">createInterpolator.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/dd7/create_interpolator_8h_source.html#l00113">113</a> of file <a class="el" href="../../d3/dd7/create_interpolator_8h_source.html">createInterpolator.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d3/dd7/create_interpolator_8h_source.html#l00083">getSelectedLookupScheme()</a>.</p>
+<p>Referenced by <a class="el" href="../../d3/dd7/create_interpolator_8h_source.html#l00086">getSelectedLookupScheme()</a>.</p>
 
 </div>
 </div>
@@ -375,9 +409,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d3/dd7/create_interpolator_8h_source.html#l00108">108</a> of file <a class="el" href="../../d3/dd7/create_interpolator_8h_source.html">createInterpolator.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/dd7/create_interpolator_8h_source.html#l00116">116</a> of file <a class="el" href="../../d3/dd7/create_interpolator_8h_source.html">createInterpolator.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d3/dd7/create_interpolator_8h_source.html#l00094">getUseLongDoubleTimeStep()</a>.</p>
+<p>Referenced by <a class="el" href="../../d3/dd7/create_interpolator_8h_source.html#l00102">getUseLongDoubleTimeStep()</a>, and <a class="el" href="../../d3/dd7/create_interpolator_8h_source.html#l00092">resetUseLongDoubleTimeStep()</a>.</p>
 
 </div>
 </div>
@@ -387,7 +421,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 27 2017 09:33:00 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 7 2017 11:20:32 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

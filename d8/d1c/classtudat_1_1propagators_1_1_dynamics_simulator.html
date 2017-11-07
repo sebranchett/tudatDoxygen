@@ -123,9 +123,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a67f2c180f0d3e5f6d60e8963a579b4f4"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1c/classtudat_1_1propagators_1_1_dynamics_simulator.html#a67f2c180f0d3e5f6d60e8963a579b4f4">~DynamicsSimulator</a> ()</td></tr>
 <tr class="memdesc:a67f2c180f0d3e5f6d60e8963a579b4f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor.  <a href="#a67f2c180f0d3e5f6d60e8963a579b4f4">More...</a><br /></td></tr>
 <tr class="separator:a67f2c180f0d3e5f6d60e8963a579b4f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63503f4381713e625cbb9ca3a30d240c"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; std::map&lt; TimeType, double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1c/classtudat_1_1propagators_1_1_dynamics_simulator.html#a63503f4381713e625cbb9ca3a30d240c">getCummulativeComputationTimeHistoryBase</a> ()=0</td></tr>
+<tr class="separator:a63503f4381713e625cbb9ca3a30d240c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd7120e9e70913ada1b88f602e31362b"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; std::map&lt; TimeType, Eigen::VectorXd &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1c/classtudat_1_1propagators_1_1_dynamics_simulator.html#afd7120e9e70913ada1b88f602e31362b">getDependentVariableNumericalSolutionBase</a> ()=0</td></tr>
+<tr class="memdesc:afd7120e9e70913ada1b88f602e31362b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pure virtual function that returns the numerical result of the dependent variable history.  <a href="#afd7120e9e70913ada1b88f602e31362b">More...</a><br /></td></tr>
 <tr class="separator:afd7120e9e70913ada1b88f602e31362b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82ee79576f56a01def07ec45c79feba5"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; std::map&lt; TimeType, Eigen::Matrix&lt; StateScalarType, Eigen::Dynamic, 1 &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1c/classtudat_1_1propagators_1_1_dynamics_simulator.html#a82ee79576f56a01def07ec45c79feba5">getEquationsOfMotionNumericalSolutionBase</a> ()=0</td></tr>
+<tr class="memdesc:a82ee79576f56a01def07ec45c79feba5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pure virtual function that returns the numerical result of the state propagation.  <a href="#a82ee79576f56a01def07ec45c79feba5">More...</a><br /></td></tr>
 <tr class="separator:a82ee79576f56a01def07ec45c79feba5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7787475f86f5bfd27382ac7da2696b6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/da8/namespacetudat_1_1simulation__setup.html#a4a7938c5b0b78593806673957cc169c4">simulation_setup::NamedBodyMap</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1c/classtudat_1_1propagators_1_1_dynamics_simulator.html#ad7787475f86f5bfd27382ac7da2696b6">getNamedBodyMap</a> ()</td></tr>
 <tr class="memdesc:ad7787475f86f5bfd27382ac7da2696b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to get the map of named bodies involved in simulation.  <a href="#ad7787475f86f5bfd27382ac7da2696b6">More...</a><br /></td></tr>
@@ -133,6 +137,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae88b5eb4a3e70b135a99dd790997062b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1c/classtudat_1_1propagators_1_1_dynamics_simulator.html#ae88b5eb4a3e70b135a99dd790997062b">integrateEquationsOfMotion</a> (const Eigen::Matrix&lt; StateScalarType, Eigen::Dynamic, Eigen::Dynamic &gt; &amp;initialGlobalStates)=0</td></tr>
 <tr class="memdesc:ae88b5eb4a3e70b135a99dd790997062b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function numerically (re-)integrates the equations of motion.  <a href="#ae88b5eb4a3e70b135a99dd790997062b">More...</a><br /></td></tr>
 <tr class="separator:ae88b5eb4a3e70b135a99dd790997062b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03f978db01fc829f7bf1ace216078097"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1c/classtudat_1_1propagators_1_1_dynamics_simulator.html#a03f978db01fc829f7bf1ace216078097">integrationCompletedSuccessfully</a> () const =0</td></tr>
+<tr class="memdesc:a03f978db01fc829f7bf1ace216078097"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get whether the integration was completed successfully.  <a href="#a03f978db01fc829f7bf1ace216078097">More...</a><br /></td></tr>
+<tr class="separator:a03f978db01fc829f7bf1ace216078097"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ad329850c0cff52cdf83c80724afdf4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1c/classtudat_1_1propagators_1_1_dynamics_simulator.html#a6ad329850c0cff52cdf83c80724afdf4">resetNamedBodyMap</a> (const <a class="el" href="../../d4/da8/namespacetudat_1_1simulation__setup.html#a4a7938c5b0b78593806673957cc169c4">simulation_setup::NamedBodyMap</a> &amp;bodyMap)</td></tr>
+<tr class="memdesc:a6ad329850c0cff52cdf83c80724afdf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to reset the named body map.  <a href="#a6ad329850c0cff52cdf83c80724afdf4">More...</a><br /></td></tr>
+<tr class="separator:a6ad329850c0cff52cdf83c80724afdf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a032e5270053c1f4b7442c7e9fcab746b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1c/classtudat_1_1propagators_1_1_dynamics_simulator.html#a032e5270053c1f4b7442c7e9fcab746b">resetSetIntegratedResult</a> (const bool setIntegratedResult)</td></tr>
 <tr class="separator:a032e5270053c1f4b7442c7e9fcab746b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -159,7 +169,7 @@ class tudat::propagators::DynamicsSimulator&lt; StateScalarType, TimeType &gt;</
 
 <p>Base class for performing full numerical integration of a dynamical system. Governing equations are set once, but can be re-integrated for different initial conditions using the same instance of the class. Derived classes define the specific kind of integration that is performed (single-arc/multi-arc/etc.) </p>
 
-<p>Definition at line <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l00174">174</a> of file <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html">dynamicsSimulator.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l00181">181</a> of file <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html">dynamicsSimulator.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a45a163ded9eb00ed7dee940fed701238"></a>
 <div class="memitem">
@@ -209,7 +219,7 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l00187">187</a> of file <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html">dynamicsSimulator.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l00194">194</a> of file <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html">dynamicsSimulator.h</a>.</p>
 
 </div>
 </div>
@@ -236,9 +246,9 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l00196">196</a> of file <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html">dynamicsSimulator.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l00203">203</a> of file <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html">dynamicsSimulator.h</a>.</p>
 
-<p>References <a class="el" href="../../d8/d1c/classtudat_1_1propagators_1_1_dynamics_simulator.html#afd7120e9e70913ada1b88f602e31362b">tudat::propagators::DynamicsSimulator&lt; StateScalarType, TimeType &gt;::getDependentVariableNumericalSolutionBase()</a>, <a class="el" href="../../d8/d1c/classtudat_1_1propagators_1_1_dynamics_simulator.html#a82ee79576f56a01def07ec45c79feba5">tudat::propagators::DynamicsSimulator&lt; StateScalarType, TimeType &gt;::getEquationsOfMotionNumericalSolutionBase()</a>, and <a class="el" href="../../d8/d1c/classtudat_1_1propagators_1_1_dynamics_simulator.html#ae88b5eb4a3e70b135a99dd790997062b">tudat::propagators::DynamicsSimulator&lt; StateScalarType, TimeType &gt;::integrateEquationsOfMotion()</a>.</p>
+<p>References <a class="el" href="../../d8/d1c/classtudat_1_1propagators_1_1_dynamics_simulator.html#a63503f4381713e625cbb9ca3a30d240c">tudat::propagators::DynamicsSimulator&lt; StateScalarType, TimeType &gt;::getCummulativeComputationTimeHistoryBase()</a>, <a class="el" href="../../d8/d1c/classtudat_1_1propagators_1_1_dynamics_simulator.html#afd7120e9e70913ada1b88f602e31362b">tudat::propagators::DynamicsSimulator&lt; StateScalarType, TimeType &gt;::getDependentVariableNumericalSolutionBase()</a>, <a class="el" href="../../d8/d1c/classtudat_1_1propagators_1_1_dynamics_simulator.html#a82ee79576f56a01def07ec45c79feba5">tudat::propagators::DynamicsSimulator&lt; StateScalarType, TimeType &gt;::getEquationsOfMotionNumericalSolutionBase()</a>, <a class="el" href="../../d8/d1c/classtudat_1_1propagators_1_1_dynamics_simulator.html#ae88b5eb4a3e70b135a99dd790997062b">tudat::propagators::DynamicsSimulator&lt; StateScalarType, TimeType &gt;::integrateEquationsOfMotion()</a>, and <a class="el" href="../../d8/d1c/classtudat_1_1propagators_1_1_dynamics_simulator.html#a03f978db01fc829f7bf1ace216078097">tudat::propagators::DynamicsSimulator&lt; StateScalarType, TimeType &gt;::integrationCompletedSuccessfully()</a>.</p>
 
 </div>
 </div>
@@ -276,7 +286,37 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 
 <p>Implemented in <a class="el" href="../../d1/dc5/classtudat_1_1propagators_1_1_multi_arc_dynamics_simulator.html#a6af98bd721fa54deb5c81451602340e0">tudat::propagators::MultiArcDynamicsSimulator&lt; StateScalarType, TimeType &gt;</a>, and <a class="el" href="../../de/d3f/classtudat_1_1propagators_1_1_single_arc_dynamics_simulator.html#ab08dedc11f3ca6263b29befcde9e69dc">tudat::propagators::SingleArcDynamicsSimulator&lt; StateScalarType, TimeType &gt;</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l00895">tudat::propagators::MultiArcDynamicsSimulator&lt; StateScalarType, TimeType &gt;::integrateEquationsOfMotion()</a>, <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l00770">tudat::propagators::MultiArcDynamicsSimulator&lt; StateScalarType, TimeType &gt;::MultiArcDynamicsSimulator()</a>, <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l00282">tudat::propagators::SingleArcDynamicsSimulator&lt; StateScalarType, TimeType &gt;::SingleArcDynamicsSimulator()</a>, and <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l00196">tudat::propagators::DynamicsSimulator&lt; StateScalarType, TimeType &gt;::~DynamicsSimulator()</a>.</p>
+<p>Referenced by <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l01007">tudat::propagators::MultiArcDynamicsSimulator&lt; StateScalarType, TimeType &gt;::integrateEquationsOfMotion()</a>, <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l00880">tudat::propagators::MultiArcDynamicsSimulator&lt; StateScalarType, TimeType &gt;::MultiArcDynamicsSimulator()</a>, <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l00323">tudat::propagators::SingleArcDynamicsSimulator&lt; StateScalarType, TimeType &gt;::SingleArcDynamicsSimulator()</a>, and <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l00203">tudat::propagators::DynamicsSimulator&lt; StateScalarType, TimeType &gt;::~DynamicsSimulator()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a03f978db01fc829f7bf1ace216078097"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool <a class="el" href="../../d8/d1c/classtudat_1_1propagators_1_1_dynamics_simulator.html">tudat::propagators::DynamicsSimulator</a>&lt; StateScalarType, TimeType &gt;::integrationCompletedSuccessfully </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get whether the integration was completed successfully. </p><dl class="section return"><dt>Returns</dt><dd>Whether the integration was completed successfully by reaching the termination condition. </dd></dl>
+
+<p>Implemented in <a class="el" href="../../d1/dc5/classtudat_1_1propagators_1_1_multi_arc_dynamics_simulator.html#a36b643b87b763814aff48007e519cee7">tudat::propagators::MultiArcDynamicsSimulator&lt; StateScalarType, TimeType &gt;</a>, and <a class="el" href="../../de/d3f/classtudat_1_1propagators_1_1_single_arc_dynamics_simulator.html#af544b685eb7b0722188352807ac20b28">tudat::propagators::SingleArcDynamicsSimulator&lt; StateScalarType, TimeType &gt;</a>.</p>
+
+<p>Referenced by <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l00203">tudat::propagators::DynamicsSimulator&lt; StateScalarType, TimeType &gt;::~DynamicsSimulator()</a>.</p>
 
 </div>
 </div>
@@ -302,10 +342,11 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Pure virtual function that returns the numerical result of the state propagation. </p><dl class="section return"><dt>Returns</dt><dd>Numerical result of the state propagation. See derived class documentation for precise contents structure. </dd></dl>
 
 <p>Implemented in <a class="el" href="../../d1/dc5/classtudat_1_1propagators_1_1_multi_arc_dynamics_simulator.html#a11a7aaf1c00bd38a3a39fae2eec339dc">tudat::propagators::MultiArcDynamicsSimulator&lt; StateScalarType, TimeType &gt;</a>, and <a class="el" href="../../de/d3f/classtudat_1_1propagators_1_1_single_arc_dynamics_simulator.html#a6a087c4ec70779b901388558f1ad8b0e">tudat::propagators::SingleArcDynamicsSimulator&lt; StateScalarType, TimeType &gt;</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l00196">tudat::propagators::DynamicsSimulator&lt; StateScalarType, TimeType &gt;::~DynamicsSimulator()</a>.</p>
+<p>Referenced by <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l00203">tudat::propagators::DynamicsSimulator&lt; StateScalarType, TimeType &gt;::~DynamicsSimulator()</a>.</p>
 
 </div>
 </div>
@@ -331,10 +372,40 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Pure virtual function that returns the numerical result of the dependent variable history </p><dl class="section return"><dt>Returns</dt><dd>Numerical result of the dependent variable history. See derived class documentation for precise contents structure. </dd></dl>
 
 <p>Implemented in <a class="el" href="../../d1/dc5/classtudat_1_1propagators_1_1_multi_arc_dynamics_simulator.html#a359b7693e69f2ea2f2bb9928a61cb631">tudat::propagators::MultiArcDynamicsSimulator&lt; StateScalarType, TimeType &gt;</a>, and <a class="el" href="../../de/d3f/classtudat_1_1propagators_1_1_single_arc_dynamics_simulator.html#a1f10218d1d259e7438b8a54026219da1">tudat::propagators::SingleArcDynamicsSimulator&lt; StateScalarType, TimeType &gt;</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l00196">tudat::propagators::DynamicsSimulator&lt; StateScalarType, TimeType &gt;::~DynamicsSimulator()</a>.</p>
+<p>Referenced by <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l00203">tudat::propagators::DynamicsSimulator&lt; StateScalarType, TimeType &gt;::~DynamicsSimulator()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a63503f4381713e625cbb9ca3a30d240c"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::vector&lt; std::map&lt; TimeType, double &gt; &gt; <a class="el" href="../../d8/d1c/classtudat_1_1propagators_1_1_dynamics_simulator.html">tudat::propagators::DynamicsSimulator</a>&lt; StateScalarType, TimeType &gt;::getCummulativeComputationTimeHistoryBase </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="../../d1/dc5/classtudat_1_1propagators_1_1_multi_arc_dynamics_simulator.html#a634a4093609a69833fcc1e947604203d">tudat::propagators::MultiArcDynamicsSimulator&lt; StateScalarType, TimeType &gt;</a>, and <a class="el" href="../../de/d3f/classtudat_1_1propagators_1_1_single_arc_dynamics_simulator.html#a2d841e38d5ab1621857f1e1bc55b0826">tudat::propagators::SingleArcDynamicsSimulator&lt; StateScalarType, TimeType &gt;</a>.</p>
+
+<p>Referenced by <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l00203">tudat::propagators::DynamicsSimulator&lt; StateScalarType, TimeType &gt;::~DynamicsSimulator()</a>.</p>
 
 </div>
 </div>
@@ -362,9 +433,45 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 </div><div class="memdoc">
 <p>Function to get the map of named bodies involved in simulation. </p><dl class="section return"><dt>Returns</dt><dd>Map of named bodies involved in simulation. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l00219">219</a> of file <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html">dynamicsSimulator.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l00248">248</a> of file <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html">dynamicsSimulator.h</a>.</p>
 
-<p>References <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l00241">tudat::propagators::DynamicsSimulator&lt; StateScalarType, TimeType &gt;::bodyMap_</a>.</p>
+<p>References <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l00280">tudat::propagators::DynamicsSimulator&lt; StateScalarType, TimeType &gt;::bodyMap_</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6ad329850c0cff52cdf83c80724afdf4"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../d8/d1c/classtudat_1_1propagators_1_1_dynamics_simulator.html">tudat::propagators::DynamicsSimulator</a>&lt; StateScalarType, TimeType &gt;::resetNamedBodyMap </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d4/da8/namespacetudat_1_1simulation__setup.html#a4a7938c5b0b78593806673957cc169c4">simulation_setup::NamedBodyMap</a> &amp;&#160;</td>
+          <td class="paramname"><em>bodyMap</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Function to reset the named body map. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bodyMap</td><td>The new named body map. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l00258">258</a> of file <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html">dynamicsSimulator.h</a>.</p>
+
+<p>References <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l00280">tudat::propagators::DynamicsSimulator&lt; StateScalarType, TimeType &gt;::bodyMap_</a>.</p>
 
 </div>
 </div>
@@ -392,9 +499,9 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l00224">224</a> of file <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html">dynamicsSimulator.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l00263">263</a> of file <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html">dynamicsSimulator.h</a>.</p>
 
-<p>References <a class="el" href="../../d8/d1c/classtudat_1_1propagators_1_1_dynamics_simulator.html#a95e587944d4cef24d68b4b72a3c0fee3">tudat::propagators::DynamicsSimulator&lt; StateScalarType, TimeType &gt;::processNumericalEquationsOfMotionSolution()</a>, and <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l00248">tudat::propagators::DynamicsSimulator&lt; StateScalarType, TimeType &gt;::setIntegratedResult_</a>.</p>
+<p>References <a class="el" href="../../d8/d1c/classtudat_1_1propagators_1_1_dynamics_simulator.html#a95e587944d4cef24d68b4b72a3c0fee3">tudat::propagators::DynamicsSimulator&lt; StateScalarType, TimeType &gt;::processNumericalEquationsOfMotionSolution()</a>, and <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l00287">tudat::propagators::DynamicsSimulator&lt; StateScalarType, TimeType &gt;::setIntegratedResult_</a>.</p>
 
 </div>
 </div>
@@ -424,7 +531,7 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 
 <p>Implemented in <a class="el" href="../../d1/dc5/classtudat_1_1propagators_1_1_multi_arc_dynamics_simulator.html#a287886fe610cc3521d5e84d7b9b70b9e">tudat::propagators::MultiArcDynamicsSimulator&lt; StateScalarType, TimeType &gt;</a>, and <a class="el" href="../../de/d3f/classtudat_1_1propagators_1_1_single_arc_dynamics_simulator.html#a351d3d697039d983a7b6b24b85122f32">tudat::propagators::SingleArcDynamicsSimulator&lt; StateScalarType, TimeType &gt;</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l00372">tudat::propagators::SingleArcDynamicsSimulator&lt; StateScalarType, TimeType &gt;::integrateEquationsOfMotion()</a>, <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l00925">tudat::propagators::MultiArcDynamicsSimulator&lt; StateScalarType, TimeType &gt;::integrateEquationsOfMotion()</a>, <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l00442">tudat::propagators::SingleArcDynamicsSimulator&lt; StateScalarType, TimeType &gt;::manuallySetAndProcessRawNumericalEquationsOfMotionSolution()</a>, <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l01023">tudat::propagators::MultiArcDynamicsSimulator&lt; StateScalarType, TimeType &gt;::manuallySetAndProcessRawNumericalEquationsOfMotionSolution()</a>, and <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l00224">tudat::propagators::DynamicsSimulator&lt; StateScalarType, TimeType &gt;::resetSetIntegratedResult()</a>.</p>
+<p>Referenced by <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l00415">tudat::propagators::SingleArcDynamicsSimulator&lt; StateScalarType, TimeType &gt;::integrateEquationsOfMotion()</a>, <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l01037">tudat::propagators::MultiArcDynamicsSimulator&lt; StateScalarType, TimeType &gt;::integrateEquationsOfMotion()</a>, <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l00513">tudat::propagators::SingleArcDynamicsSimulator&lt; StateScalarType, TimeType &gt;::manuallySetAndProcessRawNumericalEquationsOfMotionSolution()</a>, <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l01172">tudat::propagators::MultiArcDynamicsSimulator&lt; StateScalarType, TimeType &gt;::manuallySetAndProcessRawNumericalEquationsOfMotionSolution()</a>, and <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l00263">tudat::propagators::DynamicsSimulator&lt; StateScalarType, TimeType &gt;::resetSetIntegratedResult()</a>.</p>
 
 </div>
 </div>
@@ -449,9 +556,9 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l00241">241</a> of file <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html">dynamicsSimulator.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l00280">280</a> of file <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html">dynamicsSimulator.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l00219">tudat::propagators::DynamicsSimulator&lt; StateScalarType, TimeType &gt;::getNamedBodyMap()</a>, <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l00570">tudat::propagators::SingleArcDynamicsSimulator&lt; StateScalarType, TimeType &gt;::processNumericalEquationsOfMotionSolution()</a>, and <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l00282">tudat::propagators::SingleArcDynamicsSimulator&lt; StateScalarType, TimeType &gt;::SingleArcDynamicsSimulator()</a>.</p>
+<p>Referenced by <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l00248">tudat::propagators::DynamicsSimulator&lt; StateScalarType, TimeType &gt;::getNamedBodyMap()</a>, <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l00674">tudat::propagators::SingleArcDynamicsSimulator&lt; StateScalarType, TimeType &gt;::processNumericalEquationsOfMotionSolution()</a>, <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l00258">tudat::propagators::DynamicsSimulator&lt; StateScalarType, TimeType &gt;::resetNamedBodyMap()</a>, and <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l00323">tudat::propagators::SingleArcDynamicsSimulator&lt; StateScalarType, TimeType &gt;::SingleArcDynamicsSimulator()</a>.</p>
 
 </div>
 </div>
@@ -476,9 +583,9 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 </div><div class="memdoc">
 <p>Boolean to determine whether to clear the raw numerical solution member variables after propagation and resetting ephemerides. </p>
 
-<p>Definition at line <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l00245">245</a> of file <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html">dynamicsSimulator.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l00284">284</a> of file <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html">dynamicsSimulator.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l00570">tudat::propagators::SingleArcDynamicsSimulator&lt; StateScalarType, TimeType &gt;::processNumericalEquationsOfMotionSolution()</a>, and <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l01096">tudat::propagators::MultiArcDynamicsSimulator&lt; StateScalarType, TimeType &gt;::processNumericalEquationsOfMotionSolution()</a>.</p>
+<p>Referenced by <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l00674">tudat::propagators::SingleArcDynamicsSimulator&lt; StateScalarType, TimeType &gt;::processNumericalEquationsOfMotionSolution()</a>, and <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l01263">tudat::propagators::MultiArcDynamicsSimulator&lt; StateScalarType, TimeType &gt;::processNumericalEquationsOfMotionSolution()</a>.</p>
 
 </div>
 </div>
@@ -502,9 +609,9 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l00248">248</a> of file <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html">dynamicsSimulator.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l00287">287</a> of file <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html">dynamicsSimulator.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l00372">tudat::propagators::SingleArcDynamicsSimulator&lt; StateScalarType, TimeType &gt;::integrateEquationsOfMotion()</a>, <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l00925">tudat::propagators::MultiArcDynamicsSimulator&lt; StateScalarType, TimeType &gt;::integrateEquationsOfMotion()</a>, <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l00224">tudat::propagators::DynamicsSimulator&lt; StateScalarType, TimeType &gt;::resetSetIntegratedResult()</a>, and <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l00282">tudat::propagators::SingleArcDynamicsSimulator&lt; StateScalarType, TimeType &gt;::SingleArcDynamicsSimulator()</a>.</p>
+<p>Referenced by <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l00415">tudat::propagators::SingleArcDynamicsSimulator&lt; StateScalarType, TimeType &gt;::integrateEquationsOfMotion()</a>, <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l01037">tudat::propagators::MultiArcDynamicsSimulator&lt; StateScalarType, TimeType &gt;::integrateEquationsOfMotion()</a>, <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l00263">tudat::propagators::DynamicsSimulator&lt; StateScalarType, TimeType &gt;::resetSetIntegratedResult()</a>, and <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l00323">tudat::propagators::SingleArcDynamicsSimulator&lt; StateScalarType, TimeType &gt;::SingleArcDynamicsSimulator()</a>.</p>
 
 </div>
 </div>
@@ -514,7 +621,7 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 27 2017 09:33:02 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 7 2017 11:20:34 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

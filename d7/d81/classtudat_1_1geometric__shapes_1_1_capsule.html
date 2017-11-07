@@ -222,7 +222,7 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Class that defines a <a class="el" href="../../d7/d81/classtudat_1_1geometric__shapes_1_1_capsule.html" title="Capsule class. ">Capsule</a> shape, like that of the Apollo or ARD (Advanced Re-entry Demonstrator) capsule. The class derives from the <a class="el" href="../../db/de2/classtudat_1_1geometric__shapes_1_1_composite_surface_geometry.html" title="Composite surface geometry class. ">CompositeSurfaceGeometry</a> class, its constituent surface geometries are a <a class="el" href="../../d1/d70/classtudat_1_1geometric__shapes_1_1_sphere_segment.html" title="Sphere segment class. ">SphereSegment</a> object for the nose region, a <a class="el" href="../../db/d6f/classtudat_1_1geometric__shapes_1_1_conical_frustum.html" title="ConicalFrustum class. ">ConicalFrustum</a> object for the afterbody, a <a class="el" href="../../d1/d70/classtudat_1_1geometric__shapes_1_1_sphere_segment.html" title="Sphere segment class. ">SphereSegment</a> object for the rear cap, and a <a class="el" href="../../d5/dfa/classtudat_1_1geometric__shapes_1_1_torus.html" title="Torus class. ">Torus</a> object for the connection between the nose and torus parts. The setCapsule( ) function needs to be called after each of the parameters has been set to initialize the capsule. </p>
 
-<p>Definition at line <a class="el" href="../../db/d13/capsule_8h_source.html#l00043">43</a> of file <a class="el" href="../../db/d13/capsule_8h_source.html">capsule.h</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d13/capsule_8h_source.html#l00041">41</a> of file <a class="el" href="../../db/d13/capsule_8h_source.html">capsule.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a529cff791e66aac5f64aa70f3b186f38"></a>
 <div class="memitem">
@@ -278,7 +278,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d4/d0f/capsule_8cpp_source.html#l00039">39</a> of file <a class="el" href="../../d4/d0f/capsule_8cpp_source.html">capsule.cpp</a>.</p>
 
-<p>References <a class="el" href="../../db/d13/capsule_8h_source.html#l00115">middleRadius_</a>, <a class="el" href="../../db/d13/capsule_8h_source.html#l00121">noseRadius_</a>, <a class="el" href="../../de/dd1/composite_surface_geometry_8h_source.html#l00188">tudat::geometric_shapes::CompositeSurfaceGeometry::numberOfSingleSurfaceGeometries_</a>, <a class="el" href="../../d6/d70/mathematical_constants_8h_source.html#l00064">tudat::mathematical_constants::PI</a>, <a class="el" href="../../db/d13/capsule_8h_source.html#l00139">rearAngle_</a>, <a class="el" href="../../db/d13/capsule_8h_source.html#l00127">rearLength_</a>, <a class="el" href="../../de/dd1/composite_surface_geometry_8h_source.html#l00177">tudat::geometric_shapes::CompositeSurfaceGeometry::setNumberOfCompositeSurfaceGeometries()</a>, <a class="el" href="../../de/dd1/composite_surface_geometry_8h_source.html#l00165">tudat::geometric_shapes::CompositeSurfaceGeometry::setNumberOfSingleSurfaceGeometries()</a>, <a class="el" href="../../de/dd1/composite_surface_geometry_8h_source.html#l00139">tudat::geometric_shapes::CompositeSurfaceGeometry::setSingleSurfaceGeometry()</a>, <a class="el" href="../../db/d13/capsule_8h_source.html#l00133">sideRadius_</a>, and <a class="el" href="../../de/dd1/composite_surface_geometry_8h_source.html#l00200">tudat::geometric_shapes::CompositeSurfaceGeometry::singleSurfaceGeometryList_</a>.</p>
+<p>References <a class="el" href="../../db/d13/capsule_8h_source.html#l00113">middleRadius_</a>, <a class="el" href="../../db/d13/capsule_8h_source.html#l00119">noseRadius_</a>, <a class="el" href="../../de/dd1/composite_surface_geometry_8h_source.html#l00188">tudat::geometric_shapes::CompositeSurfaceGeometry::numberOfSingleSurfaceGeometries_</a>, <a class="el" href="../../d6/d70/mathematical_constants_8h_source.html#l00064">tudat::mathematical_constants::PI</a>, <a class="el" href="../../db/d13/capsule_8h_source.html#l00137">rearAngle_</a>, <a class="el" href="../../db/d13/capsule_8h_source.html#l00125">rearLength_</a>, <a class="el" href="../../de/dd1/composite_surface_geometry_8h_source.html#l00177">tudat::geometric_shapes::CompositeSurfaceGeometry::setNumberOfCompositeSurfaceGeometries()</a>, <a class="el" href="../../de/dd1/composite_surface_geometry_8h_source.html#l00165">tudat::geometric_shapes::CompositeSurfaceGeometry::setNumberOfSingleSurfaceGeometries()</a>, <a class="el" href="../../de/dd1/composite_surface_geometry_8h_source.html#l00139">tudat::geometric_shapes::CompositeSurfaceGeometry::setSingleSurfaceGeometry()</a>, <a class="el" href="../../db/d13/capsule_8h_source.html#l00131">sideRadius_</a>, and <a class="el" href="../../de/dd1/composite_surface_geometry_8h_source.html#l00200">tudat::geometric_shapes::CompositeSurfaceGeometry::singleSurfaceGeometryList_</a>.</p>
 
 </div>
 </div>
@@ -305,9 +305,9 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns the nose radius of the capsule. </p><dl class="section return"><dt>Returns</dt><dd>Nose radius. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../db/d13/capsule_8h_source.html#l00067">67</a> of file <a class="el" href="../../db/d13/capsule_8h_source.html">capsule.h</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d13/capsule_8h_source.html#l00065">65</a> of file <a class="el" href="../../db/d13/capsule_8h_source.html">capsule.h</a>.</p>
 
-<p>References <a class="el" href="../../db/d13/capsule_8h_source.html#l00121">noseRadius_</a>.</p>
+<p>References <a class="el" href="../../db/d13/capsule_8h_source.html#l00119">noseRadius_</a>.</p>
 
 <p>Referenced by <a class="el" href="../../d4/d0f/capsule_8cpp_source.html#l00142">tudat::geometric_shapes::operator&lt;&lt;()</a>.</p>
 
@@ -335,9 +335,9 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns the middle radius of the capsule. </p><dl class="section return"><dt>Returns</dt><dd>Middle radius. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../db/d13/capsule_8h_source.html#l00074">74</a> of file <a class="el" href="../../db/d13/capsule_8h_source.html">capsule.h</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d13/capsule_8h_source.html#l00072">72</a> of file <a class="el" href="../../db/d13/capsule_8h_source.html">capsule.h</a>.</p>
 
-<p>References <a class="el" href="../../db/d13/capsule_8h_source.html#l00115">middleRadius_</a>.</p>
+<p>References <a class="el" href="../../db/d13/capsule_8h_source.html#l00113">middleRadius_</a>.</p>
 
 <p>Referenced by <a class="el" href="../../d4/d0f/capsule_8cpp_source.html#l00142">tudat::geometric_shapes::operator&lt;&lt;()</a>.</p>
 
@@ -365,9 +365,9 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns the rear length of the capsule. </p><dl class="section return"><dt>Returns</dt><dd>Rear length. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../db/d13/capsule_8h_source.html#l00081">81</a> of file <a class="el" href="../../db/d13/capsule_8h_source.html">capsule.h</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d13/capsule_8h_source.html#l00079">79</a> of file <a class="el" href="../../db/d13/capsule_8h_source.html">capsule.h</a>.</p>
 
-<p>References <a class="el" href="../../db/d13/capsule_8h_source.html#l00127">rearLength_</a>.</p>
+<p>References <a class="el" href="../../db/d13/capsule_8h_source.html#l00125">rearLength_</a>.</p>
 
 <p>Referenced by <a class="el" href="../../d4/d0f/capsule_8cpp_source.html#l00142">tudat::geometric_shapes::operator&lt;&lt;()</a>.</p>
 
@@ -395,9 +395,9 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns the rear angle. </p><dl class="section return"><dt>Returns</dt><dd>Rear angle. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../db/d13/capsule_8h_source.html#l00088">88</a> of file <a class="el" href="../../db/d13/capsule_8h_source.html">capsule.h</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d13/capsule_8h_source.html#l00086">86</a> of file <a class="el" href="../../db/d13/capsule_8h_source.html">capsule.h</a>.</p>
 
-<p>References <a class="el" href="../../db/d13/capsule_8h_source.html#l00139">rearAngle_</a>.</p>
+<p>References <a class="el" href="../../db/d13/capsule_8h_source.html#l00137">rearAngle_</a>.</p>
 
 <p>Referenced by <a class="el" href="../../d4/d0f/capsule_8cpp_source.html#l00142">tudat::geometric_shapes::operator&lt;&lt;()</a>.</p>
 
@@ -425,9 +425,9 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns the side radius. </p><dl class="section return"><dt>Returns</dt><dd>side radius. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../db/d13/capsule_8h_source.html#l00095">95</a> of file <a class="el" href="../../db/d13/capsule_8h_source.html">capsule.h</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d13/capsule_8h_source.html#l00093">93</a> of file <a class="el" href="../../db/d13/capsule_8h_source.html">capsule.h</a>.</p>
 
-<p>References <a class="el" href="../../d4/d0f/capsule_8cpp_source.html#l00142">operator&lt;&lt;</a>, and <a class="el" href="../../db/d13/capsule_8h_source.html#l00133">sideRadius_</a>.</p>
+<p>References <a class="el" href="../../d4/d0f/capsule_8cpp_source.html#l00142">operator&lt;&lt;</a>, and <a class="el" href="../../db/d13/capsule_8h_source.html#l00131">sideRadius_</a>.</p>
 
 <p>Referenced by <a class="el" href="../../d4/d0f/capsule_8cpp_source.html#l00142">tudat::geometric_shapes::operator&lt;&lt;()</a>.</p>
 
@@ -476,7 +476,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d4/d0f/capsule_8cpp_source.html#l00142">142</a> of file <a class="el" href="../../d4/d0f/capsule_8cpp_source.html">capsule.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="../../db/d13/capsule_8h_source.html#l00095">getSideRadius()</a>.</p>
+<p>Referenced by <a class="el" href="../../db/d13/capsule_8h_source.html#l00093">getSideRadius()</a>.</p>
 
 </div>
 </div>
@@ -500,9 +500,9 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Middle radius. </p>
 
-<p>Definition at line <a class="el" href="../../db/d13/capsule_8h_source.html#l00115">115</a> of file <a class="el" href="../../db/d13/capsule_8h_source.html">capsule.h</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d13/capsule_8h_source.html#l00113">113</a> of file <a class="el" href="../../db/d13/capsule_8h_source.html">capsule.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d4/d0f/capsule_8cpp_source.html#l00039">Capsule()</a>, and <a class="el" href="../../db/d13/capsule_8h_source.html#l00074">getMiddleRadius()</a>.</p>
+<p>Referenced by <a class="el" href="../../d4/d0f/capsule_8cpp_source.html#l00039">Capsule()</a>, and <a class="el" href="../../db/d13/capsule_8h_source.html#l00072">getMiddleRadius()</a>.</p>
 
 </div>
 </div>
@@ -525,9 +525,9 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Nose radius. </p>
 
-<p>Definition at line <a class="el" href="../../db/d13/capsule_8h_source.html#l00121">121</a> of file <a class="el" href="../../db/d13/capsule_8h_source.html">capsule.h</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d13/capsule_8h_source.html#l00119">119</a> of file <a class="el" href="../../db/d13/capsule_8h_source.html">capsule.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d4/d0f/capsule_8cpp_source.html#l00039">Capsule()</a>, and <a class="el" href="../../db/d13/capsule_8h_source.html#l00067">getNoseRadius()</a>.</p>
+<p>Referenced by <a class="el" href="../../d4/d0f/capsule_8cpp_source.html#l00039">Capsule()</a>, and <a class="el" href="../../db/d13/capsule_8h_source.html#l00065">getNoseRadius()</a>.</p>
 
 </div>
 </div>
@@ -550,9 +550,9 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Rear length. </p>
 
-<p>Definition at line <a class="el" href="../../db/d13/capsule_8h_source.html#l00127">127</a> of file <a class="el" href="../../db/d13/capsule_8h_source.html">capsule.h</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d13/capsule_8h_source.html#l00125">125</a> of file <a class="el" href="../../db/d13/capsule_8h_source.html">capsule.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d4/d0f/capsule_8cpp_source.html#l00039">Capsule()</a>, and <a class="el" href="../../db/d13/capsule_8h_source.html#l00081">getRearLength()</a>.</p>
+<p>Referenced by <a class="el" href="../../d4/d0f/capsule_8cpp_source.html#l00039">Capsule()</a>, and <a class="el" href="../../db/d13/capsule_8h_source.html#l00079">getRearLength()</a>.</p>
 
 </div>
 </div>
@@ -575,9 +575,9 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Side radius. </p>
 
-<p>Definition at line <a class="el" href="../../db/d13/capsule_8h_source.html#l00133">133</a> of file <a class="el" href="../../db/d13/capsule_8h_source.html">capsule.h</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d13/capsule_8h_source.html#l00131">131</a> of file <a class="el" href="../../db/d13/capsule_8h_source.html">capsule.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d4/d0f/capsule_8cpp_source.html#l00039">Capsule()</a>, and <a class="el" href="../../db/d13/capsule_8h_source.html#l00095">getSideRadius()</a>.</p>
+<p>Referenced by <a class="el" href="../../d4/d0f/capsule_8cpp_source.html#l00039">Capsule()</a>, and <a class="el" href="../../db/d13/capsule_8h_source.html#l00093">getSideRadius()</a>.</p>
 
 </div>
 </div>
@@ -600,9 +600,9 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Rear angle. </p>
 
-<p>Definition at line <a class="el" href="../../db/d13/capsule_8h_source.html#l00139">139</a> of file <a class="el" href="../../db/d13/capsule_8h_source.html">capsule.h</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d13/capsule_8h_source.html#l00137">137</a> of file <a class="el" href="../../db/d13/capsule_8h_source.html">capsule.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d4/d0f/capsule_8cpp_source.html#l00039">Capsule()</a>, and <a class="el" href="../../db/d13/capsule_8h_source.html#l00088">getRearAngle()</a>.</p>
+<p>Referenced by <a class="el" href="../../d4/d0f/capsule_8cpp_source.html#l00039">Capsule()</a>, and <a class="el" href="../../db/d13/capsule_8h_source.html#l00086">getRearAngle()</a>.</p>
 
 </div>
 </div>
@@ -613,7 +613,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 27 2017 09:33:00 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 7 2017 11:20:32 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

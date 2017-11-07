@@ -103,7 +103,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a4b8a6d2b7d3387391db0d6542da11a77"><td class="memItemLeft" align="right" valign="top">static boost::shared_ptr&lt; <a class="el" href="../../de/dc0/classtudat_1_1observation__models_1_1_observation_model.html">observation_models::ObservationModel</a>&lt; ObservationSize, ObservationScalarType, TimeType &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/daa/classtudat_1_1observation__models_1_1_observation_model_creator.html#a4b8a6d2b7d3387391db0d6542da11a77">createObservationModel</a> (const <a class="el" href="../../d2/df9/namespacetudat_1_1observation__models.html#a7a66b5e78e636627f69a082a10c57b52">LinkEnds</a> linkEnds, const boost::shared_ptr&lt; <a class="el" href="../../d0/d18/classtudat_1_1observation__models_1_1_observation_settings.html">ObservationSettings</a> &gt; observationSettings, const <a class="el" href="../../d4/da8/namespacetudat_1_1simulation__setup.html#a4a7938c5b0b78593806673957cc169c4">simulation_setup::NamedBodyMap</a> &amp;bodyMap)</td></tr>
+<tr class="memitem:a4b8a6d2b7d3387391db0d6542da11a77"><td class="memItemLeft" align="right" valign="top">static boost::shared_ptr&lt; <a class="el" href="../../de/dc0/classtudat_1_1observation__models_1_1_observation_model.html">observation_models::ObservationModel</a>&lt; ObservationSize, <a class="el" href="../../d0/d6f/classes__e_8js.html#aee24a28d672b815552e3b29a7c94c0d6">ObservationScalarType</a>, TimeType &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/daa/classtudat_1_1observation__models_1_1_observation_model_creator.html#a4b8a6d2b7d3387391db0d6542da11a77">createObservationModel</a> (const <a class="el" href="../../d2/df9/namespacetudat_1_1observation__models.html#a7a66b5e78e636627f69a082a10c57b52">LinkEnds</a> linkEnds, const boost::shared_ptr&lt; <a class="el" href="../../d0/d18/classtudat_1_1observation__models_1_1_observation_settings.html">ObservationSettings</a> &gt; observationSettings, const <a class="el" href="../../d4/da8/namespacetudat_1_1simulation__setup.html#a4a7938c5b0b78593806673957cc169c4">simulation_setup::NamedBodyMap</a> &amp;bodyMap)</td></tr>
 <tr class="memdesc:a4b8a6d2b7d3387391db0d6542da11a77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to create an observation model.  <a href="#a4b8a6d2b7d3387391db0d6542da11a77">More...</a><br /></td></tr>
 <tr class="separator:a4b8a6d2b7d3387391db0d6542da11a77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -113,7 +113,7 @@ class tudat::observation_models::ObservationModelCreator&lt; ObservationSize, Ob
 
 <p>Interface class for creating observation models. This class is used instead of a single templated free function to allow <a class="el" href="../../de/dc0/classtudat_1_1observation__models_1_1_observation_model.html" title="Base class for models of observables (i.e. range, range-rate, etc.). ">ObservationModel</a> deroved classed with different ObservationSize template arguments to be created using the same interface. This class has template specializations for each value of ObservationSize, and contains a single createObservationModel function that performs the required operation. </p>
 
-<p>Definition at line <a class="el" href="../../de/d72/create_observation_model_8h_source.html#l00592">592</a> of file <a class="el" href="../../de/d72/create_observation_model_8h_source.html">createObservationModel.h</a>.</p>
+<p>Definition at line <a class="el" href="../../de/d72/create_observation_model_8h_source.html#l00628">628</a> of file <a class="el" href="../../de/d72/create_observation_model_8h_source.html">createObservationModel.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a4b8a6d2b7d3387391db0d6542da11a77"></a>
 <div class="memitem">
@@ -125,7 +125,7 @@ template&lt;int ObservationSize = 1, typename ObservationScalarType  = double, t
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static boost::shared_ptr&lt; <a class="el" href="../../de/dc0/classtudat_1_1observation__models_1_1_observation_model.html">observation_models::ObservationModel</a>&lt; ObservationSize, ObservationScalarType, TimeType &gt; &gt; <a class="el" href="../../d9/daa/classtudat_1_1observation__models_1_1_observation_model_creator.html">tudat::observation_models::ObservationModelCreator</a>&lt; ObservationSize, ObservationScalarType, TimeType &gt;::createObservationModel </td>
+          <td class="memname">static boost::shared_ptr&lt; <a class="el" href="../../de/dc0/classtudat_1_1observation__models_1_1_observation_model.html">observation_models::ObservationModel</a>&lt; ObservationSize, <a class="el" href="../../d0/d6f/classes__e_8js.html#aee24a28d672b815552e3b29a7c94c0d6">ObservationScalarType</a>, TimeType &gt; &gt; <a class="el" href="../../d9/daa/classtudat_1_1observation__models_1_1_observation_model_creator.html">tudat::observation_models::ObservationModelCreator</a>&lt; ObservationSize, <a class="el" href="../../d0/d6f/classes__e_8js.html#aee24a28d672b815552e3b29a7c94c0d6">ObservationScalarType</a>, TimeType &gt;::createObservationModel </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="../../d2/df9/namespacetudat_1_1observation__models.html#a7a66b5e78e636627f69a082a10c57b52">LinkEnds</a>&#160;</td>
           <td class="paramname"><em>linkEnds</em>, </td>
@@ -164,6 +164,8 @@ template&lt;int ObservationSize = 1, typename ObservationScalarType  = double, t
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Observation model of required settings. </dd></dl>
 
+<p>Referenced by <a class="el" href="../../de/d72/create_observation_model_8h_source.html#l00662">tudat::observation_models::ObservationModelCreator&lt; 1, ObservationScalarType, TimeType &gt;::createObservationModel()</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
@@ -172,7 +174,7 @@ template&lt;int ObservationSize = 1, typename ObservationScalarType  = double, t
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 27 2017 09:33:01 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 7 2017 11:20:33 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

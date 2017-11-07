@@ -103,18 +103,18 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ad5c4fa7b876a41002294c279e0566fda"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d2/d9c/namespacetudat_1_1propagators.html#a7a1cfef7b2f75ca84a4d741ca620a13f">PropagationTerminationReason</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d3d/classtudat_1_1propagators_1_1_equation_integration_interface_3_01_state_type_00_01double_01_4.html#ad5c4fa7b876a41002294c279e0566fda">integrateEquations</a> (boost::function&lt; StateType(const double, const StateType &amp;) &gt; stateDerivativeFunction, std::map&lt; double, StateType &gt; &amp;solutionHistory, const StateType initialState, const boost::shared_ptr&lt; <a class="el" href="../../d3/d66/classtudat_1_1numerical__integrators_1_1_integrator_settings.html">numerical_integrators::IntegratorSettings</a>&lt; double &gt; &gt; integratorSettings, const boost::function&lt; bool(const double) &gt; stopPropagationFunction, std::map&lt; double, Eigen::VectorXd &gt; &amp;dependentVariableHistory, const boost::function&lt; Eigen::VectorXd() &gt; dependentVariableFunction=boost::function&lt; Eigen::VectorXd() &gt;(), const double printInterval=<a class="el" href="../../d6/d70/mathematical_constants_8h.html#adf3d84f9d3e27cbaa280e9fd0bac8e5f">TUDAT_NAN</a>)</td></tr>
-<tr class="memdesc:ad5c4fa7b876a41002294c279e0566fda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to numerically integrate a given first order differential equation.  <a href="#ad5c4fa7b876a41002294c279e0566fda">More...</a><br /></td></tr>
-<tr class="separator:ad5c4fa7b876a41002294c279e0566fda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a511f943dee17da9da9d79a5c351288b1"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d2/d9c/namespacetudat_1_1propagators.html#a7a1cfef7b2f75ca84a4d741ca620a13f">PropagationTerminationReason</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d3d/classtudat_1_1propagators_1_1_equation_integration_interface_3_01_state_type_00_01double_01_4.html#a511f943dee17da9da9d79a5c351288b1">integrateEquations</a> (boost::function&lt; <a class="el" href="../../db/dc4/classes__4_8js.html#a1615968a92950438f6e67a28e9d56e5c">StateType</a>(const double, const <a class="el" href="../../db/dc4/classes__4_8js.html#a1615968a92950438f6e67a28e9d56e5c">StateType</a> &amp;) &gt; stateDerivativeFunction, std::map&lt; double, <a class="el" href="../../db/dc4/classes__4_8js.html#a1615968a92950438f6e67a28e9d56e5c">StateType</a> &gt; &amp;solutionHistory, const <a class="el" href="../../db/dc4/classes__4_8js.html#a1615968a92950438f6e67a28e9d56e5c">StateType</a> initialState, const boost::shared_ptr&lt; <a class="el" href="../../d3/d66/classtudat_1_1numerical__integrators_1_1_integrator_settings.html">numerical_integrators::IntegratorSettings</a>&lt; double &gt; &gt; integratorSettings, const boost::function&lt; bool(const double, const double) &gt; stopPropagationFunction, std::map&lt; double, Eigen::VectorXd &gt; &amp;dependentVariableHistory, std::map&lt; double, double &gt; &amp;cummulativeComputationTimeHistory, const boost::function&lt; Eigen::VectorXd() &gt; dependentVariableFunction=boost::function&lt; Eigen::VectorXd() &gt;(), const double printInterval=<a class="el" href="../../d6/d70/mathematical_constants_8h.html#adf3d84f9d3e27cbaa280e9fd0bac8e5f">TUDAT_NAN</a>, const std::chrono::steady_clock::time_point initialClockTime=std::chrono::steady_clock::now())</td></tr>
+<tr class="memdesc:a511f943dee17da9da9d79a5c351288b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to numerically integrate a given first order differential equation.  <a href="#a511f943dee17da9da9d79a5c351288b1">More...</a><br /></td></tr>
+<tr class="separator:a511f943dee17da9da9d79a5c351288b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename StateType&gt;<br />
 class tudat::propagators::EquationIntegrationInterface&lt; StateType, double &gt;</h3>
 
 
-<p>Definition at line <a class="el" href="../../da/dbb/integrate_equations_8h_source.html#l00208">208</a> of file <a class="el" href="../../da/dbb/integrate_equations_8h_source.html">integrateEquations.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/dbb/integrate_equations_8h_source.html#l00243">243</a> of file <a class="el" href="../../da/dbb/integrate_equations_8h_source.html">integrateEquations.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ad5c4fa7b876a41002294c279e0566fda"></a>
+<a class="anchor" id="a511f943dee17da9da9d79a5c351288b1"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -124,21 +124,21 @@ template&lt;typename StateType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="../../d2/d9c/namespacetudat_1_1propagators.html#a7a1cfef7b2f75ca84a4d741ca620a13f">PropagationTerminationReason</a> <a class="el" href="../../d3/d9a/classtudat_1_1propagators_1_1_equation_integration_interface.html">tudat::propagators::EquationIntegrationInterface</a>&lt; StateType, double &gt;::integrateEquations </td>
+          <td class="memname">static <a class="el" href="../../d2/d9c/namespacetudat_1_1propagators.html#a7a1cfef7b2f75ca84a4d741ca620a13f">PropagationTerminationReason</a> <a class="el" href="../../d3/d9a/classtudat_1_1propagators_1_1_equation_integration_interface.html">tudat::propagators::EquationIntegrationInterface</a>&lt; <a class="el" href="../../db/dc4/classes__4_8js.html#a1615968a92950438f6e67a28e9d56e5c">StateType</a>, double &gt;::integrateEquations </td>
           <td>(</td>
-          <td class="paramtype">boost::function&lt; StateType(const double, const StateType &amp;) &gt;&#160;</td>
+          <td class="paramtype">boost::function&lt; <a class="el" href="../../db/dc4/classes__4_8js.html#a1615968a92950438f6e67a28e9d56e5c">StateType</a>(const double, const <a class="el" href="../../db/dc4/classes__4_8js.html#a1615968a92950438f6e67a28e9d56e5c">StateType</a> &amp;) &gt;&#160;</td>
           <td class="paramname"><em>stateDerivativeFunction</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::map&lt; double, StateType &gt; &amp;&#160;</td>
+          <td class="paramtype">std::map&lt; double, <a class="el" href="../../db/dc4/classes__4_8js.html#a1615968a92950438f6e67a28e9d56e5c">StateType</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>solutionHistory</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const StateType&#160;</td>
+          <td class="paramtype">const <a class="el" href="../../db/dc4/classes__4_8js.html#a1615968a92950438f6e67a28e9d56e5c">StateType</a>&#160;</td>
           <td class="paramname"><em>initialState</em>, </td>
         </tr>
         <tr>
@@ -150,7 +150,7 @@ template&lt;typename StateType &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const boost::function&lt; bool(const double) &gt;&#160;</td>
+          <td class="paramtype">const boost::function&lt; bool(const double, const double) &gt;&#160;</td>
           <td class="paramname"><em>stopPropagationFunction</em>, </td>
         </tr>
         <tr>
@@ -162,6 +162,12 @@ template&lt;typename StateType &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">std::map&lt; double, double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>cummulativeComputationTimeHistory</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">const boost::function&lt; Eigen::VectorXd() &gt;&#160;</td>
           <td class="paramname"><em>dependentVariableFunction</em> = <code>boost::function&lt;&#160;Eigen::VectorXd(&#160;)&#160;&gt;(&#160;)</code>, </td>
         </tr>
@@ -169,7 +175,13 @@ template&lt;typename StateType &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const double&#160;</td>
-          <td class="paramname"><em>printInterval</em> = <code><a class="el" href="../../d6/d70/mathematical_constants_8h.html#adf3d84f9d3e27cbaa280e9fd0bac8e5f">TUDAT_NAN</a></code>&#160;</td>
+          <td class="paramname"><em>printInterval</em> = <code><a class="el" href="../../d6/d70/mathematical_constants_8h.html#adf3d84f9d3e27cbaa280e9fd0bac8e5f">TUDAT_NAN</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::chrono::steady_clock::time_point&#160;</td>
+          <td class="paramname"><em>initialClockTime</em> = <code>std::chrono::steady_clock::now(&#160;)</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -191,14 +203,16 @@ template&lt;typename StateType &gt; </div>
     <tr><td class="paramname">integratorSettings</td><td>Settings for numerical integrator. </td></tr>
     <tr><td class="paramname">stopPropagationFunction</td><td>Function determining whether the propagation is to be stopped at the current time. </td></tr>
     <tr><td class="paramname">dependentVariableHistory</td><td>History of dependent variables that are to be saved given as map (time as key; returned by reference) </td></tr>
+    <tr><td class="paramname">cummulativeComputationTimeHistory</td><td>History of cummulative computation times that are to be saved given as map (time as key; returned by reference) </td></tr>
     <tr><td class="paramname">dependentVariableFunction</td><td>Function returning dependent variables (obtained from environment and state derivative model). </td></tr>
     <tr><td class="paramname">printInterval</td><td>Frequency with which to print progress to console (nan = never). </td></tr>
+    <tr><td class="paramname">initialClockTime</td><td>Initial clock time from which to determine cummulative computation time. By default now(), i.e. the moment at which this function is called. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Event that triggered the termination of the propagation </dd></dl>
 
-<p>Definition at line <a class="el" href="../../da/dbb/integrate_equations_8h_source.html#l00228">228</a> of file <a class="el" href="../../da/dbb/integrate_equations_8h_source.html">integrateEquations.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/dbb/integrate_equations_8h_source.html#l00267">267</a> of file <a class="el" href="../../da/dbb/integrate_equations_8h_source.html">integrateEquations.h</a>.</p>
 
 </div>
 </div>
@@ -208,7 +222,7 @@ template&lt;typename StateType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 27 2017 09:33:02 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 7 2017 11:20:34 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

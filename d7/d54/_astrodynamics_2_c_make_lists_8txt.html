@@ -91,8 +91,10 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ac5b56c8f622735004012d421fae79c06"><td class="memItemLeft" align="right" valign="top">Propulsion&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d54/_astrodynamics_2_c_make_lists_8txt.html#ac5b56c8f622735004012d421fae79c06">add_subdirectory</a> (&quot;${SRCROOT}${AERODYNAMICSDIR}&quot;) add_subdirectory(&quot;$</td></tr>
-<tr class="separator:ac5b56c8f622735004012d421fae79c06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58af9f361922b8965e0127fcbc646e66"><td class="memItemLeft" align="right" valign="top">EarthOrientation&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d54/_astrodynamics_2_c_make_lists_8txt.html#a58af9f361922b8965e0127fcbc646e66">endif</a> () <a class="el" href="../../d0/dcf/_external_2_c_make_lists_8txt.html#a395a4340a5aa04041179f7d9e753c249">add_subdirectory</a>(&quot;$</td></tr>
+<tr class="separator:a58af9f361922b8965e0127fcbc646e66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4662cdd98d4beb1e11a419687c9b1c8a"><td class="memItemLeft" align="right" valign="top">Propulsion&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d54/_astrodynamics_2_c_make_lists_8txt.html#a4662cdd98d4beb1e11a419687c9b1c8a">if</a> (USE_SOFA) <a class="el" href="../../d7/d66/_simulation_setup_2_c_make_lists_8txt.html#ac696f09d57ff43ba66af3d4987d96422">set</a>(EARTHORIENTATIONDIR&quot;$</td></tr>
+<tr class="separator:a4662cdd98d4beb1e11a419687c9b1c8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43aaa6ac2a5b81b7ee822eb0eda7432d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d54/_astrodynamics_2_c_make_lists_8txt.html#a43aaa6ac2a5b81b7ee822eb0eda7432d">set</a> (AERODYNAMICSDIR&quot;${ASTRODYNAMICSDIR}/Aerodynamics&quot;) set(BASICASTRODYNAMICSDIR&quot;$</td></tr>
 <tr class="separator:a43aaa6ac2a5b81b7ee822eb0eda7432d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac44375edd4a5d69d940d515ef6b6a430"><td class="memItemLeft" align="right" valign="top">BasicAstrodynamics&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d54/_astrodynamics_2_c_make_lists_8txt.html#ac44375edd4a5d69d940d515ef6b6a430">set</a> (ELECTROMAGNETISMDIR&quot;${ASTRODYNAMICSDIR}/ElectroMagnetism&quot;) set(EPHEMERIDESDIR&quot;$</td></tr>
@@ -235,14 +237,33 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ac5b56c8f622735004012d421fae79c06"></a>
+<a class="anchor" id="a4662cdd98d4beb1e11a419687c9b1c8a"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Propulsion add_subdirectory </td>
+          <td class="memname">Propulsion if </td>
           <td>(</td>
-          <td class="paramtype">&quot;${SRCROOT}${AERODYNAMICSDIR}&quot;&#160;</td>
+          <td class="paramtype">USE_SOFA&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d7/d54/_astrodynamics_2_c_make_lists_8txt_source.html#l00027">27</a> of file <a class="el" href="../../d7/d54/_astrodynamics_2_c_make_lists_8txt_source.html">CMakeLists.txt</a>.</p>
+
+<p>Referenced by <a class="el" href="../../d2/d19/search_8js_source.html#l00059">SearchBox()</a>, and <a class="el" href="../../d2/d19/search_8js_source.html#l00404">SearchResults()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a58af9f361922b8965e0127fcbc646e66"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">EarthOrientation endif </td>
+          <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -251,14 +272,14 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d7/d54/_astrodynamics_2_c_make_lists_8txt_source.html#l00029">29</a> of file <a class="el" href="../../d7/d54/_astrodynamics_2_c_make_lists_8txt_source.html">CMakeLists.txt</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dd/d68/_c_make_lists_8txt_source.html#l00011">cmake_minimum_required()</a>.</p>
+<p>Referenced by <a class="el" href="../../dd/d68/_c_make_lists_8txt_source.html#l00011">cmake_minimum_required()</a>, and <a class="el" href="../../db/d85/_astrodynamics_2_aerodynamics_2_c_make_lists_8txt_source.html#l00012">set()</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 27 2017 09:32:58 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 7 2017 11:20:29 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

@@ -128,9 +128,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af48212c6fe493d754886b3c65a9e5266"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dc5/classtudat_1_1propagators_1_1_multi_arc_dynamics_simulator.html#af48212c6fe493d754886b3c65a9e5266">getArcStartTimes</a> ()</td></tr>
 <tr class="memdesc:af48212c6fe493d754886b3c65a9e5266"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to retrieve the current state and end times of the arcs.  <a href="#af48212c6fe493d754886b3c65a9e5266">More...</a><br /></td></tr>
 <tr class="separator:af48212c6fe493d754886b3c65a9e5266"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf1089a48d7f483fd2ab0e19567d9e93"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::map&lt; TimeType, double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dc5/classtudat_1_1propagators_1_1_multi_arc_dynamics_simulator.html#adf1089a48d7f483fd2ab0e19567d9e93">getCummulativeComputationTimeHistory</a> ()</td></tr>
+<tr class="separator:adf1089a48d7f483fd2ab0e19567d9e93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a634a4093609a69833fcc1e947604203d"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::map&lt; TimeType, double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dc5/classtudat_1_1propagators_1_1_multi_arc_dynamics_simulator.html#a634a4093609a69833fcc1e947604203d">getCummulativeComputationTimeHistoryBase</a> ()</td></tr>
+<tr class="separator:a634a4093609a69833fcc1e947604203d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42ff77da48a39286440c0c82cbf08164"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::map&lt; TimeType, Eigen::VectorXd &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dc5/classtudat_1_1propagators_1_1_multi_arc_dynamics_simulator.html#a42ff77da48a39286440c0c82cbf08164">getDependentVariableHistory</a> ()</td></tr>
+<tr class="memdesc:a42ff77da48a39286440c0c82cbf08164"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to return the numerical solution of the dependent variables.  <a href="#a42ff77da48a39286440c0c82cbf08164">More...</a><br /></td></tr>
 <tr class="separator:a42ff77da48a39286440c0c82cbf08164"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a359b7693e69f2ea2f2bb9928a61cb631"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::map&lt; TimeType, Eigen::VectorXd &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dc5/classtudat_1_1propagators_1_1_multi_arc_dynamics_simulator.html#a359b7693e69f2ea2f2bb9928a61cb631">getDependentVariableNumericalSolutionBase</a> ()</td></tr>
+<tr class="memdesc:a359b7693e69f2ea2f2bb9928a61cb631"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to return the numerical solution of the dependent variables (base class interface)  <a href="#a359b7693e69f2ea2f2bb9928a61cb631">More...</a><br /></td></tr>
 <tr class="separator:a359b7693e69f2ea2f2bb9928a61cb631"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27473559496d8f97f29205d83ae88e2a"><td class="memItemLeft" align="right" valign="top">std::vector&lt; boost::shared_ptr&lt; <a class="el" href="../../df/d2b/classtudat_1_1propagators_1_1_dynamics_state_derivative_model.html">DynamicsStateDerivativeModel</a>&lt; TimeType, StateScalarType &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dc5/classtudat_1_1propagators_1_1_multi_arc_dynamics_simulator.html#a27473559496d8f97f29205d83ae88e2a">getDynamicsStateDerivative</a> ()</td></tr>
 <tr class="memdesc:a27473559496d8f97f29205d83ae88e2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to get the list of <a class="el" href="../../df/d2b/classtudat_1_1propagators_1_1_dynamics_state_derivative_model.html" title="Top-level class responsible for single complete function evaluation of dynamics state derivative...">DynamicsStateDerivativeModel</a> objects used for each arc.  <a href="#a27473559496d8f97f29205d83ae88e2a">More...</a><br /></td></tr>
@@ -139,6 +145,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a2bf9786859eb03befd473038ea5fa543"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to return the numerical solution to the equations of motion.  <a href="#a2bf9786859eb03befd473038ea5fa543">More...</a><br /></td></tr>
 <tr class="separator:a2bf9786859eb03befd473038ea5fa543"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11a7aaf1c00bd38a3a39fae2eec339dc"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::map&lt; TimeType, Eigen::Matrix&lt; StateScalarType, Eigen::Dynamic, 1 &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dc5/classtudat_1_1propagators_1_1_multi_arc_dynamics_simulator.html#a11a7aaf1c00bd38a3a39fae2eec339dc">getEquationsOfMotionNumericalSolutionBase</a> ()</td></tr>
+<tr class="memdesc:a11a7aaf1c00bd38a3a39fae2eec339dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to return the numerical solution to the equations of motion (base class interface).  <a href="#a11a7aaf1c00bd38a3a39fae2eec339dc">More...</a><br /></td></tr>
 <tr class="separator:a11a7aaf1c00bd38a3a39fae2eec339dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51cfac36bfb16be647c150e01b6c06b6"><td class="memItemLeft" align="right" valign="top">std::vector&lt; boost::shared_ptr&lt; <a class="el" href="../../de/d3f/classtudat_1_1propagators_1_1_single_arc_dynamics_simulator.html">SingleArcDynamicsSimulator</a>&lt; StateScalarType, TimeType &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dc5/classtudat_1_1propagators_1_1_multi_arc_dynamics_simulator.html#a51cfac36bfb16be647c150e01b6c06b6">getSingleArcDynamicsSimulators</a> ()</td></tr>
 <tr class="memdesc:a51cfac36bfb16be647c150e01b6c06b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to get the list of <a class="el" href="../../d8/d1c/classtudat_1_1propagators_1_1_dynamics_simulator.html" title="Base class for performing full numerical integration of a dynamical system. ">DynamicsSimulator</a> objects used for each arc.  <a href="#a51cfac36bfb16be647c150e01b6c06b6">More...</a><br /></td></tr>
@@ -149,6 +156,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a266b9a90dcd3cc18d0f024c532009043"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dc5/classtudat_1_1propagators_1_1_multi_arc_dynamics_simulator.html#a266b9a90dcd3cc18d0f024c532009043">integrateEquationsOfMotion</a> (const std::vector&lt; Eigen::Matrix&lt; StateScalarType, Eigen::Dynamic, 1 &gt; &gt; &amp;initialStatesList)</td></tr>
 <tr class="memdesc:a266b9a90dcd3cc18d0f024c532009043"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function numerically (re-)integrates the equations of motion, using separate states for all arcs.  <a href="#a266b9a90dcd3cc18d0f024c532009043">More...</a><br /></td></tr>
 <tr class="separator:a266b9a90dcd3cc18d0f024c532009043"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36b643b87b763814aff48007e519cee7"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dc5/classtudat_1_1propagators_1_1_multi_arc_dynamics_simulator.html#a36b643b87b763814aff48007e519cee7">integrationCompletedSuccessfully</a> () const </td></tr>
+<tr class="memdesc:a36b643b87b763814aff48007e519cee7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get whether the integration was completed successfully.  <a href="#a36b643b87b763814aff48007e519cee7">More...</a><br /></td></tr>
+<tr class="separator:a36b643b87b763814aff48007e519cee7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29c7f52bc7efee3f9e965d8f60f068eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dc5/classtudat_1_1propagators_1_1_multi_arc_dynamics_simulator.html#a29c7f52bc7efee3f9e965d8f60f068eb">manuallySetAndProcessRawNumericalEquationsOfMotionSolution</a> (std::vector&lt; std::map&lt; TimeType, Eigen::Matrix&lt; StateScalarType, Eigen::Dynamic, 1 &gt; &gt; &gt; &amp;equationsOfMotionNumericalSolution, std::vector&lt; std::map&lt; TimeType, Eigen::VectorXd &gt; &gt; &amp;dependentVariableHistory)</td></tr>
 <tr class="memdesc:a29c7f52bc7efee3f9e965d8f60f068eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to reset the environment using an externally provided list of (numerically integrated) states.  <a href="#a29c7f52bc7efee3f9e965d8f60f068eb">More...</a><br /></td></tr>
 <tr class="separator:a29c7f52bc7efee3f9e965d8f60f068eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -162,6 +172,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad7787475f86f5bfd27382ac7da2696b6 inherit pub_methods_classtudat_1_1propagators_1_1_dynamics_simulator"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/da8/namespacetudat_1_1simulation__setup.html#a4a7938c5b0b78593806673957cc169c4">simulation_setup::NamedBodyMap</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1c/classtudat_1_1propagators_1_1_dynamics_simulator.html#ad7787475f86f5bfd27382ac7da2696b6">getNamedBodyMap</a> ()</td></tr>
 <tr class="memdesc:ad7787475f86f5bfd27382ac7da2696b6 inherit pub_methods_classtudat_1_1propagators_1_1_dynamics_simulator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to get the map of named bodies involved in simulation.  <a href="#ad7787475f86f5bfd27382ac7da2696b6">More...</a><br /></td></tr>
 <tr class="separator:ad7787475f86f5bfd27382ac7da2696b6 inherit pub_methods_classtudat_1_1propagators_1_1_dynamics_simulator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ad329850c0cff52cdf83c80724afdf4 inherit pub_methods_classtudat_1_1propagators_1_1_dynamics_simulator"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1c/classtudat_1_1propagators_1_1_dynamics_simulator.html#a6ad329850c0cff52cdf83c80724afdf4">resetNamedBodyMap</a> (const <a class="el" href="../../d4/da8/namespacetudat_1_1simulation__setup.html#a4a7938c5b0b78593806673957cc169c4">simulation_setup::NamedBodyMap</a> &amp;bodyMap)</td></tr>
+<tr class="memdesc:a6ad329850c0cff52cdf83c80724afdf4 inherit pub_methods_classtudat_1_1propagators_1_1_dynamics_simulator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to reset the named body map.  <a href="#a6ad329850c0cff52cdf83c80724afdf4">More...</a><br /></td></tr>
+<tr class="separator:a6ad329850c0cff52cdf83c80724afdf4 inherit pub_methods_classtudat_1_1propagators_1_1_dynamics_simulator"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a032e5270053c1f4b7442c7e9fcab746b inherit pub_methods_classtudat_1_1propagators_1_1_dynamics_simulator"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1c/classtudat_1_1propagators_1_1_dynamics_simulator.html#a032e5270053c1f4b7442c7e9fcab746b">resetSetIntegratedResult</a> (const bool setIntegratedResult)</td></tr>
 <tr class="separator:a032e5270053c1f4b7442c7e9fcab746b inherit pub_methods_classtudat_1_1propagators_1_1_dynamics_simulator"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -176,7 +189,10 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:ade4d12f57e0044215f6f69f78ed95b2a"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dc5/classtudat_1_1propagators_1_1_multi_arc_dynamics_simulator.html#ade4d12f57e0044215f6f69f78ed95b2a">arcStartTimes_</a></td></tr>
 <tr class="memdesc:ade4d12f57e0044215f6f69f78ed95b2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of start times of each arc. NOTE: This list is updated after every propagation.  <a href="#ade4d12f57e0044215f6f69f78ed95b2a">More...</a><br /></td></tr>
 <tr class="separator:ade4d12f57e0044215f6f69f78ed95b2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5632d299cc388e44bebc99e6cf6df86f"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::map&lt; TimeType, double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dc5/classtudat_1_1propagators_1_1_multi_arc_dynamics_simulator.html#a5632d299cc388e44bebc99e6cf6df86f">cummulativeComputationTimeHistory_</a></td></tr>
+<tr class="separator:a5632d299cc388e44bebc99e6cf6df86f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc45477ba606404f38b1f0b727f9dff7"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::map&lt; TimeType, Eigen::VectorXd &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dc5/classtudat_1_1propagators_1_1_multi_arc_dynamics_simulator.html#adc45477ba606404f38b1f0b727f9dff7">dependentVariableHistory_</a></td></tr>
+<tr class="memdesc:adc45477ba606404f38b1f0b727f9dff7"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of maps of dependent variable history that was saved during numerical propagation.  <a href="#adc45477ba606404f38b1f0b727f9dff7">More...</a><br /></td></tr>
 <tr class="separator:adc45477ba606404f38b1f0b727f9dff7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5fa02b39b36f2a466933ce5cbac6a9b"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::map&lt; TimeType, Eigen::Matrix&lt; StateScalarType, Eigen::Dynamic, 1 &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dc5/classtudat_1_1propagators_1_1_multi_arc_dynamics_simulator.html#af5fa02b39b36f2a466933ce5cbac6a9b">equationsOfMotionNumericalSolution_</a></td></tr>
 <tr class="memdesc:af5fa02b39b36f2a466933ce5cbac6a9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of maps of state history of numerically integrated states.  <a href="#af5fa02b39b36f2a466933ce5cbac6a9b">More...</a><br /></td></tr>
@@ -206,7 +222,7 @@ class tudat::propagators::MultiArcDynamicsSimulator&lt; StateScalarType, TimeTyp
 
 <p>Class for performing full numerical integration of a dynamical system over multiple arcs, equations of motion are set up for each arc (and need not be equal for each arc). In this class, the governing equations are set once, but can be re-integrated for different initial conditions using the same instance of the class. </p>
 
-<p>Definition at line <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l00749">749</a> of file <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html">dynamicsSimulator.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l00859">859</a> of file <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html">dynamicsSimulator.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a4e2478f1b119d101bf28c91f06a0d9e4"></a>
 <div class="memitem">
@@ -284,7 +300,7 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l00770">770</a> of file <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html">dynamicsSimulator.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l00880">880</a> of file <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html">dynamicsSimulator.h</a>.</p>
 
 <p>References <a class="el" href="../../d8/d1c/classtudat_1_1propagators_1_1_dynamics_simulator.html#ae88b5eb4a3e70b135a99dd790997062b">tudat::propagators::DynamicsSimulator&lt; StateScalarType, TimeType &gt;::integrateEquationsOfMotion()</a>.</p>
 
@@ -359,7 +375,7 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l00834">834</a> of file <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html">dynamicsSimulator.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l00945">945</a> of file <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html">dynamicsSimulator.h</a>.</p>
 
 <p>References <a class="el" href="../../d8/d1c/classtudat_1_1propagators_1_1_dynamics_simulator.html#ae88b5eb4a3e70b135a99dd790997062b">tudat::propagators::DynamicsSimulator&lt; StateScalarType, TimeType &gt;::integrateEquationsOfMotion()</a>.</p>
 
@@ -388,7 +404,7 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l00884">884</a> of file <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html">dynamicsSimulator.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l00996">996</a> of file <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html">dynamicsSimulator.h</a>.</p>
 
 </div>
 </div>
@@ -425,7 +441,7 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 
 <p>Implements <a class="el" href="../../d8/d1c/classtudat_1_1propagators_1_1_dynamics_simulator.html#ae88b5eb4a3e70b135a99dd790997062b">tudat::propagators::DynamicsSimulator&lt; StateScalarType, TimeType &gt;</a>.</p>
 
-<p>Definition at line <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l00895">895</a> of file <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html">dynamicsSimulator.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l01007">1007</a> of file <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html">dynamicsSimulator.h</a>.</p>
 
 <p>References <a class="el" href="../../d8/d1c/classtudat_1_1propagators_1_1_dynamics_simulator.html#ae88b5eb4a3e70b135a99dd790997062b">tudat::propagators::DynamicsSimulator&lt; StateScalarType, TimeType &gt;::integrateEquationsOfMotion()</a>.</p>
 
@@ -461,9 +477,9 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l00925">925</a> of file <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html">dynamicsSimulator.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l01037">1037</a> of file <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html">dynamicsSimulator.h</a>.</p>
 
-<p>References <a class="el" href="../../d9/d94/linear_algebra_8h_source.html#l00154">tudat::linear_algebra::doesMatrixHaveNanEntries()</a>, <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l00689">tudat::propagators::getArcInitialStateFromPreviousArcResult()</a>, <a class="el" href="../../d8/d1c/classtudat_1_1propagators_1_1_dynamics_simulator.html#a95e587944d4cef24d68b4b72a3c0fee3">tudat::propagators::DynamicsSimulator&lt; StateScalarType, TimeType &gt;::processNumericalEquationsOfMotionSolution()</a>, and <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l00248">tudat::propagators::DynamicsSimulator&lt; StateScalarType, TimeType &gt;::setIntegratedResult_</a>.</p>
+<p>References <a class="el" href="../../d9/d94/linear_algebra_8h_source.html#l00158">tudat::linear_algebra::doesMatrixHaveNanEntries()</a>, <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l00799">tudat::propagators::getArcInitialStateFromPreviousArcResult()</a>, <a class="el" href="../../d8/d1c/classtudat_1_1propagators_1_1_dynamics_simulator.html#a95e587944d4cef24d68b4b72a3c0fee3">tudat::propagators::DynamicsSimulator&lt; StateScalarType, TimeType &gt;::processNumericalEquationsOfMotionSolution()</a>, and <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l00287">tudat::propagators::DynamicsSimulator&lt; StateScalarType, TimeType &gt;::setIntegratedResult_</a>.</p>
 
 </div>
 </div>
@@ -491,7 +507,7 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 </div><div class="memdoc">
 <p>Function to return the numerical solution to the equations of motion for last numerical integration. Each vector entry denotes one arc. Key of map denotes time, values are full propagated state vectors. </p><dl class="section return"><dt>Returns</dt><dd>List of maps of history of numerically integrated states. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l00994">994</a> of file <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html">dynamicsSimulator.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l01113">1113</a> of file <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html">dynamicsSimulator.h</a>.</p>
 
 </div>
 </div>
@@ -517,8 +533,36 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Function to return the numerical solution of the dependent variables for last numerical integration. Each vector entry denotes one arc. Key of map denotes time, values are dependent variable vectors </p><dl class="section return"><dt>Returns</dt><dd>List of maps of dependent variable history </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l01000">1000</a> of file <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html">dynamicsSimulator.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l01124">1124</a> of file <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html">dynamicsSimulator.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="adf1089a48d7f483fd2ab0e19567d9e93"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::map&lt; TimeType, double &gt; &gt; <a class="el" href="../../d1/dc5/classtudat_1_1propagators_1_1_multi_arc_dynamics_simulator.html">tudat::propagators::MultiArcDynamicsSimulator</a>&lt; StateScalarType, TimeType &gt;::getCummulativeComputationTimeHistory </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l01129">1129</a> of file <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html">dynamicsSimulator.h</a>.</p>
 
 </div>
 </div>
@@ -544,10 +588,11 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Function to return the numerical solution to the equations of motion for last numerical integration. Each vector entry denotes one arc. Key of map denotes time, values are full propagated state vectors. </p><dl class="section return"><dt>Returns</dt><dd>List of maps of history of numerically integrated states. </dd></dl>
 
 <p>Implements <a class="el" href="../../d8/d1c/classtudat_1_1propagators_1_1_dynamics_simulator.html#a82ee79576f56a01def07ec45c79feba5">tudat::propagators::DynamicsSimulator&lt; StateScalarType, TimeType &gt;</a>.</p>
 
-<p>Definition at line <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l01005">1005</a> of file <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html">dynamicsSimulator.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l01141">1141</a> of file <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html">dynamicsSimulator.h</a>.</p>
 
 </div>
 </div>
@@ -573,10 +618,40 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Function to return the numerical solution of the dependent variables for last numerical integration. Each vector entry denotes one arc. Key of map denotes time, values are dependent variable vectors </p><dl class="section return"><dt>Returns</dt><dd>List of maps of dependent variable history </dd></dl>
 
 <p>Implements <a class="el" href="../../d8/d1c/classtudat_1_1propagators_1_1_dynamics_simulator.html#afd7120e9e70913ada1b88f602e31362b">tudat::propagators::DynamicsSimulator&lt; StateScalarType, TimeType &gt;</a>.</p>
 
-<p>Definition at line <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l01010">1010</a> of file <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html">dynamicsSimulator.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l01152">1152</a> of file <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html">dynamicsSimulator.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a634a4093609a69833fcc1e947604203d"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::map&lt; TimeType, double &gt; &gt; <a class="el" href="../../d1/dc5/classtudat_1_1propagators_1_1_multi_arc_dynamics_simulator.html">tudat::propagators::MultiArcDynamicsSimulator</a>&lt; StateScalarType, TimeType &gt;::getCummulativeComputationTimeHistoryBase </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="../../d8/d1c/classtudat_1_1propagators_1_1_dynamics_simulator.html#a63503f4381713e625cbb9ca3a30d240c">tudat::propagators::DynamicsSimulator&lt; StateScalarType, TimeType &gt;</a>.</p>
+
+<p>Definition at line <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l01157">1157</a> of file <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html">dynamicsSimulator.h</a>.</p>
 
 </div>
 </div>
@@ -616,11 +691,12 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 <p>Function to reset the environment using an externally provided list of (numerically integrated) states, for instance provided by a variational equations solver. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">equationsOfMotionNumericalSolution</td><td>Vector of state histories (externally provided equationsOfMotionNumericalSolution_) </td></tr>
+    <tr><td class="paramname">dependentVariableHistory</td><td>Vector of dependent variable histories (externally provided dependentVariableHistory_) </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l01023">1023</a> of file <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html">dynamicsSimulator.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l01172">1172</a> of file <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html">dynamicsSimulator.h</a>.</p>
 
 <p>References <a class="el" href="../../d8/d1c/classtudat_1_1propagators_1_1_dynamics_simulator.html#a95e587944d4cef24d68b4b72a3c0fee3">tudat::propagators::DynamicsSimulator&lt; StateScalarType, TimeType &gt;::processNumericalEquationsOfMotionSolution()</a>.</p>
 
@@ -650,7 +726,7 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 </div><div class="memdoc">
 <p>Function to get the list of <a class="el" href="../../df/d2b/classtudat_1_1propagators_1_1_dynamics_state_derivative_model.html" title="Top-level class responsible for single complete function evaluation of dynamics state derivative...">DynamicsStateDerivativeModel</a> objects used for each arc </p><dl class="section return"><dt>Returns</dt><dd>List of <a class="el" href="../../df/d2b/classtudat_1_1propagators_1_1_dynamics_state_derivative_model.html" title="Top-level class responsible for single complete function evaluation of dynamics state derivative...">DynamicsStateDerivativeModel</a> objects used for each arc </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l01057">1057</a> of file <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html">dynamicsSimulator.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l01206">1206</a> of file <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html">dynamicsSimulator.h</a>.</p>
 
 </div>
 </div>
@@ -678,7 +754,7 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 </div><div class="memdoc">
 <p>Function to get the list of <a class="el" href="../../d8/d1c/classtudat_1_1propagators_1_1_dynamics_simulator.html" title="Base class for performing full numerical integration of a dynamical system. ">DynamicsSimulator</a> objects used for each arc </p><dl class="section return"><dt>Returns</dt><dd>List of <a class="el" href="../../d8/d1c/classtudat_1_1propagators_1_1_dynamics_simulator.html" title="Base class for performing full numerical integration of a dynamical system. ">DynamicsSimulator</a> objects used for each arc </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l01072">1072</a> of file <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html">dynamicsSimulator.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l01221">1221</a> of file <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html">dynamicsSimulator.h</a>.</p>
 
 </div>
 </div>
@@ -706,7 +782,37 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 </div><div class="memdoc">
 <p>Function to retrieve the current state and end times of the arcs </p><dl class="section return"><dt>Returns</dt><dd>The current state and end times of the arcs </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l01082">1082</a> of file <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html">dynamicsSimulator.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l01231">1231</a> of file <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html">dynamicsSimulator.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a36b643b87b763814aff48007e519cee7"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool <a class="el" href="../../d1/dc5/classtudat_1_1propagators_1_1_multi_arc_dynamics_simulator.html">tudat::propagators::MultiArcDynamicsSimulator</a>&lt; StateScalarType, TimeType &gt;::integrationCompletedSuccessfully </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get whether the integration was completed successfully. </p><dl class="section return"><dt>Returns</dt><dd>Whether the integration was completed successfully by reaching the termination condition. </dd></dl>
+
+<p>Implements <a class="el" href="../../d8/d1c/classtudat_1_1propagators_1_1_dynamics_simulator.html#a03f978db01fc829f7bf1ace216078097">tudat::propagators::DynamicsSimulator&lt; StateScalarType, TimeType &gt;</a>.</p>
+
+<p>Definition at line <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l01241">1241</a> of file <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html">dynamicsSimulator.h</a>.</p>
 
 </div>
 </div>
@@ -736,9 +842,9 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 
 <p>Implements <a class="el" href="../../d8/d1c/classtudat_1_1propagators_1_1_dynamics_simulator.html#a95e587944d4cef24d68b4b72a3c0fee3">tudat::propagators::DynamicsSimulator&lt; StateScalarType, TimeType &gt;</a>.</p>
 
-<p>Definition at line <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l01096">1096</a> of file <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html">dynamicsSimulator.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l01263">1263</a> of file <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html">dynamicsSimulator.h</a>.</p>
 
-<p>References <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l00245">tudat::propagators::DynamicsSimulator&lt; StateScalarType, TimeType &gt;::clearNumericalSolutions_</a>, and <a class="el" href="../../d1/dc4/set_numerically_integrated_states_8h_source.html#l01098">tudat::propagators::resetIntegratedMultiArcStatesWithEqualArcDynamics()</a>.</p>
+<p>References <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l00284">tudat::propagators::DynamicsSimulator&lt; StateScalarType, TimeType &gt;::clearNumericalSolutions_</a>, and <a class="el" href="../../d1/dc4/set_numerically_integrated_states_8h_source.html#l01131">tudat::propagators::resetIntegratedMultiArcStatesWithEqualArcDynamics()</a>.</p>
 
 </div>
 </div>
@@ -764,7 +870,7 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 </div><div class="memdoc">
 <p>List of maps of state history of numerically integrated states. Each entry in the list contains data on a single arc. Key of map denotes time, values are concatenated vectors of body states in order of bodiesToIntegrate </p>
 
-<p>Definition at line <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l01117">1117</a> of file <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html">dynamicsSimulator.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l01284">1284</a> of file <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html">dynamicsSimulator.h</a>.</p>
 
 </div>
 </div>
@@ -788,7 +894,31 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l01119">1119</a> of file <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html">dynamicsSimulator.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l01287">1287</a> of file <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html">dynamicsSimulator.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5632d299cc388e44bebc99e6cf6df86f"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::map&lt; TimeType, double &gt; &gt; <a class="el" href="../../d1/dc5/classtudat_1_1propagators_1_1_multi_arc_dynamics_simulator.html">tudat::propagators::MultiArcDynamicsSimulator</a>&lt; StateScalarType, TimeType &gt;::cummulativeComputationTimeHistory_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l01289">1289</a> of file <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html">dynamicsSimulator.h</a>.</p>
 
 </div>
 </div>
@@ -812,7 +942,7 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l01122">1122</a> of file <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html">dynamicsSimulator.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l01292">1292</a> of file <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html">dynamicsSimulator.h</a>.</p>
 
 </div>
 </div>
@@ -836,7 +966,7 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l01125">1125</a> of file <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html">dynamicsSimulator.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l01295">1295</a> of file <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html">dynamicsSimulator.h</a>.</p>
 
 </div>
 </div>
@@ -860,7 +990,7 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l01128">1128</a> of file <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html">dynamicsSimulator.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l01298">1298</a> of file <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html">dynamicsSimulator.h</a>.</p>
 
 </div>
 </div>
@@ -884,7 +1014,7 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l01131">1131</a> of file <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html">dynamicsSimulator.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html#l01301">1301</a> of file <a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html">dynamicsSimulator.h</a>.</p>
 
 </div>
 </div>
@@ -894,7 +1024,7 @@ template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; 
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 27 2017 09:33:02 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 7 2017 11:20:34 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

@@ -110,14 +110,15 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
   <img src="../../d8/d84/classtudat_1_1simulation__setup_1_1_aerodynamic_coefficient_settings.png" usemap="#tudat::simulation_5Fsetup::AerodynamicCoefficientSettings_map" alt=""/>
   <map id="tudat::simulation_5Fsetup::AerodynamicCoefficientSettings_map" name="tudat::simulation_setup::AerodynamicCoefficientSettings_map">
 <area href="../../d6/d52/classtudat_1_1simulation__setup_1_1_constant_aerodynamic_coefficient_settings.html" title="AerodynamicCoefficientSettings for defining a constant aerodynamic coefficients. " alt="tudat::simulation_setup::ConstantAerodynamicCoefficientSettings" shape="rect" coords="0,56,524,80"/>
-<area href="../../d7/dca/classtudat_1_1simulation__setup_1_1_tabulated_aerodynamic_coefficient_settings.html" title="Object for setting aerodynamic coefficients from a user-defined N-dimensional table (with N&gt;1)..." alt="tudat::simulation_setup::TabulatedAerodynamicCoefficientSettings&lt; NumberOfDimensions &gt;" shape="rect" coords="534,56,1058,80"/>
-<area href="../../d6/dc5/classtudat_1_1simulation__setup_1_1_tabulated_aerodynamic_coefficient_settings_3_011_01_4.html" title="Object for setting aerodynamic coefficients from a user-defined 1-dimensional table. " alt="tudat::simulation_setup::TabulatedAerodynamicCoefficientSettings&lt; 1 &gt;" shape="rect" coords="1068,56,1592,80"/>
+<area href="../../db/d76/classtudat_1_1simulation__setup_1_1_tabulated_aerodynamic_coefficient_settings_base.html" title="Base class (non-functional) for the different classes of TabulatedAerodynamicCoefficientSettings. " alt="tudat::simulation_setup::TabulatedAerodynamicCoefficientSettingsBase" shape="rect" coords="534,56,1058,80"/>
+<area href="../../d7/dca/classtudat_1_1simulation__setup_1_1_tabulated_aerodynamic_coefficient_settings.html" title="Object for setting aerodynamic coefficients from a user-defined N-dimensional table (with N&gt;1)..." alt="tudat::simulation_setup::TabulatedAerodynamicCoefficientSettings&lt; NumberOfDimensions &gt;" shape="rect" coords="267,112,791,136"/>
+<area href="../../d6/dc5/classtudat_1_1simulation__setup_1_1_tabulated_aerodynamic_coefficient_settings_3_011_01_4.html" title="Object for setting aerodynamic coefficients from a user-defined 1-dimensional table. " alt="tudat::simulation_setup::TabulatedAerodynamicCoefficientSettings&lt; 1 &gt;" shape="rect" coords="801,112,1325,136"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa7965f3d180b9fbc3fdefa8b399473e8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d84/classtudat_1_1simulation__setup_1_1_aerodynamic_coefficient_settings.html#aa7965f3d180b9fbc3fdefa8b399473e8">AerodynamicCoefficientSettings</a> (const <a class="el" href="../../d4/da8/namespacetudat_1_1simulation__setup.html#aa71f2c20d4e42e5d5121dcc62295fdee">AerodynamicCoefficientTypes</a> aerodynamicCoefficientTypes, const double referenceLength, const double referenceArea, const double lateralReferenceLength, const Eigen::Vector3d &amp;momentReferencePoint, const std::vector&lt; <a class="el" href="../../d2/d4c/namespacetudat_1_1aerodynamics.html#a4f89d9b6963c83642465a3936d1d424d">aerodynamics::AerodynamicCoefficientsIndependentVariables</a> &gt; independentVariableNames, const bool areCoefficientsInAerodynamicFrame=1, const bool areCoefficientsInNegativeAxisDirection=1)</td></tr>
+<tr class="memitem:aa7965f3d180b9fbc3fdefa8b399473e8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d84/classtudat_1_1simulation__setup_1_1_aerodynamic_coefficient_settings.html#aa7965f3d180b9fbc3fdefa8b399473e8">AerodynamicCoefficientSettings</a> (const <a class="el" href="../../d4/da8/namespacetudat_1_1simulation__setup.html#aa71f2c20d4e42e5d5121dcc62295fdee">AerodynamicCoefficientTypes</a> <a class="el" href="../../d4/da8/namespacetudat_1_1simulation__setup.html#a08e28da4a31882a3451ffe479967564c">aerodynamicCoefficientTypes</a>, const double referenceLength, const double referenceArea, const double lateralReferenceLength, const Eigen::Vector3d &amp;momentReferencePoint, const std::vector&lt; <a class="el" href="../../d2/d4c/namespacetudat_1_1aerodynamics.html#a4f89d9b6963c83642465a3936d1d424d">aerodynamics::AerodynamicCoefficientsIndependentVariables</a> &gt; independentVariableNames, const bool areCoefficientsInAerodynamicFrame=1, const bool areCoefficientsInNegativeAxisDirection=1)</td></tr>
 <tr class="memdesc:aa7965f3d180b9fbc3fdefa8b399473e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor, sets type of aerodynamic coefficient model.  <a href="#aa7965f3d180b9fbc3fdefa8b399473e8">More...</a><br /></td></tr>
 <tr class="separator:aa7965f3d180b9fbc3fdefa8b399473e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2286359e82a186bbfa640447859dffcb"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d84/classtudat_1_1simulation__setup_1_1_aerodynamic_coefficient_settings.html#a2286359e82a186bbfa640447859dffcb">~AerodynamicCoefficientSettings</a> ()</td></tr>
@@ -262,8 +263,8 @@ Private Attributes</h2></td></tr>
     <tr><td class="paramname">lateralReferenceLength</td><td>Reference length with which aerodynamic moments (about y-axis) is non-dimensionalized. </td></tr>
     <tr><td class="paramname">momentReferencePoint</td><td>Point w.r.t. aerodynamic moment is calculated </td></tr>
     <tr><td class="paramname">independentVariableNames</td><td>Vector with identifiers the physical meaning of each independent variable of the aerodynamic coefficients. </td></tr>
-    <tr><td class="paramname">areCoefficientsInAerodynamicFrame</td><td>Boolean to define whether the aerodynamic coefficients are defined in the aerodynamic frame (lift, drag, side force) or in the body frame (typically denoted as Cx, Cy, Cz). </td></tr>
-    <tr><td class="paramname">areCoefficientsInNegativeAxisDirection</td><td>Boolean to define whether the aerodynamic coefficients are positive along the positive axes of the body or aerodynamic frame (see areCoefficientsInAerodynamicFrame). Note that for (lift, drag, side force), the coefficients are typically defined in negative direction. </td></tr>
+    <tr><td class="paramname">areCoefficientsInAerodynamicFrame</td><td>Boolean to define whether the aerodynamic coefficients are defined in the aerodynamic frame (drag, side, lift force) or in the body frame (typically denoted as Cx, Cy, Cz). </td></tr>
+    <tr><td class="paramname">areCoefficientsInNegativeAxisDirection</td><td>Boolean to define whether the aerodynamic coefficients are positive along the positive axes of the body or aerodynamic frame (see areCoefficientsInAerodynamicFrame). Note that for (drag, side, lift force), the coefficients are typically defined in negative direction. </td></tr>
   </table>
   </dd>
 </dl>
@@ -492,6 +493,8 @@ Private Attributes</h2></td></tr>
 
 <p>References <a class="el" href="../../df/da1/create_aerodynamic_coefficient_interface_8h_source.html#l00210">areCoefficientsInAerodynamicFrame_</a>.</p>
 
+<p>Referenced by <a class="el" href="../../d7/de3/_json_interface_2_environment_2aerodynamics_8cpp_source.html#l00130">tudat::simulation_setup::from_json()</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a8446d225c5c7011a81280fe0fa1958c3"></a>
@@ -519,6 +522,8 @@ Private Attributes</h2></td></tr>
 <p>Definition at line <a class="el" href="../../df/da1/create_aerodynamic_coefficient_interface_8h_source.html#l00147">147</a> of file <a class="el" href="../../df/da1/create_aerodynamic_coefficient_interface_8h_source.html">createAerodynamicCoefficientInterface.h</a>.</p>
 
 <p>References <a class="el" href="../../df/da1/create_aerodynamic_coefficient_interface_8h_source.html#l00219">areCoefficientsInNegativeAxisDirection_</a>.</p>
+
+<p>Referenced by <a class="el" href="../../d7/de3/_json_interface_2_environment_2aerodynamics_8cpp_source.html#l00130">tudat::simulation_setup::from_json()</a>.</p>
 
 </div>
 </div>
@@ -761,7 +766,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Boolean to define whether the aerodynamic coefficients are defined in the aerodynamic frame (lift, drag, side force) or in the body frame (typically denoted as Cx, Cy, Cz). </p>
+<p>Boolean to define whether the aerodynamic coefficients are defined in the aerodynamic frame (drag, side, lift force) or in the body frame (typically denoted as Cx, Cy, Cz). </p>
 
 <p>Definition at line <a class="el" href="../../df/da1/create_aerodynamic_coefficient_interface_8h_source.html#l00210">210</a> of file <a class="el" href="../../df/da1/create_aerodynamic_coefficient_interface_8h_source.html">createAerodynamicCoefficientInterface.h</a>.</p>
 
@@ -786,7 +791,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Boolean to define whether the aerodynamic coefficients are positive along the positive axes of the body or aerodynamic frame (see areCoefficientsInAerodynamicFrame). Note that for (lift, drag, side force), the coefficients are typically defined in negative direction. </p>
+<p>Boolean to define whether the aerodynamic coefficients are positive along the positive axes of the body or aerodynamic frame (see areCoefficientsInAerodynamicFrame). Note that for (drag, side, lift force), the coefficients are typically defined in negative direction. </p>
 
 <p>Definition at line <a class="el" href="../../df/da1/create_aerodynamic_coefficient_interface_8h_source.html#l00219">219</a> of file <a class="el" href="../../df/da1/create_aerodynamic_coefficient_interface_8h_source.html">createAerodynamicCoefficientInterface.h</a>.</p>
 
@@ -824,7 +829,7 @@ Private Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 27 2017 09:33:02 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 7 2017 11:20:35 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

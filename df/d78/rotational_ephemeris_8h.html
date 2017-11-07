@@ -101,6 +101,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <code>#include &quot;<a class="el" href="../../d4/d01/time_conversions_8h_source.html">Tudat/Astrodynamics/BasicAstrodynamics/timeConversions.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d4/db3/physical_constants_8h_source.html">Tudat/Astrodynamics/BasicAstrodynamics/physicalConstants.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../dd/d43/basic_typedefs_8h_source.html">Tudat/Basics/basicTypedefs.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d6/dde/time_type_8h_source.html">Tudat/Basics/timeType.h</a>&quot;</code><br />
 </div>
 <p><a href="../../df/d78/rotational_ephemeris_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -138,10 +139,10 @@ Functions</h2></td></tr>
 <tr class="memitem:ad920caed2bfc92524aa2c4c5b3c7a89c"><td class="memTemplItemLeft" align="right" valign="top">Eigen::Matrix&lt; StateScalarType, 6, 1 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d9/d27/namespacetudat_1_1ephemerides.html#ad920caed2bfc92524aa2c4c5b3c7a89c">tudat::ephemerides::transformStateToFrameFromRotations</a> (const Eigen::Matrix&lt; StateScalarType, 6, 1 &gt; &amp;stateInBaseFrame, const Eigen::Quaterniond &amp;rotationToFrame, const Eigen::Matrix3d &amp;rotationMatrixToFrameDerivative)</td></tr>
 <tr class="memdesc:ad920caed2bfc92524aa2c4c5b3c7a89c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transform a state (Cartesian position and velocity) from one frame to another.  <a href="../../d9/d27/namespacetudat_1_1ephemerides.html#ad920caed2bfc92524aa2c4c5b3c7a89c">More...</a><br /></td></tr>
 <tr class="separator:ad920caed2bfc92524aa2c4c5b3c7a89c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a740b51f1927b771c9b6c372b98506eae"><td class="memTemplParams" colspan="2">template&lt;typename StateScalarType &gt; </td></tr>
-<tr class="memitem:a740b51f1927b771c9b6c372b98506eae"><td class="memTemplItemLeft" align="right" valign="top">Eigen::Matrix&lt; StateScalarType, 6, 1 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d9/d27/namespacetudat_1_1ephemerides.html#a740b51f1927b771c9b6c372b98506eae">tudat::ephemerides::transformStateToFrameFromRotationTimeFunctions</a> (const Eigen::Matrix&lt; StateScalarType, 6, 1 &gt; &amp;stateInBaseFrame, const double currentTime, const boost::function&lt; Eigen::Quaterniond(const double) &gt; rotationToFrameFunction, const boost::function&lt; Eigen::Matrix3d(const double) &gt; rotationMatrixToFrameDerivativeFunction)</td></tr>
-<tr class="memdesc:a740b51f1927b771c9b6c372b98506eae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transform a state (Cartesian position and velocity) from one frame to another.  <a href="../../d9/d27/namespacetudat_1_1ephemerides.html#a740b51f1927b771c9b6c372b98506eae">More...</a><br /></td></tr>
-<tr class="separator:a740b51f1927b771c9b6c372b98506eae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d87bea5e3a0251bc43969a6b982aa93"><td class="memTemplParams" colspan="2">template&lt;typename StateScalarType , typename TimeType &gt; </td></tr>
+<tr class="memitem:a4d87bea5e3a0251bc43969a6b982aa93"><td class="memTemplItemLeft" align="right" valign="top">Eigen::Matrix&lt; StateScalarType, 6, 1 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d9/d27/namespacetudat_1_1ephemerides.html#a4d87bea5e3a0251bc43969a6b982aa93">tudat::ephemerides::transformStateToFrameFromRotationTimeFunctions</a> (const Eigen::Matrix&lt; StateScalarType, 6, 1 &gt; &amp;stateInBaseFrame, const double currentTime, const boost::function&lt; Eigen::Quaterniond(const TimeType) &gt; rotationToFrameFunction, const boost::function&lt; Eigen::Matrix3d(const TimeType) &gt; rotationMatrixToFrameDerivativeFunction)</td></tr>
+<tr class="memdesc:a4d87bea5e3a0251bc43969a6b982aa93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transform a state (Cartesian position and velocity) from one frame to another.  <a href="../../d9/d27/namespacetudat_1_1ephemerides.html#a4d87bea5e3a0251bc43969a6b982aa93">More...</a><br /></td></tr>
+<tr class="separator:a4d87bea5e3a0251bc43969a6b982aa93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29a001a6b988130a1600b2990c9a54b1"><td class="memTemplParams" colspan="2">template&lt;typename StateScalarType , typename TimeType &gt; </td></tr>
 <tr class="memitem:a29a001a6b988130a1600b2990c9a54b1"><td class="memTemplItemLeft" align="right" valign="top">Eigen::Matrix&lt; StateScalarType, 6, 1 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d9/d27/namespacetudat_1_1ephemerides.html#a29a001a6b988130a1600b2990c9a54b1">tudat::ephemerides::transformStateToGlobalFrame</a> (const Eigen::Matrix&lt; StateScalarType, 6, 1 &gt; &amp;stateInLocalFrame, const TimeType currentTime, const boost::shared_ptr&lt; RotationalEphemeris &gt; rotationalEphemeris)</td></tr>
 <tr class="memdesc:a29a001a6b988130a1600b2990c9a54b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to transform a state from the target to base frame of a rotational ephemeris.  <a href="../../d9/d27/namespacetudat_1_1ephemerides.html#a29a001a6b988130a1600b2990c9a54b1">More...</a><br /></td></tr>
@@ -154,7 +155,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 27 2017 09:32:58 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 7 2017 11:20:29 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

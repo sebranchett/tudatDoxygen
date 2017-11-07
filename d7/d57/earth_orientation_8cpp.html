@@ -95,6 +95,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="../../d4/db3/physical_constants_8h_source.html">Tudat/Astrodynamics/BasicAstrodynamics/physicalConstants.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d0/d5a/earth_orientation_8h_source.html">Tudat/External/SofaInterface/earthOrientation.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d6/dde/time_type_8h_source.html">Tudat/Basics/timeType.h</a>&quot;</code><br />
 </div>
 <p><a href="../../d7/d57/earth_orientation_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -111,17 +112,25 @@ Functions</h2></td></tr>
 <tr class="memitem:ac3494e0c28dcb1e977bfc0a8d50b8be9"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d31/namespacetudat_1_1sofa__interface.html#ac3494e0c28dcb1e977bfc0a8d50b8be9">tudat::sofa_interface::calculateEarthRotationAngle</a> (const double ut1, const double julianDaysEpochShift)</td></tr>
 <tr class="memdesc:ac3494e0c28dcb1e977bfc0a8d50b8be9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to calculate ERA (earth rotation angle)  <a href="../../d0/d31/namespacetudat_1_1sofa__interface.html#ac3494e0c28dcb1e977bfc0a8d50b8be9">More...</a><br /></td></tr>
 <tr class="separator:ac3494e0c28dcb1e977bfc0a8d50b8be9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a937a768c60fe564b3a3bf94ed9828590"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d31/namespacetudat_1_1sofa__interface.html#a937a768c60fe564b3a3bf94ed9828590">tudat::sofa_interface::calculateGreenwichMeanSiderealTime</a> (const double terrestrialTime, const double universalTime1, const double referenceJulianDay, const IAUConventions iauConvention)</td></tr>
-<tr class="memdesc:a937a768c60fe564b3a3bf94ed9828590"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to calculate GMST according to requested IAU conventions.  <a href="../../d0/d31/namespacetudat_1_1sofa__interface.html#a937a768c60fe564b3a3bf94ed9828590">More...</a><br /></td></tr>
-<tr class="separator:a937a768c60fe564b3a3bf94ed9828590"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a848de854d7b85798e86ebe5d39112c04"><td class="memItemLeft" align="right" valign="top">std::pair&lt; Eigen::Vector2d, double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d31/namespacetudat_1_1sofa__interface.html#a848de854d7b85798e86ebe5d39112c04">tudat::sofa_interface::getPositionOfCipInGcrs</a> (const double terrestrialTime, const double julianDaysEpochShift, const IAUConventions precessionNutationTheory)</td></tr>
-<tr class="memdesc:a848de854d7b85798e86ebe5d39112c04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to calculate CIP and CIO locator according to requested IAU conventions.  <a href="../../d0/d31/namespacetudat_1_1sofa__interface.html#a848de854d7b85798e86ebe5d39112c04">More...</a><br /></td></tr>
-<tr class="separator:a848de854d7b85798e86ebe5d39112c04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab51855152b58dfdc7ad490a92113feb5"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:ab51855152b58dfdc7ad490a92113feb5"><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/d31/namespacetudat_1_1sofa__interface.html#ab51855152b58dfdc7ad490a92113feb5">tudat::sofa_interface::calculateEarthRotationAngleTemplated&lt; double &gt;</a> (const double currentUt1)</td></tr>
+<tr class="memdesc:ab51855152b58dfdc7ad490a92113feb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to calculate ERA (earth rotation angle) in double precision.  <a href="../../d0/d31/namespacetudat_1_1sofa__interface.html#ab51855152b58dfdc7ad490a92113feb5">More...</a><br /></td></tr>
+<tr class="separator:ab51855152b58dfdc7ad490a92113feb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c3d2e1580522ef122d6e3c8d23ca44e"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:a0c3d2e1580522ef122d6e3c8d23ca44e"><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/d31/namespacetudat_1_1sofa__interface.html#a0c3d2e1580522ef122d6e3c8d23ca44e">tudat::sofa_interface::calculateEarthRotationAngleTemplated&lt; Time &gt;</a> (const Time currentUt1)</td></tr>
+<tr class="memdesc:a0c3d2e1580522ef122d6e3c8d23ca44e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to calculate ERA (earth rotation angle) in <a class="el" href="../../d8/df9/classtudat_1_1_time.html" title="Class for defining time with a resolution that is sub-fs for very long periods of time...">Time</a> precision.  <a href="../../d0/d31/namespacetudat_1_1sofa__interface.html#a0c3d2e1580522ef122d6e3c8d23ca44e">More...</a><br /></td></tr>
+<tr class="separator:a0c3d2e1580522ef122d6e3c8d23ca44e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf020601620da622577726d42a2e3191"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d31/namespacetudat_1_1sofa__interface.html#abf020601620da622577726d42a2e3191">tudat::sofa_interface::calculateGreenwichMeanSiderealTime</a> (const double terrestrialTime, const double universalTime1, const double referenceJulianDay, const basic_astrodynamics::IAUConventions iauConvention)</td></tr>
+<tr class="memdesc:abf020601620da622577726d42a2e3191"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to calculate GMST according to requested IAU conventions.  <a href="../../d0/d31/namespacetudat_1_1sofa__interface.html#abf020601620da622577726d42a2e3191">More...</a><br /></td></tr>
+<tr class="separator:abf020601620da622577726d42a2e3191"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3dac823d4f86766d6bd2604f39960d1f"><td class="memItemLeft" align="right" valign="top">std::pair&lt; Eigen::Vector2d, double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d31/namespacetudat_1_1sofa__interface.html#a3dac823d4f86766d6bd2604f39960d1f">tudat::sofa_interface::getPositionOfCipInGcrs</a> (const double terrestrialTime, const double julianDaysEpochShift, const basic_astrodynamics::IAUConventions precessionNutationTheory)</td></tr>
+<tr class="memdesc:a3dac823d4f86766d6bd2604f39960d1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to calculate CIP and CIO locator according to requested IAU conventions.  <a href="../../d0/d31/namespacetudat_1_1sofa__interface.html#a3dac823d4f86766d6bd2604f39960d1f">More...</a><br /></td></tr>
+<tr class="separator:a3dac823d4f86766d6bd2604f39960d1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 27 2017 09:32:58 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 7 2017 11:20:30 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

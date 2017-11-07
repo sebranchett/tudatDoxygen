@@ -99,7 +99,6 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <code>#include &lt;iomanip&gt;</code><br />
 <code>#include &lt;limits&gt;</code><br />
 <code>#include &lt;map&gt;</code><br />
-<code>#include &lt;sstream&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 <code>#include &lt;Eigen/Core&gt;</code><br />
@@ -139,6 +138,17 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a58978aa7f66f0bdc9ee916bf561a034a"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d8c/namespacetudat_1_1input__output.html#a58978aa7f66f0bdc9ee916bf561a034a">tudat::input_output::getAtmosphereTablesPath</a> ()</td></tr>
+<tr class="memdesc:a58978aa7f66f0bdc9ee916bf561a034a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get atmosphere tables path.  <a href="../../d0/d8c/namespacetudat_1_1input__output.html#a58978aa7f66f0bdc9ee916bf561a034a">More...</a><br /></td></tr>
+<tr class="separator:a58978aa7f66f0bdc9ee916bf561a034a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61eee7df35d4b10293573e87c54c28c0"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d8c/namespacetudat_1_1input__output.html#a61eee7df35d4b10293573e87c54c28c0">tudat::input_output::getEarthOrientationDataFilesPath</a> ()</td></tr>
+<tr class="separator:a61eee7df35d4b10293573e87c54c28c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8789200e71a6dc6aab2e5bc76346d24c"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d8c/namespacetudat_1_1input__output.html#a8789200e71a6dc6aab2e5bc76346d24c">tudat::input_output::getGravityModelsPath</a> ()</td></tr>
+<tr class="memdesc:a8789200e71a6dc6aab2e5bc76346d24c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get gravity models path.  <a href="../../d0/d8c/namespacetudat_1_1input__output.html#a8789200e71a6dc6aab2e5bc76346d24c">More...</a><br /></td></tr>
+<tr class="separator:a8789200e71a6dc6aab2e5bc76346d24c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63431c4bafc26065810293b2f351b4af"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d8c/namespacetudat_1_1input__output.html#a63431c4bafc26065810293b2f351b4af">tudat::input_output::getSpaceWeatherDataPath</a> ()</td></tr>
+<tr class="memdesc:a63431c4bafc26065810293b2f351b4af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get space weather data files path.  <a href="../../d0/d8c/namespacetudat_1_1input__output.html#a63431c4bafc26065810293b2f351b4af">More...</a><br /></td></tr>
+<tr class="separator:a63431c4bafc26065810293b2f351b4af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50d8c3a1564e3f39f7b066a8e868438d"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d8c/namespacetudat_1_1input__output.html#a50d8c3a1564e3f39f7b066a8e868438d">tudat::input_output::getSpiceKernelPath</a> ()</td></tr>
 <tr class="memdesc:a50d8c3a1564e3f39f7b066a8e868438d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get Spice kernel path.  <a href="../../d0/d8c/namespacetudat_1_1input__output.html#a50d8c3a1564e3f39f7b066a8e868438d">More...</a><br /></td></tr>
 <tr class="separator:a50d8c3a1564e3f39f7b066a8e868438d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -171,10 +181,14 @@ Functions</h2></td></tr>
 <tr class="memitem:ae42946bb675efdf6f3deb1ff0e191dab"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/d8c/namespacetudat_1_1input__output.html#ae42946bb675efdf6f3deb1ff0e191dab">tudat::input_output::writeDataMapToTextFile</a> (const std::map&lt; KeyType, Eigen::Matrix&lt; ScalarType, NumberOfRows, NumberOfColumns, Options, MaximumRows, MaximumCols &gt; &gt; &amp;dataMap, const std::string &amp;outputFilename)</td></tr>
 <tr class="memdesc:ae42946bb675efdf6f3deb1ff0e191dab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write data map to text file.  <a href="../../d0/d8c/namespacetudat_1_1input__output.html#ae42946bb675efdf6f3deb1ff0e191dab">More...</a><br /></td></tr>
 <tr class="separator:ae42946bb675efdf6f3deb1ff0e191dab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8efb19f29e0df75d20f9d78b805a0433"><td class="memTemplParams" colspan="2">template&lt;typename ScalarType , int NumberOfRows, int NumberOfColumns&gt; </td></tr>
-<tr class="memitem:a8efb19f29e0df75d20f9d78b805a0433"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/d8c/namespacetudat_1_1input__output.html#a8efb19f29e0df75d20f9d78b805a0433">tudat::input_output::writeMatrixToFile</a> (Eigen::Matrix&lt; ScalarType, NumberOfRows, NumberOfColumns &gt; matrixToWrite, const std::string &amp;outputFilename, const int precisionOfMatrixEntries=16, const boost::filesystem::path &amp;outputDirectory=getTudatRootPath(), const std::string &amp;delimiter=&quot;\t&quot;)</td></tr>
-<tr class="memdesc:a8efb19f29e0df75d20f9d78b805a0433"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write <a class="el" href="../../d0/da5/namespace_eigen.html">Eigen</a> matrix to text file.  <a href="../../d0/d8c/namespacetudat_1_1input__output.html#a8efb19f29e0df75d20f9d78b805a0433">More...</a><br /></td></tr>
-<tr class="separator:a8efb19f29e0df75d20f9d78b805a0433"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6597f2c7a1a97d3fc5af8fee794db8a1"><td class="memTemplParams" colspan="2">template&lt;typename KeyType , typename ValueType &gt; </td></tr>
+<tr class="memitem:a6597f2c7a1a97d3fc5af8fee794db8a1"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/d8c/namespacetudat_1_1input__output.html#a6597f2c7a1a97d3fc5af8fee794db8a1">tudat::input_output::writeDataMapToTextFile</a> (const std::map&lt; KeyType, ValueType &gt; &amp;dataMap, const boost::filesystem::path &amp;outputPath, const std::string &amp;fileHeader, const int precision)</td></tr>
+<tr class="memdesc:a6597f2c7a1a97d3fc5af8fee794db8a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write data map to text file.  <a href="../../d0/d8c/namespacetudat_1_1input__output.html#a6597f2c7a1a97d3fc5af8fee794db8a1">More...</a><br /></td></tr>
+<tr class="separator:a6597f2c7a1a97d3fc5af8fee794db8a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae045182bd40ac124f611f0038ab7ea77"><td class="memTemplParams" colspan="2">template&lt;typename ScalarType , int NumberOfRows, int NumberOfColumns&gt; </td></tr>
+<tr class="memitem:ae045182bd40ac124f611f0038ab7ea77"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/d8c/namespacetudat_1_1input__output.html#ae045182bd40ac124f611f0038ab7ea77">tudat::input_output::writeMatrixToFile</a> (Eigen::Matrix&lt; ScalarType, NumberOfRows, NumberOfColumns &gt; matrixToWrite, const std::string &amp;outputFilename, const int precisionOfMatrixEntries=16, const boost::filesystem::path &amp;outputDirectory=getTudatRootPath(), const std::string &amp;delimiter=&quot;\t&quot;, const std::string &amp;header=&quot;&quot;)</td></tr>
+<tr class="memdesc:ae045182bd40ac124f611f0038ab7ea77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write <a class="el" href="../../d0/da5/namespace_eigen.html">Eigen</a> matrix to text file.  <a href="../../d0/d8c/namespacetudat_1_1input__output.html#ae045182bd40ac124f611f0038ab7ea77">More...</a><br /></td></tr>
+<tr class="separator:ae045182bd40ac124f611f0038ab7ea77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24c686482edd167bfdaf5acbd02db984"><td class="memTemplParams" colspan="2">template&lt;typename OutputStream , typename ValueType &gt; </td></tr>
 <tr class="memitem:a24c686482edd167bfdaf5acbd02db984"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/d8c/namespacetudat_1_1input__output.html#a24c686482edd167bfdaf5acbd02db984">tudat::input_output::writeValueToStream</a> (OutputStream &amp;stream, const ValueType &amp;value, const int precision, const std::string &amp;delimiter)</td></tr>
 <tr class="memdesc:a24c686482edd167bfdaf5acbd02db984"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write a value to a stream.  <a href="../../d0/d8c/namespacetudat_1_1input__output.html#a24c686482edd167bfdaf5acbd02db984">More...</a><br /></td></tr>
@@ -187,7 +201,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 27 2017 09:32:58 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 7 2017 11:20:30 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

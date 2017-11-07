@@ -122,10 +122,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad203979adc299441bc774b0445217ba9"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dea/classtudat_1_1observation__models_1_1_observation_manager_base.html#ad203979adc299441bc774b0445217ba9">~ObservationManagerBase</a> ()</td></tr>
 <tr class="memdesc:ad203979adc299441bc774b0445217ba9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor.  <a href="#ad203979adc299441bc774b0445217ba9">More...</a><br /></td></tr>
 <tr class="separator:ad203979adc299441bc774b0445217ba9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af96e4015280814e267d71dccc2b24bb1"><td class="memItemLeft" align="right" valign="top">virtual std::pair&lt; Eigen::Matrix&lt; ObservationScalarType, Eigen::Dynamic, 1 &gt;, Eigen::MatrixXd &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dea/classtudat_1_1observation__models_1_1_observation_manager_base.html#af96e4015280814e267d71dccc2b24bb1">computeObservationsWithPartials</a> (const std::vector&lt; TimeType &gt; &amp;times, const <a class="el" href="../../d2/df9/namespacetudat_1_1observation__models.html#a7a66b5e78e636627f69a082a10c57b52">LinkEnds</a> linkEnds, const <a class="el" href="../../d2/df9/namespacetudat_1_1observation__models.html#a48c0d529a455bf73ae57991768625e6e">LinkEndType</a> linkEndAssociatedWithTime)=0</td></tr>
+<tr class="memitem:af96e4015280814e267d71dccc2b24bb1"><td class="memItemLeft" align="right" valign="top">virtual std::pair&lt; Eigen::Matrix&lt; <a class="el" href="../../d0/d6f/classes__e_8js.html#aee24a28d672b815552e3b29a7c94c0d6">ObservationScalarType</a>, Eigen::Dynamic, 1 &gt;, Eigen::MatrixXd &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dea/classtudat_1_1observation__models_1_1_observation_manager_base.html#af96e4015280814e267d71dccc2b24bb1">computeObservationsWithPartials</a> (const std::vector&lt; TimeType &gt; &amp;times, const <a class="el" href="../../d2/df9/namespacetudat_1_1observation__models.html#a7a66b5e78e636627f69a082a10c57b52">LinkEnds</a> linkEnds, const <a class="el" href="../../d2/df9/namespacetudat_1_1observation__models.html#a48c0d529a455bf73ae57991768625e6e">LinkEndType</a> linkEndAssociatedWithTime)=0</td></tr>
 <tr class="memdesc:af96e4015280814e267d71dccc2b24bb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to simulate observations between specified link ends and associated partials at set of observation times.  <a href="#af96e4015280814e267d71dccc2b24bb1">More...</a><br /></td></tr>
 <tr class="separator:af96e4015280814e267d71dccc2b24bb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aafbaf91c917e2ab203d892173ba87458"><td class="memItemLeft" align="right" valign="top">virtual boost::shared_ptr&lt; <a class="el" href="../../d2/d8f/classtudat_1_1observation__models_1_1_observation_simulator_base.html">ObservationSimulatorBase</a>&lt; ObservationScalarType, TimeType &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dea/classtudat_1_1observation__models_1_1_observation_manager_base.html#aafbaf91c917e2ab203d892173ba87458">getObservationSimulator</a> ()=0</td></tr>
+<tr class="memitem:aafbaf91c917e2ab203d892173ba87458"><td class="memItemLeft" align="right" valign="top">virtual boost::shared_ptr&lt; <a class="el" href="../../d2/d8f/classtudat_1_1observation__models_1_1_observation_simulator_base.html">ObservationSimulatorBase</a>&lt; <a class="el" href="../../d0/d6f/classes__e_8js.html#aee24a28d672b815552e3b29a7c94c0d6">ObservationScalarType</a>, TimeType &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dea/classtudat_1_1observation__models_1_1_observation_manager_base.html#aafbaf91c917e2ab203d892173ba87458">getObservationSimulator</a> ()=0</td></tr>
 <tr class="memdesc:aafbaf91c917e2ab203d892173ba87458"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function (ṕure virtual) to return the object used to simulate noise-free observations.  <a href="#aafbaf91c917e2ab203d892173ba87458">More...</a><br /></td></tr>
 <tr class="separator:aafbaf91c917e2ab203d892173ba87458"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9ef955226031cc3552eeb97eafff169"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dea/classtudat_1_1observation__models_1_1_observation_manager_base.html#aa9ef955226031cc3552eeb97eafff169">getObservationSize</a> (const <a class="el" href="../../d2/df9/namespacetudat_1_1observation__models.html#a7a66b5e78e636627f69a082a10c57b52">LinkEnds</a> &amp;linkEnds)=0</td></tr>
@@ -170,7 +170,7 @@ template&lt;typename ObservationScalarType  = double, typename TimeType  = doubl
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../dd/dea/classtudat_1_1observation__models_1_1_observation_manager_base.html">tudat::observation_models::ObservationManagerBase</a>&lt; ObservationScalarType, TimeType &gt;::<a class="el" href="../../dd/dea/classtudat_1_1observation__models_1_1_observation_manager_base.html">ObservationManagerBase</a> </td>
+          <td class="memname"><a class="el" href="../../dd/dea/classtudat_1_1observation__models_1_1_observation_manager_base.html">tudat::observation_models::ObservationManagerBase</a>&lt; <a class="el" href="../../d0/d6f/classes__e_8js.html#aee24a28d672b815552e3b29a7c94c0d6">ObservationScalarType</a>, TimeType &gt;::<a class="el" href="../../dd/dea/classtudat_1_1observation__models_1_1_observation_manager_base.html">ObservationManagerBase</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="../../d2/df9/namespacetudat_1_1observation__models.html#adcbe1f4fdc29700cf58f3c59faf9cc6b">ObservableType</a>&#160;</td>
           <td class="paramname"><em>observableType</em>, </td>
@@ -224,7 +224,7 @@ template&lt;typename ObservationScalarType  = double, typename TimeType  = doubl
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="../../dd/dea/classtudat_1_1observation__models_1_1_observation_manager_base.html">tudat::observation_models::ObservationManagerBase</a>&lt; ObservationScalarType, TimeType &gt;::~<a class="el" href="../../dd/dea/classtudat_1_1observation__models_1_1_observation_manager_base.html">ObservationManagerBase</a> </td>
+          <td class="memname">virtual <a class="el" href="../../dd/dea/classtudat_1_1observation__models_1_1_observation_manager_base.html">tudat::observation_models::ObservationManagerBase</a>&lt; <a class="el" href="../../d0/d6f/classes__e_8js.html#aee24a28d672b815552e3b29a7c94c0d6">ObservationScalarType</a>, TimeType &gt;::~<a class="el" href="../../dd/dea/classtudat_1_1observation__models_1_1_observation_manager_base.html">ObservationManagerBase</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -254,7 +254,7 @@ template&lt;typename ObservationScalarType  = double, typename TimeType  = doubl
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual int <a class="el" href="../../dd/dea/classtudat_1_1observation__models_1_1_observation_manager_base.html">tudat::observation_models::ObservationManagerBase</a>&lt; ObservationScalarType, TimeType &gt;::getObservationSize </td>
+          <td class="memname">virtual int <a class="el" href="../../dd/dea/classtudat_1_1observation__models_1_1_observation_manager_base.html">tudat::observation_models::ObservationManagerBase</a>&lt; <a class="el" href="../../d0/d6f/classes__e_8js.html#aee24a28d672b815552e3b29a7c94c0d6">ObservationScalarType</a>, TimeType &gt;::getObservationSize </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="../../d2/df9/namespacetudat_1_1observation__models.html#a7a66b5e78e636627f69a082a10c57b52">LinkEnds</a> &amp;&#160;</td>
           <td class="paramname"><em>linkEnds</em></td><td>)</td>
@@ -291,7 +291,7 @@ template&lt;typename ObservationScalarType  = double, typename TimeType  = doubl
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual std::pair&lt; Eigen::Matrix&lt; ObservationScalarType, Eigen::Dynamic, 1 &gt;, Eigen::MatrixXd &gt; <a class="el" href="../../dd/dea/classtudat_1_1observation__models_1_1_observation_manager_base.html">tudat::observation_models::ObservationManagerBase</a>&lt; ObservationScalarType, TimeType &gt;::computeObservationsWithPartials </td>
+          <td class="memname">virtual std::pair&lt; Eigen::Matrix&lt; <a class="el" href="../../d0/d6f/classes__e_8js.html#aee24a28d672b815552e3b29a7c94c0d6">ObservationScalarType</a>, Eigen::Dynamic, 1 &gt;, Eigen::MatrixXd &gt; <a class="el" href="../../dd/dea/classtudat_1_1observation__models_1_1_observation_manager_base.html">tudat::observation_models::ObservationManagerBase</a>&lt; <a class="el" href="../../d0/d6f/classes__e_8js.html#aee24a28d672b815552e3b29a7c94c0d6">ObservationScalarType</a>, TimeType &gt;::computeObservationsWithPartials </td>
           <td>(</td>
           <td class="paramtype">const std::vector&lt; TimeType &gt; &amp;&#160;</td>
           <td class="paramname"><em>times</em>, </td>
@@ -346,7 +346,7 @@ template&lt;typename ObservationScalarType  = double, typename TimeType  = doubl
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual boost::shared_ptr&lt; <a class="el" href="../../d2/d8f/classtudat_1_1observation__models_1_1_observation_simulator_base.html">ObservationSimulatorBase</a>&lt; ObservationScalarType, TimeType &gt; &gt; <a class="el" href="../../dd/dea/classtudat_1_1observation__models_1_1_observation_manager_base.html">tudat::observation_models::ObservationManagerBase</a>&lt; ObservationScalarType, TimeType &gt;::getObservationSimulator </td>
+          <td class="memname">virtual boost::shared_ptr&lt; <a class="el" href="../../d2/d8f/classtudat_1_1observation__models_1_1_observation_simulator_base.html">ObservationSimulatorBase</a>&lt; <a class="el" href="../../d0/d6f/classes__e_8js.html#aee24a28d672b815552e3b29a7c94c0d6">ObservationScalarType</a>, TimeType &gt; &gt; <a class="el" href="../../dd/dea/classtudat_1_1observation__models_1_1_observation_manager_base.html">tudat::observation_models::ObservationManagerBase</a>&lt; <a class="el" href="../../d0/d6f/classes__e_8js.html#aee24a28d672b815552e3b29a7c94c0d6">ObservationScalarType</a>, TimeType &gt;::getObservationSimulator </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -376,7 +376,7 @@ template&lt;typename ObservationScalarType  = double, typename TimeType  = doubl
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Eigen::MatrixXd <a class="el" href="../../dd/dea/classtudat_1_1observation__models_1_1_observation_manager_base.html">tudat::observation_models::ObservationManagerBase</a>&lt; ObservationScalarType, TimeType &gt;::getCombinedStateTransitionAndSensitivityMatrix </td>
+          <td class="memname">Eigen::MatrixXd <a class="el" href="../../dd/dea/classtudat_1_1observation__models_1_1_observation_manager_base.html">tudat::observation_models::ObservationManagerBase</a>&lt; <a class="el" href="../../d0/d6f/classes__e_8js.html#aee24a28d672b815552e3b29a7c94c0d6">ObservationScalarType</a>, TimeType &gt;::getCombinedStateTransitionAndSensitivityMatrix </td>
           <td>(</td>
           <td class="paramtype">const double&#160;</td>
           <td class="paramname"><em>evaluationTime</em></td><td>)</td>
@@ -416,7 +416,7 @@ template&lt;typename ObservationScalarType  = double, typename TimeType  = doubl
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d2/df9/namespacetudat_1_1observation__models.html#adcbe1f4fdc29700cf58f3c59faf9cc6b">ObservableType</a> <a class="el" href="../../dd/dea/classtudat_1_1observation__models_1_1_observation_manager_base.html">tudat::observation_models::ObservationManagerBase</a>&lt; ObservationScalarType, TimeType &gt;::observableType_</td>
+          <td class="memname"><a class="el" href="../../d2/df9/namespacetudat_1_1observation__models.html#adcbe1f4fdc29700cf58f3c59faf9cc6b">ObservableType</a> <a class="el" href="../../dd/dea/classtudat_1_1observation__models_1_1_observation_manager_base.html">tudat::observation_models::ObservationManagerBase</a>&lt; <a class="el" href="../../d0/d6f/classes__e_8js.html#aee24a28d672b815552e3b29a7c94c0d6">ObservationScalarType</a>, TimeType &gt;::observableType_</td>
         </tr>
       </table>
   </td>
@@ -440,7 +440,7 @@ template&lt;typename ObservationScalarType  = double, typename TimeType  = doubl
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">boost::shared_ptr&lt; <a class="el" href="../../df/dc3/classtudat_1_1propagators_1_1_combined_state_transition_and_sensitivity_matrix_interface.html">propagators::CombinedStateTransitionAndSensitivityMatrixInterface</a> &gt; <a class="el" href="../../dd/dea/classtudat_1_1observation__models_1_1_observation_manager_base.html">tudat::observation_models::ObservationManagerBase</a>&lt; ObservationScalarType, TimeType &gt;::stateTransitionMatrixInterface_</td>
+          <td class="memname">boost::shared_ptr&lt; <a class="el" href="../../df/dc3/classtudat_1_1propagators_1_1_combined_state_transition_and_sensitivity_matrix_interface.html">propagators::CombinedStateTransitionAndSensitivityMatrixInterface</a> &gt; <a class="el" href="../../dd/dea/classtudat_1_1observation__models_1_1_observation_manager_base.html">tudat::observation_models::ObservationManagerBase</a>&lt; <a class="el" href="../../d0/d6f/classes__e_8js.html#aee24a28d672b815552e3b29a7c94c0d6">ObservationScalarType</a>, TimeType &gt;::stateTransitionMatrixInterface_</td>
         </tr>
       </table>
   </td>
@@ -466,7 +466,7 @@ template&lt;typename ObservationScalarType  = double, typename TimeType  = doubl
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::map&lt; <a class="el" href="../../d2/df9/namespacetudat_1_1observation__models.html#a7a66b5e78e636627f69a082a10c57b52">LinkEnds</a>, boost::shared_ptr&lt; <a class="el" href="../../d7/db3/classtudat_1_1observation__partials_1_1_position_partial_scaling.html">observation_partials::PositionPartialScaling</a> &gt; &gt; <a class="el" href="../../dd/dea/classtudat_1_1observation__models_1_1_observation_manager_base.html">tudat::observation_models::ObservationManagerBase</a>&lt; ObservationScalarType, TimeType &gt;::observationPartialScalers_</td>
+          <td class="memname">std::map&lt; <a class="el" href="../../d2/df9/namespacetudat_1_1observation__models.html#a7a66b5e78e636627f69a082a10c57b52">LinkEnds</a>, boost::shared_ptr&lt; <a class="el" href="../../d7/db3/classtudat_1_1observation__partials_1_1_position_partial_scaling.html">observation_partials::PositionPartialScaling</a> &gt; &gt; <a class="el" href="../../dd/dea/classtudat_1_1observation__models_1_1_observation_manager_base.html">tudat::observation_models::ObservationManagerBase</a>&lt; <a class="el" href="../../d0/d6f/classes__e_8js.html#aee24a28d672b815552e3b29a7c94c0d6">ObservationScalarType</a>, TimeType &gt;::observationPartialScalers_</td>
         </tr>
       </table>
   </td>
@@ -493,7 +493,7 @@ template&lt;typename ObservationScalarType  = double, typename TimeType  = doubl
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int <a class="el" href="../../dd/dea/classtudat_1_1observation__models_1_1_observation_manager_base.html">tudat::observation_models::ObservationManagerBase</a>&lt; ObservationScalarType, TimeType &gt;::stateTransitionMatrixSize_</td>
+          <td class="memname">int <a class="el" href="../../dd/dea/classtudat_1_1observation__models_1_1_observation_manager_base.html">tudat::observation_models::ObservationManagerBase</a>&lt; <a class="el" href="../../d0/d6f/classes__e_8js.html#aee24a28d672b815552e3b29a7c94c0d6">ObservationScalarType</a>, TimeType &gt;::stateTransitionMatrixSize_</td>
         </tr>
       </table>
   </td>
@@ -516,7 +516,7 @@ template&lt;typename ObservationScalarType  = double, typename TimeType  = doubl
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 27 2017 09:33:01 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 7 2017 11:20:33 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

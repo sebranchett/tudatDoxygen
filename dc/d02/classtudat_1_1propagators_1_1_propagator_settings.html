@@ -93,7 +93,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="../../d0/d05/classtudat_1_1propagators_1_1_propagator_settings-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">tudat::propagators::PropagatorSettings&lt; StateScalarType &gt; Class Template Reference</div>  </div>
+<div class="title">tudat::propagators::PropagatorSettings&lt; StateScalarType &gt; Class Template Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -139,6 +139,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a372bd085a2032236531536f5d8c46fb3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d02/classtudat_1_1propagators_1_1_propagator_settings.html#a372bd085a2032236531536f5d8c46fb3">resetInitialStates</a> (const Eigen::Matrix&lt; StateScalarType, Eigen::Dynamic, 1 &gt; &amp;initialBodyStates)</td></tr>
 <tr class="memdesc:a372bd085a2032236531536f5d8c46fb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to reset the initial state used as input for numerical integration.  <a href="#a372bd085a2032236531536f5d8c46fb3">More...</a><br /></td></tr>
 <tr class="separator:a372bd085a2032236531536f5d8c46fb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48f459668fb8775a2a3a11d8d5c7c24f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d02/classtudat_1_1propagators_1_1_propagator_settings.html#a48f459668fb8775a2a3a11d8d5c7c24f">resetIntegratedStateModels</a> (const <a class="el" href="../../d4/da8/namespacetudat_1_1simulation__setup.html#a4a7938c5b0b78593806673957cc169c4">simulation_setup::NamedBodyMap</a> &amp;bodyMap)=0</td></tr>
+<tr class="memdesc:a48f459668fb8775a2a3a11d8d5c7c24f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to create the integrated state models (e.g. acceleration/torque/mass-rate models).  <a href="#a48f459668fb8775a2a3a11d8d5c7c24f">More...</a><br /></td></tr>
+<tr class="separator:a48f459668fb8775a2a3a11d8d5c7c24f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -157,7 +160,7 @@ Protected Attributes</h2></td></tr>
 class tudat::propagators::PropagatorSettings&lt; StateScalarType &gt;</h3>
 
 
-<p>Definition at line <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00043">43</a> of file <a class="el" href="../../d8/db7/propagation_settings_8h_source.html">propagationSettings.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00044">44</a> of file <a class="el" href="../../d8/db7/propagation_settings_8h_source.html">propagationSettings.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a5540555103ae40e91c02a412268c9d67"></a>
 <div class="memitem">
@@ -200,7 +203,7 @@ template&lt;typename StateScalarType  = double&gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00053">53</a> of file <a class="el" href="../../d8/db7/propagation_settings_8h_source.html">propagationSettings.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00054">54</a> of file <a class="el" href="../../d8/db7/propagation_settings_8h_source.html">propagationSettings.h</a>.</p>
 
 </div>
 </div>
@@ -227,7 +230,7 @@ template&lt;typename StateScalarType  = double&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00058">58</a> of file <a class="el" href="../../d8/db7/propagation_settings_8h_source.html">propagationSettings.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00059">59</a> of file <a class="el" href="../../d8/db7/propagation_settings_8h_source.html">propagationSettings.h</a>.</p>
 
 </div>
 </div>
@@ -256,9 +259,9 @@ template&lt;typename StateScalarType  = double&gt; </div>
 </div><div class="memdoc">
 <p>Function to retrieve the initial state used as input for numerical integration </p><dl class="section return"><dt>Returns</dt><dd>Initial state used as input for numerical integration </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00065">65</a> of file <a class="el" href="../../d8/db7/propagation_settings_8h_source.html">propagationSettings.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00066">66</a> of file <a class="el" href="../../d8/db7/propagation_settings_8h_source.html">propagationSettings.h</a>.</p>
 
-<p>References <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00105">tudat::propagators::PropagatorSettings&lt; StateScalarType &gt;::initialStates_</a>.</p>
+<p>References <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00121">tudat::propagators::PropagatorSettings&lt; StateScalarType &gt;::initialStates_</a>.</p>
 
 </div>
 </div>
@@ -294,11 +297,11 @@ template&lt;typename StateScalarType  = double&gt; </div>
 
 <p>Reimplemented in <a class="el" href="../../d4/d5e/classtudat_1_1propagators_1_1_multi_type_propagator_settings.html#a146eb15064b1931e1dbe22abce89dfd5">tudat::propagators::MultiTypePropagatorSettings&lt; StateScalarType &gt;</a>, and <a class="el" href="../../d0/df9/classtudat_1_1propagators_1_1_multi_arc_propagator_settings.html#ad18463841fb78a39973f42647afff2a3">tudat::propagators::MultiArcPropagatorSettings&lt; StateScalarType &gt;</a>.</p>
 
-<p>Definition at line <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00075">75</a> of file <a class="el" href="../../d8/db7/propagation_settings_8h_source.html">propagationSettings.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00076">76</a> of file <a class="el" href="../../d8/db7/propagation_settings_8h_source.html">propagationSettings.h</a>.</p>
 
-<p>References <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00105">tudat::propagators::PropagatorSettings&lt; StateScalarType &gt;::initialStates_</a>, and <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00108">tudat::propagators::PropagatorSettings&lt; StateScalarType &gt;::stateSize_</a>.</p>
+<p>References <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00121">tudat::propagators::PropagatorSettings&lt; StateScalarType &gt;::initialStates_</a>, and <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00124">tudat::propagators::PropagatorSettings&lt; StateScalarType &gt;::stateSize_</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00284">tudat::propagators::MultiArcPropagatorSettings&lt; StateScalarType &gt;::MultiArcPropagatorSettings()</a>.</p>
+<p>Referenced by <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00311">tudat::propagators::MultiArcPropagatorSettings&lt; StateScalarType &gt;::MultiArcPropagatorSettings()</a>.</p>
 
 </div>
 </div>
@@ -326,9 +329,9 @@ template&lt;typename StateScalarType  = double&gt; </div>
 </div><div class="memdoc">
 <p>Get total size of the propagated state. </p><dl class="section return"><dt>Returns</dt><dd>Total size of the propagated state. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00086">86</a> of file <a class="el" href="../../d8/db7/propagation_settings_8h_source.html">propagationSettings.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00087">87</a> of file <a class="el" href="../../d8/db7/propagation_settings_8h_source.html">propagationSettings.h</a>.</p>
 
-<p>References <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00108">tudat::propagators::PropagatorSettings&lt; StateScalarType &gt;::stateSize_</a>.</p>
+<p>References <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00124">tudat::propagators::PropagatorSettings&lt; StateScalarType &gt;::stateSize_</a>.</p>
 
 </div>
 </div>
@@ -356,9 +359,48 @@ template&lt;typename StateScalarType  = double&gt; </div>
 </div><div class="memdoc">
 <p>Function to get boolean denoting whether the propagation settings are multi-arc (if true) or single arc (if false). </p><dl class="section return"><dt>Returns</dt><dd>Boolean denoting whether the propagation settings are multi-arc (if true) or single arc (if false). </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00096">96</a> of file <a class="el" href="../../d8/db7/propagation_settings_8h_source.html">propagationSettings.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00097">97</a> of file <a class="el" href="../../d8/db7/propagation_settings_8h_source.html">propagationSettings.h</a>.</p>
 
-<p>References <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00111">tudat::propagators::PropagatorSettings&lt; StateScalarType &gt;::isMultiArc_</a>.</p>
+<p>References <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00127">tudat::propagators::PropagatorSettings&lt; StateScalarType &gt;::isMultiArc_</a>, and <a class="el" href="../../dc/d02/classtudat_1_1propagators_1_1_propagator_settings.html#a48f459668fb8775a2a3a11d8d5c7c24f">tudat::propagators::PropagatorSettings&lt; StateScalarType &gt;::resetIntegratedStateModels()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a48f459668fb8775a2a3a11d8d5c7c24f"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename StateScalarType  = double&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void <a class="el" href="../../dc/d02/classtudat_1_1propagators_1_1_propagator_settings.html">tudat::propagators::PropagatorSettings</a>&lt; StateScalarType &gt;::resetIntegratedStateModels </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d4/da8/namespacetudat_1_1simulation__setup.html#a4a7938c5b0b78593806673957cc169c4">simulation_setup::NamedBodyMap</a> &amp;&#160;</td>
+          <td class="paramname"><em>bodyMap</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Function to create the integrated state models (e.g. acceleration/torque/mass-rate models).</p>
+<p>Derived classes must provide an implementation for this method. This function will use the provided body map and the member containing the acceleration/torque/mass-rate settings to create the actual models and assign them to the corresponding model map members.</p>
+<p>The implementation for MultiArc and MultiType (hybrid state) propagations will call the <code>resetIntegratedStateModels</code> method of each of the fundamental propagators that they contain.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bodyMap</td><td>Map of bodies in the propagation, with keys the names of the bodies. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="../../d4/d5e/classtudat_1_1propagators_1_1_multi_type_propagator_settings.html#a8352fadfa6149757f90cb26f899fc27b">tudat::propagators::MultiTypePropagatorSettings&lt; StateScalarType &gt;</a>, <a class="el" href="../../d4/da7/classtudat_1_1propagators_1_1_custom_state_propagator_settings.html#a250341f61a45c468302035fca92afb55">tudat::propagators::CustomStatePropagatorSettings&lt; StateScalarType, TimeType &gt;</a>, <a class="el" href="../../db/ddd/classtudat_1_1propagators_1_1_mass_propagator_settings.html#a96eb75da5b2c3112da617f1a96500a6b">tudat::propagators::MassPropagatorSettings&lt; StateScalarType &gt;</a>, <a class="el" href="../../dc/d2a/classtudat_1_1propagators_1_1_rotational_state_propagator_settings.html#ac7e06a995a32914a288155166f27e8ad">tudat::propagators::RotationalStatePropagatorSettings&lt; StateScalarType &gt;</a>, <a class="el" href="../../dc/db0/classtudat_1_1propagators_1_1_translational_state_propagator_settings.html#a8fbfe7f5fd3ee6cf52b4caa166d9e5fb">tudat::propagators::TranslationalStatePropagatorSettings&lt; StateScalarType &gt;</a>, and <a class="el" href="../../d0/df9/classtudat_1_1propagators_1_1_multi_arc_propagator_settings.html#af08833affb010a919cb73cd3232a719c">tudat::propagators::MultiArcPropagatorSettings&lt; StateScalarType &gt;</a>.</p>
+
+<p>Referenced by <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00097">tudat::propagators::PropagatorSettings&lt; StateScalarType &gt;::getIsMultiArc()</a>, and <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00891">tudat::propagators::MassPropagatorSettings&lt; StateScalarType &gt;::resetIntegratedStateModels()</a>.</p>
 
 </div>
 </div>
@@ -383,9 +425,9 @@ template&lt;typename StateScalarType  = double&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00105">105</a> of file <a class="el" href="../../d8/db7/propagation_settings_8h_source.html">propagationSettings.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00121">121</a> of file <a class="el" href="../../d8/db7/propagation_settings_8h_source.html">propagationSettings.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00065">tudat::propagators::PropagatorSettings&lt; StateScalarType &gt;::getInitialStates()</a>, <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00284">tudat::propagators::MultiArcPropagatorSettings&lt; StateScalarType &gt;::MultiArcPropagatorSettings()</a>, <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00820">tudat::propagators::MultiTypePropagatorSettings&lt; StateScalarType &gt;::MultiTypePropagatorSettings()</a>, <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00075">tudat::propagators::PropagatorSettings&lt; StateScalarType &gt;::resetInitialStates()</a>, <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00348">tudat::propagators::MultiArcPropagatorSettings&lt; StateScalarType &gt;::resetInitialStates()</a>, and <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00372">tudat::propagators::MultiArcPropagatorSettings&lt; StateScalarType &gt;::resetInitialStatesList()</a>.</p>
+<p>Referenced by <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00066">tudat::propagators::PropagatorSettings&lt; StateScalarType &gt;::getInitialStates()</a>, <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00311">tudat::propagators::MultiArcPropagatorSettings&lt; StateScalarType &gt;::MultiArcPropagatorSettings()</a>, <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l01142">tudat::propagators::MultiTypePropagatorSettings&lt; StateScalarType &gt;::MultiTypePropagatorSettings()</a>, <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00076">tudat::propagators::PropagatorSettings&lt; StateScalarType &gt;::resetInitialStates()</a>, <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00393">tudat::propagators::MultiArcPropagatorSettings&lt; StateScalarType &gt;::resetInitialStates()</a>, <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l01170">tudat::propagators::MultiTypePropagatorSettings&lt; StateScalarType &gt;::resetInitialStates()</a>, and <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00417">tudat::propagators::MultiArcPropagatorSettings&lt; StateScalarType &gt;::resetInitialStatesList()</a>.</p>
 
 </div>
 </div>
@@ -409,9 +451,9 @@ template&lt;typename StateScalarType  = double&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00108">108</a> of file <a class="el" href="../../d8/db7/propagation_settings_8h_source.html">propagationSettings.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00124">124</a> of file <a class="el" href="../../d8/db7/propagation_settings_8h_source.html">propagationSettings.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00086">tudat::propagators::PropagatorSettings&lt; StateScalarType &gt;::getStateSize()</a>, <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00075">tudat::propagators::PropagatorSettings&lt; StateScalarType &gt;::resetInitialStates()</a>, and <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00348">tudat::propagators::MultiArcPropagatorSettings&lt; StateScalarType &gt;::resetInitialStates()</a>.</p>
+<p>Referenced by <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00087">tudat::propagators::PropagatorSettings&lt; StateScalarType &gt;::getStateSize()</a>, <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00076">tudat::propagators::PropagatorSettings&lt; StateScalarType &gt;::resetInitialStates()</a>, and <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00393">tudat::propagators::MultiArcPropagatorSettings&lt; StateScalarType &gt;::resetInitialStates()</a>.</p>
 
 </div>
 </div>
@@ -435,9 +477,9 @@ template&lt;typename StateScalarType  = double&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00111">111</a> of file <a class="el" href="../../d8/db7/propagation_settings_8h_source.html">propagationSettings.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00127">127</a> of file <a class="el" href="../../d8/db7/propagation_settings_8h_source.html">propagationSettings.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00096">tudat::propagators::PropagatorSettings&lt; StateScalarType &gt;::getIsMultiArc()</a>.</p>
+<p>Referenced by <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00097">tudat::propagators::PropagatorSettings&lt; StateScalarType &gt;::getIsMultiArc()</a>.</p>
 
 </div>
 </div>
@@ -447,7 +489,7 @@ template&lt;typename StateScalarType  = double&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 27 2017 09:33:02 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 7 2017 11:20:34 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

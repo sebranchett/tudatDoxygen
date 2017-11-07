@@ -105,7 +105,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:adfadb5fbccd9d7710f2a48fb945d2daf"><td class="memItemLeft" align="right" valign="top">typedef Eigen::Matrix&lt; ObservationScalarType, Eigen::Dynamic, 1 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html#adfadb5fbccd9d7710f2a48fb945d2daf">ObservationVectorType</a></td></tr>
+<tr class="memitem:adfadb5fbccd9d7710f2a48fb945d2daf"><td class="memItemLeft" align="right" valign="top">typedef Eigen::Matrix&lt; <a class="el" href="../../d0/d6f/classes__e_8js.html#aee24a28d672b815552e3b29a7c94c0d6">ObservationScalarType</a>, Eigen::Dynamic, 1 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html#adfadb5fbccd9d7710f2a48fb945d2daf">ObservationVectorType</a></td></tr>
 <tr class="memdesc:adfadb5fbccd9d7710f2a48fb945d2daf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Typedef of vector of observations of a single type.  <a href="#adfadb5fbccd9d7710f2a48fb945d2daf">More...</a><br /></td></tr>
 <tr class="separator:adfadb5fbccd9d7710f2a48fb945d2daf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e1f6d5a718a2cf8359e222823ddc40b"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; <a class="el" href="../../d2/df9/namespacetudat_1_1observation__models.html#adcbe1f4fdc29700cf58f3c59faf9cc6b">observation_models::ObservableType</a>, <a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html#aa393ce8a0c6bc79c8af7dacc9f63ed61">SingleObservablePodInputType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html#a2e1f6d5a718a2cf8359e222823ddc40b">PodInputDataType</a></td></tr>
@@ -116,12 +116,13 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae867826e363d16e416bbf87f6dde8fc7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html#ae867826e363d16e416bbf87f6dde8fc7">PodInput</a> (const <a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html#a2e1f6d5a718a2cf8359e222823ddc40b">PodInputDataType</a> &amp;observationsAndTimes, const int numberOfEstimatedParameters, const Eigen::MatrixXd inverseOfAprioriCovariance=Eigen::MatrixXd::Zero(0, 0), const Eigen::Matrix&lt; ObservationScalarType, Eigen::Dynamic, 1 &gt; initialParameterDeviationEstimate=Eigen::Matrix&lt; ObservationScalarType, Eigen::Dynamic, 1 &gt;::Zero(0, 1))</td></tr>
+<tr class="memitem:ae867826e363d16e416bbf87f6dde8fc7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html#ae867826e363d16e416bbf87f6dde8fc7">PodInput</a> (const <a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html#a2e1f6d5a718a2cf8359e222823ddc40b">PodInputDataType</a> &amp;observationsAndTimes, const int numberOfEstimatedParameters, const Eigen::MatrixXd inverseOfAprioriCovariance=Eigen::MatrixXd::Zero(0, 0), const Eigen::Matrix&lt; <a class="el" href="../../d0/d6f/classes__e_8js.html#aee24a28d672b815552e3b29a7c94c0d6">ObservationScalarType</a>, Eigen::Dynamic, 1 &gt; initialParameterDeviationEstimate=Eigen::Matrix&lt; <a class="el" href="../../d0/d6f/classes__e_8js.html#aee24a28d672b815552e3b29a7c94c0d6">ObservationScalarType</a>, Eigen::Dynamic, 1 &gt;::Zero(0, 1))</td></tr>
 <tr class="memdesc:ae867826e363d16e416bbf87f6dde8fc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#ae867826e363d16e416bbf87f6dde8fc7">More...</a><br /></td></tr>
 <tr class="separator:ae867826e363d16e416bbf87f6dde8fc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1cf21e79bf0800df0ee61aa4b6f71373"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html#a1cf21e79bf0800df0ee61aa4b6f71373">defineEstimationSettings</a> (const bool reintegrateEquationsOnFirstIteration=1, const bool reintegrateVariationalEquations=1, const bool saveInformationMatrix=1, const bool printOutput=1, const bool saveResidualsAndParametersFromEachIteration=1, const bool saveStateHistoryForEachIteration=0)</td></tr>
+<tr class="memdesc:a1cf21e79bf0800df0ee61aa4b6f71373"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to define specific settings for estimation process.  <a href="#a1cf21e79bf0800df0ee61aa4b6f71373">More...</a><br /></td></tr>
 <tr class="separator:a1cf21e79bf0800df0ee61aa4b6f71373"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a066bb86d23d52f7abc968107d9b68ada"><td class="memItemLeft" align="right" valign="top">Eigen::Matrix&lt; ObservationScalarType, Eigen::Dynamic, 1 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html#a066bb86d23d52f7abc968107d9b68ada">getInitialParameterDeviationEstimate</a> ()</td></tr>
+<tr class="memitem:a066bb86d23d52f7abc968107d9b68ada"><td class="memItemLeft" align="right" valign="top">Eigen::Matrix&lt; <a class="el" href="../../d0/d6f/classes__e_8js.html#aee24a28d672b815552e3b29a7c94c0d6">ObservationScalarType</a>, Eigen::Dynamic, 1 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html#a066bb86d23d52f7abc968107d9b68ada">getInitialParameterDeviationEstimate</a> ()</td></tr>
 <tr class="memdesc:a066bb86d23d52f7abc968107d9b68ada"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to return the correction to estimated parameter vector to be applied on first iteration.  <a href="#a066bb86d23d52f7abc968107d9b68ada">More...</a><br /></td></tr>
 <tr class="separator:a066bb86d23d52f7abc968107d9b68ada"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d98da3baed4610339cf5639ec982a78"><td class="memItemLeft" align="right" valign="top">Eigen::MatrixXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html#a5d98da3baed4610339cf5639ec982a78">getInverseOfAprioriCovariance</a> ()</td></tr>
@@ -131,16 +132,22 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ad49edbf0665355e0b735d12dbdd2af75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to return the total data structure of observations and associated times/link ends/type (by reference)  <a href="#ad49edbf0665355e0b735d12dbdd2af75">More...</a><br /></td></tr>
 <tr class="separator:ad49edbf0665355e0b735d12dbdd2af75"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeca00db85f7aaa529e583d7f3a107635"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html#aeca00db85f7aaa529e583d7f3a107635">getPrintOutput</a> ()</td></tr>
+<tr class="memdesc:aeca00db85f7aaa529e583d7f3a107635"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to return the boolean denoting whether to print output to th terminal when running the estimation.  <a href="#aeca00db85f7aaa529e583d7f3a107635">More...</a><br /></td></tr>
 <tr class="separator:aeca00db85f7aaa529e583d7f3a107635"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a66274177db8feb353e2300672b1942da"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html#a66274177db8feb353e2300672b1942da">getReintegrateEquationsOnFirstIteration</a> ()</td></tr>
+<tr class="memdesc:a66274177db8feb353e2300672b1942da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to return the boolean denoting whether the dynamics and variational equations are reintegrated on first iteration.  <a href="#a66274177db8feb353e2300672b1942da">More...</a><br /></td></tr>
 <tr class="separator:a66274177db8feb353e2300672b1942da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa76b58f501752ed759877992d247c4c4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html#aa76b58f501752ed759877992d247c4c4">getReintegrateVariationalEquations</a> ()</td></tr>
+<tr class="memdesc:aa76b58f501752ed759877992d247c4c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to return the boolean denoting whether the variational equations are to be reintegrated during estimation.  <a href="#aa76b58f501752ed759877992d247c4c4">More...</a><br /></td></tr>
 <tr class="separator:aa76b58f501752ed759877992d247c4c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1392e4f33dc513241aacf621a0b9cb53"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html#a1392e4f33dc513241aacf621a0b9cb53">getSaveInformationMatrix</a> ()</td></tr>
+<tr class="memdesc:a1392e4f33dc513241aacf621a0b9cb53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to return the boolean denoting whether to print output to th terminal when running the estimation.  <a href="#a1392e4f33dc513241aacf621a0b9cb53">More...</a><br /></td></tr>
 <tr class="separator:a1392e4f33dc513241aacf621a0b9cb53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8bd610430764387be99e628077b8509a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html#a8bd610430764387be99e628077b8509a">getSaveResidualsAndParametersFromEachIteration</a> ()</td></tr>
+<tr class="memdesc:a8bd610430764387be99e628077b8509a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to return the boolean denoting whether the residuals and parameters from the each iteration are to be saved.  <a href="#a8bd610430764387be99e628077b8509a">More...</a><br /></td></tr>
 <tr class="separator:a8bd610430764387be99e628077b8509a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a806b134be8f7f1773da619ba3120ac45"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html#a806b134be8f7f1773da619ba3120ac45">getSaveStateHistoryForEachIteration</a> ()</td></tr>
+<tr class="memdesc:a806b134be8f7f1773da619ba3120ac45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to return the boolean denoting whether the state history is to be saved on each iteration.  <a href="#a806b134be8f7f1773da619ba3120ac45">More...</a><br /></td></tr>
 <tr class="separator:a806b134be8f7f1773da619ba3120ac45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac343d50edaceeb33233c41edde058f8"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="../../d2/df9/namespacetudat_1_1observation__models.html#adcbe1f4fdc29700cf58f3c59faf9cc6b">observation_models::ObservableType</a>, std::map&lt; <a class="el" href="../../d2/df9/namespacetudat_1_1observation__models.html#a7a66b5e78e636627f69a082a10c57b52">observation_models::LinkEnds</a>, Eigen::VectorXd &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html#aac343d50edaceeb33233c41edde058f8">getWeightsMatrixDiagonals</a> ()</td></tr>
 <tr class="memdesc:aac343d50edaceeb33233c41edde058f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to return the weight matrix diagonals, sorted by link ends and observable type (by reference)  <a href="#aac343d50edaceeb33233c41edde058f8">More...</a><br /></td></tr>
@@ -157,7 +164,7 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a375906bd2af86d77ed55261b09702cf5"><td class="memItemLeft" align="right" valign="top">Eigen::Matrix&lt; ObservationScalarType, Eigen::Dynamic, 1 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html#a375906bd2af86d77ed55261b09702cf5">initialParameterDeviationEstimate_</a></td></tr>
+<tr class="memitem:a375906bd2af86d77ed55261b09702cf5"><td class="memItemLeft" align="right" valign="top">Eigen::Matrix&lt; <a class="el" href="../../d0/d6f/classes__e_8js.html#aee24a28d672b815552e3b29a7c94c0d6">ObservationScalarType</a>, Eigen::Dynamic, 1 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html#a375906bd2af86d77ed55261b09702cf5">initialParameterDeviationEstimate_</a></td></tr>
 <tr class="memdesc:a375906bd2af86d77ed55261b09702cf5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Correction to estimated parameter vector to be applied on first iteration.  <a href="#a375906bd2af86d77ed55261b09702cf5">More...</a><br /></td></tr>
 <tr class="separator:a375906bd2af86d77ed55261b09702cf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4beb4576d2895c9694346e942db1826"><td class="memItemLeft" align="right" valign="top">Eigen::MatrixXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html#ad4beb4576d2895c9694346e942db1826">inverseOfAprioriCovariance_</a></td></tr>
@@ -167,16 +174,22 @@ Private Attributes</h2></td></tr>
 <tr class="memdesc:ac40a32f05712f17c8838ef1ded197ca8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Total data structure of observations and associated times/link ends/type.  <a href="#ac40a32f05712f17c8838ef1ded197ca8">More...</a><br /></td></tr>
 <tr class="separator:ac40a32f05712f17c8838ef1ded197ca8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afeae934f0d8cf7f1df42e3df05015525"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html#afeae934f0d8cf7f1df42e3df05015525">printOutput_</a></td></tr>
+<tr class="memdesc:afeae934f0d8cf7f1df42e3df05015525"><td class="mdescLeft">&#160;</td><td class="mdescRight">Boolean denoting whether to print output to th terminal when running the estimation.  <a href="#afeae934f0d8cf7f1df42e3df05015525">More...</a><br /></td></tr>
 <tr class="separator:afeae934f0d8cf7f1df42e3df05015525"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e070d6466475f5d1ac4ca42504e6832"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html#a3e070d6466475f5d1ac4ca42504e6832">reintegrateEquationsOnFirstIteration_</a></td></tr>
+<tr class="memdesc:a3e070d6466475f5d1ac4ca42504e6832"><td class="mdescLeft">&#160;</td><td class="mdescRight">Boolean denoting whether the dynamics and variational equations are to be reintegrated on first iteration.  <a href="#a3e070d6466475f5d1ac4ca42504e6832">More...</a><br /></td></tr>
 <tr class="separator:a3e070d6466475f5d1ac4ca42504e6832"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7252c3116c6de8af57829320ac275d65"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html#a7252c3116c6de8af57829320ac275d65">reintegrateVariationalEquations_</a></td></tr>
+<tr class="memdesc:a7252c3116c6de8af57829320ac275d65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Boolean denoting whether the variational equations are to be reintegrated during estimation.  <a href="#a7252c3116c6de8af57829320ac275d65">More...</a><br /></td></tr>
 <tr class="separator:a7252c3116c6de8af57829320ac275d65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0fbee5654c02e39e1dd1cc6fff84f935"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html#a0fbee5654c02e39e1dd1cc6fff84f935">saveInformationMatrix_</a></td></tr>
+<tr class="memdesc:a0fbee5654c02e39e1dd1cc6fff84f935"><td class="mdescLeft">&#160;</td><td class="mdescRight">Boolean denoting whether to print output to th terminal when running the estimation.  <a href="#a0fbee5654c02e39e1dd1cc6fff84f935">More...</a><br /></td></tr>
 <tr class="separator:a0fbee5654c02e39e1dd1cc6fff84f935"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1cff2055dbdb7128d7a0a9d04cb2c622"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html#a1cff2055dbdb7128d7a0a9d04cb2c622">saveResidualsAndParametersFromEachIteration_</a></td></tr>
+<tr class="memdesc:a1cff2055dbdb7128d7a0a9d04cb2c622"><td class="mdescLeft">&#160;</td><td class="mdescRight">Boolean denoting whether the residuals and parameters from the each iteration are to be saved.  <a href="#a1cff2055dbdb7128d7a0a9d04cb2c622">More...</a><br /></td></tr>
 <tr class="separator:a1cff2055dbdb7128d7a0a9d04cb2c622"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2beeb79875d50e6a2fec4fd0af7327c3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html#a2beeb79875d50e6a2fec4fd0af7327c3">saveStateHistoryForEachIteration_</a></td></tr>
+<tr class="memdesc:a2beeb79875d50e6a2fec4fd0af7327c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Boolean denoting whether the state history is to be saved on each iteration.  <a href="#a2beeb79875d50e6a2fec4fd0af7327c3">More...</a><br /></td></tr>
 <tr class="separator:a2beeb79875d50e6a2fec4fd0af7327c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca8ec8bca2ad1cc5c18f1d6f86a06d84"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="../../d2/df9/namespacetudat_1_1observation__models.html#adcbe1f4fdc29700cf58f3c59faf9cc6b">observation_models::ObservableType</a>, std::map&lt; <a class="el" href="../../d2/df9/namespacetudat_1_1observation__models.html#a7a66b5e78e636627f69a082a10c57b52">observation_models::LinkEnds</a>, Eigen::VectorXd &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html#aca8ec8bca2ad1cc5c18f1d6f86a06d84">weightsMatrixDiagonals_</a></td></tr>
 <tr class="memdesc:aca8ec8bca2ad1cc5c18f1d6f86a06d84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Weight matrix diagonals, sorted by link ends and observable type.  <a href="#aca8ec8bca2ad1cc5c18f1d6f86a06d84">More...</a><br /></td></tr>
@@ -187,7 +200,7 @@ Private Attributes</h2></td></tr>
 class tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;</h3>
 
 
-<p>Definition at line <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00032">32</a> of file <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html">podInputOutputTypes.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00030">30</a> of file <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html">podInputOutputTypes.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="adfadb5fbccd9d7710f2a48fb945d2daf"></a>
 <div class="memitem">
@@ -196,12 +209,12 @@ class tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;
 template&lt;typename ObservationScalarType  = double, typename TimeType  = double&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef Eigen::Matrix&lt; ObservationScalarType, Eigen::Dynamic, 1 &gt; <a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html">tudat::simulation_setup::PodInput</a>&lt; ObservationScalarType, TimeType &gt;::<a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html#adfadb5fbccd9d7710f2a48fb945d2daf">ObservationVectorType</a></td>
+          <td class="memname">typedef Eigen::Matrix&lt; <a class="el" href="../../d0/d6f/classes__e_8js.html#aee24a28d672b815552e3b29a7c94c0d6">ObservationScalarType</a>, Eigen::Dynamic, 1 &gt; <a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html">tudat::simulation_setup::PodInput</a>&lt; <a class="el" href="../../d0/d6f/classes__e_8js.html#aee24a28d672b815552e3b29a7c94c0d6">ObservationScalarType</a>, TimeType &gt;::<a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html#adfadb5fbccd9d7710f2a48fb945d2daf">ObservationVectorType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00038">38</a> of file <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html">podInputOutputTypes.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00036">36</a> of file <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html">podInputOutputTypes.h</a>.</p>
 
 </div>
 </div>
@@ -212,13 +225,13 @@ template&lt;typename ObservationScalarType  = double, typename TimeType  = doubl
 template&lt;typename ObservationScalarType  = double, typename TimeType  = double&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::map&lt; <a class="el" href="../../d2/df9/namespacetudat_1_1observation__models.html#a7a66b5e78e636627f69a082a10c57b52">observation_models::LinkEnds</a>, std::pair&lt; <a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html#adfadb5fbccd9d7710f2a48fb945d2daf">ObservationVectorType</a>, std::pair&lt; std::vector&lt; TimeType &gt;, <a class="el" href="../../d2/df9/namespacetudat_1_1observation__models.html#a48c0d529a455bf73ae57991768625e6e">observation_models::LinkEndType</a> &gt; &gt; &gt; <a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html">tudat::simulation_setup::PodInput</a>&lt; ObservationScalarType, TimeType &gt;::<a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html#aa393ce8a0c6bc79c8af7dacc9f63ed61">SingleObservablePodInputType</a></td>
+          <td class="memname">typedef std::map&lt; <a class="el" href="../../d2/df9/namespacetudat_1_1observation__models.html#a7a66b5e78e636627f69a082a10c57b52">observation_models::LinkEnds</a>, std::pair&lt; <a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html#adfadb5fbccd9d7710f2a48fb945d2daf">ObservationVectorType</a>, std::pair&lt; std::vector&lt; TimeType &gt;, <a class="el" href="../../d2/df9/namespacetudat_1_1observation__models.html#a48c0d529a455bf73ae57991768625e6e">observation_models::LinkEndType</a> &gt; &gt; &gt; <a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html">tudat::simulation_setup::PodInput</a>&lt; <a class="el" href="../../d0/d6f/classes__e_8js.html#aee24a28d672b815552e3b29a7c94c0d6">ObservationScalarType</a>, TimeType &gt;::<a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html#aa393ce8a0c6bc79c8af7dacc9f63ed61">SingleObservablePodInputType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Typedef of map of pairs (observation vector and pair (vector of associated times reference link end)), link ends as map key </p>
 
-<p>Definition at line <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00043">43</a> of file <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html">podInputOutputTypes.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00041">41</a> of file <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html">podInputOutputTypes.h</a>.</p>
 
 </div>
 </div>
@@ -229,12 +242,12 @@ template&lt;typename ObservationScalarType  = double, typename TimeType  = doubl
 template&lt;typename ObservationScalarType  = double, typename TimeType  = double&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::map&lt; <a class="el" href="../../d2/df9/namespacetudat_1_1observation__models.html#adcbe1f4fdc29700cf58f3c59faf9cc6b">observation_models::ObservableType</a>, <a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html#aa393ce8a0c6bc79c8af7dacc9f63ed61">SingleObservablePodInputType</a> &gt; <a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html">tudat::simulation_setup::PodInput</a>&lt; ObservationScalarType, TimeType &gt;::<a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html#a2e1f6d5a718a2cf8359e222823ddc40b">PodInputDataType</a></td>
+          <td class="memname">typedef std::map&lt; <a class="el" href="../../d2/df9/namespacetudat_1_1observation__models.html#adcbe1f4fdc29700cf58f3c59faf9cc6b">observation_models::ObservableType</a>, <a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html#aa393ce8a0c6bc79c8af7dacc9f63ed61">SingleObservablePodInputType</a> &gt; <a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html">tudat::simulation_setup::PodInput</a>&lt; <a class="el" href="../../d0/d6f/classes__e_8js.html#aee24a28d672b815552e3b29a7c94c0d6">ObservationScalarType</a>, TimeType &gt;::<a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html#a2e1f6d5a718a2cf8359e222823ddc40b">PodInputDataType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00046">46</a> of file <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html">podInputOutputTypes.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00044">44</a> of file <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html">podInputOutputTypes.h</a>.</p>
 
 </div>
 </div>
@@ -249,7 +262,7 @@ template&lt;typename ObservationScalarType  = double, typename TimeType  = doubl
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html">tudat::simulation_setup::PodInput</a>&lt; ObservationScalarType, TimeType &gt;::<a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html">PodInput</a> </td>
+          <td class="memname"><a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html">tudat::simulation_setup::PodInput</a>&lt; <a class="el" href="../../d0/d6f/classes__e_8js.html#aee24a28d672b815552e3b29a7c94c0d6">ObservationScalarType</a>, TimeType &gt;::<a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html">PodInput</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html#a2e1f6d5a718a2cf8359e222823ddc40b">PodInputDataType</a> &amp;&#160;</td>
           <td class="paramname"><em>observationsAndTimes</em>, </td>
@@ -269,8 +282,8 @@ template&lt;typename ObservationScalarType  = double, typename TimeType  = doubl
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const Eigen::Matrix&lt; ObservationScalarType, Eigen::Dynamic, 1 &gt;&#160;</td>
-          <td class="paramname"><em>initialParameterDeviationEstimate</em> = <code>Eigen::Matrix&lt;&#160;ObservationScalarType,&#160;Eigen::Dynamic,&#160;1&#160;&gt;::Zero(&#160;0,&#160;1&#160;)</code>&#160;</td>
+          <td class="paramtype">const Eigen::Matrix&lt; <a class="el" href="../../d0/d6f/classes__e_8js.html#aee24a28d672b815552e3b29a7c94c0d6">ObservationScalarType</a>, Eigen::Dynamic, 1 &gt;&#160;</td>
+          <td class="paramname"><em>initialParameterDeviationEstimate</em> = <code>Eigen::Matrix&lt;&#160;<a class="el" href="../../d0/d6f/classes__e_8js.html#aee24a28d672b815552e3b29a7c94c0d6">ObservationScalarType</a>,&#160;Eigen::Dynamic,&#160;1&#160;&gt;::Zero(&#160;0,&#160;1&#160;)</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -294,9 +307,9 @@ template&lt;typename ObservationScalarType  = double, typename TimeType  = doubl
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00058">58</a> of file <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html">podInputOutputTypes.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00056">56</a> of file <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html">podInputOutputTypes.h</a>.</p>
 
-<p>References <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00279">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::initialParameterDeviationEstimate_</a>, <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00282">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::inverseOfAprioriCovariance_</a>, and <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00101">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::setConstantWeightsMatrix()</a>.</p>
+<p>References <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00321">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::initialParameterDeviationEstimate_</a>, <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00324">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::inverseOfAprioriCovariance_</a>, and <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00099">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::setConstantWeightsMatrix()</a>.</p>
 
 </div>
 </div>
@@ -311,7 +324,7 @@ template&lt;typename ObservationScalarType  = double, typename TimeType  = doubl
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html">tudat::simulation_setup::PodInput</a>&lt; ObservationScalarType, TimeType &gt;::setConstantWeightsMatrix </td>
+          <td class="memname">void <a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html">tudat::simulation_setup::PodInput</a>&lt; <a class="el" href="../../d0/d6f/classes__e_8js.html#aee24a28d672b815552e3b29a7c94c0d6">ObservationScalarType</a>, TimeType &gt;::setConstantWeightsMatrix </td>
           <td>(</td>
           <td class="paramtype">const double&#160;</td>
           <td class="paramname"><em>constantWeight</em> = <code>1.0</code></td><td>)</td>
@@ -331,11 +344,11 @@ template&lt;typename ObservationScalarType  = double, typename TimeType  = doubl
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00101">101</a> of file <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html">podInputOutputTypes.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00099">99</a> of file <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html">podInputOutputTypes.h</a>.</p>
 
-<p>References <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00276">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::observationsAndTimes_</a>, and <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00148">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::setConstantPerObservableAndLinkEndsWeights()</a>.</p>
+<p>References <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00318">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::observationsAndTimes_</a>, and <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00146">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::setConstantPerObservableAndLinkEndsWeights()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00058">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::PodInput()</a>.</p>
+<p>Referenced by <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00056">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::PodInput()</a>.</p>
 
 </div>
 </div>
@@ -349,7 +362,7 @@ template&lt;typename ObservationScalarType  = double, typename TimeType  = doubl
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html">tudat::simulation_setup::PodInput</a>&lt; ObservationScalarType, TimeType &gt;::setConstantPerObservableWeightsMatrix </td>
+          <td class="memname">void <a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html">tudat::simulation_setup::PodInput</a>&lt; <a class="el" href="../../d0/d6f/classes__e_8js.html#aee24a28d672b815552e3b29a7c94c0d6">ObservationScalarType</a>, TimeType &gt;::setConstantPerObservableWeightsMatrix </td>
           <td>(</td>
           <td class="paramtype">const std::map&lt; <a class="el" href="../../d2/df9/namespacetudat_1_1observation__models.html#adcbe1f4fdc29700cf58f3c59faf9cc6b">observation_models::ObservableType</a>, double &gt;&#160;</td>
           <td class="paramname"><em>weightPerObservable</em></td><td>)</td>
@@ -369,9 +382,9 @@ template&lt;typename ObservationScalarType  = double, typename TimeType  = doubl
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00122">122</a> of file <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html">podInputOutputTypes.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00120">120</a> of file <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html">podInputOutputTypes.h</a>.</p>
 
-<p>References <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00276">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::observationsAndTimes_</a>, and <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00148">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::setConstantPerObservableAndLinkEndsWeights()</a>.</p>
+<p>References <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00318">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::observationsAndTimes_</a>, and <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00146">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::setConstantPerObservableAndLinkEndsWeights()</a>.</p>
 
 </div>
 </div>
@@ -385,7 +398,7 @@ template&lt;typename ObservationScalarType  = double, typename TimeType  = doubl
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html">tudat::simulation_setup::PodInput</a>&lt; ObservationScalarType, TimeType &gt;::setConstantPerObservableAndLinkEndsWeights </td>
+          <td class="memname">void <a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html">tudat::simulation_setup::PodInput</a>&lt; <a class="el" href="../../d0/d6f/classes__e_8js.html#aee24a28d672b815552e3b29a7c94c0d6">ObservationScalarType</a>, TimeType &gt;::setConstantPerObservableAndLinkEndsWeights </td>
           <td>(</td>
           <td class="paramtype">const std::map&lt; <a class="el" href="../../d2/df9/namespacetudat_1_1observation__models.html#adcbe1f4fdc29700cf58f3c59faf9cc6b">observation_models::ObservableType</a>, std::map&lt; <a class="el" href="../../d2/df9/namespacetudat_1_1observation__models.html#a7a66b5e78e636627f69a082a10c57b52">observation_models::LinkEnds</a>, double &gt; &gt;&#160;</td>
           <td class="paramname"><em>weightPerObservableAndLinkEnds</em></td><td>)</td>
@@ -405,11 +418,11 @@ template&lt;typename ObservationScalarType  = double, typename TimeType  = doubl
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00148">148</a> of file <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html">podInputOutputTypes.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00146">146</a> of file <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html">podInputOutputTypes.h</a>.</p>
 
-<p>References <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00276">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::observationsAndTimes_</a>, and <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00286">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::weightsMatrixDiagonals_</a>.</p>
+<p>References <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00318">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::observationsAndTimes_</a>, and <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00328">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::weightsMatrixDiagonals_</a>.</p>
 
-<p>Referenced by <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00122">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::setConstantPerObservableWeightsMatrix()</a>, and <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00101">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::setConstantWeightsMatrix()</a>.</p>
+<p>Referenced by <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00120">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::setConstantPerObservableWeightsMatrix()</a>, and <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00099">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::setConstantWeightsMatrix()</a>.</p>
 
 </div>
 </div>
@@ -423,7 +436,7 @@ template&lt;typename ObservationScalarType  = double, typename TimeType  = doubl
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html">tudat::simulation_setup::PodInput</a>&lt; ObservationScalarType, TimeType &gt;::defineEstimationSettings </td>
+          <td class="memname">void <a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html">tudat::simulation_setup::PodInput</a>&lt; <a class="el" href="../../d0/d6f/classes__e_8js.html#aee24a28d672b815552e3b29a7c94c0d6">ObservationScalarType</a>, TimeType &gt;::defineEstimationSettings </td>
           <td>(</td>
           <td class="paramtype">const bool&#160;</td>
           <td class="paramname"><em>reintegrateEquationsOnFirstIteration</em> = <code>1</code>, </td>
@@ -470,10 +483,21 @@ template&lt;typename ObservationScalarType  = double, typename TimeType  = doubl
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Function to define specific settings for estimation process </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">reintegrateEquationsOnFirstIteration</td><td>Boolean denoting whether the dynamics and variational equations are to be reintegrated on first iteration, or if existing values are to be used to perform first iteration. </td></tr>
+    <tr><td class="paramname">reintegrateVariationalEquations</td><td>Boolean denoting whether the variational equations are to be reintegrated during estimation </td></tr>
+    <tr><td class="paramname">saveInformationMatrix</td><td>Boolean denoting whether to save the partials matrix in the output </td></tr>
+    <tr><td class="paramname">printOutput</td><td>Boolean denoting whether to print output to th terminal when running the estimation. </td></tr>
+    <tr><td class="paramname">saveResidualsAndParametersFromEachIteration</td><td>Boolean denoting whether the residuals and parameters from the each iteration are to be saved </td></tr>
+    <tr><td class="paramname">saveStateHistoryForEachIteration</td><td>Boolean denoting whether the state history is to be saved on each iteration </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p>Definition at line <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00187">187</a> of file <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html">podInputOutputTypes.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00198">198</a> of file <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html">podInputOutputTypes.h</a>.</p>
 
-<p>References <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00294">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::printOutput_</a>, <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00288">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::reintegrateEquationsOnFirstIteration_</a>, <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00290">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::reintegrateVariationalEquations_</a>, <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00292">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::saveInformationMatrix_</a>, <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00296">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::saveResidualsAndParametersFromEachIteration_</a>, and <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00298">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::saveStateHistoryForEachIteration_</a>.</p>
+<p>References <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00340">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::printOutput_</a>, <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00331">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::reintegrateEquationsOnFirstIteration_</a>, <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00334">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::reintegrateVariationalEquations_</a>, <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00337">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::saveInformationMatrix_</a>, <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00343">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::saveResidualsAndParametersFromEachIteration_</a>, and <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00346">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::saveStateHistoryForEachIteration_</a>.</p>
 
 </div>
 </div>
@@ -487,7 +511,7 @@ template&lt;typename ObservationScalarType  = double, typename TimeType  = doubl
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html#a2e1f6d5a718a2cf8359e222823ddc40b">PodInputDataType</a>&amp; <a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html">tudat::simulation_setup::PodInput</a>&lt; ObservationScalarType, TimeType &gt;::getObservationsAndTimes </td>
+          <td class="memname"><a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html#a2e1f6d5a718a2cf8359e222823ddc40b">PodInputDataType</a>&amp; <a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html">tudat::simulation_setup::PodInput</a>&lt; <a class="el" href="../../d0/d6f/classes__e_8js.html#aee24a28d672b815552e3b29a7c94c0d6">ObservationScalarType</a>, TimeType &gt;::getObservationsAndTimes </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -501,9 +525,9 @@ template&lt;typename ObservationScalarType  = double, typename TimeType  = doubl
 </div><div class="memdoc">
 <p>Function to return the total data structure of observations and associated times/link ends/type (by reference) </p><dl class="section return"><dt>Returns</dt><dd>Total data structure of observations and associated times/link ends/type (by reference) </dd></dl>
 
-<p>Definition at line <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00207">207</a> of file <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html">podInputOutputTypes.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00218">218</a> of file <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html">podInputOutputTypes.h</a>.</p>
 
-<p>References <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00276">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::observationsAndTimes_</a>.</p>
+<p>References <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00318">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::observationsAndTimes_</a>.</p>
 
 </div>
 </div>
@@ -517,7 +541,7 @@ template&lt;typename ObservationScalarType  = double, typename TimeType  = doubl
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Eigen::Matrix&lt; ObservationScalarType, Eigen::Dynamic, 1 &gt; <a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html">tudat::simulation_setup::PodInput</a>&lt; ObservationScalarType, TimeType &gt;::getInitialParameterDeviationEstimate </td>
+          <td class="memname">Eigen::Matrix&lt; <a class="el" href="../../d0/d6f/classes__e_8js.html#aee24a28d672b815552e3b29a7c94c0d6">ObservationScalarType</a>, Eigen::Dynamic, 1 &gt; <a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html">tudat::simulation_setup::PodInput</a>&lt; <a class="el" href="../../d0/d6f/classes__e_8js.html#aee24a28d672b815552e3b29a7c94c0d6">ObservationScalarType</a>, TimeType &gt;::getInitialParameterDeviationEstimate </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -531,9 +555,9 @@ template&lt;typename ObservationScalarType  = double, typename TimeType  = doubl
 </div><div class="memdoc">
 <p>Function to return the correction to estimated parameter vector to be applied on first iteration </p><dl class="section return"><dt>Returns</dt><dd>Correction to estimated parameter vector to be applied on first iteration </dd></dl>
 
-<p>Definition at line <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00217">217</a> of file <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html">podInputOutputTypes.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00228">228</a> of file <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html">podInputOutputTypes.h</a>.</p>
 
-<p>References <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00279">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::initialParameterDeviationEstimate_</a>.</p>
+<p>References <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00321">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::initialParameterDeviationEstimate_</a>.</p>
 
 </div>
 </div>
@@ -547,7 +571,7 @@ template&lt;typename ObservationScalarType  = double, typename TimeType  = doubl
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Eigen::MatrixXd <a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html">tudat::simulation_setup::PodInput</a>&lt; ObservationScalarType, TimeType &gt;::getInverseOfAprioriCovariance </td>
+          <td class="memname">Eigen::MatrixXd <a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html">tudat::simulation_setup::PodInput</a>&lt; <a class="el" href="../../d0/d6f/classes__e_8js.html#aee24a28d672b815552e3b29a7c94c0d6">ObservationScalarType</a>, TimeType &gt;::getInverseOfAprioriCovariance </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -562,9 +586,9 @@ template&lt;typename ObservationScalarType  = double, typename TimeType  = doubl
 <p>A priori covariance matrix (unnormalized) of estimated parameters Function to return the a priori covariance matrix (unnormalized) of estimated parameters</p>
 <dl class="section return"><dt>Returns</dt><dd>A priori covariance matrix (unnormalized) of estimated parameters </dd></dl>
 
-<p>Definition at line <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00228">228</a> of file <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html">podInputOutputTypes.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00239">239</a> of file <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html">podInputOutputTypes.h</a>.</p>
 
-<p>References <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00282">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::inverseOfAprioriCovariance_</a>.</p>
+<p>References <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00324">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::inverseOfAprioriCovariance_</a>.</p>
 
 </div>
 </div>
@@ -578,7 +602,7 @@ template&lt;typename ObservationScalarType  = double, typename TimeType  = doubl
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::map&lt; <a class="el" href="../../d2/df9/namespacetudat_1_1observation__models.html#adcbe1f4fdc29700cf58f3c59faf9cc6b">observation_models::ObservableType</a>, std::map&lt; <a class="el" href="../../d2/df9/namespacetudat_1_1observation__models.html#a7a66b5e78e636627f69a082a10c57b52">observation_models::LinkEnds</a>, Eigen::VectorXd &gt; &gt;&amp; <a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html">tudat::simulation_setup::PodInput</a>&lt; ObservationScalarType, TimeType &gt;::getWeightsMatrixDiagonals </td>
+          <td class="memname">std::map&lt; <a class="el" href="../../d2/df9/namespacetudat_1_1observation__models.html#adcbe1f4fdc29700cf58f3c59faf9cc6b">observation_models::ObservableType</a>, std::map&lt; <a class="el" href="../../d2/df9/namespacetudat_1_1observation__models.html#a7a66b5e78e636627f69a082a10c57b52">observation_models::LinkEnds</a>, Eigen::VectorXd &gt; &gt;&amp; <a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html">tudat::simulation_setup::PodInput</a>&lt; <a class="el" href="../../d0/d6f/classes__e_8js.html#aee24a28d672b815552e3b29a7c94c0d6">ObservationScalarType</a>, TimeType &gt;::getWeightsMatrixDiagonals </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -592,9 +616,9 @@ template&lt;typename ObservationScalarType  = double, typename TimeType  = doubl
 </div><div class="memdoc">
 <p>Function to return the weight matrix diagonals, sorted by link ends and observable type (by reference) </p><dl class="section return"><dt>Returns</dt><dd>Weight matrix diagonals, sorted by link ends and observable type (by reference) </dd></dl>
 
-<p>Definition at line <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00239">239</a> of file <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html">podInputOutputTypes.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00250">250</a> of file <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html">podInputOutputTypes.h</a>.</p>
 
-<p>References <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00286">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::weightsMatrixDiagonals_</a>.</p>
+<p>References <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00328">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::weightsMatrixDiagonals_</a>.</p>
 
 </div>
 </div>
@@ -608,7 +632,7 @@ template&lt;typename ObservationScalarType  = double, typename TimeType  = doubl
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html">tudat::simulation_setup::PodInput</a>&lt; ObservationScalarType, TimeType &gt;::getReintegrateEquationsOnFirstIteration </td>
+          <td class="memname">bool <a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html">tudat::simulation_setup::PodInput</a>&lt; <a class="el" href="../../d0/d6f/classes__e_8js.html#aee24a28d672b815552e3b29a7c94c0d6">ObservationScalarType</a>, TimeType &gt;::getReintegrateEquationsOnFirstIteration </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -620,10 +644,11 @@ template&lt;typename ObservationScalarType  = double, typename TimeType  = doubl
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Function to return the boolean denoting whether the dynamics and variational equations are to be reintegrated on first iteration </p><dl class="section return"><dt>Returns</dt><dd>Boolean denoting whether the dynamics and variational equations are to be reintegrated on first iteration </dd></dl>
 
-<p>Definition at line <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00244">244</a> of file <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html">podInputOutputTypes.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00261">261</a> of file <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html">podInputOutputTypes.h</a>.</p>
 
-<p>References <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00288">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::reintegrateEquationsOnFirstIteration_</a>.</p>
+<p>References <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00331">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::reintegrateEquationsOnFirstIteration_</a>.</p>
 
 </div>
 </div>
@@ -637,7 +662,7 @@ template&lt;typename ObservationScalarType  = double, typename TimeType  = doubl
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html">tudat::simulation_setup::PodInput</a>&lt; ObservationScalarType, TimeType &gt;::getReintegrateVariationalEquations </td>
+          <td class="memname">bool <a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html">tudat::simulation_setup::PodInput</a>&lt; <a class="el" href="../../d0/d6f/classes__e_8js.html#aee24a28d672b815552e3b29a7c94c0d6">ObservationScalarType</a>, TimeType &gt;::getReintegrateVariationalEquations </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -649,10 +674,11 @@ template&lt;typename ObservationScalarType  = double, typename TimeType  = doubl
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Function to return the boolean denoting whether the variational equations are to be reintegrated during estimation </p><dl class="section return"><dt>Returns</dt><dd>Boolean denoting whether the variational equations are to be reintegrated during estimation </dd></dl>
 
-<p>Definition at line <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00249">249</a> of file <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html">podInputOutputTypes.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00271">271</a> of file <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html">podInputOutputTypes.h</a>.</p>
 
-<p>References <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00290">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::reintegrateVariationalEquations_</a>.</p>
+<p>References <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00334">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::reintegrateVariationalEquations_</a>.</p>
 
 </div>
 </div>
@@ -666,7 +692,7 @@ template&lt;typename ObservationScalarType  = double, typename TimeType  = doubl
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html">tudat::simulation_setup::PodInput</a>&lt; ObservationScalarType, TimeType &gt;::getSaveInformationMatrix </td>
+          <td class="memname">bool <a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html">tudat::simulation_setup::PodInput</a>&lt; <a class="el" href="../../d0/d6f/classes__e_8js.html#aee24a28d672b815552e3b29a7c94c0d6">ObservationScalarType</a>, TimeType &gt;::getSaveInformationMatrix </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -678,10 +704,11 @@ template&lt;typename ObservationScalarType  = double, typename TimeType  = doubl
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Function to return the boolean denoting whether to print output to th terminal when running the estimation. </p><dl class="section return"><dt>Returns</dt><dd>Boolean denoting whether to print output to th terminal when running the estimation. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00254">254</a> of file <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html">podInputOutputTypes.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00281">281</a> of file <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html">podInputOutputTypes.h</a>.</p>
 
-<p>References <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00292">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::saveInformationMatrix_</a>.</p>
+<p>References <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00337">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::saveInformationMatrix_</a>.</p>
 
 </div>
 </div>
@@ -695,7 +722,7 @@ template&lt;typename ObservationScalarType  = double, typename TimeType  = doubl
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html">tudat::simulation_setup::PodInput</a>&lt; ObservationScalarType, TimeType &gt;::getPrintOutput </td>
+          <td class="memname">bool <a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html">tudat::simulation_setup::PodInput</a>&lt; <a class="el" href="../../d0/d6f/classes__e_8js.html#aee24a28d672b815552e3b29a7c94c0d6">ObservationScalarType</a>, TimeType &gt;::getPrintOutput </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -707,10 +734,11 @@ template&lt;typename ObservationScalarType  = double, typename TimeType  = doubl
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Function to return the boolean denoting whether to print output to th terminal when running the estimation. </p><dl class="section return"><dt>Returns</dt><dd>Boolean denoting whether to print output to th terminal when running the estimation. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00259">259</a> of file <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html">podInputOutputTypes.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00291">291</a> of file <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html">podInputOutputTypes.h</a>.</p>
 
-<p>References <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00294">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::printOutput_</a>.</p>
+<p>References <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00340">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::printOutput_</a>.</p>
 
 </div>
 </div>
@@ -724,7 +752,7 @@ template&lt;typename ObservationScalarType  = double, typename TimeType  = doubl
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html">tudat::simulation_setup::PodInput</a>&lt; ObservationScalarType, TimeType &gt;::getSaveResidualsAndParametersFromEachIteration </td>
+          <td class="memname">bool <a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html">tudat::simulation_setup::PodInput</a>&lt; <a class="el" href="../../d0/d6f/classes__e_8js.html#aee24a28d672b815552e3b29a7c94c0d6">ObservationScalarType</a>, TimeType &gt;::getSaveResidualsAndParametersFromEachIteration </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -736,10 +764,11 @@ template&lt;typename ObservationScalarType  = double, typename TimeType  = doubl
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Function to return the boolean denoting whether the residuals and parameters from the each iteration are to be saved </p><dl class="section return"><dt>Returns</dt><dd>Boolean denoting whether the residuals and parameters from the each iteration are to be saved </dd></dl>
 
-<p>Definition at line <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00264">264</a> of file <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html">podInputOutputTypes.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00301">301</a> of file <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html">podInputOutputTypes.h</a>.</p>
 
-<p>References <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00296">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::saveResidualsAndParametersFromEachIteration_</a>.</p>
+<p>References <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00343">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::saveResidualsAndParametersFromEachIteration_</a>.</p>
 
 </div>
 </div>
@@ -753,7 +782,7 @@ template&lt;typename ObservationScalarType  = double, typename TimeType  = doubl
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html">tudat::simulation_setup::PodInput</a>&lt; ObservationScalarType, TimeType &gt;::getSaveStateHistoryForEachIteration </td>
+          <td class="memname">bool <a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html">tudat::simulation_setup::PodInput</a>&lt; <a class="el" href="../../d0/d6f/classes__e_8js.html#aee24a28d672b815552e3b29a7c94c0d6">ObservationScalarType</a>, TimeType &gt;::getSaveStateHistoryForEachIteration </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -765,10 +794,11 @@ template&lt;typename ObservationScalarType  = double, typename TimeType  = doubl
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Function to return the boolean denoting whether the state history is to be saved on each iteration. </p><dl class="section return"><dt>Returns</dt><dd>Boolean denoting whether the state history is to be saved on each iteration. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00269">269</a> of file <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html">podInputOutputTypes.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00311">311</a> of file <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html">podInputOutputTypes.h</a>.</p>
 
-<p>References <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00298">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::saveStateHistoryForEachIteration_</a>.</p>
+<p>References <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00346">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::saveStateHistoryForEachIteration_</a>.</p>
 
 </div>
 </div>
@@ -783,7 +813,7 @@ template&lt;typename ObservationScalarType  = double, typename TimeType  = doubl
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html#a2e1f6d5a718a2cf8359e222823ddc40b">PodInputDataType</a> <a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html">tudat::simulation_setup::PodInput</a>&lt; ObservationScalarType, TimeType &gt;::observationsAndTimes_</td>
+          <td class="memname"><a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html#a2e1f6d5a718a2cf8359e222823ddc40b">PodInputDataType</a> <a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html">tudat::simulation_setup::PodInput</a>&lt; <a class="el" href="../../d0/d6f/classes__e_8js.html#aee24a28d672b815552e3b29a7c94c0d6">ObservationScalarType</a>, TimeType &gt;::observationsAndTimes_</td>
         </tr>
       </table>
   </td>
@@ -793,9 +823,9 @@ template&lt;typename ObservationScalarType  = double, typename TimeType  = doubl
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00276">276</a> of file <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html">podInputOutputTypes.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00318">318</a> of file <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html">podInputOutputTypes.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00207">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::getObservationsAndTimes()</a>, <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00148">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::setConstantPerObservableAndLinkEndsWeights()</a>, <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00122">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::setConstantPerObservableWeightsMatrix()</a>, and <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00101">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::setConstantWeightsMatrix()</a>.</p>
+<p>Referenced by <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00218">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::getObservationsAndTimes()</a>, <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00146">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::setConstantPerObservableAndLinkEndsWeights()</a>, <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00120">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::setConstantPerObservableWeightsMatrix()</a>, and <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00099">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::setConstantWeightsMatrix()</a>.</p>
 
 </div>
 </div>
@@ -809,7 +839,7 @@ template&lt;typename ObservationScalarType  = double, typename TimeType  = doubl
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Eigen::Matrix&lt; ObservationScalarType, Eigen::Dynamic, 1 &gt; <a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html">tudat::simulation_setup::PodInput</a>&lt; ObservationScalarType, TimeType &gt;::initialParameterDeviationEstimate_</td>
+          <td class="memname">Eigen::Matrix&lt; <a class="el" href="../../d0/d6f/classes__e_8js.html#aee24a28d672b815552e3b29a7c94c0d6">ObservationScalarType</a>, Eigen::Dynamic, 1 &gt; <a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html">tudat::simulation_setup::PodInput</a>&lt; <a class="el" href="../../d0/d6f/classes__e_8js.html#aee24a28d672b815552e3b29a7c94c0d6">ObservationScalarType</a>, TimeType &gt;::initialParameterDeviationEstimate_</td>
         </tr>
       </table>
   </td>
@@ -819,9 +849,9 @@ template&lt;typename ObservationScalarType  = double, typename TimeType  = doubl
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00279">279</a> of file <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html">podInputOutputTypes.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00321">321</a> of file <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html">podInputOutputTypes.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00217">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::getInitialParameterDeviationEstimate()</a>, and <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00058">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::PodInput()</a>.</p>
+<p>Referenced by <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00228">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::getInitialParameterDeviationEstimate()</a>, and <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00056">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::PodInput()</a>.</p>
 
 </div>
 </div>
@@ -835,7 +865,7 @@ template&lt;typename ObservationScalarType  = double, typename TimeType  = doubl
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Eigen::MatrixXd <a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html">tudat::simulation_setup::PodInput</a>&lt; ObservationScalarType, TimeType &gt;::inverseOfAprioriCovariance_</td>
+          <td class="memname">Eigen::MatrixXd <a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html">tudat::simulation_setup::PodInput</a>&lt; <a class="el" href="../../d0/d6f/classes__e_8js.html#aee24a28d672b815552e3b29a7c94c0d6">ObservationScalarType</a>, TimeType &gt;::inverseOfAprioriCovariance_</td>
         </tr>
       </table>
   </td>
@@ -845,9 +875,9 @@ template&lt;typename ObservationScalarType  = double, typename TimeType  = doubl
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00282">282</a> of file <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html">podInputOutputTypes.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00324">324</a> of file <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html">podInputOutputTypes.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00228">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::getInverseOfAprioriCovariance()</a>, and <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00058">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::PodInput()</a>.</p>
+<p>Referenced by <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00239">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::getInverseOfAprioriCovariance()</a>, and <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00056">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::PodInput()</a>.</p>
 
 </div>
 </div>
@@ -861,7 +891,7 @@ template&lt;typename ObservationScalarType  = double, typename TimeType  = doubl
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::map&lt; <a class="el" href="../../d2/df9/namespacetudat_1_1observation__models.html#adcbe1f4fdc29700cf58f3c59faf9cc6b">observation_models::ObservableType</a>, std::map&lt; <a class="el" href="../../d2/df9/namespacetudat_1_1observation__models.html#a7a66b5e78e636627f69a082a10c57b52">observation_models::LinkEnds</a>, Eigen::VectorXd &gt; &gt; <a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html">tudat::simulation_setup::PodInput</a>&lt; ObservationScalarType, TimeType &gt;::weightsMatrixDiagonals_</td>
+          <td class="memname">std::map&lt; <a class="el" href="../../d2/df9/namespacetudat_1_1observation__models.html#adcbe1f4fdc29700cf58f3c59faf9cc6b">observation_models::ObservableType</a>, std::map&lt; <a class="el" href="../../d2/df9/namespacetudat_1_1observation__models.html#a7a66b5e78e636627f69a082a10c57b52">observation_models::LinkEnds</a>, Eigen::VectorXd &gt; &gt; <a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html">tudat::simulation_setup::PodInput</a>&lt; <a class="el" href="../../d0/d6f/classes__e_8js.html#aee24a28d672b815552e3b29a7c94c0d6">ObservationScalarType</a>, TimeType &gt;::weightsMatrixDiagonals_</td>
         </tr>
       </table>
   </td>
@@ -871,9 +901,9 @@ template&lt;typename ObservationScalarType  = double, typename TimeType  = doubl
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00286">286</a> of file <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html">podInputOutputTypes.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00328">328</a> of file <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html">podInputOutputTypes.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00239">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::getWeightsMatrixDiagonals()</a>, and <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00148">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::setConstantPerObservableAndLinkEndsWeights()</a>.</p>
+<p>Referenced by <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00250">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::getWeightsMatrixDiagonals()</a>, and <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00146">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::setConstantPerObservableAndLinkEndsWeights()</a>.</p>
 
 </div>
 </div>
@@ -887,7 +917,7 @@ template&lt;typename ObservationScalarType  = double, typename TimeType  = doubl
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html">tudat::simulation_setup::PodInput</a>&lt; ObservationScalarType, TimeType &gt;::reintegrateEquationsOnFirstIteration_</td>
+          <td class="memname">bool <a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html">tudat::simulation_setup::PodInput</a>&lt; <a class="el" href="../../d0/d6f/classes__e_8js.html#aee24a28d672b815552e3b29a7c94c0d6">ObservationScalarType</a>, TimeType &gt;::reintegrateEquationsOnFirstIteration_</td>
         </tr>
       </table>
   </td>
@@ -897,9 +927,9 @@ template&lt;typename ObservationScalarType  = double, typename TimeType  = doubl
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00288">288</a> of file <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html">podInputOutputTypes.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00331">331</a> of file <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html">podInputOutputTypes.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00187">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::defineEstimationSettings()</a>, and <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00244">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::getReintegrateEquationsOnFirstIteration()</a>.</p>
+<p>Referenced by <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00198">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::defineEstimationSettings()</a>, and <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00261">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::getReintegrateEquationsOnFirstIteration()</a>.</p>
 
 </div>
 </div>
@@ -913,7 +943,7 @@ template&lt;typename ObservationScalarType  = double, typename TimeType  = doubl
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html">tudat::simulation_setup::PodInput</a>&lt; ObservationScalarType, TimeType &gt;::reintegrateVariationalEquations_</td>
+          <td class="memname">bool <a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html">tudat::simulation_setup::PodInput</a>&lt; <a class="el" href="../../d0/d6f/classes__e_8js.html#aee24a28d672b815552e3b29a7c94c0d6">ObservationScalarType</a>, TimeType &gt;::reintegrateVariationalEquations_</td>
         </tr>
       </table>
   </td>
@@ -923,9 +953,9 @@ template&lt;typename ObservationScalarType  = double, typename TimeType  = doubl
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00290">290</a> of file <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html">podInputOutputTypes.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00334">334</a> of file <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html">podInputOutputTypes.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00187">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::defineEstimationSettings()</a>, and <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00249">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::getReintegrateVariationalEquations()</a>.</p>
+<p>Referenced by <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00198">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::defineEstimationSettings()</a>, and <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00271">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::getReintegrateVariationalEquations()</a>.</p>
 
 </div>
 </div>
@@ -939,7 +969,7 @@ template&lt;typename ObservationScalarType  = double, typename TimeType  = doubl
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html">tudat::simulation_setup::PodInput</a>&lt; ObservationScalarType, TimeType &gt;::saveInformationMatrix_</td>
+          <td class="memname">bool <a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html">tudat::simulation_setup::PodInput</a>&lt; <a class="el" href="../../d0/d6f/classes__e_8js.html#aee24a28d672b815552e3b29a7c94c0d6">ObservationScalarType</a>, TimeType &gt;::saveInformationMatrix_</td>
         </tr>
       </table>
   </td>
@@ -949,9 +979,9 @@ template&lt;typename ObservationScalarType  = double, typename TimeType  = doubl
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00292">292</a> of file <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html">podInputOutputTypes.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00337">337</a> of file <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html">podInputOutputTypes.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00187">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::defineEstimationSettings()</a>, and <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00254">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::getSaveInformationMatrix()</a>.</p>
+<p>Referenced by <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00198">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::defineEstimationSettings()</a>, and <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00281">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::getSaveInformationMatrix()</a>.</p>
 
 </div>
 </div>
@@ -965,7 +995,7 @@ template&lt;typename ObservationScalarType  = double, typename TimeType  = doubl
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html">tudat::simulation_setup::PodInput</a>&lt; ObservationScalarType, TimeType &gt;::printOutput_</td>
+          <td class="memname">bool <a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html">tudat::simulation_setup::PodInput</a>&lt; <a class="el" href="../../d0/d6f/classes__e_8js.html#aee24a28d672b815552e3b29a7c94c0d6">ObservationScalarType</a>, TimeType &gt;::printOutput_</td>
         </tr>
       </table>
   </td>
@@ -975,9 +1005,9 @@ template&lt;typename ObservationScalarType  = double, typename TimeType  = doubl
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00294">294</a> of file <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html">podInputOutputTypes.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00340">340</a> of file <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html">podInputOutputTypes.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00187">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::defineEstimationSettings()</a>, and <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00259">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::getPrintOutput()</a>.</p>
+<p>Referenced by <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00198">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::defineEstimationSettings()</a>, and <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00291">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::getPrintOutput()</a>.</p>
 
 </div>
 </div>
@@ -991,7 +1021,7 @@ template&lt;typename ObservationScalarType  = double, typename TimeType  = doubl
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html">tudat::simulation_setup::PodInput</a>&lt; ObservationScalarType, TimeType &gt;::saveResidualsAndParametersFromEachIteration_</td>
+          <td class="memname">bool <a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html">tudat::simulation_setup::PodInput</a>&lt; <a class="el" href="../../d0/d6f/classes__e_8js.html#aee24a28d672b815552e3b29a7c94c0d6">ObservationScalarType</a>, TimeType &gt;::saveResidualsAndParametersFromEachIteration_</td>
         </tr>
       </table>
   </td>
@@ -1001,9 +1031,9 @@ template&lt;typename ObservationScalarType  = double, typename TimeType  = doubl
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00296">296</a> of file <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html">podInputOutputTypes.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00343">343</a> of file <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html">podInputOutputTypes.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00187">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::defineEstimationSettings()</a>, and <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00264">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::getSaveResidualsAndParametersFromEachIteration()</a>.</p>
+<p>Referenced by <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00198">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::defineEstimationSettings()</a>, and <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00301">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::getSaveResidualsAndParametersFromEachIteration()</a>.</p>
 
 </div>
 </div>
@@ -1017,7 +1047,7 @@ template&lt;typename ObservationScalarType  = double, typename TimeType  = doubl
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html">tudat::simulation_setup::PodInput</a>&lt; ObservationScalarType, TimeType &gt;::saveStateHistoryForEachIteration_</td>
+          <td class="memname">bool <a class="el" href="../../d4/db2/classtudat_1_1simulation__setup_1_1_pod_input.html">tudat::simulation_setup::PodInput</a>&lt; <a class="el" href="../../d0/d6f/classes__e_8js.html#aee24a28d672b815552e3b29a7c94c0d6">ObservationScalarType</a>, TimeType &gt;::saveStateHistoryForEachIteration_</td>
         </tr>
       </table>
   </td>
@@ -1027,9 +1057,9 @@ template&lt;typename ObservationScalarType  = double, typename TimeType  = doubl
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00298">298</a> of file <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html">podInputOutputTypes.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00346">346</a> of file <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html">podInputOutputTypes.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00187">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::defineEstimationSettings()</a>, and <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00269">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::getSaveStateHistoryForEachIteration()</a>.</p>
+<p>Referenced by <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00198">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::defineEstimationSettings()</a>, and <a class="el" href="../../da/d5d/pod_input_output_types_8h_source.html#l00311">tudat::simulation_setup::PodInput&lt; ObservationScalarType, TimeType &gt;::getSaveStateHistoryForEachIteration()</a>.</p>
 
 </div>
 </div>
@@ -1039,7 +1069,7 @@ template&lt;typename ObservationScalarType  = double, typename TimeType  = doubl
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 27 2017 09:33:03 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 7 2017 11:20:35 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

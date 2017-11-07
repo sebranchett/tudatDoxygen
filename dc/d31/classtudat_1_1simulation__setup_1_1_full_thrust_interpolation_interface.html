@@ -108,6 +108,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa8525ab07094c5c9998f7c787f4043a4"><td class="memItemLeft" align="right" valign="top">Eigen::Vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d31/classtudat_1_1simulation__setup_1_1_full_thrust_interpolation_interface.html#aa8525ab07094c5c9998f7c787f4043a4">getThrustDirection</a> (const double time)</td></tr>
 <tr class="memdesc:aa8525ab07094c5c9998f7c787f4043a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to retrieve the current thrust direction (in the propagation frame).  <a href="#aa8525ab07094c5c9998f7c787f4043a4">More...</a><br /></td></tr>
 <tr class="separator:aa8525ab07094c5c9998f7c787f4043a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2be74c8e209f45a829082684a25d185"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; <a class="el" href="../../dd/d1b/classtudat_1_1interpolators_1_1_one_dimensional_interpolator.html">interpolators::OneDimensionalInterpolator</a>&lt; double, Eigen::Vector3d &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d31/classtudat_1_1simulation__setup_1_1_full_thrust_interpolation_interface.html#ab2be74c8e209f45a829082684a25d185">getThrustInterpolator</a> ()</td></tr>
+<tr class="memdesc:ab2be74c8e209f45a829082684a25d185"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to retrieve the thrust interpolator.  <a href="#ab2be74c8e209f45a829082684a25d185">More...</a><br /></td></tr>
+<tr class="separator:ab2be74c8e209f45a829082684a25d185"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a864be539796a1546e8a3dd7c5bfb62ee"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d31/classtudat_1_1simulation__setup_1_1_full_thrust_interpolation_interface.html#a864be539796a1546e8a3dd7c5bfb62ee">getThrustMagnitude</a> (const double time)</td></tr>
 <tr class="memdesc:a864be539796a1546e8a3dd7c5bfb62ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to retrieve the current thrust magnitude.  <a href="#a864be539796a1546e8a3dd7c5bfb62ee">More...</a><br /></td></tr>
 <tr class="separator:a864be539796a1546e8a3dd7c5bfb62ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -218,7 +221,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../da/d46/acceleration_settings_8h_source.html#l00255">255</a> of file <a class="el" href="../../da/d46/acceleration_settings_8h_source.html">accelerationSettings.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../da/d46/acceleration_settings_8h_source.html#l00361">tudat::simulation_setup::ThrustAccelerationSettings::ThrustAccelerationSettings()</a>.</p>
+<p>Referenced by <a class="el" href="../../da/d46/acceleration_settings_8h_source.html#l00372">tudat::simulation_setup::ThrustAccelerationSettings::ThrustAccelerationSettings()</a>.</p>
 
 </div>
 </div>
@@ -253,7 +256,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../da/d46/acceleration_settings_8h_source.html#l00269">269</a> of file <a class="el" href="../../da/d46/acceleration_settings_8h_source.html">accelerationSettings.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../da/d46/acceleration_settings_8h_source.html#l00361">tudat::simulation_setup::ThrustAccelerationSettings::ThrustAccelerationSettings()</a>.</p>
+<p>Referenced by <a class="el" href="../../da/d46/acceleration_settings_8h_source.html#l00372">tudat::simulation_setup::ThrustAccelerationSettings::ThrustAccelerationSettings()</a>.</p>
 
 </div>
 </div>
@@ -313,7 +316,33 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../da/d46/acceleration_settings_8h_source.html#l00286">286</a> of file <a class="el" href="../../da/d46/acceleration_settings_8h_source.html">accelerationSettings.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../da/d46/acceleration_settings_8h_source.html#l00361">tudat::simulation_setup::ThrustAccelerationSettings::ThrustAccelerationSettings()</a>.</p>
+<p>Referenced by <a class="el" href="../../da/d46/acceleration_settings_8h_source.html#l00372">tudat::simulation_setup::ThrustAccelerationSettings::ThrustAccelerationSettings()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab2be74c8e209f45a829082684a25d185"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">boost::shared_ptr&lt; <a class="el" href="../../dd/d1b/classtudat_1_1interpolators_1_1_one_dimensional_interpolator.html">interpolators::OneDimensionalInterpolator</a>&lt; double, Eigen::Vector3d &gt; &gt; tudat::simulation_setup::FullThrustInterpolationInterface::getThrustInterpolator </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Function to retrieve the thrust interpolator. </p>
+
+<p>Definition at line <a class="el" href="../../da/d46/acceleration_settings_8h_source.html#l00295">295</a> of file <a class="el" href="../../da/d46/acceleration_settings_8h_source.html">accelerationSettings.h</a>.</p>
 
 </div>
 </div>
@@ -345,7 +374,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../da/d46/acceleration_settings_8h_source.html#l00298">298</a> of file <a class="el" href="../../da/d46/acceleration_settings_8h_source.html">accelerationSettings.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d46/acceleration_settings_8h_source.html#l00307">307</a> of file <a class="el" href="../../da/d46/acceleration_settings_8h_source.html">accelerationSettings.h</a>.</p>
 
 </div>
 </div>
@@ -368,7 +397,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/d46/acceleration_settings_8h_source.html#l00308">308</a> of file <a class="el" href="../../da/d46/acceleration_settings_8h_source.html">accelerationSettings.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d46/acceleration_settings_8h_source.html#l00317">317</a> of file <a class="el" href="../../da/d46/acceleration_settings_8h_source.html">accelerationSettings.h</a>.</p>
 
 </div>
 </div>
@@ -390,7 +419,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/d46/acceleration_settings_8h_source.html#l00311">311</a> of file <a class="el" href="../../da/d46/acceleration_settings_8h_source.html">accelerationSettings.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d46/acceleration_settings_8h_source.html#l00320">320</a> of file <a class="el" href="../../da/d46/acceleration_settings_8h_source.html">accelerationSettings.h</a>.</p>
 
 </div>
 </div>
@@ -412,7 +441,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/d46/acceleration_settings_8h_source.html#l00314">314</a> of file <a class="el" href="../../da/d46/acceleration_settings_8h_source.html">accelerationSettings.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d46/acceleration_settings_8h_source.html#l00323">323</a> of file <a class="el" href="../../da/d46/acceleration_settings_8h_source.html">accelerationSettings.h</a>.</p>
 
 </div>
 </div>
@@ -434,7 +463,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/d46/acceleration_settings_8h_source.html#l00317">317</a> of file <a class="el" href="../../da/d46/acceleration_settings_8h_source.html">accelerationSettings.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d46/acceleration_settings_8h_source.html#l00326">326</a> of file <a class="el" href="../../da/d46/acceleration_settings_8h_source.html">accelerationSettings.h</a>.</p>
 
 </div>
 </div>
@@ -444,7 +473,7 @@ Private Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 27 2017 09:33:03 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 7 2017 11:20:35 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

@@ -23,7 +23,9 @@ var searchData=
   ['spherical_5fharmonics_5fsine_5fcoefficient_5fblock',['spherical_harmonics_sine_coefficient_block',['../d5/d92/namespacetudat_1_1estimatable__parameters.html#aa6910f86d3240d08f92b4541f4032ca8a37970ca87efef5970c010ad1beb38ea1',1,'tudat::estimatable_parameters']]],
   ['spherical_5fposition',['spherical_position',['../df/d68/namespacetudat_1_1coordinate__conversions.html#a4e504281e15b897419420663300c106ea5f31201b9463b4bbd079378db4181828',1,'tudat::coordinate_conversions']]],
   ['spherical_5fspice',['spherical_spice',['../d4/da8/namespacetudat_1_1simulation__setup.html#afe47dae20695dc2432b258eba19e35fba8af7fdf3faeaf9c3b20b4ddbfb97f373',1,'tudat::simulation_setup']]],
+  ['sphericalelements',['sphericalElements',['../d8/d24/namespacetudat_1_1json__interface.html#a5c1a96a1a5b825c908457175fadc17ffabc1120bb634816b3bfc42f324a967957',1,'tudat::json_interface']]],
   ['spice_5frotation_5fmodel',['spice_rotation_model',['../d4/da8/namespacetudat_1_1simulation__setup.html#aa5497750edd6264351a07cad4380b588a9cef1ffde7116c59f743f821a3876987',1,'tudat::simulation_setup']]],
   ['stagnation_5fpoint_5fheat_5fflux_5fdependent_5fvariable',['stagnation_point_heat_flux_dependent_variable',['../d2/d9c/namespacetudat_1_1propagators.html#a766f7d3409891d28fea685d831b8a3dbab401031df3710acf5c770edc768c07ff',1,'tudat::propagators']]],
+  ['statevariable',['stateVariable',['../d2/d9c/namespacetudat_1_1propagators.html#a58a59a1f326ecebafc38d7c298885477ad3e4b119488923e55550078e5dba5217',1,'tudat::propagators']]],
   ['sun',['sun',['../d0/da4/namespacetudat_1_1gravitation.html#a27d055b7d3c62a19b1e8e7de2073fe75a9159d993d215995754ad3bb60c431a8a',1,'tudat::gravitation']]]
 ];

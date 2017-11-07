@@ -2,9 +2,14 @@ var searchData=
 [
   ['vacuum_5fpermeability',['VACUUM_PERMEABILITY',['../d3/d40/namespacetudat_1_1physical__constants.html#af2adc279306e4447f33371ea8b7a5383',1,'tudat::physical_constants']]],
   ['vacuum_5fpermittivity',['VACUUM_PERMITTIVITY',['../d3/d40/namespacetudat_1_1physical__constants.html#a21dfa508615431c5c0f52f36e9c53274',1,'tudat::physical_constants']]],
+  ['value',['value',['../db/d01/classtudat_1_1json__interface_1_1_illegal_value_error.html#a147ba7823a80b1e732b0dde392b42985',1,'tudat::json_interface::IllegalValueError']]],
+  ['variable',['variable',['../d6/daf/structtudat_1_1json__interface_1_1_keys_1_1_termination.html#a7c53afea0e51cb4d5f7cdd6e670ea303',1,'tudat::json_interface::Keys::Termination']]],
   ['variableindex_5f',['variableIndex_',['../d1/d83/classtudat_1_1aerodynamics_1_1_trim_orientation_calculator.html#ac809421c0c81c4080d27867ebe6c4c10',1,'tudat::aerodynamics::TrimOrientationCalculator']]],
   ['variableretrievalfuntion_5f',['variableRetrievalFuntion_',['../d0/d6b/classtudat_1_1propagators_1_1_single_variable_limit_propagation_termination_condition.html#a6854a1af71504bc55b21fc81c8bd91ad',1,'tudat::propagators::SingleVariableLimitPropagationTerminationCondition']]],
-  ['variabletype_5f',['variableType_',['../d6/d61/classtudat_1_1propagators_1_1_single_dependent_variable_save_settings.html#a5741e1816850ecd66dde134d26ecfeae',1,'tudat::propagators::SingleDependentVariableSaveSettings']]],
+  ['variables',['variables',['../d8/d4d/structtudat_1_1json__interface_1_1_keys_1_1_export.html#ab426c5cfcc9533298f8574972d1cfb7f',1,'tudat::json_interface::Keys::Export']]],
+  ['variables_5f',['variables_',['../d1/d2d/classtudat_1_1json__interface_1_1_export_settings.html#a3da5354b3c7a2c24f944997f351eee8b',1,'tudat::json_interface::ExportSettings']]],
+  ['variabletype_5f',['variableType_',['../d2/d51/classtudat_1_1propagators_1_1_variable_settings.html#a976fc230d756ed3251ea04ee48fc1994',1,'tudat::propagators::VariableSettings']]],
+  ['variabletypes',['variableTypes',['../d2/d9c/namespacetudat_1_1propagators.html#a2c1546d133bba5dfdfc6f4962bf11881',1,'tudat::propagators']]],
   ['variationalequations_5f',['variationalEquations_',['../df/d2b/classtudat_1_1propagators_1_1_dynamics_state_derivative_model.html#a405795858f2e102993aff7a0361fd0d9',1,'tudat::propagators::DynamicsStateDerivativeModel']]],
   ['variationalequationsobject_5f',['variationalEquationsObject_',['../d2/d57/classtudat_1_1propagators_1_1_single_arc_variational_equations_solver.html#abedf25b9b0f5dd48eb0c15ae1824841f',1,'tudat::propagators::SingleArcVariationalEquationsSolver']]],
   ['variationalequationssolution_5f',['variationalEquationsSolution_',['../d2/d57/classtudat_1_1propagators_1_1_single_arc_variational_equations_solver.html#af3a13adb8c9d2b32bdd2aca17e00966b',1,'tudat::propagators::SingleArcVariationalEquationsSolver::variationalEquationsSolution_()'],['../d2/d0e/classtudat_1_1propagators_1_1_multi_arc_variational_equations_solver.html#a66aed75ada0b55794a7a4d78d7418054',1,'tudat::propagators::MultiArcVariationalEquationsSolver::variationalEquationsSolution_()']]],
@@ -25,5 +30,8 @@ var searchData=
   ['velocityofbodyinnoninertialreferenceframefunction_5f',['velocityOfBodyInNonInertialReferenceFrameFunction_',['../d7/d34/classtudat_1_1reference__frames_1_1_apparent_acceleration_model.html#a2791098aba1c3eed0a8eb3462ffd4ec4',1,'tudat::reference_frames::ApparentAccelerationModel']]],
   ['velocitypartial_5f',['velocityPartial_',['../d6/d42/classtudat_1_1observation__partials_1_1_cartesian_state_partial_wrt_cartesian_state.html#acb556e736480198564f681ade0a0fe79',1,'tudat::observation_partials::CartesianStatePartialWrtCartesianState']]],
   ['venus_5fgravitational_5fparameter',['VENUS_GRAVITATIONAL_PARAMETER',['../dd/d50/namespacetudat_1_1celestial__body__constants.html#ac8032f096f7a1bedd42dc640d1dfd5c8',1,'tudat::celestial_body_constants']]],
-  ['viabilitycalculators_5f',['viabilityCalculators_',['../d2/d8f/classtudat_1_1observation__models_1_1_observation_simulator_base.html#a8b085a6e3f9493abcf5d03542c43f6ab',1,'tudat::observation_models::ObservationSimulatorBase']]]
+  ['viabilitycalculators_5f',['viabilityCalculators_',['../d2/d8f/classtudat_1_1observation__models_1_1_observation_simulator_base.html#a8b085a6e3f9493abcf5d03542c43f6ab',1,'tudat::observation_models::ObservationSimulatorBase']]],
+  ['vx',['vx',['../d0/d21/structtudat_1_1json__interface_1_1_keys_1_1_body_1_1_state.html#ad502230eb4c3b777d94599ff9be04275',1,'tudat::json_interface::Keys::Body::State']]],
+  ['vy',['vy',['../d0/d21/structtudat_1_1json__interface_1_1_keys_1_1_body_1_1_state.html#af6a7ce522119cdf2cf9dbd8a6f236e84',1,'tudat::json_interface::Keys::Body::State']]],
+  ['vz',['vz',['../d0/d21/structtudat_1_1json__interface_1_1_keys_1_1_body_1_1_state.html#a865464d552a28aca871a7de9c8864514',1,'tudat::json_interface::Keys::Body::State']]]
 ];

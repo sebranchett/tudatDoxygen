@@ -93,10 +93,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="title">createNumericalSimulator.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="../../da/d46/acceleration_settings_8h_source.html">Tudat/SimulationSetup/PropagationSetup/accelerationSettings.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../df/d19/create_acceleration_models_8h_source.html">Tudat/SimulationSetup/PropagationSetup/createAccelerationModels.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d7/d4d/create_torque_model_8h_source.html">Tudat/SimulationSetup/PropagationSetup/createTorqueModel.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html">Tudat/SimulationSetup/PropagationSetup/dynamicsSimulator.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="../../d8/d7e/dynamics_simulator_8h_source.html">Tudat/SimulationSetup/PropagationSetup/dynamicsSimulator.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html">Tudat/SimulationSetup/PropagationSetup/variationalEquationsSolver.h</a>&quot;</code><br />
 </div>
 <p><a href="../../d5/d3b/create_numerical_simulator_8h_source.html">Go to the source code of this file.</a></p>
@@ -111,26 +108,17 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a86a164bdb6f8265fb1c236d3fe8110d1"><td class="memItemLeft" align="right" valign="top">basic_astrodynamics::AccelerationMap&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da8/namespacetudat_1_1simulation__setup.html#a86a164bdb6f8265fb1c236d3fe8110d1">tudat::simulation_setup::createAccelerationModelsMap</a> (const NamedBodyMap &amp;bodyMap, const SelectedAccelerationMap &amp;selectedAccelerationPerBody, const std::map&lt; std::string, std::string &gt; &amp;centralBodies)</td></tr>
-<tr class="memdesc:a86a164bdb6f8265fb1c236d3fe8110d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to create a set of acceleration models from a map of bodies and acceleration model types.  <a href="../../d4/da8/namespacetudat_1_1simulation__setup.html#a86a164bdb6f8265fb1c236d3fe8110d1">More...</a><br /></td></tr>
-<tr class="separator:a86a164bdb6f8265fb1c236d3fe8110d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1569cb251fcaa95a0ec37d6886a59a5b"><td class="memItemLeft" align="right" valign="top">basic_astrodynamics::AccelerationMap&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da8/namespacetudat_1_1simulation__setup.html#a1569cb251fcaa95a0ec37d6886a59a5b">tudat::simulation_setup::createAccelerationModelsMap</a> (const NamedBodyMap &amp;bodyMap, const SelectedAccelerationMap &amp;selectedAccelerationPerBody, const std::vector&lt; std::string &gt; &amp;propagatedBodies, const std::vector&lt; std::string &gt; &amp;centralBodies)</td></tr>
-<tr class="memdesc:a1569cb251fcaa95a0ec37d6886a59a5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to create acceleration models from a map of bodies and acceleration model types.  <a href="../../d4/da8/namespacetudat_1_1simulation__setup.html#a1569cb251fcaa95a0ec37d6886a59a5b">More...</a><br /></td></tr>
-<tr class="separator:a1569cb251fcaa95a0ec37d6886a59a5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab07c39aab0cbcc7810b43a2c4b476b12"><td class="memTemplParams" colspan="2">template&lt;typename StateScalarType  = double, typename TimeType  = double&gt; </td></tr>
 <tr class="memitem:ab07c39aab0cbcc7810b43a2c4b476b12"><td class="memTemplItemLeft" align="right" valign="top">boost::shared_ptr&lt; propagators::SingleArcDynamicsSimulator&lt; StateScalarType, TimeType &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d4/da8/namespacetudat_1_1simulation__setup.html#ab07c39aab0cbcc7810b43a2c4b476b12">tudat::simulation_setup::createSingleArcDynamicsSimulator</a> (const simulation_setup::NamedBodyMap &amp;bodyMap, const boost::shared_ptr&lt; numerical_integrators::IntegratorSettings&lt; TimeType &gt; &gt; integratorSettings, const boost::shared_ptr&lt; propagators::PropagatorSettings&lt; StateScalarType &gt; &gt; propagatorSettings, const bool areEquationsOfMotionToBeIntegrated=true, const bool clearNumericalSolutions=true, const bool setIntegratedResult=true)</td></tr>
 <tr class="separator:ab07c39aab0cbcc7810b43a2c4b476b12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afcafd8b124aebfd8c9d584f8770fde7a"><td class="memTemplParams" colspan="2">template&lt;typename StateScalarType  = double, typename TimeType  = double, typename ParameterType  = double&gt; </td></tr>
 <tr class="memitem:afcafd8b124aebfd8c9d584f8770fde7a"><td class="memTemplItemLeft" align="right" valign="top">boost::shared_ptr&lt; propagators::SingleArcVariationalEquationsSolver&lt; StateScalarType, TimeType &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d4/da8/namespacetudat_1_1simulation__setup.html#afcafd8b124aebfd8c9d584f8770fde7a">tudat::simulation_setup::createSingleArcVariationalEquationsSolver</a> (const simulation_setup::NamedBodyMap &amp;bodyMap, const boost::shared_ptr&lt; numerical_integrators::IntegratorSettings&lt; TimeType &gt; &gt; integratorSettings, const boost::shared_ptr&lt; propagators::PropagatorSettings&lt; StateScalarType &gt; &gt; propagatorSettings, const boost::shared_ptr&lt; estimatable_parameters::EstimatableParameterSet&lt; ParameterType &gt; &gt; parametersToEstimate, const bool integrateDynamicalAndVariationalEquationsConcurrently=1, const boost::shared_ptr&lt; numerical_integrators::IntegratorSettings&lt; double &gt; &gt; variationalOnlyIntegratorSettings=boost::shared_ptr&lt; numerical_integrators::IntegratorSettings&lt; double &gt; &gt;(), const bool clearNumericalSolution=1, const bool integrateEquationsOnCreation=1)</td></tr>
 <tr class="separator:afcafd8b124aebfd8c9d584f8770fde7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd7a3de0aaf99022579a422f4f563052"><td class="memItemLeft" align="right" valign="top">basic_astrodynamics::TorqueModelMap&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da8/namespacetudat_1_1simulation__setup.html#abd7a3de0aaf99022579a422f4f563052">tudat::simulation_setup::createTorqueModelsMap</a> (const NamedBodyMap &amp;bodyMap, const SelectedTorqueMap &amp;selectedTorquePerBody)</td></tr>
-<tr class="memdesc:abd7a3de0aaf99022579a422f4f563052"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to create torque models from a map of bodies and torque model settings.  <a href="../../d4/da8/namespacetudat_1_1simulation__setup.html#abd7a3de0aaf99022579a422f4f563052">More...</a><br /></td></tr>
-<tr class="separator:abd7a3de0aaf99022579a422f4f563052"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 27 2017 09:32:58 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 7 2017 11:20:30 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

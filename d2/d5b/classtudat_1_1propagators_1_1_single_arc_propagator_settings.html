@@ -138,6 +138,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aaef547394b23096cfbc2e0267af1361a"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; <a class="el" href="../../d3/def/classtudat_1_1propagators_1_1_propagation_termination_settings.html">PropagationTerminationSettings</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d5b/classtudat_1_1propagators_1_1_single_arc_propagator_settings.html#aaef547394b23096cfbc2e0267af1361a">getTerminationSettings</a> ()</td></tr>
 <tr class="memdesc:aaef547394b23096cfbc2e0267af1361a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to retrieve settings for creating the object that checks whether the propagation is finished.  <a href="#aaef547394b23096cfbc2e0267af1361a">More...</a><br /></td></tr>
 <tr class="separator:aaef547394b23096cfbc2e0267af1361a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f0fc0e89be0893f0c2602c0e1a8e002"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d5b/classtudat_1_1propagators_1_1_single_arc_propagator_settings.html#a5f0fc0e89be0893f0c2602c0e1a8e002">resetDependentVariablesToSave</a> (const boost::shared_ptr&lt; <a class="el" href="../../dd/d09/classtudat_1_1propagators_1_1_dependent_variable_save_settings.html">DependentVariableSaveSettings</a> &gt; &amp;dependentVariablesToSave)</td></tr>
+<tr class="memdesc:a5f0fc0e89be0893f0c2602c0e1a8e002"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to reset settings for the dependent variables that are to be saved during propagation.  <a href="#a5f0fc0e89be0893f0c2602c0e1a8e002">More...</a><br /></td></tr>
+<tr class="separator:a5f0fc0e89be0893f0c2602c0e1a8e002"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b78ddc9c0f264534d09aa12fab9ec7f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d5b/classtudat_1_1propagators_1_1_single_arc_propagator_settings.html#a6b78ddc9c0f264534d09aa12fab9ec7f">resetTerminationSettings</a> (const boost::shared_ptr&lt; <a class="el" href="../../d3/def/classtudat_1_1propagators_1_1_propagation_termination_settings.html">PropagationTerminationSettings</a> &gt; terminationSettings)</td></tr>
 <tr class="memdesc:a6b78ddc9c0f264534d09aa12fab9ec7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to reset settings for creating the object that checks whether the propagation is finished.  <a href="#a6b78ddc9c0f264534d09aa12fab9ec7f">More...</a><br /></td></tr>
 <tr class="separator:a6b78ddc9c0f264534d09aa12fab9ec7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -160,6 +163,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a372bd085a2032236531536f5d8c46fb3 inherit pub_methods_classtudat_1_1propagators_1_1_propagator_settings"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d02/classtudat_1_1propagators_1_1_propagator_settings.html#a372bd085a2032236531536f5d8c46fb3">resetInitialStates</a> (const Eigen::Matrix&lt; StateScalarType, Eigen::Dynamic, 1 &gt; &amp;initialBodyStates)</td></tr>
 <tr class="memdesc:a372bd085a2032236531536f5d8c46fb3 inherit pub_methods_classtudat_1_1propagators_1_1_propagator_settings"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to reset the initial state used as input for numerical integration.  <a href="#a372bd085a2032236531536f5d8c46fb3">More...</a><br /></td></tr>
 <tr class="separator:a372bd085a2032236531536f5d8c46fb3 inherit pub_methods_classtudat_1_1propagators_1_1_propagator_settings"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48f459668fb8775a2a3a11d8d5c7c24f inherit pub_methods_classtudat_1_1propagators_1_1_propagator_settings"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d02/classtudat_1_1propagators_1_1_propagator_settings.html#a48f459668fb8775a2a3a11d8d5c7c24f">resetIntegratedStateModels</a> (const <a class="el" href="../../d4/da8/namespacetudat_1_1simulation__setup.html#a4a7938c5b0b78593806673957cc169c4">simulation_setup::NamedBodyMap</a> &amp;bodyMap)=0</td></tr>
+<tr class="memdesc:a48f459668fb8775a2a3a11d8d5c7c24f inherit pub_methods_classtudat_1_1propagators_1_1_propagator_settings"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to create the integrated state models (e.g. acceleration/torque/mass-rate models).  <a href="#a48f459668fb8775a2a3a11d8d5c7c24f">More...</a><br /></td></tr>
+<tr class="separator:a48f459668fb8775a2a3a11d8d5c7c24f inherit pub_methods_classtudat_1_1propagators_1_1_propagator_settings"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -191,7 +197,7 @@ class tudat::propagators::SingleArcPropagatorSettings&lt; StateScalarType &gt;</
 
 <p>Base class for defining setting of a propagator for single-arc dynamics. This class is non-functional, and each state type requires its own derived class (which may have multiple derived classes of its own). </p>
 
-<p>Definition at line <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00120">120</a> of file <a class="el" href="../../d8/db7/propagation_settings_8h_source.html">propagationSettings.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00136">136</a> of file <a class="el" href="../../d8/db7/propagation_settings_8h_source.html">propagationSettings.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a5d6144604c007a87a35c678352774f01"></a>
 <div class="memitem">
@@ -255,7 +261,7 @@ template&lt;typename StateScalarType  = double&gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00135">135</a> of file <a class="el" href="../../d8/db7/propagation_settings_8h_source.html">propagationSettings.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00151">151</a> of file <a class="el" href="../../d8/db7/propagation_settings_8h_source.html">propagationSettings.h</a>.</p>
 
 </div>
 </div>
@@ -282,7 +288,7 @@ template&lt;typename StateScalarType  = double&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00147">147</a> of file <a class="el" href="../../d8/db7/propagation_settings_8h_source.html">propagationSettings.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00163">163</a> of file <a class="el" href="../../d8/db7/propagation_settings_8h_source.html">propagationSettings.h</a>.</p>
 
 </div>
 </div>
@@ -310,7 +316,7 @@ template&lt;typename StateScalarType  = double&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00151">151</a> of file <a class="el" href="../../d8/db7/propagation_settings_8h_source.html">propagationSettings.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00167">167</a> of file <a class="el" href="../../d8/db7/propagation_settings_8h_source.html">propagationSettings.h</a>.</p>
 
 </div>
 </div>
@@ -338,7 +344,7 @@ template&lt;typename StateScalarType  = double&gt; </div>
 </div><div class="memdoc">
 <p>Function to retrieve settings for creating the object that checks whether the propagation is finished. </p><dl class="section return"><dt>Returns</dt><dd>Settings for creating the object that checks whether the propagation is finished. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00161">161</a> of file <a class="el" href="../../d8/db7/propagation_settings_8h_source.html">propagationSettings.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00177">177</a> of file <a class="el" href="../../d8/db7/propagation_settings_8h_source.html">propagationSettings.h</a>.</p>
 
 </div>
 </div>
@@ -372,7 +378,7 @@ template&lt;typename StateScalarType  = double&gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00171">171</a> of file <a class="el" href="../../d8/db7/propagation_settings_8h_source.html">propagationSettings.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00187">187</a> of file <a class="el" href="../../d8/db7/propagation_settings_8h_source.html">propagationSettings.h</a>.</p>
 
 </div>
 </div>
@@ -400,7 +406,41 @@ template&lt;typename StateScalarType  = double&gt; </div>
 </div><div class="memdoc">
 <p>Function to retrieve settings for the dependent variables that are to be saved during propagation (default none). </p><dl class="section return"><dt>Returns</dt><dd>Settings for the dependent variables that are to be saved during propagation (default none). </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00181">181</a> of file <a class="el" href="../../d8/db7/propagation_settings_8h_source.html">propagationSettings.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00197">197</a> of file <a class="el" href="../../d8/db7/propagation_settings_8h_source.html">propagationSettings.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5f0fc0e89be0893f0c2602c0e1a8e002"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename StateScalarType  = double&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../d2/d5b/classtudat_1_1propagators_1_1_single_arc_propagator_settings.html">tudat::propagators::SingleArcPropagatorSettings</a>&lt; StateScalarType &gt;::resetDependentVariablesToSave </td>
+          <td>(</td>
+          <td class="paramtype">const boost::shared_ptr&lt; <a class="el" href="../../dd/d09/classtudat_1_1propagators_1_1_dependent_variable_save_settings.html">DependentVariableSaveSettings</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>dependentVariablesToSave</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Function to reset settings for the dependent variables that are to be saved during propagation. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dependentVariablesToSave</td><td>Settings for the dependent variables that are to be saved during propagation. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00207">207</a> of file <a class="el" href="../../d8/db7/propagation_settings_8h_source.html">propagationSettings.h</a>.</p>
 
 </div>
 </div>
@@ -428,7 +468,7 @@ template&lt;typename StateScalarType  = double&gt; </div>
 </div><div class="memdoc">
 <p>Function to retrieve how often the current state and time are to be printed to console </p><dl class="section return"><dt>Returns</dt><dd><a class="el" href="../../d8/df9/classtudat_1_1_time.html" title="Class for defining time with a resolution that is sub-fs for very long periods of time...">Time</a> intercal with which the current state and time are to be printed to console (default NaN, meaning never). </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00191">191</a> of file <a class="el" href="../../d8/db7/propagation_settings_8h_source.html">propagationSettings.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00218">218</a> of file <a class="el" href="../../d8/db7/propagation_settings_8h_source.html">propagationSettings.h</a>.</p>
 
 </div>
 </div>
@@ -453,7 +493,7 @@ template&lt;typename StateScalarType  = double&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00201">201</a> of file <a class="el" href="../../d8/db7/propagation_settings_8h_source.html">propagationSettings.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00228">228</a> of file <a class="el" href="../../d8/db7/propagation_settings_8h_source.html">propagationSettings.h</a>.</p>
 
 </div>
 </div>
@@ -477,7 +517,7 @@ template&lt;typename StateScalarType  = double&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00204">204</a> of file <a class="el" href="../../d8/db7/propagation_settings_8h_source.html">propagationSettings.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00231">231</a> of file <a class="el" href="../../d8/db7/propagation_settings_8h_source.html">propagationSettings.h</a>.</p>
 
 </div>
 </div>
@@ -501,7 +541,7 @@ template&lt;typename StateScalarType  = double&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00207">207</a> of file <a class="el" href="../../d8/db7/propagation_settings_8h_source.html">propagationSettings.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00234">234</a> of file <a class="el" href="../../d8/db7/propagation_settings_8h_source.html">propagationSettings.h</a>.</p>
 
 </div>
 </div>
@@ -526,7 +566,7 @@ template&lt;typename StateScalarType  = double&gt; </div>
 </div><div class="memdoc">
 <p>Variable indicating how often (once per printInterval_ seconds or propagation independenty variable) the current state and time are to be printed to console (default never). </p>
 
-<p>Definition at line <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00211">211</a> of file <a class="el" href="../../d8/db7/propagation_settings_8h_source.html">propagationSettings.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00238">238</a> of file <a class="el" href="../../d8/db7/propagation_settings_8h_source.html">propagationSettings.h</a>.</p>
 
 </div>
 </div>
@@ -536,7 +576,7 @@ template&lt;typename StateScalarType  = double&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 27 2017 09:33:02 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 7 2017 11:20:34 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

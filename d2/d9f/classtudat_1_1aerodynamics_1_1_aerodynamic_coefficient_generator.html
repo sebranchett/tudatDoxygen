@@ -199,6 +199,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a8bf7126281dbe7017490e77768e23670 inherit pub_methods_classtudat_1_1aerodynamics_1_1_aerodynamic_coefficient_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get reference length.  <a href="#a8bf7126281dbe7017490e77768e23670">More...</a><br /></td></tr>
 <tr class="separator:a8bf7126281dbe7017490e77768e23670 inherit pub_methods_classtudat_1_1aerodynamics_1_1_aerodynamic_coefficient_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a116a427562ff47a5cfb717fc5931171b inherit pub_methods_classtudat_1_1aerodynamics_1_1_aerodynamic_coefficient_interface"><td class="memItemLeft" align="right" valign="top">Eigen::Vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d94/classtudat_1_1aerodynamics_1_1_aerodynamic_coefficient_interface.html#a116a427562ff47a5cfb717fc5931171b">getReferenceLengths</a> ()</td></tr>
+<tr class="memdesc:a116a427562ff47a5cfb717fc5931171b inherit pub_methods_classtudat_1_1aerodynamics_1_1_aerodynamic_coefficient_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get reference lengths.  <a href="#a116a427562ff47a5cfb717fc5931171b">More...</a><br /></td></tr>
 <tr class="separator:a116a427562ff47a5cfb717fc5931171b inherit pub_methods_classtudat_1_1aerodynamics_1_1_aerodynamic_coefficient_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8bfd4247c0ac5d32c92b9ad859f33500 inherit pub_methods_classtudat_1_1aerodynamics_1_1_aerodynamic_coefficient_interface"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d94/classtudat_1_1aerodynamics_1_1_aerodynamic_coefficient_interface.html#a8bfd4247c0ac5d32c92b9ad859f33500">setControlSurfaceIncrements</a> (const std::map&lt; std::string, boost::shared_ptr&lt; <a class="el" href="../../d2/df8/classtudat_1_1aerodynamics_1_1_control_surface_increment_aerodynamic_interface.html">ControlSurfaceIncrementAerodynamicInterface</a> &gt; &gt; controlSurfaceIncrementInterfaces)</td></tr>
 <tr class="memdesc:a8bfd4247c0ac5d32c92b9ad859f33500 inherit pub_methods_classtudat_1_1aerodynamics_1_1_aerodynamic_coefficient_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to set the list of control surface aerodynamic coefficient interfaces.  <a href="#a8bfd4247c0ac5d32c92b9ad859f33500">More...</a><br /></td></tr>
@@ -265,6 +266,7 @@ Protected Attributes</h2></td></tr>
 <tr class="memdesc:a37ca00d965d756bbf54b727516a33a57 inherit pro_attribs_classtudat_1_1aerodynamics_1_1_aerodynamic_coefficient_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aerodynamic reference length.  <a href="#a37ca00d965d756bbf54b727516a33a57">More...</a><br /></td></tr>
 <tr class="separator:a37ca00d965d756bbf54b727516a33a57 inherit pro_attribs_classtudat_1_1aerodynamics_1_1_aerodynamic_coefficient_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af170e69f9c689cce254dbf9b7d0fb2ab inherit pro_attribs_classtudat_1_1aerodynamics_1_1_aerodynamic_coefficient_interface"><td class="memItemLeft" align="right" valign="top">Eigen::Vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d94/classtudat_1_1aerodynamics_1_1_aerodynamic_coefficient_interface.html#af170e69f9c689cce254dbf9b7d0fb2ab">referenceLengths_</a></td></tr>
+<tr class="memdesc:af170e69f9c689cce254dbf9b7d0fb2ab inherit pro_attribs_classtudat_1_1aerodynamics_1_1_aerodynamic_coefficient_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aerodynamic reference lengths.  <a href="#af170e69f9c689cce254dbf9b7d0fb2ab">More...</a><br /></td></tr>
 <tr class="separator:af170e69f9c689cce254dbf9b7d0fb2ab inherit pro_attribs_classtudat_1_1aerodynamics_1_1_aerodynamic_coefficient_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -352,8 +354,8 @@ template&lt;unsigned int NumberOfIndependentVariables, unsigned int NumberOfCoef
     <tr><td class="paramname">lateralReferenceLength</td><td>Reference length with which aerodynamic moments (about y-axis) is non-dimensionalized. </td></tr>
     <tr><td class="paramname">momentReferencePoint</td><td>Point w.r.t. aerodynamic moment is calculated </td></tr>
     <tr><td class="paramname">independentVariableNames</td><td>Vector with identifiers the physical meaning of each independent variable of the aerodynamic coefficients. </td></tr>
-    <tr><td class="paramname">areCoefficientsInAerodynamicFrame</td><td>Boolean to define whether the aerodynamic coefficients are defined in the aerodynamic frame (lift, drag, side force) or in the body frame (typically denoted as Cx, Cy, Cz) (default true). </td></tr>
-    <tr><td class="paramname">areCoefficientsInNegativeAxisDirection</td><td>Boolean to define whether the aerodynamic coefficients are positiver along tyhe positive axes of the body or aerodynamic frame (see areCoefficientsInAerodynamicFrame). Note that for (lift, drag, side force), the coefficients are typically defined in negative direction (default true). </td></tr>
+    <tr><td class="paramname">areCoefficientsInAerodynamicFrame</td><td>Boolean to define whether the aerodynamic coefficients are defined in the aerodynamic frame (drag, side, lift force) or in the body frame (typically denoted as Cx, Cy, Cz) (default true). </td></tr>
+    <tr><td class="paramname">areCoefficientsInNegativeAxisDirection</td><td>Boolean to define whether the aerodynamic coefficients are positiver along tyhe positive axes of the body or aerodynamic frame (see areCoefficientsInAerodynamicFrame). Note that for (drag, side, lift force), the coefficients are typically defined in negative direction (default true). </td></tr>
   </table>
   </dd>
 </dl>
@@ -744,7 +746,7 @@ template&lt;unsigned int NumberOfIndependentVariables, unsigned int NumberOfCoef
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 27 2017 09:32:59 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 7 2017 11:20:31 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

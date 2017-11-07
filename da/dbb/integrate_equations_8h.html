@@ -96,6 +96,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="contents">
 <div class="textblock"><code>#include &lt;Eigen/Core&gt;</code><br />
 <code>#include &lt;boost/lambda/lambda.hpp&gt;</code><br />
+<code>#include &lt;chrono&gt;</code><br />
 <code>#include &lt;map&gt;</code><br />
 <code>#include &quot;<a class="el" href="../../d1/d68/numerical_integrator_8h_source.html">Tudat/Mathematics/NumericalIntegrators/numericalIntegrator.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d4/d01/time_conversions_8h_source.html">Tudat/Astrodynamics/BasicAstrodynamics/timeConversions.h</a>&quot;</code><br />
@@ -129,15 +130,15 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ac6ea862c0ce6d463c15ba43ca4f73686"><td class="memTemplParams" colspan="2">template&lt;typename StateType  = Eigen::MatrixXd, typename TimeType  = double, typename TimeStepType  = TimeType&gt; </td></tr>
-<tr class="memitem:ac6ea862c0ce6d463c15ba43ca4f73686"><td class="memTemplItemLeft" align="right" valign="top">PropagationTerminationReason&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d2/d9c/namespacetudat_1_1propagators.html#ac6ea862c0ce6d463c15ba43ca4f73686">tudat::propagators::integrateEquationsFromIntegrator</a> (const boost::shared_ptr&lt; numerical_integrators::NumericalIntegrator&lt; TimeType, StateType, StateType, TimeStepType &gt; &gt; integrator, const TimeStepType initialTimeStep, const boost::function&lt; bool(const double) &gt; stopPropagationFunction, std::map&lt; TimeType, StateType &gt; &amp;solutionHistory, std::map&lt; TimeType, Eigen::VectorXd &gt; &amp;dependentVariableHistory, const boost::function&lt; Eigen::VectorXd() &gt; dependentVariableFunction=boost::function&lt; Eigen::VectorXd() &gt;(), const int saveFrequency=<a class="el" href="../../d6/d70/mathematical_constants_8h.html#adf3d84f9d3e27cbaa280e9fd0bac8e5f">TUDAT_NAN</a>, const TimeType printInterval=<a class="el" href="../../d6/d70/mathematical_constants_8h.html#adf3d84f9d3e27cbaa280e9fd0bac8e5f">TUDAT_NAN</a>)</td></tr>
-<tr class="memdesc:ac6ea862c0ce6d463c15ba43ca4f73686"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to numerically integrate a given first order differential equation.  <a href="../../d2/d9c/namespacetudat_1_1propagators.html#ac6ea862c0ce6d463c15ba43ca4f73686">More...</a><br /></td></tr>
-<tr class="separator:ac6ea862c0ce6d463c15ba43ca4f73686"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58de5dd91dd45dc193c212d4297bcae5"><td class="memTemplParams" colspan="2">template&lt;typename StateType  = Eigen::MatrixXd, typename TimeType  = double, typename TimeStepType  = TimeType&gt; </td></tr>
+<tr class="memitem:a58de5dd91dd45dc193c212d4297bcae5"><td class="memTemplItemLeft" align="right" valign="top">PropagationTerminationReason&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d2/d9c/namespacetudat_1_1propagators.html#a58de5dd91dd45dc193c212d4297bcae5">tudat::propagators::integrateEquationsFromIntegrator</a> (const boost::shared_ptr&lt; numerical_integrators::NumericalIntegrator&lt; TimeType, <a class="el" href="../../db/dc4/classes__4_8js.html#a1615968a92950438f6e67a28e9d56e5c">StateType</a>, <a class="el" href="../../db/dc4/classes__4_8js.html#a1615968a92950438f6e67a28e9d56e5c">StateType</a>, TimeStepType &gt; &gt; integrator, const TimeStepType initialTimeStep, const boost::function&lt; bool(const double, const double) &gt; stopPropagationFunction, std::map&lt; TimeType, <a class="el" href="../../db/dc4/classes__4_8js.html#a1615968a92950438f6e67a28e9d56e5c">StateType</a> &gt; &amp;solutionHistory, std::map&lt; TimeType, Eigen::VectorXd &gt; &amp;dependentVariableHistory, std::map&lt; TimeType, double &gt; &amp;cummulativeComputationTimeHistory, const boost::function&lt; Eigen::VectorXd() &gt; dependentVariableFunction=boost::function&lt; Eigen::VectorXd() &gt;(), const int saveFrequency=<a class="el" href="../../d6/d70/mathematical_constants_8h.html#adf3d84f9d3e27cbaa280e9fd0bac8e5f">TUDAT_NAN</a>, const TimeType printInterval=<a class="el" href="../../d6/d70/mathematical_constants_8h.html#adf3d84f9d3e27cbaa280e9fd0bac8e5f">TUDAT_NAN</a>, const std::chrono::steady_clock::time_point initialClockTime=std::chrono::steady_clock::now())</td></tr>
+<tr class="memdesc:a58de5dd91dd45dc193c212d4297bcae5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to numerically integrate a given first order differential equation.  <a href="../../d2/d9c/namespacetudat_1_1propagators.html#a58de5dd91dd45dc193c212d4297bcae5">More...</a><br /></td></tr>
+<tr class="separator:a58de5dd91dd45dc193c212d4297bcae5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 27 2017 09:32:58 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 7 2017 11:20:30 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

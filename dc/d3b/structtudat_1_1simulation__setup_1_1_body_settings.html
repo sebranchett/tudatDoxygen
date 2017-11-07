@@ -109,6 +109,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a8a9718e0b527bb4b380b8a16fe484e9c"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; <a class="el" href="../../d2/d4f/classtudat_1_1simulation__setup_1_1_atmosphere_settings.html">AtmosphereSettings</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d3b/structtudat_1_1simulation__setup_1_1_body_settings.html#a8a9718e0b527bb4b380b8a16fe484e9c">atmosphereSettings</a></td></tr>
 <tr class="memdesc:a8a9718e0b527bb4b380b8a16fe484e9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Settings for the atmosphere model that the body is to contain.  <a href="#a8a9718e0b527bb4b380b8a16fe484e9c">More...</a><br /></td></tr>
 <tr class="separator:a8a9718e0b527bb4b380b8a16fe484e9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3910f77d120039ce365c3840b696762e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d3b/structtudat_1_1simulation__setup_1_1_body_settings.html#a3910f77d120039ce365c3840b696762e">constantMass</a> = <a class="el" href="../../d6/d70/mathematical_constants_8h.html#adf3d84f9d3e27cbaa280e9fd0bac8e5f">TUDAT_NAN</a></td></tr>
+<tr class="memdesc:a3910f77d120039ce365c3840b696762e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constant mass.  <a href="#a3910f77d120039ce365c3840b696762e">More...</a><br /></td></tr>
+<tr class="separator:a3910f77d120039ce365c3840b696762e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa92afce24a69e9329ddd8130823686ad"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; <a class="el" href="../../d9/deb/classtudat_1_1simulation__setup_1_1_ephemeris_settings.html">EphemerisSettings</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d3b/structtudat_1_1simulation__setup_1_1_body_settings.html#aa92afce24a69e9329ddd8130823686ad">ephemerisSettings</a></td></tr>
 <tr class="memdesc:aa92afce24a69e9329ddd8130823686ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Settings for the ephemeris model that the body is to contain.  <a href="#aa92afce24a69e9329ddd8130823686ad">More...</a><br /></td></tr>
 <tr class="separator:aa92afce24a69e9329ddd8130823686ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -118,6 +121,8 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a7bd32a92aa3d7904d3b2a38b687e8189"><td class="memItemLeft" align="right" valign="top">std::vector&lt; boost::shared_ptr&lt; <a class="el" href="../../d8/d42/classtudat_1_1simulation__setup_1_1_gravity_field_variation_settings.html">GravityFieldVariationSettings</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d3b/structtudat_1_1simulation__setup_1_1_body_settings.html#a7bd32a92aa3d7904d3b2a38b687e8189">gravityFieldVariationSettings</a></td></tr>
 <tr class="memdesc:a7bd32a92aa3d7904d3b2a38b687e8189"><td class="mdescLeft">&#160;</td><td class="mdescRight">Settings for variations of the gravity field of the body.  <a href="#a7bd32a92aa3d7904d3b2a38b687e8189">More...</a><br /></td></tr>
 <tr class="separator:a7bd32a92aa3d7904d3b2a38b687e8189"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa711c0e3b31c1897a771e41a5790a3ac"><td class="memItemLeft" align="right" valign="top">std::vector&lt; boost::shared_ptr&lt; <a class="el" href="../../dd/df0/classtudat_1_1simulation__setup_1_1_ground_station_settings.html">GroundStationSettings</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d3b/structtudat_1_1simulation__setup_1_1_body_settings.html#aa711c0e3b31c1897a771e41a5790a3ac">groundStationSettings</a></td></tr>
+<tr class="separator:aa711c0e3b31c1897a771e41a5790a3ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e3ed3e841f455d2e013cf86257a39e0"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, boost::shared_ptr&lt; <a class="el" href="../../df/dac/classtudat_1_1simulation__setup_1_1_radiation_pressure_interface_settings.html">RadiationPressureInterfaceSettings</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d3b/structtudat_1_1simulation__setup_1_1_body_settings.html#a5e3ed3e841f455d2e013cf86257a39e0">radiationPressureSettings</a></td></tr>
 <tr class="memdesc:a5e3ed3e841f455d2e013cf86257a39e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Settings for the radiations pressure interfaces that the body is to contain (source body as key).  <a href="#a5e3ed3e841f455d2e013cf86257a39e0">More...</a><br /></td></tr>
 <tr class="separator:a5e3ed3e841f455d2e013cf86257a39e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -131,8 +136,22 @@ Public Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Struct holding settings for a body to be created. From the settings, a <a class="el" href="../../d5/de5/classtudat_1_1simulation__setup_1_1_body.html" title="Body class representing the properties of a celestial body (natural or artificial). ">Body</a> object is created by the createBodies function. Default values can be generated from the function in <a class="el" href="../../db/d87/default_bodies_8h.html">defaultBodies.h</a>. </p>
 
-<p>Definition at line <a class="el" href="../../d8/d72/create_bodies_8h_source.html#l00039">39</a> of file <a class="el" href="../../d8/d72/create_bodies_8h_source.html">createBodies.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d72/create_bodies_8h_source.html#l00041">41</a> of file <a class="el" href="../../d8/d72/create_bodies_8h_source.html">createBodies.h</a>.</p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a3910f77d120039ce365c3840b696762e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double tudat::simulation_setup::BodySettings::constantMass = <a class="el" href="../../d6/d70/mathematical_constants_8h.html#adf3d84f9d3e27cbaa280e9fd0bac8e5f">TUDAT_NAN</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d8/d72/create_bodies_8h_source.html#l00044">44</a> of file <a class="el" href="../../d8/d72/create_bodies_8h_source.html">createBodies.h</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a8a9718e0b527bb4b380b8a16fe484e9c"></a>
 <div class="memitem">
 <div class="memproto">
@@ -143,7 +162,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/d72/create_bodies_8h_source.html#l00042">42</a> of file <a class="el" href="../../d8/d72/create_bodies_8h_source.html">createBodies.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d72/create_bodies_8h_source.html#l00047">47</a> of file <a class="el" href="../../d8/d72/create_bodies_8h_source.html">createBodies.h</a>.</p>
 
 </div>
 </div>
@@ -157,7 +176,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/d72/create_bodies_8h_source.html#l00045">45</a> of file <a class="el" href="../../d8/d72/create_bodies_8h_source.html">createBodies.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d72/create_bodies_8h_source.html#l00050">50</a> of file <a class="el" href="../../d8/d72/create_bodies_8h_source.html">createBodies.h</a>.</p>
 
 </div>
 </div>
@@ -171,7 +190,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/d72/create_bodies_8h_source.html#l00048">48</a> of file <a class="el" href="../../d8/d72/create_bodies_8h_source.html">createBodies.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d72/create_bodies_8h_source.html#l00053">53</a> of file <a class="el" href="../../d8/d72/create_bodies_8h_source.html">createBodies.h</a>.</p>
 
 </div>
 </div>
@@ -185,7 +204,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/d72/create_bodies_8h_source.html#l00051">51</a> of file <a class="el" href="../../d8/d72/create_bodies_8h_source.html">createBodies.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d72/create_bodies_8h_source.html#l00056">56</a> of file <a class="el" href="../../d8/d72/create_bodies_8h_source.html">createBodies.h</a>.</p>
 
 </div>
 </div>
@@ -199,7 +218,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/d72/create_bodies_8h_source.html#l00054">54</a> of file <a class="el" href="../../d8/d72/create_bodies_8h_source.html">createBodies.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d72/create_bodies_8h_source.html#l00059">59</a> of file <a class="el" href="../../d8/d72/create_bodies_8h_source.html">createBodies.h</a>.</p>
 
 </div>
 </div>
@@ -213,7 +232,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/d72/create_bodies_8h_source.html#l00058">58</a> of file <a class="el" href="../../d8/d72/create_bodies_8h_source.html">createBodies.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d72/create_bodies_8h_source.html#l00063">63</a> of file <a class="el" href="../../d8/d72/create_bodies_8h_source.html">createBodies.h</a>.</p>
 
 </div>
 </div>
@@ -227,7 +246,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/d72/create_bodies_8h_source.html#l00061">61</a> of file <a class="el" href="../../d8/d72/create_bodies_8h_source.html">createBodies.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d72/create_bodies_8h_source.html#l00066">66</a> of file <a class="el" href="../../d8/d72/create_bodies_8h_source.html">createBodies.h</a>.</p>
 
 </div>
 </div>
@@ -241,7 +260,21 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/d72/create_bodies_8h_source.html#l00064">64</a> of file <a class="el" href="../../d8/d72/create_bodies_8h_source.html">createBodies.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d72/create_bodies_8h_source.html#l00069">69</a> of file <a class="el" href="../../d8/d72/create_bodies_8h_source.html">createBodies.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa711c0e3b31c1897a771e41a5790a3ac"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; boost::shared_ptr&lt; <a class="el" href="../../dd/df0/classtudat_1_1simulation__setup_1_1_ground_station_settings.html">GroundStationSettings</a> &gt; &gt; tudat::simulation_setup::BodySettings::groundStationSettings</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d8/d72/create_bodies_8h_source.html#l00071">71</a> of file <a class="el" href="../../d8/d72/create_bodies_8h_source.html">createBodies.h</a>.</p>
 
 </div>
 </div>
@@ -251,7 +284,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 27 2017 09:33:02 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 7 2017 11:20:35 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

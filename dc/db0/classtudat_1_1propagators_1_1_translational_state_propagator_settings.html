@@ -91,6 +91,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="../../d2/db4/classtudat_1_1propagators_1_1_translational_state_propagator_settings-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">tudat::propagators::TranslationalStatePropagatorSettings&lt; StateScalarType &gt; Class Template Reference</div>  </div>
@@ -117,14 +118,29 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aeb34f5d8119a600e5f92ce56a3ec4cb9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/db0/classtudat_1_1propagators_1_1_translational_state_propagator_settings.html#aeb34f5d8119a600e5f92ce56a3ec4cb9">TranslationalStatePropagatorSettings</a> (const std::vector&lt; std::string &gt; &amp;centralBodies, const <a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#a351078bf6825fc8a14eb24a61578abc8">basic_astrodynamics::AccelerationMap</a> &amp;accelerationsMap, const std::vector&lt; std::string &gt; &amp;bodiesToIntegrate, const Eigen::Matrix&lt; StateScalarType, Eigen::Dynamic, 1 &gt; &amp;initialBodyStates, const boost::shared_ptr&lt; <a class="el" href="../../d3/def/classtudat_1_1propagators_1_1_propagation_termination_settings.html">PropagationTerminationSettings</a> &gt; terminationSettings, const <a class="el" href="../../d2/d9c/namespacetudat_1_1propagators.html#afe367b6bf5a79c7a19de00b50d3258a3">TranslationalPropagatorType</a> propagator=<a class="el" href="../../d2/d9c/namespacetudat_1_1propagators.html#afe367b6bf5a79c7a19de00b50d3258a3a390962db5d0a04cb4bbcc71301923a46">cowell</a>, const boost::shared_ptr&lt; <a class="el" href="../../dd/d09/classtudat_1_1propagators_1_1_dependent_variable_save_settings.html">DependentVariableSaveSettings</a> &gt; dependentVariablesToSave=boost::shared_ptr&lt; <a class="el" href="../../dd/d09/classtudat_1_1propagators_1_1_dependent_variable_save_settings.html">DependentVariableSaveSettings</a> &gt;(), const double printInterval=<a class="el" href="../../d6/d70/mathematical_constants_8h.html#adf3d84f9d3e27cbaa280e9fd0bac8e5f">TUDAT_NAN</a>)</td></tr>
-<tr class="memdesc:aeb34f5d8119a600e5f92ce56a3ec4cb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for generic stopping conditions.  <a href="#aeb34f5d8119a600e5f92ce56a3ec4cb9">More...</a><br /></td></tr>
+<tr class="memdesc:aeb34f5d8119a600e5f92ce56a3ec4cb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for generic stopping conditions, providing an alreay-created accelerations map.  <a href="#aeb34f5d8119a600e5f92ce56a3ec4cb9">More...</a><br /></td></tr>
 <tr class="separator:aeb34f5d8119a600e5f92ce56a3ec4cb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6db5436c343ef595fbf835a4fe9ee5c3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/db0/classtudat_1_1propagators_1_1_translational_state_propagator_settings.html#a6db5436c343ef595fbf835a4fe9ee5c3">TranslationalStatePropagatorSettings</a> (const std::vector&lt; std::string &gt; &amp;centralBodies, const <a class="el" href="../../d4/da8/namespacetudat_1_1simulation__setup.html#a3443abdb7a7ed6563d43068207a35217">simulation_setup::SelectedAccelerationMap</a> &amp;accelerationSettingsMap, const std::vector&lt; std::string &gt; &amp;bodiesToIntegrate, const Eigen::Matrix&lt; StateScalarType, Eigen::Dynamic, 1 &gt; &amp;initialBodyStates, const boost::shared_ptr&lt; <a class="el" href="../../d3/def/classtudat_1_1propagators_1_1_propagation_termination_settings.html">PropagationTerminationSettings</a> &gt; terminationSettings, const <a class="el" href="../../d2/d9c/namespacetudat_1_1propagators.html#afe367b6bf5a79c7a19de00b50d3258a3">TranslationalPropagatorType</a> propagator=<a class="el" href="../../d2/d9c/namespacetudat_1_1propagators.html#afe367b6bf5a79c7a19de00b50d3258a3a390962db5d0a04cb4bbcc71301923a46">cowell</a>, const boost::shared_ptr&lt; <a class="el" href="../../dd/d09/classtudat_1_1propagators_1_1_dependent_variable_save_settings.html">DependentVariableSaveSettings</a> &gt; dependentVariablesToSave=boost::shared_ptr&lt; <a class="el" href="../../dd/d09/classtudat_1_1propagators_1_1_dependent_variable_save_settings.html">DependentVariableSaveSettings</a> &gt;(), const double printInterval=<a class="el" href="../../d6/d70/mathematical_constants_8h.html#adf3d84f9d3e27cbaa280e9fd0bac8e5f">TUDAT_NAN</a>)</td></tr>
+<tr class="memdesc:a6db5436c343ef595fbf835a4fe9ee5c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for generic stopping conditions, providing settings to create accelerations map.  <a href="#a6db5436c343ef595fbf835a4fe9ee5c3">More...</a><br /></td></tr>
+<tr class="separator:a6db5436c343ef595fbf835a4fe9ee5c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f603240bbc01dd29d3cdf100390fdeb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/db0/classtudat_1_1propagators_1_1_translational_state_propagator_settings.html#a0f603240bbc01dd29d3cdf100390fdeb">TranslationalStatePropagatorSettings</a> (const std::vector&lt; std::string &gt; &amp;centralBodies, const <a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#a351078bf6825fc8a14eb24a61578abc8">basic_astrodynamics::AccelerationMap</a> &amp;accelerationsMap, const std::vector&lt; std::string &gt; &amp;bodiesToIntegrate, const Eigen::Matrix&lt; StateScalarType, Eigen::Dynamic, 1 &gt; &amp;initialBodyStates, const double endTime, const <a class="el" href="../../d2/d9c/namespacetudat_1_1propagators.html#afe367b6bf5a79c7a19de00b50d3258a3">TranslationalPropagatorType</a> propagator=<a class="el" href="../../d2/d9c/namespacetudat_1_1propagators.html#afe367b6bf5a79c7a19de00b50d3258a3a390962db5d0a04cb4bbcc71301923a46">cowell</a>, const boost::shared_ptr&lt; <a class="el" href="../../dd/d09/classtudat_1_1propagators_1_1_dependent_variable_save_settings.html">DependentVariableSaveSettings</a> &gt; dependentVariablesToSave=boost::shared_ptr&lt; <a class="el" href="../../dd/d09/classtudat_1_1propagators_1_1_dependent_variable_save_settings.html">DependentVariableSaveSettings</a> &gt;(), const double printInterval=<a class="el" href="../../d6/d70/mathematical_constants_8h.html#adf3d84f9d3e27cbaa280e9fd0bac8e5f">TUDAT_NAN</a>)</td></tr>
-<tr class="memdesc:a0f603240bbc01dd29d3cdf100390fdeb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for fixed propagation time stopping conditions.  <a href="#a0f603240bbc01dd29d3cdf100390fdeb">More...</a><br /></td></tr>
+<tr class="memdesc:a0f603240bbc01dd29d3cdf100390fdeb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for fixed propagation time stopping conditions, providing an alreay-created accelerations map.  <a href="#a0f603240bbc01dd29d3cdf100390fdeb">More...</a><br /></td></tr>
 <tr class="separator:a0f603240bbc01dd29d3cdf100390fdeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27ba4bf9cc5efbe9d95d7fc2a26fa898"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/db0/classtudat_1_1propagators_1_1_translational_state_propagator_settings.html#a27ba4bf9cc5efbe9d95d7fc2a26fa898">TranslationalStatePropagatorSettings</a> (const std::vector&lt; std::string &gt; &amp;centralBodies, const <a class="el" href="../../d4/da8/namespacetudat_1_1simulation__setup.html#a3443abdb7a7ed6563d43068207a35217">simulation_setup::SelectedAccelerationMap</a> &amp;accelerationSettingsMap, const std::vector&lt; std::string &gt; &amp;bodiesToIntegrate, const Eigen::Matrix&lt; StateScalarType, Eigen::Dynamic, 1 &gt; &amp;initialBodyStates, const double endTime, const <a class="el" href="../../d2/d9c/namespacetudat_1_1propagators.html#afe367b6bf5a79c7a19de00b50d3258a3">TranslationalPropagatorType</a> propagator=<a class="el" href="../../d2/d9c/namespacetudat_1_1propagators.html#afe367b6bf5a79c7a19de00b50d3258a3a390962db5d0a04cb4bbcc71301923a46">cowell</a>, const boost::shared_ptr&lt; <a class="el" href="../../dd/d09/classtudat_1_1propagators_1_1_dependent_variable_save_settings.html">DependentVariableSaveSettings</a> &gt; dependentVariablesToSave=boost::shared_ptr&lt; <a class="el" href="../../dd/d09/classtudat_1_1propagators_1_1_dependent_variable_save_settings.html">DependentVariableSaveSettings</a> &gt;(), const double printInterval=<a class="el" href="../../d6/d70/mathematical_constants_8h.html#adf3d84f9d3e27cbaa280e9fd0bac8e5f">TUDAT_NAN</a>)</td></tr>
+<tr class="memdesc:a27ba4bf9cc5efbe9d95d7fc2a26fa898"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for fixed propagation time stopping conditions, providing settings to create accelerations map.  <a href="#a27ba4bf9cc5efbe9d95d7fc2a26fa898">More...</a><br /></td></tr>
+<tr class="separator:a27ba4bf9cc5efbe9d95d7fc2a26fa898"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c352939e8125405eb00e900d434f12e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/db0/classtudat_1_1propagators_1_1_translational_state_propagator_settings.html#a4c352939e8125405eb00e900d434f12e">~TranslationalStatePropagatorSettings</a> ()</td></tr>
 <tr class="memdesc:a4c352939e8125405eb00e900d434f12e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#a4c352939e8125405eb00e900d434f12e">More...</a><br /></td></tr>
 <tr class="separator:a4c352939e8125405eb00e900d434f12e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77162640fb7e00adf622d64e10e638ab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/da8/namespacetudat_1_1simulation__setup.html#a3443abdb7a7ed6563d43068207a35217">simulation_setup::SelectedAccelerationMap</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/db0/classtudat_1_1propagators_1_1_translational_state_propagator_settings.html#a77162640fb7e00adf622d64e10e638ab">getAccelerationSettingsMap</a> () const </td></tr>
+<tr class="memdesc:a77162640fb7e00adf622d64e10e638ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to get the acceleration settings map.  <a href="#a77162640fb7e00adf622d64e10e638ab">More...</a><br /></td></tr>
+<tr class="separator:a77162640fb7e00adf622d64e10e638ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcef2cd118b6cc25d911d307bc002565"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#a351078bf6825fc8a14eb24a61578abc8">basic_astrodynamics::AccelerationMap</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/db0/classtudat_1_1propagators_1_1_translational_state_propagator_settings.html#afcef2cd118b6cc25d911d307bc002565">getAccelerationsMap</a> () const </td></tr>
+<tr class="memdesc:afcef2cd118b6cc25d911d307bc002565"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to get the accelerations map.  <a href="#afcef2cd118b6cc25d911d307bc002565">More...</a><br /></td></tr>
+<tr class="separator:afcef2cd118b6cc25d911d307bc002565"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fbfe7f5fd3ee6cf52b4caa166d9e5fb"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/db0/classtudat_1_1propagators_1_1_translational_state_propagator_settings.html#a8fbfe7f5fd3ee6cf52b4caa166d9e5fb">resetIntegratedStateModels</a> (const <a class="el" href="../../d4/da8/namespacetudat_1_1simulation__setup.html#a4a7938c5b0b78593806673957cc169c4">simulation_setup::NamedBodyMap</a> &amp;bodyMap)</td></tr>
+<tr class="memdesc:a8fbfe7f5fd3ee6cf52b4caa166d9e5fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to create the acceleration models.  <a href="#a8fbfe7f5fd3ee6cf52b4caa166d9e5fb">More...</a><br /></td></tr>
+<tr class="separator:a8fbfe7f5fd3ee6cf52b4caa166d9e5fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classtudat_1_1propagators_1_1_single_arc_propagator_settings"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classtudat_1_1propagators_1_1_single_arc_propagator_settings')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../d2/d5b/classtudat_1_1propagators_1_1_single_arc_propagator_settings.html">tudat::propagators::SingleArcPropagatorSettings&lt; StateScalarType &gt;</a></td></tr>
 <tr class="memitem:a5d6144604c007a87a35c678352774f01 inherit pub_methods_classtudat_1_1propagators_1_1_single_arc_propagator_settings"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d5b/classtudat_1_1propagators_1_1_single_arc_propagator_settings.html#a5d6144604c007a87a35c678352774f01">SingleArcPropagatorSettings</a> (const <a class="el" href="../../d2/d9c/namespacetudat_1_1propagators.html#a567fdc525eae96100752079fe69d4e3b">IntegratedStateType</a> stateType, const Eigen::Matrix&lt; StateScalarType, Eigen::Dynamic, 1 &gt; initialBodyStates, const boost::shared_ptr&lt; <a class="el" href="../../d3/def/classtudat_1_1propagators_1_1_propagation_termination_settings.html">PropagationTerminationSettings</a> &gt; terminationSettings, const boost::shared_ptr&lt; <a class="el" href="../../dd/d09/classtudat_1_1propagators_1_1_dependent_variable_save_settings.html">DependentVariableSaveSettings</a> &gt; dependentVariablesToSave=boost::shared_ptr&lt; <a class="el" href="../../dd/d09/classtudat_1_1propagators_1_1_dependent_variable_save_settings.html">DependentVariableSaveSettings</a> &gt;(), const double printInterval=<a class="el" href="../../d6/d70/mathematical_constants_8h.html#adf3d84f9d3e27cbaa280e9fd0bac8e5f">TUDAT_NAN</a>)</td></tr>
 <tr class="memdesc:a5d6144604c007a87a35c678352774f01 inherit pub_methods_classtudat_1_1propagators_1_1_single_arc_propagator_settings"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a5d6144604c007a87a35c678352774f01">More...</a><br /></td></tr>
@@ -144,6 +160,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aaef547394b23096cfbc2e0267af1361a inherit pub_methods_classtudat_1_1propagators_1_1_single_arc_propagator_settings"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; <a class="el" href="../../d3/def/classtudat_1_1propagators_1_1_propagation_termination_settings.html">PropagationTerminationSettings</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d5b/classtudat_1_1propagators_1_1_single_arc_propagator_settings.html#aaef547394b23096cfbc2e0267af1361a">getTerminationSettings</a> ()</td></tr>
 <tr class="memdesc:aaef547394b23096cfbc2e0267af1361a inherit pub_methods_classtudat_1_1propagators_1_1_single_arc_propagator_settings"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to retrieve settings for creating the object that checks whether the propagation is finished.  <a href="#aaef547394b23096cfbc2e0267af1361a">More...</a><br /></td></tr>
 <tr class="separator:aaef547394b23096cfbc2e0267af1361a inherit pub_methods_classtudat_1_1propagators_1_1_single_arc_propagator_settings"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f0fc0e89be0893f0c2602c0e1a8e002 inherit pub_methods_classtudat_1_1propagators_1_1_single_arc_propagator_settings"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d5b/classtudat_1_1propagators_1_1_single_arc_propagator_settings.html#a5f0fc0e89be0893f0c2602c0e1a8e002">resetDependentVariablesToSave</a> (const boost::shared_ptr&lt; <a class="el" href="../../dd/d09/classtudat_1_1propagators_1_1_dependent_variable_save_settings.html">DependentVariableSaveSettings</a> &gt; &amp;dependentVariablesToSave)</td></tr>
+<tr class="memdesc:a5f0fc0e89be0893f0c2602c0e1a8e002 inherit pub_methods_classtudat_1_1propagators_1_1_single_arc_propagator_settings"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to reset settings for the dependent variables that are to be saved during propagation.  <a href="#a5f0fc0e89be0893f0c2602c0e1a8e002">More...</a><br /></td></tr>
+<tr class="separator:a5f0fc0e89be0893f0c2602c0e1a8e002 inherit pub_methods_classtudat_1_1propagators_1_1_single_arc_propagator_settings"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b78ddc9c0f264534d09aa12fab9ec7f inherit pub_methods_classtudat_1_1propagators_1_1_single_arc_propagator_settings"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d5b/classtudat_1_1propagators_1_1_single_arc_propagator_settings.html#a6b78ddc9c0f264534d09aa12fab9ec7f">resetTerminationSettings</a> (const boost::shared_ptr&lt; <a class="el" href="../../d3/def/classtudat_1_1propagators_1_1_propagation_termination_settings.html">PropagationTerminationSettings</a> &gt; terminationSettings)</td></tr>
 <tr class="memdesc:a6b78ddc9c0f264534d09aa12fab9ec7f inherit pub_methods_classtudat_1_1propagators_1_1_single_arc_propagator_settings"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to reset settings for creating the object that checks whether the propagation is finished.  <a href="#a6b78ddc9c0f264534d09aa12fab9ec7f">More...</a><br /></td></tr>
 <tr class="separator:a6b78ddc9c0f264534d09aa12fab9ec7f inherit pub_methods_classtudat_1_1propagators_1_1_single_arc_propagator_settings"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -169,9 +188,6 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a2c77c941e83de803bb29c4aa6ffc9090"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#a351078bf6825fc8a14eb24a61578abc8">basic_astrodynamics::AccelerationMap</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/db0/classtudat_1_1propagators_1_1_translational_state_propagator_settings.html#a2c77c941e83de803bb29c4aa6ffc9090">accelerationsMap_</a></td></tr>
-<tr class="memdesc:a2c77c941e83de803bb29c4aa6ffc9090"><td class="mdescLeft">&#160;</td><td class="mdescRight">A map containing the list of accelerations acting on each body.  <a href="#a2c77c941e83de803bb29c4aa6ffc9090">More...</a><br /></td></tr>
-<tr class="separator:a2c77c941e83de803bb29c4aa6ffc9090"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5b9afdbcbc04292756abe448798037a"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/db0/classtudat_1_1propagators_1_1_translational_state_propagator_settings.html#aa5b9afdbcbc04292756abe448798037a">bodiesToIntegrate_</a></td></tr>
 <tr class="memdesc:aa5b9afdbcbc04292756abe448798037a"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of bodies for which the translational state is to be propagated.  <a href="#aa5b9afdbcbc04292756abe448798037a">More...</a><br /></td></tr>
 <tr class="separator:aa5b9afdbcbc04292756abe448798037a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -181,6 +197,15 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a5d5b921fb25985f835926c8998c0bdc1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/d9c/namespacetudat_1_1propagators.html#afe367b6bf5a79c7a19de00b50d3258a3">TranslationalPropagatorType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/db0/classtudat_1_1propagators_1_1_translational_state_propagator_settings.html#a5d5b921fb25985f835926c8998c0bdc1">propagator_</a></td></tr>
 <tr class="memdesc:a5d5b921fb25985f835926c8998c0bdc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of translational state propagator to be used.  <a href="#a5d5b921fb25985f835926c8998c0bdc1">More...</a><br /></td></tr>
 <tr class="separator:a5d5b921fb25985f835926c8998c0bdc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ad3d3ac51b32ddd117b20898be2b6cd54"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/da8/namespacetudat_1_1simulation__setup.html#a3443abdb7a7ed6563d43068207a35217">simulation_setup::SelectedAccelerationMap</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/db0/classtudat_1_1propagators_1_1_translational_state_propagator_settings.html#ad3d3ac51b32ddd117b20898be2b6cd54">accelerationSettingsMap_</a></td></tr>
+<tr class="memdesc:ad3d3ac51b32ddd117b20898be2b6cd54"><td class="mdescLeft">&#160;</td><td class="mdescRight">A map containing the list of settings for the accelerations acting on each body.  <a href="#ad3d3ac51b32ddd117b20898be2b6cd54">More...</a><br /></td></tr>
+<tr class="separator:ad3d3ac51b32ddd117b20898be2b6cd54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c77c941e83de803bb29c4aa6ffc9090"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#a351078bf6825fc8a14eb24a61578abc8">basic_astrodynamics::AccelerationMap</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/db0/classtudat_1_1propagators_1_1_translational_state_propagator_settings.html#a2c77c941e83de803bb29c4aa6ffc9090">accelerationsMap_</a></td></tr>
+<tr class="memdesc:a2c77c941e83de803bb29c4aa6ffc9090"><td class="mdescLeft">&#160;</td><td class="mdescRight">A map containing the list of accelerations acting on each body.  <a href="#a2c77c941e83de803bb29c4aa6ffc9090">More...</a><br /></td></tr>
+<tr class="separator:a2c77c941e83de803bb29c4aa6ffc9090"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -213,13 +238,13 @@ class tudat::propagators::TranslationalStatePropagatorSettings&lt; StateScalarTy
 
 <p>Class for defining settings for propagating translational dynamics. The propagator defines the form of the equations of motion (i.e. Cowell, Encke, Gauss etc.). This base class can be used for Cowell propagator. Other propagators have dedicated derived class. </p>
 
-<p>Definition at line <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00408">408</a> of file <a class="el" href="../../d8/db7/propagation_settings_8h_source.html">propagationSettings.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00453">453</a> of file <a class="el" href="../../d8/db7/propagation_settings_8h_source.html">propagationSettings.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="aeb34f5d8119a600e5f92ce56a3ec4cb9"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename StateScalarType  = double&gt; </div>
+template&lt;typename StateScalarType = double&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -284,7 +309,7 @@ template&lt;typename StateScalarType  = double&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Constructor for generic stopping conditions. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Constructor for generic stopping conditions, providing an alreay-created accelerations map. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">centralBodies</td><td>List of bodies w.r.t. which the bodies in bodiesToIntegrate_ are propagated. </td></tr>
     <tr><td class="paramname">accelerationsMap</td><td>A map containing the list of accelerations acting on each body, identifying the body being acted on and the body acted on by an acceleration. The map has as key a string denoting the name of the body the list of accelerations, provided as the value corresponding to a key, is acting on. This map-value is again a map with string as key, denoting the body exerting the acceleration, and as value a pointer to an acceleration model. </td></tr>
@@ -298,7 +323,94 @@ template&lt;typename StateScalarType  = double&gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00430">430</a> of file <a class="el" href="../../d8/db7/propagation_settings_8h_source.html">propagationSettings.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00475">475</a> of file <a class="el" href="../../d8/db7/propagation_settings_8h_source.html">propagationSettings.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6db5436c343ef595fbf835a4fe9ee5c3"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename StateScalarType = double&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/db0/classtudat_1_1propagators_1_1_translational_state_propagator_settings.html">tudat::propagators::TranslationalStatePropagatorSettings</a>&lt; StateScalarType &gt;::<a class="el" href="../../dc/db0/classtudat_1_1propagators_1_1_translational_state_propagator_settings.html">TranslationalStatePropagatorSettings</a> </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; std::string &gt; &amp;&#160;</td>
+          <td class="paramname"><em>centralBodies</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d4/da8/namespacetudat_1_1simulation__setup.html#a3443abdb7a7ed6563d43068207a35217">simulation_setup::SelectedAccelerationMap</a> &amp;&#160;</td>
+          <td class="paramname"><em>accelerationSettingsMap</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; std::string &gt; &amp;&#160;</td>
+          <td class="paramname"><em>bodiesToIntegrate</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Eigen::Matrix&lt; StateScalarType, Eigen::Dynamic, 1 &gt; &amp;&#160;</td>
+          <td class="paramname"><em>initialBodyStates</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const boost::shared_ptr&lt; <a class="el" href="../../d3/def/classtudat_1_1propagators_1_1_propagation_termination_settings.html">PropagationTerminationSettings</a> &gt;&#160;</td>
+          <td class="paramname"><em>terminationSettings</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d2/d9c/namespacetudat_1_1propagators.html#afe367b6bf5a79c7a19de00b50d3258a3">TranslationalPropagatorType</a>&#160;</td>
+          <td class="paramname"><em>propagator</em> = <code><a class="el" href="../../d2/d9c/namespacetudat_1_1propagators.html#afe367b6bf5a79c7a19de00b50d3258a3a390962db5d0a04cb4bbcc71301923a46">cowell</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const boost::shared_ptr&lt; <a class="el" href="../../dd/d09/classtudat_1_1propagators_1_1_dependent_variable_save_settings.html">DependentVariableSaveSettings</a> &gt;&#160;</td>
+          <td class="paramname"><em>dependentVariablesToSave</em> = <code>boost::shared_ptr&lt;&#160;<a class="el" href="../../dd/d09/classtudat_1_1propagators_1_1_dependent_variable_save_settings.html">DependentVariableSaveSettings</a>&#160;&gt;(&#160;)</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>printInterval</em> = <code><a class="el" href="../../d6/d70/mathematical_constants_8h.html#adf3d84f9d3e27cbaa280e9fd0bac8e5f">TUDAT_NAN</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Constructor for generic stopping conditions, providing settings to create accelerations map. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">centralBodies</td><td>List of bodies w.r.t. which the bodies in bodiesToIntegrate_ are propagated. </td></tr>
+    <tr><td class="paramname">accelerationSettingsMap</td><td>A map containing settings for the accelerations acting on each body, identifying the body being acted on and the body acted on by an acceleration. The map has as key a string denoting the name of the body the list of accelerations, provided as the value corresponding to a key, is acting on. This map-value is again a map with string as key, denoting the body exerting the acceleration, and as value a pointer to an acceleration model. </td></tr>
+    <tr><td class="paramname">bodiesToIntegrate</td><td>List of bodies for which the translational state is to be propagated. </td></tr>
+    <tr><td class="paramname">initialBodyStates</td><td>Initial state used as input for numerical integration </td></tr>
+    <tr><td class="paramname">terminationSettings</td><td>Settings for creating the object that checks whether the propagation is finished. </td></tr>
+    <tr><td class="paramname">propagator</td><td>Type of translational state propagator to be used </td></tr>
+    <tr><td class="paramname">dependentVariablesToSave</td><td>Settings for the dependent variables that are to be saved during propagation (default none). </td></tr>
+    <tr><td class="paramname">printInterval</td><td>Variable indicating how often (once per printInterval_ seconds or propagation independenty variable) the current state and time are to be printed to console (default never). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00509">509</a> of file <a class="el" href="../../d8/db7/propagation_settings_8h_source.html">propagationSettings.h</a>.</p>
 
 </div>
 </div>
@@ -306,7 +418,7 @@ template&lt;typename StateScalarType  = double&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename StateScalarType  = double&gt; </div>
+template&lt;typename StateScalarType = double&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -371,7 +483,7 @@ template&lt;typename StateScalarType  = double&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Constructor for fixed propagation time stopping conditions. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Constructor for fixed propagation time stopping conditions, providing an alreay-created accelerations map. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">centralBodies</td><td>List of bodies w.r.t. which the bodies in bodiesToIntegrate_ are propagated. </td></tr>
     <tr><td class="paramname">accelerationsMap</td><td>A map containing the list of accelerations acting on each body, identifying the body being acted on and the body acted on by an acceleration. The map has as key a string denoting the name of the body the list of accelerations, provided as the value corresponding to a key, is acting on. This map-value is again a map with string as key, denoting the body exerting the acceleration, and as value a pointer to an acceleration model. </td></tr>
@@ -385,7 +497,94 @@ template&lt;typename StateScalarType  = double&gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00463">463</a> of file <a class="el" href="../../d8/db7/propagation_settings_8h_source.html">propagationSettings.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00543">543</a> of file <a class="el" href="../../d8/db7/propagation_settings_8h_source.html">propagationSettings.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a27ba4bf9cc5efbe9d95d7fc2a26fa898"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename StateScalarType = double&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/db0/classtudat_1_1propagators_1_1_translational_state_propagator_settings.html">tudat::propagators::TranslationalStatePropagatorSettings</a>&lt; StateScalarType &gt;::<a class="el" href="../../dc/db0/classtudat_1_1propagators_1_1_translational_state_propagator_settings.html">TranslationalStatePropagatorSettings</a> </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; std::string &gt; &amp;&#160;</td>
+          <td class="paramname"><em>centralBodies</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d4/da8/namespacetudat_1_1simulation__setup.html#a3443abdb7a7ed6563d43068207a35217">simulation_setup::SelectedAccelerationMap</a> &amp;&#160;</td>
+          <td class="paramname"><em>accelerationSettingsMap</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; std::string &gt; &amp;&#160;</td>
+          <td class="paramname"><em>bodiesToIntegrate</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Eigen::Matrix&lt; StateScalarType, Eigen::Dynamic, 1 &gt; &amp;&#160;</td>
+          <td class="paramname"><em>initialBodyStates</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>endTime</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d2/d9c/namespacetudat_1_1propagators.html#afe367b6bf5a79c7a19de00b50d3258a3">TranslationalPropagatorType</a>&#160;</td>
+          <td class="paramname"><em>propagator</em> = <code><a class="el" href="../../d2/d9c/namespacetudat_1_1propagators.html#afe367b6bf5a79c7a19de00b50d3258a3a390962db5d0a04cb4bbcc71301923a46">cowell</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const boost::shared_ptr&lt; <a class="el" href="../../dd/d09/classtudat_1_1propagators_1_1_dependent_variable_save_settings.html">DependentVariableSaveSettings</a> &gt;&#160;</td>
+          <td class="paramname"><em>dependentVariablesToSave</em> = <code>boost::shared_ptr&lt;&#160;<a class="el" href="../../dd/d09/classtudat_1_1propagators_1_1_dependent_variable_save_settings.html">DependentVariableSaveSettings</a>&#160;&gt;(&#160;)</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>printInterval</em> = <code><a class="el" href="../../d6/d70/mathematical_constants_8h.html#adf3d84f9d3e27cbaa280e9fd0bac8e5f">TUDAT_NAN</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Constructor for fixed propagation time stopping conditions, providing settings to create accelerations map. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">centralBodies</td><td>List of bodies w.r.t. which the bodies in bodiesToIntegrate_ are propagated. </td></tr>
+    <tr><td class="paramname">accelerationSettingsMap</td><td>A map containing settings for the accelerations acting on each body, identifying the body being acted on and the body acted on by an acceleration. The map has as key a string denoting the name of the body the list of accelerations, provided as the value corresponding to a key, is acting on. This map-value is again a map with string as key, denoting the body exerting the acceleration, and as value a pointer to an acceleration model. </td></tr>
+    <tr><td class="paramname">bodiesToIntegrate</td><td>List of bodies for which the translational state is to be propagated. </td></tr>
+    <tr><td class="paramname">initialBodyStates</td><td>Initial state used as input for numerical integration </td></tr>
+    <tr><td class="paramname">endTime</td><td><a class="el" href="../../d8/df9/classtudat_1_1_time.html" title="Class for defining time with a resolution that is sub-fs for very long periods of time...">Time</a> at which to stop the numerical propagation </td></tr>
+    <tr><td class="paramname">propagator</td><td>Type of translational state propagator to be used </td></tr>
+    <tr><td class="paramname">dependentVariablesToSave</td><td>Settings for the dependent variables that are to be saved during propagation (default none). </td></tr>
+    <tr><td class="paramname">printInterval</td><td>Variable indicating how often (once per printInterval_ seconds or propagation independenty variable) the current state and time are to be printed to console (default never). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00579">579</a> of file <a class="el" href="../../d8/db7/propagation_settings_8h_source.html">propagationSettings.h</a>.</p>
 
 </div>
 </div>
@@ -393,7 +592,7 @@ template&lt;typename StateScalarType  = double&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename StateScalarType  = double&gt; </div>
+template&lt;typename StateScalarType = double&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -412,7 +611,104 @@ template&lt;typename StateScalarType  = double&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00480">480</a> of file <a class="el" href="../../d8/db7/propagation_settings_8h_source.html">propagationSettings.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00599">599</a> of file <a class="el" href="../../d8/db7/propagation_settings_8h_source.html">propagationSettings.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a8fbfe7f5fd3ee6cf52b4caa166d9e5fb"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename StateScalarType = double&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void <a class="el" href="../../dc/db0/classtudat_1_1propagators_1_1_translational_state_propagator_settings.html">tudat::propagators::TranslationalStatePropagatorSettings</a>&lt; StateScalarType &gt;::resetIntegratedStateModels </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d4/da8/namespacetudat_1_1simulation__setup.html#a4a7938c5b0b78593806673957cc169c4">simulation_setup::NamedBodyMap</a> &amp;&#160;</td>
+          <td class="paramname"><em>bodyMap</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Function to create the acceleration models. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bodyMap</td><td>Map of bodies in the propagation, with keys the names of the bodies. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="../../dc/d02/classtudat_1_1propagators_1_1_propagator_settings.html#a48f459668fb8775a2a3a11d8d5c7c24f">tudat::propagators::PropagatorSettings&lt; StateScalarType &gt;</a>.</p>
+
+<p>Definition at line <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00615">615</a> of file <a class="el" href="../../d8/db7/propagation_settings_8h_source.html">propagationSettings.h</a>.</p>
+
+<p>References <a class="el" href="../../d2/d02/create_acceleration_models_8cpp_source.html#l01351">tudat::simulation_setup::createAccelerationModelsMap()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a77162640fb7e00adf622d64e10e638ab"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename StateScalarType = double&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d4/da8/namespacetudat_1_1simulation__setup.html#a3443abdb7a7ed6563d43068207a35217">simulation_setup::SelectedAccelerationMap</a> <a class="el" href="../../dc/db0/classtudat_1_1propagators_1_1_translational_state_propagator_settings.html">tudat::propagators::TranslationalStatePropagatorSettings</a>&lt; StateScalarType &gt;::getAccelerationSettingsMap </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Function to get the acceleration settings map. </p><dl class="section return"><dt>Returns</dt><dd>The acceleration settings map. </dd></dl>
+
+<p>Definition at line <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00626">626</a> of file <a class="el" href="../../d8/db7/propagation_settings_8h_source.html">propagationSettings.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afcef2cd118b6cc25d911d307bc002565"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename StateScalarType = double&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#a351078bf6825fc8a14eb24a61578abc8">basic_astrodynamics::AccelerationMap</a> <a class="el" href="../../dc/db0/classtudat_1_1propagators_1_1_translational_state_propagator_settings.html">tudat::propagators::TranslationalStatePropagatorSettings</a>&lt; StateScalarType &gt;::getAccelerationsMap </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Function to get the accelerations map. </p><dl class="section return"><dt>Returns</dt><dd>The accelerations map. </dd></dl>
+
+<p>Definition at line <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00636">636</a> of file <a class="el" href="../../d8/db7/propagation_settings_8h_source.html">propagationSettings.h</a>.</p>
+
+<p>Referenced by <a class="el" href="../../df/dca/create_state_derivative_model_8h_source.html#l00377">tudat::propagators::setMultiTypePropagationClosure()</a>.</p>
 
 </div>
 </div>
@@ -421,7 +717,7 @@ template&lt;typename StateScalarType  = double&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename StateScalarType  = double&gt; </div>
+template&lt;typename StateScalarType = double&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">std::vector&lt; std::string &gt; <a class="el" href="../../dc/db0/classtudat_1_1propagators_1_1_translational_state_propagator_settings.html">tudat::propagators::TranslationalStatePropagatorSettings</a>&lt; StateScalarType &gt;::centralBodies_</td>
@@ -429,26 +725,7 @@ template&lt;typename StateScalarType  = double&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00483">483</a> of file <a class="el" href="../../d8/db7/propagation_settings_8h_source.html">propagationSettings.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a2c77c941e83de803bb29c4aa6ffc9090"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename StateScalarType  = double&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#a351078bf6825fc8a14eb24a61578abc8">basic_astrodynamics::AccelerationMap</a> <a class="el" href="../../dc/db0/classtudat_1_1propagators_1_1_translational_state_propagator_settings.html">tudat::propagators::TranslationalStatePropagatorSettings</a>&lt; StateScalarType &gt;::accelerationsMap_</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>A map containing the list of accelerations acting on each body, identifying the body being acted on and the body acted on by an acceleration. The map has as key a string denoting the name of the body the list of accelerations, provided as the value corresponding to a key, is acting on. This map-value is again a map with string as key, denoting the body exerting the acceleration, and as value a pointer to an acceleration model. </p>
-
-<p>Definition at line <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00493">493</a> of file <a class="el" href="../../d8/db7/propagation_settings_8h_source.html">propagationSettings.h</a>.</p>
-
-<p>Referenced by <a class="el" href="../../df/dca/create_state_derivative_model_8h_source.html#l00355">tudat::propagators::setMultiTypePropagationClosure()</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00602">602</a> of file <a class="el" href="../../d8/db7/propagation_settings_8h_source.html">propagationSettings.h</a>.</p>
 
 </div>
 </div>
@@ -456,7 +733,7 @@ template&lt;typename StateScalarType  = double&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename StateScalarType  = double&gt; </div>
+template&lt;typename StateScalarType = double&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">std::vector&lt; std::string &gt; <a class="el" href="../../dc/db0/classtudat_1_1propagators_1_1_translational_state_propagator_settings.html">tudat::propagators::TranslationalStatePropagatorSettings</a>&lt; StateScalarType &gt;::bodiesToIntegrate_</td>
@@ -464,9 +741,9 @@ template&lt;typename StateScalarType  = double&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00496">496</a> of file <a class="el" href="../../d8/db7/propagation_settings_8h_source.html">propagationSettings.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00605">605</a> of file <a class="el" href="../../d8/db7/propagation_settings_8h_source.html">propagationSettings.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00341">tudat::propagators::checkMultiArcPropagatorSettingsAndParameterEstimationConsistency()</a>, and <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00279">tudat::propagators::checkPropagatorSettingsAndParameterEstimationConsistency()</a>.</p>
+<p>Referenced by <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00346">tudat::propagators::checkMultiArcPropagatorSettingsAndParameterEstimationConsistency()</a>, and <a class="el" href="../../d5/dd7/variational_equations_solver_8h_source.html#l00284">tudat::propagators::checkPropagatorSettingsAndParameterEstimationConsistency()</a>.</p>
 
 </div>
 </div>
@@ -474,7 +751,7 @@ template&lt;typename StateScalarType  = double&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename StateScalarType  = double&gt; </div>
+template&lt;typename StateScalarType = double&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="../../d2/d9c/namespacetudat_1_1propagators.html#afe367b6bf5a79c7a19de00b50d3258a3">TranslationalPropagatorType</a> <a class="el" href="../../dc/db0/classtudat_1_1propagators_1_1_translational_state_propagator_settings.html">tudat::propagators::TranslationalStatePropagatorSettings</a>&lt; StateScalarType &gt;::propagator_</td>
@@ -482,7 +759,57 @@ template&lt;typename StateScalarType  = double&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00499">499</a> of file <a class="el" href="../../d8/db7/propagation_settings_8h_source.html">propagationSettings.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00608">608</a> of file <a class="el" href="../../d8/db7/propagation_settings_8h_source.html">propagationSettings.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad3d3ac51b32ddd117b20898be2b6cd54"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename StateScalarType = double&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d4/da8/namespacetudat_1_1simulation__setup.html#a3443abdb7a7ed6563d43068207a35217">simulation_setup::SelectedAccelerationMap</a> <a class="el" href="../../dc/db0/classtudat_1_1propagators_1_1_translational_state_propagator_settings.html">tudat::propagators::TranslationalStatePropagatorSettings</a>&lt; StateScalarType &gt;::accelerationSettingsMap_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A map containing the list of settings for the accelerations acting on each body, identifying the body being acted on and the body acted on by an acceleration. The map has as key a string denoting the name of the body the list of accelerations, provided as the value corresponding to a key, is acting on. This map-value is again a map with string as key, denoting the body exerting the acceleration, and as value a pointer to an acceleration settings object. </p>
+
+<p>Definition at line <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00657">657</a> of file <a class="el" href="../../d8/db7/propagation_settings_8h_source.html">propagationSettings.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2c77c941e83de803bb29c4aa6ffc9090"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename StateScalarType = double&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#a351078bf6825fc8a14eb24a61578abc8">basic_astrodynamics::AccelerationMap</a> <a class="el" href="../../dc/db0/classtudat_1_1propagators_1_1_translational_state_propagator_settings.html">tudat::propagators::TranslationalStatePropagatorSettings</a>&lt; StateScalarType &gt;::accelerationsMap_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A map containing the list of accelerations acting on each body, identifying the body being acted on and the body acted on by an acceleration. The map has as key a string denoting the name of the body the list of accelerations, provided as the value corresponding to a key, is acting on. This map-value is again a map with string as key, denoting the body exerting the acceleration, and as value a pointer to an acceleration model. </p>
+
+<p>Definition at line <a class="el" href="../../d8/db7/propagation_settings_8h_source.html#l00667">667</a> of file <a class="el" href="../../d8/db7/propagation_settings_8h_source.html">propagationSettings.h</a>.</p>
 
 </div>
 </div>
@@ -492,7 +819,7 @@ template&lt;typename StateScalarType  = double&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 27 2017 09:33:02 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 7 2017 11:20:34 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

@@ -88,15 +88,15 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">timeConversions.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;boost/date_time/gregorian/gregorian.hpp&quot;</code><br />
+<div class="textblock"><code>#include &lt;boost/date_time/gregorian/gregorian.hpp&gt;</code><br />
 <code>#include &quot;<a class="el" href="../../d4/db3/physical_constants_8h_source.html">Tudat/Astrodynamics/BasicAstrodynamics/physicalConstants.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d4/d01/time_conversions_8h_source.html">Tudat/Astrodynamics/BasicAstrodynamics/timeConversions.h</a>&quot;</code><br />
 </div>
 <p><a href="../../d4/d01/time_conversions_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -107,6 +107,25 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:d2/ddc/namespacetudat_1_1basic__astrodynamics"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html">tudat::basic_astrodynamics</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:ac1c2b00a3568f988227199b5f77c987c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#ac1c2b00a3568f988227199b5f77c987c">tudat::basic_astrodynamics::TimeScales</a> { <br />
+&#160;&#160;<a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#ac1c2b00a3568f988227199b5f77c987ca7f8cee360bd3f5d269065f1f2c086d95">tudat::basic_astrodynamics::dummy_scale</a> = -1, 
+<a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#ac1c2b00a3568f988227199b5f77c987ca9d398fc479c048428f104efbd4607fd4">tudat::basic_astrodynamics::tai_scale</a> = 0, 
+<a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#ac1c2b00a3568f988227199b5f77c987caf17c847714d3dd685003da4df09bc209">tudat::basic_astrodynamics::tt_scale</a> = 1, 
+<a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#ac1c2b00a3568f988227199b5f77c987caa131d3c65497863f77589ec295e258a1">tudat::basic_astrodynamics::tdb_scale</a> = 2, 
+<br />
+&#160;&#160;<a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#ac1c2b00a3568f988227199b5f77c987ca49c34e0955fbbd8f1bfe7dd95c0677b8">tudat::basic_astrodynamics::utc_scale</a> = 3, 
+<a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#ac1c2b00a3568f988227199b5f77c987ca127202a03befa88ce10f1f4f839600ef">tudat::basic_astrodynamics::ut1_scale</a> = 4, 
+<a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#ac1c2b00a3568f988227199b5f77c987ca1a07843c68a682981966e7cc3181fbcc">tudat::basic_astrodynamics::body_centered_coordinate_time_scale</a> = 5, 
+<a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#ac1c2b00a3568f988227199b5f77c987caca05543cf41d44552a9019fc800dd096">tudat::basic_astrodynamics::barycentric_coordinate_time_scale</a> = 6, 
+<br />
+&#160;&#160;<a class="el" href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#ac1c2b00a3568f988227199b5f77c987cabec4c0cc4ba2726fc1b2520c7b3127e1">tudat::basic_astrodynamics::local_proper_time_scale</a> = 7
+<br />
+ }<tr class="memdesc:ac1c2b00a3568f988227199b5f77c987c"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of time scales available.  <a href="../../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#ac1c2b00a3568f988227199b5f77c987c">More...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:ac1c2b00a3568f988227199b5f77c987c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -255,7 +274,7 @@ Variables</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 27 2017 09:32:58 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 7 2017 11:20:29 for Tudat by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
