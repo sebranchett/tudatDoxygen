@@ -17,8 +17,12 @@ var searchData=
   ['rootabsoluteorrelativetoleranceterminationcondition',['RootAbsoluteOrRelativeToleranceTerminationCondition',['../d4/df8/classtudat_1_1root__finders_1_1termination__conditions_1_1_root_absolute_or_relative_tolerance_termination_condition.html',1,'tudat::root_finders::termination_conditions']]],
   ['rootabsolutetoleranceterminationcondition',['RootAbsoluteToleranceTerminationCondition',['../d4/db2/classtudat_1_1root__finders_1_1termination__conditions_1_1_root_absolute_tolerance_termination_condition.html',1,'tudat::root_finders::termination_conditions']]],
   ['rootfindercore',['RootFinderCore',['../d3/d13/classtudat_1_1root__finders_1_1_root_finder_core.html',1,'tudat::root_finders']]],
+  ['rootfindersettings',['RootFinderSettings',['../d0/d74/classtudat_1_1root__finders_1_1_root_finder_settings.html',1,'tudat::root_finders']]],
   ['rootrelativetoleranceterminationcondition',['RootRelativeToleranceTerminationCondition',['../d6/dc8/classtudat_1_1root__finders_1_1termination__conditions_1_1_root_relative_tolerance_termination_condition.html',1,'tudat::root_finders::termination_conditions']]],
   ['rotationalephemeris',['RotationalEphemeris',['../da/d34/classtudat_1_1ephemerides_1_1_rotational_ephemeris.html',1,'tudat::ephemerides']]],
+  ['rotationalmotionexponentialmapstatederivative',['RotationalMotionExponentialMapStateDerivative',['../d0/d8d/classtudat_1_1propagators_1_1_rotational_motion_exponential_map_state_derivative.html',1,'tudat::propagators']]],
+  ['rotationalmotionmodifiedrodriguesparametersstatederivative',['RotationalMotionModifiedRodriguesParametersStateDerivative',['../d6/d1e/classtudat_1_1propagators_1_1_rotational_motion_modified_rodrigues_parameters_state_derivative.html',1,'tudat::propagators']]],
+  ['rotationalmotionquaternionsstatederivative',['RotationalMotionQuaternionsStateDerivative',['../d5/d92/classtudat_1_1propagators_1_1_rotational_motion_quaternions_state_derivative.html',1,'tudat::propagators']]],
   ['rotationalmotionstatederivative',['RotationalMotionStateDerivative',['../db/db4/classtudat_1_1propagators_1_1_rotational_motion_state_derivative.html',1,'tudat::propagators']]],
   ['rotationalstateintegratedstateprocessor',['RotationalStateIntegratedStateProcessor',['../df/d10/classtudat_1_1propagators_1_1_rotational_state_integrated_state_processor.html',1,'tudat::propagators']]],
   ['rotationalstatepropagatorsettings',['RotationalStatePropagatorSettings',['../dc/d2a/classtudat_1_1propagators_1_1_rotational_state_propagator_settings.html',1,'tudat::propagators']]],
@@ -30,6 +34,8 @@ var searchData=
   ['rotationrate',['RotationRate',['../d0/dab/classtudat_1_1estimatable__parameters_1_1_rotation_rate.html',1,'tudat::estimatable_parameters']]],
   ['rungekutta4integrator',['RungeKutta4Integrator',['../d9/dd4/classtudat_1_1numerical__integrators_1_1_runge_kutta4_integrator.html',1,'tudat::numerical_integrators']]],
   ['rungekuttacoefficients',['RungeKuttaCoefficients',['../d0/d19/structtudat_1_1numerical__integrators_1_1_runge_kutta_coefficients.html',1,'tudat::numerical_integrators']]],
+  ['rungekuttavariablestepsizebasesettings',['RungeKuttaVariableStepSizeBaseSettings',['../dd/db2/classtudat_1_1numerical__integrators_1_1_runge_kutta_variable_step_size_base_settings.html',1,'tudat::numerical_integrators']]],
   ['rungekuttavariablestepsizeintegrator',['RungeKuttaVariableStepSizeIntegrator',['../da/d75/classtudat_1_1numerical__integrators_1_1_runge_kutta_variable_step_size_integrator.html',1,'tudat::numerical_integrators']]],
-  ['rungekuttavariablestepsizesettings',['RungeKuttaVariableStepSizeSettings',['../d7/d33/classtudat_1_1numerical__integrators_1_1_runge_kutta_variable_step_size_settings.html',1,'tudat::numerical_integrators']]]
+  ['rungekuttavariablestepsizesettingsscalartolerances',['RungeKuttaVariableStepSizeSettingsScalarTolerances',['../d7/d56/classtudat_1_1numerical__integrators_1_1_runge_kutta_variable_step_size_settings_scalar_tolerances.html',1,'tudat::numerical_integrators']]],
+  ['rungekuttavariablestepsizesettingsvectortolerances',['RungeKuttaVariableStepSizeSettingsVectorTolerances',['../de/d39/classtudat_1_1numerical__integrators_1_1_runge_kutta_variable_step_size_settings_vector_tolerances.html',1,'tudat::numerical_integrators']]]
 ];

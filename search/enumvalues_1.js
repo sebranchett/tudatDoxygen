@@ -4,16 +4,21 @@ var searchData=
   ['barycentric_5fcoordinate_5ftime_5fscale',['barycentric_coordinate_time_scale',['../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#ac1c2b00a3568f988227199b5f77c987caca05543cf41d44552a9019fc800dd096',1,'tudat::basic_astrodynamics']]],
   ['basic_5fsolid_5fbody',['basic_solid_body',['../d0/da4/namespacetudat_1_1gravitation.html#a4b303c74c97a58ad26c2e50c46d4c9eba21135b496ef805b8fbf3e13801445510',1,'tudat::gravitation']]],
   ['beta_5fboost_5fdistribution',['beta_boost_distribution',['../dc/d73/namespacetudat_1_1statistics.html#a556c846c147e242890e707d03e9c705da43e1e2d1afec60ac128bcd63a98f1394',1,'tudat::statistics']]],
+  ['beta_5findex',['beta_index',['../de/de2/namespacetudat_1_1filters.html#a3d987afcf1dd5c312dfe10e7a34ee061ab2934f5c38fc8965855b82282cb176ea',1,'tudat::filters']]],
   ['binarysearch',['binarySearch',['../d3/d05/namespacetudat_1_1interpolators.html#a31d6dcb244ab2e3055371ab377027bb1a49cae3bbba08123e4c126d8abefa10ca',1,'tudat::interpolators']]],
+  ['bisection_5froot_5ffinder',['bisection_root_finder',['../dc/d19/namespacetudat_1_1root__finders.html#a10de2e9c24c721efcc9b6c3a9bf7047fa69af8e1ad6196231e48735929a172f64',1,'tudat::root_finders']]],
   ['body_5favoidance_5fangle',['body_avoidance_angle',['../d2/df9/namespacetudat_1_1observation__models.html#a63a8de8ac0709f12d5dbba342fc1c11eaa97db57dcb6370f8f147b9a4ad91d3f2',1,'tudat::observation_models']]],
   ['body_5fcentered_5fcoordinate_5ftime_5fscale',['body_centered_coordinate_time_scale',['../d2/ddc/namespacetudat_1_1basic__astrodynamics.html#ac1c2b00a3568f988227199b5f77c987ca1a07843c68a682981966e7cc3181fbcc',1,'tudat::basic_astrodynamics']]],
   ['body_5ffixed_5fairspeed_5fbased_5fvelocity_5fvariable',['body_fixed_airspeed_based_velocity_variable',['../d2/d9c/namespacetudat_1_1propagators.html#a766f7d3409891d28fea685d831b8a3dbae6a20627baf17cdab9662053a3b920ef',1,'tudat::propagators']]],
   ['body_5ffixed_5fgroundspeed_5fbased_5fvelocity_5fvariable',['body_fixed_groundspeed_based_velocity_variable',['../d2/d9c/namespacetudat_1_1propagators.html#a766f7d3409891d28fea685d831b8a3dba4dbefde5031b447a9d00a424cf878b07',1,'tudat::propagators']]],
+  ['body_5ffixed_5frelative_5fcartesian_5fposition',['body_fixed_relative_cartesian_position',['../d2/d9c/namespacetudat_1_1propagators.html#a766f7d3409891d28fea685d831b8a3dbaf9c8c1738317ceb3c3491b546171193d',1,'tudat::propagators']]],
+  ['body_5ffixed_5frelative_5fspherical_5fposition',['body_fixed_relative_spherical_position',['../d2/d9c/namespacetudat_1_1propagators.html#a766f7d3409891d28fea685d831b8a3dba52ac4eba10ac1ef139c19b6f8d8751ad',1,'tudat::propagators']]],
   ['body_5fframe',['body_frame',['../d5/d98/namespacetudat_1_1reference__frames.html#ac12482df307b5867b2572ff4323b36a5afa8cdbf516ee4394129d25af981ffdec',1,'tudat::reference_frames']]],
   ['body_5fmass_5fstate',['body_mass_state',['../d2/d9c/namespacetudat_1_1propagators.html#a567fdc525eae96100752079fe69d4e3baf24c150de13789a722dd39c3d0038419',1,'tudat::propagators']]],
   ['body_5fmass_5fupdate',['body_mass_update',['../d2/d9c/namespacetudat_1_1propagators.html#ab9f9519b51fbaf8ab8209af55aff309bafb9ffb499109c9f017cb1e6b438876b7',1,'tudat::propagators']]],
   ['body_5foccultation',['body_occultation',['../d2/df9/namespacetudat_1_1observation__models.html#a63a8de8ac0709f12d5dbba342fc1c11ea9c97a9166eb2e3fc579850d188ef1aa9',1,'tudat::observation_models']]],
   ['body_5frotational_5fstate_5fupdate',['body_rotational_state_update',['../d2/d9c/namespacetudat_1_1propagators.html#ab9f9519b51fbaf8ab8209af55aff309ba7bfdb6d11ba6446a0dedf8f822e453ac',1,'tudat::propagators']]],
-  ['body_5ftransational_5fstate_5fupdate',['body_transational_state_update',['../d2/d9c/namespacetudat_1_1propagators.html#ab9f9519b51fbaf8ab8209af55aff309bae813a2d5f20efae8352a27b07808f611',1,'tudat::propagators']]],
-  ['body_5ftranslational_5fstate_5fupdate',['body_translational_state_update',['../d2/d9c/namespacetudat_1_1propagators.html#ab9f9519b51fbaf8ab8209af55aff309ba6bf0a42fa80d1b8a129082ef2633121c',1,'tudat::propagators']]]
+  ['body_5ftranslational_5fstate_5fupdate',['body_translational_state_update',['../d2/d9c/namespacetudat_1_1propagators.html#ab9f9519b51fbaf8ab8209af55aff309ba6bf0a42fa80d1b8a129082ef2633121c',1,'tudat::propagators']]],
+  ['bulirsch_5fstoer_5fsequence',['bulirsch_stoer_sequence',['../d4/d7b/namespacetudat_1_1numerical__integrators.html#ae44063514f4b6c8f266fdd93fda337b9afca909a15b1d54c625a286e643877f9f',1,'tudat::numerical_integrators']]],
+  ['bulirschstoer',['bulirschStoer',['../d4/d7b/namespacetudat_1_1numerical__integrators.html#a9217171368524531f169da04dfdb63acad1b03f5bfa808d0992c4224906f463e2',1,'tudat::numerical_integrators']]]
 ];

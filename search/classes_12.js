@@ -20,13 +20,17 @@ var searchData=
   ['singlesurfacegeometry',['SingleSurfaceGeometry',['../d2/df2/classtudat_1_1geometric__shapes_1_1_single_surface_geometry.html',1,'tudat::geometric_shapes']]],
   ['singletorquedependentvariablesavesettings',['SingleTorqueDependentVariableSaveSettings',['../d6/d65/classtudat_1_1propagators_1_1_single_torque_dependent_variable_save_settings.html',1,'tudat::propagators']]],
   ['singlevariablelimitpropagationterminationcondition',['SingleVariableLimitPropagationTerminationCondition',['../d0/d6b/classtudat_1_1propagators_1_1_single_variable_limit_propagation_termination_condition.html',1,'tudat::propagators']]],
+  ['singlevariationsingletermsphericalharmonicaccelerationsavesettings',['SingleVariationSingleTermSphericalHarmonicAccelerationSaveSettings',['../de/de5/classtudat_1_1propagators_1_1_single_variation_single_term_spherical_harmonic_acceleration_save_settings.html',1,'tudat::propagators']]],
+  ['singlevariationsphericalharmonicaccelerationsavesettings',['SingleVariationSphericalHarmonicAccelerationSaveSettings',['../d8/d89/classtudat_1_1propagators_1_1_single_variation_spherical_harmonic_acceleration_save_settings.html',1,'tudat::propagators']]],
   ['skipfirstlines',['SkipFirstLines',['../dd/d53/classtudat_1_1input__output_1_1stream__filters_1_1_skip_first_lines.html',1,'tudat::input_output::stream_filters']]],
   ['solaractivitydata',['SolarActivityData',['../d2/dca/structtudat_1_1input__output_1_1solar__activity_1_1_solar_activity_data.html',1,'tudat::input_output::solar_activity']]],
+  ['spaceleg',['SpaceLeg',['../d9/df2/classtudat_1_1transfer__trajectories_1_1_space_leg.html',1,'tudat::transfer_trajectories']]],
   ['specialkeys',['SpecialKeys',['../d3/d04/structtudat_1_1json__interface_1_1_special_keys.html',1,'tudat::json_interface']]],
   ['spheresegment',['SphereSegment',['../d1/d70/classtudat_1_1geometric__shapes_1_1_sphere_segment.html',1,'tudat::geometric_shapes']]],
   ['sphericalbodyshapemodel',['SphericalBodyShapeModel',['../db/d2e/classtudat_1_1basic__astrodynamics_1_1_spherical_body_shape_model.html',1,'tudat::basic_astrodynamics']]],
   ['sphericalbodyshapesettings',['SphericalBodyShapeSettings',['../d5/dbd/classtudat_1_1simulation__setup_1_1_spherical_body_shape_settings.html',1,'tudat::simulation_setup']]],
   ['sphericalharmonicaccelerationsettings',['SphericalHarmonicAccelerationSettings',['../d2/d6b/classtudat_1_1simulation__setup_1_1_spherical_harmonic_acceleration_settings.html',1,'tudat::simulation_setup']]],
+  ['sphericalharmonicaccelerationtermsdependentvariablesavesettings',['SphericalHarmonicAccelerationTermsDependentVariableSaveSettings',['../dc/d2f/classtudat_1_1propagators_1_1_spherical_harmonic_acceleration_terms_dependent_variable_save_settings.html',1,'tudat::propagators']]],
   ['sphericalharmonicestimatableparametersettings',['SphericalHarmonicEstimatableParameterSettings',['../df/da7/classtudat_1_1estimatable__parameters_1_1_spherical_harmonic_estimatable_parameter_settings.html',1,'tudat::estimatable_parameters']]],
   ['sphericalharmonicscache',['SphericalHarmonicsCache',['../d8/d69/classtudat_1_1basic__mathematics_1_1_spherical_harmonics_cache.html',1,'tudat::basic_mathematics']]],
   ['sphericalharmonicscosinecoefficients',['SphericalHarmonicsCosineCoefficients',['../d6/dda/classtudat_1_1estimatable__parameters_1_1_spherical_harmonics_cosine_coefficients.html',1,'tudat::estimatable_parameters']]],
@@ -45,5 +49,9 @@ var searchData=
   ['state',['State',['../d0/d21/structtudat_1_1json__interface_1_1_keys_1_1_body_1_1_state.html',1,'tudat::json_interface::Keys::Body']]],
   ['statederivativecircularrestrictedthreebodyproblem',['StateDerivativeCircularRestrictedThreeBodyProblem',['../d5/d30/classtudat_1_1propagators_1_1_state_derivative_circular_restricted_three_body_problem.html',1,'tudat::propagators']]],
   ['statederivativepartial',['StateDerivativePartial',['../d0/dfa/classtudat_1_1orbit__determination_1_1_state_derivative_partial.html',1,'tudat::orbit_determination']]],
-  ['surfacegeometry',['SurfaceGeometry',['../d3/de0/classtudat_1_1_surface_geometry.html',1,'tudat']]]
+  ['surfacegeometry',['SurfaceGeometry',['../d3/de0/classtudat_1_1_surface_geometry.html',1,'tudat']]],
+  ['swingbyleg',['SwingbyLeg',['../d9/d61/classtudat_1_1transfer__trajectories_1_1_swingby_leg.html',1,'tudat::transfer_trajectories']]],
+  ['swingbylegmga',['SwingbyLegMga',['../d9/dd7/classtudat_1_1transfer__trajectories_1_1_swingby_leg_mga.html',1,'tudat::transfer_trajectories']]],
+  ['swingbylegmga1dsmposition',['SwingbyLegMga1DsmPosition',['../dd/d03/classtudat_1_1transfer__trajectories_1_1_swingby_leg_mga1_dsm_position.html',1,'tudat::transfer_trajectories']]],
+  ['swingbylegmga1dsmvelocity',['SwingbyLegMga1DsmVelocity',['../de/d94/classtudat_1_1transfer__trajectories_1_1_swingby_leg_mga1_dsm_velocity.html',1,'tudat::transfer_trajectories']]]
 ];

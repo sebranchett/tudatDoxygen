@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['lagrangeinterpolator_2ecpp',['lagrangeInterpolator.cpp',['../d2/dc9/lagrange_interpolator_8cpp.html',1,'']]],
   ['lagrangeinterpolator_2eh',['lagrangeInterpolator.h',['../d8/dcd/lagrange_interpolator_8h.html',1,'']]],
   ['lambertroutines_2ecpp',['lambertRoutines.cpp',['../d6/d95/lambert_routines_8cpp.html',1,'']]],
   ['lambertroutines_2eh',['lambertRoutines.h',['../d6/d96/lambert_routines_8h.html',1,'']]],
@@ -27,12 +28,12 @@ var searchData=
   ['linearfieldtransform_2eh',['linearFieldTransform.h',['../d6/d99/linear_field_transform_8h.html',1,'']]],
   ['linearinterpolator_2ecpp',['linearInterpolator.cpp',['../d4/da2/linear_interpolator_8cpp.html',1,'']]],
   ['linearinterpolator_2eh',['linearInterpolator.h',['../d3/d7b/linear_interpolator_8h.html',1,'']]],
+  ['linearkalmanfilter_2eh',['linearKalmanFilter.h',['../da/dbe/linear_kalman_filter_8h.html',1,'']]],
   ['linktypedefs_2ecpp',['linkTypeDefs.cpp',['../dd/d68/link_type_defs_8cpp.html',1,'']]],
   ['linktypedefs_2eh',['linkTypeDefs.h',['../d9/d56/link_type_defs_8h.html',1,'']]],
   ['lookupscheme_2eh',['lookupScheme.h',['../d4/dd5/lookup_scheme_8h.html',1,'']]],
   ['lorentzstaticmagneticacceleration_2ecpp',['lorentzStaticMagneticAcceleration.cpp',['../d0/d80/lorentz_static_magnetic_acceleration_8cpp.html',1,'']]],
   ['lorentzstaticmagneticacceleration_2eh',['lorentzStaticMagneticAcceleration.h',['../dc/d3e/lorentz_static_magnetic_acceleration_8h.html',1,'']]],
   ['lorentzstaticmagneticforce_2ecpp',['lorentzStaticMagneticForce.cpp',['../da/d73/lorentz_static_magnetic_force_8cpp.html',1,'']]],
-  ['lorentzstaticmagneticforce_2eh',['lorentzStaticMagneticForce.h',['../da/df0/lorentz_static_magnetic_force_8h.html',1,'']]],
-  ['lpe200_2etxt',['lpe200.txt',['../d4/d8f/lpe200_8txt.html',1,'']]]
+  ['lorentzstaticmagneticforce_2eh',['lorentzStaticMagneticForce.h',['../da/df0/lorentz_static_magnetic_force_8h.html',1,'']]]
 ];

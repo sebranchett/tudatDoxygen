@@ -1,6 +1,8 @@
 var searchData=
 [
   ['gamma_5fboost_5fdistribution',['gamma_boost_distribution',['../dc/d73/namespacetudat_1_1statistics.html#a556c846c147e242890e707d03e9c705da4c05df6d23fe47d6246dcdaedb77c01c',1,'tudat::statistics']]],
+  ['gamma_5findex',['gamma_index',['../de/de2/namespacetudat_1_1filters.html#a3d987afcf1dd5c312dfe10e7a34ee061ad2c4fd43a529e91b235b7ddb146d4596',1,'tudat::filters']]],
+  ['gas_5fconstant_5fdependent_5fatmosphere',['gas_constant_dependent_atmosphere',['../d2/d4c/namespacetudat_1_1aerodynamics.html#a8052636066c499454ecfcecb2af7bb36a940950ccf3f4310a46bd1aa58d2884de',1,'tudat::aerodynamics']]],
   ['gauss_5fkeplerian',['gauss_keplerian',['../d2/d9c/namespacetudat_1_1propagators.html#afe367b6bf5a79c7a19de00b50d3258a3ad3a46ea5f192a0c63ca024ab115bd95f',1,'tudat::propagators']]],
   ['gauss_5fmodified_5fequinoctial',['gauss_modified_equinoctial',['../d2/d9c/namespacetudat_1_1propagators.html#afe367b6bf5a79c7a19de00b50d3258a3a038cf6ebeded078bc989c31a691d9811',1,'tudat::propagators']]],
   ['gaussian_5fkernel',['gaussian_kernel',['../dc/d73/namespacetudat_1_1statistics.html#aace52222805d40d5318837ed2d4380b4affbb15b7b2473aaec4ae4c7e43d4eef9',1,'tudat::statistics']]],

@@ -5,6 +5,10 @@ var searchData=
   ['datamap',['DataMap',['../dc/da5/structtudat_1_1json__interface_1_1_keys_1_1_interpolation_1_1_data_map.html',1,'tudat::json_interface::Keys::Interpolation']]],
   ['datamapsettings',['DataMapSettings',['../db/d26/classtudat_1_1interpolators_1_1_data_map_settings.html',1,'tudat::interpolators']]],
   ['datamapsettings_3c_20eigenvectortype_3a_3ascalar_2c_20eigenvectortype_20_3e',['DataMapSettings&lt; EigenVectorType::Scalar, EigenVectorType &gt;',['../db/d26/classtudat_1_1interpolators_1_1_data_map_settings.html',1,'tudat::interpolators']]],
+  ['departureleg',['DepartureLeg',['../d1/dc7/classtudat_1_1transfer__trajectories_1_1_departure_leg.html',1,'tudat::transfer_trajectories']]],
+  ['departurelegmga',['DepartureLegMga',['../db/d74/classtudat_1_1transfer__trajectories_1_1_departure_leg_mga.html',1,'tudat::transfer_trajectories']]],
+  ['departurelegmga1dsmposition',['DepartureLegMga1DsmPosition',['../db/d72/classtudat_1_1transfer__trajectories_1_1_departure_leg_mga1_dsm_position.html',1,'tudat::transfer_trajectories']]],
+  ['departurelegmga1dsmvelocity',['DepartureLegMga1DsmVelocity',['../d2/de6/classtudat_1_1transfer__trajectories_1_1_departure_leg_mga1_dsm_velocity.html',1,'tudat::transfer_trajectories']]],
   ['dependentorientationcalculator',['DependentOrientationCalculator',['../dd/dc3/classtudat_1_1reference__frames_1_1_dependent_orientation_calculator.html',1,'tudat::reference_frames']]],
   ['dependentvariablesavesettings',['DependentVariableSaveSettings',['../dd/d09/classtudat_1_1propagators_1_1_dependent_variable_save_settings.html',1,'tudat::propagators']]],
   ['dictionarycomparer',['DictionaryComparer',['../d2/d0d/classtudat_1_1input__output_1_1dictionary_1_1_dictionary_comparer.html',1,'tudat::input_output::dictionary']]],
@@ -24,5 +28,6 @@ var searchData=
   ['dopplerpropertimerateinterface',['DopplerProperTimeRateInterface',['../dd/d81/classtudat_1_1observation__models_1_1_doppler_proper_time_rate_interface.html',1,'tudat::observation_models']]],
   ['dopplerpropertimeratesettings',['DopplerProperTimeRateSettings',['../df/d7f/classtudat_1_1observation__models_1_1_doppler_proper_time_rate_settings.html',1,'tudat::observation_models']]],
   ['dynamicssimulator',['DynamicsSimulator',['../d8/d1c/classtudat_1_1propagators_1_1_dynamics_simulator.html',1,'tudat::propagators']]],
+  ['dynamicssimulator_3c_20statescalartype_2c_20timetype_20_3e',['DynamicsSimulator&lt; StateScalarType, TimeType &gt;',['../d8/d1c/classtudat_1_1propagators_1_1_dynamics_simulator.html',1,'tudat::propagators']]],
   ['dynamicsstatederivativemodel',['DynamicsStateDerivativeModel',['../df/d2b/classtudat_1_1propagators_1_1_dynamics_state_derivative_model.html',1,'tudat::propagators']]]
 ];
