@@ -2,8 +2,13 @@ var searchData=
 [
   ['defaultbodies_2ecpp',['defaultBodies.cpp',['../d5/d78/default_bodies_8cpp.html',1,'']]],
   ['defaultbodies_2eh',['defaultBodies.h',['../db/d87/default_bodies_8h.html',1,'']]],
-  ['defines_5f0_2ejs',['defines_0.js',['../d7/ddf/defines__0_8js.html',1,'']]],
-  ['defines_5f1_2ejs',['defines_1.js',['../dd/da3/defines__1_8js.html',1,'']]],
+  ['departureleg_2eh',['departureLeg.h',['../d4/dd2/departure_leg_8h.html',1,'']]],
+  ['departurelegmga_2ecpp',['departureLegMga.cpp',['../da/de1/departure_leg_mga_8cpp.html',1,'']]],
+  ['departurelegmga_2eh',['departureLegMga.h',['../d0/da8/departure_leg_mga_8h.html',1,'']]],
+  ['departurelegmga1dsmposition_2ecpp',['departureLegMga1DsmPosition.cpp',['../d4/dcf/departure_leg_mga1_dsm_position_8cpp.html',1,'']]],
+  ['departurelegmga1dsmposition_2eh',['departureLegMga1DsmPosition.h',['../d0/d01/departure_leg_mga1_dsm_position_8h.html',1,'']]],
+  ['departurelegmga1dsmvelocity_2ecpp',['departureLegMga1DsmVelocity.cpp',['../de/d49/departure_leg_mga1_dsm_velocity_8cpp.html',1,'']]],
+  ['departurelegmga1dsmvelocity_2eh',['departureLegMga1DsmVelocity.h',['../d0/dd5/departure_leg_mga1_dsm_velocity_8h.html',1,'']]],
   ['dependentorientationcalculator_2eh',['dependentOrientationCalculator.h',['../df/ddb/dependent_orientation_calculator_8h.html',1,'']]],
   ['deserialization_2ecpp',['deserialization.cpp',['../d5/d81/deserialization_8cpp.html',1,'']]],
   ['deserialization_2eh',['deserialization.h',['../d7/d43/deserialization_8h.html',1,'']]],
@@ -20,8 +25,10 @@ var searchData=
   ['directtidaldissipationaccelerationpartial_2ecpp',['directTidalDissipationAccelerationPartial.cpp',['../d3/d8b/direct_tidal_dissipation_acceleration_partial_8cpp.html',1,'']]],
   ['directtidaldissipationaccelerationpartial_2eh',['directTidalDissipationAccelerationPartial.h',['../d4/d92/direct_tidal_dissipation_acceleration_partial_8h.html',1,'']]],
   ['directtidaltimelag_2eh',['directTidalTimeLag.h',['../d7/db5/direct_tidal_time_lag_8h.html',1,'']]],
+  ['dummynumericalquadrature_2ecpp',['dummyNumericalQuadrature.cpp',['../d1/de1/dummy_numerical_quadrature_8cpp.html',1,'']]],
+  ['dummysystemmodel_2ecpp',['dummySystemModel.cpp',['../d7/d20/dummy_system_model_8cpp.html',1,'']]],
   ['dynamicssimulator_2ecpp',['dynamicsSimulator.cpp',['../da/d14/dynamics_simulator_8cpp.html',1,'']]],
   ['dynamicssimulator_2eh',['dynamicsSimulator.h',['../d8/d7e/dynamics_simulator_8h.html',1,'']]],
-  ['dynamicsstatederivativemodel_2eh',['dynamicsStateDerivativeModel.h',['../d5/deb/dynamics_state_derivative_model_8h.html',1,'']]],
-  ['dynsections_2ejs',['dynsections.js',['../d7/dc3/dynsections_8js.html',1,'']]]
+  ['dynamicsstatederivativemodel_2ecpp',['dynamicsStateDerivativeModel.cpp',['../d2/ded/dynamics_state_derivative_model_8cpp.html',1,'']]],
+  ['dynamicsstatederivativemodel_2eh',['dynamicsStateDerivativeModel.h',['../d5/deb/dynamics_state_derivative_model_8h.html',1,'']]]
 ];

@@ -1,15 +1,10 @@
 var searchData=
 [
-  ['gaussiannodes_2etxt',['gaussianNodes.txt',['../d1/dff/gaussian_nodes_8txt.html',1,'']]],
   ['gaussianquadrature_2eh',['gaussianQuadrature.h',['../d3/db4/gaussian_quadrature_8h.html',1,'']]],
-  ['gaussianweights_2etxt',['gaussianWeights.txt',['../d8/db4/gaussian_weights_8txt.html',1,'']]],
   ['geodeticcoordinateconversions_2ecpp',['geodeticCoordinateConversions.cpp',['../d2/df5/geodetic_coordinate_conversions_8cpp.html',1,'']]],
   ['geodeticcoordinateconversions_2eh',['geodeticCoordinateConversions.h',['../d7/dd8/geodetic_coordinate_conversions_8h.html',1,'']]],
   ['geometricshapestofile_2ecpp',['geometricShapesToFile.cpp',['../d3/d1a/geometric_shapes_to_file_8cpp.html',1,'']]],
   ['geometricshapestofile_2eh',['geometricShapesToFile.h',['../d2/dc6/geometric_shapes_to_file_8h.html',1,'']]],
-  ['ggm02c_2etxt',['ggm02c.txt',['../dc/df1/ggm02c_8txt.html',1,'']]],
-  ['ggm02s_2etxt',['ggm02s.txt',['../d2/d51/ggm02s_8txt.html',1,'']]],
-  ['glgm3150_2etxt',['glgm3150.txt',['../dd/dee/glgm3150_8txt.html',1,'']]],
   ['gravitationalparameter_2eh',['gravitationalParameter.h',['../d7/dd9/gravitational_parameter_8h.html',1,'']]],
   ['gravityassist_2ecpp',['gravityAssist.cpp',['../d1/d60/gravity_assist_8cpp.html',1,'']]],
   ['gravityassist_2eh',['gravityAssist.h',['../d6/d90/gravity_assist_8h.html',1,'']]],

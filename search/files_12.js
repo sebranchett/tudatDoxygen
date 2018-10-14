@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['search_2ejs',['search.js',['../d2/d19/search_8js.html',1,'']]],
-  ['searchdata_2ejs',['searchdata.js',['../df/d80/searchdata_8js.html',1,'']]],
   ['secantrootfinder_2eh',['secantRootFinder.h',['../db/dd8/secant_root_finder_8h.html',1,'']]],
   ['seconddegreegravitationaltorque_2ecpp',['secondDegreeGravitationalTorque.cpp',['../d1/d99/second_degree_gravitational_torque_8cpp.html',1,'']]],
   ['seconddegreegravitationaltorque_2eh',['secondDegreeGravitationalTorque.h',['../d4/d45/second_degree_gravitational_torque_8h.html',1,'']]],
@@ -17,6 +15,7 @@ var searchData=
   ['simplelinearregression_2eh',['simpleLinearRegression.h',['../db/d2a/simple_linear_regression_8h.html',1,'']]],
   ['simplerotationalephemeris_2ecpp',['simpleRotationalEphemeris.cpp',['../d7/d48/simple_rotational_ephemeris_8cpp.html',1,'']]],
   ['simplerotationalephemeris_2eh',['simpleRotationalEphemeris.h',['../d2/df4/simple_rotational_ephemeris_8h.html',1,'']]],
+  ['simulateobservations_2ecpp',['simulateObservations.cpp',['../d8/dc8/simulate_observations_8cpp.html',1,'']]],
   ['simulateobservations_2eh',['simulateObservations.h',['../d2/ddc/simulate_observations_8h.html',1,'']]],
   ['singlestatetypederivative_2ecpp',['singleStateTypeDerivative.cpp',['../dd/dbe/single_state_type_derivative_8cpp.html',1,'']]],
   ['singlestatetypederivative_2eh',['singleStateTypeDerivative.h',['../dc/d18/single_state_type_derivative_8h.html',1,'']]],
@@ -26,6 +25,7 @@ var searchData=
   ['sofatimeconversions_2eh',['sofaTimeConversions.h',['../d2/d0f/sofa_time_conversions_8h.html',1,'']]],
   ['solaractivitydata_2ecpp',['solarActivityData.cpp',['../d3/db2/solar_activity_data_8cpp.html',1,'']]],
   ['solaractivitydata_2eh',['solarActivityData.h',['../d0/d38/solar_activity_data_8h.html',1,'']]],
+  ['spaceleg_2eh',['spaceLeg.h',['../df/d22/space_leg_8h.html',1,'']]],
   ['spheresegment_2ecpp',['sphereSegment.cpp',['../dc/d53/sphere_segment_8cpp.html',1,'']]],
   ['spheresegment_2eh',['sphereSegment.h',['../d9/d43/sphere_segment_8h.html',1,'']]],
   ['sphericalbodyshapemodel_2eh',['sphericalBodyShapeModel.h',['../d6/d0e/spherical_body_shape_model_8h.html',1,'']]],
@@ -68,5 +68,11 @@ var searchData=
   ['streamfilters_2ecpp',['streamFilters.cpp',['../d8/da0/stream_filters_8cpp.html',1,'']]],
   ['streamfilters_2eh',['streamFilters.h',['../d8/d72/stream_filters_8h.html',1,'']]],
   ['surfacegeometry_2eh',['surfaceGeometry.h',['../d6/d29/surface_geometry_8h.html',1,'']]],
-  ['sw19571001_2etxt',['sw19571001.txt',['../d2/d7b/sw19571001_8txt.html',1,'']]]
+  ['swingbyleg_2eh',['swingbyLeg.h',['../d9/d56/swingby_leg_8h.html',1,'']]],
+  ['swingbylegmga_2ecpp',['swingbyLegMga.cpp',['../dc/d55/swingby_leg_mga_8cpp.html',1,'']]],
+  ['swingbylegmga_2eh',['swingbyLegMga.h',['../d1/dd9/swingby_leg_mga_8h.html',1,'']]],
+  ['swingbylegmga1dsmposition_2ecpp',['swingbyLegMga1DsmPosition.cpp',['../d8/d89/swingby_leg_mga1_dsm_position_8cpp.html',1,'']]],
+  ['swingbylegmga1dsmposition_2eh',['swingbyLegMga1DsmPosition.h',['../d6/dc4/swingby_leg_mga1_dsm_position_8h.html',1,'']]],
+  ['swingbylegmga1dsmvelocity_2ecpp',['swingbyLegMga1DsmVelocity.cpp',['../d2/d43/swingby_leg_mga1_dsm_velocity_8cpp.html',1,'']]],
+  ['swingbylegmga1dsmvelocity_2eh',['swingbyLegMga1DsmVelocity.h',['../de/d1a/swingby_leg_mga1_dsm_velocity_8h.html',1,'']]]
 ];
